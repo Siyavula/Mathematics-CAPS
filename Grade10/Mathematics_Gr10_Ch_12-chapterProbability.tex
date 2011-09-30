@@ -7,116 +7,116 @@
     
     
        
-         \section{ Probability: Part 1}
-    \nopagebreak
-            \label{m39377} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10084 )} \par 
-    
-    
-    
-    
-    
-    
-  
-    \label{m39377*cid2}
-            \subsection{ Introduction}
-            \nopagebreak
-            
-      
-      \label{m39377*id109596}We can divide mathematics into pure and applied maths.
-Pure maths is the theory of maths and is very abstract. The work you have
-covered on algebra is mostly pure maths. Applied maths is all about taking the
-theory (or pure maths) and applying it to the real world. To be able to do
-applied maths, you first have to learn pure maths.\par 
-      \label{m39377*eip-870}But what does this have to do with probability? Well,
-just as mathematics can be divided into pure maths and applied maths, so
-statistics can be divided into probability theory and applied statistics. And
-just as you cannot do applied mathematics without knowing any theory, you cannot
-do statistics without beginning with some understanding of probability theory.
-Furthermore, just as it is not possible to describe what arithmetic is without
-describing what mathematics as a whole is, it is not possible to describe what
-probability theory is without some understanding of what statistics as a whole
-is about, and statistics, in its broadest sense, is about
-'processes'.\par \label{m39377*eip-758}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }Galileo wrote down some ideas about dice games in the seventeenth century. Since then many discussions and papers have been written about probability theory, but it still remains a poorly understood part of mathematics.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-      \label{m39377*eip-461}A process is how an object changes over time. For example, consider a coin. Now, the coin by
-itself is not a process; it is simply an object. However, if I was to flip the coin (i.e. putting it through a process), after a certain amount of time (however long it would take to land), it is brought to a
-final state. We usually refer to this final state as 'heads' or 'tails' based on
-which side of the coin landed face up, and it is the 'heads' or 'tails' that the
-statistician (person who studies statistics) is interested in. Without the
-process there is nothing to examine. Of course, leaving the coin stationary is
-also a process, but we already know that its final state is going to be the same
-as its original state, so it is not a particularly interesting process. Usually
-when we speak of a process, we mean one where the outcome is not yet known,
-otherwise there is no real point in analyzing it. With this understanding, it is
-very easy to understand what, precisely, probability theory is.\par \label{m39377*id109602}When we speak of probability theory as a whole, we mean the way in which we quantify the possible outcomes of processes. Then, just
-as 'applied' mathematics takes the methods of 'pure' mathematics and applies
-them to real-world situations, applied statistics takes the means and methods of
-probability theory (i.e. the means and methods used to quantify possible
-outcomes of events) and applies them to real-world events in some way or
-another. For example, we might use probability theory to quantify the possible
-outcomes of the coin-flip above as having a 50\% chance of coming up heads and a
-50\% chance of coming up tails, and then use statistics to apply it a real-world
-situation by saying that of six coins sitting on a table, the most likely
-scenario is that three coins will come up heads and three coins will come up
-tails. This, of course, may not happen, but if we were only able to bet on ONE
-outcome, we would probably bet on that because it is the most probable. But
-here, we are already getting ahead of ourselves. So let's back up a
-little.\par 
-      \label{m39377*id109608}To quantify results, we may use a variety of methods,
-terms, and notations, but a few common ones are:\par 
-      
-      \label{m39377*id110006}\begin{itemize}[noitemsep]
-            \label{m39377*uid1}\item a
-percentage (for example '50\%')
-\label{m39377*uid2}\item a proportion of the total number of outcomes (for
-example, '5/10')
-\label{m39377*uid3}\item a proportion of 1 (for example, '1/2')
-\end{itemize}
-        
-      \label{m39377*id110044}You may notice that all three of the above examples
-represent the same probability, and in fact ANY method of probability is
-fundamentally based on the following procedure:\par \label{m39377*eip-959}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \item Define a process.\item Define the total measure for all outcomes of the process.\item Describe the likelihood of each possible outcome of the process with
-respect to the total measure.\end{enumerate}
-        \label{m39377*eip-611}The term 'measure'
-may be confusing, but one may think of it as a ruler. If we take a ruler that is 1 metre long,
-then half of that ruler is 50 centimetres, a quarter of that ruler is
-25 centimetres, etc. However, the thing to remember is that without the
-ruler, it makes no sense to talk about proportions of a ruler! Indeed,
-the three examples above (50\%, 5/10, and 1/2) represented the same probability,
-the only difference was how the total measure (ruler) was defined. If we go back
-to thinking about it in terms of a ruler '50\%' means '50/100', so it means
-we are using 50 parts of the original 100 parts (centimetres) to quantify the
-outcome in question. '5/10' means 5 parts out of the original 10 parts (10
-centimetre pieces) depict the outcome in question. And in the last example,
-'1/2' means we are dividing the ruler into two pieces and saying that one
-of those two pieces represents the outcome in question. But these are all simply
-different ways to talk about the same 50 centimetres of the original 100
-centimetres! In terms of probability theory, we are only interested in \textsl{proportions of a whole}.\par \label{m39377*eip-613}Although there are many ways to define a 'measure', the most common
-and easiest one to generalize is to use '1' as the total measure. So if we
-consider the coin-flip, we would say that (assuming the coin was fair) the
-likelihood of heads is 1/2 (i.e. half of one) and the likelihood of tails is
-1/2. On the other hand, if we consider the event of not flipping the coin, then
-(assuming the coin was originally heads-side-up) the likelihood of heads is now
-1, while the likelihood of tails is 0. But we could have also used '14' as the
-original measure and said that the likelihood of heads or tails on the coin-flip
-was each '7 out of 14', while on the non-coin-flip the likelihood of heads was
-'14 out of 14', and the likelihood of tails was '0 out of 14'. Similarly, if we
-consider the throwing of a (fair) six-sided die, it may be easiest to set the
-total measure to '6' and say that the likelihood of throwing a '4' is '1 out of
-the 6', but usually we simply say that it is 1/6, i.e. '1/6 of 1'.\par 
+%          \section{ Probability: Part 1}
+%     \nopagebreak
+%             \label{m39377} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10084 )} \par 
+%     
+%     
+%     
+%     
+%     
+%     
+%   
+%     \label{m39377*cid2}
+%             \subsection{ Introduction}
+%             \nopagebreak
+%             
+%       
+%       \label{m39377*id109596}We can divide mathematics into pure and applied maths.
+% Pure maths is the theory of maths and is very abstract. The work you have
+% covered on algebra is mostly pure maths. Applied maths is all about taking the
+% theory (or pure maths) and applying it to the real world. To be able to do
+% applied maths, you first have to learn pure maths.\par 
+%       \label{m39377*eip-870}But what does this have to do with probability? Well,
+% just as mathematics can be divided into pure maths and applied maths, so
+% statistics can be divided into probability theory and applied statistics. And
+% just as you cannot do applied mathematics without knowing any theory, you cannot
+% do statistics without beginning with some understanding of probability theory.
+% Furthermore, just as it is not possible to describe what arithmetic is without
+% describing what mathematics as a whole is, it is not possible to describe what
+% probability theory is without some understanding of what statistics as a whole
+% is about, and statistics, in its broadest sense, is about
+% 'processes'.\par \label{m39377*eip-758}
+% \begin{tabular}{cc}
+% 	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
+% 
+% 	\begin{minipage}{0.85\textwidth}
+% 	\begin{note}
+%       {note: }Galileo wrote down some ideas about dice games in the seventeenth century. Since then many discussions and papers have been written about probability theory, but it still remains a poorly understood part of mathematics.
+% 	\end{note}
+% 	\end{minipage}
+% 	\end{tabular}
+% 	\par
+%       \label{m39377*eip-461}A process is how an object changes over time. For example, consider a coin. Now, the coin by
+% itself is not a process; it is simply an object. However, if I was to flip the coin (i.e. putting it through a process), after a certain amount of time (however long it would take to land), it is brought to a
+% final state. We usually refer to this final state as 'heads' or 'tails' based on
+% which side of the coin landed face up, and it is the 'heads' or 'tails' that the
+% statistician (person who studies statistics) is interested in. Without the
+% process there is nothing to examine. Of course, leaving the coin stationary is
+% also a process, but we already know that its final state is going to be the same
+% as its original state, so it is not a particularly interesting process. Usually
+% when we speak of a process, we mean one where the outcome is not yet known,
+% otherwise there is no real point in analyzing it. With this understanding, it is
+% very easy to understand what, precisely, probability theory is.\par \label{m39377*id109602}When we speak of probability theory as a whole, we mean the way in which we quantify the possible outcomes of processes. Then, just
+% as 'applied' mathematics takes the methods of 'pure' mathematics and applies
+% them to real-world situations, applied statistics takes the means and methods of
+% probability theory (i.e. the means and methods used to quantify possible
+% outcomes of events) and applies them to real-world events in some way or
+% another. For example, we might use probability theory to quantify the possible
+% outcomes of the coin-flip above as having a 50\% chance of coming up heads and a
+% 50\% chance of coming up tails, and then use statistics to apply it a real-world
+% situation by saying that of six coins sitting on a table, the most likely
+% scenario is that three coins will come up heads and three coins will come up
+% tails. This, of course, may not happen, but if we were only able to bet on ONE
+% outcome, we would probably bet on that because it is the most probable. But
+% here, we are already getting ahead of ourselves. So let's back up a
+% little.\par 
+%       \label{m39377*id109608}To quantify results, we may use a variety of methods,
+% terms, and notations, but a few common ones are:\par 
+%       
+%       \label{m39377*id110006}\begin{itemize}[noitemsep]
+%             \label{m39377*uid1}\item a
+% percentage (for example '50\%')
+% \label{m39377*uid2}\item a proportion of the total number of outcomes (for
+% example, '5/10')
+% \label{m39377*uid3}\item a proportion of 1 (for example, '1/2')
+% \end{itemize}
+%         
+%       \label{m39377*id110044}You may notice that all three of the above examples
+% represent the same probability, and in fact ANY method of probability is
+% fundamentally based on the following procedure:\par \label{m39377*eip-959}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+%             \item Define a process.\item Define the total measure for all outcomes of the process.\item Describe the likelihood of each possible outcome of the process with
+% respect to the total measure.\end{enumerate}
+%         \label{m39377*eip-611}The term 'measure'
+% may be confusing, but one may think of it as a ruler. If we take a ruler that is 1 metre long,
+% then half of that ruler is 50 centimetres, a quarter of that ruler is
+% 25 centimetres, etc. However, the thing to remember is that without the
+% ruler, it makes no sense to talk about proportions of a ruler! Indeed,
+% the three examples above (50\%, 5/10, and 1/2) represented the same probability,
+% the only difference was how the total measure (ruler) was defined. If we go back
+% to thinking about it in terms of a ruler '50\%' means '50/100', so it means
+% we are using 50 parts of the original 100 parts (centimetres) to quantify the
+% outcome in question. '5/10' means 5 parts out of the original 10 parts (10
+% centimetre pieces) depict the outcome in question. And in the last example,
+% '1/2' means we are dividing the ruler into two pieces and saying that one
+% of those two pieces represents the outcome in question. But these are all simply
+% different ways to talk about the same 50 centimetres of the original 100
+% centimetres! In terms of probability theory, we are only interested in \textsl{proportions of a whole}.\par \label{m39377*eip-613}Although there are many ways to define a 'measure', the most common
+% and easiest one to generalize is to use '1' as the total measure. So if we
+% consider the coin-flip, we would say that (assuming the coin was fair) the
+% likelihood of heads is 1/2 (i.e. half of one) and the likelihood of tails is
+% 1/2. On the other hand, if we consider the event of not flipping the coin, then
+% (assuming the coin was originally heads-side-up) the likelihood of heads is now
+% 1, while the likelihood of tails is 0. But we could have also used '14' as the
+% original measure and said that the likelihood of heads or tails on the coin-flip
+% was each '7 out of 14', while on the non-coin-flip the likelihood of heads was
+% '14 out of 14', and the likelihood of tails was '0 out of 14'. Similarly, if we
+% consider the throwing of a (fair) six-sided die, it may be easiest to set the
+% total measure to '6' and say that the likelihood of throwing a '4' is '1 out of
+% the 6', but usually we simply say that it is 1/6, i.e. '1/6 of 1'.\par 
     
  \label{m39377*uid4}
-            \subsection{ Definitions}
+            \section{ Revision of Terminology}
             \nopagebreak
             
         
@@ -820,7 +820,7 @@ random?\newline
 
 
 
-            \subsubsection{ Probability Identities}
+            \section{ Probability Identities}
             \nopagebreak
             \label{m39377*id113940}The following results apply to probabilities, for the sample space
 \begin{math}S\end{math} and two events \begin{math}A\end{math} and \begin{math}B\end{math}, within \begin{math}S\end{math}.\par 
@@ -1051,7 +1051,7 @@ probability}\vspace{.1in} \nopagebreak
 
     \addtocounter{footnote}{-0}
     \par \label{m39377*secfhsst!!!underscore!!!id985}
-            \subsubsection{  Probability Identities
+            \subsubsection{ Exercise: Probability Identities
 }
             \nopagebreak
             
@@ -1091,7 +1091,7 @@ probability that the card will be an ace or a black card?\newline
 
 
 
-            \subsubsection{ Mutually Exclusive Events}
+            \section{ Mutually Exclusive Events}
             \nopagebreak
             \label{m39377*id114732}Two events are called mutually exclusive if they cannot be
 true at the same time.\par 
@@ -1155,7 +1155,7 @@ equation (11.6) becomes:\par
     \addtocounter{footnote}{-0}
     
 \par \label{m39377*secfhsst!!!underscore!!!id1048}
-            \subsubsection{ Mutually Exclusive Events }
+            \subsection{Exercise: Mutually Exclusive Events }
             \nopagebreak
             \label{m39377*id114930}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m39377*uid79}\item A box contains coloured blocks. The number of each colour is given in
@@ -2779,18 +2779,18 @@ piece of paper labelled with a prime number.
 
 
 
-         \section{ Probability: Part 2}
-    \nopagebreak
-            \label{m39373} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10086 )} \par 
-    
-    
-    
-    
-    
+%          \section{ Probability: Part 2}
+%     \nopagebreak
+%             \label{m39373} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10086 )} \par 
+%     
+%     
+%     
+%     
+%     
     
   
     \label{m39373*cid5}
-            \subsection{ Relative Frequency \textsl{vs.}
+            \section{ Relative Frequency \textsl{vs.}
 Probability}
             \nopagebreak
             
@@ -8673,45 +8673,45 @@ either face is \begin{math}0,5\end{math}. \par
   
     
     \label{m39373*cid6}
-            \subsection{ Project Idea}
-            \nopagebreak
-            
-      
-      \label{m39373*id113925}Perform an experiment to show that as the number of
-trials increases, the relative frequency approaches the probability of a coin
-toss. Perform 10, 20, 50, 100, 200 trials of tossing a coin.\par 
-    
-  
-\label{m39373*secfhsst!!!underscore!!!id1154}
-            \subsection{ Interpretation of Probability Values - (not in CAPS, included for completeness)}
-            \nopagebreak
-            
-      \label{m39373*id115830}The probability of an event is generally represented
-as a real number between 0 and 1, inclusive. An impossible event has a
-probability of exactly 0, and a certain event has a probability of 1, but the
-converses are not always true: probability 0 events are not always impossible,
-nor probability 1 events certain. There is a rather subtle distinction between
-"certain" and "probability 1". \par 
-      \label{m39373*eip-550}For example, we can say that the sun will always rise in the east. This is a certain event, the sun will not suddenly rise in the north. But if we looked at the event of Penny Heyns winning a swimming race against your maths teacher, then this event is almost certain, since there is a very small chance that your teacher could win the race. \par \label{m39373*id115839}Most probabilities that occur in practice are numbers
-between 0 and 1, indicating the event's position on the continuum between
-impossibility and certainty. The closer an event's probability is to 1, the more
-likely it is to occur.\par 
-      \label{m39373*id115844}For example, if two mutually exclusive events are
-assumed equally probable, such as a flipped or spun coin landing heads-up or
-tails-up, we can express the probability of each event as "1 in 2", or,
-equivalently, "50\%" or "1/2".\par 
-      \label{m39373*id115849}Probabilities are equivalently expressed as odds,
-which is the ratio of the probability of one event to the probability of all
-other events. The odds of heads-up, for the tossed/spun coin, are (1/2)/(1 -
-1/2), which is equal to 1/1. This is expressed as "1 to 1 odds" and often
-written "1:1".\par 
-      \label{m39373*id115855}Odds a:b for some event are equivalent to probability
-a/(a+b). For example, 1:1 odds are equivalent to probability 1/2, and 3:2 odds
-are equivalent to probability 3/5.
- \par 
-    
+%             \subsection{ Project Idea}
+%             \nopagebreak
+%             
+%       
+%       \label{m39373*id113925}Perform an experiment to show that as the number of
+% trials increases, the relative frequency approaches the probability of a coin
+% toss. Perform 10, 20, 50, 100, 200 trials of tossing a coin.\par 
+%     
+%   
+% \label{m39373*secfhsst!!!underscore!!!id1154}
+%             \section{ Interpretation of Probability Values - (not in CAPS, included for completeness)}
+%             \nopagebreak
+%             
+%       \label{m39373*id115830}The probability of an event is generally represented
+% as a real number between 0 and 1, inclusive. An impossible event has a
+% probability of exactly 0, and a certain event has a probability of 1, but the
+% converses are not always true: probability 0 events are not always impossible,
+% nor probability 1 events certain. There is a rather subtle distinction between
+% "certain" and "probability 1". \par 
+%       \label{m39373*eip-550}For example, we can say that the sun will always rise in the east. This is a certain event, the sun will not suddenly rise in the north. But if we looked at the event of Penny Heyns winning a swimming race against your maths teacher, then this event is almost certain, since there is a very small chance that your teacher could win the race. \par \label{m39373*id115839}Most probabilities that occur in practice are numbers
+% between 0 and 1, indicating the event's position on the continuum between
+% impossibility and certainty. The closer an event's probability is to 1, the more
+% likely it is to occur.\par 
+%       \label{m39373*id115844}For example, if two mutually exclusive events are
+% assumed equally probable, such as a flipped or spun coin landing heads-up or
+% tails-up, we can express the probability of each event as "1 in 2", or,
+% equivalently, "50\%" or "1/2".\par 
+%       \label{m39373*id115849}Probabilities are equivalently expressed as odds,
+% which is the ratio of the probability of one event to the probability of all
+% other events. The odds of heads-up, for the tossed/spun coin, are (1/2)/(1 -
+% 1/2), which is equal to 1/1. This is expressed as "1 to 1 odds" and often
+% written "1:1".\par 
+%       \label{m39373*id115855}Odds a:b for some event are equivalent to probability
+% a/(a+b). For example, 1:1 odds are equivalent to probability 1/2, and 3:2 odds
+% are equivalent to probability 3/5.
+%  \par 
+%     
     \label{m39373*eip-512}
-            \subsection{ Summary}
+            \section{ Summary}
             \nopagebreak
             \label{m39373*eip-106}\begin{itemize}[noitemsep]
             \item The
@@ -9076,7 +9076,7 @@ complementary event.\end{itemize}
     
     \par
   \label{m39373*cid10}
-            \subsection{ End of Chapter Exercises}
+            \section{ End of Chapter Exercises}
             \nopagebreak
             \label{m39373*id115876}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m39373*uid104}\item A group of 45 children were asked if they eat Frosties and/or
@@ -9085,7 +9085,14 @@ that a child chosen at random will eat only Strawberry Pops?\newline
             
 \label{m39373*uid105}\item In a group of 42 pupils, all but 3 had a packet of
 chips or a Fanta or both. If 23 had a packet of chips and 7 of these also had a
-Fanta, what is the probability that one pupil chosen at random has:
+Fanta, what is the probability that one pupil chosen at random has:     \section{ Probability: Part 2}
+    \nopagebreak
+            \label{m39373} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10086 )} \par 
+    
+    
+    
+    
+    
 \label{m39373*id115906}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39373*uid106}\item Both chips and Fanta
 \label{m39373*uid107}\item has only Fanta?
@@ -9118,7 +9125,14 @@ out at random is:
 \label{m39373*id116086}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39373*uid119}\item Orange
 \label{m39373*uid120}\item not orange
-\label{m39373*uid121}\item pink
+\label{m39373*uid121}\item pink     \section{ Probability: Part 2}
+    \nopagebreak
+            \label{m39373} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10086 )} \par 
+    
+    
+    
+    
+    
 \label{m39373*uid122}\item not pink
 \label{m39373*uid123}\item orange or pink
 \label{m39373*uid124}\item not orange or pink
@@ -9149,7 +9163,14 @@ has:
 \label{m39373*id116289}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m39373*uid134}\item Brown eyes
 \label{m39373*uid135}\item Red hair
-\end{enumerate}
+\end{enumerate}     \section{ Probability: Part 2}
+    \nopagebreak
+            \label{m39373} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10086 )} \par 
+    
+    
+    
+    
+    
         \label{m39373*uid136}\item A child with brown eyes is chosen
 randomly. What is the probability that this child will have red hair
 \end{enumerate}
