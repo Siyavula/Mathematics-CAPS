@@ -211,8 +211,59 @@
           \endgroup
         }
 
-        \newenvironment{exercise}{\begin{example}}
-        {\end{example}}
+        %\newenvironment{exercise}{\begin{example}}
+        %{\end{example}}
+
+% Inserted by MH to get step number etc. to work nicely
+% My attempt to define a worked example environment
+\newcounter{stepcounter}
+\setcounter{stepcounter}{1}
+
+% can we deprecate the use of this, and use \westep instead
+\newcommand{\westep}[1]
+{\par \par%\pagebreak[1]
+ \textbf{\textit{Step \arabic{stepcounter} : #1}}\par
+ \addtocounter{stepcounter}{1}}
+
+
+\newenvironment{exercise}[3]
+{% This is a picture at the beginning, a line or bar or something else
+% this command puts a bar in the margin and sets the bar width
+% Now we set margins
+% \begin{center}
+%\pagebreak
+%\begin{flushleft}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(0,0)(0,-2)
+%\end{pspicture}
+%\end{flushleft}
+%\end{center}
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%% Title and counter
+\rput(-2.0,0){\pspencil}\noindent
+%\begin{mdframed}[linewidth =2,margin=40]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+\par%\vspace{.25cm}
+}%
+{%
+%\end{mdframed}
+\end{quotation}
+%\nopagebreak[4]
+\begin{flushright}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(10,0)(10,2)
+%\end{pspicture}
+\end{flushright}
+\setlength{\parindent}{\saveparindentlength}}
 
         \newenvironment{cnxrule}{\begin{example}}
         {\end{example}}
@@ -292,4 +343,7 @@
   
     \usepackage{fancyhdr}
     \pagestyle{fancy}
+
+
+
 
