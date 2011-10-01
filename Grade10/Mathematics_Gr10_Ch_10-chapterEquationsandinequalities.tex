@@ -1587,7 +1587,16 @@ for $x$: $x=1$.\par
 	\begin{figure}[H] % horizontal\label{m39257*uid96}
     \begin{center}
     \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
+        \label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}
+%\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
+\begin{pspicture}(-3,-2)(4,2)
+\psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+\psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
+\pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
+\pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
+\uput[l](2,1.1){(2,1)}
+\psdot(2,1)
+\end{pspicture}
       \vspace{2pt}
     \vspace{.1in}
     \rule[.1in]{\figurerulewidth}{.005in} \\
@@ -1696,7 +1705,17 @@ for $x$: $x=1$.\par
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39257*id159679}
     \begin{center}
-    \label{m39257*id159679!!!underscore!!!media}\label{m39257*id159679!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39257_MG10C10_007.png} % ;MG10C10\_007.png;;;6.0;8.5;
+    \label{m39257*id159679!!!underscore!!!media}\label{m39257*id159679!!!underscore!!!printimage}
+%\includegraphics{col11306.imgs/m39257_MG10C10_007.png} % ;MG10C10\_007.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+\psgrid[subgriddiv=10,gridcolor=lightgray,gridlabels=0,gridwidth=0.1pt]
+\psaxes[dx=1,dy=1,Dy=10,Dx=2,arrows=<->](0,0)(-5,-1)(5,5)
+\pstextpath[c](-2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-10}{10}{0.75 x mul neg 25 add}}{\small{$4y+3x=100$}}
+\pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
+\end{pspicture}
+\end{center}
+
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -2920,7 +2939,19 @@ a minus sign, the direction of the inequality changes. For this reason you canno
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39254*id157630}
     \begin{center}
-    \label{m39254*id157630!!!underscore!!!media}\label{m39254*id157630!!!underscore!!!printimage}\includegraphics[width=.8\columnwidth]{col11306.imgs/m39254_MG10C10_001.png} % m39254;MG10C10\_001.png;;;6.0;8.5;
+    \label{m39254*id157630!!!underscore!!!media}\label{m39254*id157630!!!underscore!!!printimage}
+%\includegraphics[width=.8\columnwidth]{col11306.imgs/m39254_MG10C10_001.png} % m39254;MG10C10\_001.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-4,0.75)(4,1.75)
+%\psgrid
+\psline[arrows=<->](-4,1)(4,1)
+\psdot[dotsize=5pt](-0.5,1)
+\multido{\n=-3+1}{7}
+{\uput[d](\n,1){\n}
+\psline(\n,1.1)(\n,0.9)}
+\uput[u](-0.5,1){$x=-\frac{1}{2}$}
+\end{pspicture}
+\end{center}
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -2953,7 +2984,20 @@ a minus sign, the direction of the inequality changes. For this reason you canno
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39254*id157774}
     \begin{center}
-    \label{m39254*id157774!!!underscore!!!media}\label{m39254*id157774!!!underscore!!!printimage}\includegraphics[width=.8\columnwidth]{col11306.imgs/m39254_MG10C10_002.png} % m39254;MG10C10\_002.png;;;6.0;8.5;
+    \label{m39254*id157774!!!underscore!!!media}\label{m39254*id157774!!!underscore!!!printimage}
+%\includegraphics[width=.8\columnwidth]{col11306.imgs/m39254_MG10C10_002.png} % m39254;MG10C10\_002.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-4,0.75)(4,1.75)
+%\psgrid
+\psline[arrows=<->](-4,1)(4,1)
+\psdot[dotsize=5pt](-0.5,1)
+\multido{\n=-3+1}{7}
+{\uput[d](\n,1){\n}
+\psline(\n,1.1)(\n,0.9)}
+\uput[u](-2,1){$x\le-\frac{1}{2}$}
+\psline[linewidth=3pt]{->}(-0.5,1)(-4,1)
+\end{pspicture}
+\end{center}
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -3036,7 +3080,21 @@ a minus sign, the direction of the inequality changes. For this reason you canno
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39254*id157937}
     \begin{center}
-    \label{m39254*id157937!!!underscore!!!media}\label{m39254*id157937!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39254_MG10C10_003.png} % ;MG10C10\_003.png;;;6.0;8.5;
+    \label{m39254*id157937!!!underscore!!!media}\label{m39254*id157937!!!underscore!!!printimage}
+%\includegraphics{col11306.imgs/m39254_MG10C10_003.png} % ;MG10C10\_003.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-1,0.4)(6,1.6)
+%\psgrid
+\psline[arrows=<->](-1,1)(6,1)
+\multido{\n=0+1}{6}
+{\uput[d](\n,1){\n}
+\psline(\n,1.1)(\n,0.9)}
+\uput[u](2,1){$r<4$}
+\psline[linewidth=3pt]{->}(4,1)(-1,1)
+\psdot[dotsize=5pt,dotstyle=o](4,1)
+\end{pspicture}
+\end{center}
+}
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -3127,7 +3185,21 @@ a minus sign, the direction of the inequality changes. For this reason you canno
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39254*id158287}
     \begin{center}
-    \label{m39254*id158287!!!underscore!!!media}\label{m39254*id158287!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39254_MG10C10_004.png} % ;MG10C10\_004.png;;;6.0;8.5;
+    \label{m39254*id158287!!!underscore!!!media}\label{m39254*id158287!!!underscore!!!printimage}
+%\includegraphics{col11306.imgs/m39254_MG10C10_004.png} % ;MG10C10\_004.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-1,0.4)(6,1.6)
+%\psgrid
+\psline[arrows=<->](-1,1)(6,1)
+\multido{\n=0+1}{6}
+{\uput[d](\n,1){\n}
+\psline(\n,1.1)(\n,0.9)}
+\uput[u](1,1){$q<\frac{3}{2}$}
+\psline[linewidth=3pt]{->}(1.5,1)(-1,1)
+\psdot[dotsize=5pt,dotstyle=o](1.5,1)
+\end{pspicture}
+\end{center}
+
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -3175,7 +3247,22 @@ a minus sign, the direction of the inequality changes. For this reason you canno
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39254*id158459}
     \begin{center}
-    \label{m39254*id158459!!!underscore!!!media}\label{m39254*id158459!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39254_MG10C10_005.png} % ;MG10C10\_005.png;;;6.0;8.5;
+    \label{m39254*id158459!!!underscore!!!media}\label{m39254*id158459!!!underscore!!!printimage}
+%\includegraphics{col11306.imgs/m39254_MG10C10_005.png} % ;MG10C10\_005.png;;;6.0;8.5;
+\begin{center}
+\begin{pspicture}(-1,0.4)(6,1.6)
+%\psgrid
+\psline[arrows=<->](-1,1)(6,1)
+\multido{\n=0+1}{6}
+{\uput[d](\n,1){\n}
+\psline(\n,1.1)(\n,0.9)}
+\uput[u](3,1){$2\le x < 5$}
+\psline[linewidth=2.5pt](2,1)(5,1)
+\psdot[dotsize=5pt,dotstyle=o](5,1)
+\psdot[dotsize=5pt](2,1)
+\end{pspicture}
+\end{center}
+
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
