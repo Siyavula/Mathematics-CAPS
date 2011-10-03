@@ -176,6 +176,38 @@
 \end{center}
 \vspace{3mm}}
 
+\newcommand{\Tip}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Tip:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
+
+\newcommand{\Warning}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Warning:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
+
+\newcommand{\Note}[1]{
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Note:}\par
+#1
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
 
                 
 
@@ -219,6 +251,9 @@
 \newcounter{stepcounter}
 \setcounter{stepcounter}{1}
 
+\newcounter{workedexamplecounter}
+\setcounter{workedexamplecounter}{1}
+
 % can we deprecate the use of this, and use \westep instead
 \newcommand{\westep}[1]
 {\par \par%\pagebreak[1]
@@ -226,7 +261,7 @@
  \addtocounter{stepcounter}{1}}
 
 
-\newenvironment{exercise}[3]
+\newenvironment{wex}[3]
 {% This is a picture at the beginning, a line or bar or something else
 % this command puts a bar in the margin and sets the bar width
 % Now we set margins
@@ -265,8 +300,146 @@
 \end{flushright}
 \setlength{\parindent}{\saveparindentlength}}
 
+\newenvironment{exercises}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Exercises:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{eocexercises}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Exercises:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{f_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Formal Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{i_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Informal Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{g_experiment}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{General Experiment:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{activity}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Activity:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{groupdiscussion}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Group Discussion:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+
+\newenvironment{casestudy}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Case Study:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{project}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Project:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{Investigation}[1]
+{
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+\textbf{\textit{Investigation:}
+#1}\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}}
+
+
+
+
         \newenvironment{cnxrule}{\begin{example}}
         {\end{example}}
+
+\newenvironment{exercise}{\textbf{\par Needs to be changed to wex environment\par}\begin{example}}
+        {\end{example}}
+
 
         \newenvironment{definition}{\begin{example}}
         {\end{example}}
