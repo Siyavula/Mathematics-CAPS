@@ -396,7 +396,26 @@ n &=& 9
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39362*id67417}
     \begin{center}
-    \label{m39362*id67417!!!underscore!!!media}\label{m39362*id67417!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39362_MG10C7_004.png} % m39362;MG10C7\_004.png;;;6.0;8.5;
+    \label{m39362*id67417!!!underscore!!!media}\label{m39362*id67417!!!underscore!!!printimage}
+%\includegraphics[width=300px]{col11306.imgs/m39362_MG10C7_004.png} % m39362;MG10C7\_004.png;;;6.0;8.5;
+\begin{pspicture}(0,0)(8,2)
+%\psgrid[gridcolor=gray]
+\def\match{\psline(0,0)(2,0)\psellipse*(1.8,0)(0.2,0.1)}
+\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}
+\rput{270}(0,2){\match}
+\rput(2,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\rput(4,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\rput(6,0){\rput(0,0){\match}
+\rput{90}(2,0){\match}
+\rput{180}(2,2){\match}}
+\end{pspicture}
+
       \vspace{2pt}
     \vspace{.1in}
     \end{center}
@@ -407,9 +426,19 @@ four points and divides it into five parts, as shown below.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39362*id67455}
     \begin{center}
-    \label{m39362*id67455!!!underscore!!!media}\label{m39362*id67455!!!underscore!!!printimage}\includegraphics[width=250px]{col11306.imgs/m39362_MG10C7_005.png} % m39362;MG10C7\_005.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
+    \label{m39362*id67455!!!underscore!!!media}\label{m39362*id67455!!!underscore!!!printimage}
+%\includegraphics[width=250px]{col11306.imgs/m39362_MG10C7_005.png} % m39362;MG10C7\_005.png;;;6.0;8.5;
+\begin{pspicture}(-1,-2)(6,2)
+%\psgrid[gridcolor=gray]
+\psplot[xunit=0.00556]{90}{810}{x sin}
+\psline[linestyle=dashed](-1,0)(6,0)
+\psdots[dotsize=5pt](1,0)(2,0)(3,0)(4,0)
+\rput(0.5,1.5){\psframebox{1}}
+\rput(1.5,-1.5){\psframebox{2}}
+\rput(2.5,1.5){\psframebox{3}}
+\rput(3.5,-1.5){\psframebox{4}}
+\rput(4.5,1.5){\psframebox{5}}
+\end{pspicture}
     \end{center}
  \end{figure}       
 If the piece of string is intersected in this way by 19 parallel
