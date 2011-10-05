@@ -165,16 +165,14 @@
 \vspace{3mm}\sffamily}%
 
 \newcommand{\Definition}[2]{
-\vspace{3mm}
-\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray
-splittopskip=\topskip,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{center}
-\textbf{Definition: #1}\par
+\textbf{Definition: #1}\par\nopagebreak
 #2
 \end{center}
 \end{mdframed}
-\vspace{3mm}}
+}
 
 
 \newcommand{\Tip}[1]{
@@ -332,9 +330,9 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
+
+\hrule width \textwidth height 1pt\\
 \begin{quotation}
-\noindent
-\vspace{.5cm}
 \setlength{\parindent}{0pt}
 \textbf{\textit{Exercises:}
 #1}\par
@@ -345,11 +343,12 @@ linecolor=red%
 
 \newenvironment{eocexercises}[1]
 {
+\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Exercises:}
+\textbf{\textit{End of chapter exercises:}
 #1}\par
 }%
 {%
@@ -602,4 +601,33 @@ linecolor=red%
 
 
 
+% border icons
+\newcommand{\psintfact}%
+{%
+\rput(0,0){\begin{tabular}{c}\textbf{Interesting}\\ \textbf{Fact}%
+\end{tabular}}
+}
+
+\newcommand{\psfact}%
+{%
+\begin{pspicture}(-.5,-.5)(.5,.5)
+ \psintfact
+ \PstLens[LensSize=0.5,LensRotation=-60,LensMagnification=1.5](-.04,-.1){\psintfact}
+\end{pspicture}
+}
+
+
+
+
+
+%Physics Definitions
+\def\rope{\psline(0,0.2)(5,.2)\psline(0,0)(5,0)\multirput(0,0)(0.2,0){25}{\psline(0,0)(0.2,0.2)}}
+
+\def\cart{\psframe(0,0.4)(1,1)\pscircle(0.2,0.2){0.2}\pscircle(0.8,0.2){0.2}}
+
+% Arrow for objects and images
+\newpsobject{oi}{psline}{arrowsize=6pt, arrowlength=1.5, arrowinset=0, linewidth=2pt}
+\psset{lensHeight=3,lensColor=lightgray}
+\newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
+\newcommand{\ms}{m$\cdot$s$^{-1}$}                %m/s in text
 
