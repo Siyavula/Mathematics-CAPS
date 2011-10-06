@@ -22,9 +22,16 @@ For any real number $a$ and natural number $n$, we can write $a$ multiplied by i
  
 \Definition{Exponential Notation}{
 \begin{flushleft}
-For $a \in \mathbb{R}, n \in \mathbb{N}$
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+ \item For $a \in \mathbb{R}, n \in \mathbb{N},~~~~$ $a^n = a \times a \times a \times \ldots \times a ~~ (n ~ \textrm{times}) $
+ \item $ a^0 = 1 \hspace{1cm}$  ($a \ne 0 $ because $0^0$ is undefined)
+ \item $a^{-n} &=& \frac{1}{a^n}\hspace{0.5cm}$ ($a \ne 0 $ because $\frac{1}{0}$ is undefined)
+\end{enumerate}
+
+
+
 \end{flushleft}
-$$a^n = a \times a \times a \times \ldots \times a ~~ (n ~ \textrm{times}) $$
+
 } 
 
 Examples:
@@ -32,40 +39,43 @@ Examples:
 \item $3 \times 3 = 3^2$
 \item $5 \times 5 \times 5 \times 5 = 5^4 $
 \item $p \times p \times p = p^3$
+\item $(3^x)^0 = 1$
+\item $ 2^{-4} = \frac{1}{2^4} = \frac{1}{16}$
+\item $ \frac{1}{5^{-x}} = 5^x$
 \end{enumerate}
 
-We now expand the definition to include 0 and the negative integers.
-
-If exponent $n$ is 0, then we have 
-
-$$ a^0 = 1 \hspace{1cm} a \ne 0 $$
-
-\Tip{The restriction applies because $0^0$ is undefined }
-
-We also define what it means if we have a negative exponent $a^{-n}$.
-\begin{eqnarray*}
-    a^{-n} &=& \frac{1}{a^n} \\
-           &=& \frac{1}{a \times a \times a \times \ldots \times a ~~ (n ~ \textrm{times})} 
-\end{eqnarray*}
-
-
-\Tip{Here $a$ cannot equal 0 because $\frac{1}{0}$ is undefined}      
+% We now expand the definition to include 0 and the negative integers.
+% 
+% If exponent $n$ is 0, then we have 
+% 
+% 
+% 
+% \Tip{The restriction applies because $0^0$ is undefined }
+% 
+% We also define what it means if we have a negative exponent $a^{-n}$.
+% \begin{eqnarray*}
+%     a^{-n} &=& \frac{1}{a^n} \\
+%            &=& \frac{1}{a \times a \times a \times \ldots \times a ~~ (n ~ \textrm{times})} 
+% \end{eqnarray*}
+% 
+% 
+% \Tip{Here $a$ cannot equal 0 because $\frac{1}{0}$ is undefined}      
       
 We always write the answer as numbers with a positive exponent.
 
 
-If exponent $n$ is an even integer, then ${a}^{n}$ will always be positive for any non-zero real number $a$. 
-
-For example, although $-3$ is negative, but $(-3)^2=-3 \times -3 = 9$ which is positive and $(-3)^{-2} = \frac{1}{-3 \times -3} = \frac{1}{9} $ is also positive.
-
-If the exponent $n$ is an odd integer, then for any non-zero real number $a$ 
-
-\begin{eqnarray*}
-a^n ~~ \mbox{is positive if} ~~ a > 0 \\
-a^n ~~ \mbox{is negative if} ~~ a < 0
-\end{eqnarray*}
-
-For example, $(-2)^3 = -2 \times -2 \times -2 = -8$ and $(2)^{-5} = \dfrac{1}{2 \times 2 \times 2 \times 2 \times 2} = \dfrac{1}{32}$.
+% If exponent $n$ is an even integer, then ${a}^{n}$ will always be positive for any non-zero real number $a$. 
+% 
+% For example, although $-3$ is negative, but $(-3)^2=-3 \times -3 = 9$ which is positive and $(-3)^{-2} = \frac{1}{-3 \times -3} = \frac{1}{9} $ is also positive.
+% 
+% If the exponent $n$ is an odd integer, then for any non-zero real number $a$ 
+% 
+% \begin{eqnarray*}
+% a^n ~~ \mbox{is positive if} ~~ a > 0 \\
+% a^n ~~ \mbox{is negative if} ~~ a < 0
+% \end{eqnarray*}
+% 
+% For example, $(-2)^3 = -2 \times -2 \times -2 = -8$ and $(2)^{-5} = \dfrac{1}{2 \times 2 \times 2 \times 2 \times 2} = \dfrac{1}{32}$.
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m38359*Exponents-1}
@@ -101,10 +111,11 @@ Some of these laws might have been done in earlier grades, but we will list all 
 	\hfill {a}^{m}\ensuremath{\times}{a}^{n}& =& {a}^{m+n}\hfill \\ 
 	\hfill \frac{{a}^{m}}{{a}^{n}}& =& {a}^{m-n}\hfill \\ 
 	\hfill {\left(ab\right)}^{n}& =& {a}^{n}{b}^{n}\hfill \\ 
+        (\frac{a}{b})^n & = & \frac{a^n}{b^n} \\
 	\hfill {\left({a}^{m}\right)}^{n}& =& {a}^{mn}\hfill 
     \end{array}
 \end{equation}
-where $a \in \mathbb{R}$ and $m,n \in \mathbb{Z}$
+where $a > 0, b > 0$ and $m,n \in \mathbb{Z}$
 
 % 
 %       \label{m38359*uid4}
@@ -314,6 +325,42 @@ Therefore,
     \end{array}
 \end{equation}
 
+
+
+\begin{center}
+\begin{array}[lc]
+  \textrm{\textbf{Exponential Law:}} & $$ (\frac{a}{b})^n = \frac{a^n}{b^n} $$
+\end{array}
+\end{center}
+
+
+
+\begin{eqnarray*}
+
+ \Big(\frac{a}{b}\Big)^n & = & \Big(\frac{a}{b}\Big) \times \Big(\frac{a}{b}\Big) \times \Big(\frac{a}{b}\Big) \times \ldots \times \Big(\frac{a}{b}\Big) ~~~(n~\textrm{times}) \\
+                         & = & \frac{a \times a \times a \times \ldots \times a ~~~(n~\textrm{times})}{b \times b \times b \times \ldots \times b ~~~(n~\textrm{times})}\\
+                         & = & \frac{a^n}{b^n}
+\end{eqnarray*}
+
+For example:
+
+\begin{eqnarray*}
+
+\Big(\frac{2}{3}\Big)^3 & = & \Big(\frac{2}{3}\Big) \times  \Big(\frac{2}{3}\Big) \times \Big(\frac{2}{3}\Big) \\
+                        & = & \frac{2 \times 2 \times 2}{3 \times 3 \times 3} \\
+		        & = & \frac{2^3}{3^3}
+
+
+
+
+\end{eqnarray*}
+
+
+
+
+
+
+
 %             \subsubsubsection{ Application using Exponential Law 5: ${\left(ab\right)}^{n}={a}^{n}{b}^{n}$ }
 %             \nopagebreak
 %         \label{m38359*id66288}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -337,6 +384,8 @@ Therefore,
   \textrm{\textbf{Exponential Law:}} & $$ {\left({a}^{m}\right)}^{n}={a}^{mn} $$
 \end{array}
 \end{center}
+
+
 % \subsubsubsection{ Exponential Law 6: ${\left({a}^{m}\right)}^{n}={a}^{mn}$}
 %             \nopagebreak
 \label{m38359*id66531}We can find the exponential of an exponential of a number. Even though this sentence sounds complicated, it is just saying that you can find the exponential of a number and then take the exponential of that number. \par
@@ -385,6 +434,52 @@ Therefore,
 %           \end{enumerate}
 % \label{m38359*eip-323}\par
 %             \label{m38359*secfhsst!!!underscore!!!id41}\vspace{.5cm} 
+
+\begin{wex}
+{ %title
+Applying the exponential laws
+}
+{%question
+Simplify:
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item  $2^{3x} \times 2^{4x}$
+\\
+ \item $\frac{12p^2t^5}{3pt^3}$
+\\
+ \item $ (3x)^2 $
+\\
+ \item $(3^4\cdot5^2)^3$\\
+\end{enumerate}
+
+}
+{%answer
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item  $2^{3x} \times 2^{4x} = 2^{3x+4x} = 2^{7x}$
+\\
+ \item $\frac{12p^2t^5}{3pt^3} = 4p^{(2-1)}t^{(5-3)} = 4pt^2$
+\\
+ \item $ (3x)^2 = 3^2x^2 = 9x^2$
+\\
+ \item $(3^4\cdot5^2)^3 = 3^{(4\times3)}\cdot5^{(2\times3)} = 3^{12}\cdot5^6  $
+\end{enumerate}
+
+
+
+}
+
+
+\end{wex}
+
+
+
+
+
+
+
+
+
 \begin{wex}
 {
 Simplifying bases
@@ -428,7 +523,7 @@ Simplify: $\dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}$
     \westep{Change all bases to prime numbers}
       
 \begin{equation*}
-\begin{array}{ccl}& =& \dfrac{{5}^{2x-1}\ensuremath{\cdot}{\left({3}^{2}\right)}^{x-2}}{{\left(5.3\right)}^{2x-3}}\hfill \\
+\begin{array}{lcl} \dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}& =& \dfrac{{5}^{2x-1}\ensuremath{\cdot}{\left({3}^{2}\right)}^{x-2}}{{\left(5.3\right)}^{2x-3}}\hfill \\
 		  & =& \dfrac{{5}^{2x-1}\ensuremath{\cdot}{3}^{2x-4}}{{5}^{2x-3}\ensuremath{\cdot}{3}^{2x-3}}\hfill 
 \end{array}
   \end{equation}
@@ -437,7 +532,8 @@ Simplify: $\dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}$
 \westep{Subtract exponents (same base)}
 
 \begin{equation*}
-\begin{array}{ccl}& =& {5}^{(2x-1)-(2x-3)}\ensuremath{\cdot}{3}^{(2x-4)-(2x-3)}\hfill \\ 
+\begin{array}{lcl}
+\phantom{\dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}}& =& {5}^{(2x-1)-(2x-3)}\ensuremath{\cdot}{3}^{(2x-4)-(2x-3)}\hfill \\ 
 & =& 5^{2x-1-2x+3} \cdot 3^{2x-4 - 2x+3} \\
 & =& {5}^{2}\ensuremath{\cdot}{3}^{-1}\hfill \end{array}
 \end{equation}
@@ -445,11 +541,108 @@ Simplify: $\dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}$
 
 \westep{Write answer as a fraction}  
 \begin{eqnarray*}
-=\frac{25}{3} \\ = 8\frac{1}{3}
+=\frac{25}{3} \\\\ = 8\frac{1}{3}
 \end{eqnarray*}
 
 }
 \end{wex}
+
+
+\begin{wex}
+{%title
+Taking out a common factor
+}
+{%question
+Simplify: $$\frac{2^t-2^{t-2}}{3\cdot2^t-2^t} $$
+
+}
+{%answer
+\westep{Expand the expression}
+\begin{eqnarray*}
+\frac{2^t-2^{t-2}}{3\cdot2^t-2^t} & = & \frac{2t-(2^t\cdot2^{-2})}{3\cdot2^t-2^t} \\
+\end{eqnarray*}
+
+\westep{Take out a common factor}
+
+\begin{eqnarray*}
+\phantom{\frac{2^t-2^{t-2}}{3\cdot2^t-2^t}}  & = & \frac{2^t(1-2^{-2})}{2^t(3-1)} \\
+\end{eqnarray*}
+
+
+\westep{Cancel common factor and simplify}
+
+\begin{eqnarray*}
+\phantom{\frac{2^t-2^{t-2}}{3\cdot2^t-2^t}}  & = & \frac{1-^1/_4}{2} \\
+					     & = & \frac{^3/_4}{2} \\
+					     & = & \frac{3}{8}
+\end{eqnarray*}
+
+
+} 
+\end{wex}
+
+When working with exponents all the laws of operation for algebra apply.
+
+
+\begin{wex}
+{
+Using difference of squares
+}
+{
+Simplify: 
+$$ \frac{9^x-1}{3^x+1} $$
+}
+{
+\westep{Change bases to prime numbers}
+\begin{eqnarray*}
+ \frac{9^x-1}{3^x+1} & = & \frac{(3^2)^x -1}{3^x+1} \\
+		     & = & \frac{(3^x)^2-1}{3^x+1} 
+\end{eqnarray*}
+
+\westep{Factorise using difference of squares}
+
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & \frac{(3^x-1)(3^x+1)}{3^x+1}\\
+\end{eqnarray*}
+
+\westep{Simplfy}
+
+\begin{eqnarray*}
+ \phantom{\frac{9^x-1}{3^x+1}} & = & 3^x-1\\
+\end{eqnarray*}
+
+}
+\end{wex}
+
+
+\begin{exercises}{Simplifying exponents}
+Simplify without using a calculator:
+\begin{multicols}{2}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}., itemsep=5pt]
+ \item $16^0$
+ \item $16a^0$
+ \item $\frac{2^{-2}}{3^2}$
+ \item $ \frac{5}{2^{-3}}$
+ \item $ \Big(\frac{2}{3}\Big)^{-3} $
+ \item $ x^2 \cdot x^{3t+1} $
+ \item $ 3 \times 3^{2a} \times 3^2$
+ \item $ \frac{a^{3x}}{a^x} $
+ \item $ \frac{32p^2}{4p^8}$
+ \item $ (2t^4)^3$
+ \item $ (3^{n+3})^2$
+ \item $ \frac{3^n \cdot 9^{n-3}}{27^{n-1}}$
+\end{enumerate}
+\end{multicols}
+
+ 
+
+
+
+
+
+
+\end{exercises}
+
 
 
 
@@ -462,6 +655,8 @@ Simplify: $\dfrac{{5}^{2x-1}\ensuremath{\cdot}{9}^{x-2}}{{15}^{2x-3}}$
 
 
 \section{Exponential Equations}
+
+
 \begin{exercises}{Exponential Numbers }
 {
 \label{m38359*id67549}Match the answers to the questions, by filling in the correct answer into the \textbf{Answer} column.
