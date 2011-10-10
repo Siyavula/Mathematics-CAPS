@@ -699,3 +699,30 @@ linecolor=red%
 \newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
 \newcommand{\ms}{m$\cdot$s$^{-1}$}                %m/s in text
 
+
+
+
+
+
+
+% fancy headings
+
+\usepackage{tikz}
+\usepackage[explicit]{titlesec}
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\fontsize{32}\bfseries\slshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-3cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \shade[left color=white, right color=gray] (0,0) rectangle
+          (\paperwidth,6cm);
+        \node[anchor=west,text centered, yshift=1.5cm, xshift=0.2\paperwidth]
+              {\color{black} #1 \hfill \color{white}\chapterlabel};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
