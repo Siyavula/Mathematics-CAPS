@@ -14,12 +14,13 @@
 
     \setlength{\marginparsep}{0pt}
     \setlength{\marginparwidth}{0pt}
+    %\setlength{\}{0pt}
   
-    \usepackage[paper=letterpaper, 
-      lmargin=0.2\paperwidth, rmargin=0.1\paperwidth, 
-      tmargin=1in, bmargin=1in,
-      asymmetric,centering,
-      includehead]{geometry}
+        \usepackage[paper=letterpaper, 
+          lmargin=1in, rmargin=1in, 
+          tmargin=1in, bmargin=1in,
+          twoside,centering,
+          includehead]{geometry}
       
     \usepackage{layouts}
     \usepackage{multicol}
@@ -148,62 +149,34 @@
 
 
 
-
-\definecolor{siyavula-gray}{RGB}{239,239,239}
-
-
-
-\usepackage{marginnote}
-\usepackage{todonotes}
-\reversemarginpar
-\setlength{\marginparwidth}{0.2\paperwidth}
-
-
-\newenvironment{IFact}[1]
-{\begin{mdframed}[linewidth=1pt, linecolor=white ]
-\textbf{Note:}
-\end{mdframed}
-\vspace{-1mm}
-\begin{mdframed}[linewidth=1pt, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
-\begin{small}
-}
-{
-#1
-\end{small}
-\end{mdframed}
-}
-
-
-
-
-%\newenvironment{IFact}[1]%
-%{\vspace{3mm}\rmfamily
-% \begin{center}\begin{pspicture}(0,0)(5,0.01)
-% \psline[linecolor=red]{-}(0,0)(5,0)
-%\end{pspicture}\end{center}
+\newenvironment{IFact}[1]%
+{\vspace{3mm}\rmfamily
+ \begin{center}\begin{pspicture}(0,0)(5,0.01)
+ \psline[linecolor=red]{-}(0,0)(5,0)
+\end{pspicture}\end{center}
 %\psshadowbox{
-% \begin{quote}%
-%\rput(-1.5,0){\psfact}\noindent #1%
-%\end{quote}%
-% }%}
-%{\begin{center}\begin{pspicture}(0,0)(5,0.01)
-% \psline[linecolor=red]{-}(0,-0.1)(5,-0.1)
-%\end{pspicture}\end{center}
-%\vspace{3mm}\sffamily}%
+ \begin{quote}%
+\rput(-1.5,0){\psfact}\noindent #1%
+\end{quote}%
+ }%}
+{\begin{center}\begin{pspicture}(0,0)(5,0.01)
+ \psline[linecolor=red]{-}(0,-0.1)(5,-0.1)
+\end{pspicture}\end{center}
+\vspace{3mm}\sffamily}%
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[linewidth=1pt,leftmargin=0,rightmargin=0,linecolor=darkgray,skipbelow=\baselineskip,%
-skipabove=\baselineskip, innerleftmargin=20pt]%
-\textsl{DEFINITION \hspace{4mm} #1}\par\nopagebreak
+\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
+skipabove=\baselineskip]%
+\begin{center}
+\textbf{Definition: #1}\par\nopagebreak
 #2
+\end{center}
 \end{mdframed}
 }
-
-
 
 \newcommand{\Identity}[2]{
 \vspace{0.5cm}
-\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=siyavula-gray,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{flushleft}
 \textbf{#1}\nopagebreak
@@ -216,7 +189,7 @@ skipabove=\baselineskip]%
 \newcommand{\Tip}[1]{
 \vspace{3mm}
 \begin{center}
-\colorbox{siyavula-gray}{\begin{minipage}[t]{\textwidth}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
 \noindent%
 \textbf{Tip:}\par
 #1
@@ -240,33 +213,15 @@ linecolor=red%
 
 
 \newcommand{\Note}[1]{
-\todo[noline, backgroundcolor=white, bordercolor=white]
-{
-\begin{mdframed}[linewidth=1pt, linecolor=white]
-\textbf{Note:}
-\end{mdframed}
-\vspace{-1mm}
-\begin{mdframed}[linewidth=1pt, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
-\begin{small}
+\vspace{3mm}
+\begin{center}
+\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
+\noindent%
+\textbf{Note:}\par
 #1
-\end{small}
-\end{mdframed}
-}
-}
-
-
-
-
-%\newcommand{\Note}[1]{
-%\vspace{3mm}
-%\begin{center}
-%\colorbox{siyavula-gray}{\begin{minipage}[t]{0.80\textwidth}
-%\noindent%
-%\textbf{Note:}\par
-%#1
-%\end{minipage}}
-%\end{center}
-%\vspace{3mm}}
+\end{minipage}}
+\end{center}
+\vspace{3mm}}
 
                 
 
@@ -307,43 +262,67 @@ linecolor=red%
 
 % Inserted by MH to get step number etc. to work nicely
 % My attempt to define a worked example environment
-\newcounter{westepcounter}
-\setcounter{westepcounter}{1}
+\newcounter{stepcounter}
+\setcounter{stepcounter}{1}
 
 \newcounter{workedexamplecounter}
 \setcounter{workedexamplecounter}{1}
 
 % can we deprecate the use of this, and use \westep instead
 \newcommand{\westep}[1]
-{\par \vspace{3mm}%\pagebreak[1]
- \textit{Step \arabic{westepcounter}} : \textit{\textbf{#1}}\par\vspace{3mm}
- \addtocounter{westepcounter}{1}}
+{\par \par%\pagebreak[1]
+ \textbf{\textit{Step \arabic{stepcounter} : #1}}\par
+ \addtocounter{stepcounter}{1}}
 
 
-
-\newenvironment{wex}[3]
-{
+\newenvironment{oldwex}[3]
+{% This is a picture at the beginning, a line or bar or something else
 \begin{quotation}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
 %% Title and counter
-%\rput(-2.0,0){\pspencil}\noindent
-\begin{mdframed}[linewidth=1pt,linecolor=darkgray]
-\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
-\end{mdframed}
-\begin{mdframed}[skipabove=-2mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
-\vspace{3mm}
-\textbf{\textit{Question:}} \vspace{3mm} 
-\hrule
-\vspace{3mm}
-\textit{#2}
-\vspace{3mm}\par
-\textbf{Answer}\vspace{3mm}
-\hrule
-\vspace{3mm}
- #3%
-\addtocounter{workedexamplecounter}{1}\setcounter{westepcounter}{1}%
+\rput(-2.0,0){\pspencil}\noindent
+%\begin{mdframed}[linewidth =2,margin=40]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
+\par%\vspace{.25cm}
+}%
+{%
+%\end{mdframed}
+\end{quotation}
+\begin{flushright}
+\end{flushright}
+\setlength{\parindent}{\saveparindentlength}}
+
+\newenvironment{wex}[3]
+{% This is a picture at the beginning, a line or bar or something else
+% this command puts a bar in the margin and sets the bar width
+% Now we set margins
+% \begin{center}
+%\pagebreak
+%\begin{flushleft}
+%\begin{pspicture}(0,0)(10,0.01)
+% \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
+% \psline[linecolor=gray]{-}(0,0)(0,-2)
+%\end{pspicture}
+%\end{flushleft}
+%\end{center}
+\begin{quotation}
+\noindent
+\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%% Title and counter
+\rput(-2.0,0){\pspencil}\noindent
+\begin{mdframed}[linewidth=2,linecolor=black,backgroundcolor=lightgray]
+\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
+#1}\par
+\textbf{Question:} #2\par
+\textbf{Answer}\par #3%
+\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
 \par%\vspace{.25cm}
 }%
 {%
@@ -356,9 +335,7 @@ linecolor=red%
 % \psline[linecolor=gray]{-}(10,0)(10,2)
 %\end{pspicture}
 \end{flushright}
-\setlength{\parindent}{\saveparindentlength}
-\par
-}
+\setlength{\parindent}{\saveparindentlength}}
 
 
 
@@ -408,7 +385,7 @@ linecolor=red%
 \newenvironment{i_experiment}[1]
 {
 \begin{quotation}
-\begin{mdframed}[linewidth=5,linecolor=siyavula-gray]
+\begin{mdframed}[linewidth=5,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -423,7 +400,7 @@ linecolor=red%
 \newenvironment{g_experiment}[1]
 {
 \begin{quotation}
-\begin{mdframed}[linewidth=5,linecolor=siyavula-gray]
+\begin{mdframed}[linewidth=5,linecolor=lightgray]
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
@@ -629,9 +606,9 @@ linecolor=red%
 
 
 
-%\usepackage[Bjornstrup]{fncychap}
-%\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
-%\ChTitleVar{\raggedleft\HUGE\sffamily\bfseries}
+\usepackage[Bjornstrup]{fncychap}
+\ChNumVar{\fontsize{76}{80}\usefont{OT1}{pzc}{m}{n}\selectfont}
+\ChTitleVar{\raggedleft\HUGE\sffamily\bfseries}
 
 
 
@@ -661,67 +638,7 @@ linecolor=red%
 
 % Arrow for objects and images
 \newpsobject{oi}{psline}{arrowsize=6pt, arrowlength=1.5, arrowinset=0, linewidth=2pt}
-\psset{lensHeight=3,lensColor=siyavula-gray}
+\psset{lensHeight=3,lensColor=lightgray}
 \newpsobject{PrincipalAxis}{psline}{linewidth=0.5pt,linecolor=gray}
 \newcommand{\ms}{m$\cdot$s$^{-1}$}                %m/s in text
-
-
-
-
-
-
-\usepackage[explicit]{titlesec}
-
-\newcommand*\chapterlabel{}
-\titleformat{\chapter}
-  {\gdef\chapterlabel{}
-  \normalfont\sffamily\fontsize{42}\bfseries\slshape}
-  {\gdef\chapterlabel{\thechapter\ }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=-4cm] at (current page.north west)
-      {\begin{tikzpicture}[remember picture, overlay]
-    \shade[shading=axis,shading angle=-90] (0,0) rectangle (\paperwidth,4cm);
-        \node[anchor=east,yshift=2cm, xshift=0.8\paperwidth,rectangle
-              ]
-              {\color{black}#1 \color{white}\chapterlabel};
-       \end{tikzpicture}
-      };
-   \end{tikzpicture}
-  }
-\titlespacing*{\chapter}{0pt}{0pt}{50pt}{-40pt}
-
-
-\newcommand*\sectionlabel{}
-\titleformat{\section}
-  {\gdef\sectionlabel{}
-   \normalfont\sffamily\Huge\bfseries\scshape}
-  {\gdef\sectionlabel{\thesection\ }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=2cm, xshift=-5cm] at (current )
-      {\begin{tikzpicture}[remember picture, overlay]
-    \fill[color=siyavula-gray] (0,0)  rectangle (1.2\paperwidth,1.5cm);
-        \node[anchor=west, yshift=0.75cm, xshift=3cm, rectangle, fill=siyavula-gray]
-              {\color{black}#1 };
-       \end{tikzpicture}
-      };
-   \end{tikzpicture}
-  }
-\titlespacing*{\section}{0pt}{120pt}{-40pt}{0pt}
-
-\newcommand*\subsectionlabel{}
-\titleformat{\subsection}
-  {\gdef\subsectionlabel{}
-   \normalfont\sffamily\Large\bfseries\scshape}
-  {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
-  {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=2cm, xshift=-5cm] at (current )
-      {\begin{tikzpicture}[remember picture, overlay]
-    \fill[color=siyavula-gray] (0,0)  rectangle (1.2\paperwidth,1.5cm);
-        \node[anchor=west, yshift=0.75cm, xshift=3cm, rectangle, fill=siyavula-gray]
-              {\color{black}#1 };
-       \end{tikzpicture}
-      };
-   \end{tikzpicture}
-  }
-\titlespacing*{\subsection}{0pt}{120pt}{-40pt}{0pt}
 
