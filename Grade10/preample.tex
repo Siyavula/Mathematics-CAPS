@@ -716,25 +716,25 @@ linecolor=red%
    \normalfont\sffamily\fontsize{32}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-    \node[yshift=-3cm] at (current page.north west)
+    \node[yshift=-6cm] at (current page.north west)
       {\begin{tikzpicture}[remember picture, overlay]
         \shade[left color=white, right color=gray] (0,0) rectangle
           (\paperwidth,6cm);
-        \node[anchor=west,text centered, yshift=1.5cm, xshift=0.2\paperwidth]
+        \node[anchor=west,text centered, yshift=3cm, xshift=0.2\paperwidth]
               {\color{black} #1 \hfill \color{white}\chapterlabel};
        \end{tikzpicture}
       };
    \end{tikzpicture}
   }
-\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+\titlespacing*{\chapter}{0pt}{6cm}{-60pt}
 
 
 
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
-   \normalfont\sffamily\fontsize{22}\bfseries\slshape}
-  {\gdef\sectionlabel{\thesection\ }}{0pt}
+   \normalfont\sffamily\fontsize{22}\bfseries}
+  {\gdef\sectionlabel{\thesection }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west, xshift=-0.4\paperwidth]
       {\begin{tikzpicture}[remember picture, overlay]
@@ -747,3 +747,23 @@ linecolor=red%
    \end{tikzpicture}
   }
 \titlespacing*{\section}{1.5cm}{3cm}{0pt}
+
+
+
+\newcommand*\subsectionlabel{}
+\titleformat{\subsection}
+  {\gdef\subsectionlabel{}
+   \normalfont\sffamily\fontsize{18}\bfseries\slshape}
+  {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.2\paperwidth,1.5cm);
+        \node[anchor=west,text centered ,yshift=0.75cm, xshift=0.3\paperwidth]
+              {\color{black} #1  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\subsection}{1.5cm}{3cm}{0pt}
