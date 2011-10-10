@@ -16,11 +16,11 @@
     \setlength{\marginparwidth}{0pt}
     %\setlength{\}{0pt}
   
-        \usepackage[paper=letterpaper, 
-          lmargin=1in, rmargin=1in, 
-          tmargin=1in, bmargin=1in,
-          twoside,centering,
-          includehead]{geometry}
+    \usepackage[paper=a4, 
+      lmargin=0.2\paperwidth, rmargin=0.1\paperwidth, 
+      tmargin=1in, bmargin=1in,
+      asymmetric,centering,
+      includehead]{geometry}
       
     \usepackage{layouts}
     \usepackage{multicol}
@@ -709,6 +709,7 @@ linecolor=red%
 
 \usepackage{tikz}
 \usepackage[explicit]{titlesec}
+
 \newcommand*\chapterlabel{}
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
@@ -726,3 +727,23 @@ linecolor=red%
    \end{tikzpicture}
   }
 \titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+
+
+
+\newcommand*\sectionlabel{}
+\titleformat{\section}
+  {\gdef\sectionlabel{}
+   \normalfont\sffamily\fontsize{22}\bfseries\slshape}
+  {\gdef\sectionlabel{\thesection\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.2\paperwidth,2cm);
+        \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
+              {\color{black} #1  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\section}{1.5cm}{3cm}{0pt}
