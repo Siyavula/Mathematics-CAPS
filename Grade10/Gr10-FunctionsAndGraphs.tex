@@ -1,39 +1,38 @@
 \chapter{Functions}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
+\setcounter{figure}{0}
+\setcounter{subfigure}{0}
 
-\label{m39337*id231690}Functions are mathematical building blocks for designing machines, predicting natural disasters, curing diseases, understanding world economies and for keeping aeroplanes in the air. Functions can take input from many variables, but always give the same answer, unique to that function. It is the fact that you always get the same answer from a set of inputs that makes functions special.\par 
-\label{m39337*id231697}A major advantage of functions is that they allow us to \textsl{visualise} equations in terms of a \textsl{graph}. A graph is an accurate drawing of a function and is much easier to read than lists of numbers. In this chapter we will learn how to understand and create real valued functions, how to read graphs and how to draw them.\par 
-\label{m39337*id232051}In addition to their use in the problems facing humanity, functions also appear on a day-to-day level, so they are worth learning about. A function is always \textsl{dependent} on one or more variables, like time, distance or a more abstract quantity.\par 
-\label{m39337*cid3}
+Functions are mathematical building blocks for designing machines, predicting natural disasters, curing diseases, understanding world economies and for keeping aeroplanes in the air. Functions can take input from many variables, but always give the same answer, unique to that function. It is the fact that you always get the same answer from a set of inputs that makes functions special.\par 
+A major advantage of functions is that they allow us to visualise equations in terms of a graph. A graph is an accurate drawing of a function and is much easier to read than lists of numbers. In this chapter we will learn how to understand and create real valued functions, how to read graphs and how to draw them.\par 
+In addition to their use in the problems facing humanity, functions also appear on a day-to-day level, so they are worth learning about. A function is always dependent on one or more variables, like time, distance or a more abstract quantity.\par 
+
 \subsection*{Functions in the real world}
 \nopagebreak
-\label{m39337*id232071}Some typical examples of functions you may already have met
+Some typical examples of functions you may already have met
 include:-\par 
-\label{m39337*id232074
-}\begin{itemize}[noitemsep]
-\label{m39337*uid1}\item how much money you have, as a function of time. You never have more than one amount of money at any time because you can always add everything to give one number. By understanding how your money changes over time, you can plan to spend your money sensibly. Businesses find it very useful to \textsl{plot the graph} of their money over time so that they can see when they are spending too much. Such observations are not always obvious from looking at the numbers alone.
-\label{m39337*uid2}\item the temperature is a very complicated function because it has so many inputs, including; the time of day, the season, the amount of clouds in the sky, the strength of the wind, where you are and many more. But the important thing is that there is only one temperature when you measure it in a specific place. By understanding how the temperature is effected by these things, you can plan
+\begin{itemize}[noitemsep]
+\item how much money you have, as a function of time. You never have more than one amount of money at any time because you can always add everything to give one number. By understanding how your money changes over time, you can plan to spend your money sensibly. Businesses find it very useful to plot the graph of their money over time so that they can see when they are spending too much. Such observations are not always obvious from looking at the numbers alone.
+\item the temperature is a very complicated function because it has so many inputs, including; the time of day, the season, the amount of clouds in the sky, the strength of the wind, where you are and many more. But the important thing is that there is only one temperature when you measure it in a specific place. By understanding how the temperature is effected by these things, you can plan
 for the day.
-\label{m39337*uid3}\item where you are is a function of time, because you cannot be in two places at once! If you were to \textsl{plot the graphs} of where two people are as a function of time, if the lines cross it means that the two people meet each other at that time. This idea is used in \textsl{logistics}, an area of mathematics that tries to plan where people and items are for businesses.
-\label{m39337*uid4}\item your weight is a function of how much you eat and how much exercise you do, but everybody has a different function so that is why people are all different sizes.
+\item where you are is a function of time, because you cannot be in two places at once! If you were to plot the graphs of where two people are as a function of time, if the lines cross it means that the two people meet each other at that time. This idea is used in logistics, an area of mathematics that tries to plan where people and items are for businesses.
+\item your weight is a function of how much you eat and how much exercise you do, but everybody has a different function so that is why people are all different sizes.
 \end{itemize}
-\label{m39337*cid4}
+
 \section{Basic functions}
 \nopagebreak
-\label{m39337*id235621}There are many characteristics of graphs that help describe the graph of any function. These properties will be described in this chapter and are:\par 
-\label{m39337*id235628}
+There are many characteristics of graphs that help describe the graph of any function. These properties will be described in this chapter and are:\par 
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39337*uid31}\item dependent and independent variables
-\label{m39337*uid32}\item domain and range
-\label{m39337*uid33}\item intercepts with axes
-\label{m39337*uid34}\item turning points
-\label{m39337*uid35}\item asymptotes
-\label{m39337*uid36}\item lines of symmetry
-\label{m39337*uid37}\item intervals on which the function increases/decreases
-\label{m39337*uid38}\item continuous nature of the function
+\item dependent and independent variables
+\item domain and range
+\item intercepts with axes
+\item turning points
+\item asymptotes
+\item lines of symmetry
+\item intervals on which the function increases/decreases
+\item continuous nature of the function
 \end{enumerate}
-\label{m39337*id235730}Some of these words may be unfamiliar to you, but each will be clearly described. Examples of these properties are shown in Figure~\ref{fig:mf:characteristics}.
+Some of these words may be unfamiliar to you, but each will be clearly described. Examples of these properties are shown in Figure~\ref{fig:mf:characteristics}.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -44,12 +43,12 @@ for the day.
 \psplot[arrows=<->]{-2.35}{2.35}{x 3 exp 4 x mul sub 0.5 add}
 \uput[r](2.5,3){$f(x)$}
 \psdots(0,0.5)(-2.07,0)(1.93,0)(1.155,-2.579)(-1.155,3.579)(0.13,0)
-\uput[ur](0,0.5){A}
-\uput[ul](-2,0){B}
-\uput[ur](2,0){C}
-\uput[dr](1.155,-2.579){D}
-\uput[ur](-1.155,3.579){E}
-\uput[ur](0.11,0){F}}
+\uput[ur](0,0.5){$A$}
+\uput[ul](-2,0){$B$}
+\uput[ur](2,0){$C$}
+\uput[dr](1.155,-2.579){$D$}
+\uput[ur](-1.155,3.579){$E$}
+\uput[ur](0.11,0){$F$}}
 \rput(4,0){\psaxes{<->}(0,0)(-3.9,-4)(3.9,4)
 \psplot[arrows=<->]{-3.5}{-0.1}{x -1 exp x add 0.25 mul}
 \psplot[arrows=<->]{0.1}{3.5}{x -1 exp x add 0.25 mul}
@@ -62,9 +61,9 @@ for the day.
 
 
 \begin{tabular}{|c|c|}\hline
-A& $y$-intercept\\\hline
-B, C, F & $x$-intercept\\\hline
-D, E & turning points\\\hline
+$A$& $y$-intercept\\\hline
+$B$, $C$, $F$ & $x$-intercept\\\hline
+$D$, $E$ & turning points\\\hline
 \end{tabular}
 
 \caption{(a) Example graphs showing the characteristics of a function. (b) Example graph showing asymptotes of a function.}
@@ -72,112 +71,121 @@ D, E & turning points\\\hline
 \end{center}
 \end{figure}
 
-\label{m39337*uid40}
+
 \subsection*{Dependent and independent variables}
 \nopagebreak
-\label{m39337*id235764}Thus far, all the graphs you have drawn have needed two values, an $x$-value and a $y$-value. The $y$-value is usually determined from some relation based on a given or chosen $x$-value. These values are given special names in mathematics. The given or chosen $x$-value is known as the \textsl{independent} variable, because its value can be chosen freely. The calculated $y$-value is known as the \textsl{dependent} variable, because its value depends on the chosen $x$-value.\par 
-\label{m39337*uid41}
+Thus far, all the graphs you have drawn have needed two values, an $x$-value and a $y$-value. The $y$-value is usually determined from some relation based on a given or chosen $x$-value. These values are given special names in mathematics. The given or chosen $x$-value is known as the independent variable, because its value can be chosen freely. The calculated $y$-value is known as the dependent variable, because its value depends on the chosen $x$-value.\par 
+
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39337*id235855}The \textsl{domain} of a relation is the set of all the $x$ values for which there exists at least one $y$ value according to that relation. The \textsl{range} is the set of all the $y$ values, which can be obtained using at least one $x$ value.\par 
-\label{m39337*id235908}If the relation is of height to people, then the domain is all living people, while the range would be about 0,1 to 3 metres --- no living person can have a height of 0m, and while strictly it's not impossible to be taller than 3 metres, no one alive is. An important aspect of this range is that it does not contain \textsl{all} the numbers between 0,1 and 3, but at most six billion of them (as many as there are people).\par 
-\label{m39337*id235939}As another example, suppose $x$ and $y$ are real valued variables, and we have the relation $y={2}^{x}$. Then for \textsl{any} value of $x$, there is a value of $y$, so the domain of this relation is the whole set of real numbers. However, we know that no matter what value of $x$ we choose, ${2}^{x}$ can never be less than or equal to 0. Hence the range of this function is all the real numbers strictly greater than zero.\par 
-\label{m39337*id236030}These are two ways of writing the domain and range of a function, \textsl{set notation} and \textsl{interval notation}. Both notations are used in mathematics, so you should be familiar with each.\par 
-\label{m39337*uid42}
+The domain of a relation is the set of all the $x$ values for which there exists at least one $y$ value according to that relation. The range is the set of all the $y$ values, which can be obtained using at least one $x$ value.\par 
+If the relation is of height to people, then the domain is all living people, while the range would be about $0,1$ to $3$ metres --- no living person can have a height of $0~\emm$, and while strictly it's not impossible to be taller than $3~\emm$, no one alive is. An important aspect of this range is that it does not contain all the numbers between $0,1$ and $3$, but at most six billion of them (as many as there are people).\par 
+As another example, suppose $x$ and $y$ are real valued variables, and we have the relation $y={2}^{x}$. Then for any value of $x$, there is a value of $y$, so the domain of this relation is the whole set of real numbers. However, we know that no matter what value of $x$ we choose, ${2}^{x}$ can never be less than or equal to $0$. Hence the range of this function is all the real numbers strictly greater than zero.\par 
+These are two ways of writing the domain and range of a function, set notation and interval notation. Both notations are used in mathematics, so you should be familiar with each.\par 
+
 \subsection*{Set notation}
 \nopagebreak
-\label{m39337*id236056}A set of certain $x$ values has the following form:\par 
-\label{m39337*uid43}\nopagebreak\noindent{}
+A set of certain $x$ values has the following form:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-x:\mbox{conditions,more conditions}
-\end{equation}
-\label{m39337*id236100}We read this notation as ``the set of all $x$ values where all the conditions are satisfied''. For example, the set of all positive real numbers can be written as $\{x:x\in \mathbb{R},x\greatthan{}0\}$ which reads as ``the set of all $x$ values where $x$ is a real number and is greater than zero''.\par 
-\label{m39337*uid44}
+x:\mbox{conditions, more conditions}
+\end{equation*}
+We read this notation as ``the set of all $x$ values where all the conditions are satisfied''. For example, the set of all positive real numbers can be written as $\{x:x\in \mathbb{R},x>0\}$ which reads as ``the set of all $x$ values where $x$ is a real number and is greater than zero''.\par 
+
 \subsection*{Interval notation}
 \nopagebreak
-\label{m39337*id236181}Here we write an interval in the form '\textsl{lower bracket, lower number, comma, upper number, upper bracket}'. We can use two types of brackets, square ones $\left[;\right]$ or round ones $\left(;\right)$. A square bracket means including the number at the end of the interval whereas a round bracket means excluding the number at the end of the interval. It is important to note that this notation can only be used for all real numbers in an interval. It cannot be used to describe integers in an interval or rational numbers in an interval.\par 
-\label{m39337*id236225}So if $x$ is a real number greater than 2 and less than or equal to 8, then $x$ is any number in the interval\par 
-\label{m39337*uid45}\nopagebreak\noindent{}
+Here we write an interval in the form 'lower bracket, lower number, comma, upper number, upper bracket'. We can use two types of brackets, square ones $[;]$ or round ones $(;)$. A square bracket means including the number at the end of the interval whereas a round bracket means excluding the number at the end of the interval. It is important to note that this notation can only be used for all real numbers in an interval. It cannot be used to describe integers in an interval or rational numbers in an interval.\par 
+So if $x$ is a real number greater than $2$ and less than or equal to $8$, then $x$ is any number in the interval\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\left(2;8\right)
-\end{equation}
-\label{m39337*id236274}It is obvious that 2 is the lower number and 8 the upper number. The round bracket means 'excluding 2', since $x$ is greater than 2, and the square bracket means 'including 8' as $x$ is less than or equal to 8.\par 
-\label{m39337*uid46}
+(2;8)
+\end{equation*}
+It is obvious that $2$ is the lower number and $8$ the upper number. The round bracket means 'excluding $2$', since $x$ is greater than $2$, and the square bracket means 'including $8$' as $x$ is less than or equal to $8$.\par 
+
 \subsection*{Intercepts with the axes}
 \nopagebreak
-\label{m39337*id236308}The \textsl{intercept} is the point at which a graph intersects an axis. The $x$-intercepts are the points at which the graph cuts the $x$-axis and the $y$-intercepts are the points at which the graph cuts the $y$-axis.\par 
-\label{m39337*id236356}In Figure~1.3(a), the A is the $y$-intercept and B, C and F are $x$-intercepts.\par 
-\label{m39337*id236384}You \textbf{will} usually need to calculate the intercepts. The two most important things to remember is that at the $x$-intercept, $y=0$ and at the $y$-intercept, $x=0$.\par 
-\label{m39337*id236442}For example, calculate the intercepts of $y=3x+5$. For the $y$-intercept, $x=0$. Therefore the $y$-intercept is ${y}_{int}=3\left(0\right)+5=5$. For the $x$-intercept, $y=0$. Therefore the $x$-intercept is found from $0=3{x}_{int}+5$, giving ${x}_{int}=-\frac{5}{3}$.\par 
-\label{m39337*uid47}
+The intercept is the point at which a graph intersects an axis. The $x$-intercepts are the points at which the graph cuts the $x$-axis and the $y$-intercepts are the points at which the graph cuts the $y$-axis.\par 
+In Figure~\ref{fig:mf:characteristics}(a), the $A$ is the $y$-intercept and $B$, $C$ and $F$ are $x$-intercepts.\par 
+You will usually need to calculate the intercepts. The two most important things to remember are that at the $x$-intercept, $y=0$ and at the $y$-intercept, $x=0$.\par 
+For example, calculate the intercepts of $y=3x+5$. For the $y$-intercept, $x=0$. Therefore the $y$-intercept is ${y}_{int}=3(0)+5=5$. For the $x$-intercept, $y=0$. Therefore the $x$-intercept is found from $0=3{x}_{int}+5$, giving ${x}_{int}=-\frac{5}{3}$.\par 
+
 \subsection*{Turning points}
 \nopagebreak
-\label{m39337*id236645}Turning points only occur for graphs of functions whose highest power is greater than 1. For example, graphs of the following functions will have turning points.\par 
-\label{m39337*id236652}\nopagebreak\noindent{}
+Turning points only occur for graphs of functions whose highest power is greater than $1$. For example, graphs of the following functions will have turning points.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill f\left(x\right)& =& 2{x}^{2}-2\hfill \\ \hfill g\left(x\right)& =& {x}^{3}-2{x}^{2}+x-2\hfill \\ \hfill h\left(x\right)& =& \frac{2}{3}{x}^{4}-2\hfill \end{array}\tag{1.7}
-\end{equation}
-\label{m39337*id236788}There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. These are shown in Figure~1.4.\par 
-\setcounter{subfigure}{0}
+\begin{array}{ccc}\hfill f(x)& =& 2{x}^{2}-2\hfill \\ 
+\hfill g(x)& =& {x}^{3}-2{x}^{2}+x-2\hfill \\ 
+\hfill h(x)& =& \frac{2}{3}{x}^{4}-2\hfill \end{array}
+\end{equation*}
+There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. These are shown in Figure~\ref{m39337*uid48!!!underscore!!!printimage}.\par 
+
+% \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*uid48}
 \begin{center}
 \rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39337*uid48!!!underscore!!!media}\label{m39337*uid48!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39337_MG10C11_035.png} % m39337;MG10C11\_035.png;;;6.0;8.5;
+\includegraphics[width=300px]{col11306.imgs/m39337_MG10C11_035.png} % m39337;MG10C11\_035.png;;;6.0;8.5;
 \vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.4: }(a) Maximal turning point. (b) Minimal turning point.
-\end{cnxcaption}
+\vspace{\rubberspace}\par 
+\caption{(a) Maximal turning point. (b) Minimal turning point.}
+\label{m39337*uid48!!!underscore!!!printimage}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39337*id236816}In Figure~1.3(a), E is a maximal turning point and D is a minimal turning point.\par 
-\label{m39337*uid49}
+
+In Figure~\ref{fig:mf:characteristics}(a), $E$ is a maximal turning point and $D$ is a minimal turning point.\par 
+
 \subsection*{Asymptotes}
 \nopragebreak
-\label{m39337*id236837}An asymptote is a straight or curved line, which the graph of a function will approach, but never touch.\par 
-\label{m39337*id236844}In Figure~1.3(b), the $y$-axis and line $h$ are both asymptotes as the graph approaches both these lines, but never touches them.\par 
-\label{m39337*uid50}
+An asymptote is a straight or curved line, which the graph of a function will approach, but never touch.\par 
+In Figure~\ref{fig:mf:characteristics}(b), the $y$-axis and line $h$ are both asymptotes as the graph approaches both these lines, but never touches them.\par 
+
 \subsection*{Lines of symmetry}
 \nopagebreak
-\label{m39337*id236883}Graphs look the same on either side of lines of symmetry. These lines may include the $x$- and $y$- axes. For example, in Figure~1.5 is symmetric about the $y$-axis. This is described as the axis of symmetry. Not every graph will have a line of symmetry.\par 
+Graphs look the same on either side of lines of symmetry. These lines may include the $x$- and $y$- axes. For example, in Figure~\ref{m39337*uid51!!!underscore!!!printimage} is symmetric about the $y$-axis. This is described as the axis of symmetry. Not every graph will have a line of symmetry.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*uid51}
 \begin{center}
 \rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39337*uid51!!!underscore!!!media}\label{m39337*uid51!!!underscore!!!printimage}\includegraphics[width=150px]{col11306.imgs/m39337_MG10C11_036.png} % m39337;MG10C11\_036.png;;;6.0;8.5;
+\includegraphics[width=150px]{col11306.imgs/m39337_MG10C11_036.png} % m39337;MG10C11\_036.png;;;6.0;8.5;
 \vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.5: }Demonstration of axis of symmetry. The $y$-axis is an axis of symmetry, because the graph looks the same on both sides of the $y$-axis.
-\end{cnxcaption}
+\vspace{\rubberspace}\par 
+\caption{Demonstration of axis of symmetry. The $y$-axis is an axis of symmetry, because the graph looks the same on both sides of the $y$-axis.}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
+\label{m39337*uid51!!!underscore!!!printimage}
 \end{center}
 \end{figure}       
-\label{m39337*uid52}
+
 \subsection*{Intervals on which the function increases/decreases}
 \nopagebreak
-\label{m39337*id236961}In the discussion of turning points, we saw that the graph of a function can start or stop increasing or decreasing at a turning point. If the graph in Figure~1.3(a) is examined, we find that the values of the graph increase and decrease over different intervals. We see that the graph increases (i.e. that the $y$-values increase) from -$\infty $ to point E, then it decreases (i.e. the $y$-values decrease) from point E to point D and then it increases from point D to +$\infty $.\par 
-\label{m39337*uid53}
+In the discussion of turning points, we saw that the graph of a function can start or stop increasing or decreasing at a turning point. If the graph in Figure~\ref{fig:mf:characteristics}(a) is examined, we find that the values of the graph increase and decrease over different intervals. We see that the graph increases (i.e. that the $y$-values increase) from -$\infty $ to point $E$, then it decreases (i.e. the $y$-values decrease) from point $E$ to point $D$ and then it increases from point $D$ to $+ \infty $.\par 
+
 \subsection*{Discrete or continuous nature of the graph}
 \nopagebreak
-\label{m39337*id237022}A graph is said to be continuous if there are no breaks in the graph. For example, the graph in Figure~1.3(a) can be described as a continuous graph, while the graph in Figure~1.3(b) has a break around the asymptotes which means that it is not continuous.
-In Figure~1.3(b), it is clear that the graph does have a break in it around the asymptote.\par 
-\label{m39337*secfhsst!!!underscore!!!id796}
-\begin{exercises}{Domain and range }
- {\nopagebreak
-\label{m39337*id237058}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39337*uid54}\item The domain of the function $f\left(x\right)=2x+5$ is -3; -3; -3; 0. Determine the range of $f$.
-\label{m39337*uid55}\item If $g\left(x\right)=-{x}^{2}+5$ and $x$ is between - 3 and 3, determine:
-\label{m39337*id237164}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39337*uid56}\item the domain of $g\left(x\right)$\label{m39337*uid57}\item the range of $g\left(x\right)$\end{enumerate}
-  \label{m39337*uid58}\item On the following graph label:
-\label{m39337*id237234}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39337*uid59}\item the $x$-intercept(s)
-\label{m39337*uid60}\item the $y$-intercept(s)
-\label{m39337*uid61}\item regions where the graph is increasing
-\label{m39337*uid62}\item regions where the graph is decreasing
-\end{enumerate}
+A graph is said to be continuous if there are no breaks in the graph. For example, the graph in Figure~\ref{fig:mf:characteristics}(a) can be described as a continuous graph, while the graph in Figure~\ref{fig:mf:characteristics}(b) has a break around the asymptotes which means that it is not continuous.
+In Figure~\ref{fig:mf:characteristics}(b), it is clear that the graph does have a break in it around the asymptote.\par 
+
+
+\begin{exercises}{}
+{\nopagebreak
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item The domain of the function $f(x)=2x+5$ is $-3$; $-3$; $-3$; $0$. Determine the range of $f$.
+\item If $g(x)=-{x}^{2}+5$ and $x$ is between $-3$ and $3$, determine:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item the domain of $g(x)$
+    \item the range of $g(x)$
+    \end{enumerate}
+\item On the following graph label:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item the $x$-intercept(s)
+    \item the $y$-intercept(s)
+    \item regions where the graph is increasing
+    \item regions where the graph is decreasing
+    \end{enumerate}
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*id237308}
 \begin{center}
@@ -185,13 +193,16 @@ In Figure~1.3(b), it is clear that the graph does have a break in it around the 
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}               \label{m39337*uid63}\item On the following graph label:
-\label{m39337*id237327}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39337*uid64}\item the $x$-intercept(s)
-\label{m39337*uid65}\item the $y$-intercept(s)
-\label{m39337*uid66}\item regions where the graph is increasing
-\label{m39337*uid67}\item regions where the graph is decreasing
-\end{enumerate}
+\end{figure}               
+
+\item On the following graph label:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item the $x$-intercept(s)
+    \item the $y$-intercept(s)
+    \item regions where the graph is increasing
+    \item regions where the graph is decreasing
+    \end{enumerate}
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*id237401}
 \begin{center}
@@ -199,8 +210,9 @@ In Figure~1.3(b), it is clear that the graph does have a break in it around the 
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}               \end{enumerate}
-\label{m39337**end}
+\end{figure}               
+\end{enumerate}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lxY  &  (2.) lxg  &  (3.) lx4  &  (4.) lx2  & \end{tabular}
@@ -214,11 +226,13 @@ In Figure~1.3(b), it is clear that the graph does have a break in it around the 
 %     
 %     
 %     
-\label{m39338*uid68}
+
 \section{Linear functions of the form $y=ax+q$}
 \nopagebreak
+
 \subsection*{Plotting the graph}       
-\label{m39338*id237465}Functions with a general form of $y=ax+q$ are called \textsl{straight line} functions. In the equation, $y=ax+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~1.8 for the function $f\left(x\right)=2x+3$.\par 
+Functions with a general form of $y=ax+q$ are called straight line functions. In the equation, $y=ax+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~1.8 for the function $f(x)=2x+3$.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*uid69}
 \begin{center}
@@ -226,28 +240,38 @@ In Figure~1.3(b), it is clear that the graph does have a break in it around the 
 \label{m39338*uid69!!!underscore!!!media}\label{m39338*uid69!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39338_MG10C11_005.png} % m39338;MG10C11\_005.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.8: }Graph of $f\left(x\right)=2x+3$
+\small \textbf{Figure 1.8: }Graph of $f(x)=2x+3$
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39338*secfhsst!!!underscore!!!id833}
+
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
-\label{m39338*id237639}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39338*uid70}\item On the same set of axes, plot the following graphs:
-\label{m39338*id237654}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39338*uid71}\item $a\left(x\right)=x-2$\label{m39338*uid72}\item $b\left(x\right)=x-1$\label{m39338*uid73}\item $c\left(x\right)=x$\label{m39338*uid74}\item $d\left(x\right)=x+1$\label{m39338*uid75}\item $e\left(x\right)=x+2$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $a(x)=x-2$
+    \item $b(x)=x-1$
+    \item $c(x)=x$
+    \item $d(x)=x+1$
+    \item $e(x)=x+2$
+    \end{enumerate}
 Use your results to deduce the effect of different values of $q$ on the resulting graph.
-\label{m39338*uid76}\item On the same set of axes, plot the following graphs:
-\label{m39338*id237854}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39338*uid77}\item $f\left(x\right)=-2\ensuremath{\cdot}x$\label{m39338*uid78}\item $g\left(x\right)=-1\ensuremath{\cdot}x$\label{m39338*uid79}\item $h\left(x\right)=0\ensuremath{\cdot}x$\label{m39338*uid80}\item $j\left(x\right)=1\ensuremath{\cdot}x$\label{m39338*uid81}\item $k\left(x\right)=2\ensuremath{\cdot}x$\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $f(x)=-2\ensuremath{\cdot}x$
+    \item $g(x)=-1\ensuremath{\cdot}x$
+    \item $h(x)=0\ensuremath{\cdot}x$
+    \item $j(x)=1\ensuremath{\cdot}x$\item $k(x)=2\ensuremath{\cdot}x$
+    \end{enumerate}
 Use your results to deduce the effect of different values of $a$ on the resulting graph.
 \end{enumerate}
-\label{m39338*id238062}You may have noticed that the value of $a$ affects the slope of the graph. As $a$ increases, the slope of the graph increases. If $a\greatthan{}0$ then the graph increases from left to right (slopes upwards). If $a\lessthan{}0$ then the graph increases from right to left (slopes downwards). For this reason, $a$ is referred to as the \textsl{slope} or \textsl{gradient} of a straight-line function.\par 
-\label{m39338*id238136}You should have also found that the value of $q$ affects where the graph passes through the $y$-axis. For this reason, $q$ is known as the \textsl{y-intercept}.\par 
-\label{m39338*id238175}These different properties are summarised in Table 1.7.\par 
+
+You may have noticed that the value of $a$ affects the slope of the graph. As $a$ increases, the slope of the graph increases. If $a>0$ then the graph increases from left to right (slopes upwards). If $a<0$ then the graph increases from right to left (slopes downwards). For this reason, $a$ is referred to as the slope or gradient of a straight-line function.\par 
+You should have also found that the value of $q$ affects where the graph passes through the $y$-axis. For this reason, $q$ is known as the y-intercept.\par 
+These different properties are summarised in Table 1.7.\par 
 % \textbf{m39338*uid82}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -301,12 +325,12 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -314,7 +338,7 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -344,7 +368,7 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -377,47 +401,50 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 %\end{table}
 \par
 \subsection*{Discovering the characteristics} 
-\label{m39338*uid83}
+
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39338*id238381}For $f\left(x\right)=ax+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f\left(x\right)$ is undefined.\par 
-\label{m39338*id238474}The range of $f\left(x\right)=ax+q$ is also $\{f\left(x\right):f\left(x\right)\in \mathbb{R}\}$ because there is no value of $f\left(x\right)\in \mathbb{R}$ for which $f\left(x\right)$ is undefined.\par 
-\label{m39338*id238584}For example, the domain of $g\left(x\right)=x-1$ is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $g\left(x\right)$ is undefined. The range of $g\left(x\right)$ is $\{g\left(x\right):g\left(x\right)\in \mathbb{R}\}$.\par 
-\label{m39338*uid84}
+For $f(x)=ax+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
+The range of $f(x)=ax+q$ is also $\{f(x):f(x)\in \mathbb{R}\}$ because there is no value of $f(x)\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
+For example, the domain of $g(x)=x-1$ is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $g(x)$ is undefined. The range of $g(x)$ is $\{g(x):g(x)\in \mathbb{R}\}$.\par 
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39338*id238738}For functions of the form, $y=ax+q$, the details of calculating the intercepts with the $x$ and $y$ axis are given.\par 
-\label{m39338*id238783}The $y$-intercept is calculated as follows:\par 
-\label{m39338*uid85}\nopagebreak\noindent{}
+For functions of the form, $y=ax+q$, the details of calculating the intercepts with the $x$ and $y$ axis are given.\par 
+The $y$-intercept is calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array*}{ccc}\hfill y& =& ax+q\hfill \\ \hfill {y}_{int}& =& a\left(0\right)+q\hfill \\ & =& q\hfill \end{array}\tag{1.8}
-\end{equation}
-\label{m39338*id238884}For example, the $y$-intercept of $g\left(x\right)=x-1$ is given by setting $x=0$ to get:\par 
-\label{m39338*id238939}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& ax+q\hfill \\ \hfill {y}_{int}& =& a(0)+q\hfill \\ & =& q\hfill \end{array}
+\end{equation*}
+For example, the $y$-intercept of $g(x)=x-1$ is given by setting $x=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill g\left(x\right)& =& x-1\hfill \\ \hfill {y}_{int}& =& 0-1\hfill \\ & =& -1\hfill \end{array}\tag{1.9}
-\end{equation}
-\label{m39338*id239023}The $x$-intercepts are calculated as follows:\par 
-\label{m39338*uid86}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill g(x)& =& x-1\hfill \\ \hfill {y}_{int}& =& 0-1\hfill \\ & =& -1\hfill \end{array}
+\end{equation*}
+The $x$-intercepts are calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& ax+q\hfill \\ \hfill 0& =& a\ensuremath{\cdot}{x}_{int}+q\hfill \\ \hfill a\ensuremath{\cdot}{x}_{int}& =& -q\hfill \\ \hfill {x}_{int}& =& -\frac{q}{a}\hfill \end{array}\tag{1.10}
-\end{equation}
-\label{m39338*id239181}For example, the $x$-intercepts of $g\left(x\right)=x-1$ is given by setting $y=0$ to get:\par 
-\label{m39338*id239235}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& ax+q\hfill \\ \hfill 0& =& a\ensuremath{\cdot}{x}_{int}+q\hfill \\ \hfill a\ensuremath{\cdot}{x}_{int}& =& -q\hfill \\ \hfill {x}_{int}& =& -\frac{q}{a}\hfill \end{array}
+\end{equation*}
+For example, the $x$-intercepts of $g(x)=x-1$ is given by setting $y=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill g\left(x\right)& =& x-1\hfill \\ \hfill 0& =& {x}_{int}-1\hfill \\ \hfill {x}_{int}& =& 1\hfill \end{array}\tag{1.11}
-\end{equation}
-\subsection*{Sketching graphs of the form $f\left(x\right)=ax+q$}
+\begin{array}{ccc}\hfill g(x)& =& x-1\hfill \\ \hfill 0& =& {x}_{int}-1\hfill \\ \hfill {x}_{int}& =& 1\hfill \end{array}
+\end{equation*}
+
+\subsection*{Sketching graphs of the form $f(x)=ax+q$}
 \nopagebreak
-\label{m39338*id239401}In order to sketch graphs of the form, $f\left(x\right)=ax+q$, we need to determine three characteristics:\par 
-\label{m39338*id239434}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39338*uid90}\item sign of $a$\label{m39338*uid91}\item $y$-intercept
-\label{m39338*uid92}\item $x$-intercept
+In order to sketch graphs of the form, $f(x)=ax+q$, we need to determine three characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $a$
+\item $y$-intercept
+\item $x$-intercept
 \end{enumerate}
-\label{m39338*id239497}Only two points are needed to plot a straight line graph. The easiest points to use are the \textsl{$x$-intercept} (where the line cuts the $x$-axis) and the $y$-intercept.\par 
-\label{m39338*id239534}For example, sketch the graph of $g\left(x\right)=x-1$. Mark the intercepts.\par 
-\label{m39338*id239565}Firstly, we determine that $a\greatthan{}0$. This means that the graph will have an upward slope.\par 
-\label{m39338*id239585}The $y$-intercept is obtained by setting $x=0$ and was calculated earlier to be ${y}_{int}=-1$. The $x$-intercept is obtained by setting $y=0$ and was calculated earlier to be ${x}_{int}=1$.\par 
+Only two points are needed to plot a straight line graph. The easiest points to use are the $x$-intercept (where the line cuts the $x$-axis) and the $y$-intercept.\par 
+For example, sketch the graph of $g(x)=x-1$. Mark the intercepts.\par 
+Firstly, we determine that $a>0$. This means that the graph will have an upward slope.\par 
+The $y$-intercept is obtained by setting $x=0$ and was calculated earlier to be ${y}_{int}=-1$. The $x$-intercept is obtained by setting $y=0$ and was calculated earlier to be ${x}_{int}=1$.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*uid93}
 \begin{center}
@@ -425,12 +452,13 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 \label{m39338*uid93!!!underscore!!!media}\label{m39338*uid93!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39338_MG10C11_010.png} % m39338;MG10C11\_010.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.13: }Graph of the function $g\left(x\right)=x-1$
+\small \textbf{Figure 1.13: }Graph of the function $g(x)=x-1$
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
+
 \par
 \label{m39338*secfhsst!!!underscore!!!id1252}\vspace{.5cm} 
 \noindent
@@ -441,21 +469,24 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 \label{m39338*probfhsst!!!underscore!!!id1253}
 \label{m39338*id239737}Draw the graph of $y=2x+2$ \par 
 \vspace{5pt}
-\label{m39338*solfhsst!!!underscore!!!id1256}\noindent\textbf{Solution to Exercise } \label{m39338*listfhsst!!!underscore!!!id1256}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-\leftskip=20pt\rightskip=\leftskip\item  
-\label{m39338*id239781}To find the intercept on the y-axis, let $x=0$\par 
-\label{m39338*id239801}\nopagebreak\noindent{}
-\begin{equation*}
-\begin{array}{ccc}\hfill y& =& 2\left(0\right)+2\hfill \\ & =& 2\hfill \end{array}\tag{1.12}
-\end{equation}
+\label{m39338*solfhsst!!!underscore!!!id1256}\noindent\textbf{Solution to Exercise } \label{m39338*listfhsst!!!underscore!!!id1256}
+
+\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+leftskip=20pt\rightskip=skip
 \item  
-\label{m39338*id239855}For the intercept on the x-axis, let $y=0$\par 
-\label{m39338*id239875}\nopagebreak\noindent{}
+To find the intercept on the y-axis, let $x=0$\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill 0& =& 2x+2\hfill \\ \hfill 2x& =& -2\hfill \\ \hfill x& =& -1\hfill \end{array}\tag{1.13}
-\end{equation}
+\begin{array}{ccc}\hfill y& =& 2(0)+2\hfill \\ & =& 2\hfill \end{array}
+\end{equation*}
 \item  
-\label{m39338*id239955}
+For the intercept on the x-axis, let $y=0$\par 
+\nopagebreak\noindent{}
+\begin{equation*}
+\begin{array}{ccc}\hfill 0& =& 2x+2\hfill \\ \hfill 2x& =& -2\hfill \\ \hfill x& =& -1\hfill \end{array}
+\end{equation*}
+\item  
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*id239959}
 \begin{center}
@@ -470,15 +501,19 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 \end{mdframed}
 }
 \noindent
-\label{m39338*secfhsst!!!underscore!!!id1359}
+
 \begin{exercises}{ }
 {
 \nopagebreak
-\label{m39338*id239994}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39338*uid94}\item List the $y$-intercepts for the following straight-line graphs:
-\label{m39338*id240020}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39338*uid95}\item $y=x$\label{m39338*uid96}\item $y=x-1$\label{m39338*uid97}\item $y=2x-1$\label{m39338*uid98}\item $y+1=2x$\end{enumerate}
-  \label{m39338*uid99}\item Give the equation of the illustrated graph below:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item List the $y$-intercepts for the following straight-line graphs:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $y=x$
+    \item $y=x-1$
+    \item $y=2x-1$
+    \item $y+1=2x$
+    \end{enumerate}
+\item Give the equation of the illustrated graph below:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*id240155}
 \begin{center}
@@ -486,10 +521,12 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}               \label{m39338*uid100}\item Sketch the following relations on the same set of axes, clearly indicating the intercepts with the axes as well as the co-ordinates of the point of interception of the graph:
+\end{figure}               
+
+\item Sketch the following relations on the same set of axes, clearly indicating the intercepts with the axes as well as the co-ordinates of the point of interception of the graph:
 $x+2y-5=0$ and $3x-y-1=0$\newline
 \end{enumerate}
-\label{m39338**end}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lxT  &  (2.) lxb  &  (3.) lxj  & \end{tabular}
@@ -503,11 +540,13 @@ $x+2y-5=0$ and $3x-y-1=0$\newline
 %     
 %     
 \par 
-\label{m39345*uid101}
+
 \section{Quadratic functions of the form $y=a{x}^{2}+q$}
 \nopagebreak
+
 \subsection*{Plotting the graph}         
-\label{m39345*id240272}The general shape and position of the graph of the function of the form $f\left(x\right)=a{x}^{2}+q$, called a parabola, is shown in Figure~1.16. These are \textsl{parabolic} functions.\par 
+The general shape and position of the graph of the function of the form $f(x)=a{x}^{2}+q$, called a parabola, is shown in Figure~1.16. These are parabolic functions.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*uid102}
 \begin{center}
@@ -515,26 +554,36 @@ $x+2y-5=0$ and $3x-y-1=0$\newline
 \label{m39345*uid102!!!underscore!!!media}\label{m39345*uid102!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_013.png} % m39345;MG10C11\_013.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.16: }Graph of $f\left(x\right)={x}^{2}-1$.
+\small \textbf{Figure 1.16: }Graph of $f(x)={x}^{2}-1$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39345*secfhsst!!!underscore!!!id1384}
+
 \subsection*{Investigating the effects of a and q }
 \nopagebreak
-\label{m39345*id240398}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39345*uid103}\item On the same set of axes, plot the following graphs:
-\label{m39345*id240413}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39345*uid104}\item $a\left(x\right)=-2\ensuremath{\cdot}{x}^{2}+1$\label{m39345*uid105}\item $b\left(x\right)=-1\ensuremath{\cdot}{x}^{2}+1$\label{m39345*uid106}\item $c\left(x\right)=0\ensuremath{\cdot}{x}^{2}+1$\label{m39345*uid107}\item $d\left(x\right)=1\ensuremath{\cdot}{x}^{2}+1$\label{m39345*uid108}\item $e\left(x\right)=2\ensuremath{\cdot}{x}^{2}+1$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $a(x)=-2\ensuremath{\cdot}{x}^{2}+1$
+    \item $b(x)=-1\ensuremath{\cdot}{x}^{2}+1$
+    \item $c(x)=0\ensuremath{\cdot}{x}^{2}+1$
+    \item $d(x)=1\ensuremath{\cdot}{x}^{2}+1$
+    \item $e(x)=2\ensuremath{\cdot}{x}^{2}+1$
+    \end{enumerate}
 Use your results to deduce the effect of $a$.
-\label{m39345*uid109}\item On the same set of axes, plot the following graphs:
-\label{m39345*id240675}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39345*uid110}\item $f\left(x\right)={x}^{2}-2$\label{m39345*uid111}\item $g\left(x\right)={x}^{2}-1$\label{m39345*uid112}\item $h\left(x\right)={x}^{2}+0$\label{m39345*uid113}\item $j\left(x\right)={x}^{2}+1$\label{m39345*uid114}\item $k\left(x\right)={x}^{2}+2$\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $f(x)={x}^{2}-2$
+    \item $g(x)={x}^{2}-1$
+    \item $h(x)={x}^{2}+0$
+    \item $j(x)={x}^{2}+1$
+    \item $k(x)={x}^{2}+2$
+    \end{enumerate}
 Use your results to deduce the effect of $q$.
 \end{enumerate}
-\label{m39345*eip-81}The effects of $a$ and $q$ are a few examples are what are collectively called \textsl{transformations} of the function $y={x}^{2}$. The effect of $q$ is what is called a \textsl{translation} because all points are moved the same distance in the same direction, specifically a \textsl{vertical} translation (because it slides the graph up and down) of ${x}^{2}$ by $q$ (note that a horizontal translation by $q$ would look like $y=\left(x-q{\right)}^{2}$). The effect of $a$ is what is called \textsl{scaling}. When $a\greatthan{}1$, it is usually called a \textsl{stretch} because the effect on the graph is to stretch it apart, and when $a\lessthan{}1$ (but greater than zero), it is often called a \textsl{shrink} because it makes the graph shrink in on itself. When $a=-1$, it is called a \textsl{reflection}, specifically a \textsl{reflection about the $x$-axis} because the $x$-axis acts as a mirror for the graph. If $a$ is some other negative number, one would refer to it as a \textsl{scaled reflection} (or, alternatively, a 'stretched' or 'shrunk' reflection), because it is reflected and scaled. One often refers to reflections, translations, scaling, etc., as the \textsl{effect} of the transformation on the given function.\par \label{m39345*eip-623}A more in-depth look at transformations can be found here\footnote{\raggedright{}"Geometry - Grade 10 [CAPS]": Section Transformations - Enrichment, not in CAPS <http://http://cnx.org/content/m38381/latest/\#cid6>}. This section on transformations is simply an extension and is not needed for examinations.\par \label{m39345*id240899}
+The effects of $a$ and $q$ are a few examples are what are collectively called transformations of the function $y={x}^{2}$. The effect of $q$ is what is called a translation because all points are moved the same distance in the same direction, specifically a vertical translation (because it slides the graph up and down) of ${x}^{2}$ by $q$ (note that a horizontal translation by $q$ would look like $y=(x-q{)}^{2}$). The effect of $a$ is what is called scaling. When $a>1$, it is usually called a stretch because the effect on the graph is to stretch it apart, and when $a<1$ (but greater than zero), it is often called a shrink because it makes the graph shrink in on itself. When $a=-1$, it is called a reflection, specifically a reflection about the $x$-axis because the $x$-axis acts as a mirror for the graph. If $a$ is some other negative number, one would refer to it as a scaled reflection (or, alternatively, a 'stretched' or 'shrunk' reflection), because it is reflected and scaled. One often refers to reflections, translations, scaling, etc., as the effect of the transformation on the given function.\par A more in-depth look at transformations can be found here\footnote{\raggedright{}"Geometry - Grade 10 [CAPS]": Section Transformations - Enrichment, not in CAPS <http://http://cnx.org/content/m38381/latest/\#cid6>}. This section on transformations is simply an extension and is not needed for examinations.\par 
 Complete the following table of values for the functions $a$ to $k$ to help with drawing the required graphs in this activity:\par 
 % \textbf{m39338*uid82}\par
 \begin{table}[H]
@@ -564,7 +613,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
   % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $a\left(x\right)$
+    $a(x)$
     &
 &
 &
@@ -573,7 +622,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $b\left(x\right)$
+    $b(x)$
     &
 &
 &
@@ -582,7 +631,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $c\left(x\right)$
+    $c(x)$
     &
 &
 &
@@ -591,7 +640,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $d\left(x\right)$
+    $d(x)$
     &
 &
 &
@@ -600,7 +649,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $e\left(x\right)$
+    $e(x)$
     &
 &
 &
@@ -609,7 +658,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $f\left(x\right)$
+    $f(x)$
     &
 &
 &
@@ -618,7 +667,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $g\left(x\right)$
+    $g(x)$
     &
 &
 &
@@ -627,7 +676,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $h\left(x\right)$
+    $h(x)$
     &
 &
 &
@@ -636,7 +685,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $j\left(x\right)$
+    $j(x)$
     &
 &
 &
@@ -645,7 +694,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % make-rowspan-placeholders
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}
 %--------------------------------------------------------------------
-    $k\left(x\right)$
+    $k(x)$
     &
 &
 &
@@ -660,8 +709,8 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 \begin{caption}{\small\bfseries Table 1.8}\end{caption}
 \end{table}
 \par
-\label{m39345*eip-679}This simulation allows you to visualise the effect of changing a and q. Note that in this simulation q = c. Also an extra term bx has been added in. You can leave bx as 0, or you can also see what effect this has on the graph.
-\par \label{m39345*eip-481}
+This simulation allows you to visualise the effect of changing $a$ and q. Note that in this simulation $q = c$. Also an extra term $bx$ has been added in. You can leave $bx$ as $0$, or you can also see what effect this has on the graph.
+\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*Ohms-Law}
 \textnormal{Phet simulation for graphing}\vspace{.1in} \nopagebreak
@@ -669,7 +718,10 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Simulation:  MG10018 )}
 \vspace{2pt}
 \vspace{.1in}
-\end{figure}       \par \label{m39345*id241684}From your graphs, you should have found that $a$ affects whether the graph makes a smile or a frown. If $a\lessthan{}0$, the graph makes a frown and if $a\greatthan{}0$ then the graph makes a smile. This is shown in Figure~1.18.\par 
+\end{figure}       
+
+\par From your graphs, you should have found that $a$ affects whether the graph makes a smile or a frown. If $a<0$, the graph makes a frown and if $a>0$ then the graph makes a smile. This is shown in Figure~1.18.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*uid115}
 \begin{center}
@@ -677,14 +729,15 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 \label{m39345*uid115!!!underscore!!!media}\label{m39345*uid115!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_014.png} % m39345;MG10C11\_014.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.18: }Distinctive shape of graphs of a parabola if $a\greatthan{}0$ and $a\lessthan{}0$.
+\small \textbf{Figure 1.18: }Distinctive shape of graphs of a parabola if $a>0$ and $a<0$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39345*id241776}You should have also found that the value of $q$ affects whether the turning point is to the left of the $y$-axis ($q\greatthan{}0$) or to the right of the $y$-axis ($q\lessthan{}0$).\par 
-\label{m39345*id241837}These different properties are summarised in Table 1.9.\par 
+
+You should have also found that the value of $q$ affects whether the turning point is to the left of the $y$-axis ($q>0$) or to the right of the $y$-axis ($q<0$).\par 
+These different properties are summarised in Table 1.9.\par 
 % \textbf{m39345*uid116}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -738,12 +791,12 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -751,7 +804,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -781,7 +834,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -814,103 +867,111 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 %\end{table}
 \par
 \subsection*{Discovering the characterstics}
-\label{m39345*uid117}
+
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39345*id242046}For $f\left(x\right)=a{x}^{2}+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f\left(x\right)$ is undefined.\par 
-\label{m39345*id242145}The range of $f\left(x\right)=a{x}^{2}+q$ depends on whether the value for $a$ is positive or negative. We will consider these two cases separately.\par 
-\label{m39345*id242193}If $a\greatthan{}0$ then we have:\par 
-\label{m39345*id242213}\nopagebreak\noindent{}
+For $f(x)=a{x}^{2}+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
+The range of $f(x)=a{x}^{2}+q$ depends on whether the value for $a$ is positive or negative. We will consider these two cases separately.\par 
+If $a>0$ then we have:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{cccc}\hfill {x}^{2}& \ge & 0\hfill & \left(\mathrm{The\; square\; of\; an\; expression\; is\; always\; positive}\right)\hfill \\ \hfill a{x}^{2}& \ge & 0\hfill & \left(\mathrm{Multiplication\; by\; a\; positive\; number\; maintains\; the\; nature\; of\; the\; inequality}\right)\hfill \\ \hfill a{x}^{2}+q& \ge & q\hfill & \\ \hfill f\left(x\right)& \ge & q\hfill & \end{array}\tag{1.14}
-\end{equation}
-\label{m39345*id242387}This tells us that for all values of $x$, $f\left(x\right)$ is always greater than $q$. Therefore if $a\greatthan{}0$, the range of $f\left(x\right)=a{x}^{2}+q$ is $\{f\left(x\right):f\left(x\right)\in \left[q,\infty \right)\}$.\par 
-\label{m39345*id242519}Similarly, it can be shown that if $a\lessthan{}0$ that the range of $f\left(x\right)=a{x}^{2}+q$ is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ,q\right]\}$. This is left as an exercise.\par 
-\label{m39345*id242620}For example, the domain of $g\left(x\right)={x}^{2}+2$ is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $g\left(x\right)$ is undefined. The range of $g\left(x\right)$ can be calculated as follows:\par 
-\label{m39345*id242733}\nopagebreak\noindent{}
+\begin{array}{cccc}\hfill {x}^{2}& \ge & 0\hfill & (\mbox{The square of an expression is always positive})\hfill \\ \hfill a{x}^{2}& \ge & 0\hfill & (\mbox{Multiplication by a positive number maintains the nature of the inequality})\hfill \\ \hfill a{x}^{2}+q& \ge & q\hfill & \\ \hfill f(x)& \ge & q\hfill & \end{array}
+\end{equation*}
+This tells us that for all values of $x$, $f(x)$ is always greater than $q$. Therefore if $a>0$, the range of $f(x)=a{x}^{2}+q$ is $\{f(x):f(x)\in [q,\infty )\}$.\par 
+Similarly, it can be shown that if $a<0$ that the range of $f(x)=a{x}^{2}+q$ is $\{f(x):f(x)\in (-\infty ,q]\}$. This is left as an exercise.\par 
+For example, the domain of $g(x)={x}^{2}+2$ is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $g(x)$ is undefined. The range of $g(x)$ can be calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {x}^{2}& \ge & 0\hfill \\ \hfill {x}^{2}+2& \ge & 2\hfill \\ \hfill g\left(x\right)& \ge & 2\hfill \end{array}\tag{1.15}
-\end{equation}
-\label{m39345*id242814}Therefore the range is $\{g\left(x\right):g\left(x\right)\in \left[2,\infty \right)\}$.\par 
-\label{m39345*uid118}
+\begin{array}{ccc}\hfill {x}^{2}& \ge & 0\hfill \\ \hfill {x}^{2}+2& \ge & 2\hfill \\ \hfill g(x)& \ge & 2\hfill \end{array}
+\end{equation*}
+Therefore the range is $\{g(x):g(x)\in [2,\infty )\}$.\par 
+
 \subsection*{ Intercepts}
 \nopagebreak
-\label{m39345*id242875}For functions of the form, $y=a{x}^{2}+q$, the details of calculating the intercepts with the $x$ and $y$ axis is given.\par 
-\label{m39345*id242926}The $y$-intercept is calculated as follows:\par 
-\label{m39345*uid119}\nopagebreak\noindent{}
+For functions of the form, $y=a{x}^{2}+q$, the details of calculating the intercepts with the $x$ and $y$ axis is given.\par 
+The $y$-intercept is calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& a{x}^{2}+q\hfill \\ \hfill {y}_{int}& =& a{\left(0\right)}^{2}+q\hfill \\ & =& q\hfill \end{array}\tag{1.16}
-\end{equation}
-\label{m39345*id243039}For example, the $y$-intercept of $g\left(x\right)={x}^{2}+2$ is given by setting $x=0$ to get:\par 
-\label{m39345*id243099}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& a{x}^{2}+q\hfill \\ \hfill {y}_{int}& =& a{(0)}^{2}+q\hfill \\ & =& q\hfill \end{array}
+\end{equation*}
+For example, the $y$-intercept of $g(x)={x}^{2}+2$ is given by setting $x=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill g\left(x\right)& =& {x}^{2}+2\hfill \\ \hfill {y}_{int}& =& {0}^{2}+2\hfill \\ & =& 2\hfill \end{array}\tag{1.17}
-\end{equation}
-\label{m39345*id243191}The $x$-intercepts are calculated as follows:\par 
-\label{m39345*uid120}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill g(x)& =& {x}^{2}+2\hfill \\ \hfill {y}_{int}& =& {0}^{2}+2\hfill \\ & =& 2\hfill \end{array}
+\end{equation*}
+The $x$-intercepts are calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& a{x}^{2}+q\hfill \\ \hfill 0& =& ax_{int}^{2}+q\hfill \\ \hfill ax_{int}^{2}& =& -q\hfill \\ \hfill {x}_{int}& =& \ensuremath{\pm}\sqrt{-\frac{q}{a}}\hfill \end{array}\tag{1.18}
-\end{equation}
-\label{m39345*id243360}However, (1.18) is only valid if $-\frac{q}{a}\ge 0$ which means that either $q\le 0$ or $a\lessthan{}0$. This is consistent with what we expect, since if $q\greatthan{}0$ and $a\greatthan{}0$ then $-\frac{q}{a}$ is negative and in this case the graph lies above the $x$-axis and therefore does not intersect the $x$-axis. If however, $q\greatthan{}0$ and $a\lessthan{}0$, then $-\frac{q}{a}$ is positive and the graph is hat shaped and should have two $x$-intercepts. Similarly, if $q\lessthan{}0$ and $a\greatthan{}0$ then $-\frac{q}{a}$ is also positive, and the graph should intersect with the $x$-axis.\par 
-\label{m39345*id243593}If $q=0$ then we have one intercept at $x=0$.\par 
-\label{m39345*id243626}For example, the $x$-intercepts of $g\left(x\right)={x}^{2}+2$ is given by setting $y=0$ to get:\par 
-\label{m39345*id243687}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& a{x}^{2}+q\hfill \\ \hfill 0& =& ax_{int}^{2}+q\hfill \\ \hfill ax_{int}^{2}& =& -q\hfill \\ \hfill {x}_{int}& =& \ensuremath{\pm}\sqrt{-\frac{q}{a}}\hfill \end{array}
+\end{equation*}
+However, (1.18) is only valid if $-\frac{q}{a}\ge 0$ which means that either $q\le 0$ or $a<0$. This is consistent with what we expect, since if $q>0$ and $a>0$ then $-\frac{q}{a}$ is negative and in this case the graph lies above the $x$-axis and therefore does not intersect the $x$-axis. If however, $q>0$ and $a<0$, then $-\frac{q}{a}$ is positive and the graph is hat shaped and should have two $x$-intercepts. Similarly, if $q<0$ and $a>0$ then $-\frac{q}{a}$ is also positive, and the graph should intersect with the $x$-axis.\par 
+If $q=0$ then we have one intercept at $x=0$.\par 
+For example, the $x$-intercepts of $g(x)={x}^{2}+2$ is given by setting $y=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill g\left(x\right)& =& {x}^{2}+2\hfill \\ \hfill 0& =& x_{int}^{2}+2\hfill \\ \hfill -2& =& x_{int}^{2}\hfill \end{array}\tag{1.19}
-\end{equation}
-\label{m39345*id243798}which is not real. Therefore, the graph of $g\left(x\right)={x}^{2}+2$ does not have any $x$-intercepts.\par 
-\label{m39345*uid121}
+\begin{array}{ccc}\hfill g(x)& =& {x}^{2}+2\hfill \\ \hfill 0& =& x_{int}^{2}+2\hfill \\ \hfill -2& =& x_{int}^{2}\hfill \end{array}
+\end{equation*}
+which is not real. Therefore, the graph of $g(x)={x}^{2}+2$ does not have any $x$-intercepts.\par 
+
 \subsection*{Turning points}
 \nopagebreak
-\label{m39345*id243854}The turning point of the function of the form $f\left(x\right)=a{x}^{2}+q$ is given by examining the range of the function. We know that if $a\greatthan{}0$ then the range of $f\left(x\right)=a{x}^{2}+q$ is $\{f\left(x\right):f\left(x\right)\in \left[q,\infty \right)\}$ and if $a\lessthan{}0$ then the range of $f\left(x\right)=a{x}^{2}+q$ is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ,q\right]\}$.\par 
-\label{m39345*id244081}So, if $a\greatthan{}0$, then the lowest value that $f\left(x\right)$ can take on is $q$. Solving for the value of $x$ at which $f\left(x\right)=q$ gives:\par 
-\label{m39345*id244157}\nopagebreak\noindent{}
+The turning point of the function of the form $f(x)=a{x}^{2}+q$ is given by examining the range of the function. We know that if $a>0$ then the range of $f(x)=a{x}^{2}+q$ is $\{f(x):f(x)\in [q,\infty )\}$ and if $a<0$ then the range of $f(x)=a{x}^{2}+q$ is $\{f(x):f(x)\in (-\infty ,q]\}$.\par 
+So, if $a>0$, then the lowest value that $f(x)$ can take on is $q$. Solving for the value of $x$ at which $f(x)=q$ gives:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill q& =& ax_{tp}^{2}+q\hfill \\ \hfill 0& =& ax_{tp}^{2}\hfill \\ \hfill 0& =& x_{tp}^{2}\hfill \\ \hfill {x}_{tp}& =& 0\hfill \end{array}\tag{1.20}
-\end{equation}
-\label{m39345*id244283}$\therefore x=0$ at $f\left(x\right)=q$. The co-ordinates of the (minimal) turning point is therefore $\left(0,q\right)$.\par 
-\label{m39345*id244351}Similarly, if $a\lessthan{}0$, then the highest value that $f\left(x\right)$ can take on is $q$ and the co-ordinates of the (maximal) turning point is $\left(0,q\right)$.\par 
-\label{m39345*uid122}
+\begin{array}{ccc}\hfill q& =& ax_{tp}^{2}+q\hfill \\ \hfill 0& =& ax_{tp}^{2}\hfill \\ \hfill 0& =& x_{tp}^{2}\hfill \\ \hfill {x}_{tp}& =& 0\hfill \end{array}
+\end{equation*}
+$\therefore x=0$ at $f(x)=q$. The co-ordinates of the (minimal) turning point is therefore $(0;q)$.\par 
+Similarly, if $a<0$, then the highest value that $f(x)$ can take on is $q$ and the co-ordinates of the (maximal) turning point is $(0;q)$.\par 
+
 \subsection*{Axes of symmetry}
 \nopagebreak
-\label{m39345*id244424}There is one axis of symmetry for the function of the form $f\left(x\right)=a{x}^{2}+q$ that passes through the turning point. Since the turning point lies on the $y$-axis, the axis of symmetry is the $y$-axis.\par 
-\label{m39345*uid123}
-\subsection*{Sketching graphs of the form $f\left(x\right)=a{x}^{2}+q$}
+There is one axis of symmetry for the function of the form $f(x)=a{x}^{2}+q$ that passes through the turning point. Since the turning point lies on the $y$-axis, the axis of symmetry is the $y$-axis.\par 
+
+\subsection*{Sketching graphs of the form $f(x)=a{x}^{2}+q$}
 \nopagebreak
-\label{m39345*id244525}In order to sketch graphs of the form, $f\left(x\right)=a{x}^{2}+q$, we need to determine five characteristics:\par 
-\label{m39345*id244564}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39345*uid124}\item sign of $a$\label{m39345*uid125}\item domain and range
-\label{m39345*uid126}\item turning point
-\label{m39345*uid127}\item $y$-intercept
-\label{m39345*uid128}\item $x$-intercept
+In order to sketch graphs of the form, $f(x)=a{x}^{2}+q$, we need to determine five characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item sign of $a$
+\item domain and range
+\item turning point
+\item $y$-intercept
+\item $x$-intercept
 \end{enumerate}
-\label{m39345*id244652}For example, sketch the graph of $g\left(x\right)=-\frac{1}{2}{x}^{2}-3$. Mark the intercepts, turning point and axis of symmetry.\par 
-\label{m39345*id244698}Firstly, we determine that $a\lessthan{}0$. This means that the graph will have a maximal turning point.\par 
-\label{m39345*id244718}The domain of the graph is $\{x:x\in \mathbb{R}\}$ because $f\left(x\right)$ is defined for all $x\in \mathbb{R}$. The range of the graph is determined as follows:\par 
-\label{m39345*id244783}\nopagebreak\noindent{}
+For example, sketch the graph of $g(x)=-\frac{1}{2}{x}^{2}-3$. Mark the intercepts, turning point and axis of symmetry.\par 
+Firstly, we determine that $a<0$. This means that the graph will have a maximal turning point.\par 
+The domain of the graph is $\{x:x\in \mathbb{R}\}$ because $f(x)$ is defined for all $x\in \mathbb{R}$. The range of the graph is determined as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {x}^{2}& \ge & 0\hfill \\ \hfill -\frac{1}{2}{x}^{2}& \le & 0\hfill \\ \hfill -\frac{1}{2}{x}^{2}-3& \le & -3\hfill \\ \hfill \therefore f\left(x\right)& \le & -3\hfill \end{array}\tag{1.21}
-\end{equation}
-\label{m39345*id244912}Therefore the range of the graph is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ,-3\right]\}$.\par 
-\label{m39345*id244967}Using the fact that the maximum value that $f\left(x\right)$ achieves is -3, then the $y$-coordinate of the turning point is -3. The $x$-coordinate is determined as follows:\par 
-\label{m39345*id245008}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill {x}^{2}& \ge & 0\hfill \\
+ \hfill -\frac{1}{2}{x}^{2}& \le & 0\hfill \\
+ \hfill -\frac{1}{2}{x}^{2}-3& \le & -3\hfill \\
+ \hfill \therefore f(x)& \le & -3\hfill \end{array}
+\end{equation*}
+Therefore the range of the graph is $\{f(x):f(x)\in (-\infty ,-3]\}$.\par 
+Using the fact that the maximum value that $f(x)$ achieves is $-3$, then the $y$-coordinate of the turning point is $-3$. The $x$-coordinate is determined as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill -\frac{1}{2}{x}^{2}-3& =& -3\hfill \\ \hfill -\frac{1}{2}{x}^{2}-3+3& =& 0\hfill \\ \hfill -\frac{1}{2}{x}^{2}& =& 0\hfill \\ \hfill \mathrm{Divide\; both\; sides\; by}-\frac{1}{2}:{\mathrm{x}}^{2}& =& 0\hfill \\ \hfill \mathrm{Take\; square\; root\; of\; both\; sides:}\phantom{\rule{1.pt}{0ex}}\mathrm{x}& =& 0\hfill \\ \hfill \therefore x& =& 0\hfill \end{array}\tag{1.22}
-\end{equation}
-\label{m39345*id245236}The coordinates of the turning point are: $\left(0;-3\right)$.\par 
-\label{m39345*id245263}The $y$-intercept is obtained by setting $x=0$. This gives:\par 
-\label{m39345*id245291}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill -\frac{1}{2}{x}^{2}-3& =& -3\hfill \\ \hfill -\frac{1}{2}{x}^{2}-3+3& =& 0\hfill \\ \hfill -\frac{1}{2}{x}^{2}& =& 0\hfill \\ \hfill \mbox{Divide both sides by}-\frac{1}{2}:{\mbox{x}}^{2}& =& 0\hfill \\ \hfill \mbox{Take square root of both sides:}\phantom{\rule{1.pt}{0ex}}\mathrm{x}& =& 0\hfill \\ \hfill \therefore x& =& 0\hfill \end{array}
+\end{equation*}
+The coordinates of the turning point are: $(0;-3)$.\par 
+The $y$-intercept is obtained by setting $x=0$. This gives:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {y}_{int}& =& -\frac{1}{2}{\left(0\right)}^{2}-3\hfill \\ & =& -\frac{1}{2}\left(0\right)-3\hfill \\ & =& -3\hfill \end{array}\tag{1.23}
-\end{equation}
-\label{m39345*id245397}The $x$-intercept is obtained by setting $y=0$. This gives:\par 
-\label{m39345*id245426}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill {y}_{int}& =& -\frac{1}{2}{(0)}^{2}-3\hfill \\
+ & =& -\frac{1}{2}(0)-3\hfill \\ & =& -3\hfill \end{array}
+\end{equation*}
+The $x$-intercept is obtained by setting $y=0$. This gives:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill 0& =& -\frac{1}{2}x_{int}^{2}-3\hfill \\ \hfill 3& =& -\frac{1}{2}x_{int}^{2}\hfill \\ \hfill -3\ensuremath{\cdot}2& =& x_{int}^{2}\hfill \\ \hfill -6& =& x_{int}^{2}\hfill \end{array}\tag{1.24}
-\end{equation}
-\label{m39345*id245588}which is not real. Therefore, there are no $x$-intercepts which means that the function does not cross or even touch the $x$-axis at any point.\par 
-\label{m39345*id245613}We also know that the axis of symmetry is the $y$-axis.\par 
-\label{m39345*eip-782}Finally, we draw the graph. Note that in the diagram only the y-intercept is marked. The graph has a maximal turning point (i.e. makes a frown) as determined from the sign of a, there are no x-intercepts and the turning point is that same as the y-intercept. The domain is all real numbers and the range is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ,-3\right]\}$.\par 
+\begin{array}{ccc}\hfill 0& =& -\frac{1}{2}x_{int}^{2}-3\hfill \\ 
+\hfill 3& =& -\frac{1}{2}x_{int}^{2}\hfill \\ \hfill -3\ensuremath{\cdot}2& =& x_{int}^{2}\hfill \\
+\hfill -6& =& x_{int}^{2}\hfill \end{array}
+\end{equation*}
+which is not real. Therefore, there are no $x$-intercepts which means that the function does not cross or even touch the $x$-axis at any point.\par 
+We also know that the axis of symmetry is the $y$-axis.\par 
+Finally, we draw the graph. Note that in the diagram only the $y$-intercept is marked. The graph has a maximal turning point (i.e. makes a frown) as determined from the sign of $a$, there are no $x$-intercepts and the turning point is that same as the $y$-intercept. The domain is all real numbers and the range is $\{f(x):f(x)\in (-\infty ,-3]\}$.\par 
+
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*uid129}
 \begin{center}
@@ -918,7 +979,7 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 \label{m39345*uid129!!!underscore!!!media}\label{m39345*uid129!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_019.png} % m39345;MG10C11\_019.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.23: }Graph of the function $f\left(x\right)=-\frac{1}{2}{x}^{2}-3$
+\small \textbf{Figure 1.23: }Graph of the function $f(x)=-\frac{1}{2}{x}^{2}-3$
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
@@ -928,26 +989,30 @@ Complete the following table of values for the functions $a$ to $k$ to help with
 \label{m39345*eid7523}\vspace{.5cm} 
 \noindent
 \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+
+
 \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
 \begin{exercise}
 \noindent\textbf{Exercise 1.4: Drawing a parabola}
-\label{m39345*probid7324}
-\label{m39345*id6532}
+
+
 Draw the graph of $y={3x}^{2}+5$.\par 
 \vspace{5pt}
-\label{m39345*solid7324}\noindent\textbf{Solution to Exercise }
-\label{m39345*id7323}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-\leftskip=20pt\rightskip=\leftskip\item The sign of $a$ is positive. The parabola will therefore have a minimal turning point.\item The domain is: $\{x:x\in \mathbb{R}\}$ and the range is: $\{f\left(x\right):f\left(x\right)\in \left[5,\infty \right)\}$.\item The turning point occurs at $\left(0,q\right)$. For this function $q=5$, so the turning point is at $\left(0,5\right)$\item The y-intercept occurs when $x=0$. Calculating the y-intercept gives:
-\label{m39345*id7345}\nopagebreak\noindent{}
+\noindent\textbf{Solution to Exercise }
+\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+\leftskip=20pt\rightskip=\leftskip\item The sign of $a$ is positive. The parabola will therefore have a minimal turning point.\item The domain is: $\{x:x\in \mathbb{R}\}$ and the range is: $\{f(x):f(x)\in [5,\infty )\}$.\item The turning point occurs at $(0;q)$. For this function $q=5$, so the turning point is at $(0;5)$\item The y-intercept occurs when $x=0$. Calculating the y-intercept gives:
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& {3x}^{2}+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& {3\left(0\right)}^{2}+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& 5\hfill \end{array}\tag{1.25}
-\end{equation}
+\begin{array}{ccc}\hfill y& =& {3x}^{2}+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& {3(0)}^{2}+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& 5\hfill \end{array}
+\end{equation*}
 \item The x-intercepts occur when $y=0$. Calculating the x-intercept gives:
-\label{m39345*id73445}\nopagebreak\noindent{}
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& {3x}^{2}+5\hfill \\ \hfill 0& =& {3x}^{2}+5\hfill \\ \hfill {x}^{2}& =& -\frac{3}{5}\hfill \end{array}\tag{1.26}
-\end{equation}
-which is not real, so there are no x-intercepts.\item Putting all this together gives us the following graph:
+\begin{array}{ccc}\hfill y& =& {3x}^{2}+5\hfill \\ \hfill 0& =& {3x}^{2}+5\hfill \\ \hfill {x}^{2}& =& -\frac{3}{5}\hfill \end{array}
+\end{equation*}
+which is not real, so there are no $x$-intercepts.
+
+\item Putting all this together gives us the following graph:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*uid12459}
 \begin{center}
@@ -961,7 +1026,7 @@ which is not real, so there are no x-intercepts.\item Putting all this together 
 \end{mdframed}
 }
 \noindent
-\label{m39345*eip-297}The following video shows one method of graphing parabolas. Note that in this video the term vertex is used in place of turning point. The vertex and the turning point are the same thing.
+The following video shows one method of graphing parabolas. Note that in this video the term vertex is used in place of turning point. The vertex and the turning point are the same thing.
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*parabola-1}
 \textnormal{Khan academy video on graphing parabolas - 1}\vspace{.1in} \nopagebreak
@@ -969,13 +1034,13 @@ which is not real, so there are no x-intercepts.\item Putting all this together 
 \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10019 )}
 \vspace{2pt}
 \vspace{.1in}
-\end{figure}       \par \label{m39345*secfhsst!!!underscore!!!id2745}
+\end{figure}       \par 
 \subsection*{Exercise:  parabolas }
 \nopagebreak
-\label{m39345*id245690}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39345*uid130}\item Show that if $a\lessthan{}0$ that the range of $f\left(x\right)=a{x}^{2}+q$ is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ;q\right]\}$.
-\label{m39345*uid131}\item Draw the graph of the function $y=-{x}^{2}+4$ showing all intercepts with the axes.
-\label{m39345*uid132}\item Two parabolas are drawn: $g:y=a{x}^{2}+p$ and $h:y=b{x}^{2}+q$.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Show that if $a<0$ that the range of $f(x)=a{x}^{2}+q$ is $\{f(x):f(x)\in (-\infty ;q]\}$.
+\item Draw the graph of the function $y=-{x}^{2}+4$ showing all intercepts with the axes.
+\item Two parabolas are drawn: $g:y=a{x}^{2}+p$ and $h:y=b{x}^{2}+q$.
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39345*id245918}
 \begin{center}
@@ -983,14 +1048,15 @@ which is not real, so there are no x-intercepts.\item Putting all this together 
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}       \label{m39345*id245925}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39345*uid133}\item Find the values of $a$ and $p$.
-\label{m39345*uid134}\item Find the values of $b$ and $q$.
-\label{m39345*uid135}\item Find the values of $x$ for which $a{x}^{2}+p\ge b{x}^{2}+q$.
-\label{m39345*uid136}\item For what values of $x$ is $g$ increasing ?
+\end{figure}       
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Find the values of $a$ and $p$.
+\item Find the values of $b$ and $q$.
+\item Find the values of $x$ for which $a{x}^{2}+p\ge b{x}^{2}+q$.
+\item For what values of $x$ is $g$ increasing ?
 \end{enumerate}
   \end{enumerate}
-\label{m39345**end}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lxD  &  (2.) lxW  &  (3.) lxZ  & \end{tabular}
@@ -1000,11 +1066,11 @@ which is not real, so there are no x-intercepts.\item Putting all this together 
 %     
 %     
 %     
-\label{m39341*uid137}
+
 \section{Hyperbolic functions of the form $y=\frac{a}{x}+q$}
 \nopagebreak
 \subsection*{Plotting the graph}           
-\label{m39341*id246121}Functions of the form $y=\frac{a}{x}+q$ are known as \textsl{hyperbolic} functions. The general form of the graph of this function is shown in Figure~1.27.\par 
+Functions of the form $y=\frac{a}{x}+q$ are known as hyperbolic functions. The general form of the graph of this function is shown in Figure~1.27.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39341*uid138}
 \begin{center}
@@ -1012,28 +1078,36 @@ which is not real, so there are no x-intercepts.\item Putting all this together 
 \label{m39341*uid138!!!underscore!!!media}\label{m39341*uid138!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39341_MG10C11_021.png} % m39341;MG10C11\_021.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.27: }General shape and position of the graph of a function of the form $f\left(x\right)=\frac{a}{x}+q$.
+\small \textbf{Figure 1.27: }General shape and position of the graph of a function of the form $f(x)=\frac{a}{x}+q$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39341*secfhsst!!!underscore!!!id2774}
+
 \subsection*{ Investigating the effects of a and q }
 \nopagebreak
-\label{m39341*id246236}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39341*uid139}\item On the same set of axes, plot the following graphs:
-\label{m39341*id246252}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39341*uid140}\item $a\left(x\right)=\frac{-2}{x}+1$\label{m39341*uid141}\item $b\left(x\right)=\frac{-1}{x}+1$\label{m39341*uid142}\item $c\left(x\right)=\frac{0}{x}+1$\label{m39341*uid143}\item $d\left(x\right)=\frac{+1}{x}+1$\label{m39341*uid144}\item $e\left(x\right)=\frac{+2}{x}+1$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $a(x)=\frac{-2}{x}+1$
+\item $b(x)=\frac{-1}{x}+1$
+\item $c(x)=\frac{0}{x}+1$
+\item $d(x)=\frac{+1}{x}+1$
+\item $e(x)=\frac{+2}{x}+1$\end{enumerate}
 Use your results to deduce the effect of $a$.
-\label{m39341*uid145}\item On the same set of axes, plot the following graphs:
-\label{m39341*id246494}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39341*uid146}\item $f\left(x\right)=\frac{1}{x}-2$\label{m39341*uid147}\item $g\left(x\right)=\frac{1}{x}-1$\label{m39341*uid148}\item $h\left(x\right)=\frac{1}{x}+0$\label{m39341*uid149}\item $j\left(x\right)=\frac{1}{x}+1$\label{m39341*uid150}\item $k\left(x\right)=\frac{1}{x}+2$\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $f(x)=\frac{1}{x}-2$
+\item $g(x)=\frac{1}{x}-1$
+\item $h(x)=\frac{1}{x}+0$\
+item $j(x)=\frac{1}{x}+1$
+\item $k(x)=\frac{1}{x}+2$\end{enumerate}
 Use your results to deduce the effect of $q$.
 \end{enumerate}
-\label{m39341*id246723}You should have found that the value of $a$ affects whether the graph is located in the first and third quadrants of Cartesian plane.\par 
-\label{m39341*id246740}You should have also found that the value of $q$ affects whether the graph lies above the $x$-axis ($q\greatthan{}0$) or below the $x$-axis ($q\lessthan{}0$).\par 
-\label{m39341*id246801}These different properties are summarised in Table 1.10. The axes of symmetry for each graph are shown as a dashed line.\par 
+You should have found that the value of $a$ affects whether the graph is located in the first and third quadrants of Cartesian plane.\par 
+You should have also found that the value of $q$ affects whether the graph lies above the $x$-axis ($q>0$) or below the $x$-axis ($q<0$).\par 
+These different properties are summarised in Table 1.10. The axes of symmetry for each graph are shown as a dashed line.\par 
 % \textbf{m39341*uid151}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -1087,12 +1161,12 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -1100,7 +1174,7 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -1130,7 +1204,7 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -1163,68 +1237,67 @@ Use your results to deduce the effect of $q$.
 %\end{table}
 \par
 \subsection*{Discovering the characteristics}  
-\label{m39341*uid152}
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39341*id247010}For $y=\frac{a}{x}+q$, the function is undefined for $x=0$. The domain is therefore $\{x:x\in \mathbb{R},x\ne 0\}$.\par 
-\label{m39341*id247087}We see that $y=\frac{a}{x}+q$ can be re-written as:\par 
-\label{m39341*id247116}\nopagebreak\noindent{}
+For $y=\frac{a}{x}+q$, the function is undefined for $x=0$. The domain is therefore $\{x:x\in \mathbb{R},x\ne 0\}$.\par 
+We see that $y=\frac{a}{x}+q$ can be re-written as:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill y-q& =& \frac{a}{x}\hfill \\ \hfill \mathrm{If}\phantom{\rule{3pt}{0ex}}x\; \ne \;  0 \phantom{\rule{3pt}{0ex}}\mathrm{then}:\left(y-q\right)x& =& a\hfill \\ \hfill x& =& \frac{a}{y-q}\hfill \end{array}\tag{1.27}
-\end{equation}
-\label{m39341*id247260}This shows that the function is undefined at $y=q$. Therefore the range of $f\left(x\right)=\frac{a}{x}+q$ is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ;q\right)\cup \left(q;\infty \right)\}$.\par 
-\label{m39341*id247371}For example, the domain of $g\left(x\right)=\frac{2}{x}+2$ is $\{x:x\in \mathbb{R},x\ne 0\}$ because $g\left(x\right)$ is undefined at $x=0$.\par 
-\label{m39341*id247472}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill y-q& =& \frac{a}{x}\hfill \\ \hfill \mbox{If}\phantom{\rule{3pt}{0ex}}x\; \ne \;  0 \phantom{\rule{3pt}{0ex}}\mbox{then}:(y-q)x& =& a\hfill \\ \hfill x& =& \frac{a}{y-q}\hfill \end{array}
+\end{equation*}
+This shows that the function is undefined at $y=q$. Therefore the range of $f(x)=\frac{a}{x}+q$ is $\{f(x):f(x)\in (-\infty ;q)\cup (q;\infty )\}$.\par 
+For example, the domain of $g(x)=\frac{2}{x}+2$ is $\{x:x\in \mathbb{R},x\ne 0\}$ because $g(x)$ is undefined at $x=0$.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill \left(y-2\right)& =& \frac{2}{x}\hfill \\ \hfill \mathrm{If}\phantom{\rule{4pt}{0ex}}x\; \ne \;  0 \phantom{\rule{4pt}{0ex}}\mathrm{then}:x\left(y-2\right)& =& 2\hfill \\ \hfill x& =& \frac{2}{y-2}\hfill \end{array}\tag{1.28}
-\end{equation}
-\label{m39341*id247614}We see that $g\left(x\right)$ is undefined at $y=2$. Therefore the range is $\{g\left(x\right):g\left(x\right)\in \left(-\infty ;2\right)\cup \left(2;\infty \right)\}$.\par 
-\label{m39341*uid153}
+\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill (y-2)& =& \frac{2}{x}\hfill \\ \hfill \mbox{If}\phantom{\rule{4pt}{0ex}}x\; \ne \;  0 \phantom{\rule{4pt}{0ex}}\mbox{then}:x(y-2)& =& 2\hfill \\ \hfill x& =& \frac{2}{y-2}\hfill \end{array}
+\end{equation*}
+We see that $g(x)$ is undefined at $y=2$. Therefore the range is $\{g(x):g(x)\in (-\infty ;2)\cup (2;\infty )\}$.\par 
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39341*id247720}For functions of the form, $y=\frac{a}{x}+q$, the intercepts with the $x$ and $y$ axis is calculated by setting $x=0$ for the $y$-intercept and by setting $y=0$ for the $x$-intercept.\par 
-\label{m39341*id247814}The $y$-intercept is calculated as follows:\par 
-\label{m39341*uid154}\nopagebreak\noindent{}
+For functions of the form, $y=\frac{a}{x}+q$, the intercepts with the $x$ and $y$ axis is calculated by setting $x=0$ for the $y$-intercept and by setting $y=0$ for the $x$-intercept.\par 
+The $y$-intercept is calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill {y}_{int}& =& \frac{a}{0}+q\hfill \end{array}\tag{1.29}
-\end{equation}
-\label{m39341*id247904}which is undefined because we are dividing by 0. Therefore there is no $y$-intercept.\par 
-\label{m39341*id247920}For example, the $y$-intercept of $g\left(x\right)=\frac{2}{x}+2$ is given by setting $x=0$ to get:\par 
-\label{m39341*id247979}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill {y}_{int}& =& \frac{a}{0}+q\hfill \end{array}
+\end{equation*}
+which is undefined because we are dividing by $0$. Therefore there is no $y$-intercept.\par 
+For example, the $y$-intercept of $g(x)=\frac{2}{x}+2$ is given by setting $x=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill {y}_{int}& =& \frac{2}{0}+2\hfill \end{array}\tag{1.30}
-\end{equation}
-\label{m39341*id248050}which is undefined.\par 
-\label{m39341*id248056}The $x$-intercepts are calculated by setting $y=0$ as follows:\par 
-\label{m39341*uid155}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill {y}_{int}& =& \frac{2}{0}+2\hfill \end{array}
+\end{equation*}
+which is undefined.\par 
+The $x$-intercepts are calculated by setting $y=0$ as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill 0& =& \frac{a}{{x}_{int}}+q\hfill \\ \hfill \frac{a}{{x}_{int}}& =& -q\hfill \\ \hfill a& =& -q\left({x}_{int}\right)\hfill \\ \hfill {x}_{int}& =& \frac{a}{-q}\hfill \end{array}\tag{1.31}
-\end{equation}
-\label{m39341*id248264}For example, the $x$-intercept of $g\left(x\right)=\frac{2}{x}+2$ is given by setting $x=0$ to get:\par 
-\label{m39341*id248323}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& \frac{a}{x}+q\hfill \\ \hfill 0& =& \frac{a}{{x}_{int}}+q\hfill \\ \hfill \frac{a}{{x}_{int}}& =& -q\hfill \\ \hfill a& =& -q({x}_{int})\hfill \\ \hfill {x}_{int}& =& \frac{a}{-q}\hfill \end{array}
+\end{equation*}
+For example, the $x$-intercept of $g(x)=\frac{2}{x}+2$ is given by setting $x=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill 0& =& \frac{2}{{x}_{int}}+2\hfill \\ \hfill -2& =& \frac{2}{{x}_{int}}\hfill \\ \hfill -2\left({x}_{int}\right)& =& 2\hfill \\ \hfill {x}_{int}& =& \frac{2}{-2}\hfill \\ \hfill {x}_{int}& =& -1\hfill \end{array}\tag{1.32}
-\end{equation}
-\label{m39341*uid156}
+\begin{array}{ccc}\hfill y& =& \frac{2}{x}+2\hfill \\ \hfill 0& =& \frac{2}{{x}_{int}}+2\hfill \\ \hfill -2& =& \frac{2}{{x}_{int}}\hfill \\ \hfill -2({x}_{int})& =& 2\hfill \\ \hfill {x}_{int}& =& \frac{2}{-2}\hfill \\ \hfill {x}_{int}& =& -1\hfill \end{array}
+\end{equation*}
+
 \subsection*{Asymptotes}
 \nopagebreak
-\label{m39341*id248536}There are two asymptotes for functions of the form $y=\frac{a}{x}+q$. Just a reminder, an asymptote is a straight or curved line, which the graph of a function will approach, but never touch. They are determined by examining the domain and range.\par 
-\label{m39341*id248567}We saw that the function was undefined at $x=0$ and for $y=q$. Therefore the asymptotes are $x=0$ and $y=q$.\par 
-\label{m39341*id248630}For example, the domain of $g\left(x\right)=\frac{2}{x}+2$ is $\{x:x\in \mathbb{R},x\ne 0\}$ because $g\left(x\right)$ is undefined at $x=0$. We also see that $g\left(x\right)$ is undefined at $y=2$. Therefore the range is $\{g\left(x\right):g\left(x\right)\in \left(-\infty ;2\right)\cup \left(2;\infty \right)\}$.\par 
-\label{m39341*id248820}From this we deduce that the asymptotes are at $x=0$ and $y=2$.\par 
-\label{m39341*uid157}
-\subsection*{Sketching graphs of the form $f\left(x\right)=\frac{a}{x}+q$}
+There are two asymptotes for functions of the form $y=\frac{a}{x}+q$. Just a reminder, an asymptote is a straight or curved line, which the graph of a function will approach, but never touch. They are determined by examining the domain and range.\par 
+We saw that the function was undefined at $x=0$ and for $y=q$. Therefore the asymptotes are $x=0$ and $y=q$.\par 
+For example, the domain of $g(x)=\frac{2}{x}+2$ is $\{x:x\in \mathbb{R},x\ne 0\}$ because $g(x)$ is undefined at $x=0$. We also see that $g(x)$ is undefined at $y=2$. Therefore the range is $\{g(x):g(x)\in (-\infty ;2)\cup (2;\infty )\}$.\par 
+From this we deduce that the asymptotes are at $x=0$ and $y=2$.\par 
+
+\subsection*{Sketching graphs of the form $f(x)=\frac{a}{x}+q$}
 \nopagebreak
-\label{m39341*id248894}In order to sketch graphs of functions of the form, $f\left(x\right)=\frac{a}{x}+q$, we need to determine four characteristics:\par 
-\label{m39341*id248931}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39341*uid158}\item domain and range
-\label{m39341*uid159}\item asymptotes
-\label{m39341*uid160}\item $y$-intercept
-\label{m39341*uid161}\item $x$-intercept
+In order to sketch graphs of functions of the form, $f(x)=\frac{a}{x}+q$, we need to determine four characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item domain and range
+\item asymptotes
+\item $y$-intercept
+\item $x$-intercept
 \end{enumerate}
-\label{m39341*id248998}For example, sketch the graph of $g\left(x\right)=\frac{2}{x}+2$. Mark the intercepts and asymptotes.\par 
-\label{m39341*id249035}We have determined the domain to be $\{x:x\in \mathbb{R},x\ne 0\}$ and the range to be $\{g\left(x\right):g\left(x\right)\in \left(-\infty ;2\right)\cup \left(2;\infty \right)\}$. Therefore the asymptotes are at $x=0$ and $y=2$.\par 
-\label{m39341*id249164}There is no $y$-intercept and the $x$-intercept is ${x}_{int}=-1$.\par 
+For example, sketch the graph of $g(x)=\frac{2}{x}+2$. Mark the intercepts and asymptotes.\par 
+We have determined the domain to be $\{x:x\in \mathbb{R},x\ne 0\}$ and the range to be $\{g(x):g(x)\in (-\infty ;2)\cup (2;\infty )\}$. Therefore the asymptotes are at $x=0$ and $y=2$.\par 
+There is no $y$-intercept and the $x$-intercept is ${x}_{int}=-1$.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39341*uid162}
 \begin{center}
@@ -1232,7 +1305,7 @@ Use your results to deduce the effect of $q$.
 \label{m39341*uid162!!!underscore!!!media}\label{m39341*uid162!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39341_MG10C11_026.png} % m39341;MG10C11\_026.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.32: }Graph of $g\left(x\right)=\frac{2}{x}+2$.
+\small \textbf{Figure 1.32: }Graph of $g(x)=\frac{2}{x}+2$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
@@ -1248,14 +1321,17 @@ Use your results to deduce the effect of $q$.
 \label{m39341*probid734}\label{m39341*id6245}
 Draw the graph of $y=\frac{-4}{x}+7$.\par 
 \vspace{5pt}
-\label{m39341*solid734}\noindent\textbf{Solution to Exercise }
-\label{m39341*id736743}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-\leftskip=20pt\rightskip=\leftskip\item The domain is: $\{x:x\in \mathbb{R},x\ne 0\}$ and the range is: $\{f\left(x\right):f\left(x\right)\in \left(-\infty ;7\right)\cup \left(7;\infty \right)\}$.\item We look at the domain and range to determine where the asymptotes lie. From the domain we see that the function is undefined when $x=0$, so there is one asymptote at $x=0$. The other asymptote is found from the range. The function is undefined at $y=q$ and so the second asymptote is at $y=7$\item There is no y-intercept for graphs of this form.\item The x-intercept occurs when $y=0$. Calculating the x-intercept gives:
-\label{m39341*id739945}\nopagebreak\noindent{}
+\noindent\textbf{Solution to Exercise }
+\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+\leftskip=20pt\rightskip=\leftskip
+\item The domain is: $\{x:x\in \mathbb{R},x\ne 0\}$ and the range is: $\{f(x):f(x)\in (-\infty ;7)\cup (7;\infty )\}$.
+\item We look at the domain and range to determine where the asymptotes lie. From the domain we see that the function is undefined when $x=0$, so there is one asymptote at $x=0$. The other asymptote is found from the range. The function is undefined at $y=q$ and so the second asymptote is at $y=7$
+\item There is no y-intercept for graphs of this form.\item The x-intercept occurs when $y=0$. Calculating the x-intercept gives:
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& \frac{-4}{x}+7\hfill \\ \hfill 0& =& \frac{-4}{x}+7\hfill \\ \hfill -7& =& \frac{-4}{x}\hfill \\ \hfill {x}_{\mathrm{int}}& =& \frac{4}{7}\hfill \end{array}\tag{1.33}
-\end{equation}
-So there is one x-intercept at $\left(\frac{4}{7},0\right)$.\item Putting all this together gives us the following graph:
+\begin{array}{ccc}\hfill y& =& \frac{-4}{x}+7\hfill \\ \hfill 0& =& \frac{-4}{x}+7\hfill \\ \hfill -7& =& \frac{-4}{x}\hfill \\ \hfill {x}_{\mathrm{int}}& =& \frac{4}{7}\hfill \end{array}
+\end{equation*}
+So there is one x-intercept at $(\frac{4}{7};0)$.\item Putting all this together gives us the following graph:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39341*uid12479}
 \begin{center}
@@ -1269,25 +1345,25 @@ So there is one x-intercept at $\left(\frac{4}{7},0\right)$.\item Putting all th
 \end{mdframed}
 }
 \noindent
-\label{m39341*secfhsst!!!underscore!!!id3460}
+
 \subsection*{Exercises: Hyperbolic Graphs }
 \nopagebreak
-\label{m39341*id249267}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39341*uid163}\item Using graph (grid) paper, draw the graph of $xy=-6$.
-\label{m39341*id249301}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39341*uid164}\item Does the point (-2; 3) lie on the graph ? Give a reason for your answer.
-\label{m39341*uid165}\item Why is the point (-2; -3) not on the graph ?
-\label{m39341*uid166}\item If the $x$-value of a point on the drawn graph is 0,25, what is the corresponding $y$-value ?
-\label{m39341*uid167}\item What happens to the $y$-values as the $x$-values become very large ?
-\label{m39341*uid168}\item With the line $y=-x$ as line of symmetry, what is the point symmetrical to (-2; 3) ?
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Using graph (grid) paper, draw the graph of $xy=-6$.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Does the point $(-2; 3)$ lie on the graph ? Give a reason for your answer.
+\item Why is the point $(-2; -3)$ not on the graph ?
+\item If the $x$-value of a point on the drawn graph is $0,25$ what is the corresponding $y$-value ?
+\item What happens to the $y$-values as the $x$-values become very large ?
+\item With the line $y=-x$ as line of symmetry, what is the point symmetrical to $(-2; 3)$ ?
 \end{enumerate}
-  \label{m39341*uid169}\item Draw the graph of $xy=8$.
-\label{m39341*id249462}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39341*uid170}\item How would the graph $y=\frac{8}{3}+3$ compare with that of $xy=8$? Explain your answer fully.
-\label{m39341*uid171}\item Draw the graph of $y=\frac{8}{3}+3$ on the same set of axes.
+  \item Draw the graph of $xy=8$.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item How would the graph $y=\frac{8}{3}+3$ compare with that of $xy=8$? Explain your answer fully.
+\item Draw the graph of $y=\frac{8}{3}+3$ on the same set of axes.
 \end{enumerate}
   \end{enumerate}
-\label{m39341**end}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lxB  &  (2.) lxK  & \end{tabular}
@@ -1301,11 +1377,11 @@ So there is one x-intercept at $\left(\frac{4}{7},0\right)$.\item Putting all th
 %     
 %     
 %     
-\label{m39348*uid172}
-\section{Exponential functions of the form $y=a{b}^{\left(x\right)}+q$}
+
+\section{Exponential functions of the form $y=a{b}^{(x)}+q$}
 \nopagebreak
 \subsection*{Plotting the graph}         
-\label{m39348*id249604}Functions of the form $y=a{b}^{\left(x\right)}+q$ are known as \textsl{exponential} functions. The general shape of a graph of a function of this form is shown in Figure~1.34.\par 
+Functions of the form $y=a{b}^{(x)}+q$ are known as exponential functions. The general shape of a graph of a function of this form is shown in Figure~1.34.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39348*uid173}
 \begin{center}
@@ -1313,28 +1389,36 @@ So there is one x-intercept at $\left(\frac{4}{7},0\right)$.\item Putting all th
 \label{m39348*uid173!!!underscore!!!media}\label{m39348*uid173!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39348_MG10C11_027.png} % m39348;MG10C11\_027.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.34: }General shape and position of the graph of a function of the form $f\left(x\right)=a{b}^{\left(x\right)}+q$.
+\small \textbf{Figure 1.34: }General shape and position of the graph of a function of the form $f(x)=a{b}^{(x)}+q$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39348*secfhsst!!!underscore!!!id3489}
+
 \subsection*{ Investigating the effects of a and q}
 \nopagebreak
-\label{m39348*id249746}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39348*uid174}\item On the same set of axes, plot the following graphs:
-\label{m39348*id249761}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid175}\item $a\left(x\right)=-2\ensuremath{\cdot}{b}^{\left(x\right)}+1$\label{m39348*uid176}\item $b\left(x\right)=-1\ensuremath{\cdot}{b}^{\left(x\right)}+1$\label{m39348*uid177}\item $c\left(x\right)=0\ensuremath{\cdot}{b}^{\left(x\right)}+1$\label{m39348*uid178}\item $d\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}+1$\label{m39348*uid179}\item $e\left(x\right)=2\ensuremath{\cdot}{b}^{\left(x\right)}+1$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $a(x)=-2\ensuremath{\cdot}{b}^{(x)}+1$
+\item $b(x)=-1\ensuremath{\cdot}{b}^{(x)}+1$
+\item $c(x)=0\ensuremath{\cdot}{b}^{(x)}+1$
+\item $d(x)=1\ensuremath{\cdot}{b}^{(x)}+1$
+\item $e(x)=2\ensuremath{\cdot}{b}^{(x)}+1$\end{enumerate}
 Use your results to deduce the effect of $a$.
-\label{m39348*uid180}\item On the same set of axes, plot the following graphs:
-\label{m39348*id250057}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid181}\item $f\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}-2$\label{m39348*uid182}\item $g\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}-1$\label{m39348*uid183}\item $h\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}+0$\label{m39348*uid184}\item $j\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}+1$\label{m39348*uid185}\item $k\left(x\right)=1\ensuremath{\cdot}{b}^{\left(x\right)}+2$\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $f(x)=1\ensuremath{\cdot}{b}^{(x)}-2$
+\item $g(x)=1\ensuremath{\cdot}{b}^{(x)}-1$
+\item $h(x)=1\ensuremath{\cdot}{b}^{(x)}+0$
+\item $j(x)=1\ensuremath{\cdot}{b}^{(x)}+1$
+\item $k(x)=1\ensuremath{\cdot}{b}^{(x)}+2$\end{enumerate}
 Use your results to deduce the effect of $q$.
 \end{enumerate}
-\label{m39348*id250340}You should have found that the value of $a$ affects whether the graph curves upwards ($a\greatthan{}0$) or curves downwards ($a\lessthan{}0$).\par 
-\label{m39348*id250385}You should have also found that the value of $q$ affects the position of the $y$-intercept.\par 
-\label{m39348*id250408}These different properties are summarised in Table 1.11.\par 
+You should have found that the value of $a$ affects whether the graph curves upwards ($a>0$) or curves downwards ($a<0$).\par 
+You should have also found that the value of $q$ affects the position of the $y$-intercept.\par 
+These different properties are summarised in Table 1.11.\par 
 % \textbf{m39348*uid186}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -1388,12 +1472,12 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -1401,7 +1485,7 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -1431,7 +1515,7 @@ Use your results to deduce the effect of $q$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -1460,80 +1544,80 @@ Use your results to deduce the effect of $q$.
 %--------------------------------------------------------------------
 \end{xtabular*}
 \end{center}
-\begin{center}{\small\bfseries Table 1.11}: Table summarising general shapes and positions of functions of the form $y=a{b}^{\left(x\right)}+q$.\end{center}
+\begin{center}{\small\bfseries Table 1.11}: Table summarising general shapes and positions of functions of the form $y=a{b}^{(x)}+q$.\end{center}
 %\end{table}
 \par
 \subsection*{Discovering the characteristics}
-\label{m39348*uid187}
+
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39348*id250625}For $y=a{b}^{\left(x\right)}+q$, the function is defined for all real values of $x$. Therefore, the domain is $\{x:x\in \mathbb{R}\}$.\par 
-\label{m39348*id250696}The range of $y=a{b}^{\left(x\right)}+q$ is dependent on the sign of $a$.\par 
-\label{m39348*id250742}If $a\greatthan{}0$ then:\par 
-\label{m39348*id250762}\nopagebreak\noindent{}
+For $y=a{b}^{(x)}+q$, the function is defined for all real values of $x$. Therefore, the domain is $\{x:x\in \mathbb{R}\}$.\par 
+The range of $y=a{b}^{(x)}+q$ is dependent on the sign of $a$.\par 
+If $a>0$ then:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {b}^{\left(x\right)}& \ge & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{\left(x\right)}& \ge & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{\left(x\right)}+q& \ge & q\hfill \\ \hfill f\left(x\right)& \ge & q\hfill \end{array}\tag{1.34}
-\end{equation}
-\label{m39348*id250891}Therefore, if $a\greatthan{}0$, then the range is $\{f\left(x\right):f\left(x\right)\in \left[q;\infty \right)\}$.\par 
-\label{m39348*id250956}If $a\lessthan{}0$ then:\par 
-\label{m39348*id250976}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill {b}^{(x)}& \ge & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{(x)}& \ge & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{(x)}+q& \ge & q\hfill \\ \hfill f(x)& \ge & q\hfill \end{array}
+\end{equation*}
+Therefore, if $a>0$, then the range is $\{f(x):f(x)\in [q;\infty )\}$.\par 
+If $a<0$ then:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {b}^{\left(x\right)}& \le & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{\left(x\right)}& \le & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{\left(x\right)}+q& \le & q\hfill \\ \hfill f\left(x\right)& \le & q\hfill \end{array}\tag{1.35}
-\end{equation}
-\label{m39348*id251104}Therefore, if $a\lessthan{}0$, then the range is $\{f\left(x\right):f\left(x\right)\in \left(-\infty ;q\right]\}$.\par 
-\label{m39348*id251171}For example, the domain of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$ is $\{x:x\in \mathbb{R}\}$.
+\begin{array}{ccc}\hfill {b}^{(x)}& \le & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{(x)}& \le & 0\hfill \\ \hfill a\ensuremath{\cdot}{b}^{(x)}+q& \le & q\hfill \\ \hfill f(x)& \le & q\hfill \end{array}
+\end{equation*}
+Therefore, if $a<0$, then the range is $\{f(x):f(x)\in (-\infty ;q]\}$.\par 
+For example, the domain of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$ is $\{x:x\in \mathbb{R}\}$.
 For the range,\par 
-\label{m39348*id251239}\nopagebreak\noindent{}
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {2}^{x}& \ge & 0\hfill \\ \hfill 3\ensuremath{\cdot}{2}^{x}& \ge & 0\hfill \\ \hfill 3\ensuremath{\cdot}{2}^{x}+2& \ge & 2\hfill \end{array}\tag{1.36}
-\end{equation}
-\label{m39348*id251329}Therefore the range is $\{g\left(x\right):g\left(x\right)\in \left[2;\infty \right)\}$.\par 
-\label{m39348*uid188}
+\begin{array}{ccc}\hfill {2}^{x}& \ge & 0\hfill \\ \hfill 3\ensuremath{\cdot}{2}^{x}& \ge & 0\hfill \\ \hfill 3\ensuremath{\cdot}{2}^{x}+2& \ge & 2\hfill \end{array}
+\end{equation*}
+Therefore the range is $\{g(x):g(x)\in [2;\infty )\}$.\par 
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39348*id251389}For functions of the form, $y=a{b}^{\left(x\right)}+q$, the intercepts with the $x$ and $y$ axis is calculated by setting $x=0$ for the $y$-intercept and by setting $y=0$ for the $x$-intercept.\par 
-\label{m39348*id251491}The $y$-intercept is calculated as follows:\par 
-\label{m39348*uid189}\nopagebreak\noindent{}
+For functions of the form, $y=a{b}^{(x)}+q$, the intercepts with the $x$ and $y$ axis is calculated by setting $x=0$ for the $y$-intercept and by setting $y=0$ for the $x$-intercept.\par 
+The $y$-intercept is calculated as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& a{b}^{\left(x\right)}+q\hfill \\ \hfill {y}_{int}& =& a{b}^{\left(0\right)}+q\hfill \\ & =& a\left(1\right)+q\hfill \\ & =& a+q\hfill \end{array}\tag{1.37}
-\end{equation}
-\label{m39348*id251637}For example, the $y$-intercept of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$ is given by setting $x=0$ to get:\par 
-\label{m39348*id251703}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& a{b}^{(x)}+q\hfill \\ \hfill {y}_{int}& =& a{b}^{(0)}+q\hfill \\ & =& a(1)+q\hfill \\ & =& a+q\hfill \end{array}
+\end{equation*}
+For example, the $y$-intercept of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$ is given by setting $x=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& 3\ensuremath{\cdot}{2}^{x}+2\hfill \\ \hfill {y}_{int}& =& 3\ensuremath{\cdot}{2}^{0}+2\hfill \\ & =& 3+2\hfill \\ & =& 5\hfill \end{array}\tag{1.38}
-\end{equation}
-\label{m39348*id251812}The $x$-intercepts are calculated by setting $y=0$ as follows:\par 
-\label{m39348*uid190}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& 3\ensuremath{\cdot}{2}^{x}+2\hfill \\ \hfill {y}_{int}& =& 3\ensuremath{\cdot}{2}^{0}+2\hfill \\ & =& 3+2\hfill \\ & =& 5\hfill \end{array}
+\end{equation*}
+The $x$-intercepts are calculated by setting $y=0$ as follows:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& a{b}^{\left(x\right)}+q\hfill \\ \hfill 0& =& a{b}^{\left({x}_{int}\right)}+q\hfill \\ \hfill a{b}^{\left({x}_{int}\right)}& =& -q\hfill \\ \hfill {b}^{\left({x}_{int}\right)}& =& -\frac{q}{a}\hfill \end{array}\tag{1.39}
-\end{equation}
-\label{m39348*id252022}Which only has a real solution if either $a\lessthan{}0$ or $q\lessthan{}0$. Otherwise, the graph of the function of form $y=a{b}^{\left(x\right)}+q$ does not have any $x$-intercepts.\par 
-\label{m39348*id252098}For example, the $x$-intercept of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$ is given by setting $y=0$ to get:\par 
-\label{m39348*id252162}\nopagebreak\noindent{}
+\begin{array}{ccc}\hfill y& =& a{b}^{(x)}+q\hfill \\ \hfill 0& =& a{b}^{({x}_{int})}+q\hfill \\ \hfill a{b}^{({x}_{int})}& =& -q\hfill \\ \hfill {b}^{({x}_{int})}& =& -\frac{q}{a}\hfill \end{array}
+\end{equation*}
+Which only has a real solution if either $a<0$ or $q<0$. Otherwise, the graph of the function of form $y=a{b}^{(x)}+q$ does not have any $x$-intercepts.\par 
+For example, the $x$-intercept of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$ is given by setting $y=0$ to get:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& 3\ensuremath{\cdot}{2}^{x}+2\hfill \\ \hfill 0& =& 3\ensuremath{\cdot}{2}^{{x}_{int}}+2\hfill \\ \hfill -2& =& 3\ensuremath{\cdot}{2}^{{x}_{int}}\hfill \\ \hfill {2}^{{x}_{int}}& =& \frac{-2}{3}\hfill \end{array}\tag{1.40}
-\end{equation}
-\label{m39348*id252323}which has no real solution. Therefore, the graph of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$ does not have any $x$-intercepts.\par 
-\label{m39348*uid191}
+\begin{array}{ccc}\hfill y& =& 3\ensuremath{\cdot}{2}^{x}+2\hfill \\ \hfill 0& =& 3\ensuremath{\cdot}{2}^{{x}_{int}}+2\hfill \\ \hfill -2& =& 3\ensuremath{\cdot}{2}^{{x}_{int}}\hfill \\ \hfill {2}^{{x}_{int}}& =& \frac{-2}{3}\hfill \end{array}
+\end{equation*}
+which has no real solution. Therefore, the graph of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$ does not have any $x$-intercepts.\par 
+
 \subsection*{Asymptotes}
 \nopagebreak
-\label{m39348*id252384}Functions of the form $y=a{b}^{\left(x\right)}+q$ have a single horizontal asymptote. The asymptote can be determined by examining the range.\par 
-\label{m39348*id252423}We have seen that the range is controlled by the value of q. If $a\greatthan{}0$, then the range is $\{f\left(x\right):f\left(x\right)\in \left[q;\infty \right)\}$.And if $a\greatthan{}0$, then the range is $\{f\left(x\right):f\left(x\right)\in \left[q;\infty \right)\}$.\par 
-\label{m39348*id7623}This shows that the function tends towards the value of q as $x\to -\infty $. Therefore the horizontal asymptote lies at $x=q$.
+Functions of the form $y=a{b}^{(x)}+q$ have a single horizontal asymptote. The asymptote can be determined by examining the range.\par 
+We have seen that the range is controlled by the value of q. If $a>0$, then the range is $\{f(x):f(x)\in [q;\infty )\}$.And if $a>0$, then the range is $\{f(x):f(x)\in [q;\infty )\}$.\par 
+This shows that the function tends towards the value of q as $x\to -\infty $. Therefore the horizontal asymptote lies at $x=q$.
 \par 
-\label{m39348*uid192}
-\subsection*{Sketching graphs of the form $f\left(x\right)=a{b}^{\left(x\right)}+q$}
+
+\subsection*{Sketching graphs of the form $f(x)=a{b}^{(x)}+q$}
 \nopagebreak
-\label{m39348*id252708}In order to sketch graphs of functions of the form, $f\left(x\right)=a{b}^{\left(x\right)}+q$, we need to determine four characteristics:\par 
-\label{m39348*id252753}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39348*uid193}\item domain and range
-\label{m39348*id64532}\item asymptote
-\label{m39348*uid194}\item $y$-intercept
-\label{m39348*uid195}\item $x$-intercept
+In order to sketch graphs of functions of the form, $f(x)=a{b}^{(x)}+q$, we need to determine four characteristics:\par 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item domain and range
+\item asymptote
+\item $y$-intercept
+\item $x$-intercept
 \end{enumerate}
-\label{m39348*id252808}For example, sketch the graph of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$. Mark the intercepts.\par 
-\label{m39348*id252849}We have determined the domain to be $\{x:x\in \mathbb{R}\}$ and the range to be $\{g\left(x\right):g\left(x\right)\in \left[2,\infty \right)\}$.\par 
-\label{m39348*id252925}The $y$-intercept is ${y}_{int}=5$ and there are no $x$-intercepts.\par 
+For example, sketch the graph of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$. Mark the intercepts.\par 
+We have determined the domain to be $\{x:x\in \mathbb{R}\}$ and the range to be $\{g(x):g(x)\in [2,\infty )\}$.\par 
+The $y$-intercept is ${y}_{int}=5$ and there are no $x$-intercepts.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39348*uid196}
 \begin{center}
@@ -1541,7 +1625,7 @@ For the range,\par
 \label{m39348*uid196!!!underscore!!!media}\label{m39348*uid196!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39348_MG10C11_032.png} % m39348;MG10C11\_032.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.39: }Graph of $g\left(x\right)=3\ensuremath{\cdot}{2}^{x}+2$.
+\small \textbf{Figure 1.39: }Graph of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$.
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
@@ -1554,23 +1638,25 @@ For the range,\par
 \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
 \begin{exercise}
 \noindent\textbf{Exercise 1.6: Drawing an exponential graph}
-\label{m39348*probid7884}\label{m39348*id6255}
+
 Draw the graph of $y=-2.{3}^{x}+5$.\par 
 \vspace{5pt}
-\label{m39348*solid7884}\noindent\textbf{Solution to Exercise }
-\label{m39348*id73683}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-\leftskip=20pt\rightskip=\leftskip\item The domain is: $\{x:x\in \mathbb{R}\}$ and the range is: $\{f\left(x\right):f\left(x\right)\in \left(-\infty ;5\right]\}$.\item There is one asymptote for functions of this form. This occurs at $y=q$. So the asymptote for this graph is at $y=5$\item The y-intercept occurs when $x=0$.
-\label{m39348*id72785}\nopagebreak\noindent{}
+\noindent\textbf{Solution to Exercise }
+\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+\leftskip=20pt\rightskip=\leftskip\item The domain is: $\{x:x\in \mathbb{R}\}$ and the range is: $\{f(x):f(x)\in (-\infty ;5]\}$.
+\item There is one asymptote for functions of this form. This occurs at $y=q$. So the asymptote for this graph is at $y=5$
+\item The y-intercept occurs when $x=0$.
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& -2.{3}^{x}+5\hfill \\ \hfill y& =& -2.{3}^{0}+5\hfill \\ \hfill y& =& -2\left(1\right)+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& 7\hfill \end{array}\tag{1.41}
-\end{equation}
-So there is one y-intercept at $\left(0,7\right)$.
+\begin{array}{ccc}\hfill y& =& -2.{3}^{x}+5\hfill \\ \hfill y& =& -2.{3}^{0}+5\hfill \\ \hfill y& =& -2(1)+5\hfill \\ \hfill {y}_{\mathrm{int}}& =& 7\hfill \end{array}
+\end{equation*}
+So there is one y-intercept at $(0,7)$.
 \item The x-intercept occurs when $y=0$. Calculating the x-intercept gives:
-\label{m39348*id72545}\nopagebreak\noindent{}
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& -2.{3}^{x}+5\hfill \\ \hfill 0& =& -2.{3}^{x}+5\hfill \\ \hfill -5& =& -2.{3}^{x}\hfill \\ \hfill {3}^{{x}_{\mathrm{int}}}& =& \frac{5}{2}\hfill \\ \hfill {x}_{\mathrm{int}}& =& 0,83\hfill \end{array}\tag{1.42}
-\end{equation}
-So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this together gives us the following graph:
+\begin{array}{ccc}\hfill y& =& -2.{3}^{x}+5\hfill \\ \hfill 0& =& -2.{3}^{x}+5\hfill \\ \hfill -5& =& -2.{3}^{x}\hfill \\ \hfill {3}^{{x}_{\mathrm{int}}}& =& \frac{5}{2}\hfill \\ \hfill {x}_{\mathrm{int}}& =& 0,83\hfill \end{array}
+\end{equation*}
+So there is one x-intercept at $(0,83,0)$.\item Putting all this together gives us the following graph:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39348*uid12329}
 \begin{center}
@@ -1584,18 +1670,18 @@ So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this toge
 \end{mdframed}
 }
 \noindent
-\label{m39348*secfhsst!!!underscore!!!id4260}
+
 \subsection*{ Exercise: Exponential Functions and Graphs }
 \nopagebreak
-\label{m39348*id253033}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39348*uid197}\item Draw the graphs of $y={2}^{x}$ and $y={\left(\frac{1}{2}\right)}^{x}$ on the same set of axes.
-\label{m39348*id253098}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid198}\item Is the $x$-axis and asymptote or and axis of symmetry to both graphs ? Explain your answer.
-\label{m39348*uid199}\item Which graph is represented by the equation $y={2}^{-x}$ ? Explain your answer.
-\label{m39348*uid200}\item Solve the equation ${2}^{x}={\left(\frac{1}{2}\right)}^{x}$ graphically and check that your answer is correct by using substitution.
-\label{m39348*uid201}\item Predict how the graph $y=2.{2}^{x}$ will compare to $y={2}^{x}$ and then draw the graph of $y=2.{2}^{x}$ on the same set of axes.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Draw the graphs of $y={2}^{x}$ and $y={(\frac{1}{2})}^{x}$ on the same set of axes.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Is the $x$-axis and asymptote or and axis of symmetry to both graphs ? Explain your answer.
+\item Which graph is represented by the equation $y={2}^{-x}$ ? Explain your answer.
+\item Solve the equation ${2}^{x}={(\frac{1}{2})}^{x}$ graphically and check that your answer is correct by using substitution.
+\item Predict how the graph $y=2.{2}^{x}$ will compare to $y={2}^{x}$ and then draw the graph of $y=2.{2}^{x}$ on the same set of axes.
 \end{enumerate}
-  \label{m39348*uid202}\item The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point A(0; 1) and B(2; 4) is on $f$.
+  \item The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $A(0; 1)$ and $B(2; 4)$ is on $f$.
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39348*id253318}
 \begin{center}
@@ -1603,25 +1689,27 @@ So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this toge
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}       \label{m39348*id253324}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid203}\item Determine the equation of the function $f$.
-\label{m39348*uid204}\item Determine the equation of $h$, the function of which the curve is the reflection of the curve of $f$ in the $x$-axis.
-\label{m39348*uid205}\item Determine the range of $h$.
+\end{figure}       
+
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Determine the equation of the function $f$.
+\item Determine the equation of $h$, the function of which the curve is the reflection of the curve of $f$ in the $x$-axis.
+\item Determine the range of $h$.
 \end{enumerate}
   \end{enumerate}
-\label{m39348*eip-714}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lxk  &  (2.) lx0  & \end{tabular}
-\label{m39414*cid7}
+
 \section{Trigonometric functions}
 \nopagebreak
-\label{m39414*id83471}This section describes the graphs of trigonometric functions.\par 
-\label{m39414*uid30}
+This section describes the graphs of trigonometric functions.\par 
+
 \subsection{Graph of $y=sin~\theta $}
 \subsection*{Plotting the graph}
 \nopagebreak
-\label{m39414*uid0983}Complete the following table, using your calculator to calculate the values. Then plot the values with $sin\theta $ on the $y$-axis and $\theta $ on the $x$-axis. Round answers to 1 decimal place.\par 
+Complete the following table, using your calculator to calculate the values. Then plot the values with $sin\theta $ on the $y$-axis and $\theta $ on the $x$-axis. Round answers to $1$ decimal place.\par 
 % \textbf{m39414*id83562}\par
 % how many colspecs?  8
 % name: cnx:colspec
@@ -1927,7 +2015,7 @@ So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this toge
 \begin{caption}{\small\bfseries Table 14.5}\end{caption}
 \end{table}
 \par
-\label{m39414*id84327}As you can see, the function $sin\theta $ has a value of 0 at $\theta ={0}^{\circ }$. Its value then smoothly increases until $\theta ={90}^{\circ }$ when its value is 1. We also know that it later decreases to 0 when $\theta ={180}^{\circ }$. Putting all this together we can start to picture the full extent of the sine graph. The sine graph is shown in Figure~14.23. Notice the wave shape, with each wave having a length of ${360}^{\circ }$. We say the graph has a \textsl{period} of ${360}^{\circ }$. The height of the wave above (or below) the $x$-axis is called the wave's \textsl{amplitude}. Thus the maximum amplitude of the sine-wave is 1, and its minimum amplitude is -1.\par 
+As you can see, the function $sin\theta $ has a value of $0$ at $\theta ={0}^{\circ }$. Its value then smoothly increases until $\theta ={90}^{\circ }$ when its value is $1$. We also know that it later decreases to $0$ when $\theta ={180}^{\circ }$. Putting all this together we can start to picture the full extent of the sine graph. The sine graph is shown in Figure~14.23. Notice the wave shape, with each wave having a length of ${360}^{\circ }$. We say the graph has a period of ${360}^{\circ }$. The height of the wave above (or below) the $x$-axis is called the wave's amplitude. Thus the maximum amplitude of the sine-wave is $1$, and its minimum amplitude is $-1$.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid31}
 \begin{center}
@@ -1941,10 +2029,10 @@ So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this toge
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*uid32}
-\subsection*{Graphs of the form $y=asin\left(x\right)+q$}
+
+\subsection*{Graphs of the form $y=asin(x)+q$}
 \nopagebreak
-\label{m39414*id84527}In the equation, $y=asin\left(x\right)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.24 for the function $f\left(\theta \right)=2sin\theta +3$.\par 
+In the equation, $y=asin(x)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.24 for the function $f(\theta )=2sin\theta +3$.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid33}
 \begin{center}
@@ -1952,28 +2040,37 @@ So there is one x-intercept at $\left(0,83,0\right)$.\item Putting all this toge
 \label{m39414*uid33!!!underscore!!!media}\label{m39414*uid33!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39414_trigrep.png} % m39414;trigrep.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.24: }Graph of $f\left(\theta \right)=2sin\theta +3$
+\small \textbf{Figure 14.24: }Graph of $f(\theta )=2sin\theta +3$
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*secfhsst!!!underscore!!!id2083}
+
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
-\label{m39414*id84695}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39414*uid34}\item On the same set of axes, plot the following graphs:
-\label{m39414*id84710}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid35}\item $a\left(\theta \right)=sin\theta -2$\label{m39414*uid36}\item $b\left(\theta \right)=sin\theta -1$\label{m39414*uid37}\item $c\left(\theta \right)=sin\theta $\label{m39414*uid38}\item $d\left(\theta \right)=sin\theta +1$\label{m39414*uid39}\item $e\left(\theta \right)=sin\theta +2$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $a(\theta )=sin\theta -2$
+\item $b(\theta )=sin\theta -1$
+\item $c(\theta )=sin\theta $
+\item $d(\theta )=sin\theta +1$
+\item $e(\theta )=sin\theta +2$
+\end{enumerate}
 Use your results to deduce the effect of $q$.
-\label{m39414*uid40}\item On the same set of axes, plot the following graphs:
-\label{m39414*id84931}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid41}\item $f\left(\theta \right)=-2\ensuremath{\cdot}sin\theta $\label{m39414*uid42}\item $g\left(\theta \right)=-1\ensuremath{\cdot}sin\theta $\label{m39414*uid43}\item $h\left(\theta \right)=0\ensuremath{\cdot}sin\theta $\label{m39414*uid44}\item $j\left(\theta \right)=1\ensuremath{\cdot}sin\theta $\label{m39414*uid45}\item $k\left(\theta \right)=2\ensuremath{\cdot}sin\theta $\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $f(\theta )=-2\ensuremath{\cdot}sin\theta $
+\item $g(\theta )=-1\ensuremath{\cdot}sin\theta $
+\item $h(\theta )=0\ensuremath{\cdot}sin\theta $
+\item $j(\theta )=1\ensuremath{\cdot}sin\theta $
+\item $k(\theta )=2\ensuremath{\cdot}sin\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.
 \end{enumerate}
-\label{m39414*id85165}You should have found that the value of $a$ affects the height of the peaks of the graph. As the magnitude of $a$ increases, the peaks get higher. As it decreases, the peaks get lower.\par 
-\label{m39414*id85188}$q$ is called the \textsl{vertical shift}. If $q=2$, then the whole sine graph shifts up 2 units. If $q=-1$, the whole sine graph shifts down 1 unit.\par 
-\label{m39414*id85237}These different properties are summarised in Table 14.6.\par 
+You should have found that the value of $a$ affects the height of the peaks of the graph. As the magnitude of $a$ increases, the peaks get higher. As it decreases, the peaks get lower.\par 
+$q$ is called the vertical shift. If $q=2$, then the whole sine graph shifts up $2$ units. If $q=-1$, the whole sine graph shifts down $1$ unit.\par 
+These different properties are summarised in Table 14.6.\par 
 % \textbf{m39414*uid46}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -2027,12 +2124,12 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next siblingFunctions of the form
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -2040,7 +2137,7 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -2070,7 +2167,7 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &Domain and Range
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -2099,23 +2196,23 @@ Use your results to deduce the effect of $a$.
 %--------------------------------------------------------------------
 \end{xtabular*}
 \end{center}
-\begin{center}{\small\bfseries Table 14.6}: Table summarising general shapes and positions of graphs of functions of the form $y=asin\left(x\right)+q$.\end{center}
+\begin{center}{\small\bfseries Table 14.6}: Table summarising general shapes and positions of graphs of functions of the form $y=asin(x)+q$.\end{center}
 %\end{table}
 \par
-\label{m39414*uid47}
+
 \subsection*{Discovering the characteristics}
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39414*id85450}For $f\left(\theta \right)=asin\left(\theta \right)+q$, the domain is $\{\theta :\theta \in \mathbb{R}\}$ because there is no value of $\theta \in \mathbb{R}$ for which $f\left(\theta \right)$ is undefined.\par 
-\label{m39414*id85550}The range of $f\left(\theta \right)=asin\theta +q$ depends on whether the value for $a$ is positive or negative. We will consider these two cases separately.\par 
-\label{m39414*id85596}If $a\greatthan{}0$ we have:\par 
-\label{m39414*id85612}\nopagebreak\noindent{}
+For $f(\theta )=asin(\theta )+q$, the domain is $\{\theta :\theta \in \mathbb{R}\}$ because there is no value of $\theta \in \mathbb{R}$ for which $f(\theta )$ is undefined.\par 
+The range of $f(\theta )=asin\theta +q$ depends on whether the value for $a$ is positive or negative. We will consider these two cases separately.\par 
+If $a>0$ we have:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill -1\le sin\theta & \le & 1\hfill \\ \hfill -a\le asin\theta & \le & a\hfill \\ \hfill -a+q\le asin\theta +q& \le & a+q\hfill \\ \hfill -a+q\le f\left(\theta \right)& \le & a+q\hfill \end{array}\tag{14.31}
-\end{equation}
-\label{m39414*id85804}This tells us that for all values of $\theta $, $f\left(\theta \right)$ is always between $-a+q$ and $a+q$. Therefore if $a\greatthan{}0$, the range of $f\left(\theta \right)=asin\theta +q$ is $\{f\left(\theta \right):f\left(\theta \right)\in \left[-a+q,a+q\right]\}$.\par 
-\label{m39414*id85967}Similarly, it can be shown that if $a\lessthan{}0$, the range of $f\left(\theta \right)=asin\theta +q$ is $\{f\left(\theta \right):f\left(\theta \right)\in \left[a+q,-a+q\right]\}$. This is left as an exercise.\par 
-\label{m39414*notfhsst!!!underscore!!!id2299}
+\begin{array}{ccc}\hfill -1\le sin\theta & \le & 1\hfill \\ \hfill -a\le asin\theta & \le & a\hfill \\ \hfill -a+q\le asin\theta +q& \le & a+q\hfill \\ \hfill -a+q\le f(\theta )& \le & a+q\hfill \end{array}
+\end{equation*}
+This tells us that for all values of $\theta $, $f(\theta )$ is always between $-a+q$ and $a+q$. Therefore if $a>0$, the range of $f(\theta )=asin\theta +q$ is $\{f(\theta ):f(\theta )\in [-a+q,a+q]\}$.\par 
+Similarly, it can be shown that if $a<0$, the range of $f(\theta )=asin\theta +q$ is $\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$. This is left as an exercise.\par 
+
 \begin{tabular}{cc}
 \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
 \begin{minipage}{0.85\textwidth}
@@ -2125,21 +2222,21 @@ Use your results to deduce the effect of $a$.
 \end{minipage}
 \end{tabular}
 \par
-\label{m39414*uid48}
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39414*id86090}The $y$-intercept, ${y}_{int}$, of $f\left(\theta \right)=asin\left(x\right)+q$ is simply the value of $f\left(\theta \right)$ at $\theta ={0}^{\circ }$.\par 
-\label{m39414*id86195}\nopagebreak\noindent{}
+The $y$-intercept, ${y}_{int}$, of $f(\theta )=asin(x)+q$ is simply the value of $f(\theta )$ at $\theta ={0}^{\circ }$.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {y}_{int}& =& f\left({0}^{\circ }\right)\hfill \\ & =& asin\left({0}^{\circ }\right)+q\hfill \\ & =& a\left(0\right)+q\hfill \\ & =& q\hfill \end{array}\tag{14.32}
-\end{equation}
-\label{m39414*secfhsst!!!underscore!!!id2385}
+\begin{array}{ccc}\hfill {y}_{int}& =& f({0}^{\circ })\hfill \\ & =& asin({0}^{\circ })+q\hfill \\ & =& a(0)+q\hfill \\ & =& q\hfill \end{array}
+\end{equation*}
+
 
 
 \subsection{Graph of $y=cos~\theta $}
 \subsection*{Plotting the graph}
 \nopagebreak
-\label{m39414*uid8032} Complete the following table, using your calculator to calculate the values correct to 1 decimal place. Then plot the values with $cos\theta $ on the $y$-axis and $\theta $ on the $x$-axis.\par 
+ Complete the following table, using your calculator to calculate the values correct to $1$ decimal place. Then plot the values with $cos\theta $ on the $y$-axis and $\theta $ on the $x$-axis.\par 
 % \textbf{m39414*id86399}\par
 % how many colspecs?  8
 % name: cnx:colspec
@@ -2447,12 +2544,12 @@ Use your results to deduce the effect of $a$.
 \begin{caption}{\small\bfseries Table 14.8}\end{caption}
 \end{table}
 \par
-\label{m39414*id87173}If you look carefully, you will notice that the cosine of an angle $\theta $ is the same as the sine of the angle ${90}^{\circ }-\theta $. Take for example,\par 
-\label{m39414*id87206}\nopagebreak\noindent{}
+If you look carefully, you will notice that the cosine of an angle $\theta $ is the same as the sine of the angle ${90}^{\circ }-\theta $. Take for example,\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-cos{60}^{\circ }=\frac{1}{2}=sin{30}^{\circ }=sin\left({90}^{\circ }-{60}^{\circ }\right)\tag{14.33}
-\end{equation}
-\label{m39414*id87280}This tells us that in order to create the cosine graph, all we need to do is to shift the sine graph ${90}^{\circ }$ to the left. The graph of $cos\theta $ is shown in Figure~14.30. As the cosine graph is simply a shifted sine graph, it will have the same period and amplitude as the sine graph.\par 
+cos{60}^{\circ }=\frac{1}{2}=sin{30}^{\circ }=sin({90}^{\circ }-{60}^{\circ })
+\end{equation*}
+This tells us that in order to create the cosine graph, all we need to do is to shift the sine graph ${90}^{\circ }$ to the left. The graph of $cos\theta $ is shown in Figure~14.30. As the cosine graph is simply a shifted sine graph, it will have the same period and amplitude as the sine graph.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid50}
 \begin{center}
@@ -2466,10 +2563,10 @@ cos{60}^{\circ }=\frac{1}{2}=sin{30}^{\circ }=sin\left({90}^{\circ }-{60}^{\circ
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*uid51}
-\subsection*{Graphs of the form $y=acos\left(x\right)+q$}
+
+\subsection*{Graphs of the form $y=acos(x)+q$}
 \nopagebreak
-\label{m39414*id87386}In the equation, $y=acos\left(x\right)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.31 for the function $f\left(\theta \right)=2cos\theta +3$.\par 
+In the equation, $y=acos(x)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.31 for the function $f(\theta )=2cos\theta +3$.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid52}
 \begin{center}
@@ -2477,28 +2574,36 @@ cos{60}^{\circ }=\frac{1}{2}=sin{30}^{\circ }=sin\left({90}^{\circ }-{60}^{\circ
 \label{m39414*uid52!!!underscore!!!media}\label{m39414*uid52!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39414_trigrep1.png} % m39414;trigrep1.png;;;6.0;8.5;
 \vspace{2pt}
 \vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.31: }Graph of $f\left(\theta \right)=2cos\theta +3$
+\small \textbf{Figure 14.31: }Graph of $f(\theta )=2cos\theta +3$
 \end{cnxcaption}
 \vspace{.1in}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*secfhsst!!!underscore!!!id2647}
+
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
-\label{m39414*id87553}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39414*uid53}\item On the same set of axes, plot the following graphs:
-\label{m39414*id87568}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid54}\item $a\left(\theta \right)=cos\theta -2$\label{m39414*uid55}\item $b\left(\theta \right)=cos\theta -1$\label{m39414*uid56}\item $c\left(\theta \right)=cos\theta $\label{m39414*uid57}\item $d\left(\theta \right)=cos\theta +1$\label{m39414*uid58}\item $e\left(\theta \right)=cos\theta +2$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $a(\theta )=cos\theta -2$
+\item $b(\theta )=cos\theta -1$
+\item $c(\theta )=cos\theta $
+\item $d(\theta )=cos\theta +1$
+\item $e(\theta )=cos\theta +2$\end{enumerate}
 Use your results to deduce the effect of $q$.
-\label{m39414*uid59}\item On the same set of axes, plot the following graphs:
-\label{m39414*id87790}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid60}\item $f\left(\theta \right)=-2\ensuremath{\cdot}cos\theta $\label{m39414*uid61}\item $g\left(\theta \right)=-1\ensuremath{\cdot}cos\theta $\label{m39414*uid62}\item $h\left(\theta \right)=0\ensuremath{\cdot}cos\theta $\label{m39414*uid63}\item $j\left(\theta \right)=1\ensuremath{\cdot}cos\theta $\label{m39414*uid64}\item $k\left(\theta \right)=2\ensuremath{\cdot}cos\theta $\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $f(\theta )=-2\ensuremath{\cdot}cos\theta $
+\item $g(\theta )=-1\ensuremath{\cdot}cos\theta $
+\item $h(\theta )=0\ensuremath{\cdot}cos\theta $
+\item $j(\theta )=1\ensuremath{\cdot}cos\theta $
+\item $k(\theta )=2\ensuremath{\cdot}cos\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.
 \end{enumerate}
-\label{m39414*id88024}You should have found that the value of $a$ affects the amplitude of the cosine graph in the same way it did for the sine graph.\par 
-\label{m39414*id88038}You should have also found that the value of $q$ shifts the cosine graph in the same way as it did the sine graph.\par 
-\label{m39414*id88050}These different properties are summarised in Table 14.9.\par 
+You should have found that the value of $a$ affects the amplitude of the cosine graph in the same way it did for the sine graph.\par 
+You should have also found that the value of $q$ shifts the cosine graph in the same way as it did the sine graph.\par 
+These different properties are summarised in Table 14.9.\par 
 % \textbf{m39414*uid65}\par
 % how many colspecs?  3
 % name: cnx:colspec
@@ -2552,12 +2657,12 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -2565,7 +2670,7 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -2595,7 +2700,7 @@ Use your results to deduce the effect of $a$.
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -2624,24 +2729,24 @@ Use your results to deduce the effect of $a$.
 %--------------------------------------------------------------------
 \end{xtabular*}
 \end{center}
-\begin{center}{\small\bfseries Table 14.9}: Table summarising general shapes and positions of graphs of functions of the form $y=acos\left(x\right)+q$.\end{center}
+\begin{center}{\small\bfseries Table 14.9}: Table summarising general shapes and positions of graphs of functions of the form $y=acos(x)+q$.\end{center}
 %\end{table}
 \par
-\label{m39414*uid66}
+
 \subsection*{Discovering the characteristics}
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39414*id88263}For $f\left(\theta \right)=acos\left(\theta \right)+q$, the domain is $\{\theta :\theta \in \mathbb{R}\}$ because there is no value of $\theta \in \mathbb{R}$ for which $f\left(\theta \right)$ is undefined.\par 
-\label{m39414*id88363}It is easy to see that the range of $f\left(\theta \right)$ will be the same as the range of $asin\left(\theta \right)+q$. This is because the maximum and minimum values of $acos\left(\theta \right)+q$ will be the same as the maximum and minimum values of $asin\left(\theta \right)+q$.\par 
-\label{m39414*uid67}
+For $f(\theta )=acos(\theta )+q$, the domain is $\{\theta :\theta \in \mathbb{R}\}$ because there is no value of $\theta \in \mathbb{R}$ for which $f(\theta )$ is undefined.\par 
+It is easy to see that the range of $f(\theta )$ will be the same as the range of $asin(\theta )+q$. This is because the maximum and minimum values of $acos(\theta )+q$ will be the same as the maximum and minimum values of $asin(\theta )+q$.\par 
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39414*id88468}The $y$-intercept of $f\left(\theta \right)=acos\left(x\right)+q$ is calculated in the same way as for sine.\par 
-\label{m39414*id88517}\nopagebreak\noindent{}
+The $y$-intercept of $f(\theta )=acos(x)+q$ is calculated in the same way as for sine.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {y}_{int}& =& f\left({0}^{\circ }\right)\hfill \\ & =& acos\left({0}^{\circ }\right)+q\hfill \\ & =& a\left(1\right)+q\hfill \\ & =& a+q\hfill \end{array}\tag{14.34}
-\end{equation}
-\label{m39414*uid68}
+\begin{array}{ccc}\hfill {y}_{int}& =& f({0}^{\circ })\hfill \\ & =& acos({0}^{\circ })+q\hfill \\ & =& a(1)+q\hfill \\ & =& a+q\hfill \end{array}
+\end{equation*}
+
 \subsection*{Comparison of graphs of $y=sin~\theta $ and $y=cos~\theta $}
 \nopagebreak
 \setcounter{subfigure}{0}
@@ -2657,17 +2762,17 @@ Use your results to deduce the effect of $a$.
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*id88718}Notice that the two graphs look very similar. Both oscillate up and down around the $x$-axis as you move along the axis. The distances between the peaks of the two graphs is the same and is constant along each graph. The height of the peaks and the depths of the troughs are the same.\par 
-\label{m39414*id88733}The only difference is that the $sin$ graph is shifted a little to the right of the $cos$ graph by 90${}^{\circ }$. That means that if you shift the whole $cos$ graph to the right by 90 ${}^{\circ }$ it will overlap perfectly with the $sin$ graph. You could also move the $sin$ graph by 90 ${}^{\circ }$to the left and it would overlap perfectly with the $cos$ graph. This means that:\par 
-\label{m39414*id88844}\nopagebreak\noindent{}
+Notice that the two graphs look very similar. Both oscillate up and down around the $x$-axis as you move along the axis. The distances between the peaks of the two graphs is the same and is constant along each graph. The height of the peaks and the depths of the troughs are the same.\par 
+The only difference is that the $sin$ graph is shifted a little to the right of the $cos$ graph by 90${}^{\circ }$. That means that if you shift the whole $cos$ graph to the right by 90 ${}^{\circ }$ it will overlap perfectly with the $sin$ graph. You could also move the $sin$ graph by 90 ${}^{\circ }$to the left and it would overlap perfectly with the $cos$ graph. This means that:\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill sin\theta & =& cos\left(\theta -90\right)\left(\mathrm{shift\; the}\phantom{\rule{2.pt}{0ex}}cos\phantom{\rule{2.pt}{0ex}}\mathrm{graph\; to\; the\; right}\right)\hfill \\ & \mathbf{a}\mathrm{nd}& \\ \hfill cos\theta & =& sin\left(\theta +90\right)\left(\mathrm{shift\; the}\phantom{\rule{2.pt}{0ex}}sin\phantom{\rule{2.pt}{0ex}}\mathrm{graph\; to\; the\; left}\right)\hfill \end{array}\tag{14.35}
-\end{equation}
-\label{m39414*secfhsst!!!underscore!!!id2937}
+\begin{array}{ccc}\hfill sin\theta & =& cos(\theta -90)(\mbox{shift the}\phantom{\rule{2.pt}{0ex}}cos\phantom{\rule{2.pt}{0ex}}\mbox{graph to the right})\hfill \\ & \mathbf{a}\mbox{nd}& \\ \hfill cos\theta & =& sin(\theta +90)(\mbox{shift the}\phantom{\rule{2.pt}{0ex}}sin\phantom{\rule{2.pt}{0ex}}\mbox{graph to the left})\hfill \end{array}
+\end{equation*}
+
 \subsection{Graph of $y=tan\theta $ }
 \subsection*{Plotting the graph}
 \nopagebreak
-\label{m39414*uid982734}Complete the following table, using your calculator to calculate the values correct to 1 decimal place. Then plot the values with $tan\theta $ on the $y$-axis and $\theta $ on the $x$-axis.\par 
+Complete the following table, using your calculator to calculate the values correct to 1 decimal place. Then plot the values with $tan\theta $ on the $y$-axis and $\theta $ on the $x$-axis.\par 
 % \textbf{m39414*id89083}\par
 % how many colspecs?  8
 % name: cnx:colspec
@@ -2974,18 +3079,18 @@ Use your results to deduce the effect of $a$.
 \begin{caption}{\small\bfseries Table 14.11}\end{caption}
 \end{table}
 \par
-\label{m39414*id89839}Now that we have graphs for $sin\theta $ and $cos\theta $, there is an easy way to visualise the tangent graph. Let us look back at our definitions of $sin\theta $ and $cos\theta $ for a right-angled triangle.\par 
-\label{m39414*id89902}\nopagebreak\noindent{}
+Now that we have graphs for $sin\theta $ and $cos\theta $, there is an easy way to visualise the tangent graph. Let us look back at our definitions of $sin\theta $ and $cos\theta $ for a right-angled triangle.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\frac{sin\theta }{cos\theta }=\frac{\frac{\mathrm{opposite}}{\mathrm{hypotenuse}}}{\frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}}=\frac{\mathrm{opposite}}{\mathrm{adjacent}}=tan\theta \tag{14.36}
-\end{equation}
-\label{m39414*id89965}This is the first of an important set of equations called \textsl{trigonometric identities}. An identity is an equation, which holds true for any value which is put into it. In this case we have shown that\par 
-\label{m39414*id89978}\nopagebreak\noindent{}
+\frac{sin\theta }{cos\theta }=\frac{\frac{\mbox{opposite}}{\mbox{hypotenuse}}}{\frac{\mbox{adjacent}}{\mbox{hypotenuse}}}=\frac{\mbox{opposite}}{\mbox{adjacent}}=tan\theta 
+\end{equation*}
+This is the first of an important set of equations called trigonometric identities. An identity is an equation, which holds true for any value which is put into it. In this case we have shown that\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-tan\theta =\frac{sin\theta }{cos\theta }\tag{14.37}
-\end{equation}
-\label{m39414*id90014}for any value of $\theta $.\par 
-\label{m39414*id90030}So we know that for values of $\theta $ for which $sin\theta =0$, we must also have $tan\theta =0$. Also, if $cos\theta =0$ our value of $tan\theta $ is undefined as we cannot divide by 0. The graph is shown in Figure~14.38. The dashed vertical lines are at the values of $\theta $ where $tan\theta $ is not defined.\par 
+tan\theta =\frac{sin\theta }{cos\theta }
+\end{equation*}
+for any value of $\theta $.\par 
+So we know that for values of $\theta $ for which $sin\theta =0$, we must also have $tan\theta =0$. Also, if $cos\theta =0$ our value of $tan\theta $ is undefined as we cannot divide by 0. The graph is shown in Figure~14.38. The dashed vertical lines are at the values of $\theta $ where $tan\theta $ is not defined.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid71}
 \begin{center}
@@ -2999,10 +3104,10 @@ tan\theta =\frac{sin\theta }{cos\theta }\tag{14.37}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*uid72}
-\subsection*{Graphs of the form $y=atan\left(x\right)+q$}
+
+\subsection*{Graphs of the form $y=atan(x)+q$}
 \nopagebreak
-\label{m39414*id90209}In the figure below is an example of a function of the form $y=atan\left(x\right)+q$.\par 
+In the figure below is an example of a function of the form $y=atan(x)+q$.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*uid73}
 \begin{center}
@@ -3016,24 +3121,32 @@ tan\theta =\frac{sin\theta }{cos\theta }\tag{14.37}
 \rule[.1in]{\figurerulewidth}{.005in} \\
 \end{center}
 \end{figure}       
-\label{m39414*secfhsst!!!underscore!!!id3205}
+
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
-\label{m39414*id90310}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39414*uid74}\item On the same set of axes, plot the following graphs:
-\label{m39414*id90326}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid75}\item $a\left(\theta \right)=tan\theta -2$\label{m39414*uid76}\item $b\left(\theta \right)=tan\theta -1$\label{m39414*uid77}\item $c\left(\theta \right)=tan\theta $\label{m39414*uid78}\item $d\left(\theta \right)=tan\theta +1$\label{m39414*uid79}\item $e\left(\theta \right)=tan\theta +2$\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $a(\theta )=tan\theta -2$
+\item $b(\theta )=tan\theta -1$
+\item $c(\theta )=tan\theta $
+\item $d(\theta )=tan\theta +1$
+\item $e(\theta )=tan\theta +2$\end{enumerate}
 Use your results to deduce the effect of $q$.
-\label{m39414*uid80}\item On the same set of axes, plot the following graphs:
-\label{m39414*id90547}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid81}\item $f\left(\theta \right)=-2\ensuremath{\cdot}tan\theta $\label{m39414*uid82}\item $g\left(\theta \right)=-1\ensuremath{\cdot}tan\theta $\label{m39414*uid83}\item $h\left(\theta \right)=0\ensuremath{\cdot}tan\theta $\label{m39414*uid84}\item $j\left(\theta \right)=1\ensuremath{\cdot}tan\theta $\label{m39414*uid85}\item $k\left(\theta \right)=2\ensuremath{\cdot}tan\theta $\end{enumerate}
+\item On the same set of axes, plot the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $f(\theta )=-2\ensuremath{\cdot}tan\theta $
+\item $g(\theta )=-1\ensuremath{\cdot}tan\theta $
+\item $h(\theta )=0\ensuremath{\cdot}tan\theta $
+\item $j(\theta )=1\ensuremath{\cdot}tan\theta $
+\item $k(\theta )=2\ensuremath{\cdot}tan\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.
 \end{enumerate}
-\label{m39414*id90781}You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of \textsl{a}, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
+You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of $a$, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
 You should have also found that the value of $q$ affects the vertical shift as for $sin\theta $ and $cos\theta $.
 These different properties are summarised in Table 14.12.\par 
 % \textbf{m39414*uid86}\par
-\label{m39414*id90781}You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of \textsl{a}, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
+You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of $a$, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
 You should have also found that the value of $q$ affects the vertical shift as for $sin\theta $ and $cos\theta $.
 These different properties are summarised in Table 14.12.\par 
 % \textbf{m39414*uid86}\par
@@ -3089,12 +3202,12 @@ These different properties are summarised in Table 14.12.\par
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
 % Formatting a regular cell and recurring on the next sibling
-    $a\greatthan{}0$
+    $a>0$
     &
 % align/colidx: left,3
 % rowcount: '0' | start: 'false' | colidx: '3'
 % Formatting a regular cell and recurring on the next sibling
-    $a\lessthan{}0$
+    $a<0$
   % make-rowspan-placeholders
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
@@ -3102,7 +3215,7 @@ These different properties are summarised in Table 14.12.\par
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\greatthan{}0$
+    $q>0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -3132,7 +3245,7 @@ These different properties are summarised in Table 14.12.\par
 % align/colidx: left,1
 % rowcount: '0' | start: 'false' | colidx: '1'
 % Formatting a regular cell and recurring on the next sibling
-    $q\lessthan{}0$
+    $q<0$
     &
 % align/colidx: left,2
 % rowcount: '0' | start: 'false' | colidx: '2'
@@ -3161,34 +3274,39 @@ These different properties are summarised in Table 14.12.\par
 %--------------------------------------------------------------------
 \end{xtabular*}
 \end{center}
-\begin{center}{\small\bfseries Table 14.12}: Table summarising general shapes and positions of graphs of functions of the form $y=atan\left(x\right)+q$.\end{center}
+\begin{center}{\small\bfseries Table 14.12}: Table summarising general shapes and positions of graphs of functions of the form $y=atan(x)+q$.\end{center}
 %\end{table}
 \par
-\label{m39414*uid87}
+
 \subsection*{Discovering the characteristics}
 \subsection*{Domain and range}
 \nopagebreak
-\label{m39414*id91059}The domain of $f\left(\theta \right)=atan\left(\theta \right)+q$ is all the values of $\theta $ such that $cos\theta $ is not equal to 0. We have already seen that when $cos\theta =0$, $tan\theta =\frac{sin\theta }{cos\theta }$ is undefined, as we have division by zero. We know that $cos\theta =0$ for all $\theta ={90}^{\circ }+{180}^{\circ }n$, where $n$ is an integer. So the domain of $f\left(\theta \right)=atan\left(\theta \right)+q$ is all values of $\theta $, except the values $\theta ={90}^{\circ }+{180}^{\circ }n$.\par 
-\label{m39414*id91313}The range of $f\left(\theta \right)=atan\theta +q$ is $\{f\left(\theta \right):f\left(\theta \right)\in \left(-\infty ,\infty \right)\}$.\par 
-\label{m39414*uid88}
+The domain of $f(\theta )=atan(\theta )+q$ is all the values of $\theta $ such that $cos\theta $ is not equal to $0$. We have already seen that when $cos\theta =0$, $tan\theta =\frac{sin\theta }{cos\theta }$ is undefined, as we have division by zero. We know that $cos\theta =0$ for all $\theta ={90}^{\circ }+{180}^{\circ }n$, where $n$ is an integer. So the domain of $f(\theta )=atan(\theta )+q$ is all values of $\theta $, except the values $\theta ={90}^{\circ }+{180}^{\circ }n$.\par 
+The range of $f(\theta )=atan\theta +q$ is $\{f(\theta ):f(\theta )\in (-\infty ,\infty )\}$.\par 
+
 \subsection*{Intercepts}
 \nopagebreak
-\label{m39414*id91406}The $y$-intercept, ${y}_{int}$, of $f\left(\theta \right)=atan\left(x\right)+q$ is again simply the value of $f\left(\theta \right)$ at $\theta ={0}^{\circ }$.\par 
-\label{m39414*id91511}\nopagebreak\noindent{}
+The $y$-intercept, ${y}_{int}$, of $f(\theta )=atan(x)+q$ is again simply the value of $f(\theta )$ at $\theta ={0}^{\circ }$.\par 
+\nopagebreak\noindent{}
 \begin{equation*}
-\begin{array}{ccc}\hfill {y}_{int}& =& f\left({0}^{\circ }\right)\hfill \\ & =& atan\left({0}^{\circ }\right)+q\hfill \\ & =& a\left(0\right)+q\hfill \\ & =& q\hfill \end{array}\tag{14.38}
-\end{equation}
-\label{m39414*uid89}
+\begin{array}{ccc}\hfill {y}_{int}& =& f({0}^{\circ })\hfill \\ & =& atan({0}^{\circ })+q\hfill \\ & =& a(0)+q\hfill \\ & =& q\hfill \end{array}
+\end{equation*}
+
 \subsection*{Asymptotes}
 \nopagebreak
-\label{m39414*id91637}As $\theta $ approaches ${90}^{\circ }$, $tan\theta $ approaches infinity. But as $\theta $ is undefined at ${90}^{\circ }$, $\theta $ can only approach ${90}^{\circ }$, but never equal it. Thus the $tan\theta $ curve gets closer and closer to the line $\theta ={90}^{\circ }$, without ever touching it. Thus the line $\theta ={90}^{\circ }$ is an asymptote of $tan\theta $. $tan\theta $ also has asymptotes at $\theta ={90}^{\circ }+{180}^{\circ }n$, where $n$ is an integer.\par 
-\label{m39414*secfhsst!!!underscore!!!id3393}
+As $\theta $ approaches ${90}^{\circ }$, $tan\theta $ approaches infinity. But as $\theta $ is undefined at ${90}^{\circ }$, $\theta $ can only approach ${90}^{\circ }$, but never equal it. Thus the $tan\theta $ curve gets closer and closer to the line $\theta ={90}^{\circ }$, without ever touching it. Thus the line $\theta ={90}^{\circ }$ is an asymptote of $tan\theta $. $tan\theta $ also has asymptotes at $\theta ={90}^{\circ }+{180}^{\circ }n$, where $n$ is an integer.\par 
+
 \subsection*{Exercise: Trigonometric Functions }
 \nopagebreak
-\label{m39414*id91858}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39414*uid90}\item Using your knowldge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in \left[{0}^{\circ };{360}^{\circ }\right]$\label{m39414*id91924}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39414*uid91}\item $y=2sin\theta $\label{m39414*uid92}\item $y=-4cos\theta $\label{m39414*uid93}\item $y=-2cos\theta +1$\label{m39414*uid94}\item $y=sin\theta -3$\label{m39414*uid95}\item $y=tan\theta -2$\label{m39414*uid96}\item $y=2cos\theta -1$\end{enumerate}
-  \label{m39414*uid97}\item Give the equations of each of the following graphs:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Using your knowldge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [{0}^{\circ };{360}^{\circ }]$
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item $y=2sin\theta $
+\item $y=-4cos\theta $
+\item $y=-2cos\theta +1$
+\item $y=sin\theta -3$
+\item $y=tan\theta -2$\item $y=2cos\theta -1$\end{enumerate}
+  \item Give the equations of each of the following graphs:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39414*id92152}
 \begin{center}
@@ -3220,76 +3338,99 @@ These different properties are summarised in Table 14.12.\par
 \vspace{2pt}
 \vspace{.1in}
 \end{figure}       \par 
-\label{m39414*eip-300}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) la8  &  (2.) la0  & \end{tabular}
 \section{Interpretation of graphs}
 \section{Summary}
 \nopagebreak
-\label{m39348*eip-408}\begin{itemize}[noitemsep]
-\item You should know the following charecteristics of functions: \label{m39348*id69342}\begin{itemize}[noitemsep]
-\item The given or chosen x-value is known as the independent variable, because its value can be chosen freely. The calculated y-value is known as the dependent variable, because its value depends on the chosen x-value.\item The domain of a relation is the set of all the x values for which there exists at least one y value according to that relation. The range is the set of all the y values, which can be obtained using at least one x value.\item The intercept is the point at which a graph intersects an axis. The x-intercepts are the points at which the graph cuts the x-axis and the y-intercepts are the points at which the graph cuts the y-axis. \item Only for graphs of functions whose highest power is more than 1. There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. \item An asymptote is a straight or curved line, which the graph of a function will approach, but never touch.\item A line about which the graph is symmetric\item  The interval on which a graph increases or decreases\item A graph is said to be continuous if there are no breaks in the graph. \end{itemize}
+\begin{itemize}[noitemsep]
+\item You should know the following charecteristics of functions: 
+\begin{itemize}[noitemsep]
+\item The given or chosen $x$-value is known as the independent variable, because its value can be chosen freely. The calculated $y$-value is known as the dependent variable, because its value depends on the chosen $x$-value.
+\item The domain of a relation is the set of all the $x$ values for which there exists at least one $y$ value according to that relation. The range is the set of all the $y$ values, which can be obtained using at least one $x$ value.
+\item The intercept is the point at which a graph intersects an axis. The $x$-intercepts are the points at which the graph cuts the $x$-axis and the $y$-intercepts are the points at which the graph cuts the $y$-axis. 
+\item Only for graphs of functions whose highest power is more than $1$. There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. 
+\item An asymptote is a straight or curved line, which the graph of a function will approach, but never touch.
+\item A line about which the graph is symmetric
+\item  The interval on which a graph increases or decreases\item A graph is said to be continuous if there are no breaks in the graph. 
+\end{itemize}
 \item 
 Set notation
-A set of certain x values has the following form: \{x : conditions, more conditions\}\item 
-Interval notation
-Here we write an interval in the form 'lower bracket, lower number, comma, upper number, upper bracket'\item  You should know the following functions and their properties:\label{m39348*id679348}\begin{itemize}[noitemsep]
+A set of certain x values has the following form: \{$x$ : conditions, more conditions\}
 \item 
-Functions of the form $y=ax+q$. These are straight lines.\item 
-Functions of the Form $y=a{x}^{2}+q$ These are known as parabolic functions or parabolas.\item 
-Functions of the Form $y=\frac{a}{x}+q$. These are known as hyperbolic functions.\item 
-Functions of the Form $y=a{b}^{\left(x\right)}+q$. These are known as exponential functions.\end{itemize}
+Interval notation
+Here we write an interval in the form 'lower bracket, lower number, comma, upper number, upper bracket'
+\item  You should know the following functions and their properties:
+    \begin{itemize}[noitemsep]
+    \item Functions of the form $y=ax+q$. These are straight lines.
+    \item Functions of the Form $y=a{x}^{2}+q$ These are known as parabolic functions or parabolas.
+    \item Functions of the Form $y=\frac{a}{x}+q$. These are known as hyperbolic functions.
+    \item Functions of the Form $y=a{b}^{(x)}+q$. These are known as exponential functions.
+    \end{itemize}
 \end{itemize}
-\label{m39348*cid7}
+
 \section{End of Chapter Exercises}
 \nopagebreak
-\label{m39348*id253432}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\label{m39348*uid405}\item Sketch the following straight lines: 
-\label{m39348*id254512}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item 
-$y=2x+4$ \item 
-$y-x=0$ \item  
-$y=-\frac{1}{2}x+2$\end{enumerate}
-\label{m39348*uid406}\item Sketch the following functions: 
-\label{m39348*id254513}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item 
-$y={x}^{2}+3$ \item 
-$y=\frac{1}{2}{x}^{2}+4$\item 
-$y=2{x}^{2}-4$\end{enumerate}
-\label{m39348*uid407}\item Sketch the following functions and identify the asymptotes: 
-\label{m39348*id254514}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item 
-$y={3}^{x}+2$ \item 
-$y=-4.{2}^{x}+1$ \item 
-$y=2.{3}^{x}-2$ \end{enumerate}
-\label{m39348*uid408}\item Sketch the following functions and identify the asymptotes: 
-\label{m39348*id254515}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item 
-$y=\frac{3}{x}+4$ \item 
-$y=\frac{1}{x}$ \item 
-$y=\frac{2}{x}-2$ \end{enumerate}
-\label{m39348*uid409}\item Determine whether the following statements are true or false. If the statement is false, give reasons why:
-\label{m39348*id254516}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item The given or chosen y-value is known as the independent variable.\item An intercept is the point at which a graph intersects itself.\item There are two types of turning points -- minimal and maximal.\item A graph is said to be congruent if there are no breaks in the graph.\item Functions of the form $y=ax+q$ are straight lines.\item Functions of the form $y=\frac{a}{x}+q$ are exponential functions.\item  An asymptote is a straight or curved line which a graph will intersect once.\item Given a function of the form $y=ax+q$ , to find the y-intersect put $x=0$ and solve for $y$.\item The graph of a straight line always has a turning point.\end{enumerate}
-\label{m39348*uid206}\item Given the functions $f\left(x\right)=-2{x}^{2}-18$ and $g\left(x\right)=-2x+6$\label{m39348*id253512}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid207}\item Draw $f$ and $g$ on the same set of axes.
-\label{m39348*uid208}\item Calculate the points of intersection of $f$ and $g$.
-\label{m39348*uid209}\item Hence use your graphs and the points of intersection to solve for $x$ when:
-\label{m39348*id253596}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-\label{m39348*uid210}\item $f\left(x\right)\greatthan{}0$\label{m39348*uid211}\item $\frac{f\left(x\right)}{g\left(x\right)}\le 0$\end{enumerate}
-\label{m39348*uid212}\item Give the equation of the reflection of $f$ in the $x$-axis.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Sketch the following straight lines: 
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $y=2x+4$ 
+    \item $y-x=0$ 
+    \item $y=-\frac{1}{2}x+2$
+    \end{enumerate}
+\item Sketch the following functions: 
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $y={x}^{2}+3$ 
+    \item $y=\frac{1}{2}{x}^{2}+4$
+    \item $y=2{x}^{2}-4$
+    \end{enumerate}
+\item Sketch the following functions and identify the asymptotes: 
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $y={3}^{x}+2$ 
+    \item $y=-4.{2}^{x}+1$ 
+    \item $y=2.{3}^{x}-2$ 
+    \end{enumerate}
+\item Sketch the following functions and identify the asymptotes: 
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $y=\frac{3}{x}+4$ 
+    \item $y=\frac{1}{x}$ 
+    \item $y=\frac{2}{x}-2$ 
+    \end{enumerate}
+\item Determine whether the following statements are true or false. If the statement is false, give reasons why:
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item The given or chosen y-value is known as the independent variable.
+    \item An intercept is the point at which a graph intersects itself.
+    \item There are two types of turning points -- minimal and maximal.
+    \item A graph is said to be congruent if there are no breaks in the graph.
+    \item Functions of the form $y=ax+q$ are straight lines.
+    \item Functions of the form $y=\frac{a}{x}+q$ are exponential functions.
+    \item  An asymptote is a straight or curved line which a graph will intersect once.
+    \item Given a function of the form $y=ax+q$ , to find the y-intersect put $x=0$ and solve for $y$.
+    \item The graph of a straight line always has a turning point.
+    \end{enumerate}
+\item Given the functions $f(x)=-2{x}^{2}-18$ and $g(x)=-2x+6$
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item Draw $f$ and $g$ on the same set of axes.
+    \item Calculate the points of intersection of $f$ and $g$.
+    \item Hence use your graphs and the points of intersection to solve for $x$ when:
+	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
+	\item $f(x)>0$
+	\item $\frac{f(x)}{g(x)}\le 0$
+	\end{enumerate}
+    \item Give the equation of the reflection of $f$ in the $x$-axis.
+    \end{enumerate}
+\item After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5\ensuremath{\cdot}{(0,8)}^{x}$ shows the relationship between $x$, the number of bounces, and $y$, the height of the bounce, for a certain ball. What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?\newline
+\item Mark had $15$ coins in R$~5$ and R$~2$ pieces. He had $3$ more R$~2$ coins than R$~5$ coins. He wrote a system of equations to represent this situation, letting $x$ represent the number of R$~5$ coins and $y$ represent the number of R$~2$ coins. Then he solved the system by graphing.
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item Write down the system of equations.
+    \item Draw their graphs on the same set of axes.
+    \item What is the solution?
+    \end{enumerate}
+
 \end{enumerate}
-  \label{m39348*uid213}\item After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5\ensuremath{\cdot}{\left(0,8\right)}^{x}$ shows the relationship between $x$, the number of bounces, and $y$, the height of the bounce, for a certain ball. What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?\newline
-\label{m39348*uid214}\item Mark had 15 coins in five Rand and two Rand pieces. He had 3 more R2-coins than R5-coins. He wrote a system of equations to represent this situation, letting $x$ represent the number of five rand coins and $y$ represent the number of two rand coins. Then he solved the system by graphing.
-\label{m39348*id253801}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\label{m39348*uid215}\item Write down the system of equations.
-\label{m39348*uid216}\item Draw their graphs on the same set of axes.
-\label{m39348*uid217}\item What is the solution?
-\end{enumerate}
-  \end{enumerate}
-\label{m39348**end}
-\label{acabd86c2f495c693bc00f7e5c26834f**end}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lTN  &  (2.) lTR  &  (3.) lTp  &  (4.) lTn  &  (5.) lTy  &  (6.) lx8  &  (7.) lxX  &  (8.) lx9  & \end{tabular}
