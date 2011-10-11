@@ -165,7 +165,7 @@
 \vspace{3mm}\sffamily}%
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=0.5cm,%
+\begin{mdframed}[linewidth=2, margin=1cm,linecolor=lightgray,skipbelow=0.5cm,%
 skipabove=0.5cm]%
 \textsl{DEFINITION: } \hspace{1cm} #1\nopagebreak\par
 #2
@@ -309,8 +309,7 @@ linecolor=red%
 
 \definecolor{siyavula-gray}{RGB}{239,239,239}
 
-\newenvironment{wex}[3]
-{
+\newenvironment{wex}[3]{
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
@@ -327,12 +326,12 @@ linecolor=red%
 \nopagebreak \vspace*{1mm} 
 \begin{mdframed}[skipabove=1mm, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
 \vspace*{3mm}
-\textbf{\textit{Question:}} \vspace*{3mm} 
+\textbf{\textit{QUESTION}} \vspace*{3mm} 
 \hrule
+\vspace*{5mm}
+\textit{#2}\\
 \vspace*{3mm}
-\textit{#2}
-\vspace*{3mm}
-\textbf{Answer}\vspace*{3mm}
+\textbf{SOLUTION}\vspace*{3mm}
 \hrule
 \vspace*{3mm}
  #3%
@@ -752,7 +751,7 @@ linecolor=red%
       };
    \end{tikzpicture}
   }
-\titlespacing*{\section}{1.5cm}{2.cm}{2cm}
+\titlespacing*{\section}{1.5cm}{2.5cm}{2cm}
 
 
 
