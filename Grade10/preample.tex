@@ -19,7 +19,7 @@
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
       twoside, centering,
-      includehead, marginsep=3mm, marginparwidth=0.16\paperwidth]{geometry}
+      includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
     \usepackage{wrapfig}
     \usepackage{ifthen,changepage}      
     \usepackage{layouts}
@@ -165,12 +165,10 @@
 \vspace{3mm}\sffamily}%
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=\baselineskip,%
-skipabove=\baselineskip]%
-\begin{center}
-\textsl{DEFINITION: } \hspace{4cm} #1}\nopagebreak
+\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=0.5cm,%
+skipabove=0.5cm]%
+\textsl{DEFINITION: } \hspace{1cm} #1\nopagebreak\par
 #2
-\end{center}
 \end{mdframed}
 }
 
@@ -187,15 +185,16 @@ skipabove=\baselineskip]%
 
 
 \newcommand{\Tip}[1]{
-\vspace{3mm}
-\begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
-\noindent%
-\textbf{Tip:}\par
-#1
-\end{minipage}}
-\end{center}
-\vspace{3mm}}
+\marginpar{%odd
+\begin{minipage}[m]{0.225\paperwidth}
+\centerline{\textbf{Tip} }
+\vspace{1mm}
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray, margin=5pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
 
 \newcommand{\Warning}[1]{
 \begin{mdframed}[linewidth=4pt,%
@@ -773,4 +772,4 @@ linecolor=red%
       };
    \end{tikzpicture}
   }
-\titlespacing*{\subsection}{1.5cm}{0}{2cm}
+\titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
