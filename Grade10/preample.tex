@@ -12,16 +12,16 @@
     \setlength{\leftmargin}{-1cm} \item[] \noindent}
     {\end{description}}
 
-    \setlength{\marginparsep}{0pt}
-    \setlength{\marginparwidth}{0pt}
-    %\setlength{\}{0pt}
+
+    \usepackage{marginnote}
   
-    \usepackage[paper=a4, 
-      lmargin=0.2\paperwidth, rmargin=0.1\paperwidth, 
+    \usepackage[paper=letter, 
+      lmargin=0.1\paperwidth, rmargin=0.2\paperwidth, 
       tmargin=1in, bmargin=1in,
-      twoside,centering,
-      includehead]{geometry}
-      
+      twoside, centering,
+      includehead, marginsep=3mm, marginparwidth=0.16\paperwidth]{geometry}
+    \usepackage{wrapfig}
+    \usepackage{ifthen,changepage}      
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -213,16 +213,16 @@ linecolor=red%
 
 
 \newcommand{\Note}[1]{
-\vspace{3mm}
-\marginnote[
-\begin{center}
-\begin{minipage}[h]{0.18\paperwidth}
-\textbf{Note:}\par
-\colorbox{siyavula-gray}{\noindent%
-#1
+\marginpar{%odd
+\begin{minipage}[h]{0.16\paperwidth}
+\centerline{\textbf{Note:} }
+\vspace{1mm}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt]
+\small #1
+\end{mdframed}
 \end{minipage}
-%\end{center}
-\vspace{3mm}}}
+}
+}
 
                 
 
