@@ -165,10 +165,10 @@
 \vspace{3mm}\sffamily}%
 
 \newcommand{\Definition}[2]{
-\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{center}
-\textbf{Definition: #1}\par\nopagebreak
+\textsl{DEFINITION: } \hspace{4cm} #1}\nopagebreak
 #2
 \end{center}
 \end{mdframed}
@@ -176,10 +176,10 @@ skipabove=\baselineskip]%
 
 \newcommand{\Identity}[2]{
 \vspace{0.5cm}
-\begin{mdframed}[linewidth=2,leftmargin=40,rightmargin=40,linecolor=lightgray,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{flushleft}
-\textbf{#1}\nopagebreak
+\uppercase{\textsl{#1}}\nopagebreak
 #2
 \end{flushleft}
 \end{mdframed}
@@ -215,7 +215,7 @@ linecolor=red%
 \newcommand{\Note}[1]{
 \marginpar{%odd
 \begin{minipage}[h]{0.16\paperwidth}
-\centerline{\textbf{Note:} }
+\centerline{\textbf{Note} }
 \vspace{1mm}
 \begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt]
 \small #1
@@ -319,7 +319,7 @@ linecolor=red%
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
 \begin{mdframed}[linewidth=1pt,linecolor=darkgray]
-\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
+\large\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
 \end{mdframed}
 \begin{mdframed}[skipabove=-2mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
 \vspace{3mm}
