@@ -19,7 +19,7 @@
     \usepackage[paper=a4, 
       lmargin=0.2\paperwidth, rmargin=0.1\paperwidth, 
       tmargin=1in, bmargin=1in,
-      asymmetric,centering,
+      twoside,centering,
       includehead]{geometry}
       
     \usepackage{layouts}
@@ -214,14 +214,15 @@ linecolor=red%
 
 \newcommand{\Note}[1]{
 \vspace{3mm}
+\marginnote[
 \begin{center}
-\colorbox{lightgray}{\begin{minipage}[t]{0.80\textwidth}
-\noindent%
+\begin{minipage}[h]{0.18\paperwidth}
 \textbf{Note:}\par
+\colorbox{siyavula-gray}{\noindent%
 #1
-\end{minipage}}
-\end{center}
-\vspace{3mm}}
+\end{minipage}
+%\end{center}
+\vspace{3mm}}}
 
                 
 
@@ -746,7 +747,7 @@ linecolor=red%
       };
    \end{tikzpicture}
   }
-\titlespacing*{\section}{1.5cm}{3cm}{0pt}
+\titlespacing*{\section}{1.5cm}{2.cm}{2cm}
 
 
 
@@ -756,7 +757,7 @@ linecolor=red%
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
   {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west, xshift=-0.4\paperwidth]
+    \node[anchor=west, yshift=-1.5cm, xshift=-0.4\paperwidth]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,1.5cm);
@@ -766,4 +767,4 @@ linecolor=red%
       };
    \end{tikzpicture}
   }
-\titlespacing*{\subsection}{1.5cm}{3cm}{0pt}
+\titlespacing*{\subsection}{1.5cm}{0}{2cm}
