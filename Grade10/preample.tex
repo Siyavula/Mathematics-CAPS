@@ -824,20 +824,20 @@ Note
  \par  \vspace*{3\baselineskip}
 {\normalfont \sffamily\fontsize{16}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west , xshift=0., text centered]
+    \node[anchor=west ,text centered]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black] (0,0) rectangle
-          (0.3\textwidth,1.5cm);
+          (0.33\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
+              {  ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
 % now the gray bar to the end of the paragraph
-    \node[anchor=west, xshift=0.31\textwidth]{
+    \node[anchor=west, xshift=0.335\textwidth]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
-          (0.69\textwidth,1.5cm);
+          (0.655\textwidth,1.5cm);
        \end{tikzpicture}
 
 
@@ -858,7 +858,7 @@ Note
         \draw[color=white, draw=black] (0,0) rectangle
           (0.3\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} Chapter \chapterlabel };
+              { ~~  \color{black} Chapter \chapterlabel };
        \end{tikzpicture}
     };
     
