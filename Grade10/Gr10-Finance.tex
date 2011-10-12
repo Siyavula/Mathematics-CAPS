@@ -57,7 +57,7 @@ The formula used to calculate simple interest is:
 \Identity{Simple Interest}{
     \begin{eqnarray}
 	\label{FG:SI}
-	A &=& P (1 + i^n)\\
+	A &=& P (1 + i \cdot n)\\
 	\text{Where:~} \nonumber\\
 	A &=& \text{accumulated amount} \nonumber\\
 	P &=& \text{principal amount} \nonumber\\
@@ -84,7 +84,7 @@ The formula used to calculate simple interest is:
     
     \westep{Write down the formula}
     \begin{align*}
-	A &= P(1 + i^n)
+	A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -112,7 +112,7 @@ The formula used to calculate simple interest is:
 
     \westep{Write down the formula}
     \begin{align*}
-	A &= P(1 + i^n)
+	A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -143,7 +143,7 @@ We can use the simple interest formula to discover pieces of missing information
 
     \westep{Write down the formula}
     \begin{align*}
-	A &= P(1 + i^n)
+	A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -177,7 +177,7 @@ We can use the simple interest formula to discover pieces of missing information
 
     \westep{Write down the formula}
     \begin{align*}
-	A &= P(1 + i^n)
+	A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -247,7 +247,7 @@ A hire purchase agreement is a financial agreement between the shop and the cust
 
     \westep{We know from \ref{FG:SI} that:}
     \begin{align*}
-	    A &= P(1 + i^n)
+	    A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -285,7 +285,7 @@ Occasionally the shop will add a monthly insurance premium to the monthly instal
 
     \westep{Write down the formula}
     \begin{align*}
-	    A &= P(1 + i^n)
+	    A &= P(1 + i \cdot n)
     \end{align*}
 
     \westep{Substitute the values and solve for the remaining variable}
@@ -420,1030 +420,385 @@ We can see that the power of the term $(1 + i)$ is the same as the number of yea
 \end{wex}
 
 
+\begin{wex}{Calculating the compound interest rate to achieve the desired growth}{
+    Charlie has been given R~$5~000$ for his sixteenth birthday. Rather than spending it, he has decided to invest it so that on his eighteenth birthday, he can put a deposit of R~$10~000$ on a car. What compound interest rate should he be looking for?}{
+    
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& 10~000\\
+	P &=& 5~000\\
+	i &=& ?\\
+	n &=& 2
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for the remaining variable}
+    \begin{align*}
+	10~000 &= 5~000(1 + i)^2\\
+	\frac{10~000}{5~000}&= (1 +i)^2\\
+	\sqrt[]{\frac{10~000}{5~000}} &= 1 + i\\
+	\sqrt[]{\frac{10~000}{5~000}} - 1 &= i\\
+	i &= 0,4142135624
+    \end{align*}
+
+    \westep{Explain your answer}
+    Charlie needs to find an account that offers a compound interest rate of $41,42\%$.
+    }
+\end{wex}
 
 
+\subsection{The Power of Compound Interest}
+
+To see how important this “interest on interest" is, we shall compare the difference in closing balances for money earning simple interest and money earning compound interest. Consider an amount of R~$10~000$ that you have to invest for 10 years, and assume we can earn interest of $9\%$. How much would that be worth after 10 years?\par
+
+The closing balance for the money earning simple interest is:
+\begin{align*}
+    A &= P(1 + i \cdot n)\\
+      &= 10~000(1 + 0,09 \times 10)\\
+      &= R~19~000\\
+\end{align*}
+
+The closing balance for the money earning compound interest is:
+\begin{align*}
+    A &= P(1 + i)^n\\
+      &= 10~000(1 + 0,09)^10\\
+      &= R~23~673,64
+\end{align*}
+
+If we graph the growth of the money, it’s easier to see how it increases in just a straight line in simple interest but exponentially in compound interest:
+\begin{figure}[H]
+    \begin{center}
+	\begin{pspicture}(-5,-2)(7,8)
+	    \psset{yunit=0.75,xunit=1}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.3)
+	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000](0,0)(0,0)(10.4,12.3)
+% 	    \psline[linecolor=red](0,5)(10,9.5)
+	    \psplot[linecolor=red, algebraic=true]{0}{10}{5*((1+0.09*x))}
+	\end{pspicture}
+	\caption{The growth of money in a simple interest account over 10 years.}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+	\begin{pspicture}(-5,-2)(7,8)
+	    \psset{yunit=0.75,xunit=1}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.3)
+	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000](0,0)(0,0)(10.4,12.3)
+	    \psplot[linecolor=red, algebraic=true]{0}{10}{5*((1+0.09)^x)}
+	\end{pspicture}
+	\caption{The growth of money in a compound interest account over 10 years.}
+	\label{FG:fig:CI10}
+    \end{center}
+\end{figure}
+
+It’s easier to see the vast difference in growth if we extend the time period to 50 years:
+\begin{figure}[H]
+    \begin{center}
+	\begin{pspicture}(-2,-2)(7,8)
+	    \psset{yunit=0.75,xunit=0.65}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
+	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000](0,0)(0,0)(20,15)
+% 	    \psline[linecolor=red](0,0.2)(20,1.1)
+	    \psplot[linecolor=red, algebraic=true]{0}{20}{0.2*((1+0.09*x*5/2))}
+	\end{pspicture}
+	\caption{The growth of money in a simple interest account over 50 years.}
+	\label{FG:fig:SI10}
+    \end{center}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+	\begin{pspicture}(-2,-2)(7,8)
+	    \psset{yunit=0.75,xunit=0.65}
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
+	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000](0,0)(0,0)(20,15)
+	    \psplot[linecolor=red, algebraic=true]{0}{20}{0.2*((1+0.09)^(x*5/2))}
+	\end{pspicture}
+	\caption{The growth of money in a compound interest account over 50 years.}
+	\label{FG:fig:CI10}
+    \end{center}
+\end{figure}
+
+Again, keep in mind that this is good news and bad news. When you are earning interest on money you have invested, compound interest helps that amount to increase exponentially. But if you have borrowed money, the build up of the amount you owe will grow exponentially too.
 
 
+\begin{exercises}{Compound Interest}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item An amount of R~$3~500$ is invested in a savings account which pays a compound interest rate of $7,5\%$ p.a. Calculate the balance accumulated by the end of 2 years.
 
+	\item Morgan invests R~$5~000$ into an account which pays out a lump sum at the end of 5 years. If he gets R~$7~500$ at the end of the period, what compound interest rate did the bank offer him?
 
-\subsection{ Simple Interest Monthly Calculations}
-            \nopagebreak
-        \label{m39332*id69658}You might be wondering to yourself:\par 
-        \label{m39332*id69662}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39332*uid30}\item how much interest will you be paid if you only leave the money in the account for 3 months, or
-\label{m39332*uid31}\item what if you leave it there for 3 years?
-\end{enumerate}
-        \label{m39332*id69691}
-It is actually quite simple - which is why they call it \textbf{Simple Interest}.\par 
-        \label{m39332*id69703}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39332*uid32}\item Three months is 1/4 of a year, so you would only get 1/4 of a full year's interest, which is: $1/4\ensuremath{\times}\left(P\ensuremath{\times}i\right)$. The closing balance would therefore be:
-\label{m39332*id69748}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Closing\; Balance}& =& P+1/4\ensuremath{\times}\left(P\ensuremath{\times}i\right)\hfill \\ & =& P\left(1+\left(1/4\right)i\right)\hfill \end{array}\tag{3.5}
-      \end{equation}
-    \label{m39332*uid33}\item For 3 years, you would get three years' worth of interest, being: $3\ensuremath{\times}\left(P\ensuremath{\times}i\right)$. The closing balance at the end of the three year period would be:
-\label{m39332*id69871}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Closing\; Balance}& =& P+3\ensuremath{\times}\left(P\ensuremath{\times}i\right)\hfill \\ & =& P\ensuremath{\times}\left(1+\left(3\right)i\right)\hfill \end{array}\tag{3.6}
-      \end{equation}
+	\item Shrek wants to invest some money at a compound interest rate of $11\%$ p.a. How much money (to the nearest Rand) should be invested if he wants to reach a sum of R~$100~000$ in five years time?\\
     \end{enumerate}
-        \label{m39332*id69952}If you look carefully at the similarities between the two answers above, we can generalise the result. If you invest your money ($P$) in an account which pays a rate of interest ($i$) for a period of time ($n$ years), then, using the symbol $A$ for the Closing Balance:\par 
-        \label{m39332*uid34}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    A=P\left(1+i\ensuremath{\cdot}n\right)\tag{3.7}
-      \end{equation}
-        \label{m39332*id70029}As we have seen, this works when $n$ is a fraction of a year and also when $n$ covers several years.\par 
-\label{m39332*notfhsst!!!underscore!!!id1166}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {important: }Annual Rates means Yearly rates. and p.a.(per annum) = per year
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-\label{m39332*secfhsst!!!underscore!!!id1168}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.1:  Simple Interest }
-        \label{m39332*probfhsst!!!underscore!!!id1169}
-        \label{m39332*id70072}If I deposit R1~000 into a special bank account which pays a Simple Interest of 7\% for 3 years, how much will I get back at the end of this term? \par 
-        \vspace{5pt}
-        \label{m39332*solfhsst!!!underscore!!!id1172}\noindent\textbf{Solution to Exercise } \label{m39332*listfhsst!!!underscore!!!id1172}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39332*id70098}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39332*uid35}\item opening balance, $P=\mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}000$\label{m39332*uid36}\item interest rate, $i=7\%$\label{m39332*uid37}\item period of time, $n=3\phantom{\rule{3.33333pt}{0ex}}\mathrm{years}$\end{itemize}
-        \label{m39332*id70196}We are required to find the closing balance (A).\par 
-        \item  
-        \label{m39332*id70204}We know from (3.7) that:\par 
-        \label{m39332*id70212}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}\left(1+\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.8}
-      \end{equation}
-        \item  
-        \label{m39332*id70268}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& R1\phantom{\rule{3.33333pt}{0ex}}000\left(1+3\ensuremath{\times}7\%\right)\hfill \\ & =& R1\phantom{\rule{3.33333pt}{0ex}}210\hfill \end{array}\tag{3.9}
-      \end{equation}
-        \item  
-        \label{m39332*id70374}The closing balance after 3 years of saving R1~000 at an interest rate of 7\% is R1~210. \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
+
+    Find the answers with the short codes:\\
+    \begin{tabularx}{\textwidth}{ XXX }
+	(1)	&	(2)	&	(3)\\
+    \end{tabularx}
+\end{exercises}
+
+
+\subsection{Inflation}
+
+You may have heard many older people recalling times when things were cheaper. You may remember buying things as a child and be shocked at the increase in price. There are many factors that influence the change in price of an item, one of them being inflation.\par
+
+Inflation is the average percentage that all goods increase by every year. As this increase happens every year, it is calculated using the compound interest formula.
+
+
+\begin{wex}{Calculating future cost based on inflation}
+    {Milk costs R~$14$ for two litres. How much will it cost in 4 years time if the inflation rate is $9\%$p.a.?}{
+    
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& ?\\
+	P &=& 14\\
+	i &=& 0,09\\
+	n &=& 4
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for the remaining variable}
+    \begin{align*}
+	A &= 14(1 + 0,09)^4\\
+	  &= 19,76
+    \end{align*}
+
+    \westep{Explain your answer}
+    In four years time, milk will cost R~$19,76$.
     }
-    \noindent
-\label{m39332*secfhsst!!!underscore!!!id1272}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.2:  Calculating $n$ }
-        \label{m39332*probfhsst!!!underscore!!!id1273}
-        \label{m39332*id70413}If I deposit R30~000 into a special bank account which pays a Simple Interest of 7.5\%, for how many years must I invest this amount to generate R45~000? \par 
-        \vspace{5pt}
-        \label{m39332*solfhsst!!!underscore!!!id1276}\noindent\textbf{Solution to Exercise } \label{m39332*listfhsst!!!underscore!!!id1276}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39332*id70439}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39332*uid38}\item opening balance, $P=\mathrm{R}30\phantom{\rule{3.33333pt}{0ex}}000$\label{m39332*uid39}\item interest rate, $i=7,5\%$\label{m39332*uid40}\item closing balance, $A=\mathrm{R}45\phantom{\rule{3.33333pt}{0ex}}000$\end{itemize}
-        \label{m39332*id70545}We are required to find the number of years.\par 
-        \item  
-        \label{m39332*id70552}We know from (3.7) that:\par 
-        \label{m39332*id70560}\nopagebreak\noindent{}
-    \begin{equation}
-    A=\mathrm{P}\left(1+\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.10}
-      \end{equation}
-        \item  
-        \label{m39332*id70614}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill A& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ \hfill R45\phantom{\rule{3.33333pt}{0ex}}000& =& R30\phantom{\rule{3.33333pt}{0ex}}000\left(1+n\ensuremath{\times}7,5\%\right)\hfill \\ \hfill \left(1+0,075\ensuremath{\times}n\right)& =& \frac{45000}{30000}\hfill \\ \hfill 0,075\ensuremath{\times}n& =& 1,5-1\hfill \\ \hfill n& =& \frac{0,5}{0,075}\hfill \\ \hfill n& =& 6,6666667\hfill \\ \hfill n& =& 6\phantom{\rule{1mm}{0ex}}\mathrm{years}\phantom{\rule{1mm}{0ex}}8\phantom{\rule{1mm}{0ex}}\mathrm{months}\hfill \end{array}\tag{3.11}
-      \end{equation}
-        \item  
-        \label{m39332*id70878}The period is 6 years and 8 months for R30~000 to generate R45~000 at a simple interest rate of 7,5\%. If we were asked for the nearest whole number of years, we would have to invest the money for 7 years.\par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
+\end{wex}
+
+
+\begin{wex}{Calculating past cost based on inflation}
+    {A box of chocolates costs R~$55$ today. How much did it cost 3 years ago if the average rate of inflation was $11\%$p.a.?}{
+    
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& 55\\
+	P &=& ?\\
+	i &=& 0,11\\
+	n &=& 3
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for the remaining variable}
+    \begin{align*}
+	55 &= P(1 + 0,11)^3\\
+	\frac{55}{(1 + 0,11)^3} &= P\\
+	P  &= 40,22
+    \end{align*}
+
+    \westep{Explain your answer}
+    Three years ago, a box of chocolates would have cost R~$40,22$.
     }
-    \noindent
-      \label{m39332*uid41}
-            \subsection{ Other Applications of the Simple Interest Formula}
-            \nopagebreak
-\par
-            \label{m39332*secfhsst!!!underscore!!!id1464}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.3:  Hire-Purchase }
-        \label{m39332*probfhsst!!!underscore!!!id1465}
-        \label{m39332*id70919}Troy is keen to buy an additional hard drive for his laptop advertised for R 2~500 on the internet. There is an option of paying a 10\% deposit then making 24 monthly payments using a hire-purchase agreement where interest is calculated at 7,5\% p.a. simple interest. Calculate what Troy's monthly payments will be. \par 
-        \vspace{5pt}
-        \label{m39332*solfhsst!!!underscore!!!id1468}\noindent\textbf{Solution to Exercise } \label{m39332*listfhsst!!!underscore!!!id1468}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39332*id70948}A new opening balance is required, as the 10\% deposit is paid in cash.\par 
-        \label{m39332*id70952}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39332*uid42}\item 10\% of R 2~500 = R250
-\label{m39332*uid43}\item new opening balance, $P=\mathrm{R}2\phantom{\rule{3.33333pt}{0ex}}500-\mathrm{R}250=\mathrm{R}2\phantom{\rule{3.33333pt}{0ex}}250$\label{m39332*uid44}\item interest rate, $i=7,5\%$\label{m39332*uid45}\item period of time, $n=2\phantom{\rule{3.33333pt}{0ex}}\mathrm{years}$\end{itemize}
-        \label{m39332*id71089}
-We are required to find the closing balance (A) and then the monthly payments.\par 
-        \item  
-        \label{m39332*id71099}We know from (3.7) that:\par 
-        \label{m39332*id71107}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}\left(1+\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.12}
-      \end{equation}
-        \item  
-        \label{m39332*id71164}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& R2\phantom{\rule{3.33333pt}{0ex}}250\left(1+\left(2\ensuremath{\times}7,5\%\right)\right)\hfill \\ & =& R2\phantom{\rule{3.33333pt}{0ex}}587,50\hfill \\ \hfill \mathrm{Monthly\; payment}& =& 2587,50÷24\hfill \\ & =& R107,81\hfill \end{array}\tag{3.13}
-      \end{equation}
-        \item  
-        \label{m39332*id71325}Troy's monthly payments = R 107,81
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
+\end{wex}
+
+
+\subsection{Population Growth}
+
+How many people are your grandparents responsible for bringing into this world? Maybe they just had one child (your mom or dad) or maybe they had a dozen. How many of your parent’s siblings then had children of their own? How many of your cousins have already started having babies? A family tree typically starts with two people who have offspring. These people then have more babies which in turn procreate further. The family tree increases exponentially as every person who is born has the ability to be a part of the creation process of another. For this reason we calculate population growth using the compound interest formula.
+
+
+\begin{wex}{Population growth}
+    {If the current population of Johannesburg is $3~888~180$, and the average rate of population growth in South Africa is $2,1\%$p.a., what can city planners expect the population of Johannesburg to be in 10 years?}{
+    
+    \westep{Write down the known variables}
+    \begin{eqnarray*}
+	A &=& ?\\
+	P &=& 3~888~180\\
+	i &=& 0,021\\
+	n &=& 10
+    \end{eqnarray*}
+
+    \westep{Write down the formula}
+    \begin{align*}
+	A &= P(1 + i)^n
+    \end{align*}
+
+    \westep{Substitute the values and solve for the remaining variable}
+    \begin{align*}
+	A &= 3~888~180(1 + 0,021)^{10}\\
+	  &= 4~786~342,614
+    \end{align*}
+
+    \westep{Explain your answer}
+    City planners can expect a population of $4~786~343$ in Johannesburg in ten years time.
     }
-    \noindent
-        \label{m39332*id71341}Many items become less valuable as they are used and age. For example, you pay less for a second hand car than a new car of the same model. The older a car is the less you pay for it. The reduction in value with time can be due purely to wear and tear from usage but also to the development of new technology that makes the item obsolete, for example, new computers that are released force down the value of older models. The term we use to descrive the decrease in value of items with time is \textsl{depreciation}.\par 
-        \label{m39332*id71354}Depreciation, like interest can be calculated on an annual basis and is often done with a rate or percentage change per year. It is like ''negative'' interest. The simplest way to do depreciation is to assume a constant rate per year, which we will call simple depreciation. There are more complicated models for depreciation but we won't deal with them here.\par 
-\label{m39332*secfhsst!!!underscore!!!id1613}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.4:  Depreciation }
-        \label{m39332*probfhsst!!!underscore!!!id1614}
-        \label{m39332*id71376}Seven years ago, Tjad's drum kit cost him R12~500. It has now been valued at R2~300. What rate of simple depreciation does this represent ? \par 
-        \vspace{5pt}
-        \label{m39332*solfhsst!!!underscore!!!id1617}\noindent\textbf{Solution to Exercise } \label{m39332*listfhsst!!!underscore!!!id1617}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39332*id71402}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39332*uid46}\item opening balance, $P=\mathrm{R}12\phantom{\rule{3.33333pt}{0ex}}500$\label{m39332*uid47}\item period of time, $n=7\phantom{\rule{3.33333pt}{0ex}}\mathrm{years}$\label{m39332*uid48}\item closing balance, $A=\mathrm{R}2\phantom{\rule{3.33333pt}{0ex}}300$\end{itemize}
-        \label{m39332*id71507}We are required to find the interest rate($i$).\par 
-        \item  
-        \label{m39332*id71526}We know from (3.7) that:\par 
-        \label{m39332*id71534}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}\left(1+\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.14}
-      \end{equation}
-        \label{m39332*id71586}Therefore, for \textbf{depreciation} the formula will change to:\par 
-        \label{m39332*id71598}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}\left(1-\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.15}
-      \end{equation}
-        \item  
-        \label{m39332*id71654}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1-i\ensuremath{\cdot}n\right)\hfill \\ \hfill R2\phantom{\rule{3.33333pt}{0ex}}300& =& R12\phantom{\rule{3.33333pt}{0ex}}500\left(1-7\ensuremath{\times}i\right)\hfill \\ \hfill i& =& 0,11657...\hfill \end{array}\tag{3.16}
-      \end{equation}
-        \item  
-        \label{m39332*id71779}Therefore the rate of depreciation is $11,66\%$
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-\label{m39332*secfhsst!!!underscore!!!id1753}
-            \subsection{Exercises: Simple Interest }
-            \nopagebreak
-            \label{m39332*id71818}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39332*uid49}\item An amount of R3 500 is invested in a savings account which pays simple interest at a rate of 7,5\% per annum. Calculate the balance accumulated by the end of 2 years.\newline
-\label{m39332*uid50}\item Calculate the simple interest for the following problems.
-\label{m39332*id71847}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39332*uid51}\item A loan of R300 at a rate of 8\% for l year.
-\label{m39332*uid52}\item An investment of R225 at a rate of 12,5\% for 6 years.
-\end{enumerate}
-\label{m39332*uid53}\item I made a deposit of R5~000 in the bank for my 5 year old son's 21st birthday. I have given him the amount of R 18~000 on his birthday. At what rate was the money invested, if simple interest was calculated ?\newline
-\label{m39332*uid54}\item Bongani buys a dining room table costing R 8~500 on Hire Purchase. He is charged simple interest at 17,5\% per annum over 3 years.
-\label{m39332*id71906}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39332*uid55}\item How much will Bongani pay in total ?
-\label{m39332*uid56}\item How much interest does he pay ?
-\label{m39332*uid57}\item What is his monthly installment ?
-\end{enumerate}
-\end{enumerate}
-  \label{m39332**end}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lcT  &  (2.) lcb  &  (3.) lcj  &  (4.) lcD  & \end{tabular}
-         \section{ Compound interest}
-    \nopagebreak
-            \label{m39334} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10028 )} \par 
-%     \label{m39334*cid6}
-%             \subsection{ Compound Interest}
-%             \nopagebreak
-%             
-      \label{m39334*id71967}To explain the concept of compound interest, the following example is discussed:\par 
-\label{m39334*secfhsst!!!underscore!!!id1776}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.5:  Using Simple Interest to lead to the concept Compound Interest }
-      \label{m39334*probfhsst!!!underscore!!!id1777}
-      \label{m39334*id71984}I deposit R1~000 into a special bank account which pays a Simple Interest of 7\%. What if I empty the bank account after a year, and then take the principal and the interest and invest it back into the same account again. Then I take it all out at the end of the second year, and then put it all back in again? And then I take it all out at the end of 3 years? \par 
-      \vspace{5pt}
-      \label{m39334*solfhsst!!!underscore!!!id1780}\noindent\textbf{Solution to Exercise } \label{m39334*listfhsst!!!underscore!!!id1780}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-      \label{m39334*id72013}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39334*uid58}\item opening balance, $P=\mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}000$\label{m39334*uid59}\item interest rate, $i=7\%$\label{m39334*uid60}\item period of time, $1\phantom{\rule{3.33333pt}{0ex}}\mathrm{year}$ at a time, for 3 years
-\end{itemize}
-      \label{m39334*id72108}We are required to find the closing balance at the end of three years.\par 
-      \item  
-      \label{m39334*id72115}We know that:\par 
-      \label{m39334*id72119}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}\left(1+\mathrm{i}\ensuremath{\cdot}\mathrm{n}\right)\tag{3.17}
-      \end{equation}
-      \item  
-      \label{m39334*id72165}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}000\left(1+1\ensuremath{\times}7\%\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}070\hfill \end{array}\tag{3.18}
-      \end{equation}
-      \item  
-      \label{m39334*id72277}After the first year, we withdraw all the money and re-deposit it. The opening balance for the second year is therefore $\mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}070$, because this is the balance after the first year.\par 
-      \label{m39334*id72302}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}070\left(1+1\ensuremath{\times}7\%\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}144,90\hfill \end{array}\tag{3.19}
-      \end{equation}
-      \item  
-      \label{m39334*id72418}After the second year, we withdraw all the money and re-deposit it. The opening balance for the third year is therefore $\mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}144,90$, because this is the balance after the first year.\par 
-      \label{m39334*id72447}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}144,90\left(1+1\ensuremath{\times}7\%\right)\hfill \\ & =& \mathrm{R}1\phantom{\rule{3.33333pt}{0ex}}225,04\hfill \end{array}\tag{3.20}
-      \end{equation}
-      \item  
-      \label{m39334*id72567}The closing balance after withdrawing all the money and re-depositing each year for 3 years of saving R1~000 at an interest rate of 7\% is R1~225,04. \par 
-      \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-      \label{m39334*id72585}In the two worked examples using simple interest ( and Exercise~3.5 ( Using Simple Interest to lead to the concept Compound Interest )), we have basically the same problem because $P$=R1~000, $i$=7\% and $n$=3 years for both problems. Except in the second situation, we end up with R1 225,04 which is more than R1 210 from the first example. What has changed?\par 
-      \label{m39334*id72618}In the first example I earned R70 interest each year - the same in the first, second and third year. But in the second situation, when I took the money out and then re-invested it, I was actually earning interest in the second year on my interest (R70) from the first year. (And interest on the interest on my interest in the third year!)\par 
-      \label{m39334*id72624}This more realistically reflects what happens in the real world, and is known as Compound Interest. It is this concept which underlies just about everything we do - so we will look at it more closely next.\par 
-\label{m39334*fhsst!!!underscore!!!id2023}\begin{definition}
-	  \begin{tabular*}{15 cm}{m{15 mm}m{}}
-	\hspace*{-50pt}  \includegraphics[width=0.5in]{col11306.imgs/psflag2.png}   & \Definition{   \label{id2481335}\textbf{ Compound Interest }} { \label{m39334*meaningfhsst!!!underscore!!!id2023}
-      \label{m39334*id72635}Compound interest is the interest payable on the principal and its accumulated interest. \par 
-       } 
-      \end{tabular*}
-      \end{definition}
-      \label{m39334*id72647}Compound interest is a double-edged sword, though - great if you are earning interest on cash you have invested, but more serious if you are stuck having to pay interest on money you have borrowed!\par 
-      \label{m39334*id72652}In the same way that we developed a formula for Simple Interest, let us find one for Compound Interest.\par 
-      \label{m39334*id72656}If our opening balance is $P$ and we have an interest rate of $i$ then, the closing balance at the end of the first year is:\par 
-      \label{m39334*id72678}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}} 1 \phantom{\rule{2pt}{0ex}}\mathrm{year}=\mathrm{P}\left(1+\mathrm{i}\right)\tag{3.21}
-      \end{equation}
-      \label{m39334*id72719}This is the same as Simple Interest because it only covers a single year. Then, if we take that out and re-invest it for another year - just as you saw us doing in the worked example above - then the balance after the second year will be:\par 
-      \label{m39334*id72727}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}2\phantom{\rule{2pt}{0ex}}\mathrm{years}& =& \left[P\left(1+i\right)\right]\ensuremath{\times}\left(1+i\right)\hfill \\ & =& P{\left(1+i\right)}^{2}\hfill \end{array}\tag{3.22}
-      \end{equation}
-      \label{m39334*id72823}And if we take that money out, then invest it for another year, the balance becomes:\par 
-      \label{m39334*id72827}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}3\phantom{\rule{2pt}{0ex}}\mathrm{years}& =& \left[P{\left(1+i\right)}^{2}\right]\ensuremath{\times}\left(1+i\right)\hfill \\ & =& P{\left(1+i\right)}^{3}\hfill \end{array}\tag{3.23}
-      \end{equation}
-      \label{m39334*id72931}We can see that the power of the term $\left(1+i\right)$ is the same as the number of years. Therefore,\par 
-      \label{m39334*uid61}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}n\phantom{\rule{2pt}{0ex}}\mathrm{years}=\mathrm{P}{\left(1+\mathrm{i}\right)}^{\mathrm{n}}\tag{3.24}
-      \end{equation}
-%       \label{m39334*uid62}
-%             \subsubsection{ Fractions add up to the Whole}
-%             \nopagebreak
-%             
-%         
-%         \label{m39334*id73019}It is easy to show that this formula works even when $n$ is a fraction of a year. For example, let us invest the money for 1 month, then for 4 months, then for 7 months.\par 
-%         \label{m39334*id73033}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}1\phantom{\rule{2pt}{0ex}}\mathrm{month}& =& P{\left(1+i\right)}^{\frac{1}{12}}\hfill \\ \hfill \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}5\phantom{\rule{2pt}{0ex}}\mathrm{months}& =& \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}1\phantom{\rule{2pt}{0ex}}\mathrm{month\; invested\; for}\phantom{\rule{2pt}{0ex}}4\phantom{\rule{2pt}{0ex}}\mathrm{months\; more}\hfill \\ & =& \left[P{\left(1+i\right)}^{\frac{1}{12}}\right]{\left(1+i\right)}^{\frac{4}{12}}\hfill \\ & =& P{\left(1+i\right)}^{\frac{1}{12}+\frac{4}{12}}\hfill \\ & =& P{\left(1+i\right)}^{\frac{5}{12}}\hfill \\ \hfill \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}12\phantom{\rule{2pt}{0ex}}\mathrm{months}& =& \mathrm{Closing\; Balance\; after}\phantom{\rule{2pt}{0ex}}5\phantom{\rule{2pt}{0ex}}\mathrm{months\; invested\; for}\phantom{\rule{2pt}{0ex}}7\phantom{\rule{2pt}{0ex}}\mathrm{months\; more}\hfill \\ & =& \left[P{\left(1+i\right)}^{\frac{5}{12}}\right]{\left(1+i\right)}^{\frac{7}{12}}\hfill \\ & =& P{\left(1+i\right)}^{\frac{5}{12}+\frac{7}{12}}\hfill \\ & =& P{\left(1+i\right)}^{\frac{12}{12}}\hfill \\ & =& P{\left(1+i\right)}^{1}\hfill \end{array}\tag{3.25}
-%       \end{equation}
-%     
-%         
-%         \label{m39334*id73464}which is the same as investing the money for a year.\par 
-%         \label{m39334*id73470}Look carefully at the long equation above. It is not as complicated as it looks! All we are doing is taking the opening amount ($P$), then adding interest for just 1 month. Then we are taking that new balance and adding interest for a further 4 months, and then finally we are taking the new balance after a total of 5 months, and adding interest for 7 more months. Take a look again, and check how easy it really is.\par 
-%         \label{m39334*id73487}Does the final formula look familiar? Correct - it is the same result as you would get for simply investing $P$ for one full year. This is exactly what we would expect, because:\par 
-%         \label{m39334*id73500}1 month + 4 months + 7 months = 12 months, which is a year.\par 
-%         \label{m39334*id73506}Can you see that? Do not move on until you have understood this point.\par 
-%       
-      \label{m39334*uid63}
-            \subsection{ The Power of Compound Interest}
-            \nopagebreak
-        \label{m39334*id73519}To see how important this ``interest on interest" is, we shall compare the difference in closing balances for money earning simple interest and money earning compound interest. Consider an amount of R10~000 that you have to invest for 10 years, and assume we can earn interest of 9\%. How much would that be worth after 10 years?\par 
-        \label{m39334*id73528}The closing balance for the money earning simple interest is:\par 
-        \label{m39334*id73532}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P\left(1+i\ensuremath{\cdot}n\right)\hfill \\ & =& \mathrm{R}10\phantom{\rule{3.33333pt}{0ex}}000\left(1+9\%\ensuremath{\times}10\right)\hfill \\ & =& \mathrm{R}19\phantom{\rule{3.33333pt}{0ex}}000\hfill \end{array}\tag{3.26}
-      \end{equation}
-        \label{m39334*id73640}The closing balance for the money earning compound interest is:\par 
-        \label{m39334*id73644}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P{\left(1+i\right)}^{n}\hfill \\ & =& \mathrm{R}10\phantom{\rule{3.33333pt}{0ex}}000{\left(1+9\%\right)}^{10}\hfill \\ & =& \mathrm{R}23\phantom{\rule{3.33333pt}{0ex}}673,64\hfill \end{array}\tag{3.27}
-      \end{equation}
-        \label{m39334*id73760}So next time someone talks about the ``magic of compound interest", not only will you know what they mean - but you will be able to prove it mathematically yourself!\par 
-        \label{m39334*id73766}Again, keep in mind that this is good news and bad news. When you are earning interest on money you have invested, compound interest helps that amount to increase exponentially. But if you have borrowed money, the build up of the amount you owe will grow exponentially too.\par 
-% \label{m39334*secfhsst!!!underscore!!!id2645}\vspace{.5cm} 
-%       
-%       \noindent
-%       \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-%       \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-%       \begin{exercise}
-%     \noindent\textbf{Exercise 3.6:  Taking out a Loan }
-%         \label{m39334*probfhsst!!!underscore!!!id2646}
-%         \label{m39334*id73785}Mr Lowe wants to take out a loan of R 350~000.
-% He does not want to pay back more than R625~000 altogether on the loan. If the
-% interest rate he is offered is 13\%, over what period should he take the loan. \par 
-%         \vspace{5pt}
-%         \label{m39334*solfhsst!!!underscore!!!id2651}\noindent\textbf{Solution to Exercise } \label{m39334*listfhsst!!!underscore!!!id2651}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-%             \leftskip=20pt\rightskip=\leftskip\item  
-%         \label{m39334*id73812}\begin{itemize}[noitemsep]
-%             \leftskip=20pt\rightskip=\leftskip\label{m39334*uid64}\item opening balance, $P=\mathrm{R}350\phantom{\rule{3.33333pt}{0ex}}000$\label{m39334*uid65}\item closing balance, $A=\mathrm{R}625\phantom{\rule{3.33333pt}{0ex}}000$\label{m39334*uid66}\item interest rate, $i=13\%\phantom{\rule{3.33333pt}{0ex}}\mathrm{per}\mathrm{year}$\end{itemize}
-%         
-%         \label{m39334*id73922}
-% We are required to find the time period($n$).\par 
-%         \item  
-%         \label{m39334*id73942}We know from (3.24) that:\par 
-%         \label{m39334*id73949}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \mathrm{A}=\mathrm{P}{\left(1+\mathrm{i}\right)}^{\mathrm{n}}\tag{3.28}
-%       \end{equation}
-%     
-%         
-%         \label{m39334*id74003}We need to find $n$.\par 
-%         \label{m39334*id74019}Therefore we convert the formula to:\par 
-%         \label{m39334*id74024}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \frac{\mathrm{A}}{\mathrm{P}}={\left(1+i\right)}^{n}\tag{3.29}
-%       \end{equation}
-%     
-%         
-%         \label{m39334*id74064}and then find $n$ by trial and error.\par 
-%         \item  
-%         \label{m39334*id74083}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \frac{\mathrm{A}}{\mathrm{P}}& =& {\left(1+i\right)}^{n}\hfill \\ \hfill \frac{625000}{350000}& =& {\left(1+0,13\right)}^{n}\hfill \\ \hfill 1,785...& =& {\left(1,13\right)}^{n}\hfill \\ & & \\ \hfill \mathrm{Try}\phantom{\rule{2pt}{0ex}}n& =& 3:{\left(1,13\right)}^{3}=1,44...\hfill \\ \hfill \mathrm{Try}\phantom{\rule{2pt}{0ex}}n& =& 4:{\left(1,13\right)}^{4}=1,63...\hfill \\ \hfill \mathrm{Try}\phantom{\rule{2pt}{0ex}}n& =& 5:{\left(1,13\right)}^{5}=1,84...\hfill \end{array}\tag{3.30}
-%       \end{equation}
-%     
-%         
-%         \item  
-%         Mr Lowe should take the loan over four years (If he took the loan over five years, he would end up paying more than he wants to.)
-%         \end{enumerate}
-%          
-% 
-%     \end{exercise}
-%     \end{mdframed}
-%     }
-%     \noindent
-%   
-      \label{m39334*uid67}
-            \subsection{ Other Applications of Compound Growth}
-            \nopagebreak
-\label{m39334*eip-431}The following two examples show how we can take the formula for compound interest and apply it to real life problems involving compound growth or compound decrease.\par \label{m39334*secfhsst!!!underscore!!!id2915}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.7:  Population Growth }
-        \label{m39334*probfhsst!!!underscore!!!id2916}
-        \label{m39334*id74449}South Africa's population is increasing by 2,5\% per year. If the current population is 43 million, how many more people will there be in South Africa in two years' time ? \par 
-        \vspace{5pt}
-        \label{m39334*solfhsst!!!underscore!!!id2919}\noindent\textbf{Solution to Exercise } \label{m39334*listfhsst!!!underscore!!!id2919}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39334*id74474}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39334*uid68}\item initial value (opening balance), $P=43\phantom{\rule{3.33333pt}{0ex}}000\phantom{\rule{3.33333pt}{0ex}}000$\label{m39334*uid69}\item period of time, $n=2\phantom{\rule{3.33333pt}{0ex}}\mathrm{year}$\label{m39334*uid70}\item rate of increase, $i=2,5\%\phantom{\rule{3.33333pt}{0ex}}\mathrm{per\; year}$\end{itemize}
-        \label{m39334*id74586}We are required to find the final value (closing balance $A$).\par 
-        \item  
-        \label{m39334*id74605}We know from (3.24) that:\par 
-        \label{m39334*id74612}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    A=P{\left(1+i\right)}^{n}\tag{3.31}
-      \end{equation}
-        \item  
-        \label{m39334*id74650}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P{\left(1+i\right)}^{n}\hfill \\ & =& 43\phantom{\rule{3.33333pt}{0ex}}000\phantom{\rule{3.33333pt}{0ex}}000{\left(1+0,025\right)}^{2}\hfill \\ & =& 45\phantom{\rule{3.33333pt}{0ex}}176\phantom{\rule{3.33333pt}{0ex}}875\hfill \end{array}\tag{3.32}
-      \end{equation}
-        \item  
-        \label{m39334*id74768}There will be $45\phantom{\rule{3.33333pt}{0ex}}176\phantom{\rule{3.33333pt}{0ex}}875-43\phantom{\rule{3.33333pt}{0ex}}000\phantom{\rule{3.33333pt}{0ex}}000=2\phantom{\rule{3.33333pt}{0ex}}176\phantom{\rule{3.33333pt}{0ex}}875$ more people in 2 years' time
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-\label{m39334*secfhsst!!!underscore!!!id3026}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 3.8:  Compound Decrease }
-        \label{m39334*probfhsst!!!underscore!!!id3027}
-        \label{m39334*id74847}A swimming pool is being treated for a build-up of algae. Initially, $50{m}^{2}$ of the pool is covered by algae. With each day of treatment, the algae reduces by 5\%. What area is covered by algae after 30 days of treatment ? \par 
-        \vspace{5pt}
-        \label{m39334*solfhsst!!!underscore!!!id3030}\noindent\textbf{Solution to Exercise } \label{m39334*listfhsst!!!underscore!!!id3030}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39334*id74890}\begin{itemize}[noitemsep]
-            \leftskip=20pt\rightskip=\leftskip\label{m39334*uid71}\item Starting amount (opening balance), $P=50{\mathrm{m}}^{2}$\label{m39334*uid72}\item period of time, $n=30\phantom{\rule{3.33333pt}{0ex}}\mathrm{days}$\label{m39334*uid73}\item rate of decrease, $i=5\%\phantom{\rule{3.33333pt}{0ex}}\mathrm{per\; day}$\end{itemize}
-        \label{m39334*id74996}We are required to find the final area covered by algae (closing balance $A$).\par 
-        \item  
-        \label{m39334*id75016}We know from (3.24) that:\par 
-        \label{m39334*id75023}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}{\left(1+\mathrm{i}\right)}^{\mathrm{n}}\tag{3.33}
-      \end{equation}
-        \label{m39334*id75077}But this is compound \textbf{decrease} so we can use the formula:\par 
-        \label{m39334*id75089}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=\mathrm{P}{\left(1-\mathrm{i}\right)}^{\mathrm{n}}\tag{3.34}
-      \end{equation}
-        \item  
-        \label{m39334*id75148}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{A}& =& P{\left(1-i\right)}^{n}\hfill \\ & =& 50{\left(1-0,05\right)}^{30}\hfill \\ & =& 10,73{m}^{2}\hfill \end{array}\tag{3.35}
-      \end{equation}
-        \item  
-        \label{m39334*id75256}Therefore the area still covered with algae is $10,73{m}^{2}$
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-\label{m39334*secfhsst!!!underscore!!!id3169}
-            \subsection{Exercises: Compound Interest }
-            \nopagebreak
-            \label{m39334*id75300}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39334*uid74}\item An amount of R3 500 is invested in a savings account which pays compound interest at a rate of 7,5\% per annum. Calculate the balance accumulated by the end of 2 years.\newline
-\label{m39334*uid75}\item If the average rate of inflation for the past few years was 7,3\% and your water and electricity account is R 1~425 on average, what would you expect to pay in 6 years time ?\newline
-\label{m39334*uid76}\item Shrek wants to invest some money at 11\% per annum compound interest. How much money (to the nearest rand) should he invest if he wants to reach a sum of R 100~000 in five year's time ?\newline
-\end{enumerate}
-  \label{m39334*eip-523}The next section on exchange rates is included for completeness. However, you should know about fluctuating exchange rates and the impact that this has on imports and exports. Fluctuating exchange rates lead to things like increases in the cost of petrol. You can read more about this in Fluctuating exchange rates.\par 
-  \label{m39334**end}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lcW  &  (2.) lcZ  &  (3.) lcB  & \end{tabular}
-         \section{ Foreign exchange rates}
-    \nopagebreak
-            \label{m39335} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10029 )} \par 
-% \label{m39335*cid3}
-%             \subsection{ Foreign Exchange Rates - (Not in CAPS, included for completeness)}
-%             \nopagebreak
-%             
-%       \label{m39335*id66720}Is \$500 ("500 US dollars") per person per night a good deal on a hotel in New York City? The first question you will ask is ``How much is that worth in Rands?". A quick call to the local bank or a search on the Internet (for example on http://www.x-rates.com\footnote{http://www.x-rates.com}
-%         ) for the Dollar/Rand exchange rate will give you a basis for assessing the price.\par 
-%       \label{m39335*id66734}A foreign exchange rate is nothing more than the price of one currency in terms of another. For example, the exchange rate of 6,18 Rands/US Dollars means that \$1 costs R6,18. In other words, if you have \$1 you could sell it for R6,18 - or if you wanted \$1 you would have to pay R6,18 for it.\par 
-%       \label{m39335*id66739}But what drives exchange rates, and what causes exchange rates to change? And how does this affect you anyway? This section looks at answering these questions.\par 
-%       \label{m39335*uid1}
-%             \subsubsection{ How much is R1 really worth?}
-%             \nopagebreak
-%             
-%         
-%         \label{m39335*id66752}We can quote the price of a currency in terms of any other currency, for example, we can quote the Japanese Yen in term of the Indian Rupee. The US Dollar (USD), British Pound Sterling (GBP) and the Euro (EUR) are, however, the most common used market standards. You will notice that the financial news will report the South African Rand exchange rate in terms of these three major currencies.\par 
-%         
-%     % \textbf{m39335*uid2}\par
-%     
-%           \begin{table}[H]
-%         
-%     % \begin{table}[H]
-%     % \\ '' '0'
-%     
-%         \begin{center}
-%       
-%       \label{m39335*uid2}
-%       
-%     \noindent
-%     \tabletail{%
-%         \hline
-%         \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-%         \hline
-%       }
-%       \tablelasttail{}
-%       \begin{xtabular}[t]{|l|l|l|}\hline
-%     
-%     
-%         
-%                   \textbf{Currency}
-%                  &
-%     
-%     
-%         
-%                   \textbf{Abbreviation}
-%                  &
-%     
-%     
-%         
-%                   \textbf{Symbol}
-%                 % make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         South African Rand &
-%     
-%     
-%         ZAR &
-%     
-%     
-%         R% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         United States Dollar &
-%     
-%     
-%         USD &
-%     
-%     
-%         \$% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         British Pounds Sterling &
-%     
-%     
-%         GBP &
-%     
-%     
-%         £% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%       %--------------------------------------------------------------------
-%     \end{xtabular}
-%       \end{center}
-%     \begin{center}{\small\bfseries Table 3.1}: Abbreviations and symbols for some common currencies.\end{center}
-%     \begin{caption}{\small\bfseries Table 3.1}: Abbreviations and symbols for some common currencies.\end{caption}
-\end{table}
-%       
-%     \par
-%   
-%         \label{m39335*id66888}So the South African Rand, noted ZAR, could be quoted on a certain date as 6,07040 ZAR per USD (i.e. \$1,00 costs R6,07040), or 12,2374 ZAR per GBP. So if I wanted to spend \$1~000 on a holiday in the United States of America, this would cost me R6~070,40; and if I wanted £1~000 for a weekend in London it would cost me R12~237,40.\par 
-%         \label{m39335*id66897}This seems obvious, but let us see how we calculated those numbers:
-% The rate is given as ZAR per USD, or ZAR/USD such that \$1,00 buys R6,0704. Therefore, we need to multiply by 1~000 to get the number of Rands per \$1~000.\par 
-%         \label{m39335*id66904}Mathematically,\par 
-%         \label{m39335*id66909}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{\$}1,00& =& \mathrm{R}6,0740\hfill \\ \hfill \therefore \phantom{\rule{3.33333pt}{0ex}}1\phantom{\rule{3.33333pt}{0ex}}000\phantom{\rule{3.33333pt}{0ex}}\ensuremath{\times}\phantom{\rule{3.33333pt}{0ex}}\mathrm{\$}1,00& =& 1\phantom{\rule{3.33333pt}{0ex}}000\phantom{\rule{3.33333pt}{0ex}}\ensuremath{\times}\phantom{\rule{3.33333pt}{0ex}}\mathrm{R}6,0740\hfill \\ & =& \mathrm{R}6\phantom{\rule{3.33333pt}{0ex}}074,00\hfill \end{array}\tag{3.36}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*id67034}as expected.\par 
-%         \label{m39335*id67039}What if you have saved R10~000 for spending money for the same trip and you wanted to use this to buy USD? How many USD could you get for this? Our rate is in ZAR/USD but we want to know how many USD we can get for our ZAR. This is easy. We know how much \$1,00 costs in terms of Rands.\par 
-%         \label{m39335*id67049}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{\$}1,00& =& \mathrm{R}6,0740\hfill \\ \hfill \therefore \frac{\mathrm{\$}1,00}{6,0740}& =& \frac{\mathrm{R}6,0740}{6,0740}\hfill \\ \hfill \mathrm{\$}\frac{1,00}{6,0740}& =& \mathrm{R}1,00\hfill \\ \hfill \mathrm{R}1,00& =& \mathrm{\$}\frac{1,00}{6,0740}\hfill \\ & =& \mathrm{\$}0,164636\hfill \end{array}\tag{3.37}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*id67253}As we can see, the final answer is simply the reciprocal of the ZAR/USD rate. Therefore, for R10~000 will get:\par 
-%         \label{m39335*id67260}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{R}1,00& =& \mathrm{\$}\frac{1,00}{6,0740}\hfill \\ \hfill \therefore \phantom{\rule{3.33333pt}{0ex}}10\phantom{\rule{3.33333pt}{0ex}}000\ensuremath{\times}\mathrm{R}1,00& =& 10\phantom{\rule{3.33333pt}{0ex}}000\ensuremath{\times}\mathrm{\$}\frac{1,00}{6,0740}\hfill \\ & =& \mathrm{\$}1\phantom{\rule{3.33333pt}{0ex}}646,36\hfill \end{array}\tag{3.38}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*id67402}We can check the answer as follows:\par 
-%         \label{m39335*id67408}\nopagebreak\noindent{}
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{\$}1,00& =& \mathrm{R}6,0740\hfill \\ \hfill \therefore \phantom{\rule{3.33333pt}{0ex}}1\phantom{\rule{3.33333pt}{0ex}}646,36\ensuremath{\times}\mathrm{\$}1,00& =& 1\phantom{\rule{3.33333pt}{0ex}}646,36\ensuremath{\times}\mathrm{R}6,0740\hfill \\ & =& \mathrm{R}10\phantom{\rule{3.33333pt}{0ex}}000,00\hfill \end{array}\tag{3.39}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*uid3}
-%             \subsubsection{ Six of one and half a dozen of the other}
-%             \nopagebreak
-%             
-%           
-%           \label{m39335*id67548}So we have two different ways of expressing the same exchange rate: Rands per Dollar (ZAR/USD) and Dollar per Rands (USD/ZAR). Both exchange rates mean the same thing and express the value of one currency in terms of another. You can easily work out one from the other - they are just the reciprocals of the other.\par 
-%           \label{m39335*id67554}If the South African Rand is our domestic (or home) currency, we call the ZAR/USD rate a ``direct" rate, and we call a USD/ZAR rate an ``indirect" rate.\par 
-%           \label{m39335*id67560}In general, a direct rate is an exchange rate that is expressed as units of home currency per units of foreign currency, i.e., $\frac{\mathrm{Domestic\; Currency}}{\mathrm{Foreign\; Currency}}$.\par 
-%           \label{m39335*id67583}The Rand exchange rates that we see on the news are usually expressed as direct rates, for example you might see:\par 
-%           
-%     % \textbf{m39335*uid4}\par
-%     
-%           \begin{table}[H]
-%         
-%     % \begin{table}[H]
-%     % \\ '' '0'
-%     
-%         \begin{center}
-%       
-%       \label{m39335*uid4}
-%       
-%     \noindent
-%     \tabletail{%
-%         \hline
-%         \multicolumn{2}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-%         \hline
-%       }
-%       \tablelasttail{}
-%       \begin{xtabular}[t]{|l|l|}\hline
-%     
-%     
-%         
-%                     \textbf{Currency Abbreviation}
-%                    &
-%     
-%     
-%         
-%                     \textbf{Exchange Rates}
-%                   % make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         1 USD &
-%     
-%     
-%         R6,9556% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         1 GBP &
-%     
-%     
-%         R13,6628% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}
-%       %--------------------------------------------------------------------
-%     
-%     
-%         1 EUR &
-%     
-%     
-%         R9,1954% make-rowspan-placeholders
-%      \tabularnewline\cline{1-1}\cline{2-2}
-%       %--------------------------------------------------------------------
-%     \end{xtabular}
-%       \end{center}
-%     \begin{center}{\small\bfseries Table 3.2}: Examples of exchange rates\end{center}
-%     \begin{caption}{\small\bfseries Table 3.2}: Examples of exchange rates\end{caption}
-\end{table}
-%       
-%     \par
-%   
-%           \label{m39335*id67685}The exchange rate is just the price of each of the Foreign Currencies (USD, GBP and EUR) in terms of our domestic currency, Rands.\par 
-%           \label{m39335*id67689}An indirect rate is an exchange rate expressed as units of foreign currency per units of home currency, i.e. $\frac{\mathrm{Foreign\; Currency}}{\mathrm{Domestic\; Currency}}$.\par 
-%           \label{m39335*id67712}Defining exchange rates as direct or indirect depends on which currency is defined as the domestic currency. The domestic currency for an American investor would be USD which is the South African investor's foreign currency. So direct rates, from the perspective of the American investor (USD/ZAR), would be the same as the indirect rate from the perspective of the South Africa investor.\par 
-%         
-%         \label{m39335*uid5}
-%             \subsubsection{ Terminology}
-%             \nopagebreak
-%             
-%           
-%           \label{m39335*id67731}Since exchange rates are simply prices of currencies, movements in exchange rates means that the price or value of the currency has changed. The price of petrol changes all the time, so does the price of gold, and currency prices also move up and down all the time.\par 
-%           \label{m39335*id67737}If the Rand exchange rate moved from say R6,71 per USD to R6,50 per USD, what does this mean? Well, it means that \$1 would now cost only R6,50 instead of R6,71. The Dollar is now cheaper to buy, and we say that the Dollar has depreciated (or weakened) against the Rand. Alternatively we could say that the Rand has appreciated (or strengthened) against the Dollar.\par 
-%           \label{m39335*id67743}What if we were looking at indirect exchange rates, and the exchange rate moved from \$0,149 per ZAR (=$\frac{1}{6,71}$) to \$0,1538 per ZAR (=$\frac{1}{6,50}$).\par 
-%           \label{m39335*id67782}Well now we can see that the R1,00 cost \$0,149 at the start, and then cost \$0,1538 at the end. The Rand has become more expensive (in terms of Dollars), and again we can say that the Rand has appreciated.\par 
-%           \label{m39335*id67787}Regardless of which exchange rate is used, we still come to the same conclusions.\par 
-%           \label{m39335*id67791}In general,\par 
-%           \label{m39335*id67794}\begin{itemize}[noitemsep]
-%             \label{m39335*uid6}\item for direct exchange rates, the home currency will appreciate (depreciate) if the exchange rate falls (rises)
-% \label{m39335*uid7}\item For indirect exchange rates, the home currency will appreciate (depreciate) if the exchange rate rises (falls)
-% \end{itemize}
-%         
-%           \label{m39335*id67823}As with just about everything in this chapter, do not get caught up in memorising these formulae - doing so is only going to get confusing. Think about what you have and what you want - and it should be quite clear how to get the correct answer.\par 
-% \label{m39335*secfhsst!!!underscore!!!id536}
-%             \subsubsection{  Discussion : Foreign Exchange Rates }
-%             \nopagebreak
-%             
-%           \label{m39335*id67836}In groups of 5, discuss:\par 
-%           \label{m39335*id67841}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-%             \label{m39335*uid8}\item Why might we need to know exchange rates?
-% \label{m39335*uid9}\item What happens if one country's currency falls drastically vs another country's currency?
-% \label{m39335*uid10}\item When might you use exchange rates?
-% \end{enumerate}
-%         
-%           
-% 
-%         
-%       
-%       \label{m39335*uid11}
-%             \subsubsection{ Cross Currency Exchange Rates - (not in CAPS, included for completeness)}
-%             \nopagebreak
-%             
-%         
-%         \label{m39335*id67898}We know that exchange rates are the value of one currency expressed in terms of another currency, and we can quote exchange rates against any other currency. The Rand exchange rates we see on the news are usually expressed against the major currencies, USD, GBP and EUR.\par 
-%         \label{m39335*id67904}So if for example, the Rand exchange rates were given as 6,71 ZAR/USD and 12,71 ZAR/GBP, does this tell us anything about the exchange rate between USD and GBP?\par 
-%         \label{m39335*id67908}Well I know that if \$1 will buy me R6,71, and if £1.00 will buy me R12,71, then surely the GBP is stronger than the USD because you will get more Rands for one unit of the currency, and we can work out the USD/GBP exchange rate as follows:\par 
-%         \label{m39335*id67916}Before we plug in any numbers, how can we get a USD/GBP exchange rate from the ZAR/USD and ZAR/GBP exchange rates?\par 
-%         \label{m39335*id67920}Well,\par 
-%         \label{m39335*id67923}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \mathrm{USD}/\mathrm{GBP}=\mathrm{USD}/\mathrm{ZAR}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}.\tag{3.40}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*id67961}Note that the ZAR in the numerator will cancel out with the ZAR in the denominator, and we are left with the USD/GBP exchange rate.\par 
-%         \label{m39335*id67965}Although we do not have the USD/ZAR exchange rate, we know that this is just the reciprocal of the ZAR/USD exchange rate.\par 
-%         \label{m39335*id67970}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \mathrm{USD}/\mathrm{ZAR}=\frac{1}{\mathrm{ZAR}/\mathrm{USD}}\tag{3.41}
-%       \end{equation}
-%     
-%         
-%         \label{m39335*id68000}Now plugging in the numbers, we get:\par 
-%         \label{m39335*id68003}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{USD}/\mathrm{GBP}& =& \mathrm{USD}/\mathrm{ZAR}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}\hfill \\ & =& \frac{1}{\mathrm{ZAR}/\mathrm{USD}}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}\hfill \\ & =& \frac{1}{6,71}\ensuremath{\times}12,71\hfill \\ & =& 1,894\hfill \end{array}\tag{3.42}
-%       \end{equation}
-%     
-%         
-% \label{m39335*notfhsst!!!underscore!!!id696}
-% \begin{tabular}{cc}
-% 	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
-% 
-% 	\begin{minipage}{0.85\textwidth}
-% 	\begin{note}
-%       {tip: }Sometimes you will see exchange rates in the real world that do not appear
-% to work exactly like this. This is usually because some financial institutions
-% add other costs to the exchange rates, which alter the results. However, if you
-% could remove the effect of those extra costs, the numbers would balance again.
-% 	\end{note}
-% 	\end{minipage}
-% 	\end{tabular}
-% 	\par
-%       
-% \label{m39335*secfhsst!!!underscore!!!id700}\vspace{.5cm} 
-%       
-%       \noindent
-%       \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-%       \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-%       \begin{exercise}
-%     \noindent\textbf{Exercise 3.9:  Cross Exchange Rates }
-%         \label{m39335*probfhsst!!!underscore!!!id701}
-%         \label{m39335*id68151}If \$1 = R 6,40, and £1 = R11,58 what is the \$/£ exchange rate (i.e. the number of US\$ per £)? \par 
-%         \vspace{5pt}
-%         \label{m39335*solfhsst!!!underscore!!!id704}\noindent\textbf{Solution to Exercise } \label{m39335*listfhsst!!!underscore!!!id704}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-%             \leftskip=20pt\rightskip=\leftskip\item  
-%         \label{m39335*id68176}The following are given:\par 
-%         \label{m39335*id68180}\begin{itemize}[noitemsep]
-%             \leftskip=20pt\rightskip=\leftskip\label{m39335*uid12}\item ZAR/USD rate = R6,40
-% \label{m39335*uid13}\item ZAR/GBP rate = R11,58
-% \end{itemize}
-%         
-%         \label{m39335*id68208}The following is required:\par 
-%         \label{m39335*id68212}\begin{itemize}[noitemsep]
-%             \leftskip=20pt\rightskip=\leftskip\label{m39335*uid14}\item USD/GBP rate
-% \end{itemize}
-%         
-%         \item  
-%         \label{m39335*id68233}We know that:\par 
-%         \label{m39335*id68236}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \mathrm{USD}/\mathrm{GBP}=\mathrm{USD}/\mathrm{ZAR}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}.\tag{3.43}
-%       \end{equation}
-%     
-%         
-%         \item  
-%         \label{m39335*id68280}\nopagebreak\noindent{}
-%           
-%     \begin{equation}
-%     \begin{array}{ccc}\hfill \mathrm{USD}/\mathrm{GBP}& =& \mathrm{USD}/\mathrm{ZAR}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}\hfill \\ & =& \frac{1}{\mathrm{ZAR}/\mathrm{USD}}\ensuremath{\times}\mathrm{ZAR}/\mathrm{GBP}\hfill \\ & =& \frac{1}{6,40}\ensuremath{\times}11,58\hfill \\ & =& 1,8094\hfill \end{array}\tag{3.44}
-%       \end{equation}
-%     
-%         
-%         \item  
-%         \label{m39335*id68414}\$ 1,8094 can be bought for £1. \par 
-%         \end{enumerate}
-%          
-% 
-%     \end{exercise}
-%     \end{mdframed}
-%     }
-%     \noindent
-%   
-% \label{m39335*secfhsst!!!underscore!!!id841}
-%             \subsubsection{  Investigation : Cross Exchange Rates - Alternative Method }
-%             \nopagebreak
-%             
-%         \label{m39335*id68438}If \$1 = R
-% 6,40, and £1 = R11,58 what is the \$/£ exchange rate (i.e. the
-% number of US\$ per £)?\par 
-%         \label{m39335*id68445}
-%           \textbf{Overview of problem}
-%         \par 
-%         \label{m39335*id68454}You need the \$/£ exchange rate, in other words how many dollars must you pay for a pound. So you need £1. From the given information we know that it would cost you R11,58 to buy £1 and that \$ 1 = R6,40.\par 
-%         \label{m39335*id68463}Use this information to:\par 
-%         \label{m39335*id68466}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-%             \label{m39335*uid15}\item calculate how much R1 is worth in \$.
-% \label{m39335*uid16}\item calculate how much R11,58 is worth in \$.
-% \end{enumerate}
-%         
-%         \label{m39335*id68496}Do you get the same answer as in the worked example? \par 
-      \label{m39335*uid17}
-            \subsection{ Fluctuating exchange rates}
-            \nopagebreak
-        \label{m39335*id68515}If everyone wants to buy houses in a certain suburb, then house prices are going to go up - because the buyers will be competing to buy those houses. If there is a suburb where all residents want to move out, then there are lots of sellers and this will cause house prices in the area to fall - because the buyers would not have to struggle as much to find an eager seller.\par 
-        \label{m39335*id68522}This is all about supply and demand, which is a very important section in the study of Economics. You can think about this is many different contexts, like stamp-collecting for example. If there is a stamp that lots of people want (high demand) and few people own (low supply) then that stamp is going to be expensive.\par 
-        \label{m39335*id68528}And if you are starting to wonder why this is relevant - think about currencies. If you are going to visit London, then you have Rands but you need to ``buy" Pounds. The exchange rate is the price you have to pay to buy those Pounds.\par 
-        \label{m39335*id68535}Think about a time where lots of South Africans are visiting the United Kingdom, and other South Africans are importing goods from the United Kingdom. That means there are lots of Rands (high supply) trying to buy Pounds. Pounds will start to become more expensive (compare this to the house price example at the start of this section if you are not convinced), and the exchange rate will change. In other words, for R1~000 you will get fewer Pounds than you would have before the exchange rate moved.\par 
-        \label{m39335*id68547}Another context which might be useful for you to understand this: consider what would happen if people in other countries felt that South Africa was becoming a great place to live, and that more people were wanting to invest in South Africa - whether in properties, businesses - or just buying more goods from South Africa. There would be a greater demand for Rands - and the ``price of the Rand" would go up. In other words, people would need to use more Dollars, or Pounds, or Euros ... to buy the same amount of Rands. This is seen as a movement in exchange rates.\par 
-        \label{m39335*id68560}Although it really does come down to supply and demand, it is interesting to think about what factors might affect the supply (people wanting to ``sell" a particular currency) and the demand (people trying to ``buy" another currency). This is covered in detail in the study of Economics, but let us look at some of the basic issues here.\par 
-        \label{m39335*id68568}There are various factors which affect exchange rates, some of which have more economic rationale than others:\par 
-        \label{m39335*id68573}\begin{itemize}[noitemsep]
-            \label{m39335*uid18}\item economic factors (such as inflation figures, interest rates, trade deficit information, monetary policy and fiscal policy)
-\label{m39335*uid19}\item political factors (such as uncertain political environment, or political unrest)
-\label{m39335*uid20}\item market sentiments and market behaviour (for example if foreign exchange markets perceived a currency to be overvalued and starting selling the currency, this would cause the currency to fall in value - a self-fulfilling expectation).
-\end{itemize}
-\label{m39335*id7324}The exchange rate also influences the price we pay for certain goods. All countries import certain goods and export other goods. For example, South Africa has a lot of minerals (gold, platinum, etc.) that the rest of the world wants. So South Africa exports these minerals to the world for a certain price. The exchange rate at the time of export influences how much we can get for the minerals. In the same way, any goods that are imported are also influenced by the exchange rate. The price of petrol is a good example of something that is affected by the exchange rate. 
-\par 
-\label{m39335*secfhsst!!!underscore!!!id876}
-            \subsection{Exercise: Foreign Exchange }
-            \nopagebreak
-            \label{m39335*id68624}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39335*uid21}\item I want to buy an IPOD that costs £100, with the exchange rate currently at
-$£1=R14$. I believe the exchange rate will reach $R12$ in a month.
-\label{m39335*id68677}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39335*uid22}\item How much will the MP3 player cost in Rands, if I buy it now?
-\label{m39335*uid23}\item How much will I save if the exchange rate drops to $R12$?
-\label{m39335*uid24}\item How much will I lose if the exchange rate moves to $R15$?
-\end{enumerate}
-        \label{m39335*uid25}\item Study the following exchange rate table:
-    % \textbf{m39335*id68755}\par
-          \begin{table}[H]
-    % \begin{table}[H]
-    % \\ 'id2866031' '1'
-        \begin{center}
-      \label{m39335*id68755}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|l|}\hline
-        Country &
-        Currency &
-        Exchange Rate% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-        United Kingdom (UK) &
-        Pounds(£) &
-        $R14,13$% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-        United States (USA) &
-        Dollars (\$) &
-        $R7,04$% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-    \end{xtabular}
-      \end{center}
-    \begin{center}{\small\bfseries Table 3.3}\end{center}
-    \begin{caption}{\small\bfseries Table 3.3}\end{caption}
-\end{table}
+\end{wex}
+
+
+\begin{exercises}{Inflation and Population}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item If the average rate of inflation for the past few years was $7,3\%$ and your water and electricity account is R~$1~425$ on average, what would you expect to pay in 6 years time?
+
+	\item The price of pop corn and coke at the movies is now R~$60$. If the average rate of inflation is $9,2\%$, what was the price of pop corn and coke 5 years ago?
+
+	\item A small town in Ohio, USA is experience a huge increase in births. If the average growth rate of the population is $16\%$ p.a, how many babies will be born to the 1600 residents in the next 2 years?\\
+    \end{enumerate}
+
+    Find the answers with the short codes:\\
+    \begin{tabularx}{\textwidth}{ XXX }
+	(1)	&	(2)	&	(3)\\
+    \end{tabularx}
+\end{exercises}
+
+
+
+\subsection{Foreign Exchange Rates}
+
+Different countries have developed their own currencies through the years. In England, a Big Mac from McDonalds will cost you £~$4$, in South Africa it will cost you R~$20$ and in Norway it will cost you $48$~kr. In all three of those places, you will get the same meal, however, some will be more expensive than others. At the time of writing this paragraph, £~$1$ = R~$12,41$ and $1$~kr = R~$1,37$, this means that the Big Mac would cost a South African who was travelling to England R~$49,64$ and one who was travelling to Norway R~$65,76$.\par
+
+Exchange rates affect a lot more than just the price of a Big Mac. The price of oil will go up when the South African Rand gets weaker. This is because when the Rand is weaker, we can buy less of other currencies with the same amount of money.\par
+
+A currency gets stronger when money is invested into the country. When we buy products that are made in South Africa, we are investing in South African business and keeping the money in the country. When we buy products imported from other countries, we are investing money into those countries and as a result, the Rand will weaken. Remember, the more South African products we buy, the greater demand there will be for them, meaning that more jobs will open for South Africans. Local is lekker!
+
+
+\begin{wex}{Foreign Exchange Rates}
+    {Saba wants to travel to see family in Spain. She has been given R~$10~000$ spending money. How many Euros can she buy if the exchange rate is currently €~$1$ = R~$10,68$?}{
+    
+    Saba can buy €~$936,33$ with R~$10~000$.
+\end{wex}
+
+
+\begin{exercises}{Foreign Exchange}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item I want to buy an iPod that costs £~$100$, with the exchange rate currently at £~$1$ = R~$14$. I believe the exchange rate will reach R~$12$ in a month.
+	\begin{enumerate}
+	    \item How much will the MP3 player cost in Rands, if I buy it now?
+	    \item How much will I save if the exchange rate drops to R~$12$?
+	    \item How much will I lose if the exchange rate moves to R~$15$?
+	\end{enumerate}
+
+	\item Study the following exchange rate table:
+	\begin{center}
+	    \begin{tabular}{ |l|l|l| }
+		\hline
+		Country	&	Currency	&	Exchange Rate\\ \hline
+		United Kingdom (UK)	&	Pounds(£)	&	R~$14,13$\\ \hline
+		United States (USA)	&	Dollars(\$}	&	R~7,04\\ \hline
+	    \end{tabular}
+	\end{center}
+	
+	\begin{enumerate}
+	    \item In South Africa the cost of a new Honda Civic is R~$173~400$. In England the same vehicle costs £~$12~200$ and in the USA \$~$21~900$. In which country is the car the cheapest when you compare the prices converted to South African Rand?
+
+	    \item Sollie and Arinda are waiters in a South African restaurant attracting many tourists from abroad. Sollie gets a £~$6$ tip from a tourist and Arinda gets \$~$12$. How many South African Rand did each one get?
+	\end{enumerate}
+    \end{enumerate}
+
+    Find the answers with the short codes:\\
+    \begin{tabularx}{\textwidth}{ XX }
+	(1)	&	(2)\\
+    \end{tabularx}
+\end{exercises}
+
+
+\subsection{Summary}
+
+\begin{itemize}
+    \item There are two types of interest rates that can be charged:\\
+    
+% \framebox{
+    \begin{tabularx}{\textwidth}{ XX }
+	Simple	&	Compound\\
+	$A = P (1 + i \cdot n)$	&	$A = P(1 + i)^n$\\
+    \end{tabularx}
     \par
-  \label{m39335*id68888}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39335*uid26}\item In South Africa the cost of a new Honda Civic is $R173\phantom{\rule{3.33333pt}{0ex}}400$. In England the same vehicle costs $£12\phantom{\rule{3.33333pt}{0ex}}200$ and in the USA \$ $21\phantom{\rule{3.33333pt}{0ex}}900$. In which country is the car the cheapest when you compare the prices converted to South African Rand ?
-\label{m39335*uid27}\item Sollie and Arinda are waiters in a South African restaurant attracting many tourists from abroad. Sollie gets a $£6$ tip from a tourist and Arinda gets \$ 12.
-How many South African Rand did each one get ?
-\end{enumerate}
-        \end{enumerate}
-    \label{m39335*cid7}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lc4  &  (2.) lc2  & \end{tabular}
-            \section{ Summary}
-            \nopagebreak
-            \label{m39335*eip-923}\begin{itemize}[noitemsep]
-            \item There are two types of interest: simple and compound.\item The following table summarises the key definitions that are used in both simple and compound interest.
-    % \textbf{m39335*id75382}\par
-          \begin{table}[H]
-    % \begin{table}[H]
-    % \\ 'id2866211' '1'
-        \begin{center}
-      \label{m39335*id75382}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{2}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|}\hline
-                  $P$
-                 &
-        Principal (the amount of money at the starting point of the calculation)% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-                  $A$
-                 &
-        Closing balance (the amount of money at the ending point of the calculation)% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-                  $i$
-                 &
-        interest rate, normally the effective rate per annum% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-                  $n$
-                 &
-        period for which the investment is made% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-    \end{xtabular}
-      \end{center}
-    \begin{center}{\small\bfseries Table 3.4}\end{center}
-    \begin{caption}{\small\bfseries Table 3.4}\end{caption}
-\end{table}
-    \par
-\item For simple interest we use:
-        \label{m39335*id75453}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=P\left(1+i\ensuremath{\cdot}n\right)\tag{3.45}
-      \end{equation}
-        \item  For compound interest we use:
-        \label{m39335*id75538}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathrm{A}=P{\left(1+i\right)}^{n}\tag{3.46}
-      \end{equation}
-        \item The formulae for simple and compound interest can be applied to many everyday problems.\item A foreign exchange rate is the price of one currency in terms of another.\end{itemize}
-\label{m39335*notfhsst!!!underscore!!!id3321}
-\begin{tabular}{cc}
-	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {tip: }Always keep the interest and the time period in the same units of time (e.g. both in years, or both in months etc.).
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-     \label{m39335*eip-595}The following three videos provide a summary of how to calculate interest. Take note that although the examples are done using dollars, we can use the fact that dollars are a decimal currency and so are interchangeable (ignoring the exchange rate) with rands. This is what is done in the subtitles.\par \label{m39335*eip-209}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39335*circuits-1}
-    \textnormal{Khan academy video on interest - 1}\vspace{.1in} \nopagebreak
-  \label{m39335*yt-media1}\label{m39335*yt-video1}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10030 )}
-      \vspace{2pt}
+    Where:
+    \begin{eqnarray*}
+% 	\text{Where:~}\\
+	A &=& \text{accumulated amount}\\
+	P &=& \text{principal amount}\\
+	i &=& \text{interest written as decimal}\\
+	n &=& \text{number of years}
+    \end{eqnarray*}
+% }
+
+    \item Hire Purchase loan repayments are calculated using the simple interest formula on the remaining loan amount. Monthly repayments are calculated by dividing the accumulated amount by the number of months the loan needs to be paid off in.
+
+    \item Population growth and inflation are calculated using the compound interest formula.
+
+    \item Foreign exchange rate is the price of one currency in terms of another.
+\end{itemize}
+
+
+The following three videos provide a summary of how to calculate interest. Take note that although the examples are done using dollars, we can use the fact that dollars are a decimal currency and so are interchangeable (ignoring the exchange rate) with rands. This is what is done in the subtitles.\par 
+
+\begin{figure}[H]
+    \textnormal{Khan academy video on interest - 1}
     \vspace{.1in}
- \end{figure}       \par 
-    \label{m39335*eip-20912}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39335*interest-2}
-    \textnormal{Khan academy video on interest - 2}\vspace{.1in} \nopagebreak
-  \label{m39335*yt-media2}\label{m39335*yt-video2}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10031 )}
-      \vspace{2pt}
+    \nopagebreak
+    \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10030 )}
+ \end{figure}
+
+\begin{figure}[H] % horizontal\label{m39335*interest-2}
+    \textnormal{Khan academy video on interest - 2}
     \vspace{.1in}
- \end{figure}       \par 
-\label{m39335*eip-20913}Note in this video that at the very end the rule of 72 is mentioned. You will not be using this rule, but will rather be using trial and error to solve the problem posed. 
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39335*interest-3}
-    \textnormal{Khan academy video on interest - 3}\vspace{.1in} \nopagebreak
-  \label{m39335*yt-media3}\label{m39335*yt-video3}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10032 )}
-      \vspace{2pt}
+    \nopagebreak
+    \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10031 )}
+\end{figure}
+
+Note in this video that at the very end the rule of 72 is mentioned. You will not be using this rule, but will rather be using trial and error to solve the problem posed.
+
+\begin{figure}[H] % horizontal\label{m39335*interest-3}
+    \textnormal{Khan academy video on interest - 3}
     \vspace{.1in}
- \end{figure}       \par 
-    \label{m39335*cid8}
-            \section{ End of Chapter Exercises}
-            \nopagebreak
-            \label{m39335*id75641}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39335*uid79}\item You are going on holiday to Europe. Your hotel will cost 200 euros per night. How much will you need in Rands to cover your hotel bill, if the exchange rate is 1 euro = R9,20?\newline
-\label{m39335*uid80}\item Calculate how much you will earn if you invested R500 for 1 year at the following interest rates:
-\label{m39335*id75671}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39335*uid81}\item 6,85\% simple interest.
-\label{m39335*uid82}\item 4,00\% compound interest.
-\end{enumerate}
-\label{m39335*uid83}\item Bianca has R1 450 to invest for 3 years. Bank A offers a savings account which pays simple interest at a rate of 11\% per annum, whereas Bank B offers a savings account paying compound interest at a rate of 10,5\% per annum. Which account would leave Bianca with the highest accumulated balance at the end of the 3 year period?\newline
-\label{m39335*uid84}\item How much simple interest is payable on a loan of R2~000 for a year, if the interest rate is 10\%?\newline
-\label{m39335*uid85}\item How much compound interest is payable on a loan of R2~000 for a year, if the interest rate is 10\%?\newline
-\label{m39335*uid86}\item Discuss:
-\label{m39335*id75754}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39335*uid87}\item Which type of interest would you like to use if you are the borrower?
-\label{m39335*uid88}\item Which type of interest would you like to use if you were the banker?
-\end{enumerate}
-\label{m39335*uid89}\item Calculate the compound interest for the following problems.
-\label{m39335*id75796}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39335*uid90}\item A R2~000 loan for 2 years at 5\%.
-\label{m39335*uid91}\item A R1~500 investment for 3 years at 6\%.
-\label{m39335*uid92}\item An R800 loan for l year at 16\%.
-\end{enumerate}
-\label{m39335*uid93}\item If the exchange rate for 100 Yen = R 6,2287 and 1 Australian Doller (AUD) = R 5,1094 , determine the exchange rate between the Australian Dollar and the Japanese Yen.\newline
-\label{m39335*uid94}\item Bonnie bought a stove for R 3~750. After 3 years she had finished paying for it and the R 956,25 interest that was charged for hire-purchase. Determine the rate of simple interest that was charged.\newline
-\end{enumerate}
-  \label{m39335**end}
-  \label{5925cb6120ab0c0f7c78bd2516b027ff**end}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lcK  &  (2.) lck  &  (3.) lc0  &  (4.) lc8  &  (5.) lc9  &  (6.) lcX  &  (7.) lcI  &  (8.) lc5  &  (9.) lcN  & \end{tabular}
+    \nopagebreak
+    \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10032 )}
+\end{figure}
+
+
+\begin{eocexercises}{Finance and Growth}
+    \begin{enumerate}[label=\textbf{\arabic*}.]
+	\item You are going on holiday to Europe. Your hotel will cost €~$200$ per night. How much will you need in Rands to cover your hotel bill, if the exchange rate is €~$1$ = R~$9,20$?
+
+	\item Calculate how much you will earn if you invested R~$500$ for 1 year at the following interest rates:
+	\begin{enumerate}
+	    \item $6,85\%$ simple interest.
+	    \item $4,00\%$ compound interest.
+	\end{enumerate}
+
+	\item Bianca has R~$1~450$ to invest for 3 years. Bank A offers a savings account which pays simple interest at a rate of $11\%$ per annum, whereas Bank B offers a savings account paying compound interest at a rate of $10,5\%$ per annum. Which account would leave Bianca with the highest accumulated balance at the end of the 3 year period?
+
+	\item How much simple interest is payable on a loan of R~$2~000$ for a year, if the interest rate is $10\%$?
+
+	\item How much compound interest is payable on a loan of R~$2~000$ for a year, if the interest rate is $10\%$?
+
+	\item Discuss:
+	\begin{enumerate}
+	    \item Which type of interest would you like to use if you are the borrower?
+
+	    \item Which type of interest would you like to use if you were the banker?
+	\end{enumerate}
+
+	\item Calculate the compound interest for the following problems.
+	\begin{enumerate}
+	    \item A R~$2~000$ loan for 2 years at $5\%$.
+	    \item A R~$1~500$ investment for 3 years at $6\%$.
+	    \item An R~$800$ loan for 1 year at $16\%$.
+	\end{enumerate}
+
+	\item If the exchange rate for ¥~$100$ = R~$6,2287$ (¥ = Yen) and 1 Australian Dollar (AUD) = R~$5,1094$, determine the exchange rate between the Australian Dollar and the Japanese Yen.
+
+	\item Bonnie bought a stove for R~$3~750$. After 3 years she had finished paying for it and the R~$956,25$ interest that was charged for hire purchase. Determine the rate of simple interest that was charged.
+    \end{enumerate}
+
+    Find the answers with the short codes:\\
+    \begin{tabularx}{\textwidth}{ XXXXXXXXX }
+	(1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9)\\
+    \end{tabularx}
+\end{eocexercises}
