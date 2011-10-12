@@ -174,7 +174,7 @@ skipabove=0.5cm]%
 
 \newcommand{\Identity}[2]{
 \vspace{0.5cm}
-\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{flushleft}
 \uppercase{\textsl{#1}}\nopagebreak
@@ -187,9 +187,10 @@ skipabove=\baselineskip]%
 \newcommand{\Tip}[1]{
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
-\centerline{\textbf{Tip} }
-\vspace{1mm}
-\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray, margin=5pt]
+\begin{mdframed}[linecolor=darkgray]
+Tip
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -214,9 +215,11 @@ linecolor=red%
 \newcommand{\Note}[1]{
 \marginpar{%odd
 \begin{minipage}[h]{0.225\paperwidth}
-\centerline{\textbf{Note} }
-\vspace{1mm}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt]
+
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
+Note
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -233,7 +236,7 @@ linecolor=red%
 	\newenvironment{note}[1]%
 	{\begin{list}{}{%
  	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
-        \setlength{\leftmargin}{20pt}%
+        {\leftmargin}{20pt}%
 	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
         \item\textbf{\textsc{#1}}}%
 	{\end{list}}
@@ -267,6 +270,16 @@ linecolor=red%
 
 \newcounter{workedexamplecounter}
 \setcounter{workedexamplecounter}{1}
+
+
+%EZ new counters for exercises, they get reset in the \section heading environment
+\newcounter{exercisecounter}
+\setcounter{exercisecounter}{1}
+% make it reset for new chapters
+\makeatletter
+\@addtoreset{exercisecounter}{chapter}
+\makeatother
+
 
 % can we deprecate the use of this, and use \westep instead
 %\newcommand{\westep}[1]
@@ -308,6 +321,7 @@ linecolor=red%
  \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{239,239,239}
+\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
 \newenvironment{wex}[3]{
 \newlength{\myfloatsep}
@@ -320,19 +334,21 @@ linecolor=red%
 \setlength{\parindent}{0pt}
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
-\begin{mdframed}[linewidth=1pt,linecolor=darkgray, skipbelow=2mm]
+\begin{mdframed}[linewidth=1pt,linecolor=darkgray,]
 \large\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
+\noindent
 \end{mdframed}
-\vspace*{\baselineskip} 
-\begin{mdframed}[skipabove=1mm, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
+\begin{mdframed}[skipabove=-5pt, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
 \vspace*{\baselineskip}
 \textbf{\textit{QUESTION}} \vspace*{\baselineskip} 
 \hrule
 \vspace*{\baselineskip}
-\textit{#2}
+
+\textit{\noindent #2}
 \par
 \vspace*{2\baselineskip}
 \textbf{SOLUTION}\vspace*{\baselineskip}
+\noindent
 \hrule
 \vspace*{\baselineskip}
  #3%
@@ -404,12 +420,16 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
-\hrule width \textwidth height 1pt\\
+
+\exercisesheading
+
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \setlength{\parindent}{0pt}
-\vspace{\baselineskip}
-\textbf{\textit{Exercises:}
-#1}\par
+%\vspace{\baselineskip}
+%\textbf{\textit{Exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
@@ -417,13 +437,15 @@ linecolor=red%
 
 \newenvironment{eocexercises}[1]
 {
-\hrule width \textwidth height 1pt\\
+\eocexercisesheading
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
-\noindent
-\vspace{.5cm}
+%\noindent
+%\vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{End of chapter exercises:}
-#1}\par
+%\textbf{\textit{End of chapter exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
@@ -717,6 +739,7 @@ linecolor=red%
 \usepackage[explicit]{titlesec}
 
 \newcommand*\chapterlabel{}
+
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
    \normalfont\sffamily\fontsize{32}\bfseries\slshape}
@@ -773,3 +796,88 @@ linecolor=red%
    \end{tikzpicture}
   }
 \titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+
+
+
+\newcommand{\summary}{
+\vspace{6\baselineskip} \par
+{\normalfont \sffamily\fontsize{22}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.2\paperwidth,2cm);
+        \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
+              {   \color{black} Chapter \chapterlabel | Summary  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
+
+\newcommand{\exercisesheading}{
+\addtocounter{exercisecounter}{1}
+ \par  \vspace*{3\baselineskip}
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west ,text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black] (0,0) rectangle
+          (0.33\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              {  ~ \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.335\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.655\textwidth,1.5cm);
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
+\newcommand{\eocexercisesheading}{
+\par \vspace*{3\baselineskip} 
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, yshift=6\baselineskip, xshift=0., text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black] (0,0) rectangle
+          (0.3\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              { ~~  \color{black} Chapter \chapterlabel };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.31\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.69\textwidth,1.5cm);
+            \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} End of Chapter Exercises };
+
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
