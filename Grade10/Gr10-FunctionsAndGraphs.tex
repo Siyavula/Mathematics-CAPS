@@ -120,19 +120,40 @@ Turning points only occur for graphs of functions whose highest power is greater
 \end{equation*}
 There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. These are shown in Figure~\ref{m39337*uid48!!!underscore!!!printimage}.\par 
 
-% \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39337*uid48}
+\begin{figure}
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\includegraphics[width=300px]{col11306.imgs/m39337_MG10C11_035.png} % m39337;MG10C11\_035.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par 
+\begin{pspicture}(-8,-2.5)(8,2.5)
+%\psgrid[gridcolor=lightgray,gridlabels=10pt,gridwidth=0.5pt,subgriddiv=10]
+\psset{xunit=0.75,yunit=0.75}
+\rput(-4,0){
+\psaxes{<->}(0,0)(0,-2.5)(0,2.5)
+\uput[u](0,2.5){$y$}
+\psplot{-2}{2}{x 2 exp 2 sub}
+\psplot[arrows=->]{-2}{-1.5}{1.2 mul x 2 exp 2.2 sub}
+\psplot[arrows=->]{-0.5}{0.5}{1.2 mul x 2 exp 2.2 sub}
+\psplot[arrows=->]{1.5}{2}{1.2 mul x 2 exp 2.2 sub}
+\uput[l](-2,1){y-values decreasing}
+\uput[r](2,1){y-values increasing}
+\uput[l](-0.5,-2){minimal turning point}
+\psdot(0,-2)}
+\rput(4,0){
+\psaxes{<->}(0,0)(0,-2.5)(0,2.5)
+\uput[u](0,2.5){$y$}
+\psplot{-2}{2}{x 2 exp neg 2 add}
+\psplot[arrows=->]{-2}{-1.5}{1.2 mul x 2 exp neg 2.2 add}
+\psplot[arrows=->]{-0.5}{0.5}{1.2 mul x 2 exp neg 2.2 add}
+\psplot[arrows=->]{1.5}{2}{1.2 mul x 2 exp neg 2.2 add}
+\uput[l](-2,-1){y-values increasing}
+\uput[r](2,-1){y-values decreasing}
+\uput[r](0.5,2){maximal turning point}
+\psdot(0,2)}
+\uput[d](-4,-2.5){(a)}
+\uput[d](4,-2.5){(b)}
+\end{pspicture}
 \caption{(a) Maximal turning point. (b) Minimal turning point.}
-\label{m39337*uid48!!!underscore!!!printimage}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\label{fig:mf:turningpoint}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 In Figure~\ref{fig:mf:characteristics}(a), $E$ is a maximal turning point and $D$ is a minimal turning point.\par 
 
@@ -146,18 +167,17 @@ In Figure~\ref{fig:mf:characteristics}(b), the $y$-axis and line $h$ are both as
 Graphs look the same on either side of lines of symmetry. These lines may include the $x$- and $y$- axes. For example, in Figure~\ref{m39337*uid51!!!underscore!!!printimage} is symmetric about the $y$-axis. This is described as the axis of symmetry. Not every graph will have a line of symmetry.\par 
 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39337*uid51}
+\begin{figure}[htbp]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\includegraphics[width=150px]{col11306.imgs/m39337_MG10C11_036.png} % m39337;MG10C11\_036.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par 
+\begin{pspicture}(-2.5,-2)(2.5,2)
+%\psgrid[gridcolor=lightgray,gridlabels=10pt,gridwidth=0.5pt,subgriddiv=10]
+\psaxes[arrows=<->](0,0)(-2.5,-2)(2.5,2)
+\psplot[arrows=<->]{-1.8}{1.8}{x 2 exp 1.5 sub}
+\end{pspicture}
 \caption{Demonstration of axis of symmetry. The $y$-axis is an axis of symmetry, because the graph looks the same on both sides of the $y$-axis.}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39337*uid51!!!underscore!!!printimage}
+\label{fig:mf:linesofsymmetry}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \subsection*{Intervals on which the function increases/decreases}
 \nopagebreak
@@ -189,9 +209,10 @@ In Figure~\ref{fig:mf:characteristics}(b), it is clear that the graph does have 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*id237308}
 \begin{center}
-\label{m39337*id237308!!!underscore!!!media}\label{m39337*id237308!!!underscore!!!printimage}\includegraphics[height=200px]{col11306.imgs/m39337_MG10C11_003.png} % m39337;MG10C11\_003.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\begin{pspicture}(-4,-4)(4,5)
+\psaxes{<->}(0,0)(-4,-4)(4,5)
+\psplot[arrows=<->]{-3.5}{1.5}{ x 2 exp 2 x mul add 2 sub}
+\end{pspicture}
 \end{center}
 \end{figure}               
 
@@ -206,9 +227,11 @@ In Figure~\ref{fig:mf:characteristics}(b), it is clear that the graph does have 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39337*id237401}
 \begin{center}
-\label{m39337*id237401!!!underscore!!!media}\label{m39337*id237401!!!underscore!!!printimage}\includegraphics[height=200px]{col11306.imgs/m39337_MG10C11_004.png} % m39337;MG10C11\_004.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\begin{pspicture}(-3,-3)(3,3.5)
+%\psgrid[subgriddiv=1,griddots=10]
+\psaxes{<->}(0,0)(-3,-3)(3,3.5)
+\psplot[arrows=<->]{-1.1}{2.1}{2 x 3 exp mul 3 x 2 exp mul sub 2 x mul sub 2 add}
+\end{pspicture}
 \end{center}
 \end{figure}               
 \end{enumerate}
@@ -233,19 +256,21 @@ In Figure~\ref{fig:mf:characteristics}(b), it is clear that the graph does have 
 \subsection*{Plotting the graph}       
 Functions with a general form of $y=ax+q$ are called straight line functions. In the equation, $y=ax+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~1.8 for the function $f(x)=2x+3$.\par 
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39338*uid69}
+\begin{figure}[H]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39338*uid69!!!underscore!!!media}\label{m39338*uid69!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39338_MG10C11_005.png} % m39338;MG10C11\_005.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.8: }Graph of $f(x)=2x+3$
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-6,-2)(6,4.6)
+\psset{yunit=0.3}
+\psaxes[Dy=3]{<->}(0,0)(-6,-8)(6,14)
+\psplot[plotstyle=curve,arrows=<->]{-5}{5}{x 2 mul 3 add}
+\psplot[plotstyle=dots,arrows=<->,plotpoints=9]{-4}{4}{x 2 mul 3 add}
+
+%\psplot[showpoints=true](-5,-7)(-5,-7)(-4,-5)(-3,-3)(-2,-1)(-1,1)(-1.5,0)(0,3)(1,5)(2,7)(3,9)(4,11)(5,13)
+\rput(-1.6,1.5){$-\frac 32$}
+\end{pspicture}
+\caption{Graph of $f(x) = 2x + 3$}
+\label{fig:mf:g:straightline}
 \end{center}
-\end{figure}       
+\end{figure}    
 
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
@@ -272,134 +297,42 @@ Use your results to deduce the effect of different values of $a$ on the resultin
 You may have noticed that the value of $a$ affects the slope of the graph. As $a$ increases, the slope of the graph increases. If $a>0$ then the graph increases from left to right (slopes upwards). If $a<0$ then the graph increases from right to left (slopes downwards). For this reason, $a$ is referred to as the slope or gradient of a straight-line function.\par 
 You should have also found that the value of $q$ affects where the graph passes through the $y$-axis. For this reason, $q$ is known as the y-intercept.\par 
 These different properties are summarised in Table 1.7.\par 
-% \textbf{m39338*uid82}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39338*uid82}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of graphs of functions of the form $y=ax+q$.}
+\label{tab:mf:graphs:summarystr10}
+\begin{tabular}{|c|c|c|}\hline
+& $a>0$&$a<0$\\\hline\hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x 1 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39338*id238303}
-\begin{center}
-\label{m39338*id238303!!!underscore!!!media}\label{m39338*id238303!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39338_MG10C11_006.png} % m39338;MG10C11\_006.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39338*id238315}
-\begin{center}
-\label{m39338*id238315!!!underscore!!!media}\label{m39338*id238315!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39338_MG10C11_007.png} % m39338;MG10C11\_007.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39338*id238353}
-\begin{center}
-\label{m39338*id238353!!!underscore!!!media}\label{m39338*id238353!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39338_MG10C11_008.png} % m39338;MG10C11\_008.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39338*id238365}
-\begin{center}
-\label{m39338*id238365!!!underscore!!!media}\label{m39338*id238365!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39338_MG10C11_009.png} % m39338;MG10C11\_009.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x neg 1 add}
+\end{pspicture}\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x 1 sub}
+
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x neg 1 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 1.7}: Table summarising general shapes and positions of graphs of functions of the form $y=ax+q$.\end{center}
-%\end{table}
-\par
+\end{table}
+
 \subsection*{Discovering the characteristics} 
 
 \subsection*{Domain and range}
@@ -445,19 +378,21 @@ For example, sketch the graph of $g(x)=x-1$. Mark the intercepts.\par
 Firstly, we determine that $a>0$. This means that the graph will have an upward slope.\par 
 The $y$-intercept is obtained by setting $x=0$ and was calculated earlier to be ${y}_{int}=-1$. The $x$-intercept is obtained by setting $y=0$ and was calculated earlier to be ${x}_{int}=1$.\par 
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39338*uid93}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39338*uid93!!!underscore!!!media}\label{m39338*uid93!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39338_MG10C11_010.png} % m39338;MG10C11\_010.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.13: }Graph of the function $g(x)=x-1$
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-4,-4)(4,3)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{4}{x 1 sub}
+\psdots(0,-1)(1,0)
+\uput[r](0,-1){(0,-1)}
+\uput[ul](1,0){(1,0)}
+\end{pspicture}
+\caption{Graph of the function $g(x)=x-1$}
+\label{fig:mf:g:sketchexamplestr}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \par
 \label{m39338*secfhsst!!!underscore!!!id1252}\vspace{.5cm} 
@@ -488,13 +423,16 @@ For the intercept on the x-axis, let $y=0$\par
 \item  
 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39338*id239959}
-\begin{center}
-\label{m39338*id239959!!!underscore!!!media}\label{m39338*id239959!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39338_MG10C11_011.png} % ;MG10C11\_011.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}
-\end{figure}       
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.5)(8.0,3.5)
+\rput(4.0,-0.5){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0,0)(-4,-3)(4,4)}
+\psline[linewidth=0.04cm](1.802,-2.818)(4.262,2.062)
+\psline[linewidth=0.04cm](4.002,1.082)(3.982,1.102)
+\usefont{T1}{ptm}{m}{n}
+\rput{63.4}(-1.0020186,-3.3679688){\rput(2.2234063,-2.468){y = 2x + 2}}
+\end{pspicture} 
+}     
 \par 
 \end{enumerate}
 \end{exercise}
@@ -516,11 +454,21 @@ For the intercept on the x-axis, let $y=0$\par
 \item Give the equation of the illustrated graph below:
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*id240155}
-\begin{center}
-\label{m39338*id240155!!!underscore!!!media}\label{m39338*id240155!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39338_MG10C11_012.png} % m39338;MG10C11\_012.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.090469)(8.415625,4.130469)
+\rput(4.0,-0.09046875){\psaxes[linewidth=0.03,tickstyle=bottom,labels=none,ticks=none,ticksize=0.08cm](0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm](2.78,1.8295312)(7.76,-0.85046875)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2278123,4.039531){y}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.285469,0.01953125){x}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.4951563,1.3995312){(0;3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.775156,0.11953125){(4;0)}
+\end{pspicture} 
+}
 \end{figure}               
 
 \item Sketch the following relations on the same set of axes, clearly indicating the intercepts with the axes as well as the co-ordinates of the point of interception of the graph:
@@ -547,19 +495,18 @@ $x+2y-5=0$ and $3x-y-1=0$\newline
 \subsection*{Plotting the graph}         
 The general shape and position of the graph of the function of the form $f(x)=a{x}^{2}+q$, called a parabola, is shown in Figure~1.16. These are parabolic functions.\par 
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39345*uid102}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39345*uid102!!!underscore!!!media}\label{m39345*uid102!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_013.png} % m39345;MG10C11\_013.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.16: }Graph of $f(x)={x}^{2}-1$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-1)(5,5)
+%\psgrid
+\psaxes[arrows=<->,dy=0.5](0,0)(-5,-1)(5,5)
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-3}{3}{x 2 exp 1 sub}
+\end{pspicture}
+\caption{Graph of $f(x)=x^2-1$.}
+\label{fig:mf:g:parabola10}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \subsection*{Investigating the effects of a and q }
 \nopagebreak
@@ -723,148 +670,60 @@ This simulation allows you to visualise the effect of changing $a$ and q. Note t
 \par From your graphs, you should have found that $a$ affects whether the graph makes a smile or a frown. If $a<0$, the graph makes a frown and if $a>0$ then the graph makes a smile. This is shown in Figure~1.18.\par 
 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39345*uid115}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39345*uid115!!!underscore!!!media}\label{m39345*uid115!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_014.png} % m39345;MG10C11\_014.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.18: }Distinctive shape of graphs of a parabola if $a>0$ and $a<0$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-4,-0.5)(6,2)
+%\psgrid
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-2}{0}{x 1 add 2 exp}
+\psplot[plotstyle=curve,arrows=<->]{3}{5}{x 4 sub 2 exp neg 1 add}
+\psdots(-1.5,3)(-0.5,3)(3.5,3)(4.5,3)
+\uput[d](-1,-0.5){$a>0$ ($a$ positive smile)}
+\uput[d](4,-0.5){$a<0$ ($a$ negative frown)}
+\end{pspicture}
+\caption{Distinctive shape of graphs of a parabola if $a>0$ and $a<0$.}
+\label{fig:mf:g:parabola10a}
 \end{center}
-\end{figure}       
+\end{figure}     
 
 You should have also found that the value of $q$ affects whether the turning point is to the left of the $y$-axis ($q>0$) or to the right of the $y$-axis ($q<0$).\par 
 These different properties are summarised in Table 1.9.\par 
-% \textbf{m39345*uid116}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+
+\begin{table}[htb]
 \begin{center}
-\label{m39345*uid116}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of functions of the form $y=ax^2+q$.}
+\label{tab:mf:graphs:summarypar}
+\begin{tabular}{|c|c|c|}\hline
+& $a>0$&$a<0$\\ \hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39345*id241967}
-\begin{center}
-\label{m39345*id241967!!!underscore!!!media}\label{m39345*id241967!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39345_MG10C11_015.png} % m39345;MG10C11\_015.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39345*id241979}
-\begin{center}
-\label{m39345*id241979!!!underscore!!!media}\label{m39345*id241979!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39345_MG10C11_016.png} % m39345;MG10C11\_016.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39345*id242017}
-\begin{center}
-\label{m39345*id242017!!!underscore!!!media}\label{m39345*id242017!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39345_MG10C11_017.png} % m39345;MG10C11\_017.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39345*id242029}
-\begin{center}
-\label{m39345*id242029!!!underscore!!!media}\label{m39345*id242029!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39345_MG10C11_018.png} % m39345;MG10C11\_018.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 add}
+\end{pspicture}
+\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 1.9}: Table summarising general shapes and positions of functions of the form $y=a{x}^{2}+q$.\end{center}
-%\end{table}
+\end{table}}
 \par
 \subsection*{Discovering the characterstics}
 
@@ -972,24 +831,20 @@ which is not real. Therefore, there are no $x$-intercepts which means that the f
 We also know that the axis of symmetry is the $y$-axis.\par 
 Finally, we draw the graph. Note that in the diagram only the $y$-intercept is marked. The graph has a maximal turning point (i.e. makes a frown) as determined from the sign of $a$, there are no $x$-intercepts and the turning point is that same as the $y$-intercept. The domain is all real numbers and the range is $\{f(x):f(x)\in (-\infty ,-3]\}$.\par 
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39345*uid129}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39345*uid129!!!underscore!!!media}\label{m39345*uid129!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39345_MG10C11_019.png} % m39345;MG10C11\_019.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.23: }Graph of the function $f(x)=-\frac{1}{2}{x}^{2}-3$
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp 0.5 mul neg 3 sub}
+\psdots(0,-3)
+\uput[r](0,-3){(0,-3)}
+\end{pspicture}
+\caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+\label{fig:mf:g:sketchexamplepar10}
 \end{center}
-\end{figure}       
-\par
-\label{m39345*eid7523}\vspace{.5cm} 
-\noindent
-\hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-
+\end{figure}
 
 \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
 \begin{exercise}
@@ -1042,13 +897,37 @@ The following video shows one method of graphing parabolas. Note that in this vi
 \item Draw the graph of the function $y=-{x}^{2}+4$ showing all intercepts with the axes.
 \item Two parabolas are drawn: $g:y=a{x}^{2}+p$ and $h:y=b{x}^{2}+q$.
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39345*id245918}
 \begin{center}
-\label{m39345*id245918!!!underscore!!!media}\label{m39345*id245918!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39345_MG10C11_020.png} % m39345;MG10C11\_020.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.61)(9.072187,2.61)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,-0.57)(9.04,-0.57 )
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.54,-2.59)(4.56,2.59)
+\psbezier[linewidth=0.04](1.8801522,2.249799)(2.0476475,1.0067352)(2.6697726,-0.42756912)(2.9090517 ,-0.81005025)(3.1483305,-1.1925315)(3.6508162,-1.83)(4.584004,-1.83)
+\psbezier[linewidth=0.04](7.24,2.249799)(7.0725045,1.0067352)(6.4503794,-0.42756912)(6.2111006,-0.81005025)(5.971822,-1.1925315)(5.469336,-1.83)(4.536148 ,-1.83)
+\psbezier[linewidth=0.04](1.2402416,-2.409998)(1.4477341,-1.215622)(2.2184203,0.16250414)(2.5148382,0.53000444)(2.811256,0.8975047)(3.4337332,1.5100052)(4.5897627,1.5100052)
+\psbezier[linewidth=0.04](7.88,-2.409998 )(7.672508,-1.215622)(6.901821,0.16250414)(6.6054034,0.53000444)(6.3089857,0.8975047)(5.686508,1.5100052)(4.530479,1.5100052)
+\usefont{T1}{ptm}{m}{it}
+\rput(4.8129687,2.48){y}
+\usefont{T1}{ptm}{m}{it}
+\rput(8.908281 ,-0.3){x}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2504687,1.73){\footnotesize 23}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.269219,-2.07){\footnotesize -9}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.730625,0.39){\footnotesize (-4; 7)} 
+\usefont{T1}{ptm}{m}{n}
+\rput(7.240625,0.39){\footnotesize (4; 7)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.4275,-0.81){\footnotesize 3}
+\usefont{T1}{ptm}{m}{it}
+\rput(7.369219,1.87){\footnotesize g}
+\usefont{T1}{ptm}{m}{it} 
+\rput{-0.1}(0.0029207817,0.01384337){\rput(7.9021873,-1.69){\footnotesize h}}
+\end{pspicture} 
+}       
 \end{center}
-\end{figure}       
 \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
 \item Find the values of $a$ and $p$.
 \item Find the values of $b$ and $q$.
@@ -1072,18 +951,20 @@ The following video shows one method of graphing parabolas. Note that in this vi
 \subsection*{Plotting the graph}           
 Functions of the form $y=\frac{a}{x}+q$ are known as hyperbolic functions. The general form of the graph of this function is shown in Figure~1.27.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39341*uid138}
+\begin{figure}[tbp]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39341*uid138!!!underscore!!!media}\label{m39341*uid138!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39341_MG10C11_021.png} % m39341;MG10C11\_021.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.27: }General shape and position of the graph of a function of the form $f(x)=\frac{a}{x}+q$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-2)(5,5)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-2.667)(5,6)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 add}
+\psplot[linestyle=dotted,plotstyle=curve]{-5}{2}{x 2 add}
+\end{pspicture}
+\caption{General shape and position of the graph of a function of the form $f(x)=\frac{a}{x} + q$.}
+\label{fig:mf:g:hyperbola10}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \subsection*{ Investigating the effects of a and q }
 \nopagebreak
@@ -1108,133 +989,53 @@ Use your results to deduce the effect of $q$.
 You should have found that the value of $a$ affects whether the graph is located in the first and third quadrants of Cartesian plane.\par 
 You should have also found that the value of $q$ affects whether the graph lies above the $x$-axis ($q>0$) or below the $x$-axis ($q<0$).\par 
 These different properties are summarised in Table 1.10. The axes of symmetry for each graph are shown as a dashed line.\par 
-% \textbf{m39341*uid151}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39341*uid151}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|c|c|c|}\hline
+& $a>0$&$a<0$\\\hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 add}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39341*id246931}
-\begin{center}
-\label{m39341*id246931!!!underscore!!!media}\label{m39341*id246931!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39341_MG10C11_022.png} % m39341;MG10C11\_022.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39341*id246943}
-\begin{center}
-\label{m39341*id246943!!!underscore!!!media}\label{m39341*id246943!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39341_MG10C11_023.png} % m39341;MG10C11\_023.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39341*id246981}
-\begin{center}
-\label{m39341*id246981!!!underscore!!!media}\label{m39341*id246981!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39341_MG10C11_024.png} % m39341;MG10C11\_024.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39341*id246993}
-\begin{center}
-\label{m39341*id246993!!!underscore!!!media}\label{m39341*id246993!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39341_MG10C11_025.png} % m39341;MG10C11\_025.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg 2 add}
+\end{pspicture}
+\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
+\psplot[linestyle=dotted,plotstyle=curve]{-2}{4}{x neg 2 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 1.10}: Table summarising general shapes and positions of functions of the form $y=\frac{a}{x}+q$. The axes of symmetry are shown as dashed lines.\end{center}
-%\end{table}
+\end{table}
 \par
 \subsection*{Discovering the characteristics}  
 \subsection*{Domain and range}
@@ -1299,16 +1100,18 @@ For example, sketch the graph of $g(x)=\frac{2}{x}+2$. Mark the intercepts and a
 We have determined the domain to be $\{x:x\in \mathbb{R},x\ne 0\}$ and the range to be $\{g(x):g(x)\in (-\infty ;2)\cup (2;\infty )\}$. Therefore the asymptotes are at $x=0$ and $y=2$.\par 
 There is no $y$-intercept and the $x$-intercept is ${x}_{int}=-1$.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39341*uid162}
+\begin{figure}[tbp]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39341*uid162!!!underscore!!!media}\label{m39341*uid162!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39341_MG10C11_026.png} % m39341;MG10C11\_026.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.32: }Graph of $g(x)=\frac{2}{x}+2$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-4)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.4}{x -1 exp 2 mul 2 add}
+\psplot[plotstyle=curve,arrows=<->]{0.4}{5}{x -1 exp 2 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\end{pspicture}
+\caption{Graph of $g(x)=\frac{2}{x} + 2$.}
+\label{fig:mf:g:hyperbolasketchexample}
 \end{center}
 \end{figure}       
 \par
@@ -1383,18 +1186,18 @@ So there is one x-intercept at $(\frac{4}{7};0)$.\item Putting all this together
 \subsection*{Plotting the graph}         
 Functions of the form $y=a{b}^{(x)}+q$ are known as exponential functions. The general shape of a graph of a function of this form is shown in Figure~1.34.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39348*uid173}
+\begin{figure}[H]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39348*uid173!!!underscore!!!media}\label{m39348*uid173!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39348_MG10C11_027.png} % m39348;MG10C11\_027.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.34: }General shape and position of the graph of a function of the form $f(x)=a{b}^{(x)}+q$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-1)(5,4)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{1.2}{2 x exp 2 add}
+\end{pspicture}
+\caption{General shape and position of the graph of a function of the form $f(x)=ab^{(x)} + q$.}
+\label{fig:mf:g:exponential10}
 \end{center}
-\end{figure}       
+\end{figure}     
 
 \subsection*{ Investigating the effects of a and q}
 \nopagebreak
@@ -1419,133 +1222,44 @@ Use your results to deduce the effect of $q$.
 You should have found that the value of $a$ affects whether the graph curves upwards ($a>0$) or curves downwards ($a<0$).\par 
 You should have also found that the value of $q$ affects the position of the $y$-intercept.\par 
 These different properties are summarised in Table 1.11.\par 
-% \textbf{m39348*uid186}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39348*uid186}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of functions of the form $y=ab^{(x)} + q$.}
+\label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|c|c|c|}\hline
+& $a>0$&$a<0$\\\hline
+$q>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39348*id250546}
-\begin{center}
-\label{m39348*id250546!!!underscore!!!media}\label{m39348*id250546!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39348_MG10C11_028.png} % m39348;MG10C11\_028.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39348*id250558}
-\begin{center}
-\label{m39348*id250558!!!underscore!!!media}\label{m39348*id250558!!!underscore!!!printimage}\includegraphics[width100px]{col11306.imgs/m39348_MG10C11_029.png} % m39348;MG10C11\_029.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39348*id250596}
-\begin{center}
-\label{m39348*id250596!!!underscore!!!media}\label{m39348*id250596!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39348_MG10C11_030.png} % m39348;MG10C11\_030.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39348*id250608}
-\begin{center}
-\label{m39348*id250608!!!underscore!!!media}\label{m39348*id250608!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39348_MG10C11_031.png} % m39348;MG10C11\_031.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 add}
+\end{pspicture}
+\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 sub}
+\end{pspicture}
+\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 1.11}: Table summarising general shapes and positions of functions of the form $y=a{b}^{(x)}+q$.\end{center}
-%\end{table}
+\end{table}
 \par
 \subsection*{Discovering the characteristics}
 
@@ -1619,18 +1333,20 @@ For example, sketch the graph of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$. Mark the i
 We have determined the domain to be $\{x:x\in \mathbb{R}\}$ and the range to be $\{g(x):g(x)\in [2,\infty )\}$.\par 
 The $y$-intercept is ${y}_{int}=5$ and there are no $x$-intercepts.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39348*uid196}
+\begin{figure}[htbp]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39348*uid196!!!underscore!!!media}\label{m39348*uid196!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39348_MG10C11_032.png} % m39348;MG10C11\_032.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 1.39: }Graph of $g(x)=3\ensuremath{\cdot}{2}^{x}+2$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.5}{2 x exp 3 mul 2 add}
+\end{pspicture}
+\caption{Graph of $g(x)=3\cdot 2^{x} + 2$.}
+\label{fig:mf:g:exponentialsketchexample10}
 \end{center}
-\end{figure}       
+\end{figure}      
+
+
 \par
 \label{m39348*eid78823}\vspace{.5cm} 
 \noindent
@@ -1683,14 +1399,21 @@ So there is one x-intercept at $(0,83,0)$.\item Putting all this together gives 
 \end{enumerate}
   \item The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $A(0; 1)$ and $B(2; 4)$ is on $f$.
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39348*id253318}
 \begin{center}
-\label{m39348*id253318!!!underscore!!!media}\label{m39348*id253318!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39348_MG10C11_033.png} % m39348;MG10C11\_033.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.19)(6.3184376,3.21)
+\psdots[dotsize=0.12](5.0,1.49)
+\psdots[dotsize= 0.12](1.0,-1.51)
+\psbezier[linewidth=0.04](0.0,-1.81)(5.0,-0.41)(5.5,2.59)(5.6,3.19)
+\rput(5.7725,1.7){B(2,4)}
+\rput(1.7076563,-1.8){A(0,1)}
+\rput(1.0,-2.51){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength= 1.4,arrowinset=0.4,ticksize=0.08cm,dx=2.0cm,dy=1.0cm]{<->}(0,0)(-1,0)(5,5)}
+\rput(5.994375,-2.8){x}
+\rput(0.564375,2.5){f}
+\end{pspicture} 
+}     
 \end{center}
-\end{figure}       
-
 \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
 \item Determine the equation of the function $f$.
 \item Determine the equation of $h$, the function of which the curve is the reflection of the curve of $f$ in the $x$-axis.
@@ -1953,9 +1676,12 @@ Complete the following table, using your calculator to calculate the values. The
 \setcounter{subfigure}{0}
 \label{m39414*id84030}
 \begin{center}
-\label{m39414*id84030!!!underscore!!!media}\label{m39414*id84030!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_016.png} % m39414;MG10C15\_016.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
+\end{pspicture}
 \end{center}    
   }
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | '' || col4 '0' | 'false' | '' || col5 '0' | 'false' | '' || col6 '0' | 'false' | '' || col7 '0' | 'false' | '' || col8 '0' | 'false' | ''
@@ -2017,35 +1743,38 @@ Complete the following table, using your calculator to calculate the values. The
 \par
 As you can see, the function $sin\theta $ has a value of $0$ at $\theta ={0}^{\circ }$. Its value then smoothly increases until $\theta ={90}^{\circ }$ when its value is $1$. We also know that it later decreases to $0$ when $\theta ={180}^{\circ }$. Putting all this together we can start to picture the full extent of the sine graph. The sine graph is shown in Figure~14.23. Notice the wave shape, with each wave having a length of ${360}^{\circ }$. We say the graph has a period of ${360}^{\circ }$. The height of the wave above (or below) the $x$-axis is called the wave's amplitude. Thus the maximum amplitude of the sine-wave is $1$, and its minimum amplitude is $-1$.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid31}
+\begin{figure}[h]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid31!!!underscore!!!media}\label{m39414*uid31!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_017.png} % m39414;MG10C15\_017.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.23: }The graph of $sin\theta $.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-6,-2)(6,2)
+\psaxes[Ox=0, Dx=180, dx=2]{<->}(0,0)(-4.5,-1.5)(4.5,1.5)
+\psplot[xunit=0.0111,yunit=1.0, plotpoints=1000]{-360}{360}{x sin}
+\rput(5.1,-.3){Degrees}
+\psline[linestyle=dashed](0, 1)(4, 1)
+\psline[linestyle=dashed](0, -1)(4, -1)
+\end{pspicture}
+\caption{The graph of $\sin \theta$.}
+\label{trig:sin}
 \end{center}
-\end{figure}       
+\end{figure}
+      
 
 \subsection*{Graphs of the form $y=asin(x)+q$}
 \nopagebreak
 In the equation, $y=asin(x)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.24 for the function $f(\theta )=2sin\theta +3$.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid33}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid33!!!underscore!!!media}\label{m39414*uid33!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39414_trigrep.png} % m39414;trigrep.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.24: }Graph of $f(\theta )=2sin\theta +3$
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-4,-2)(4,6)
+%\psgrid[gridcolor=gray]
+\psset{yunit=1,xunit=0.01111}
+\psaxes[dx=90,Dx=90]{<->}(0,0)(-360,-2)(360,6)
+\psplot[plotstyle=curve,arrows=<->]{-360}{360}{x sin 2 mul 3 add}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}
+\caption{Graph of $f(\theta)=2 \sin \theta +3$}
+\label{fig:mt:g:sin}
 \end{center}
-\end{figure}       
+\end{figure}   
 
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
@@ -2071,133 +1800,45 @@ Use your results to deduce the effect of $a$.
 You should have found that the value of $a$ affects the height of the peaks of the graph. As the magnitude of $a$ increases, the peaks get higher. As it decreases, the peaks get lower.\par 
 $q$ is called the vertical shift. If $q=2$, then the whole sine graph shifts up $2$ units. If $q=-1$, the whole sine graph shifts down $1$ unit.\par 
 These different properties are summarised in Table 14.6.\par 
-% \textbf{m39414*uid46}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39414*uid46}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of graphs of functions of the form $y=a \sin(x) + q$.}
+\label{tab:mt:g:summarysin10}
+\begin{tabular}{|c||c|c|}\hline
+& $a>0$&$a<0$\\\hline\hline
+$q>0$&
+\begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin 0.5 add}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next siblingFunctions of the form
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id85372}
-\begin{center}
-\label{m39414*id85372!!!underscore!!!media}\label{m39414*id85372!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_019.png} % m39414;MG10C15\_019.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id85384}
-\begin{center}
-\label{m39414*id85384!!!underscore!!!media}\label{m39414*id85384!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_020.png} % m39414;MG10C15\_020.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &Domain and Range
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id85421}
-\begin{center}
-\label{m39414*id85421!!!underscore!!!media}\label{m39414*id85421!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_021.png} % m39414;MG10C15\_021.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id85433}
-\begin{center}
-\label{m39414*id85433!!!underscore!!!media}\label{m39414*id85433!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_022.png} % m39414;MG10C15\_022.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin neg 0.5 add}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin 0.5 sub}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x sin neg 0.5 sub}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 14.6}: Table summarising general shapes and positions of graphs of functions of the form $y=asin(x)+q$.\end{center}
-%\end{table}
+\end{table}
 \par
 
 \subsection*{Discovering the characteristics}
@@ -2478,12 +2119,12 @@ The $y$-intercept, ${y}_{int}$, of $f(\theta )=asin(x)+q$ is simply the value of
 % align/colidx: center,1
 \multicolumn{8}{|p{\dimexpr10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+14\tabcolsep+7\arrayrulewidth\relax}|}{
 \setcounter{subfigure}{0}
-\label{m39414*id86866}
-\begin{center}
-\label{m39414*id86866!!!underscore!!!media}\label{m39414*id86866!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_023.png} % m39414;MG10C15\_023.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
+\end{pspicture} 
   }
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | '' || col4 '0' | 'false' | '' || col5 '0' | 'false' | '' || col6 '0' | 'false' | '' || col7 '0' | 'false' | '' || col8 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}\cline{8-8}
@@ -2551,35 +2192,36 @@ cos{60}^{\circ }=\frac{1}{2}=sin{30}^{\circ }=sin({90}^{\circ }-{60}^{\circ })
 \end{equation*}
 This tells us that in order to create the cosine graph, all we need to do is to shift the sine graph ${90}^{\circ }$ to the left. The graph of $cos\theta $ is shown in Figure~14.30. As the cosine graph is simply a shifted sine graph, it will have the same period and amplitude as the sine graph.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid50}
+\begin{figure}[h]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid50!!!underscore!!!media}\label{m39414*uid50!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_024.png} % m39414;MG10C15\_024.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.30: }The graph of $cos\theta $.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-6,-2)(6,2)
+\psaxes[Ox=0, Dx=180, dx=2]{<->}(0,0)(-4.5,-1.5)(4.5,1.5)
+%\psline[]{<-}(0,1.2)(1,1.2)
+\psplot[xunit=0.0111,yunit=1.0, plotpoints=1000]{-360}{360}{x cos}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}
+\caption{The graph of $\cos \theta$.}
+\label{trig:cos}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \subsection*{Graphs of the form $y=acos(x)+q$}
 \nopagebreak
 In the equation, $y=acos(x)+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~14.31 for the function $f(\theta )=2cos\theta +3$.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid52}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid52!!!underscore!!!media}\label{m39414*uid52!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39414_trigrep1.png} % m39414;trigrep1.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.31: }Graph of $f(\theta )=2cos\theta +3$
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-4,-2)(4,6)
+%\psgrid[gridcolor=gray]
+\psset{yunit=1,xunit=0.01111}
+\psaxes[dx=90,Dx=90]{<->}(0,0)(-360,-2)(360,6)
+\psplot[plotstyle=curve,arrows=<->]{-360}{360}{x cos 2 mul 3 add}
+\rput(5.1,-.3){Degrees}
+\end{pspicture}
+\caption{Graph of $f(\theta)=2 \cos \theta +3$}
+\label{fig:mt:g:cos}
 \end{center}
-\end{figure}       
+\end{figure}      
 
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
@@ -2604,133 +2246,41 @@ Use your results to deduce the effect of $a$.
 You should have found that the value of $a$ affects the amplitude of the cosine graph in the same way it did for the sine graph.\par 
 You should have also found that the value of $q$ shifts the cosine graph in the same way as it did the sine graph.\par 
 These different properties are summarised in Table 14.9.\par 
-% \textbf{m39414*uid65}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39414*uid65}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of graphs of functions of the form $y=a \cos(x) + q$.}
+\label{tab:mt:g:summarycos10}
+\begin{tabular}{|c||c|c|}\hline
+& $a>0$&$a<0$\\\hline\hline
+$q>0$&
+\begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos 0.5 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id88184}
-\begin{center}
-\label{m39414*id88184!!!underscore!!!media}\label{m39414*id88184!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_026.png} % m39414;MG10C15\_026.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id88196}
-\begin{center}
-\label{m39414*id88196!!!underscore!!!media}\label{m39414*id88196!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_027.png} % m39414;MG10C15\_027.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id88234}
-\begin{center}
-\label{m39414*id88234!!!underscore!!!media}\label{m39414*id88234!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_028.png} % m39414;MG10C15\_028.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id88246}
-\begin{center}
-\label{m39414*id88246!!!underscore!!!media}\label{m39414*id88246!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_029.png} % m39414;MG10C15\_029.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-0.6)(1.2,1.2)
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-1)(450,2)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos neg 0.5 add}
+\end{pspicture}\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos 0.5 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,0.6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-2)(450,1)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-360}{360}{x cos neg 0.5 sub}
+\end{pspicture}\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 14.9}: Table summarising general shapes and positions of graphs of functions of the form $y=acos(x)+q$.\end{center}
-%\end{table}
+\end{table}
 \par
 
 \subsection*{Discovering the characteristics}
@@ -2750,18 +2300,19 @@ The $y$-intercept of $f(\theta )=acos(x)+q$ is calculated in the same way as for
 \subsection*{Comparison of graphs of $y=sin~\theta $ and $y=cos~\theta $}
 \nopagebreak
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid69}
+\begin{figure}[h]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid69!!!underscore!!!media}\label{m39414*uid69!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_030.png} % m39414;MG10C15\_030.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.36: }The graph of $cos\theta $ (solid-line) and the graph of $sin\theta $ (dashed-line).
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-6,-2)(6,2)
+\psaxes[Ox=0, Dx=180, dx=2]{<->}(0,0)(-4.5,-1.5)(4.5,1.5)
+\psline[]{<-}(0,1.2)(1,1.2)
+\psplot[xunit=0.0111, , yunit=1.0, plotpoints=1000, linestyle=dashed]{-360}{360}{x sin}
+\psplot[xunit=0.0111,yunit=1.0, plotpoints=1000]{-360}{360}{x cos}
+\rput(5.1,-.3){Degrees}
+\rput(1.8,1.2){$90^\circ$ shift}
+\end{pspicture}
+\caption{The graph of $\cos \theta$ (solid-line) and the graph of $\sin \theta$ (dashed-line).}
 \end{center}
-\end{figure}       
+\end{figure}    
 Notice that the two graphs look very similar. Both oscillate up and down around the $x$-axis as you move along the axis. The distances between the peaks of the two graphs is the same and is constant along each graph. The height of the peaks and the depths of the troughs are the same.\par 
 The only difference is that the $sin$ graph is shifted a little to the right of the $cos$ graph by 90${}^{\circ }$. That means that if you shift the whole $cos$ graph to the right by 90 ${}^{\circ }$ it will overlap perfectly with the $sin$ graph. You could also move the $sin$ graph by 90 ${}^{\circ }$to the left and it would overlap perfectly with the $cos$ graph. This means that:\par 
 \nopagebreak\noindent{}
@@ -3014,12 +2565,12 @@ Complete the following table, using your calculator to calculate the values corr
 % align/colidx: center,1
 \multicolumn{8}{|p{\dimexpr10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+10\mystarwidth+14\tabcolsep+7\arrayrulewidth\relax}|}{
 \setcounter{subfigure}{0}
-\label{m39414*id89550}
-\begin{center}
-\label{m39414*id89550!!!underscore!!!media}\label{m39414*id89550!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_031.png} % m39414;MG10C15\_031.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
+\begin{pspicture}(0,-1)(4,1)
+\psset{xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
+\end{pspicture}   
   }
 % rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | '' || col4 '0' | 'false' | '' || col5 '0' | 'false' | '' || col6 '0' | 'false' | '' || col7 '0' | 'false' | '' || col8 '0' | 'false' | ''
 \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}\cline{8-8}
@@ -3092,16 +2643,25 @@ tan\theta =\frac{sin\theta }{cos\theta }
 for any value of $\theta $.\par 
 So we know that for values of $\theta $ for which $sin\theta =0$, we must also have $tan\theta =0$. Also, if $cos\theta =0$ our value of $tan\theta $ is undefined as we cannot divide by 0. The graph is shown in Figure~14.38. The dashed vertical lines are at the values of $\theta $ where $tan\theta $ is not defined.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid71}
+\\begin{figure}[h]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid71!!!underscore!!!media}\label{m39414*uid71!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_044.png} % m39414;MG10C15\_044.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.38: }The graph of $tan\theta $.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-6,-3)(6,3)
+\psaxes[Dx=180, dx=2, Dy=2, dy=1]{<->}(0,0)(-4.5,-3)(4.5,3)
+\psline[linestyle=dashed](-1,-2.5)(-1,2.5)
+\psline[linestyle=dashed](1,-2.5)(1,2.5)
+\psline[linestyle=dashed](-3,-2.5)(-3,2.5)
+\psline[linestyle=dashed](3,-2.5)(3,2.5)
+\psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=<->]{-80}{80}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div}
+\rput(5.1,-.3){$\theta$\ Degrees}
+\rput(.4,3.3){$f(\theta$)}
+\end{pspicture}
+\caption{The graph of $\tan \theta$.}
+\label{trig:tan}
 \end{center}
 \end{figure}       
 
@@ -3109,18 +2669,30 @@ So we know that for values of $\theta $ for which $sin\theta =0$, we must also h
 \nopagebreak
 In the figure below is an example of a function of the form $y=atan(x)+q$.\par 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*uid73}
+\begin{figure}[!ht]
 \begin{center}
-\rule[.1in]{\figurerulewidth}{.005in} \\
-\label{m39414*uid73!!!underscore!!!media}\label{m39414*uid73!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_045.png} % m39414;MG10C15\_045.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{\rubberspace}\par \begin{cnxcaption}
-\small \textbf{Figure 14.39: }The graph of $2tan\theta +1$.
-\end{cnxcaption}
-\vspace{.1in}
-\rule[.1in]{\figurerulewidth}{.005in} \\
+\begin{pspicture}(-5,-3)(5,3.2)
+%\psgrid
+\psset{yunit=0.25}
+\psaxes[Dx=180, dx=2, Dy=5, dy=5]{<->}(0,0)(-4.5,-12)(4.5,12)
+\psline[linestyle=dashed](-1,-12.5)(-1,12.5)
+\psline[linestyle=dashed](1,-12.5)(1,12.5)
+\psline[linestyle=dashed](-3,-12.5)(-3,12.5)
+\psline[linestyle=dashed](3,-12.5)(3,12.5)
+\psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-80}{80}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div 2 mul 1 add}
+\rput(5.3,-.6){$\theta$\ Degrees}
+\rput(.4,9.3){$f(\theta$)}
+\end{pspicture}
+\caption{The graph of $2\tan \theta + 1$.}
+\label{trig:tan2}
 \end{center}
-\end{figure}       
+\end{figure}
+       
 
 \subsection*{Investigating the effects of a and q}
 \nopagebreak
@@ -3145,137 +2717,43 @@ Use your results to deduce the effect of $a$.
 You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of $a$, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
 You should have also found that the value of $q$ affects the vertical shift as for $sin\theta $ and $cos\theta $.
 These different properties are summarised in Table 14.12.\par 
-% \textbf{m39414*uid86}\par
-You should have found that the value of $a$ affects the steepness of each of the branches. The larger the absolute magnitude of $a$, the quicker the branches approach their asymptotes, the values where they are not defined. Negative $\mathit{a}$ values switch the direction of the branches.
-You should have also found that the value of $q$ affects the vertical shift as for $sin\theta $ and $cos\theta $.
-These different properties are summarised in Table 14.12.\par 
-% \textbf{m39414*uid86}\par
-% how many colspecs?  3
-% name: cnx:colspec
-% colnum: 1
-% colwidth: 10*
-% latex-name: columna
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 2
-% colwidth: 10*
-% latex-name: columnb
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-% name: cnx:colspec
-% colnum: 3
-% colwidth: 10*
-% latex-name: columnc
-% colname: 
-% align/tgroup-align/default: //left
-% -------------------------
-\setlength\mytablespace{6\tabcolsep}
-\addtolength\mytablespace{4\arrayrulewidth}
-\setlength\mytablewidth{\linewidth}
-\setlength\mytableroom{\mytablewidth}
-\addtolength\mytableroom{-\mytablespace}
-\setlength\myfixedwidth{0pt}
-\setlength\mystarwidth{\mytableroom}
-\addtolength\mystarwidth{-\myfixedwidth}
-\divide\mystarwidth 30
-% ----- Table with code
-% \begin{table}[H]
-% \\ '' '0'
+\begin{table}[htb]
 \begin{center}
-\label{m39414*uid86}
-\noindent
-\tabletail{%
-\hline
-\multicolumn{3}{|p{\mytableroom}|}{\raggedleft \small \sl continued on next page}\\
-\hline
-}
-\tablelasttail{}
-\begin{xtabular*}{\mytablewidth}[t]{|p{10\mystarwidth}|p{10\mystarwidth}|p{10\mystarwidth}|}\hline
-% count in rowspan-info-nodeset: 3
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
+\caption{Table summarising general shapes and positions of graphs of functions of the form $y=a \tan(x) + q$.}
+\label{tab:mt:g:summarytan10}
+\begin{tabular}{|c||c|c|}\hline
+& $a>0$&$a<0$\\\hline\hline
+$q>0$&
+\begin{pspicture}(-1.2,-0.6)(1.2,0.8)
+%\psgrid[gridcolor=gray]
+\psset{yunit=0.1,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-6)(450,7)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-81.5}{78}{x sin x cos div 1.5 add}
+\end{pspicture}
 &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-    $a>0$
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-    $a<0$
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q>0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id90981}
-\begin{center}
-\label{m39414*id90981!!!underscore!!!media}\label{m39414*id90981!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39414_MG10C15_034.png} % m39414;MG10C15\_034.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id90993}
-\begin{center}
-\label{m39414*id90993!!!underscore!!!media}\label{m39414*id90993!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39414_MG10C15_035.png} % m39414;MG10C15\_035.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-% align/colidx: left,1
-% rowcount: '0' | start: 'false' | colidx: '1'
-% Formatting a regular cell and recurring on the next sibling
-    $q<0$
-    &
-% align/colidx: left,2
-% rowcount: '0' | start: 'false' | colidx: '2'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id91030}
-\begin{center}
-\label{m39414*id91030!!!underscore!!!media}\label{m39414*id91030!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39414_MG10C15_036.png} % m39414;MG10C15\_036.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-    &
-% align/colidx: left,3
-% rowcount: '0' | start: 'false' | colidx: '3'
-% Formatting a regular cell and recurring on the next sibling
-\setcounter{subfigure}{0}
-\label{m39414*id91042}
-\begin{center}
-\label{m39414*id91042!!!underscore!!!media}\label{m39414*id91042!!!underscore!!!printimage}\includegraphics[width=100px]{col11306.imgs/m39414_MG10C15_037.png} % m39414;MG10C15\_037.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}    
-  % make-rowspan-placeholders
-% rowspan info: col1 '0' | 'false' | '' || col2 '0' | 'false' | '' || col3 '0' | 'false' | ''
-\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-%--------------------------------------------------------------------
-\end{xtabular*}
+\begin{pspicture}(-1.2,-0.6)(1.2,0.8)
+%\psgrid[gridcolor=gray]
+\psset{yunit=0.1,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-6)(450,7)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-78}{82.5}{x sin x cos div neg 1.5 add}
+\end{pspicture}\\\hline
+$q<0$&
+\begin{pspicture}(-1.2,-0.8)(1.2,0.8)
+%\psgrid[gridcolor=gray]
+\psset{yunit=0.1,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-7)(450,6)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-80}{80}{x sin x cos div 1.5 sub}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-0.8)(1.2,0.8)
+%\psgrid
+\psset{yunit=0.1,xunit=0.0111}
+\psaxes[arrows=<->,dx=0,Dx=720,dy=0,Dy=10,xunit=0.25](0,0)(-450,-7)(450,6)
+\psplot[plotstyle=curve,arrows=<->,xunit=0.25]{-80}{80}{x sin x cos div neg 1.5 sub}
+\end{pspicture}\\\hline
+\end{tabular}
 \end{center}
-\begin{center}{\small\bfseries Table 14.12}: Table summarising general shapes and positions of graphs of functions of the form $y=atan(x)+q$.\end{center}
-%\end{table}
+\end{table}
 \par
 
 \subsection*{Discovering the characteristics}
@@ -3308,36 +2786,42 @@ As $\theta $ approaches ${90}^{\circ }$, $tan\theta $ approaches infinity. But a
 \item $y=tan\theta -2$\item $y=2cos\theta -1$\end{enumerate}
   \item Give the equations of each of the following graphs:
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*id92152}
+% \begin{minipage}{0.6\textwidth}
 \begin{center}
-\label{m39414*id92152!!!underscore!!!media}\label{m39414*id92152!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39414_trigrep4.png} % m39414;trigrep4.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
+\begin{pspicture}(-2.5,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-2,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-90}{360}{x cos -4 mul }
+\uput[d](4.7,0){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-2.5,2){a)}
+\end{pspicture}\\
+\begin{pspicture}(-0.3,-2)(5,2)
+%\psgrid
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(0,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
+\uput[d](4.7,0){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-1.2,3){b)}
+%\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div 2 mul 1 add}
+%\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div 2 mul 
+\end{pspicture}
 \end{center}
-\end{figure}       
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*id92162}
-\begin{center}
-\label{m39414*id92162!!!underscore!!!media}\label{m39414*id92162!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39414_trigrep5.png} % m39414;trigrep5.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}
-\end{figure}       +
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*id92174}
-\begin{center}
-\label{m39414*id92174!!!underscore!!!media}\label{m39414*id92174!!!underscore!!!printimage}\includegraphics[height=200px]{col11306.imgs/m39414_trigrep6.png} % m39414;trigrep6.png;;;6.0;8.5;
-\vspace{2pt}
-\vspace{.1in}
-\end{center}
-\end{figure}               \end{enumerate}
-\label{m39414*eip-749}The following presentation summarises what you have learnt in this chapter.
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39414*slidesharefigure}
-\label{m39414*slidesharemedia}\label{m39414*slideshareflash}\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Presentation:  MG10106 )}
-\vspace{2pt}
-\vspace{.1in}
-\end{figure}       \par 
+% \end{minipage}
+% \begin{minipage}{0.35\textwidth}
+\begin{pspicture}(-2.2,-3)(2.2,3.2)
+%\psgrid
+\psset{yunit=0.2}
+\psaxes[Dx=90, dx=1, Dy=5, dy=5]{<->}(0,0)(-2,-12)(2,12)
+\psline[linestyle=dashed](-1,0)(-1,12.5)
+\psline[linestyle=dashed](1,-12.5)(1,-3)
+\psline[linestyle=dashed](-1,-12.5)(-1,-3)
+\psline[linestyle=dashed](1,0)(1,12.5)
+\rput(-2,8){c)}
+\psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-75}{83}{x sin x cos div -2 mul 5 add}
+\end{pspicture}
+% \end{minipage}      \par 
 
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
