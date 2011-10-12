@@ -187,9 +187,10 @@ skipabove=\baselineskip]%
 \newcommand{\Tip}[1]{
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
-\centerline{\textbf{Tip} }
-\vspace{1mm}
-\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray, margin=5pt]
+\begin{mdframed}[linecolor=darkgray]
+Tip
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray, margin=5pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -214,9 +215,11 @@ linecolor=red%
 \newcommand{\Note}[1]{
 \marginpar{%odd
 \begin{minipage}[h]{0.225\paperwidth}
-\centerline{\textbf{Note} }
-\vspace{1mm}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt]
+
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt]
+Note
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -233,7 +236,7 @@ linecolor=red%
 	\newenvironment{note}[1]%
 	{\begin{list}{}{%
  	\setlength{\labelsep}{0pt}\setlength{\rightmargin}{20pt}%
-        \setlength{\leftmargin}{20pt}%
+        {\leftmargin}{20pt}%
 	\setlength{\labelwidth}{0pt}\setlength{\listparindent}{0pt}}%
         \item\textbf{\textsc{#1}}}%
 	{\end{list}}
@@ -308,6 +311,7 @@ linecolor=red%
  \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{239,239,239}
+\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
 
 \newenvironment{wex}[3]{
 \newlength{\myfloatsep}
@@ -320,19 +324,21 @@ linecolor=red%
 \setlength{\parindent}{0pt}
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
-\begin{mdframed}[linewidth=1pt,linecolor=darkgray, skipbelow=2mm]
+\begin{mdframed}[linewidth=1pt,linecolor=darkgray,]
 \large\textit{\textbf{Worked Example \arabic{workedexamplecounter}: }#1}
+\noindent
 \end{mdframed}
-\vspace*{\baselineskip} 
-\begin{mdframed}[skipabove=1mm, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
+\begin{mdframed}[skipabove=-5pt, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
 \vspace*{\baselineskip}
 \textbf{\textit{QUESTION}} \vspace*{\baselineskip} 
 \hrule
 \vspace*{\baselineskip}
-\textit{#2}
+
+\textit{\noindent #2}
 \par
 \vspace*{2\baselineskip}
 \textbf{SOLUTION}\vspace*{\baselineskip}
+\noindent
 \hrule
 \vspace*{\baselineskip}
  #3%
