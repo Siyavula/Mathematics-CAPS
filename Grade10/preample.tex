@@ -410,12 +410,16 @@ Note
 
 \newenvironment{exercises}[1]
 {
-\hrule width \textwidth height 1pt\\
+
+\exercisesheading
+
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \setlength{\parindent}{0pt}
-\vspace{\baselineskip}
-\textbf{\textit{Exercises:}
-#1}\par
+%\vspace{\baselineskip}
+%\textbf{\textit{Exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
@@ -423,13 +427,15 @@ Note
 
 \newenvironment{eocexercises}[1]
 {
-\hrule width \textwidth height 1pt\\
+\eocexercisesheading
+%\hrule width \textwidth height 1pt\\
 \begin{quotation}
-\noindent
-\vspace{.5cm}
+%\noindent
+%\vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{End of chapter exercises:}
-#1}\par
+%\textbf{\textit{End of chapter exercises:}
+%#1}
+\par
 }%
 {%
 \end{quotation}
@@ -773,7 +779,7 @@ Note
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,1.5cm);
         \node[anchor=west,text centered ,yshift=0.75cm, xshift=0.3\paperwidth]
-              {\normalfont\sffamily\fontsize{22}\bfseries \color{black} #1  };
+              {\color{black} #1  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -801,4 +807,65 @@ Note
 \vspace{\baselineskip}
 }
 
+
+\newcommand{\exercisesheading}{
+\vspace{6\baselineskip} \par
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=0., text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black] (0,0) rectangle
+          (0.3\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} Exercises \sectionlabel   };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.31\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.69\textwidth,1.5cm);
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
+\newcommand{\eocexercisesheading}{
+\vspace{6\baselineskip} \par
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=0., text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black] (0,0) rectangle
+          (0.3\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} Chapter \chapterlabel };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.31\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.69\textwidth,1.5cm);
+            \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} End of Chapter Exercises };
+
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
 
