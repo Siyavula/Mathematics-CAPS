@@ -271,6 +271,16 @@ Note
 \newcounter{workedexamplecounter}
 \setcounter{workedexamplecounter}{1}
 
+
+%EZ new counters for exercises, they get reset in the \section heading environment
+\newcounter{exercisecounter}
+\setcounter{exercisecounter}{1}
+% make it reset for new chapters
+\makeatletter
+\@addtoreset{exercisecounter}{chapter}
+\makeatother
+
+
 % can we deprecate the use of this, and use \westep instead
 %\newcommand{\westep}[1]
 %{\par \par%\pagebreak[1]
@@ -729,6 +739,7 @@ Note
 \usepackage[explicit]{titlesec}
 
 \newcommand*\chapterlabel{}
+
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
    \normalfont\sffamily\fontsize{32}\bfseries\slshape}
@@ -809,15 +820,16 @@ Note
 
 
 \newcommand{\exercisesheading}{
-\vspace{6\baselineskip} \par
+\addtocounter{exercisecounter}{1}
+ \par  \vspace*{3\baselineskip}
 {\normalfont \sffamily\fontsize{16}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west, xshift=0., text centered]
+    \node[anchor=west , xshift=0., text centered]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black] (0,0) rectangle
           (0.3\textwidth,1.5cm);
        \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} Exercises \sectionlabel   };
+              {   \color{black} Exercise \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
@@ -838,10 +850,10 @@ Note
 }
 
 \newcommand{\eocexercisesheading}{
-\vspace{6\baselineskip} \par
+\par \vspace*{3\baselineskip} 
 {\normalfont \sffamily\fontsize{16}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west, xshift=0., text centered]
+    \node[anchor=west, yshift=6\baselineskip, xshift=0., text centered]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black] (0,0) rectangle
           (0.3\textwidth,1.5cm);
