@@ -174,7 +174,7 @@ skipabove=0.5cm]%
 
 \newcommand{\Identity}[2]{
 \vspace{0.5cm}
-\begin{mdframed}[linewidth=2,leftmargin=0,rightmargin=0,linecolor=lightgray,skipbelow=\baselineskip,%
+\begin{mdframed}[linewidth=2,linecolor=lightgray,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
 \begin{flushleft}
 \uppercase{\textsl{#1}}\nopagebreak
@@ -190,7 +190,7 @@ skipabove=\baselineskip]%
 \begin{mdframed}[linecolor=darkgray]
 Tip
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray, margin=5pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -216,10 +216,10 @@ linecolor=red%
 \marginpar{%odd
 \begin{minipage}[h]{0.225\paperwidth}
 
-\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt]
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
 Note
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=5pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -773,9 +773,32 @@ Note
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,1.5cm);
         \node[anchor=west,text centered ,yshift=0.75cm, xshift=0.3\paperwidth]
-              {\color{black} #1  };
+              {\normalfont\sffamily\fontsize{22}\bfseries \color{black} #1  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
   }
 \titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+
+
+
+\newcommand{\summary}{
+\vspace{6\baselineskip} \par
+{\normalfont \sffamily\fontsize{22}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, xshift=-0.4\paperwidth]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (1.2\paperwidth,2cm);
+        \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
+              {   \color{black} Chapter \chapterlabel | Summary  };
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
+
+
