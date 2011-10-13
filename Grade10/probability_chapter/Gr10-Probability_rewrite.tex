@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt]{report}
 
+\usepackage{amsmath}
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -11,6 +12,22 @@
 \usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
 
 \input{makedice}
+
+% FHSST definitions
+\def\Definition#1#2{\paragraph{Definition:} #1 --- #2}
+\newenvironment{wex}[3]%
+{\textbf{Worked example:} #1 \\
+\textbf{Question:} #2 \\
+\textbf{Solution:} #3}%
+{}
+\newcommand{\westep}[1]{\paragraph{Step:} #1}
+
+\setlength\parindent{0pt}
+\setlength\parskip{0.5\baselineskip}
+\setlength\textwidth{15cm}
+\setlength\textheight{23cm}
+\setlength\oddsidemargin{0.5cm}
+\setlength\topmargin{0cm}
 
 \begin{document}
 \chapter{Probability}
@@ -30,57 +47,76 @@ described using the rules of probability theory and that we can make
 definite conclusions about uncertain processes.
 
 \section{Definitions}
+We'll use three examples of uncertain processes to help you understand
+the meanings of the different words used in probablity theory: tossing
+a coin, rolling dice, a soccer match.
 
-We'll use the following three examples of uncertain processes to help
-you understand the meanings of the different words used in probablity
-theory. We use the term {\em experiment} to refer to an uncertain process.
+\Definition{Experiment}{An experiment refers to an uncertain process.}
 
 \paragraph{Experiment 1} A coin is tossed and it lands with either heads
 (H) or tails (T) facing upwards.
 
-FIGURE: coin
+\def\coinheads{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{H}};}
+\def\cointails{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{T}};}
+
+\begin{center}\begin{tikzpicture}\coinheads\end{tikzpicture}\end{center}
 
 \paragraph{Experiment 2} Two dice are rolled and the total number of dots
 added up.
 
 \begin{center}
-\begin{tikzpicture}
-  \makedie{3}{shift={(-1,0)},rotate=10}
-  \makedie{5}{shift={(1,0)},rotate=-20}
-\end{tikzpicture}
+  \begin{tikzpicture}
+    \makedie{3}{shift={(-1,0)},rotate=10}
+    \makedie{5}{shift={(1,0)},rotate=-20}
+  \end{tikzpicture}
 \end{center}
 
 \paragraph{Experiment 3} Two teams play in a soccer match and we are
 interested in the final score.
 
-FIGURE: soccer score board
+\begin{center}
+  \textbf{FIGURE: soccer score board}
+\end{center}
 
-Each of the figures for the experiments show one possible outcome.
+\Definition{Outcome}{An {\em outcome} of an experiment is a single
+  result of that experiment.}
 
-\paragraph{Definition} The {\em outcome} of an experiment is the single
-result of that experiment.
+Each of the figures for the experiments described above shows one
+possible outcome.
+
+\Definition{Sample space}{The {\em sample space} of an experiment is
+  the set of all possible outcomes of that experiment. The sample
+  space is denoted with the symbol \(S\) and the size of the sample
+  space (the total number of possible outcomes) is denoted with
+  \(n(S)\).}
 
 Even though we are usually interested in the outcome of an experiment,
-we also need to know what the other outcomes could have been.
-
-\paragraph{Definition} The {\em sample space} of an experiment is the
-set of all possible outcomes of that experiment. The sample space is
-denoted with the symbol \(S\) and the size of the sample space (the
-total number of possible outcomes) is denoted with \(n(S)\).
+we also need to know what the other outcomes could have been. Let's
+have a look at the sample spaces of each of our three experiments.
 
 \paragraph{Experiment 1} Since a coin can land in one of only two ways
 (we will ignore the possibility that the coin lands on its edge), the
-sample space is the set \(S=\{H, T\}\). The size of the sample space
+sample space is the set \(S=\{\textrm{H}, \textrm{T}\}\). The size of the sample space
 is \(n(S)=2\).
 
-FIGURE: sample space box around H and T
+\begin{center}
+  \begin{tikzpicture}
+    \begin{scope}[xshift=-1.5cm]
+      \coinheads
+    \end{scope}
+    \begin{scope}[xshift=+1.5cm]
+      \cointails
+    \end{scope}
+    \draw (-3, -1.5) rectangle (3, 1.5) node[anchor=south east] {$S$};
+  \end{tikzpicture}
+\end{center}
 
 \paragraph{Experiment 2} Each of the dice can land on a number from 1
 to 6. In this experiment the sample space of all possible outcomes is
 every possible combination of the 6 numbers on the first die with the
-6 numbers on the second die. This gives a total of \(n(S) = 6 \times 6 = 36\)
-possible outcomes. The figure below shows all of the possibilities in
-the sample space.
+6 numbers on the second die. This gives a total of \(n(S) = 6 \times 6
+= 36\) possible outcomes. The figure below shows all of the outcomes
+in the sample space.
 
 \begin{center}
 \begin{tikzpicture}
@@ -94,140 +130,235 @@ the sample space.
     }
   }
   \draw[thick] (2.5cm-0.66cm, -0.5cm) rectangle (25.5cm+0.66cm, -13.5cm);
-  \draw (25.5cm+0.66cm, -0.5cm) node[anchor=south] {$S$};
+  \draw (25.5cm+0.66cm, -0.5cm) node[anchor=south east] {$S$};
   \end{scope}
 \end{tikzpicture}
 \end{center}
 
-\paragraph{Experiment 3} Each team can get an integer score from 0
-upwards. Usually we don't expect a score to go much higher than 5
-goals, but there is no reason why this cannot happen. So the sample
+\paragraph{Experiment 3} Each soccer team can get an integer score
+from 0 upwards. Usually we don't expect a score to go much higher than
+5 goals, but there is no reason why this cannot happen. So the sample
 space of this experiment consists of all possible combinations of two
 non-negative integers. The figure below shows all of the
 possibilities. Since we do not limit the score of a team, this sample
 space is infinitely large.
 
-FIGURE: open-ended sample space box showing all possible pairs of integers
+\begin{center}
+  \begin{tikzpicture}
+    \foreach \x in {0, ..., 3} {
+      \foreach \y in {0, ..., 3} {
+        \draw (\x*1.5cm,-\y) node {\x\ --\ \y};
+      }
+    }
+    \foreach \x in {0, ..., 2} {
+      \draw (\x*1.5cm,-3.67cm) node {$\vdots$};
+    }
+    \foreach \y in {0, ..., 2} {
+      \draw (5.5cm,-\y) node {$\cdots$};
+    }
+    \draw (5.5cm,-3.67cm) node {$\ddots$};
 
-When looking at the set of possible outcomes of an experiment, we are
-usually interested in some subset of them.
+    \draw[thick] (-0.75cm, -4.17cm) -- (-0.75, 0.5cm) -- (6cm, 0.5cm);
+    \draw (6cm, 0.5cm) node[anchor=south east] {$S$};
+  \end{tikzpicture}
+\end{center}
 
-\paragraph{Definition} An {\em event} is a specific set of outcomes of
-an experiment that you are interested in. An event is denoted with the
-letter \(E\) and the number of outcomes in the event with \(n(E)\).
+\Definition{Event}{An {\em event} is a specific set of outcomes of an
+  experiment that you are interested in. An event is denoted with the
+  letter \(E\) and the number of outcomes in the event with \(n(E)\).}
 
-\paragraph{Experiment 1} We would like the coin to land heads up. Here
-the event contains a single outcome \(E=\{\textrm{H}\}\), \(n(E)=1\).
+\paragraph{Experiment 1} Let's say that we would like the coin to land
+heads up. Here the event contains a single outcome
+\(E=\{\textrm{H}\}\), \(n(E)=1\).
 
 \paragraph{Experiment 2} Let's say that we are interested in the sum
 of the dice being 8. In this case the event set is
-\(E=\{(2,6),(3,5),(4,4),(5,3),(6,2)\}\) with \(n(E)=5\). We can also
-represent this visually by drawing a line around the outcomes in which
-we are interested.
+$E=\{($\raisebox{-2pt}{\begin{tikzpicture}
+  \begin{scope}[scale=0.333]
+    \makediegeneral{2}{xshift=-0.7cm}{0.175cm*0.333}
+    \makediegeneral{6}{xshift=+0.7cm}{0.175cm*0.333}
+  \end{scope}
+\end{tikzpicture}}$),($\raisebox{-2pt}{\begin{tikzpicture}
+  \begin{scope}[scale=0.333]
+    \makediegeneral{3}{xshift=-0.7cm}{0.175cm*0.333}
+    \makediegeneral{5}{xshift=+0.7cm}{0.175cm*0.333}
+  \end{scope}
+\end{tikzpicture}}$),($\raisebox{-2pt}{\begin{tikzpicture}
+  \begin{scope}[scale=0.333]
+    \makediegeneral{4}{xshift=-0.7cm}{0.175cm*0.333}
+    \makediegeneral{4}{xshift=+0.7cm}{0.175cm*0.333}
+  \end{scope}
+\end{tikzpicture}}$),($\raisebox{-2pt}{\begin{tikzpicture}
+  \begin{scope}[scale=0.333]
+    \makediegeneral{5}{xshift=-0.7cm}{0.175cm*0.333}
+    \makediegeneral{3}{xshift=+0.7cm}{0.175cm*0.333}
+  \end{scope}
+\end{tikzpicture}}$),($\raisebox{-2pt}{\begin{tikzpicture}
+  \begin{scope}[scale=0.333]
+    \makediegeneral{6}{xshift=-0.7cm}{0.175cm*0.333}
+    \makediegeneral{2}{xshift=+0.7cm}{0.175cm*0.333}
+  \end{scope}
+\end{tikzpicture}}$)\}$
+since it contains all of the possible ways to get 8 dots with 2 dice.
+The size of the event set is \(n(E)=5\).
 
-FIGURE: sample space with closed curve around event set
+%We can also represent this visually by drawing a line around the
+%outcomes in which we are interested.
+%FIGURE: sample space with closed curve around event set
 
 \paragraph{Experiment 3} We would like to know whether the first team
-will win. For this to happen the first score must be greater than the
-second. \(E=\{(1,0),(2,0),(2,1),(3,0),(3,1),(3,2),\ldots\}\).
+will win. For this event to happen the first score must be greater
+than the second. \(E=\{(1,0),(2,0),(2,1),(3,0),(3,1),(3,2),\ldots\}\).
+This event set is infinitely large.
 
-FIGURE: sample space with open curve around event set
+%FIGURE: sample space with open curve around event set
 
 \section{Theoretical probability}
-A {\em probability} is a number that describes how likely it is that
-an event will occur. We write probabilities as real numbers between 0
-and 1.
+\Definition{Probability}{A {\em probability} is a real number between
+  0 and 1 that describes how likely it is that an event will occur.}
 \begin{itemize}
-\item 0 means that an event will never occur.
-\item 1 means that an event will always occur.
-\item 0.5 means that an event will occur half the time.
-\item etc.
+\item A probability of 0 means that an event will never occur.
+\item A probability of 1 means that an event will always occur.
+\item A probability of 0.5 means that an event will occur half the
+  time, or 1 time out of every 2.
 \end{itemize}
-People sometimes write probabilities in other forms: as percentages,
-as fractions, as odds.
 
 When all of the possible outcomes of an experiment have an equal
 chance of occurring, we can compute the exact theoretical probability
-of an event occurring. The probability of an event is the ratio
-between the number of outcomes in the event to the number of possible
-outcomes.
+of an event. The probability of an event is the ratio between the
+number of outcomes in the event set and the number of possible
+outcomes in the sample space.
 \[P(E) = \frac{n(E)}{n(S)}\]
 
-\paragraph{Experiment 1} The number of outcomes in the event set is
-\(n(E)=1\). The size of the sample space is \(n(S)=2\). Since each of
-the outcomes (heads or tails) is equally likely, we can compute the
-theoretical probability of the coin landing heads up as
-\[P(E) = \frac{n(E)}{n(S)} = \frac{1}{2} = 0.5\]
+\begin{wex}{Theoretical probabilities}{
+  What is the theoretical probability of each of the events in the
+  first two of our three experiments?
+}{
+  \westep{Write down the size of the sample space}
+  \begin{itemize}
+  \item[] Experiment 1: $n(S) = 2$
+  \item[] Experiment 2: $n(S) = 36$
+  \end{itemize}
+  
+  \westep{Write down the size of the event set}
+  \begin{itemize}
+  \item[] Experiment 1: $n(E) = 1$
+  \item[] Experiment 2: $n(E) = 5$
+  \end{itemize}
 
-\paragraph{Experiment 2} The number of outcomes in the event set is
-\(n(E)=5\). The size of the sample space is \(n(S)=36\). Since each of
-the outcomes (each number combination of two dice) is equally likely,
-we can compute the theoretical probability of the sum of the dice being 8 as
-\[P(E) = \frac{n(E)}{n(S)} = \frac{5}{36} = 0.13\dot{8}\]
+  \westep{Compute the theoretical probability}
+  \begin{itemize}
+  \item[] Experiment 1: $P(E) = \frac{n(E)}{n(S)} = \frac{1}{2} = 0.5$
+  \item[] Experiment 2: $P(E) = \frac{n(E)}{n(S)} = \frac{5}{36} = 0.13\dot{8}$
+  \end{itemize}
+}
+\end{wex}
 
-\paragraph{Experiment 3} This experiment is different from the
-previous experiments in an important way, namely that all possible
-outcomes (all final scores) are not equally likely. For example, we
-know that a score of 1--1 is quite common, while a score of 11--15 is
-very, very rare. (Interesting fact: the record for most goals score by
-both teams in the FIFA World Cup is 12 in 1954 in the match between
-Austria and Switzerland where the final score was 7--5.)  Because all
+Note that we do not consider the theoretical probability of the third
+experiment. The third experiment is different from the first two in an
+important way, namely that all possible outcomes (all final scores)
+are not equally likely. For example, we know that a score of 1--1 is
+quite common, while a score of 11--15 is very, very rare. Because all
 outcomes are not equally likely, we cannot use the ratio between
 \(n(E)\) and \(n(S)\) to compute the theoretical probability of a team
-winning. Outside of the scope of this chapter.
+winning. (\textbf{Interesting fact:} the record for most goals score
+by both teams in the FIFA World Cup is 12. This was achieved in 1954
+in the match between Austria and Switzerland, where the final score
+was 7--5.)
 
 \section{Relative Frequency}
-The relative frequency of an event is defined as the number of times
-that the event occurs during experimental trials, divided by the total
-number of trials conducted. The relative frequency is not a
-theoretical quantity, but an experimental one. We have to repeat an
-experiment a number of times and count how many times the outcome of
-the experiment is in the event set.
 
-\paragraph{Experiment 1} We toss the coin 40 times and observe the
-following outcomes after each trial. In the table above, $t$ counts
-the number of trials that have been performed, $p$ counts the number
-of positive outcomes (when we observe heads) and $f$ shows the
-relative frequency after the number of trials that have already been
-completed. Since the relative frequency is defined as the ratio
-between the number positive trials and the total number of trials
-\[f=\frac{p}{t}\]
+\Definition{Relative frequency}{The relative frequency of an event is
+  defined as the number of times that the event occurs during
+  experimental trials, divided by the total number of trials
+  conducted.}
 
-\begin{tabular}{cccc|cccc|cccc|cccc}
+The relative frequency is not a theoretical quantity, but an
+experimental one. We have to repeat an experiment a number of times
+and count how many times the outcome of the experiment is in the event
+set. Because it is experimental, it is possible to get a different
+relative frequency every time that we repeat an experiment.
+
+\begin{wex}{Relative frequency and theoretical probability}{
+  We toss a coin 40 times and observe the outcomes. The results of
+  the trails are shown in the table below.
+
+\begin{center}\begin{tabular}{lc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
   \toprule
-  $t$ && $p$ & $f$  & $t$ && $p$ & $f$  & $t$ && $p$ & $f$  & $t$ && $p$ & $f$\\
+  trial   &  1 &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 & 10 \\
+  outcome &  H &  T &  T &  T &  H &  T &  H &  H &  H &  T \\
   \midrule
-  1 & H & 1 & 1.00 & 11 & H & 6 & 0.55 & 21 & H &  9 & 0.43 & 31 & T & 13 & 0.42\\
-  2 & T & 1 & 0.50 & 12 & T & 6 & 0.50 & 22 & H & 10 & 0.45 & 32 & H & 14 & 0.44\\
-  3 & T & 1 & 0.33 & 13 & T & 6 & 0.46 & 23 & H & 11 & 0.48 & 33 & H & 15 & 0.45\\
-  4 & T & 1 & 0.25 & 14 & H & 7 & 0.50 & 24 & T & 11 & 0.46 & 34 & H & 16 & 0.47\\
-  5 & H & 2 & 0.40 & 15 & T & 7 & 0.47 & 25 & H & 12 & 0.48 & 35 & H & 17 & 0.49\\
-  6 & T & 2 & 0.33 & 16 & T & 7 & 0.44 & 26 & T & 12 & 0.46 & 36 & H & 18 & 0.50\\
-  7 & H & 3 & 0.43 & 17 & T & 7 & 0.41 & 27 & H & 13 & 0.48 & 37 & T & 18 & 0.49\\
-  8 & H & 4 & 0.50 & 18 & H & 8 & 0.44 & 28 & T & 13 & 0.46 & 38 & H & 19 & 0.50\\
-  9 & H & 5 & 0.56 & 19 & T & 8 & 0.42 & 29 & T & 13 & 0.45 & 39 & H & 20 & 0.51\\
-  10 & T & 5 & 0.50 & 20 & T & 8 & 0.40 & 30 & T & 13 & 0.43 & 40 & H & 21 & 0.53\\
+  trial   & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+  outcome &  H &  T &  T &  H &  T &  T &  T &  H &  T &  T \\
+  \midrule
+  trial   & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\
+  outcome &  H &  H &  H &  T &  H &  T &  H &  T &  T &  T \\
   \bottomrule
-\end{tabular}
+\end{tabular}\end{center}
 
-From the last row of this table we can now easily read the relative
-frequency after 40 trials, namely $21/40 = 0.53$. The relative
+  What is the relative frequency of observing heads after each trial
+  and how does it compare to the theoretical probability of observing
+  heads?
+}{
+  \westep{Count the number of positive outcomes}
+  A positive outcome is when the outcome is in our event set. The
+  table below shows a running count (after each trial $t$) of how many
+  positive outcomes $p$ we have observed. For example, after $t=20$
+  trials we have observed heads 8 times and tails 12 times and so the
+  positive outcome count is $p=8$.
+
+\begin{center}\begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
+  \toprule
+  $t$ &  1 &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 & 10 \\
+  $p$ &  1 &  1 &  1 &  1 &  2 &  2 &  3 &  4 &  5 &  5 \\
+  \midrule
+  $t$ & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+  $p$ &  6 &  6 &  6 &  7 &  7 &  7 &  7 &  8 &  8 &  8 \\
+  \midrule
+  $t$ & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\
+  $p$ &  9 & 10 & 11 & 11 & 12 & 12 & 13 & 13 & 13 & 13 \\
+  \bottomrule
+\end{tabular}\end{center}
+
+  \westep{Compute the relative frequency}
+  Since the relative frequency is defined as the ratio between the
+  number positive trials and the total number of trials,
+  \[f=\frac{p}{t}\]
+
+\begin{center}\begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
+  \toprule
+  $t$ &  1 &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 & 10 \\
+  $f$ & 1.00 & 0.50 & 0.33 & 0.25 & 0.40 & 0.33 & 0.43 & 0.50 & 0.56 & 0.50 \\
+  \midrule
+  $t$ & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+  $f$ & 0.55 & 0.50 & 0.46 & 0.50 & 0.47 & 0.44 & 0.41 & 0.44 & 0.42 & 0.40 \\
+  \midrule
+  $t$ & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\
+  $f$ & 0.43 & 0.45 & 0.48 & 0.46 & 0.48 & 0.46 & 0.48 & 0.46 & 0.45 & 0.43 \\
+  \bottomrule
+\end{tabular}\end{center}
+
+From the last entry in this table we can now easily read the relative
+frequency after 30 trials, namely $13/30 = 0.43$. The relative
 frequency is close to the theoretical probability of 0.5. In general,
 the relative frequency of an event gets closer to the theoretical
 probability of the event as we perform more trials.
 
-We can observe how the relative frequency approaches the theoretical
-probability in the plot below. The plot was generated from the table
+A much better way to summarise the table of relative frequencies is in
+a plot. The plot below was generated from the table
 of numbers above and shows the relative frequency, $f$, as a function
-of the number of trials, $t$. In the beginning the relative frequency
-fluctuates a lot around the theoretical probability at 0.5 (shown with
-a dashed line). As the number of trials increases, the relative
+of the number of trials, $t$. In the beginning (after a small number
+of trials) the relative frequency
+fluctuates a lot around the theoretical probability at 0.5, which is shown with
+a dashed line. As the number of trials increases, the relative
 frequency fluctuates less and gets closer to the theoretical
 probability.
 
 \begin{center}
 \includegraphics[width=0.75\textwidth]{coin_toss_trials.pdf}
 \end{center}
+}
+\end{wex}
 
 \paragraph{Experiment 2} We roll the two dice 100 times and observe
 whether the sum of the dice equals 8. It turns out that our event
@@ -297,11 +428,11 @@ and the events
 \begin{itemize}
 \item $A:$ The sum of the dice equals 8
 \item $B:$ At least one of the dice shows
-\begin{tikzpicture}
+\raisebox{-2pt}{\begin{tikzpicture}
   \begin{scope}[scale=0.333]
     \makediegeneral{2}{}{0.175cm*0.333}
   \end{scope}
-\end{tikzpicture}
+\end{tikzpicture}}
 \end{itemize}
 as a Venn diagram.
 
@@ -422,11 +553,11 @@ events are mutually exclusive:
 \begin{itemize}
 \item $A:$ The sum of the dice equals 8
 \item $B:$ At least one of the dice shows
-\begin{tikzpicture}
+\raisebox{-2pt}{\begin{tikzpicture}
   \begin{scope}[scale=0.333]
     \makediegeneral{1}{}{0.175cm*0.333}
   \end{scope}
-\end{tikzpicture}
+\end{tikzpicture}}
 \end{itemize}
 Draw the sample space and the two sets. Notice that there are no
 elements in common. Therefore the event sets are mutually exclusive.
