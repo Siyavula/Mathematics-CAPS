@@ -1,988 +1,1701 @@
-         \chapter{Trigonometry}
-    \setcounter{figure}{1}
-    \setcounter{subfigure}{1}
-    \label{fbcda86bdf0258b6e91dcea5caee5b76}
-%          \section{ Introduction and key concepts}
-%     \nopagebreak
-%             \label{m39405} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} {(section shortcode: MG10100 )} \par 
-%     
-%     
-%     
-%   
-%     \label{m39405*cid2}
-%             \subsection{ Introduction}
-%             \nopagebreak
-%             
-      \label{m39405*id77510}In geometry we learn about how the sides of polygons relate to the angles in the polygons, but we have not learned how to calculate an angle if we only know the lengths of the sides. Trigonometry (pronounced: trig-oh-nom-eh-tree) deals with the relationship between the angles and the sides of a right-angled triangle. We will learn about trigonometric functions, which form the basis of trigonometry.\par 
-\label{m39405*secfhsst!!!underscore!!!id65}
-%             \subsubsection{  Investigation : History of Trigonometry }
-%             \nopagebreak
-%             
-%       \label{m39405*id77524}Work in pairs or groups and investigate the history of the foundation of trigonometry. Describe the various stages of development and how the following cultures used trigonometry to improve their lives.\par 
-%       \label{m39405*id77870}The works of the following people or cultures can be investigated:\par 
-%       \label{m39405*id77873}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-%             \label{m39405*uid1}\item Cultures
-% \label{m39405*id77887}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-%             \label{m39405*uid2}\item Ancient Egyptians
-% \label{m39405*uid3}\item Mesopotamians
-% \label{m39405*uid4}\item Ancient Indians of the Indus Valley
-% \end{enumerate}
-%         \label{m39405*uid5}\item People
-% \label{m39405*id77937}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-%             \label{m39405*uid6}\item Lagadha (circa 1350-1200 BC)
-% \label{m39405*uid7}\item Hipparchus (circa 150 BC)
-% \label{m39405*uid8}\item Ptolemy (circa 100)
-% \label{m39405*uid9}\item Aryabhata (circa 499)
-% \label{m39405*uid10}\item Omar Khayyam (1048-1131)
-% \label{m39405*uid11}\item Bhaskara (circa 1150)
-% \label{m39405*uid12}\item Nasir al-Din (13th century)
-% \label{m39405*uid13}\item al-Kashi and Ulugh Beg (14th century)
-% \label{m39405*uid14}\item Bartholemaeus Pitiscus (1595)
-% \end{enumerate}
-%         \end{enumerate}
-%         
-%       
-% 
-% \label{m39405*notfhsst!!!underscore!!!id88}
-% \begin{tabular}{cc}
-% 	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-% 
-% 	\begin{minipage}{0.85\textwidth}
-% 	\begin{note}
-%       {note: }
-%       \label{m39405*id78058}You should be familiar with the idea of measuring angles from geometry but have you ever stopped to think why there are 360 degrees in a circle? The reason is purely historical. There are 360 degrees in a circle because the ancient Babylonians had a number system with base 60. A base is the number at which you add another digit when you count. The number system that we use everyday is called the decimal system (the base is 10), but computers use the binary system (the base is 2). $360=6\ensuremath{\times}60$ so for them it made sense to have 360 degrees in a circle.\par 
-% 
-% 	\end{note}
-% 	\end{minipage}
-% 	\end{tabular}
-% 	\par
-    \label{m39405*cid3}
-            \section{ Where Trigonometry is Used}
-            \nopagebreak
-      \label{m39405*id78100}There are many applications of trigonometry. Of particular value is the technique of triangulation, which is used in astronomy to measure the distance to nearby stars, in geography to measure distances between landmarks, and in satellite navigation systems. GPSs (global positioning systems) would not be possible without trigonometry. Other fields which make use of trigonometry include astronomy (and hence navigation, on the oceans, in aircraft, and in space), music theory, acoustics, optics, analysis of financial markets, electronics, probability theory, statistics, biology, medical imaging (CAT scans and ultrasound), pharmacy, chemistry, number theory (and hence cryptology), seismology, meteorology, oceanography, many physical sciences, land surveying and geodesy, architecture, phonetics, economics, electrical engineering, mechanical engineering, civil engineering, computer graphics, cartography, crystallography and game development.\par 
-% \label{m39405*secfhsst!!!underscore!!!id95}
+\chapter{Trigonometry}
+\setcounter{figure}{1}
+\setcounter{subfigure}{1}
+
+Trigonometry (pronounced: trig-oh-nom-eh-tree) deals with the relationship between the angles and the sides of a right-angled triangle. We will learn about trigonometric functions, which form the basis of trigonometry.\par 
+
+\section{Trigonometry is useful}
+\nopagebreak
+There are many applications of trigonometry. Of particular value is the technique of triangulation, which is used in astronomy to measure the distance to nearby stars, in geography to measure distances between landmarks, and in satellite navigation systems. GPSs (global positioning systems) would not be possible without trigonometry. Other fields which make use of trigonometry music theory, acoustics, optics, analysis of financial markets, electronics, probability theory, statistics, biology, medical imaging (CAT scans and ultrasound), pharmacy, chemistry, cryptology, meteorology, oceanography, land surveying, architecture, phonetics, engineering, computer graphics and game development.\par 
+
+\section{Similarity of triangles}
+\nopagebreak
+If $\triangle ABC$ is similar to $ \triangle DEF$, then this is written as:\par 
+
+\begin{equation*}
+\triangle ABC||| \triangle DEF
+\end{equation*}
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39405*id78218}% \label{m39405*secfhsst!!!underscore!!!id95}
 %             \subsection{  Discussion : Uses of Trigonometry }
 %             \nopagebreak
 %             
 %       \label{m39405*id78126}Select one of the fields that uses trigonometry from the list given above and write a 1-page report describing \textsl{how} trigonometry is used in the field that you chose. \par 
-    \label{m39405*cid4}
-            \section{ Similarity of Triangles}
-            \nopagebreak
-      \label{m39405*id78153}If $▵ABC$ is similar to $▵DEF$, then this is written as:\par 
-      \label{m39405*id78186}\nopagebreak\noindent{}
-    \begin{equation}
-    ▵ABC|||▵DEF\tag{14.1}
-      \end{equation}
-      \label{m39405*id78214}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39405*id78218}
-    \begin{center}
-    \label{m39405*id78218!!!underscore!!!media}\label{m39405*id78218!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39405_MG10C15_001.png} % m39405;MG10C15\_001.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-      \par 
-      \label{m39405*id78224}Then, it is possible to deduce ratios between corresponding sides of the two triangles, such as the following:\par 
-      \label{m39405*id78228}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    \begin{array}{ccc}\hfill \frac{AB}{BC}& =& \frac{DE}{EF}\hfill \\ \hfill \frac{AB}{AC}& =& \frac{DE}{DF}\hfill \\ \hfill \frac{AC}{BC}& =& \frac{DF}{EF}\hfill \\ \hfill \frac{AB}{DE}& =& \frac{BC}{EF}=\frac{AC}{DF}\hfill \end{array}\tag{14.2}
-      \end{equation}
-      \label{m39405*id78401}The most important fact about similar triangles $ABC$ and $DEF$ is that the angle at vertex A is equal to the angle at vertex D, the angle at B is equal to the angle at E, and the angle at C is equal to the angle at F.\par 
-      \label{m39405*id78434}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    \begin{array}{ccc}\hfill \angle A& =& \angle D\hfill \\ \hfill \angle B& =& \angle E\hfill \\ \hfill \angle C& =& \angle F\hfill \end{array}\tag{14.3}
-      \end{equation}
-\label{m39405*secfhsst!!!underscore!!!id319}
-            \subsection{  Investigation : Ratios of Similar Triangles }
-            \nopagebreak
-      \label{m39405*id78516}In your exercise book, draw three similar triangles of different sizes, but each with $\hat{A}={30}^{\circ }$; $\hat{B}={90}^{\circ }$ and $\hat{C}={60}^{\circ }$. Measure angles and lengths very accurately in order to fill in the table below (round answers to one decimal place).\par 
-      \label{m39405*id78597}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39405*id78598}
-    \begin{center}
-    \label{m39405*id78598!!!underscore!!!media}\label{m39405*id78598!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39405_MG10C15_002.png} % m39405;MG10C15\_002.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-      \par 
-    % \textbf{m39405*id78604}\par
-          \begin{table}[H]
-    % \begin{table}[H]
-    % \\ '' '0'
-        \begin{center}
-      \label{m39405*id78604}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|l|}\hline
-    % My position: 0
-    % my spanname: 
-    % my ct of spanspec: 0
-    % my column-count: 3
-    \multicolumn{3}{|c|}{Dividing lengths of sides (Ratios)}
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-                $\frac{AB}{BC}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{AB}{AC}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{CB}{AC}=\phantom{\rule{42.67912pt}{0ex}}$
-              % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-                $\frac{{A}^{\text{'}}{B}^{\text{'}}}{{B}^{\text{'}}{C}^{\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{{A}^{\text{'}}{B}^{\text{'}}}{{A}^{\text{'}}{C}^{\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{{C}^{\text{'}}{B}^{\text{'}}}{{A}^{\text{'}}{C}^{\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-              % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-                $\frac{{A}^{\text{'}\text{'}}{B}^{\text{'}\text{'}}}{{B}^{\text{'}\text{'}}{C}^{\text{'}\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{{A}^{\text{'}\text{'}}{B}^{\text{'}\text{'}}}{{A}^{\text{'}\text{'}}{C}^{\text{'}\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-               &
-                $\frac{{C}^{\text{'}\text{'}}{B}^{\text{'}\text{'}}}{{A}^{\text{'}\text{'}}{C}^{\text{'}\text{'}}}=\phantom{\rule{42.67912pt}{0ex}}$
-              % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
-      %--------------------------------------------------------------------
-    \end{xtabular}
-      \end{center}
-    \begin{center}{\small\bfseries Table 14.1}\end{center}
-    \begin{caption}{\small\bfseries Table 14.1}\end{caption}
-\end{table}
-    \par
-      \label{m39405*id79075}What observations can you make about the ratios of the sides?\par 
-      \label{m39405*id79081}These equal ratios are used to define the trigonometric functions.\par 
-      \label{m39405*id79087}\uline{Note:} In algebra, we often use the letter $x$ for our unknown variable (although we can use any other letter too, such as $a$, $b$, $k$, etc). In trigonometry, we often use the Greek symbol $\theta $ for an unknown angle (we also use $\alpha $ , $\beta $ , $\gamma $ etc). \par 
-  \label{m39405**end}
-%          \section{ The trig functions and 2-D problems}
-%     \nopagebreak
-%             \label{m39408} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10101 )} \par 
-%     
-%     
-%     
-    \label{m39408*cid5}
-            \section{ Definition of the Trigonometric Functions}
-            \nopagebreak
-      \label{m39408*id79356}We are familiar with a function of the form $f\left(x\right)$ where $f$ is the function and $x$ is the argument. Examples are:\par 
-      \label{m39408*id79391}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{cccc}\hfill f\left(x\right)& =& {2}^{x}\hfill & \mathrm{\left(exponential\; function\right)}\hfill \\ \hfill g\left(x\right)& =& x+2\hfill & \mathrm{\left(linear\; function\right)}\hfill \\ \hfill h\left(x\right)& =& 2{x}^{2}\hfill & \mathrm{\left(parabolic\; function\right)}\hfill \end{array}\tag{14.4}
-      \end{equation}
-      \label{m39408*id79540}The basis of trigonometry are the \textsl{trigonometric functions}. There are three basic trigonometric functions:\par 
-      \label{m39408*id79552}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39408*uid15}\item sine
-\label{m39408*uid16}\item cosine
-\label{m39408*uid17}\item tangent
-\end{enumerate}
-      \label{m39408*id79593}These are abbreviated to:\par 
-      \label{m39408*id79596}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39408*uid18}\item sin
-\label{m39408*uid19}\item cos
-\label{m39408*uid20}\item tan
-\end{enumerate}
-      \label{m39408*id79636}These functions can be defined from a \textbf{right-angled triangle}, a triangle where one internal angle is 90 ${}^{\circ }$.\par 
-      \label{m39408*id79660}Consider a right-angled triangle.\par 
-      \label{m39408*id79664}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id79667}
-    \begin{center}
-    \label{m39408*id79667!!!underscore!!!media}\label{m39408*id79667!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39408_MG10C15_003.png} % m39408;MG10C15\_003.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-      \par 
-      \label{m39408*id79673}In the right-angled triangle, we refer to the lengths of the three sides according to how they are placed in relation to the angle $\theta $. The side opposite to the right angle is labeled the \textsl{hypotenuse}, the side opposite $\theta $ is labeled \textsl{opposite}, the side next to $\theta $ is labeled \textsl{adjacent}. Note that the choice of non-90 degree internal angle is arbitrary. You can choose either internal angle and then define the adjacent and opposite sides accordingly. However, the hypotenuse remains the same regardless of which internal angle you are referring to (because it is ALWAYS opposite the right angle and ALWAYS the longest side).\par 
-      \label{m39408*id79725}We define the trigonometric functions, also known as trigonometric identities, as:
+\begin{center}
+\begin{pspicture}(-1,-0.6)(6.6,3)
+%\psgrid[gridcolor=gray]
+\rput(1.2,0){\pstTriangle(0,0){A}(2; 25){B}(3; 125){C}}
+\rput(5.2,0){\pstTriangle[unit=0.5](0,0){D}(2; 25){E}(3; 125){F}}
+\end{pspicture}
+\end{center}   
+\end{figure}   
 \par 
-      \label{m39408*uid21}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin\theta & =& \frac{\mathrm{opposite}}{\mathrm{hypotenuse}}\hfill \\ \hfill cos\theta & =& \frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}\hfill \\ \hfill tan\theta & =& \frac{\mathrm{opposite}}{\mathrm{adjacent}}\hfill \end{array}\tag{14.5}
-      \end{equation}
-      \label{m39408*id79934}These functions relate the lengths of the sides of a right-angled triangle to its interior angles.\par 
-      \label{m39408*eip-55}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }The trig ratios are independent of the lengths of the sides of a triangle and depend only on the angles, this is why we can consider them to be functions of the angles.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-      \label{m39408*id79941}One way of remembering the definitions is to use the following mnemonic that is perhaps easier to remember:\par 
-      \label{m39408*id79945}
-    % \textbf{m39408*id79953}\par
-          \begin{table}[H]
-    % \begin{table}[H]
-    % \\ '' '0'
-        \begin{center}
-      \label{m39408*id79953}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{2}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|}\hline
-        \textbf{S}illy \textbf{O}ld \textbf{H}ens &
-                  $\mathbf{S}\mathrm{in}=\frac{\mathbf{O}\mathrm{pposite}}{\mathbf{H}\mathrm{ypotenuse}}$
-                % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-        \textbf{C}ackle \textbf{A}nd \textbf{H}owl &
-                  $\mathbf{C}\mathrm{os}=\frac{\mathbf{A}\mathrm{djacent}}{\mathbf{H}\mathrm{ypotenuse}}$
-                % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-        \textbf{T}ill \textbf{O}ld \textbf{A}ge &
-                  $\mathbf{T}\mathrm{an}=\frac{\mathbf{O}\mathrm{pposite}}{\mathbf{A}\mathrm{djacent}}$
-                % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}
-      %--------------------------------------------------------------------
-    \end{xtabular}
-      \end{center}
-    \begin{center}{\small\bfseries Table 14.2}\end{center}
-    \begin{caption}{\small\bfseries Table 14.2}\end{caption}
-\end{table}
-    \par
-      \par 
-\label{m39408*eip-186}You may also hear people saying Soh Cah Toa. This is just another way to remember the trig functions.\par \label{m39408*notfhsst!!!underscore!!!id934}
-\begin{tabular}{cc}
-	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {tip: }The definitions of opposite, adjacent and hypotenuse are only applicable when you are working with right-angled triangles! Always check to make sure your triangle has a right-angle before you use them, otherwise you will get the wrong answer. We will find ways of using our knowledge of right-angled triangles to deal with the trigonometry of non right-angled triangles in Grade 11.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-\label{m39408*secfhsst!!!underscore!!!id935}
-            \subsection{  Exercises : Definitions of Trigonometric Functions }
-            \nopagebreak
-      \label{m39408*id80155}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39408*uid22}\item In each of the following triangles, state whether $a$, $b$ and $c$ are the hypotenuse, opposite or adjacent sides of the triangle with respect to the marked angle.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id80200}
-    \begin{center}
-    \label{m39408*id80200!!!underscore!!!media}\label{m39408*id80200!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_004.png} % m39408;MG10C15\_004.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \label{m39408*uid23}\item Complete each of the following, the first has been done for you
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id80226}
-    \begin{center}
-    \label{m39408*id80226!!!underscore!!!media}\label{m39408*id80226!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_005.png} % m39408;MG10C15\_005.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \label{m39408*id80237}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill a\right)sin\hat{A}& =& \frac{\mathrm{opposite}}{\mathrm{hypotenuse}}=\frac{CB}{AC}\hfill \\ \hfill b\right)cos\hat{A}& =& \\ \hfill c\right)tan\hat{A}& =\end{array}\tag{14.6}
-      \end{equation}
-    \label{m39408*id80376}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}& d\right)& sin\hat{C}=\hfill \\ & e\right)& cos\hat{C}=\hfill \\ & f\right)& tan\hat{C}=\hfill \end{array}\tag{14.7}
-      \end{equation}
-    \label{m39408*uid24}\item Complete each of the following without a calculator:
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id80508}
-    \begin{center}
-    \label{m39408*id80508!!!underscore!!!media}\label{m39408*id80508!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_006.png} % m39408;MG10C15\_006.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \label{m39408*id80519}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin60& =& \\ \hfill cos30& =& \\ \hfill tan60& =\end{array}\tag{14.8}
-      \end{equation}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id80587}
-    \begin{center}
-    \label{m39408*id80587!!!underscore!!!media}\label{m39408*id80587!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_007.png} % m39408;MG10C15\_007.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \label{m39408*id80598}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin45& =& \\ \hfill cos45& =& \\ \hfill tan45& =\end{array}\tag{14.9}
-      \end{equation}
-    \end{enumerate}
-      \label{m39408*id80673}For most angles $\theta $, it is very difficult to calculate the values of $sin\theta $, $cos\theta $ and $tan\theta $. One usually needs to use a calculator to do so. However, we saw in the above Activity that we could work these values out for some special angles. Some of these angles are listed in the table below, along with the values of the trigonometric functions at these angles. Remember that the lengths of the sides of a right angled triangle must obey Pythagoras' theorem. The square of the hypotenuse (side opposite the 90 degree angle) equals the sum of the squares of the two other sides.\par 
-    % \textbf{m39408*id80733}\par
-          \begin{table}[H]
-    % \begin{table}[H]
-    % \\ '' '0'
-        \begin{center}
-      \label{m39408*id80733}
-    \noindent
-    \tabletail{%
-        \hline
-        \multicolumn{7}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
-        \hline
-      }
-      \tablelasttail{}
-      \begin{xtabular}[t]{|l|l|l|l|l|l|l|}\hline
-         &
-                ${0}^{\circ }$
-               &
-                ${30}^{\circ }$
-               &
-                ${45}^{\circ }$
-               &
-                ${60}^{\circ }$
-               &
-                ${90}^{\circ }$
-               &
-                ${180}^{\circ }$
-              % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
-      %--------------------------------------------------------------------
-                $cos\theta $
-               &
-        1 &
-                $\frac{\sqrt{3}}{2}$
-               &
-                $\frac{1}{\sqrt{2}}$
-               &
-                $\frac{1}{2}$
-               &
-        0 &
-                $-1$
-              % make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
-      %--------------------------------------------------------------------
-                $sin\theta $
-               &
-        0 &
-                $\frac{1}{2}$
-               &
-                $\frac{1}{\sqrt{2}}$
-               &
-                $\frac{\sqrt{3}}{2}$
-               &
-        1 &
-        0% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
-      %--------------------------------------------------------------------
-                $tan\theta $
-               &
-        0 &
-                $\frac{1}{\sqrt{3}}$
-               &
-        1 &
-                $\sqrt{3}$
-               &
-                $-$
-               &
-        0% make-rowspan-placeholders
-     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
-      %--------------------------------------------------------------------
-    \end{xtabular}
-      \end{center}
-    \begin{center}{\small\bfseries Table 14.3}\end{center}
-    \begin{caption}{\small\bfseries Table 14.3}\end{caption}
-\end{table}
-    \par
-      \label{m39408*id81112}These values are useful when asked to solve a problem involving trig functions \textsl{without} using a calculator.\par 
-\section{Reciprocal Functions}
-\label{m39408*eip-466}Each of the trigonometric functions has a reciprocal that has a special name. The three reciprocals are cosecant (or cosec), secant (or sec) and cotangent (or cot). These reciprocals are given below:
-\label{m39408*eid64932}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}cosec\theta & =& \frac{1}{sin\theta }\\ sec\theta & =& \frac{1}{cos\theta }\\ cot\theta & =& \frac{1}{tan\theta }\end{array}\tag{14.10}
-      \end{equation}
-\par \label{m39408*eip-520}We can also define these reciprocals for any right angled triangle:
-\label{m39408*eid96732}\nopagebreak\noindent{}
+Then, it is possible to deduce ratios between corresponding sides of the two similar triangles:\par 
 
-    \begin{equation}
-    \begin{array}{ccc}\hfill cosec\theta & =& \frac{\mathrm{hypotenuse}}{\mathrm{opposite}}\hfill \\ \hfill sec\theta & =& \frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}\hfill \\ \hfill cot\theta & =& \frac{\mathrm{adjacent}}{\mathrm{opposite}}\hfill \end{array}\tag{14.11}
-      \end{equation}
-\par \par
-            \label{m39408*secfhsst!!!underscore!!!id1130}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.1:  Finding Lengths }
-      \label{m39408*probfhsst!!!underscore!!!id1131}
-      \label{m39408*id81134}Find the length of x in the following triangle.\par 
-      \label{m39408*id81140}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id81141}
-    \begin{center}
-    \label{m39408*id81141!!!underscore!!!media}\label{m39408*id81141!!!underscore!!!printimage}\includegraphics[width=150px]{col11306.imgs/m39408_MG10C15_008.png} % m39408;MG10C15\_008.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-      \par 
-      \vspace{5pt}
-      \label{m39408*solfhsst!!!underscore!!!id1143}\noindent\textbf{Solution to Exercise } \label{m39408*listfhsst!!!underscore!!!id1143}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-      \label{m39408*id81169}In this case you have an angle (${50}^{\circ }$), the opposite side and the hypotenuse.\par 
-      \label{m39408*id81188}So you should use $sin$\par 
-      \label{m39408*id81204}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    sin{50}^{\circ }=\frac{x}{100}\tag{14.12}
-      \end{equation}
-      \item  
-      \label{m39408*id81247}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    \ensuremath{\Rightarrow}x=100\ensuremath{\times}sin{50}^{\circ }\tag{14.13}
-      \end{equation}
-      \item  
-      \label{m39408*id81284}Use the sin
- button on your calculator\par 
-      \label{m39408*id81293}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    \ensuremath{\Rightarrow}x=76.6\mathrm{m}\tag{14.14}
-      \end{equation}
-      \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
+
+\begin{equation*}
+\begin{array}{ccl}\hfill \frac{AB}{BC}& =& \frac{DE}{EF}\hfill \\ \hfill \frac{AB}{AC}& =& \frac{DE}{DF}\hfill \\ \hfill \frac{AC}{BC}& =& \frac{DF}{EF}\hfill \\ \hfill \frac{AB}{DE}& =& \frac{BC}{EF}=\frac{AC}{DF}\hfill \end{array}
+\end{equation*}
+Another important fact about similar triangles $ABC$ and $DEF$ is that the angle at vertex $A$ is equal to the angle at vertex $D$, the angle at $B$ is equal to the angle at $E$, and the angle at $C$ is equal to the angle at $F$.\par 
+
+
+\begin{equation*}
+\begin{array}{ccc}\hfill \hat A& =& \hat D\hfill \\ \hfill \hat B& =& \hat E\hfill \\ \hfill \hat C& =& \hat F\hfill \end{array}
+\end{equation*}
+
+\begin{Investigation}{Ratios of similar triangles}
+\nopagebreak
+Draw three similar triangles of different sizes, but each with $\hat{A}={30}^{\circ }$; $\hat{B}={90}^{\circ }$ and $\hat{C}={60}^{\circ }$. Measure angles and lengths very accurately in order to fill in the table (round answers to one decimal place):\par 
+
+\setcounter{subfigure}{0}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.3817186)(8.567187,2.3817186)
+\psline[linewidth=0.04cm](0.301875,-1.9001563)(1.942836,-1.9001563)
+\psline[linewidth=0.04cm](1.942836,-1.9001563)(1.942836,0.84772635)
+\psline[linewidth=0.04cm](0.301875,-1.9001563)(1.942836,0.8604187)
+\psline[linewidth=0.04cm](2.641875,-1.9201562)(4.641875,-1.9201562)
+\psline[linewidth=0.04cm](4.641875,-1.9201562)(4.641875,1.5438437)
+\psline[linewidth=0.04cm](2.641875,-1.9201562)(4.641875,1.5598438)
+\psline[linewidth=0.04cm](5.521875,-1.9201562)(7.801521,-1.9201562)
+\psline[linewidth=0.04cm](7.801521,-1.9201562)(7.801521,1.9617095)
+\psline[linewidth=0.04cm](5.521875,-1.9201562)(7.801521,1.9796396)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.26546875,-2.1101563){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8054688,-2.1901562){$C'$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.6254687,-2.1901562){$C''$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.0454688,-2.1301563){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.7654686,-2.1901562){$B'$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.105469,-2.2101562){$B''$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1254687,1.0898438){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.865469,1.8098438){$A'$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.105469,2.1698437){$A''$}
+\psframe[linewidth=0.04,dimen=outer](1.961875,-1.5601562)(1.601875,-1.9201562)
+\psframe[linewidth=0.04,dimen=outer](4.661875,-1.5801562)(4.301875,-1.9401562)
+\psframe[linewidth=0.04,dimen=outer](7.801875,-1.5801562)(7.441875,-1.9401562)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.64,-0.25){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](1.811875,0.02984375){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.9,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](0.951875,-1.6101563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](3.291875,-1.6301563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.2,-1.6){$60^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](6.131875,-1.6301563){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3173437,0.4){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](4.531875,0.64984375){0.03}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.4973435,0.9){$30^{\circ}$}
+% \pscircle[linewidth=0.0060,dimen=outer](7.711875,1.1498437){0.03}
+\end{pspicture} 
+}      
+\par 
+% \textbf{m39405*id78604}\par
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+
+\noindent
+
+\begin{tabular}{|l|l|l|}\hline
+% My position: 0
+% my spanname: 
+% my ct of spanspec: 0
+% my column-count: 3
+\multicolumn{3}{|c|}{Dividing lengths of sides (ratios)}
+\\ \hline
+%--------------------------------------------------------------------
+$\frac{AB}{BC}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{AB}{AC}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{CB}{AC}=\phantom{\rule{42.67912pt}{0ex}}$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+$\frac{A'B'}{B'C'}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{A'B'}{A'C'}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{C'B'}{A'C'}=\phantom{\rule{42.67912pt}{0ex}}$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+$\frac{A''B''}{B''C''}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{A''B''}{A''C''}=\phantom{\rule{42.67912pt}{0ex}}$
+&
+$\frac{C''B''}{A''C''}=\phantom{\rule{42.67912pt}{0ex}}$
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.1}\end{center}
+% \begin{caption}{\small\bfseries Table 14.1}\end{caption}
+\end{table}
 \par
-    \noindent
-\label{m39408*eip-200}In the previous example we used ${\mathrm{tan}}^{-1}$. This is simply the inverse of the tan function. Sin and cos also have inverses. All this means is that we want to find the angle that makes the expression true and so we must move the tan (or sin or cos) to the other side of the equals sign and leave the angle where it is. Sometimes the reciprocal trigonometric functions are also referred to as the 'inverse trigonometric functions'. You should note, however that ${\mathrm{tan}}^{-1}$ and $\mathrm{cot}$ are definitely NOT the same thing. \par \label{m39408*eip-358}The following videos provide a summary of what you have learnt so far.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*trigonometry-1}
-    \textnormal{Trigonometry - 1}\vspace{.1in} \nopagebreak
-  \label{m39408*yt-media}\label{m39408*yt-video}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10102 )}
-      \vspace{2pt}
-    \vspace{.1in}
- \end{figure}       \par \label{m39408*eip-33}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*trigonometry-2}
-    \textnormal{Khan academy video on trigonometry - 2}\vspace{.1in} \nopagebreak
-  \label{m39408*yt-media2}\label{m39408*yt-video2}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10103 )}
-      \vspace{2pt}
-    \vspace{.1in}
- \end{figure}       \par \label{m39408*secfhsst!!!underscore!!!id1260}
-            \subsection{Exercise: Finding Lengths }
-            \nopagebreak
-            \label{m39408*id81582}Find the length of the sides marked with letters. Give answers correct to 2 decimal places.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id81592}
-    \begin{center}
-    \label{m39408*id81592!!!underscore!!!media}\label{m39408*id81592!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_010.png} % m39408;MG10C15\_010.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id816001}
-    \begin{center}
-    \label{m39408*id816001!!!underscore!!!media}\label{m39408*id816001!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39408_MG10C15_011.png} % m39408;MG10C15\_011.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-              \par 
-    \label{m39408*eip-403}
+What observations can you make about the ratios of the sides?\\
+\\
+These equal ratios are used to define the trigonometric ratios.\par 
+\end{Investigation}
+
+
+    
+
+\section{Defining of the trigonometric ratios}
+Consider a right-angled triangle.\par 
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39408*id79667}
+\begin{center}
+\begin{pspicture}(-1,-0.6)(4,3)
+%\psgrid[gridcolor=gray]
+\pstTriangle(0,0){A}(2.4;90){B}(3.35;0){C}
+\pstRightAngle{B}{A}{C}
+\pstMarkAngle{B}{C}{A}{$\theta$}
+\pcline[linestyle=none](A)(B)
+\aput{:U}{opposite}
+\pcline[linestyle=none](B)(C)
+\aput{:U}{hypotenuse}
+\pcline[linestyle=none](A)(C)
+\bput{:U}{adjacent}
+\end{pspicture}
+\end{center}
+\end{figure}       
+\par 
+
+\Note{In algebra, we often use the letter $x$ for our unknown variable (although we can use any other letter too, such as $a$, $b$, $k$, etc). In trigonometry, we often use the Greek symbol $\theta $ for an unknown angle (we also use $\alpha $ , $\beta $ , $\gamma $ etc).}
+
+
+In the right-angled triangle, we refer to the lengths of the three sides according to how they are placed in relation to the angle $\theta $. The side opposite to the right angle is labeled the hypotenuse, the side opposite $\theta $ is labeled opposite, the side next to $\theta $ is labeled adjacent. Note that the choice of non-$90^{\circ}$ internal angle is arbitrary. You can choose either internal angle and then define the adjacent and opposite sides accordingly. However, the hypotenuse remains the same regardless of which internal angle you are referring to (because it is ALWAYS opposite the right angle and ALWAYS the longest side).\par 
+
+We define the trigonometric ratios, sine, cosine and tangent of an angle, as follows:
+\par 
+
+\begin{equation*}
+\begin{array}{ccc}\hfill sin~\theta & =& \frac{\mbox{opposite}}{\mbox{hypotenuse}}\hfill \\
+\\
+ \hfill cos~\theta & =& \frac{\mbox{adjacent}}{\mbox{hypotenuse}}\hfill \\
+\\
+ \hfill tan~\theta & =& \frac{\mbox{opposite}}{\mbox{adjacent}}\hfill 
+\end{array}
+\end{equation*}
+
+These ratios, also known as trigonometric identities, relate the lengths of the sides of a right-angled triangle to its interior angles.\par 
+
+These three ratios form the basis of trigonometry. \par
+
+You may also hear people saying ``Soh Cah Toa''. This is a mnemonic technique for remembering the trigonometric ratios.\par 
+
+% \textbf{m39408*id79953}\par
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+\label{m39408*id79953}
+\noindent
+
+\begin{tabular}{|l|}\hline
+
+$\mathbf{s}in=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{h}ypotenuse}} $
+% make-rowspan-placeholders
+
+\\  \hline
+%--------------------------------------------------------------------
+
+$\mathbf{c}os=\frac{\mbox{\textbf{a}djacent}}{\mbox{\textbf{h}ypotenuse}} $
+% make-rowspan-placeholders
+
+\\ \hline
+%--------------------------------------------------------------------
+
+$\mathbf{t}an=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{a}djacent}} $
+% make-rowspan-placeholders
+
+\\   \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.2}\end{center}
+% \begin{caption}{\small\bfseries Table 14.2}\end{caption}
+\end{table}
+\par
+
+\Tip{The definitions of opposite, adjacent and hypotenuse are only applicable when working with right-angled triangles! Always check to make sure your triangle has a right-angle before you use them, otherwise you will get the wrong answer.}
+
+\begin{activity}{Calculator work}
+
+It is very important that you are familiar with your calculator's trigonometric buttons and how they operate. \\
+Use the following examples to make sure that you are using your calculator correctly:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item $cos~ 30^{\circ} = 0,866$
+\item $sin~90^{\circ} = 1$
+\item $tan~60^{\circ} = 1,732$
+\item $4~sin~45^{\circ}=2,828$
+\item $\frac{1}{3}~cos~60^{\circ}=1,5$
+\end{enumerate}
+
+\end{activity}
+
+\begin{wex}{Using your calculator}
+
+ {Use your calculator to calculate the following (correct to $2$ decimal places):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item $cos~48^{\circ}$
+\item $2~sin~35^{\circ}$
+\item $tan^{2}~81^{\circ}$
+\item $3~sin^{2}~72^{\circ} \vspace{3pt}$
+\item $\dfrac{1}{4}~cos~27^{\circ} \vspace{3pt}$
+\item $\dfrac{5}{6}~tan~34^{\circ}$
+\end{enumerate}
+
+}
+{
+
+\westep{}
+Press \fbox{COS} \fbox{48} \fbox{\LARGE =} $0,67$
+
+\westep{}
+Press \fbox{2} \fbox{SIN} \fbox{35} \fbox{\LARGE =} $1,15$
+
+\westep{}
+Press \fbox{(} \fbox{TAN} \fbox{81} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $39,83$
+\\
+OR\\
+Press \fbox{TAN} \fbox{81} \fbox{\LARGE =} \fbox{ANS} \fbox{x^{2}} \fbox{\LARGE =} $39,83$
+
+\westep{}
+Press \fbox{3} \fbox{(} \fbox{SIN} \fbox{72} \fbox{)} \fbox{x^{2}} \fbox{\LARGE =} $2,71$
+\\
+OR\\
+Press \fbox{SIN} \fbox{72} \fbox{\LARGE =} \fbox{ANS} \fbox{x^{2}} \fbox{\LARGE =} \fbox{$\times$} \fbox{3}
+
+\westep{}
+Press \fbox{(} \fbox{1} \fbox{$\div$} \fbox{4} \fbox{)} \fbox{COS} \fbox{27} \fbox{\LARGE =} $0,22$
+\\
+OR\\
+Press \fbox{COS} \fbox{27} \fbox{\LARGE =} \fbox{ANS} \fbox{$\div$} \fbox{4} \fbox{\LARGE =} $0,22$
+
+\westep{}
+Press \fbox{(} \fbox{5} \fbox{$\div$} \fbox{6} \fbox{)} \fbox{TAN} \fbox{34} \fbox{\LARGE =} $0,56$
+\\
+OR\\
+Press \fbox{TAN} \fbox{34} \fbox{\LARGE =} \fbox{ANS} \fbox{$\times$} \fbox{5} \fbox{$\div$} \fbox{6} \fbox{\LARGE =} $0,56$
+
+}
+\end{wex}
+\Note{Most scientific calculators are quite similar but these steps might differ depending on the calculator you use. Make sure your calculator is in 'degrees' mode.}
+
+\begin{wex}
+{Calculator work}
+{If $x=25^{\circ}$ and $y=65^{\circ}$, use your calculator to determine whether the following statement is true or false:
+\begin{equation*}
+sin^{2}~x + cos^{2}~(90^{\circ}-y) = 1
+\end{equation*}
+}
+{
+\westep{Calculate the left hand side of the equation}
+Press \fbox{(} \fbox{SIN} \fbox{25} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $0,179$\\
+Press \fbox{(} \fbox{COS} \fbox{(} \fbox{90} \fbox{\LARGE -} \fbox{65} \fbox{)} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $0,821$
+
+\westep{Add both values together}
+\begin{equation*}
+ 0,179+0,821 = 1
+\end{equation*}
+\westep{Write the final answer}
+LHS = RHS therefore the statement is true.
+
+
+
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+
+In each of the following triangles, state whether $a$, $b$ and $c$ are the hypotenuse, opposite or adjacent sides of the triangle with respect to \theta. 
+\setcounter{subfigure}{0}
+\begin{center}
+\scalebox{0.85} % Change this value to rescale the drawing.
+{
+% EACH FIGURE NEEDS TO BE NUMBERED 1 -6~
+\begin{pspicture}(0,-3.7754679)(20.177345,3.9279697)
+\rput (1,2){\textbf{1.}}
+\rput (5.5,2){\textbf{2.}}
+\rput (10.5,2){\textbf{3.}}
+\rput (1.5,-1.5){\textbf{4.}}
+\rput (6,-1.5){\textbf{5.}}
+\rput (9.5,-1.5){\textbf{6.}}
+\psdots[dotsize=0.027999999](2.9173439,-1.5720303)
+\psline[linewidth=0.04cm](5.517344,2.5079696)(7.9173436,0.107969664)
+\psline[linewidth=0.04cm](7.9173436,0.107969664)(9.0173435,1.2079697)
+\psline[linewidth=0.04cm](5.517344,2.5079696)(9.0173435,1.2079697)
+\psline[linewidth=0.04cm](7.717344,0.30796966)(7.9173436,0.5079697)
+\psline[linewidth=0.04cm](7.9173436,0.5079697)(8.117344,0.30796966)
+\psline[linewidth=0.04cm](11.0573435,2.2679696)(11.0573435,0.067969665)
+\psline[linewidth=0.04cm](11.0573435,0.067969665)(14.757344,0.067969665)
+\psline[linewidth=0.04cm](11.0573435,2.2679696)(14.757344,0.067969665)
+\psline[linewidth=0.04cm](1.2373447,-3.3120303)(3.9373438,-0.71203035)
+\psline[linewidth=0.04cm](3.9373438,-0.71203035)(3.9373438,-3.3120303)
+\psline[linewidth=0.04cm](3.9373438,-3.3120303)(1.2373447,-3.3120303)
+\psline[linewidth=0.04cm](7.477345,-1.2120303)(5.7773438,-3.3120303)
+\psline[linewidth=0.04cm](7.477345,-1.2120303)(8.9773445,-2.4120302)
+\psline[linewidth=0.04cm](8.9773445,-2.4120302)(5.7773438,-3.3120303)
+\psline[linewidth=0.04cm](7.257343,-1.5120304)(7.537344,-1.7320304)
+\psline[linewidth=0.04cm](7.517344,-1.7120303)(7.717344,-1.4320303)
+\psline[linewidth=0.04cm](11.097343,0.38796967)(11.397344,0.38796967)
+\psline[linewidth=0.04cm](11.397344,0.38796967)(11.397344,0.08796967)
+\psline[linewidth=0.04cm](3.9173427,-3.0320303)(3.6173437,-3.0320303)
+\psline[linewidth=0.04cm](3.6173437,-3.0320303)(3.6173437,-3.3320303)
+\psline[linewidth=0.04cm](10.0173435,-1.7320304)(11.417343,-3.2320304)
+\psline[linewidth=0.04cm](11.417343,-3.2320304)(13.0173435,-1.7320304)
+\psline[linewidth=0.04cm](10.0173435,-1.7320304)(13.0173435,-1.7320304)
+\psline[linewidth=0.04cm](11.217343,-3.0320303)(11.417343,-2.8320303)
+\psline[linewidth=0.04cm](11.417343,-2.8320303)(11.617344,-3.0320303)
+\usefont{T1}{ptm}{m}{n}
+\rput(8.662344,1.1179696){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(13.842344,0.29796967){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.682343,-1.3020303){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.362344,-2.9020302){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.502343,-1.9420303){$\theta$}
+\psline[linewidth=0.04cm](2.2973437,2.2879696)(0.09734377,0.18796967)
+\psline[linewidth=0.04cm](0.09734377,0.18796967)(4.4973435,0.18796967)
+\psline[linewidth=0.04cm](2.2973437,2.2879696)(4.4973435,0.18796967)
+\psline[linewidth=0.04cm](2.0973437,2.0879698)(2.2973437,1.8879696)
+\psline[linewidth=0.04cm](2.2973437,1.8879696)(2.4973438,2.0879698)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.54234374,0.37796965){$\theta$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.1764063,1.5979697){$a$}
+\rput (1, 2){1.}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1778126,-0.10203034){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.759219,1.2979697){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.596406,1.0179696){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.479219,2.1179698){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.797812,0.41796967){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(13.076406,1.4979696){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.777813,1.1979697){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(12.659219,-0.20203033){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.896407,-3.6220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2978134,-1.8220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2792187,-2.3220303){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.596406,-1.8220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.7978134,-3.1220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.579218,-1.7220303){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.496406,-2.6220303){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(12.397812,-2.8220303){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(11.579218,-1.4220303){$c$}
+\rput{-66.69996}(-0.02258055,0.761629){\psarc[linewidth=0.04](0.5673438,0.39796966){0.35}{25.785578}{138.26501}}
+\rput{106.83747}(12.386083,-6.856496){\psarc[linewidth=0.04](8.737344,1.1679693){0.34}{32.561234}{147.21713}}
+\rput{93.56388}(15.110441,-13.562675){\psarc[linewidth=0.04](13.927344,0.31796986){0.39}{24.333387}{127.3505}}
+\psarc[linewidth=0.04](14.697344,3.1279697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](14.837344,3.2279696){0.0}{0.0}{180.0}
+\rput{153.95303}(6.6359906,-3.7989676){\psarc[linewidth=0.04](3.757346,-1.1320316){0.5}{50.00946}{137.84839}}
+\psarc[linewidth=0.04](20.097343,3.9079697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](20.117344,3.8879697){0.0}{0.0}{180.0}
+\psarc[linewidth=0.04](20.157345,3.8279696){0.0}{0.0}{180.0}
+\rput{-46.143967}(4.180272,3.6097476){\psarc[linewidth=0.04](6.3273435,-3.1020286){0.57}{58.40874}{128.71255}}
+\rput{-116.039185}(16.474606,6.6625834){\psarc[linewidth=0.04](10.317342,-1.8120308){0.52}{49.23777}{123.63383}}
+\end{pspicture} 
+}
+\end{center}
+
+
+Use your calculator to determine the value of the following (correct to $2$ decimal places):
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2} 
+\setcounter{enumi}{6} 
+\item $tan~65^{\circ}$
+\item $sin~38^{\circ}$
+\item $cos~74^{\circ}$
+\item $sin~12^{\circ}$
+\item $cos~26^{\circ}$
+\item $tan~49^{\circ}$
+\item $\frac{1}{4}~cos~20^{\circ}$
+\item $3~tan~40^{\circ}$
+\item $\frac{2}{3}~sin~90^{\circ}$
+\end{multicols}
+\end{enumerate}
+
+If $x=39^{\circ}$ and $y=21^{\circ}$ use a calculator to determine whether the following statements are true or false:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2} 
+\setcounter{enumi}{15} 
+\item $cos~x + 2~cos~x=3~cos~x$
+\item $cos~2y = cos~y+cos~y$
+\item $tan~x=\frac{sin~x}{cos~x}$
+\item $cos~(x+y) = cos~x+cos~y$
+\end{multicols}
+\end{enumerate}
+
+
+\item Complete each of the following (the first example has been done):
+\begin{center}
+% \begin{minipage}{0.25 \textwidth}
+\setcounter{subfigure}{0}
+\scalebox{1}{
+\begin{pspicture}(0,-2.0990624)(4.21625,2.0990624)
+\psline[linewidth=0.04cm](0.4775,-1.5590625)(3.7775,1.5409375)
+\psline[linewidth=0.04cm](3.7775,1.5409375)(3.7775,-1.5590625)
+\psline[linewidth=0.04cm](0.4775,-1.5590625)(3.7775,-1.5590625)
+\psline[linewidth=0.04cm](3.4775,-1.5590625)(3.4775,-1.2590625)
+\psline[linewidth=0.04cm](3.4775,-1.2590625)(3.7775,-1.2590625)
+\rput(4.025,1.8759375){$A$}
+\rput(3.874375,-1.9240625){ $B$}
+\rput(0.10625,-1.8240625){$C$}
+\end{pspicture} 
+}
+% \end{minipage}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2}
+\setcounter{enumi}{19}
+\item $sin~\hat{A} = \frac{\mbox{opposite}}{\mbox{hypotenuse}}=\dfrac{CB}{AC} \vspace{3pt}$
+\item $cos~\hat{A} = \vspace{3pt}$
+\item $tan~\hat{A}= \vspace{3pt}$
+\item $sin~\hat{C}= \vspace{3pt}$
+\item $cos~\hat{C}= \vspace{3pt}$
+\item $tan~\hat{C}= \vspace{3pt}$
+\end{multicols}
+\end{enumerate}
+\\
+Use the triangle below to complete the following:
+\begin{center}
+% \begin{minipage}{0.25\textwidth}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.97)(5.3271875,1.97)
+\psline[linewidth=0.04cm](0.361875,-1.95)(4.061875,-1.95)
+\psline[linewidth=0.04cm](4.061875,-1.95)(4.061875,1.95)
+\psline[linewidth=0.04cm](4.061875,1.95)(0.361875,-1.95)
+\psline[linewidth=0.04cm](3.661875,-1.95)(3.661875,-1.55)
+\psline[linewidth=0.04cm](3.661875,-1.55)(4.061875,-1.55)
+\rput(1.7398437,0.26){$2$}
+\rput(1.8,-2.2){$1$}
+\rput(1.1554687,-1.64){$60^{\circ}$}
+\rput(3.6554687,0.96){$30^{\circ}$}
+\rput(4.405469,-0.44){$\sqrt{3}$}
+\end{pspicture} 
+}
+
+% \end{minipage}
+\end{center}
+\\
+\\
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2}
+\setcounter{enumi}{25}
+\item $sin~60^{\circ} = \vspace{3pt}$
+\item $cos~60^{\circ} = \vspace{3pt}$
+\item $tan~60^{\circ}= \vspace{3pt}$
+\item $sin~30^{\circ}= \vspace{3pt}$
+\item $cos~30^{\circ}= \vspace{3pt}$
+\item $tan~30^{\circ}= \vspace{3pt}$
+\end{multicols}
+\end{enumerate}
+
+\\
+Use the triangle below to complete the following:
+\begin{center}
+% \begin{minipage}{0.25\textwidth}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.24)(5.0271873,2.22)
+\psline[linewidth=0.04cm](0.361875,-1.7)(4.061875,-1.7)
+\psline[linewidth=0.04cm](4.061875,-1.7)(4.061875,2.2)
+\psline[linewidth=0.04cm](4.061875,2.2)(0.361875,-1.7)
+\psline[linewidth=0.04cm](3.661875,-1.7)(3.661875,-1.3)
+\psline[linewidth=0.04cm](3.661875,-1.3)(4.061875,-1.3)
+\rput(2.2314062,-2.09){$1$}
+\rput(1.1554687,-1.39){$45^{\circ}$}
+\rput(3.7554688,1.41){$45^{\circ}$}
+\rput(1.6054688,0.51){$\sqrt{2}$}
+\rput(4.331406,0.21){$1$}
+\end{pspicture} 
+}
+% \end{minipage}
+\end{center}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+
+\setcounter{enumi}{31}
+\item $sin~45^{\circ} = \vspace{3pt}$
+\item $cos~45^{\circ} = \vspace{3pt}$
+\item $tan~45^{\circ}= \vspace{3pt}$
+
+\end{enumerate}
+}
+\end{exercises}
+
+\section{Special angles}
+For most angles $\theta $, we need a calculator to calculate the values of $sin~\theta $, $cos~\theta $ and $tan~\theta $. However, we saw in the previous exercise that we could work out these values for some special angles. Some of these angles are listed in the table below, along with the values of the trigonometric functions at these angles. \par
+Remember that the lengths of the sides of a right angled triangle must obey the Theorem of Pythagoras: the square of the hypotenuse equals the sum of the squares of the two other sides.\par 
+% \textbf{m39408*id80733}\par
+\begin{table}[H]
+% \begin{table}[H]
+% \\ '' '0'
+\begin{center}
+
+\begin{tabular}{|l|l|l|l|l|l|}\hline
+&
+${0}^{\circ }$
+&
+${30}^{\circ }$
+&
+${45}^{\circ }$
+&
+${60}^{\circ }$
+&
+${90}^{\circ }$
+
+% make-rowspan-placeholders\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
+\\ \hline
+%--------------------------------------------------------------------
+$cos~\theta $
+&
+$1$ &
+$\frac{\sqrt{3}}{2}$
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{1}{2}$
+&
+$0 $
+
+\\ \hline
+%--------------------------------------------------------------------
+$sin~\theta $
+&
+$0$ &
+$\frac{1}{2}$
+&
+$\frac{1}{\sqrt{2}}$
+&
+$\frac{\sqrt{3}}{2}$
+&
+$1$ 
+%  make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+$tan~\theta $
+&
+$0$ &
+$\frac{1}{\sqrt{3}}$
+&
+$1$ &
+$\sqrt{3}$
+&
+
+
+% make-rowspan-placeholders
+\\ \hline
+%--------------------------------------------------------------------
+\end{tabular}
+\end{center}
+% \begin{center}{\small\bfseries Table 14.3}\end{center}
+% \begin{caption}{\small\bfseries Table 14.3}\end{caption}
+\end{table}
+\par
+These values are useful when asked to solve a problem involving trigonometric functions without using a calculator.\par 
+\begin{exercises}{}
+{
+Calculate the value of the following without using a calculator (use the values in the table above):
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $sin~45^{\circ} \times cos~45^{\circ}$
+\item $cos~60^{\circ} + tan~45^{\circ}$
+\item $sin~60^{\circ} - cos~60^{\circ}$
+\end{enumerate}
+\vspace {10pt}
+Use the table to  show that:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{3}
+\item $\dfrac{sin~60^{\circ}}{cos~60^{\circ}} = tan~60^{\circ} \vspace{3pt}$
+\item $sin^{2}~45^{\circ}+ cos^{2}~45^{\circ} -1 \vspace{3pt}$
+\item $cos~30^{\circ} =\sqrt{1- sin^{2}~30^{\circ}$
+\end{enumerate}
+\vspace {10pt}
+Answer the following questions:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+\item Explain why $sin~\alpha \leq 1$ for all values of $\alpha$.
+\item Explain why $cos~\beta$ has a maximum value of $1$.
+\item What can be said about the maximum value of $tan~\gamma$ ?
+}
+\end{exercises}
+
+
+\section{Reciprocal functions}
+Each of the three trigonometric functions has a reciprocal. The reciprocals are cosecant, secant and cotangent. These reciprocals are given below:
+
+\begin{equation*}
+\begin{array}{ccc}cosec~\theta & =& \dfrac{1}{sin~\theta } \vspace{3pt}\\
+ sec~\theta & =& \dfrac{1}{cos~\theta } \vspace{3pt}\\
+ cot~\theta & =& \dfrac{1}{tan~\theta }
+\end{array}
+\end{equation*}
+We can also define these reciprocals for any right angled triangle:
+
+\begin{equation*}
+\begin{array}{ccc}\hfill cosec~\theta & =& \frac{\mbox{hypotenuse}}{\mbox{opposite}}\hfill \vspace{3pt}\\
+ \hfill sec~\theta & =& \frac{\mbox{hypotenuse}}{\mbox{adjacent}}\hfill \vspace{3pt}\\
+ \hfill cot~\theta & =& \frac{\mbox{adjacent}}{\mbox{opposite}}\hfill 
+\end{array}
+\end{equation*}
+
+\section{Solving trigonometric equations}
+
+\begin{wex}{Finding Lengths}{Find the length of $x$ in the following triangle: \\
+\begin{center}
+\scalebox{1} 
+{
+\begin{pspicture}(0,-1.02)(4.655469,2.02)
+\psline[linewidth=0.04](4.0,-1.0)(1.0,-1.0)(4.0,2.0)(4.0,-1.0)
+\rput(2.0275,0.77){$100$}
+\psarc[linewidth=0.04](1.0,-1.0){1.0}{0.0}{45.0}
+\rput(1.6450001,-0.75){$50^{\circ}$}
+\rput(4.355,0.41){$x$}
+\psline[linewidth=0.04cm](3.6,-0.98)(3.6,-0.58)
+\psline[linewidth=0.04cm](3.6,-0.58)(4.0,-0.58)
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Identify the opposite and adjacent sides and the hypotenuse}
+\begin{equation*}
+\begin{array}{ccl}
+ 
+\hfill sin~\theta &=& \dfrac{\mbox{opposite}}{\mbox{hypotenuse}}  \hfill \vspace{5pt}\\
+\hfill sin~ 50^\circ &=& \dfrac{x}{100}  \hfill \\
+\end{array}
+\end{equation*}
+
+
+
+\westep{Rearrange the question to solve for $x$}
+\begin{equation*}
+ x=100 \times sin~50^{\circ}
+\end{equation*}
+
+\westep{Use your calculator to find the answer}
+\begin{equation*}
+x = 76.6
+\end{equation*}
+}
+\end{wex}
+
+
+
+
+The following videos provide a summary of what you have learnt so far.
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39408*trigonometry-1}
+\textnormal{Khan Academy video on trigonometry - 1}\vspace{.1in} \nopagebreak
+\label{m39408*yt-media}\label{m39408*yt-video}
+\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10102 )}
+\vspace{2pt}
+\vspace{.1in}
+\end{figure}       \par \label{m39408*eip-33}
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39408*trigonometry-2}
+\textnormal{Khan Academy video on trigonometry - 2}\vspace{.1in} \nopagebreak
+\label{m39408*yt-media2}\label{m39408*yt-video2}
+\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10103 )}
+\vspace{2pt}
+\vspace{.1in}
+\end{figure}       
+
+
+\begin{exercises}{}
+{
+
+\item In each triangle find the length of the side marked with a letter. Give answers correct to $2$ decimal places.
+\begin{center}
+\scalebox{0.85} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.11)(11.1198435,5)
+\psline[linewidth=0.04](4.974369,2.612122)(2.6350498,3.9603012)(0.6377475,0.49464345)(4.974369,2.612122)
+\psline[linewidth=0.04cm](2.8949742,3.8105037)(2.7451768,3.550579)
+\psline[linewidth=0.04cm](2.7451768,3.550579)(2.4852521,3.7003772)
+\psline[linewidth=0.04](4.557088,-3.2752385)(4.589271,-0.5754303)(0.5895552,-0.52775127)(4.557088,-3.2752385)
+\psline[linewidth=0.04cm](4.5856953,-0.8754088)(4.2857165,-0.87183315)
+\psline[linewidth=0.04cm](4.2857165,-0.87183315)(4.2892923,-0.5718545)
+\psline[linewidth=0.04](7.0587263,3.3569472)(6.922255,0.6603981)(10.917143,0.45821914)(7.0587263,3.3569472)
+\psline[linewidth=0.04cm](6.9374194,0.9600146)(7.2370353,0.94485116)
+\psline[linewidth=0.04cm](7.2370353,0.94485116)(7.2218714,0.64523476)
+\psline[linewidth=0.04](7.9354,-3.9493167)(10.598035,-3.9603012)(10.613694,-0.16448934)(7.9354,-3.9493167)
+\psline[linewidth=0.04cm](10.340361,-3.959238)(10.341382,-3.7116852)
+\psline[linewidth=0.04cm](10.341382,-3.7116852)(10.599056,-3.7127483)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.12453125,3.7196066){\textbf{1.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.133125,3.7396066){\textbf{2.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.11421875,-0.26039344){\textbf{3.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.1343746,-0.28039345){\textbf{4.}}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.197969,2.6346066){$37^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.0853126,1.2){$62$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3824998,2.5846066){$a$}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.804531,0.8146064){$23^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.595937,0.21460645){$21$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.663907,2.0646067){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2134376,-2.6453934){$ 55^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.166719,-2.1653934){$1$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.8759375,-1.8353934){$c$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.953907,-1.9653934){$33$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.22,-1.1453935){ $49^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.90422,-2.0153935){$d$}
+\end{pspicture}    
+}
+\end{center}
+
+
+
+
+\begin{center}
+ \scalebox{0.85} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.8416457)(11.207031,3.8216705)
+\psline[linewidth=0.04](2.3197074,3.8016455)(1.0997375,1.3929795)(4.668132,-0.4143837)(2.3197074,3.8016455)
+\psline[linewidth=0.04cm](1.2352896,1.6606089)(1.5029193,1.5250567)
+\psline[linewidth=0.04cm](1.5029193,1.5250567)(1.3673671,1.2574271)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.11234375,3.5211668){\textbf{5.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.084844,3.5211668){\textbf{6.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.14375,-0.39883313){\textbf{7.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.1403127,-0.498833){\textbf{8.}}
+\psline[linewidth=0.04](1.0870312,-0.6888331)(1.0870312,-3.3888335)(5.0870314,-3.3888335)(1.0870312,-0.6888331)
+\psline[linewidth=0.04cm](1.0870312,-3.0888333)(1.3870313,-3.0888333)
+\psline[linewidth=0.04cm](1.3870313,-3.0888333)(1.3870313,-3.3888335)
+\psline[linewidth=0.04](10.705838,-3.6336784)(10.738021,-0.93386954)(6.738305,-0.88619083)(10.705838,-3.6336784)
+\psline[linewidth=0.04cm](10.734446,-1.2338486)(10.434467,-1.2302725)
+\psline[linewidth=0.04cm](10.434467,-1.2302725)(10.438043,-0.9302939)
+\psline[linewidth=0.04](11.200404,0.87534267)(9.325028,2.8177538)(6.4473815,0.039416883)(11.200404,0.87534267)
+\psline[linewidth=0.04cm](9.533403,2.6019304)(9.31758,2.393555)
+\psline[linewidth=0.04cm](9.31758,2.393555)(9.109204,2.6093786)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.5887504,1.9261669){$e$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8853126,0.3161668){$17^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3671876,2.6761668){ $12$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.533282,0.51616687){$22^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.139219,0.2861668){$f$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.758125,1.7361668){ $31$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.028594,-1.683833){$32$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1132817,-3.123833){$23^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.949844,-3.6138332){$g$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.928438,-2.2538335){$h$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.7667193,-1.2438331){ $30^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.245001,-2.3038335){$20$}
+\end{pspicture} 
+}
+   
+\end{center}  
+\vspace{10pt}
+\item Write down two ratios for each of the following in terms of the sides: $AB$; $BC$; $BD$; $AD$; $DC$ and $AC$\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.2515883)(4.02125,1.2515885)
+\psline[linewidth=0.04,fillstyle=solid](0.019002499,-1.2315885)(0.009700612,1.2315885)(4.00125,-1.1902716)(0.039492033,-1.2120903)(0.039492033,-1.2120903)(0.0,-1.1911051)
+\psline[linewidth=0.04](0.009700612,-0.9884115)(0.20970061,-0.9884115)(0.20970061,-1.2284116)
+\psline[linewidth=0.04,fillstyle=solid](1.3697007,0.4315885)(0.049700614,-1.1684115)(0.049700614,-1.1484115)
+\psline[linewidth=0.04](1.2297006,0.2715885)(1.0697006,0.3515885)(1.1897006,0.5115885)
+\usefont{T1}{ptm}{m}{n}
+\rput(0,-1.5){$A$}
+\rput(0, 1.5){$B$}
+\rput(1.4, 0.7){$C$}
+\rput(4, -1.5){$D$}
+\end{pspicture} 
+}
+\end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+    \item $sin~\hat{B}$
+    \item $cos~\hat{B}$
+    \item $tan~\hat{B}$
+    \end{enumerate}
+\vspace{10pt}
+\item In $\triangle MNP$, $\hat{N}=90^{\circ}$, $MP=20$ and $\hat{P}=40^{\circ}$. Calculate $NP$ and $MN$ correct to $2$ decimal places.
+\end{enumerate}
+
+\par 
+\label{m39408*eip-403}
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lc1  & \end{tabular}
-\section{Finding an Angle}
-  \label{m39408*secfhsst!!!underscore!!!id1199}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.2:  Finding Angles }
-      \label{m39408*probfhsst!!!underscore!!!id1200}
-      \label{m39408*id81349}Find the value of $\theta $ in the following triangle.\par 
-      \label{m39408*id81364}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*id81368}
-    \begin{center}
-    \label{m39408*id81368!!!underscore!!!media}\label{m39408*id81368!!!underscore!!!printimage}\includegraphics[width=150px]{col11306.imgs/m39408_MG10C15_009.png} % m39408;MG10C15\_009.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
- \par 
-      \vspace{5pt}
-      \label{m39408*solfhsst!!!underscore!!!id1206}\noindent\textbf{Solution to Exercise } \label{m39408*listfhsst!!!underscore!!!id1206}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-      \label{m39408*id81396}In this case you have the opposite side and the hypotenuse to the angle $\theta $.\par 
-      \label{m39408*id81410}So you should use $tan$\par 
-      \label{m39408*id81425}\nopagebreak\noindent{}
-        
-    \begin{equation}
-    tan\theta =\frac{50}{100}\tag{14.15}
-      \end{equation}
-      \item  
-      \label{m39408*id81454}\nopagebreak\noindent{}
-    \begin{equation}
-    tan\theta =0.5\tag{14.16}
-      \end{equation}
-      \item  
-      \label{m39408*id81485}Since you are finding the \textsl{angle},\par 
-      \label{m39408*id81494}use ${tan}^{-1}$
- on your calculator\par 
-      \label{m39408*id81524}Don't forget to set your calculator to `deg' mode!\par 
-      \label{m39408*id81529}\nopagebreak\noindent{}
-    \begin{equation}
-    \theta =26.{6}^{\circ }\tag{14.17}
-      \end{equation}
-      \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-% \section{Special Angles}
-\section{Defining Ratios in the Cartesian Plane}
-\label{m39411*eip-945}
-%             \subsection{ The trig functions for any angle}
-            \nopagebreak
-            \label{m39411*eip-156}So far we have defined the trig functions using right angled triangles. We can now extend these definitions to any angle. We do this by noting that the definitions do not rely on the lengths of the sides of the triangle, but only on the angle. So if we plot any point on the Cartesian plane and then draw a line from the origin to that point, we can work out the angle of that line. In Figure~14.15 points P and Q have been plotted. A line from the origin to each point is drawn. The dotted lines show how we can construct right angle triangles for each point. Now we can find the angles A and B.
-\par \label{m39411*eip-970}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*id63458}
-    \begin{center}
-    \label{m39411*id63458!!!underscore!!!media}\label{m39411*id63458!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39411_trigfunc1.png} % m39411;trigfunc1.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \par \label{m39411*eip-9}You should find the angle A is $63,{43}^{\circ }$. For angle B, you first work out x ($33,{69}^{\circ }$) and then B is ${180}^{\circ }-33,{69}^{\circ }=146,{31}^{\circ }$. But what if we wanted to do this without working out these angles and figuring out whether to add or subtract 180 or 90? Can we use the trig functions to do this? Consider point P in Figure~14.15. To find the angle you would have used one of the trig functions, e.g. $\mathrm{tan}\phantom{\rule{1pt}{0ex}}\theta $. You should also have noted that the side adjacent to the angle was just the x-co-ordinate and that the side opposite the angle was just the y-co-ordinate. But what about the hypotenuse? Well, you can find that using Pythagoras since you have two sides of a right angled triangle. If we were to draw a circle centered on the origin, then the length from the origin to point P is the radius of the circle, which we denote r. Now we can rewrite all our trig functions in terms of x, y and r. But how does this help us to find angle B? Well, we know that from point Q to the origin is r, and we have the co-ordinates of Q. So we simply use the newly defined trig functions to find angle B! (Try it for yourself and confirm that you get the same answer as before.) One final point to note is that when we go anti-clockwise around the Cartesian plane the angles are positive and when we go clockwise around the Cartesian plane, the angles are negative. \par \label{m39411*eip-634}So we get the following definitions for the trig functions:
-\par \label{m39411*eip-169}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin\theta & =& \frac{x}{r}\hfill \\ \hfill cos\theta & =& \frac{y}{r}\hfill \\ \hfill tan\theta & =& \frac{y}{x}\hfill \end{array}\tag{14.20}
-      \end{equation}
-    \label{m39411*eip-102}But what if the x- or y-co-ordinate is negative? Do we ignore that, or is there some way to take that into account? The answer is that we do not ignore it. The sign in front of the x- or y-co-ordinate tells us whether or not sin, cos and tan are positive or negative. We divide the Cartesian plane into quadrants and then we can use Figure~14.16 to tell us whether the trig function is positive or negative. This diagram is known as the CAST diagram.\par \label{m39411*eip-216}
-    \setcounter{subfigure}{0}
-\section{CAST Diagram}
-\begin{figure}[H] % horizontal\label{m39411*id63358}
-    \begin{center}
-    \label{m39411*id63358!!!underscore!!!media}\label{m39411*id63358!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39411_CAST.png} % m39411;CAST.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \par \label{m39411*eip-927}We can also extend the definitions of the reciprocals in the same way:
+\par \begin{tabular}[h]{cccccc}
+(1.) lc1  & \end{tabular}
+}
+\end{exercises}
+
+\section{Finding an angle}
+ 
+\begin{wex}{Finding Angles}
+{
+Find the value of $\theta$ in the following triangle: \\
+\begin{center}
+\scalebox{1}  
+{ 
+\begin{pspicture}(0,-1.3465625)(4.9834375,2.02) 
+\psline[linewidth=0.04](4.0,-1.0)(1.0,-1.0)(4.0,2.0)(4.0,-1.0)(4.0,-1.0) 
+\usefont{T1}{ptm}{m}{n} 
+\rput(2.7546875,-1.19){$100$} 
+\usefont{T1}{ptm}{m}{n} 
+\rput(4.549844,0.61){$50$} 
+\usefont{T1}{ptm}{m}{n} 
+\rput(1.6235938,-0.69){$\theta$} 
+\psarc[linewidth=0.04](1.0,-1.0){1.0}{0.0}{44.06081} 
+\end{pspicture} 
+}
+\end{center} 
+}
+{
+
+\westep{Identify the opposite and adjacent sides and the hypotenuse}
+In this case you have the opposite side and the hypotenuse to the angle $\theta$. \\
+
+\begin{equation*}
+\begin{array}{ccl}
+ 
+\hfill tan~\theta &=& \dfrac{\mbox{opposite}}{\mbox{adjacent}}  \hfill \vspace{5pt}\\
+\hfill tann~ \theta = \dfrac{50}{100} \hfill \\
+\end{array}
+\end{equation*}
+
+\westep{Use your calculator to solve for $\theta$ }
+To solve for $\theta$, you will need to use the inverse function on your calculator: \vspace{10pt}
+\\
+Press \fbox{2ndF} \fbox{TAN} \fbox{(} \fbox{50} \fbox{\div} \fbox{100} \fbox{)} \fbox{\LARGE =} $26,6$
+\westep{Write the final answer}
+\begin{equation*}
+\theta = 26,6^{\circ}
+\end{equation*}
+
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+Determine the angle (correct to $1$ decimal place):
+   \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2}
+ \item $tan~\theta = 1,7$
+\item $sin~\theta = 0,8$
+\item $cos~\alpha = 0,32$
+\item $tan~\theta = 5\frac{3}{4}$
+\item $sin~\theta = \frac{2}{3}$
+\item $cos~\gamma = 1,2$
+\item $4~cos~\theta = 3$
+\item $cos~4\theta = 0,3$
+\item $sin~\beta + 2= 2,65$
+\item $sin~\theta = 0,8$
+\item $3 ~tan~\beta = 1$
+\item $sin~3\alpha = 1,2$
+\item $tan~(\frac{\theta}{3}) = sin~48^{\circ}$
+\item $\frac{1}{2}~cos~2\beta = 0,3$
+\item $2~sin~3\theta +1= 2,6$
+\end{multicols}
+\end{enumerate}
+
+Determine $\alpha$ in the following right-angled triangles:
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.09544)(7.3778124,4.11544)
+\rput(0, 3.5){\textbf{16.}}
+\rput(3.5, 3.5){\textbf{17.}}
+\rput(0, 0.5){\textbf{18.}}
+\rput(3.5, 0.5){\textbf{19.}}
+\rput(0, -2.0){\textbf{20.}}
+\rput(3.5, -2.0){\textbf{21.}}
+
+\psline[linewidth=0.04,fillstyle=solid](4.128174,1.8729398)(4.129576,3.6288338)(6.1603127,1.8929398)(4.142015,1.886768)(4.142015,1.886768)(4.115519,1.9018639)
+\psline[linewidth=0.04,fillstyle=solid](0.5403125,3.65763)(2.3103564,3.6592631)(0.5605087,1.053248)(0.5542749,3.644195)(0.5542749,3.644195)(0.5694489,3.669984)
+\psline[linewidth=0.04](0.8203125,3.6529398)(0.8203125,3.3529398)(0.5403125,3.3529398)
+\psline[linewidth=0.04](4.132775,2.1675723)(4.429114,2.1670742)(4.4286456,1.8924847)
+\psline[linewidth=0.04,fillstyle=solid](0.58817375,-1.2670602)(0.5895763,0.4888338)(2.6203125,-1.2470602)(0.60201496,-1.253232)(0.60201496,-1.253232)(0.57551914,-1.238136)
+\psline[linewidth=0.04](0.59277505,-0.9724278)(0.889114,-0.9729259)(0.88864577,-1.2475153)
+\psline[linewidth=0.04,fillstyle=solid](0.57534015,-2.0434144)(2.331222,-2.0367517)(0.6046739,-4.07544)(0.5892318,-2.0571918)(0.5892318,-2.0571918)(0.6042059,-2.030627)
+\psline[linewidth=0.04](0.8699906,-2.0466623)(0.8708536,-2.3430004)(0.5962649,-2.3437934)
+\psline[linewidth=0.04,fillstyle=solid](6.6796694,0.15482529)(6.7003126,-0.7470602)(4.0003123,0.15293981)(6.665639,0.14118928)(6.665639,0.14118928)(6.691924,0.12572935)
+\psline[linewidth=0.04](6.6710052,-0.13971564)(6.3803124,-0.12706019)(6.3789563,0.13942602)
+\psline[linewidth=0.04,fillstyle=solid](5.604427,-1.8435186)(6.7567835,-3.168373)(4.0853443,-3.193473)(5.603074,-1.8630371)(5.603074,-1.8630371)(5.632968,-1.8570147)
+\psline[linewidth=0.04](5.794496,-2.0686922)(5.570731,-2.2629762)(5.3907113,-2.05563)
+\psarc[linewidth=0.04](0.8103125,1.7829398){0.25}{0.0}{180.0}
+\rput{-133.21558}(5.0195303,8.417213){\psarc[linewidth=0.04](4.3303127,3.1229398){0.25}{0.0}{180.0}}
+\rput{81.6061}(0.6819361,-2.744066){\psarc[linewidth=0.04](1.9303125,-0.9770602){0.25}{0.0}{180.0}}
+\rput{-88.97797}(5.1797557,5.170933){\psarc[linewidth=0.04](5.22188,-0.051026292){0.18275598}{0.0}{180.0}}
+\psarc[linewidth=0.04](0.8503125,-3.47706){0.25}{0.0}{180.0}
+\rput{69.08539}(1.2813736,-7.6955576){\psarc[linewidth=0.04](6.2303123,-2.9170601){0.25}{0.0}{180.0}}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.4359375,3.9229398){$4$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.29078126,2.4629397){$9$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.470625,3.02294){$13$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.034219,1.5829399){$7,5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.75375,-0.057060193){$2,2$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.2096875,-0.4770602){$1,7$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.716875,0.4829398){$9,1$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.0603123,-0.3170602){$4,5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.26703125,-2.8770602){$12$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9092188,-3.1370602){$15$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.5784373,-2.3170602){$1$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.54375,-3.47706){$\sqrt{2}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.2634373,-2.93706){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7834375,-3.4970603){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9234375,-0.9970602){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.1634374,-0.017060194){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3034377,3.1429398){$\alpha$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7634375,1.8029398){$\alpha$}
+\end{pspicture} 
+}
+\end{center}
+}
+\end{exercises}
+
+
+\section{Defining ratios in the Cartesian plane}
+
+We have defined the trigonometric functions using right-angled triangles. We can extend these definitions to any angle, noting that the definitions do not rely on the lengths of the sides of the triangle, but only on the size of the angle. So if we plot any point on the Cartesian plane and then draw a line from the origin to that point, we can work out the angle of that line. Inthe figure below points $P$ and $Q$ have been plotted. A line from the origin ($O$) to each point is drawn. The dotted lines show how we can construct right angle triangles for each point. Now we can find the angles $A$ and $B$.We can also extend the definitions of the reciprocals in the same way:
 \label{m39411*id89342}\nopagebreak\noindent{}
 
-    \begin{equation}
-    \begin{array}{ccc}\hfill cosec\theta & =& \frac{r}{x}\hfill \\ \hfill sec\theta & =& \frac{r}{y}\hfill \\ \hfill cot\theta & =& \frac{x}{y}\hfill \end{array}\tag{14.21}
-      \end{equation}
+\setcounter{subfigure}{0}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.0784373)(9.84,4.1184373)
+\rput(4.0,-0.0784375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.004cm]{<->}(0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(4.04,-0.0584375)(6.94,1.8615625)
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(4.0,-0.0784375)(1.02,1.8815625)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](6.96,1.8615625)(6.96,-0.0984375)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.02,1.8015625)(1.02,-0.0584375)
+\psline[linewidth=0.04,fillstyle=solid](9.82,-1.0984375)(9.82,-1.0984375)(9.82,-1.0984375)(9.82,-1.0984375)
+\psline[linewidth=0.04,fillstyle=solid](1.02,0.2015625)(1.28,0.2015625)(1.28,-0.0384375)(1.28,-0.0584375)
+\psline[linewidth=0.04,fillstyle=solid](6.7,-0.0584375)(6.7,0.1815625)(6.96,0.1815625)(6.96,0.2015625)
+\rput{-279.77182}(2.8218253,-2.9484913){\psarc[linewidth=0.04](3.160762,0.20043099){0.48562816}{40.75301}{136.25127}}
+\rput{-56.56522}(1.9601717,3.1761396){\psarc[linewidth=0.04](3.9315972,-0.23347138){0.83129716}{66.93879}{193.12923}}
+\rput{-72.17863}(3.2203913,4.738851){\psarc[linewidth=0.04](4.860762,0.160431){0.48562816}{44.75812}{136.25127}}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.0403123,0.1915625){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2,-0.3){$O$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.273125,0.7915625){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9954689,0.2115625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.2570314,2.2315626){$P(2;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.9845312,2.1915624){$Q(-2;3)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.235469,0.1315625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.275781,3.9915626){$y$}
+\end{pspicture} 
+} 
+\end{center}
+From the coordinates of $P(2;3)$, we know the length of the side opposite $\hat{A}$ is $3$ and the length of the adjacent side is $2$. Using $tan~\hat{A}=\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}} = \frac{3}{2}$ we calculate that $\hat{A}=56,3^{\circ}$.\par
+
+We can also use the Theorem of Pythagoras to calculate the hypotenuse of the triangle and then calculate $\hat{A}$ using $sin~\hat{A} = \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}$ or $cos~\hat{A} = \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}}$. \par
+Consider point $Q(-2;3)$. We define $\hat{B}$ as the angle formed between the line $OQ$ and the positive $x$-axis. This is called the standard position of an angle. Let $\hat{x}$ be the angle formed between the line $OQ$ and the negative $x$-axis such that $\hat{B} + \hat{x} = 180^{\circ}$.
 \par
- \par
-            \label{m39411*eip-986}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.4: Finding the angle}\label{m39411*probfhsst!!!underscore!!!id182}
-        \label{m39411*id8189}Points R(-1;-3) and point S(3;-3) are plotted in the diagram below. Find the angles $\alpha $ and $\beta $. \par 
-        \label{m39411*id8128}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*id8199}
-    \begin{center}
-    \label{m39411*id8199!!!underscore!!!media}\label{m39411*id8199!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39411_qtrig.png} % m39411;qtrig.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-        \par 
-        \vspace{5pt}
-        \label{m39411*solfhsst!!!underscore!!!id194}\noindent\textbf{Solution to Exercise } \label{m39411*listfhsst!!!underscore!!!id194}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39411*id81936}We have the co-ordinates of the points R and S. We are required to find two angles. Angle $\beta $ is positive and angle $\alpha $ is negative.\par 
-        \item  
-        \label{m39411*id8267}We use tan to find $\beta $, since we are only given x and y. We note that we are in the third quadrant, where tan is positive.\par 
-        \label{m39411*id82128}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill tan\left(\beta \right)& =& \frac{y}{x}\hfill \\ \hfill tan\left(\beta \right)& =& \frac{-3}{-1}\hfill \\ \beta & =& {tan}^{-1}\left(3\right)\hfill \\ \beta & =& 71,{57}^{\circ }\hfill \end{array}\tag{14.22}
-      \end{equation}
-        \item  
-\label{m39411*id9732}We use tan to calculate $\alpha $, since we are only given x and y. We also note that we are in the fourth quadrant, where tan is positive.
-\par 
-        \label{m39411*id8254}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill tan\left(\alpha \right)& =& \frac{y}{x}\hfill \\ \hfill tan\left(\alpha \right)& =& \frac{-3}{3}\hfill \\ \alpha & =& {tan}^{-1}\left(-1\right)\hfill \\ \alpha & =& {-45}^{\circ }\hfill \end{array}\tag{14.23}
-      \end{equation}
-        \item  
-        \label{m39411*id827} Angle $\alpha $ is ${-45}^{\circ }$ and angle $\beta $ is $71,{57}^{\circ }$
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-  \label{m39411*eip-94}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }You should observe that in the worked example above, the angle $\alpha $ is simply the angle that line OS makes with the x-axis. So if you are asked to find out what angle a line makes with the x- or y-axes, then you can use trigonometry!
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-      \label{m39411*eip-797}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }The CAST diagram can be generalized to a very powerful tool for solving trigonometric functions by hand (that is, without a calculator) called \textsl{the unit circle}. You may or may not touch on this in Grade 11 or 12.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-      \label{m39411*eip-822}
-\section{Solving Trigonometric Equations}
-%  \section{ Solving simple trigonometric equations}
-            \nopagebreak
-            \label{m39411*eip-361}
-Using what we have learnt about trig functions we can now solve some simple trig equations. We use the principles from Equations and Inequalities\footnote{\raggedright{}"Equations and Inequalities - Grade 10 [CAPS]" <http://http://cnx.org/content/m38372/latest/>} to help us solve trig equations. 
-\par \label{m39411*eip-301}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\raisebox{-8 mm}{\hspace{-0.2in}\includegraphics[width=0.75in]{col11306.imgs/psfact2.png} } & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {note: }It is important to note that in general $2sin\theta \ne sin\left(2\theta \right)$. In other words doubling (or multiplying by 2) has a different effect from doubling the angle.
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-	\par
-      \label{m39411*eip-618}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.5}\label{m39411*eip-440}
-  \label{m39411*eip-811}
-   Solve the following trig equation: $3cos\left(2x+{38}^{\circ }\right)+3=2$
-  \par 
-\vspace{5pt}
-\label{m39411*eip-616}\noindent\textbf{Solution to Exercise }
- \label{m39411*id987324}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item 
-\label{m39411*id0832}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill 3cos\left(2x+{38}^{\circ }\right)& =& 2-3\hfill \\ \hfill cos\left(2x+{38}^{\circ }\right)& =& \frac{-1}{3}\hfill \\ \hfill \left(2x+{38}^{\circ }\right)& =& 107,{46}^{\circ }\hfill \\ \hfill 2x& =& 107,{46}^{\circ }-{38}^{\circ }\hfill \\ \hfill 2x& =& 69,{46}^{\circ }\hfill \\ \hfill x& =& 34,{73}^{\circ }\hfill \end{array}\tag{14.24}
-      \end{equation}
-\item 
-$x=34,{73}^{\circ }$
+
+From the coordinates of $Q(-2;3)$, we know the length of the side opposite $\hat{x}$ is $3$ and the length of the adjacent side is $2$. Using $tan~\hat{x}=\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}} = \frac{3}{2}$ we calculate that $\hat{x}=56,3^{\circ}$.
+\\Therefore $\hat{B}=180^{\circ} - \hat{x} = 123,7^{\circ}$.\par
+
+Similarly, an alternative method is to calculate the hypotenuse using the Theorem of Pythagoras and calculate $\hat{x}$ using $sin~\hat{x} = \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}$ or $cos~\hat{x} = \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}}$. \par
+If we were to draw a circle centered on the origin, then the length from the origin to point $P$ is the radius of the circle, which we denote $r$. We can rewrite all the trigonometric functions in terms of $x$, $y$ and $r$.
+
+
+% You should find the angle $A$ is $63,{43}^{\circ }$. For angle B, you first work out x ($33,{69}^{\circ }$) and then B is ${180}^{\circ }-33,{69}^{\circ }=146,{31}^{\circ }$. But what if we wanted to do this without working out these angles and figuring out whether to add or subtract 180 or 90? Can we use the trig functions to do this? Consider point P in Figure~14.15. To find the angle you would have used one of the trig functions, e.g. $\mathrm{tan}\phantom{\rule{1pt}{0ex}}\theta $. You should also have noted that the side adjacent to the angle was just the x-co-ordinate and that the side opposite the angle was just the y-co-ordinate. But what about the hypotenuse? Well, you can find that using Pythagoras since you have two sides of a right angled triangle. If we were to draw a circle centered on the origin, then the length from the origin to point P is the radius of the circle, which we denote r. Now we can rewrite all our trig functions in terms of x, y and r. But how does this help us to find angle B? Well, we know that from point Q to the origin is r, and we have the co-ordinates of Q. So we simply use the newly defined trig functions to find angle B! (Try it for yourself and confirm that you get the same answer as before.) One final point to note is that when we go anti-clockwise around the Cartesian plane the angles are positive and when we go clockwise around the Cartesian plane, the angles are negative. \par \label{m39411*eip-634}
+% \par
+
+The general definitions for the trigonometric functions are:
+
+\begin{equation*}
+\begin{array}{cccccc}\hfill sin~\theta & =& \frac{y}{r}\hfill & cosec~\theta & =& \frac{r}{y}\hfill \\
+ \hfill cos~\theta & =& \frac{x}{r}\hfill & sec~\theta & =& \frac{r}{x}\hfill \\
+ \hfill tan~\theta & =& \frac{y}{x}\hfill & cot~\theta & =& \frac{x}{y}\hfill \end{array}
+\end{equation*}
+\Note{In trigonometry angles are always measured from the positive $x$-axis in an anti-clockwise direction.}
+
+The Cartesian plane is divided into $4$ quadrants in an anti-clockwise direction as shown in the diagram below. The letters $C$, $A$, $S$ and $T$ indicate which of the trigonometric functions are positive in that quadrant: \\
+\\
+Quadrant I: All ratios are positive\\
+Quadrant II: $y$ values are positive therefore $sin$ and $cosec$ are positive\\
+Quadrant III: Both $x$ and $y$ values are negative therefore $tan$ and $cot$ are positive \\
+Quadrant IV: $x$ values are positive therefore $cos$ and $sec$ are positive.\par
+
+
+\Note{$r$ is a length and therefore is always positive.}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.1584377)(8.42125,4.1984377)
+\rput(4.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-4,-4)(4,4)}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.0853124,2.2715626){Quadrant I}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.7453125,2.3115625){Quadrant II}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8053125,-2.3084376){Quadrant III}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.3515625,-2.2684374){Quadrant IV}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7403126,0.8315625){A }
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7723436,0.4315625){all}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2923439,0.8515625){S}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2390625,0.4715625){$sin$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.2109375,-0.8484375){T}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.1639063,-1.1684375){$tan$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7857814,-0.8484375){C}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.815,-1.1484375){$cos$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.275469,-0.1084375){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1557813,4.0715623){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.810625,0.0715625){$0^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.60875,-0.4484375){$360^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3410935,3.5515625){$90^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.32265624,0.0715625){$180^{\circ}$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.529375,-3.9084375){$270^{\circ}$}
+
+\usefont{T1}{ptm}{m}{n}
+\rput(4.170625,-0.4084375){$0$}
+\end{pspicture} 
+}
+\end{center}
+\\
+ This diagram is known as the CAST diagram.
+
+
+\begin{wex}{Ratios in the Cartesian plane}
+{$P(-3;4)$ is a point in the Cartesian plane. $X\hat{O}P=\theta$. Without using a calculator, determine the value of:
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+   \item $cos~\theta$
+\item $3~tan~\theta$
+\item $\frac{1}{2}~cosec~\theta$
+  \end{enumerate}
+}
+
+{
+\westep{Sketch point $P$ in the Cartesian plane and label $\theta$} 
+% DIAGRAM NEEDED HERE
+\westep{Use Pythagoras to calculate $r$}
+\begin{equation*}
+ \begin{array}{ccl}
+    \hfill r^{2} &= & x^{2} + y^{2} \hfill \\
+\hfill  &=& (-3)^{2} + (4)^{2} \hfill \\
+\hfill  &=& 25 \hfill \\
+\hfill r &=& \pm 5\hfill \\
+\hfill \therefore r &=& 5 \hfill \\ 
+\end{array}
+\end{equation*}
+\westep{Substitute values for $x$, $y$ and $r$ into the required ratios}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+   \item $cos~\theta = \dfrac{x}{r} = -\dfrac{3}{5} \vspace{5pt}$
+\item $3~tan~\theta = 3\Big(\dfrac{y}{x}\Big) = 3\Big(\dfrac{4}{-3}\Big) = -4 \vspace{5pt}$
+\item $\dfrac{1}{2}~cosec~\theta = \dfrac{1}{2}\Big(\dfrac{r}{y}\Big) = \dfrac{1}{2}\Big(\dfrac{5}{4}\Big) = \dfrac{5}{8} \vspace{5pt}$
+  \end{enumerate}
+}
+\end{wex}
+
+
+\begin{wex}{Ratios in the Cartesian plane}{
+$X\hat{O}K = \theta$ is an angle in the third quadrant and $K$ is the point $(-5;y)$. $OK$ is $13$ units. Determine without using a calculator:
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+   \item The value of $y$
+\item Prove that $tan^{2}~\theta + 1 = sec^{2}~\theta$
+  \end{enumerate}
+}
+
+{
+\westep{Sketch point $K$ in the Cartesian plane and label $\theta$} 
+% DIAGRAM NEEDED HERE
+\westep{Use Pythagoras to calculate $y$}
+\begin{equation*}
+ \begin{array}{ccl}
+    \hfill r^{2} &= & x^{2} + y^{2} \hfill \\
+\hfill y^{2} &=& r^{2} - x^{2}\hfill \\
+\hfill  &=& (13)^{2} - (-5)^{2} \hfill \\
+\hfill  &=& 169-25 \hfill \\
+\hfill  &=& 144 \hfill \\
+\hfill  &=& \pm 12\hfill 
+
+\end{array}
+\end{equation*}
+Given that $\theta$ lies in the third quadrant, $y$ must be negative.\\
+\begin{equation*}
+ \therefore y = -12
+\end{equation*}
+
+\westep{Substitute values for $x$, $y$ and $r$ and simplify}
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill tan^{2}~\theta + 1 &=& sec^{2}~\theta \hfill \\
+\hfill \Big(\dfrac{x}{y}\Big)^{2} + 1 &=& \Big(\dfrac{r}{x}\Big)^{2} \hfill \vspace{5pt} \\
+\hfill \Big(\dfrac{-12}{-5}\Big)^{2} + 1 &=& \Big(\dfrac{13}{-5}\Big)^{2} \hfill \vspace{5pt}\\
+\hfill \Big (\dfrac{144}{25}\Big) + 1 &=& \Big(\dfrac{169}{25}\Big)^{2} \hfill \vspace{5pt}\\
+\hfill \dfrac{144 + 25}{25} &=& \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill \dfrac{169}{25} &=& \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill \therefore \mbox{LHS} &=& \mbox{RHS} \hfill
+
+\end{array}
+\end{equation*}
+
+}
+\end{wex}
+
+\Tip{Whenever you have to solve trigonometric problems without a calculator, always make a sketch.}
+
+\begin{exercises}{}
+{
+$B$ is a point in the Cartesian plane. Determine without using a calculator:
+% DIAGRAM NEEDED HERE
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item $OB$
+\item $cos~\beta$
+\item $cosec~\beta$
+\item $tan~\beta$
 \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-  \label{m39411*eip-858}
-\begin{tabular}{cc}
-	\hspace*{-50pt}\includegraphics[width=0.5in]{col11306.imgs/psbulb2.png}  & 
-	\begin{minipage}{0.85\textwidth}
-	\begin{note}
-      {aside: }In grade 11 and 12, you will learn more about solving trig equations. 
-	\end{note}
-	\end{minipage}
-	\end{tabular}
-\section{Applications}
- \label{m39411*id81626}Trigonometry was probably invented in ancient civilisations to solve practical problems such as building construction and navigating by the stars. In this section we will show how trigonometry can be used to solve some other practical problems.\par 
-            \subsection{ Two-dimensional problems}
-            \nopagebreak
-            \label{m39408*eip-153}
-We can use the trig functions to solve problems in two dimensions that involve right angled triangles. For example if you are given a quadrilateral and asked to find the one of the angles, you can construct a right angled triangle and use the trig functions to solve for the angle. This will become clearer after working through the following example.
-\par \label{m39408*eip-187}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.3}\label{m39408*eip-532}
-  \label{m39408*eip-716}Let ABCD be a trapezium with $\mathrm{AB}=4\phantom{\rule{1pt}{0ex}}\mathrm{cm}$, $\mathrm{CD}=6\phantom{\rule{1pt}{0ex}}\mathrm{cm}$, $\mathrm{BC}=5\phantom{\rule{1pt}{0ex}}\mathrm{cm}$ and $\mathrm{AD}=5\phantom{\rule{1pt}{0ex}}\mathrm{cm}$. Point E on diagonal AC divides the diagonal such that $\mathrm{AE}=3\phantom{\rule{1pt}{0ex}}\mathrm{cm}$. Find $A\hat{B}C$.
-  \par 
-\vspace{5pt}
-\label{m39408*eip-325}\noindent\textbf{Solution to Exercise }
-\label{m39408*listfhsst!!!underscore!!!id1932}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item 
-We draw a diagram and construct right angled triangles to help us visualize the problem.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39408*fid9827}
-    \begin{center}
-    \label{m39408*id81601!!!underscore!!!media}\label{m39408*id81601!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39408_q1trig.png} % ;q1trig.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       \item We will use triangle ABE and triangle BEC to get the two angles, and then we will add these two angles together to find the angle we want.\item We use sin for both triangles since we have the hypotenuse and the opposite side.\item In triangle ABE we find:
-\label{m39408*eid824}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin\left(A\hat{B}E\right)& =& \frac{\mathrm{opp}}{\mathrm{hyp}}\hfill \\ \hfill sin\left(A\hat{B}E\right)& =& \frac{3}{4}\hfill \\ A\hat{B}E& =& {sin}^{-1}\left(\frac{3}{4}\right)\hfill \\ A\hat{B}E& =& {48,59}^{\circ }\hfill \end{array}\tag{14.18}
-      \end{equation}
-We use the theorem of Pythagoras to find $\mathrm{EC}=4,4\phantom{\rule{1pt}{0ex}}\mathrm{cm}$.
-In triangle BEC we find:
-\label{m39408*eid82344}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill sin\left(C\hat{B}E\right)& =& \frac{\mathrm{opp}}{\mathrm{hyp}}\hfill \\ \hfill sin\left(C\hat{B}E\right)& =& \frac{4,4}{5}\hfill \\ A\hat{B}E& =& {sin}^{-1}\left(\frac{4,4}{5}\right)\hfill \\ C\hat{B}E& =& {61,64}^{\circ }\hfill \end{array}\tag{14.19}
-      \end{equation}
-\item We add the two angles together to get: ${48,59}^{\circ }+{61,64}^{\circ }={110,23}^{\circ }$\end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-  \label{m39408**end}
-%          \section{ The trig functions for any angle and applications}
-%     \nopagebreak
-%             \label{m39411} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10104 )} \par 
-%     
-%     
-%     
-% 	\par
-%       \label{m39411*cid6}
-%             \subsection{ Simple Applications of Trigonometric Functions}
-%             \nopagebreak
-%             
-       \label{m39411*uid25}
-            \subsection{ Height and Depth}
-            \nopagebreak
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*uid26}
-    \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39411*uid26!!!underscore!!!media}\label{m39411*uid26!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39411_MG10C15_012.png} % m39411;MG10C15\_012.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{\rubberspace}\par \begin{cnxcaption}
-	  \small \textbf{Figure 14.18: }Determining the height of a building using trigonometry.
-	\end{cnxcaption}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-    \end{center}
- \end{figure}       
-        \label{m39411*id81653}One simple task is to find the height of a building by using trigonometry. We could just use a tape measure lowered from the roof, but this is impractical (and dangerous) for tall buildings. It is much more sensible to measure a distance along the ground and use trigonometry to find the height of the building.\par 
-        \label{m39411*id81658}Figure~14.18 shows a building whose height we do not know. We have walked 100~m away from the building and measured the angle from the ground up to the top of the building. This angle is found to be $38,{7}^{\circ }$. We call this angle the \textsl{angle of elevation}. As you can see from Figure~14.18, we now have a right-angled triangle. As we know the length of one side and an angle, we can calculate the height of the triangle, which is the height of the building we are trying to find.\par 
-        \label{m39411*id81702}If we examine the figure, we see that we have the \textsl{opposite} and the \textsl{adjacent} of the angle of elevation and we can write:\par 
-        \label{m39411*id81717}\nopagebreak\noindent{}
-    \begin{equation}
-    \begin{array}{ccc}\hfill tan38,{7}^{\circ }& =& \frac{\mathrm{opposite}}{\mathrm{adjacent}}\hfill \\ & =& \frac{\mathrm{height}}{100\phantom{\rule{0.166667em}{0ex}}\mathrm{m}}\hfill \\ \hfill \mathrm{height}& =& 100\phantom{\rule{0.166667em}{0ex}}\mathrm{m}\ensuremath{\times}tan38,{7}^{\circ }\hfill \\ & =& 80\phantom{\rule{0.166667em}{0ex}}\mathrm{m}\hfill \end{array}\tag{14.25}
-      \end{equation}
-\par
-            \label{m39411*secfhsst!!!underscore!!!id1381}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.6:  Height of a tower }
-        \label{m39411*probfhsst!!!underscore!!!id1382}
-        \label{m39411*id81869}A block of flats is 100m away from a cellphone tower. Someone stands at $B$. They measure the angle from $B$ up to the top of the tower $E$ to be 62 ${}^{\circ }$. This is the angle of elevation. They then measure the angle from $B$ down to the bottom of the tower at $C$ to be 34 ${}^{\circ }$. This is the angle of depression.What is the height of the cellph one tower correct to 1 decimal place?\par 
-        \label{m39411*id81948}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*id81949}
-    \begin{center}
-    \label{m39411*id81949!!!underscore!!!media}\label{m39411*id81949!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39411_MG10C15_013.png} % m39411;MG10C15\_013.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-        \par 
-        \vspace{5pt}
-        \label{m39411*solfhsst!!!underscore!!!id1394}\noindent\textbf{Solution to Exercise } \label{m39411*listfhsst!!!underscore!!!id1394}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39411*id81976}To find the height of the tower, all we have to do is find the length of $CD$ and $DE$. We see that $▵BDE$ and $▵BDC$ are both right-angled triangles. For each of the triangles, we have an angle and we have the length $AD$. Thus we can calculate the sides of the triangles.\par 
-        \item  
-        \label{m39411*id82067}We are given that the length $AC$ is 100m. $CABD$ is a rectangle so $BD\phantom{\rule{4pt}{0ex}}=\phantom{\rule{4pt}{0ex}}AC\phantom{\rule{4pt}{0ex}}=\phantom{\rule{4pt}{0ex}}100\mathrm{m}$.\par 
-        \label{m39411*id82138}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill tan\left(C\hat{B}D\right)& =& \frac{CD}{BD}\hfill \\ \hfill \ensuremath{\Rightarrow}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}CD& =& BD\ensuremath{\times}tan\left(C\hat{B}D\right)\hfill \\ & =& 100\ensuremath{\times}tan{34}^{\circ }\hfill \end{array}\tag{14.26}
-      \end{equation}
-        \label{m39411*id82283}Use your calculator to find that $tan{34}^{\circ }=0,6745$. Using this, we find that $CD=67,45$m\par 
-        \item  
-        \label{m39411*id82354}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill tan\left(D\hat{B}E\right)& =& \frac{DE}{BD}\hfill \\ \hfill \ensuremath{\Rightarrow}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}DE& =& BD\ensuremath{\times}tan\left(D\hat{B}E\right)\hfill \\ & =& 100\ensuremath{\times}tan{62}^{\circ }\hfill \\ & =& 188,07\phantom{\rule{0.166667em}{0ex}}\mathrm{m}\hfill \end{array}\tag{14.27}
-      \end{equation}
-        \item  
-        \label{m39411*id82527}We have that the height of the tower
-$CE=CD+DE=67,45\phantom{\rule{0.166667em}{0ex}}\mathrm{m}+188,07\phantom{\rule{0.166667em}{0ex}}\mathrm{m}=255.5\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$.
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-      \label{m39411*uid27}
-            \subsection{ Maps and Plans}
-            \nopagebreak
-        \label{m39411*id82626}Maps and plans are usually scale drawings. This means that they are an exact copy of the real thing, but are usually smaller. So, only lengths are changed, but all angles are the same. We can use this idea to make use of maps and plans by adding information from the real world.\par 
-\label{m39411*secfhsst!!!underscore!!!id1596}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.7:  Scale Drawing }
-        \label{m39411*probfhsst!!!underscore!!!id1597}
-        \label{m39411*id82645}A ship approaching Cape Town Harbour reaches point A on the map, due south of Pretoria and due east of Cape Town. If the distance from Cape Town to Pretoria is 1000km, use trigonometry to find out how far east the ship is from Cape Town, and hence find the scale of the map.\par 
-        \label{m39411*id82652}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*id82657}
-    \begin{center}
-    \label{m39411*id82657!!!underscore!!!media}\label{m39411*id82657!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39411_MG10C15_014.png} % m39411;MG10C15\_014.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-        \par 
-        \vspace{5pt}
-        \label{m39411*solfhsst!!!underscore!!!id1611}\noindent\textbf{Solution to Exercise } \label{m39411*listfhsst!!!underscore!!!id1611}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39411*id82688}We already know the distance between Cape Town and $A$ in blocks from the given map (it is 5 blocks). Thus if we work out how many kilometers this same distance is, we can calculate how many kilometers each block represents, and thus we have the scale of the map.\par 
-        \item  
-        \label{m39411*id82707}Let us denote Cape Town with $C$ and Pretoria with $P$.
-We can see that triangle $APC$ is a right-angled triangle. Furthermore, we see that the distance $AC$ and distance $AP$ are both 5 blocks. Thus it is an isoceles triangle, and so $A\hat{C}P=A\hat{P}C={45}^{\circ }$.\par 
-        \item  
-        \label{m39411*id82816}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{cc}\hfill CA=& CP\ensuremath{\times}cos\left(A\hat{C}P\right)\\ \hfill =& 1000\ensuremath{\times}cos\left({45}^{\circ }\right)\\ \hfill =& \frac{1000}{\sqrt{2}}\phantom{\rule{0.166667em}{0ex}}\mathrm{km}\end{array}\tag{14.28}
-      \end{equation}
-        \label{m39411*id82923}To work out the scale, we see that\par 
-        \label{m39411*id82929}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{cc}\hfill 5\phantom{\rule{4pt}{0ex}}\text{blocks}=& \frac{1000}{\sqrt{2}}\phantom{\rule{0.166667em}{0ex}}\text{km}\\ \hfill \ensuremath{\Rightarrow}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}\phantom{\rule{4pt}{0ex}}1\phantom{\rule{4pt}{0ex}}\text{block}=& \frac{200}{\sqrt{2}}\phantom{\rule{0.166667em}{0ex}}\text{km}\end{array}\tag{14.29}
-      \end{equation}
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-\par
-            \label{m39411*secfhsst!!!underscore!!!id1745}\vspace{.5cm} 
-      \noindent
-      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
-      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
-      \begin{exercise}
-    \noindent\textbf{Exercise 14.8:  Building plan }
-        \label{m39411*probfhsst!!!underscore!!!id1746}
-        \label{m39411*id83053}Mr Nkosi has a garage at his house, and he decides that he wants to add a corrugated iron roof to the side of the garage. The garage is 4m high, and his sheet for the roof is 5m long. If he wants the roof to be at an angle of ${5}^{\circ }$, how high must he build the wall $BD$, which is holding up the roof? Give the answer to 2 decimal places.\par 
-        \label{m39411*id83089}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39411*id83090}
-    \begin{center}
-    \label{m39411*id83090!!!underscore!!!media}\label{m39411*id83090!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39411_MG10C15_015.png} % m39411;MG10C15\_015.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-        \par 
-        \vspace{5pt}
-        \label{m39411*solfhsst!!!underscore!!!id1758}\noindent\textbf{Solution to Exercise } \label{m39411*listfhsst!!!underscore!!!id1758}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
-            \leftskip=20pt\rightskip=\leftskip\item  
-        \label{m39411*id83116}We see that the triangle $ABC$ is a right-angled triangle. As we have one side and an angle of this triangle, we can calculate $AC$. The height of the wall is then the height of the garage minus $AC$.\par 
-        \item  
-        \label{m39411*id83164}If $BC$=5m, and angle $A\hat{B}C={5}^{\circ }$, then\par 
-        \label{m39411*id83209}\nopagebreak\noindent{}
-          
-    \begin{equation}
-    \begin{array}{ccc}\hfill AC& =& BC\ensuremath{\times}sin\left(A\hat{B}C\right)\hfill \\ & =& 5\ensuremath{\times}sin{5}^{\circ }\hfill \\ & =& 5\ensuremath{\times}0,0871\hfill \\ & =& 0.4358\phantom{\rule{0.166667em}{0ex}}\mathrm{m}\hfill \end{array}\tag{14.30}
-      \end{equation}
-        \label{m39411*id83338}Thus we have that the height of the wall $BD=4\phantom{\rule{0.166667em}{0ex}}\mathrm{m}-0.4358\phantom{\rule{0.166667em}{0ex}}\mathrm{m}=3.56\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$.
- \par 
-        \end{enumerate}
-    \end{exercise}
-    \end{mdframed}
-    }
-    \noindent
-\label{m39411*secfhsst!!!underscore!!!id1847}
-            \subsection{ Exercise: Applications of Trigonometric Functions }
-            \nopagebreak
-        \label{m39411*id83420}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39411*uid28}\item A boy flying a kite is standing 30~m from a point directly under the
-kite. If the string to the kite is 50~m long, find the angle of
-elevation of the kite.\newline
-\label{m39411*uid29}\item What is the angle of elevation of the sun when a tree 7,15 m tall
-casts a shadow 10,1 m long?\newline
+
+\vspace{10pt}
+If $sin~\theta= 0,4$ and $\theta$ is an obtuse angle, determine:\label{m39408*eip-325}\noindent\textbf{Solution to Exercise }
+\label{m39408*listfhsst!!!underscore!!!id1932}\begin{enumerate}
+
+%DIAGRAM NEEDED HERE
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item $cos~\theta$
+\item $\sqrt{21}~tan~\theta$
+
 \end{enumerate}
-  \label{m39411**end}
+}
+\end{exercises}
+
+\section{Two-dimensional problems}
+Trigonometry was developed in ancient civilisations to solve practical problems such as building construction and navigating by the stars. In this section we will show how trigonometry can be used to solve some other practical problems. We use the trig functions to solve problems in two dimensions that involve right angled triangles. 
+
+\begin{wex}{Flying a kite}
+{Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item What is the height ($h$) of the kite above Mandla's head?
+\item If Mandla's friend Sipho stands directly below the kite, calculate the distance ($d$) between the two friends. 
+\end{enumerate}
+}
+{
+\westep{Make a sketch and identify the opposite and adjacent sides and the hypotenuse}
+%DIAGRAM NEEDED HERE 
+
+\westep{Use given information to determine appropriate ratio}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill sin~63^{\circ} &= & \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
+\hfill sin~63^{\circ} &=& \dfrac{h}{17} \hfill \\
+\hfill \therefore h &= & 17~sin ~63^{\circ} \hfill \\
+\hfill &=& 15,15~\mbox{m} \hfill \\
+   \end{array}
+\end{equation*}
+
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill cos~63^{\circ} &= & \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
+\hfill cos~63^{\circ} &=& \dfrac{d}{17} \hfill \\
+\hfill \therefore d &= & 17~cos ~63^{\circ} \hfill \\
+\hfill  &=& 7,72~\mbox{m} \hfill \\
+\end{array}
+\end{equation*}
+\end{enumerate}
+Note that the third side of the triangle can also be calculated using the Theorem of Pythagoras: $d^{2} = 17^{2} - h^{2}$.
+
+\westep{Write final answer}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item The kite is $15,15$ m above Mandla's head.
+\item Mandla and Sipho are $7,72$ m apart.
+\end{enumerate}
+}
+ 
+\end{wex}
+
+\begin{wex}
+{Calculating angles}
+{
+ABCD be a trapezium with $AB=4\mbox{cm}$, $CD=6\mbox{cm}$, $BC=5\mbox{cm}$ and $AD=5\mbox{cm}$. Point $E$ on diagonal $AC$ divides the diagonal such that $AE=3\mbox{cm}$. Find $A\hat{B}C$.
+}
+{
+\westep{Draw trapezium and label all given lengths on diagram. Indicate that $\hat{E}$ is a right-angle.}
+% \DIAGRAM NEEDED HERE - EXISTING ONE ONLY IN PNG & IT`S WRONG!!!
+
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39408*fid9827}
+% \begin{center}
+% \label{m39408*id81601!!!underscore!!!media}\label{m39408*id81601!!!underscore!!!printimage}\includegraphics[width=200px]{col11306.imgs/m39408_q1trig.png} % ;q1trig.png;;;6.0;8.5;
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{center}
+% \end{figure}       
+
+\westep{Use $\triangle ABE$ and $\triangle BEC$ to determine the two angles at $\hat{B}$} 
+
+\westep{Find the first angle $A\hat{B}E$}
+Hypotenuse and opposite side are given for both triangles, therefore use $sin$ function:
+In $\triangle ABE$, \\
+
+\begin{equation*}
+\begin{array}{ccl}\hfill sin~(A\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
+ \hfill & =& \dfrac{3}{4}\hfill \\
+ \therefore A\hat{B}E& =& {48,59}^{\circ }\hfill 
+\end{array}
+\end{equation*}
+
+\westep{Use Theorem of Pythagoras to determine $EC$}
+In $\triangle ABE$, \\
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill BE^{2} &=& AB^{2} - AE^{2} \hfill \\
+\hfill &=& 4^{2} - 3^{2} \hfill \\
+\hfill &=& 5 \hfill \\
+\end{array}
+\end{equation*}
+
+In $\triangle BEC$, \\
+
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill EC^{2} &=& BC^{2} - BE^{2} \hfill \\
+\hfill &=& 5^{2} - 5 \hfill \\
+\hfill &=& 20 \hfill \\
+\therefore EC &=& 4,47 \hfill
+\end{array}
+\end{equation*}
+
+\westep{Find the second angle $C\hat{B}E$}
+In $\triangle BEC$ 
+\begin{equation*}
+\begin{array}{ccl}\hfill sin~(C\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
+ \hfill & =& \dfrac{4,47}{5}\hfill \\
+ \therefore C\hat{B}E& =& {61,64}^{\circ }\hfill 
+\end{array}
+\end{equation*}
+
+\westep{Calculate the sum of the angles}
+\begin{equation*}
+A\hat{B}C = 48,59^{\circ} + 61,64^{\circ} = 110,23^{\circ}
+\end{equation*}
+}
+\end{wex}
+
+
+
+  
+Another application is using trigonometry to find the height of a building. We could use a tape measure lowered from the roof, but this is impractical (and dangerous) for tall buildings. It is much more sensible to use trigonometry to find the height of the building.\par 
+
+\begin{wex}{Finding the height of a building}
+{
+% \setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(0,-0.5)(7,4)
+\psframe[fillstyle=crosshatch, hatchangle=180](5,0)(7,4)
+\psline[](0,0)(5,0)
+\psline[linestyle=dashed](0,0)(5,4)
+\pswedge[]{0.6}{0}{38.66}
+\rput(2.5,-0.3){$100$ m}
+\rput(1.1,0.3){$38.7^\circ$}
+\end{pspicture}
+\end{center}
+\\
+
+% \end{figure}
+% \caption{Determining the height of a building using trigonometry.}
+% \label{trig:height}
+
+The given diagram shows a building of unknown height $h$. If we $(Q)$ walk $100$ m away from the building $(B)$ and measure the angle from the ground to the top of the building $(T)$, the angle is found to be $38,{7}^{\circ }$. This is called the angle of elevation. We have a right-angled triangle and know the length of one side and an angle. We can therefore calculate the height of the building.}
+{
+\westep{Identify the opposite and adjacent sides and the hypotenuse}
+
+\westep{}
+In $\triangle QTB$, \\
+\begin{equation*}
+\begin{array}{ccl}\hfill tan~38,7^{\circ }& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}\hfill \\
+ & =& \dfrac{h}{100}\hfill \\
+  \end{array}
+\end{equation*}
+\westep{Rearrange and solve for $h$}
+
+\begin{equation*}
+\begin{array}{ccl}
+
+\hfill h& =& 100\times}tan~38,7^{\circ }\hfill \\
+& =& 80\hfill
+  \end{array}
+\end{equation*}
+
+\westep{Write final answer}
+The height of the building in $80$ m.
+}
+\end{wex}
+
+
+\begin{wex}{Angles of elevation and depression}
+{A block of flats is $200$ m away from a cellphone tower. Someone stands at $B$. They measure the angle from $B$ up to the top of the tower $E$ to be $62^{\circ}$ (the angle of elevation). They then measure the angle from $B$ down to the bottom of the tower at $C$ to be $34^{\circ}$ (the angle of depression).
+\\What is the height of the cellphone tower correct to the nearest metre?\\
+
+\\
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.8445313)(10.7125,3.8445313)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color353b}{rgb}{0.6,0.6,0.6}
+\definecolor{color649b}{rgb}{0.8,0.8,1.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid](2.3,0.83953124)(0.18,-3.2204688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-0.30046874)(0.4,-0.7004688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-0.32046875)(1.1,-0.72046876)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.0404687)(0.4,-1.4404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,0.47953126)(0.4,0.07953125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,0.47953126)(1.1,0.07953125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,0.47953126)(1.8,0.07953125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-0.32046875)(1.8,-0.72046876)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.0404687)(1.1,-1.4404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.0404687)(1.8,-1.4404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.7404687)(0.4,-2.1404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.7404687)(1.1,-2.1404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.7404687)(1.8,-2.1404688)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](0.5,-2.6204689)(0.2,-3.2204688)
+\pscircle[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=gradient,gradlines=2000,gradmidpoint=1.0](0.35,-2.8704689){0.05}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](10.2,2.2795312)(10.0,-3.2204688)
+\psline[linewidth=0.04cm,linecolor=color194](10.1,3.2795312)(10.1,2.2795312)
+\psline[linewidth=0.04cm,linecolor=color194](4.8,0.77953124)(4.8,0.77953124)
+\psline[linewidth=0.025999999cm,linecolor=color194](2.24,0.81953126)(9.98,-3.1804688)
+\psline[linewidth=0.024cm,linecolor=color194](2.28,0.83953124)(10.12,3.2795312)
+\psdots[dotsize=0.12,linecolor=color194](10.1,3.2795312)
+\psline[linewidth=0.024cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](2.26,0.81953126)(10.02,0.81953126)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.5395312,-2.9804688){$ A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.28125,1.1795312){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.521406,-3.1804688){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.553281,0.81953126){$D$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.396563,3.6795313){$E$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8975,1.0795312){$62^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.6775,0.43953124){ $34^\circ$}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.07,1.0295312){0.49}{336.25052}{58.24052}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.56,0.7995312){0.94}{294.44397}{0.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](10.38,-3.2204688)(0.0,-3.4004688)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.8015623,-3.7004688){$100$ m}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{To determine height $EC$, first calculate $ED$ and $DC$}
+$\triangle BDE$ and $\triangle BDC$ are both right-angled triangles. In each of the triangles, the length $BD$ is known. Therefore we can calculate the sides of the triangles.
+
+\westep{Calculate $CD$}
+The length $AC$ is given. $CABD$ is a rectangle so $BD = AC = 200\mbox{m}$.\\
+In $\triangle CBD$, 
+\begin{eqnarray*}
+tan ~C\hat{B}D &=& \frac{CD}{BD}\\
+\therrefore CD&=&BD\times tan~ C\hat{B}D \\
+&=& 200\times tan~ 34^{\circ} \\
+&=& 135\mbox{ m}
+\end{eqnarray*}
+
+\westep{Calculate $DE$}
+In $\triangle DBE$,
+\begin{eqnarray*}
+tan~ D\hat{B}E &=& \frac{DE}{BD}\\
+\therefore DE&=&BD\times tan ~D\hat{B}E \\
+&=& 200\times tan~ 62^\circ \\
+&=&376\mbox{ m}
+\end{eqnarray*}
+
+\westep{Add the two heights to get the final answer} 
+The height of the tower $CE=CD+DE=135 \mbox{ m}+376\mbox{ m}=511\mbox{ m}$.
+}
+\end{wex}
+
+
+\begin{wex}{Building plan}
+{Mr Nkosi has a garage at his house and he decides to add a corrugated iron roof to the side of the garage. The garage is $4$ m high, and his sheet for the roof is $5$ m long. If the angle of the roof is $5^\circ$, how high must he build the wall $BD$? Give the answer correct to $1$ decimal place.
+\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.6951562)(10.214687,1.7351563)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color247b}{rgb}{0.8,0.8,0.8}
+\psframe[linewidth=0.0020,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](6.9746876,0.66484374)(6.8146877,-1.6551563)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3146877,0.22484376)(3.7746875,-1.6551563)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](1.2146875,0.22484376)(0.6746875,-1.6951562)
+\psframe[linewidth=0.0020,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3146877,1.2848438)(0.7146875,0.16484375)
+\rput(2.459375,-0.23515625){Garage}
+\rput(6.355625,1.2648437){Roof}
+\rput(7.51625,-0.43515626){Wall}
+\psline[linewidth=0.04cm](0.6946875,1.2648437)(0.6946875,-1.6351563)
+\psline[linewidth=0.04cm](0.6946875,1.2648437)(4.2946873,1.2648437)
+\psline[linewidth=0.04cm](4.2946873,1.2648437)(4.2946873,-1.6351563)
+\psline[linewidth=0.04cm](0.6946875,-1.6351563)(1.1946875,-1.6351563)
+\psline[linewidth=0.04cm](1.1946875,-1.6351563)(1.1946875,0.16484375)
+\psline[linewidth=0.04cm](1.1946875,0.16484375)(3.7946875,0.16484375)
+\psline[linewidth=0.04cm](3.7946875,0.16484375)(3.7946875,-1.6351563)
+\psline[linewidth=0.04cm](3.7946875,-1.6351563)(4.2946873,-1.6351563)
+\psline[linewidth=0.04cm,linecolor=white](10.194688,-0.53515625)(10.194688,-0.53515625)
+\psline[linewidth=0.024cm,linecolor=color194](4.2946873,1.2648437)(6.7946873,0.66484374)
+\psline[linewidth=0.027999999cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](6.7946873,0.66484374)(4.2946873,0.66484374)
+\psline[linewidth=0.04cm,linecolor=color194](6.7946873,0.66484374)(6.7946873,-1.6351563)
+\psline[linewidth=0.04cm,linecolor=color194](6.7946873,0.66484374)(6.9946876,0.66484374)
+\psline[linewidth=0.04cm,linecolor=color194](6.9946876,0.66484374)(6.9946876,-1.6351563)
+\psline[linewidth=0.018cm,linecolor=color194](6.9946876,-1.6351563)(0.8946875,-1.6351563)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.21359375,0.06484375){$4$ m}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.208125,1.4648438){$5$ m}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.2959375,0.8648437){$ B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.6142187,0.36484376){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.2821875,0.8648437){$5^\circ$}
+% \usefont{T1}{ptm}{m}{n}
+
+% \usefont{T1}{ptm}{m}{n}
+
+\usefont{T1}{ptm}{m}{n}
+\rput(4.296094,1.5648438){$C$}
+% \usefont{T1}{ptm}{m}{n}
+
+\psdots[dotsize=0.12,linecolor=color194](4.2946873,0.66484374)
+\psdots[dotsize=0.12,linecolor=color194](4.2946873,1.2648437)
+\psdots[dotsize=0.12,linecolor=color194](6.7946873,0.66484374)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.3079686,-1.5351562){$ D$}
+\end{pspicture} 
+}
+\end{center}
+
+}{
+\westep{Identify opposite and adjacent sides and hypotenuse}
+$\triangle ABC$ is right-angled. The hypotenuse and an angle is known therefore we can calculate $AC$. The height of the wall $BD$ is then the height of the garage minus $AC$.
+\begin{eqnarray*}
+ sin~A\hat{B}C &=& \frac{AC}{BC} \\
+\therefore AC &=& BC \times sin~A\hat{B}C\\
+&=& 5~sin~5^{\circ}\\
+&=& 0,4\mbox{ m}\\
+\\
+\therefore BD&=& 4\mbox{ m}-0,4\mbox{ m}\\
+&=& 3,6\mbox{ m}
+\end{eqnarray*}
+
+
+\westep{Write the final answer}  
+Mr Nkosi must build his wall to be $3,6$ m high.
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+
+\item A boy flying a kite is standing $30~$m from a point directly under the kite. If the kite's string is $50~$m long, find the angle of elevation of the kite.
+\item What is the angle of elevation of the sun when a tree $7,15$ m tall casts a shadow $10,1$ m long?
+\item Susan is $1,4$ m tall. From a distance of $300$ m, she looks up at the top of a lighthouse. The angle of elevation is $5^{\circ}$. Determine the height of the lighthouse to the nearest metre.
+\item A ladder of length $25$ m is resting against a wall, the ladder makes an angle $37^{\circ}$ to the wall. Find the distance between the wall and the base of the ladder. 
+
+\end{enumerate}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lcY  &  (2.) lcr  & \end{tabular}
-% 
-%          \section{ Graphs of trig functions}
-%     \nopagebreak
-%             \label{m39414} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_presentation.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10105 )} \par 
-%     
-%     
-%     
-            \section{ Summary}
-            \nopagebreak
-            \label{m39414*eip-197}\begin{itemize}[noitemsep]
-            \item We can define three trigonometric functions for right angled triangles: sine (sin), cosine (cos) and tangent (tan).\item Each of these functions have a reciprocal: cosecant (cosec), secant (sec) and cotangent (cot).
-\item We can use the principles of solving equations and the trigonometric functions to help us solve simple trigonometric equations.\item We can solve problems in two dimensions that involve right angled triangles.\item For some special angles, we can easily find the values of sin, cos and tan.\item We can extend the definitions of the trigonometric functions to any angle.\item 
-Trigonometry is used to help us solve problems in 2-dimensions, such as finding the height of a building.\item 
-We can draw graphs for sin, cos and tan\end{itemize}
-        \label{m39414*cid8}
-            \section{ End of Chapter Exercises}
-            \nopagebreak
-      \label{m39414*id92202}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39414*uid98}\item Calculate the unknown lengths
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39414*id92222}
-    \begin{center}
-    \label{m39414*id92222!!!underscore!!!media}\label{m39414*id92222!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_041.png} % m39414;MG10C15\_041.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}               \label{m39414*uid99}\item In the triangle $PQR$, $PR=20$~cm, $QR=22$~cm and $P\hat{R}Q={30}^{\circ }$. The perpendicular line from $P$ to $QR$ intersects $QR$ at $X$. Calculate
-\label{m39414*id92364}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39414*uid100}\item the length $XR$,
-\label{m39414*uid101}\item the length $PX$, and
-\label{m39414*uid102}\item the angle $Q\hat{P}X$\end{enumerate}
-                \label{m39414*uid103}\item A ladder of length 15 m is resting against a wall, the base of the ladder is 5 m from the wall. Find the angle between the wall and the ladder?\newline
-\label{m39414*uid104}\item A ladder of length 25 m is resting against a wall, the ladder makes an angle ${37}^{\circ }$ to the wall. Find the distance between the wall and the base of the ladder?\newline
-\label{m39414*uid105}\item In the following triangle find the angle $A\hat{B}C$
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39414*id92525}
-    \begin{center}
-    \label{m39414*id92525!!!underscore!!!media}\label{m39414*id92525!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_042.png} % m39414;MG10C15\_042.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}               \label{m39414*uid106}\item In the following triangle find the length of side $CD$
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39414*id92559}
-    \begin{center}
-    \label{m39414*id92559!!!underscore!!!media}\label{m39414*id92559!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39414_MG10C15_043.png} % m39414;MG10C15\_043.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}               \label{m39414*uid107}\item $A\left(5;0\right)$ and $B\left(11;4\right)$. Find the angle between the line through A and B and the x-axis.\newline
-\label{m39414*uid108}\item $C\left(0;-13\right)$ and $D\left(-12;14\right)$. Find the angle between the line through C and D and the y-axis.\newline
-\label{m39414*uid110}\item A $5\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$ ladder is placed $2\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$ from the wall. What is the angle the ladder makes with the wall?\newline
-\label{m39414*uid981203}\item Given the points: E(5;0), F(6;2) and G(8;-2), find angle $F\hat{E}G$.\newline
-            \label{m39414*uid111}\item An isosceles triangle has sides $9\phantom{\rule{0.166667em}{0ex}}\mathrm{cm},\phantom{\rule{0.166667em}{0ex}}9\phantom{\rule{0.166667em}{0ex}}\mathrm{cm}$ and $2\phantom{\rule{0.166667em}{0ex}}\mathrm{cm}$. Find the size of the smallest angle of the triangle.\newline
-\label{m39414*uid112}\item A right-angled triangle has hypotenuse $13\phantom{\rule{0.166667em}{0ex}}\mathrm{mm}$. Find the length of the other two sides if one of the angles of the triangle is ${50}^{\circ }$.\newline
-\label{m39414*uid113}\item One of the angles of a rhombus (\textbf{rhombus} - A four-sided polygon, each of whose sides is of equal length) with perimeter $20\phantom{\rule{0.166667em}{0ex}}\mathrm{cm}$ is ${30}^{\circ }$.
-\label{m39414*id92966}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39414*uid114}\item Find the sides of the rhombus.
-\label{m39414*uid115}\item Find the length of both diagonals.
+\par \begin{tabular}[h]{cccccc}
+(1.) lcY  &  (2.) lcr  & \end{tabular}
+    
+}
+\end{exercises} 
+
+
+\summary
+\begin{itemize}[noitemsep]
+\item We can define three trigonometric ratios for right-angled triangles: sine ($sin$), cosine ($cos$) and tangent ($tan$).
+\item Each of these ratios have a reciprocal: cosecant ($cosec$), secant ($sec$) and cotangent ($cot$).
+\item We can use the principles of solving equations and the trigonometric ratios to help us solve simple trigonometric equations.
+\item We can solve problems in two dimensions that involve right angled triangles.
+\item For some special angles, we can easily find the values of sin, cos and tan.
+\item We can extend the definitions of the trigonometric functions to any angle.
+\item Trigonometry is used to help us solve problems in 2-dimensions, such as finding the height of a building.
+\end{itemize}
+
+
+\begin{eocexercises}{}
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Without using a calculator determine the value of 
+\begin{equation*}
+sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
+\end{equation*}
+\item If $3~tan~\alpha = -5$ and $0^{\circ} < \alpha < 270^{\circ}$, use a sketch to determine
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $cos~\alpha$
+    \item $tan^{2}~\alpha - sec^{2}~\alpha$
+    \end{enumerate}
+\item Solve for $\theta$ if $\theta$ is a postive, acute angle
+    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \item $2~sin~\theta = 1,34$
+    \item $1 - tan~\theta = -1$
+    \item $cos~2\theta = sin~40^{\circ}$ \vspace{3pt}
+    \item $\dfrac{sin~\theta}{cos~\theta}= 1$
+    \end{enumerate}
+
+
+\item Calculate the unknown lengths
+\\
+\scalebox{1}  
+{ 
+\begin{pspicture}(0,-2.0390613)(8.035,2.0253136) \psline[linewidth=0.04cm](0.02,0.02093862)(3.06,0.02093862) \psline[linewidth=0.04cm](0.02,0.02093862)(0.02,-2.0190613) \psline[linewidth=0.04cm](0.04,-1.9990613)(3.04,0.02093862) \psframe[linewidth=0.04,dimen=outer](0.26,0.04093862)(0.0,-0.21906137) \psline[linewidth=0.04cm](0.9944844,1.4531701)(3.04,0.04093862) \psline[linewidth=0.04cm](0.96,1.4209386)(0.024381146,0.02542873) \rput{-33.90198}(-0.5512336,0.79249614){\psframe[linewidth=0.04,dimen=outer](1.1544285,1.4305158)(0.8944285,1.1705158)} \psline[linewidth=0.04cm](2.2384837,1.992771)(3.04,0.04093862) \psline[linewidth=0.04cm](2.238,1.9929386)(1.0103352,1.4765087) \rput{-66.64198}(-0.3803531,3.117777){\psframe[linewidth=0.04,dimen=outer](2.3111107,1.9781737)(2.0511107,1.7181737)} \usefont{T1}{ptm}{m}{n} \rput(2.2601562,-0.21406138){\small 30$^{\circ}$} \usefont{T1}{ptm}{m}{n} \rput(2.3034375,0.22593862){\small 25$^{\circ}$} \usefont{T1}{ptm}{m}{n} \rput(2.4634376,0.7259386){\small 20$^{\circ}$} \usefont{T1}{ptm}{m}{n} \rput(1.8576562,-1.2540613){\small 16 cm} \usefont{T1}{ptm}{m}{it} \rput(1.3398438,0.20593862){\small a} \usefont{T1}{ptm}{m}{it} \rput(2.1135938,0.9659386){\small b} \usefont{T1}{ptm}{m}{it} \rput(1.58,1.9059386){\small c} \psline[linewidth=0.04cm](6.689009,-1.6241995)(6.0199666,-1.4501117) \rput{-90.46057}(4.6635084,7.686732){\psframe[linewidth=0.04,dimen=outer](6.2543488,1.6402806)(6.0343485,1.4202806)} \rput{-90.46057}(4.4806204,7.508202){\psframe[linewidth=0.04,dimen=outer](6.0743546,1.6417276)(5.8543544,1.4217275)} \rput{-104.9971}(9.7950115,4.4890895){\psframe[linewidth=0.04,dimen=outer](6.7298956,-1.4036404)(6.509896,-1.6236403)} \psline[linewidth=0.04cm](7.375193,1.6303898)(4.2549725,1.6154709) \psline[linewidth=0.04cm](6.055236,1.6410005)(6.030317,-1.4588993) \psline[linewidth=0.04cm](6.0304775,-1.4389)(4.2748113,1.5953108) \psline[linewidth=0.04cm](7.375193,1.6303898)(6.030317,-1.4588993) \psline[linewidth=0.04cm](7.375193,1.6303898)(6.689009,-1.6241995) \usefont{T1}{ptm}{m}{it} \rput(4.880625,0.005938619){\small d} \usefont{T1}{ptm}{m}{it} \rput(6.7414064,1.8259386){\small e} \usefont{T1}{ptm}{m}{n} \rput(5.2226562,1.8259386){\small 5 m} \usefont{T1}{ptm}{m}{it} \rput(6.2709374,-1.7940614){\small f} \usefont{T1}{ptm}{m}{it} \rput(7.2148438,-0.07406138){\small g} \usefont{T1}{ptm}{m}{n} \rput(4.756875,1.3859386){\small 50$^{\circ}$} \usefont{T1}{ptm}{m}{n} \rput(6.9460936,1.4059386){\small 60$^{\circ}$} \usefont{T1}{ptm}{m}{n} \rput(6.3828125,-1.2740613){\small 80$^{\circ}$} \end{pspicture} }
+\\
+\item{In the triangle $PQR$, $PR=20$~cm, $QR=22$~cm and $P\hat{R}Q = 30^{\circ}$. The perpendicular line from $P$ to $QR$ intersects $QR$ at $X$. Calculate 
+\begin{enumerate} \item the length $XR$, \item the length $PX$, and \item the angle $Q\hat{P}X$ \end{enumerate}} 
+\\
+\item A ladder of length $15$ m is resting against a wall, the base of the ladder is $5$ m from the wall. Find the angle between the wall and the ladder. 
+\\
+\item In the following triangle find the angle $A\hat{B}C$\\ 
+
+{ \begin{pspicture}(0,-2.4701562)(5.49875,2.4701562) \pspolygon[linewidth=0.04](0.1665625,-1.7301563)(3.3665626,1.9698437)(5.1665626,-1.7301563)(4.1665626,-1.7301563) \psline[linewidth=0.04cm](3.3665626,1.9698437)(3.3665626,-1.7301563) \rput(3.3871875,2.2798438){A} \rput(5.3459377,-2.0201561){B} \rput(3.371875,-2.0201561){C} \rput(0.07546875,-2.0201561){D} \rput(3.5,0){9} \rput(2.7525,-2.3201563){17} \psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.0665624,-2.3301563)(5.2665625,-2.3301563) \psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.4665625,-2.3301563)(0.0665625,-2.3301563) \psline[linewidth=0.04cm](3.3665626,-1.5301563)(3.5665624,-1.5301563) \psline[linewidth=0.04cm](3.5665624,-1.5301563)(3.5665624,-1.7301563) \rput(0.9,-1.5201563){$41^{\circ}$} \end{pspicture} } \item In the following triangle find the length of side $CD$\\ { \begin{pspicture}(0,-2.2234375)(6.091875,2.2234375) \pspolygon[linewidth=0.04](0.1665625,-1.776875)(5.1665626,-1.776875)(5.1665626,1.823125) \psline[linewidth=0.04cm](3.4665625,-1.776875)(5.1665626,1.823125) \rput(5.2871876,2.033125){A} \rput(5.3459377,-2.066875){B} \rput(3.471875,-2.066875){C} \rput(0.07546875,-2.066875){D} \rput(5.3,0){9} \rput(4.490156,0.95){$15^{\circ}$} \rput(3.960156,-1.5){$35^{\circ}$} \psline[linewidth=0.04cm](4.9665626,-1.576875)(5.1665626,-1.576875) \psline[linewidth=0.04cm](4.9665626,-1.576875)(4.9665626,-1.776875) \end{pspicture} } 
+\\
+\item $A(5;0)$ and $B(11;4)$. Find the angle between the line through $A$ and $B$ and the $x$-axis. 
+\item $C(0;-13)$ and $D(-12;14)$. Find the angle between the line through $C$ and $D$ and the $y$-axis. 
+
+
+\item A right-angled triangle has hypotenuse $13$ mm. Find the length of the other two sides if one of the angles of the triangle is $50^{\circ}$.
+\item One of the angles of a rhombus with perimeter $20$ cm is $30^{\circ}$. 
+\begin{enumerate} 
+\item Find the sides of the rhombus. 
+\item Find the length of both diagonals. 
+\end{enumerate} 
+\item Captain Jack was sailing towards a cliff with a height of $10$ m. 
+\begin{enumerate} 
+\item The distance from the boat to the top of the cliff is $30$ m, calculate the angle of elevation from the boat to the top of the cliff (to the nearest integer).
+\item If the boat sails $7$ m closer to the cliff, what is the new angle of elevation from the boat to the top of the cliff? 
+\end{enumerate} 
+\item Given the points: $E(5;0)$; $F(6;2)$ and $G(8;-2)$. Find the angle $F\hat{E}G$. 
+\item  A triangle with angles $40^{\circ}$; $40^{\circ}$ and $100^{\circ}$ has a perimeter of $20$ cm. Find the length of each side of the triangle. 
+
 \end{enumerate}
-                \label{m39414*uid116}\item Captain Hook was sailing towards a lighthouse with a height of $10\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$.
-\label{m39414*id93025}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39414*uid117}\item If the top of the lighthouse is $30\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$ away, what is the angle of elevation of the boat to the nearest integer?
-\label{m39414*uid118}\item If the boat moves another $7\phantom{\rule{0.166667em}{0ex}}\mathrm{m}$ towards the lighthouse, what is the new angle of elevation of the boat to the nearest integer?
-\end{enumerate}
-                \label{m39414*uid119}\item (Tricky) A triangle with angles ${40}^{\circ },\phantom{\rule{0.166667em}{0ex}}{40}^{\circ }$ and ${100}^{\circ }$ has a perimeter of $20\phantom{\rule{0.166667em}{0ex}}\mathrm{cm}$. Find the length of each side of the triangle.\newline
-\end{enumerate}
-  \label{m39414**end}
-  \label{fbcda86bdf0258b6e91dcea5caee5b76**end}
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) la9  &  (2.) laX  &  (3.) laI  &  (4.) la5  &  (5.) laN  &  (6.) laR  &  (7.) lan  &  (8.) laQ  &  (9.) laU  &  (10.) lap  &  (11.) laV  &  (12.) laP  &  (13.) laE  &  (14.) lam  &  (15.) lay  & \end{tabular}
+\end{eocexercises}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
