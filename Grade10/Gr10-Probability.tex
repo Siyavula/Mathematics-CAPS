@@ -1,5 +1,9 @@
 \documentclass[a4paper,11pt]{report}
 
+% NOTE: There are a couple of \clearpage commands that I used to make
+% things align properly in my PDF. You should delete these when
+% reformatting.
+
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -7,16 +11,20 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{icomma}
-
-\def\complement#1{#1'}
-
 \usepackage{tikz, ifthen}
 \usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
 
-\input{makedice}
+% <Must include this>
+% Definitions for coin images
+\def\coinheads{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{H}};}
+\def\cointails{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{T}};}
+% Definitions for dice images
+\input{Gr10-Probability-images/makedice}
+% Definitions for Venn images
+\input{Gr10-Probability-images/venn_union_intersection}
+% </Must include this>
 
-% FHSST definitions
-
+% <Temporary FHSST definitions>
 \def\Definition#1#2{\paragraph{Definition:} #1 --- #2}
 
 \def\Identity#1#2{\paragraph{Identity:} #1 --- #2}
@@ -38,18 +46,18 @@
 {\rule{\linewidth}{0.5mm}}
 
 \newenvironment{eocexercises}[1]%
-{\rule{\linewidth}{0.5mm}
-\textbf{End of chapter exercises:} #1\\}%
-{\rule{\linewidth}{0.5mm}}
+{\section{End of chapter exercises: #1}}%
+{}
+% </Temporary FHSST definitions>
 
-% ----------
-
+% <Temporary spacing changes>
 \setlength\parindent{0pt}
 \setlength\parskip{0.5\baselineskip}
 \setlength\textwidth{15cm}
 \setlength\textheight{23cm}
 \setlength\oddsidemargin{0.5cm}
 \setlength\topmargin{0cm}
+% </Temporary spacing changes>
 
 \begin{document}
 \chapter{Probability}
@@ -68,7 +76,6 @@ We will see in this chapter that all of these uncertainties can be
 described using the rules of probability theory and that we can make
 definite conclusions about uncertain processes.
 
-\newpage
 \section{Definitions}
 We'll use three examples of uncertain processes to help you understand
 the meanings of the different words used in probablity theory: tossing
@@ -79,13 +86,10 @@ a coin, rolling dice, a soccer match.
 \Definition{Outcome}{An outcome of an experiment is a single
   result of that experiment.}
 
-\paragraph{Experiment 1} A coin is tossed and it lands with either heads
-(H) or tails (T) facing upwards.
-
-\def\coinheads{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{H}};}
-\def\cointails{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{T}};}
-
 \begin{figure}[h]
+  \paragraph{Experiment 1} A coin is tossed and it lands with either
+  heads (H) or tails (T) facing upwards.
+
   \begin{center}
     \begin{tikzpicture}
       \coinheads
@@ -95,10 +99,10 @@ a coin, rolling dice, a soccer match.
     facing up.}
 \end{figure}
 
-\paragraph{Experiment 2} Two dice are rolled and the total number of dots
-added up.
-
 \begin{figure}[h]
+  \paragraph{Experiment 2} Two dice are rolled and the total number of
+  dots added up.
+
   \begin{center}
     \begin{tikzpicture}
       \makedie{3}{shift={(-1,0)},rotate=10}
@@ -108,17 +112,16 @@ added up.
   \caption{An example outcome of rolling two dice.}
 \end{figure}
 
-\paragraph{Experiment 3} Two teams play in a soccer match and we are
-interested in the final score.
-
 \begin{figure}[h]
+  \paragraph{Experiment 3} Two teams play in a soccer match and we are
+  interested in the final score.
+
   \begin{center}
-    \textbf{FIGURE: soccer score board}
+    \includegraphics[width=3in]{Gr10-Probability-images/5996076302_412ec8d8d0_o.jpg}
   \end{center}
-  \caption{An example outcome of a soccer match.}
+  \caption{An example outcome of a soccer match. Picture by apasciuto on Flickr.com}
 \end{figure}
 
-\newpage
 \Definition{Sample space}{The sample space of an experiment is
   the set of all possible outcomes of that experiment. The sample
   space is denoted with the symbol \(S\) and the size of the sample
@@ -258,7 +261,6 @@ This event set is infinitely large.
 
 %FIGURE: sample space with open curve around event set
 
-\newpage
 \section{Theoretical probability}
 \Definition{Probability}{A probability is a real number between
   $0$ and $1$ that describes how likely it is that an event will occur.}
@@ -454,7 +456,7 @@ probability.
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=0.75\textwidth]{coin_toss_trials.pdf}
+    \includegraphics[width=0.75\textwidth]{Gr10-Probability-images/coin_toss_trials.pdf}
   \end{center}
   \caption{Plot of the relative frequency of observing heads, $f$,
     after having completed $t$ coin tosses.}
@@ -540,10 +542,8 @@ with different sets. Consider two events, $A$ and $B$, in a sample
 space $S$. The figure below shows the possible ways in which the event
 sets can overlap, represented using Venn diagrams.
 
-\input{venn_union_intersection} % Definitions
-
 \begin{figure}[h]
-  \input{venn_union_intersection1}
+  \input{Gr10-Probability-images/venn_union_intersection1}
   \caption{Venn diagrams with different configurations of two events,
     $A$ and $B$, in a sample space, $S$.}
 \end{figure}
@@ -555,6 +555,7 @@ all. In the third diagram one event is fully contained in the other.
 Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
 
+\clearpage
 \begin{wex}{Venn diagrams}{
   Represent the sample space of two rolled dice and the two events where
   \begin{itemize}
@@ -604,6 +605,7 @@ sample space contains all possible outcomes of the experiment.
   space, $S$, of rolling two dice.}
 \label{fig:dice_venn}
 \end{figure}
+
 }
 \end{wex}
 
@@ -657,6 +659,7 @@ sample space contains all possible outcomes of the experiment.
   \end{tabularx}
 \end{exercises}
 
+\clearpage
 \section{Union and intersection}
 \Definition{Union}{The union of two sets is a new set that contains
   all of the elements that are in at least one of the two sets. The
@@ -670,7 +673,7 @@ The figure below shows the union and intersection for different
 configurations of two event in a sample space, using Venn diagrams.
 
 \begin{figure}[h]
-  \input{venn_union_intersection2}
+  \input{Gr10-Probability-images/venn_union_intersection2}
   \caption{The unions and intersections of different events. Note that
     in the middle column the intersection, $A \cap B$, is empty since
     the two sets do not overlap. Also, in the final column the union,
@@ -678,7 +681,6 @@ configurations of two event in a sample space, using Venn diagrams.
     equal to $B$ since $B$ is fully contained in $A$.}
   \label{fig:venn_union_intersection}
 \end{figure}
-
 
 \section{Probability identities}
 \Identity{Probability of sample space}{
@@ -787,7 +789,7 @@ We have already seen the Venn diagrams of mutually exclusive events in
 the middle column of Figure \ref{fig:venn_union_intersection}.
 
 \begin{figure}[h]
-  \input{venn_union_intersection3}
+  \input{Gr10-Probability-images/venn_union_intersection3}
   \caption{Mutually exclusive events.}
 \end{figure}
 
@@ -851,34 +853,35 @@ exclusive events only.
   From the figure we notice that there are no elements in common in
   $A$ and $B$. Therefore the events are mutually exclusive.
 }
+
 \end{wex}
 
 \section{Complementary events}
 
 \Definition{Complementary set}{The complement of a set, $A$, is a
   different set that contains all of the elements that are not in
-  $A$. We write the complement of $A$ as $\complement{A}$, or
+  $A$. We write the complement of $A$ as $A'$, or
   sometimes as ``$\textrm{not}(A)$''.}
 
 For an experiment with sample space $S$ and an event $A$ we can derive
-some identities for complementary events. Since every element in $A$ is not in $\complement{A}$, we know
+some identities for complementary events. Since every element in $A$ is not in $A'$, we know
   that complementary events are mutually exclusive.
 
 \Identity{Complementary events are mutually exclusive}{
-  \[A \cap \complement{A} = \emptyset\]
+  \[A \cap A' = \emptyset\]
 }
 
 Since every element in the sample space is either in $A$ or in
-  $\complement{A}$, the union of complementary events covers the
+  $A'$, the union of complementary events covers the
   sample space.
 \Identity{Complementary events cover the sample space}{
-  \[A \cup \complement{A} = S\]
+  \[A \cup A' = S\]
 }
 
 From the previous two identities, we also know that the
   probabilities of complementary events sum to $1$.
 \Identity{Probabilities of complementary events}{
-  \[P(A) + P(\complement{A}) = P(A \cup \complement{A}) = P(S) = 1\]
+  \[P(A) + P(A') = P(A \cup A') = P(S) = 1\]
 }
 
 \begin{wex}{Reasoning with Venn diagrams}{
