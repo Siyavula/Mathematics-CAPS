@@ -1,7 +1,7 @@
          \chapter{Analytical geometry}
-    \setcounter{figure}{1}
-    \setcounter{subfigure}{1}
-    \label{71522cd1c95e0cbedb9f300409036b1b}
+%     \setcounter{figure}{1}
+%     \setcounter{subfigure}{1}
+%     \label{71522cd1c95e0cbedb9f300409036b1b}
 %          \section{ Cartesian plane \& Distance between two points}
 %     \nopagebreak
 %             \label{m39107} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10107 )} \par 
@@ -44,7 +44,7 @@
 \par \label{m39107*eip-645}To represent any figure on the Cartesian plane, you place a dot at each given co-ordinate and then connect these points with straight lines. One point to note is in naming a figure. In the above example, we called the quadrilateral $ABCD$. This tells us that we move from point $A$, to point $B$, to point $C$, to point $D$ and then back to point $A$ again. So when you are asked to draw a figure on the Cartesian plane, you will follow this naming scheme. If you had the same points, and called it, for example, $ACBD$ you would not get a quadrilateral but a pair of triangles instead. This is important. Sometimes you may be given only some of the points and you will then be required to find the other points using the work covered in the rest of this chapter. \par \label{m39107*uid37}
             \section{ Distance between Two Points}
             \nopagebreak
-            \label{m39107*id66786}One of the simplest things that can be done with analytical geometry is to calculate the distance between two points. \textsl{Distance} is a number that describes how far apart two point are. For example, point $P$ has co-ordinates $(2,1)$ and point $Q$ has co-ordinates $(-2,-2)$. How far apart are points $P$ and $Q$? In figure~\ref{fig:trianglePQR}, this means how long is the dashed line?\par 
+            \label{m39107*id66786}One of the simplest things that can be done with analytical geometry is to calculate the distance between two points. \Definition{Distance}{Distance is a number that describes how far apart two points are.} For example, point $P$ has co-ordinates $(2,1)$ and point $Q$ has co-ordinates $(-2,-2)$. How far apart are points $P$ and $Q$? In figure~\ref{fig:trianglePQR}, this means how long is the dashed line?\par 
     \setcounter{subfigure}{0}
  	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
@@ -64,6 +64,7 @@
 \uput[d](0,4){\Large{$y$}}
 \end{pspicture}
 }
+\caption{Triangle $PQR$}
     \end{center}
 \label{fig:trianglePQR}
  \end{figure}        
@@ -77,41 +78,58 @@
         \label{m39107*id67090}The length of $PQ$ is the distance between the points $P$ and $Q$.\par 
         \label{m39107*id67126}In order to generalise the idea, assume $A$ is any point with co-ordinates $({x}_{1};{y}_{1})$ and $B$ is any other point with co-ordinates $({x}_{2};{y}_{2})$.\par 
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39107*uid39}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39107*uid39!!!underscore!!!media}\label{m39107*uid39!!!underscore!!!printimage}\includegraphics[width=0.5\columnwidth]{col11306.imgs/m39107_MG10C14_016.png} % m39107;MG10C14\_016.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=.1cm](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=.1cm](-2,-2)(2,1)
+\uput[l](-2,-1.8){\Large{$A$}}
+\uput[dl](-1,-2){\Large{$(x_{1},y_{1})$}}
+\uput[dr](2,-2){\Large{$C$}}
+\uput[u](2.3,0.5){\Large{$B$}}
+\uput[ur](1.8,1){\Large{$(x_{2},y_{2})$}}
+\uput[l](4,0){\Large{$x$}}
+\uput[d](0,4){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
  \end{figure}       
         \label{m39107*id67214}The formula for calculating the distance between two points is derived as follows. The distance between the points $A$ and $B$ is the length of the line $AB$. According to the Theorem of Pythagoras, the length of $AB$ is given by:\par 
         \label{m39107*id67261}\nopagebreak\noindent{}
           
-    \begin{equation}
-    AB=\sqrt{A{C}^{2}+B{C}^{2}}\tag{15.2}
-      \end{equation}
+    \begin{equation*}
+    AB=\sqrt{A{C}^{2}+B{C}^{2}}
+      \end{equation*}
         \label{m39107*id67300}However,\par 
         \label{m39107*id67306}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{cc}\hfill BC={y}_{2}-{y}_{1}\\ \hfill AC={x}_{2}-{x}_{1}\end{array}\tag{15.3}
-      \end{equation}
+    \begin{eqnarray*}
+     BC & = & {y}_{2}-{y}_{1} \\ AC & = & {x}_{2}-{x}_{1}
+      \end{eqnarray*}
         \label{m39107*id67375}Therefore,\par 
         \label{m39107*id67379}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill AB& =& \sqrt{A{C}^{2}+B{C}^{2}}\hfill \\ & =& \sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}\hfill \end{array}\tag{15.4}
-      \end{equation}
+    \begin{eqnarray*} 
+AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\ 
+& =& \sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}} 
+\end{eqnarray*}
         \label{m39107*id67499}Therefore, for any two points, $\left({x}_{1};{y}_{1}\right)$ and $\left({x}_{2};{y}_{2}\right)$, the formula is:\par 
-        \label{m39107*id67561}$\mathrm{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}$\par 
+       \Identity{Distance}{$\mathrm{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}$}
         \label{m39107*id67630}Using the formula, distance between the points $P$ and $Q$ with co-ordinates (2;1) and (-2;-2) is then found as follows. Let the co-ordinates of point $P$ be $\left({x}_{1};{y}_{1}\right)$ and the co-ordinates of point $Q$ be $\left({x}_{2};{y}_{2}\right)$. Then the distance is:\par 
         \label{m39107*id67728}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Distance}& =& \sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}\hfill \\ & =& \sqrt{{\left(2-\left(-2\right)\right)}^{2}+{\left(1-\left(-2\right)\right)}^{2}}\hfill \\ & =& \sqrt{{\left(2+2\right)}^{2}+{\left(1+2\right)}^{2}}\hfill \\ & =& \sqrt{16+9}\hfill \\ & =& \sqrt{25}\hfill \\ & =& 5\hfill \end{array}\tag{15.5}
-      \end{equation}
+    \begin{eqnarray*}
+\mathsf{Distance} & = & \sqrt{{({x}_{1}-{x}_{2})}^{2} + {({y}_{1}-{y}_{2})}^{2}} \\ 
+& =& \sqrt{{(2 - (-2))}^{2} + {(1 - (-2))}^{2}} \\ 
+& =& \sqrt{{(2 + 2)}^{2} + {(1+2)}^{2}} \\ 
+& =& \sqrt{16 + 9} \\
+& =& \sqrt{25} \\ 
+& =& 5
+      \end{eqnarray*}
         \label{m39107*eip-130}The following video provides a summary of the distance formula.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39107*uid99}
@@ -133,42 +151,94 @@
             \nopagebreak
 \label{m39108*id67971}The gradient of a line describes how steep the line is. In the figure, line $PT$ is the steepest. Line $PS$ is less steep than $PT$ but is steeper than $PR$, and line $PR$ is steeper than $PQ$.\par 
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39108*uid41}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39108*uid41!!!underscore!!!media}\label{m39108*uid41!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39108_MG10C14_017.png} % m39108;MG10C14\_017.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-1,-1)(4,4)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-1,-1)(4,4)
+\psline[linewidth=.05cm](0,0)(1,3.5)
+\psline[linewidth=.05cm](0,0)(3,3.5)
+\psline[linewidth=.05cm](0,0)(3,2)
+\psline[linewidth=.05cm](0,0)(3,0.5)
+\uput[ur](.9,3.5){\Large{$T$}}
+% \uput[dl](-1,-2){\Large{$(x_{2},y_{2})$}}
+\uput[ur](3,3.5){\Large{$S$}}
+\uput[ur](3,2){\Large{$R$}}
+\uput[ur](3,0.4){\Large{$Q$}}
+\uput[dl](0,0){\Large{$P$}}
+% \uput[ur](1.8,1){\Large{$(x_{1},y_{1})$}}
+\uput[l](4.8,0){\Large{$x$}}
+\uput[d](0,4.8){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}       
-        \label{m39108*id68057}The gradient of a line is defined as the ratio of the vertical distance to the horizontal distance. This can be understood by looking at the line as the hypotenuse of a right-angled triangle. Then the gradient is the ratio of the length of the vertical side of the triangle to the horizontal side of the triangle. Consider a line between a point $A$ with co-ordinates $\left({x}_{1};{y}_{1}\right)$ and a point $B$ with co-ordinates $\left({x}_{2};{y}_{2}\right)$.\par 
+ \end{figure}        
+        \Definition{Gradient}{The gradient of a line is defined as the ratio of the vertical distance to the horizontal distance.} This can be understood by looking at the line as the hypotenuse of a right-angled triangle. Then the gradient is the ratio of the length of the vertical side of the triangle to the horizontal side of the triangle. Consider a line between a point $A$ with co-ordinates $\left({x}_{1};{y}_{1}\right)$ and a point $B$ with co-ordinates $\left({x}_{2};{y}_{2}\right)$.\par 
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39108*uid42}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39108*uid42!!!underscore!!!media}\label{m39108*uid42!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39108_MG10C14_018.png} % m39108;MG10C14\_018.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
+\psline(-2,-2)(2,-2)(2,1)
+\psline[linestyle=solid,linewidth=.1cm](-2,-2)(2,1)
+\uput[l](-2,-1.8){\Large{$A$}}
+\uput[dl](-1,-2){\Large{$(x_{1},y_{1})$}}
+\uput[dr](2,-2){\Large{$C$}}
+\uput[u](2.3,0.5){\Large{$B$}}
+\uput[ur](1.8,1){\Large{$(x_{2},y_{2})$}}
+\uput[l](4,0){\Large{$x$}}
+\uput[d](0,4){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}   \subsection{Parallel and Perpendicular Lines}    
-        \label{m39108*eip-127}So we obtain the following for the gradient of a line:\par \label{m39108*id68147}$\mathrm{Gradient}=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}$\par 
-        \label{m39108*eip-332}We can use the gradient of a line to determine if two lines are parallel or perpendicular. If the lines are parallel (Figure~15.7a) then they will have the same gradient, i.e. ${m}_{\mathrm{AB}}={m}_{\mathrm{CD}}$. If the lines are perpendicular (Figure~15.7b) than we have: $-\frac{1}{{m}_{\mathrm{AB}}}={m}_{\mathrm{CD}}$
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39108*uid4212}
-    \begin{center}
-    \label{m39108*uid4212!!!underscore!!!media}\label{m39108*uid4212!!!underscore!!!printimage}\includegraphics[width=0.4\columnwidth]{col11306.imgs/m39108_geom.png} % m39108;geom.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \end{center}
- \end{figure}       
-\par \label{m39108*id68198}For example the gradient of the line between the points $P$ and $Q$, with co-ordinates (2;1) and (-2;-2) () is:\par 
+ \end{figure}  
+From this we can obtain the following for the gradient of a line:
+\Identity{Gradient}{$\mathsf{gradient} = \frac{y_{2} - y_{1}}{x_{2} - x_{1}}$}
+\par \label{m39108*id68198}For example the gradient of the line between the points $P$ and $Q$, with co-ordinates $(2;1)$ and $(-2;-2)$ is:\par 
         \label{m39108*id68224}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill \mathrm{Gradient}& =& \frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}\hfill \\ & =& \frac{-2-1}{-2-2}\hfill \\ & =& \frac{-3}{-4}\hfill \\ & =& \frac{3}{4}\hfill \end{array}\tag{15.6}
-      \end{equation}
+    \begin{eqnarray*}\mathsf{Gradient} & = & \frac{{y}_{2} - {y}_{1}}{{x}_{2} - {x}_{1}} \\ 
+& = & \frac{-2 - 1}{-2 - 2} \\ 
+& = & \frac{-3}{-4} \\ 
+& = & \frac{3}{4}
+      \end{eqnarray*}
+  \subsection{Parallel and Perpendicular Lines}    
+        \label{m39108*eip-332}We can use the gradient of a line to determine if two lines are parallel or perpendicular. If the lines are parallel (Figure~\ref{fig:parallelperpendicular}a) then they will have the same gradient, i.e. ${m}_{\mathrm{AB}}={m}_{\mathrm{CD}}$. If the lines are perpendicular (Figure~\ref{fig:parallelperpendicular}b) than we have: $-\frac{1}{{m}_{\mathrm{AB}}}={m}_{\mathrm{CD}}$
+    \setcounter{subfigure}{0}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
+    \begin{center}
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\rput(-2,-2){
+\psline[linewidth=.05cm](0,0)(0,3)
+\psline[linewidth=.05cm](1,0)(1,3)
+\uput[ur](-1,2.8){\Large{$a)$}}
+\uput[d](0,0){\Large{$A$}}
+\uput[u](0,3){\Large{$B$}}
+\uput[d](1,0){\Large{$C$}}
+\uput[u](1,3){\Large{$D$}}}
+
+\rput(3.4,2){
+\psline[linewidth=.05cm](1,-4)(-2,-1)
+\psline[linewidth=.05cm](-2,-4)(1,-1)
+\uput[ur](-3.2,-1.2){\Large{$b)$}}
+\uput[dr](1,-4){\Large{$A$}}
+\uput[ul](-2,-1){\Large{$B$}}
+\uput[dl](-2,-4){\Large{$C$}}
+\uput[ur](1,-1){\Large{$D$}}}
+\end{pspicture}
+}
+    \end{center}
+\caption{a) Parallel and b) perpendicular lines}
+\label{fig:parallelperpendicular}
+ \end{figure}       
+
         \label{m39108*eip-611}The following video provides a summary of the gradient of a line.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39108*uid993}
@@ -188,52 +258,97 @@
       \label{m39119*uid43}
             \section{ Midpoint of a line}
             \nopagebreak
-\label{m39119*id68364}Sometimes, knowing the co-ordinates of the middle point or \textsl{midpoint} of a line is useful. For example, what is the midpoint of the line between point $P$ with co-ordinates $\left(2;1\right)$ and point $Q$ with co-ordinates $\left(-2;-2\right)$.\par 
-        \label{m39119*id68433}The co-ordinates of the midpoint of any line between any two points $A$ and $B$ with co-ordinates $\left({x}_{1};{y}_{1}\right)$ and $\left({x}_{2};{y}_{2}\right)$, is generally calculated as follows. Let the midpoint of $AB$ be at point $S$ with co-ordinates $\left(X;Y\right)$. The aim is to calculate $X$ and $Y$ in terms of $\left({x}_{1};{y}_{1}\right)$ and $\left({x}_{2};{y}_{2}\right)$.\par 
+\label{m39119*id68364}Sometimes, knowing the co-ordinates of the middle point or \textsl{midpoint} of a line is useful. For example, what is the midpoint of the line between point $P$ with co-ordinates $(2;1)$ and point $Q$ with co-ordinates $(-2;-2)$.\par 
+        \label{m39119*id68433}The co-ordinates of the midpoint of any line between any two points $A$ and $B$ with co-ordinates $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$, is generally calculated as follows. Let the midpoint of $AB$ be at point $S$ with co-ordinates $(X;Y)$. The aim is to calculate $X$ and $Y$ in terms of $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$.\par 
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39119*uid44}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39119*uid44!!!underscore!!!media}\label{m39119*uid44!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39119_MG10C14_019.png} % m39119;MG10C14\_019.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(0,0)(5,5)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(0,0)(5,5)
+\psline[linewidth=.05cm](0,0)(5,5)
+\uput[dl](0,0){\Large{$A (x_{1},y_{1})$}}
+\uput[u](0,-.2){\qdisk(0,0){3pt}}
+\uput[r](2.6,2.4){\Large{$S (X,Y)$}}
+\uput[u](2.5,2.3){\qdisk(0,0){3pt}}
+\uput[ur](5,5){\Large{$B (x_{2},y_{2})$}}
+\uput[u](5,4.8){\qdisk(0,0){3pt}}
+\uput[l](5.8,0){\Large{$x$}}
+\uput[d](0,5.8){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}       
+ \end{figure}      
         \label{m39119*id68637}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill X& =& \frac{{x}_{1}+{x}_{2}}{2}\hfill \\ \hfill Y& =& \frac{{y}_{1}+{y}_{2}}{2}\hfill \\ \hfill \^{a}ˆ´& & S\left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)\hfill \end{array}\tag{15.7}
-      \end{equation}
-        \label{m39119*id68788}Then the co-ordinates of the midpoint ($S$) of the line between point $P$ with co-ordinates $\left(2;1\right)$ and point $Q$ with co-ordinates $\left(-2;-2\right)$ is:\par 
+    \begin{eqnarray*}
+ X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\  
+      \end{eqnarray*}
+From this we obtain the midpoint of a line:
+\Identity{Midpoint}{$S(\frac{{x}_{1} + {x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}) $}
+        \label{m39119*id68788}Then the co-ordinates of the midpoint ($S$) of the line between point $P$ with co-ordinates $(2;1)$ and point $Q$ with co-ordinates $(-2;-2)$ is:\par 
         \label{m39119*id68860}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill X& =& \frac{{x}_{1}+{x}_{2}}{2}\hfill \\ & =& \frac{-2+2}{2}\hfill \\ & =& 0\hfill \\ \hfill Y& =& \frac{{y}_{1}+{y}_{2}}{2}\hfill \\ & =& \frac{-2+1}{2}\hfill \\ & =& -\frac{1}{2}\hfill \\ \hfill \^{a}ˆ´S\phantom{\rule{4pt}{0ex}}\mathrm{is}\phantom{\rule{4pt}{0ex}}\mathrm{at}\phantom{\rule{4pt}{0ex}}\left(0;-\frac{1}{2}\right)\end{array}\tag{15.8}
-      \end{equation}
-        \label{m39119*id69058}It can be confirmed that the distance from each end point to the midpoint is equal. The co-ordinate of the midpoint $S$ is $\left(0;-0,5\right)$.\par 
+    \begin{eqnarray*}
+ X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+& = & \frac{-2 + 2}{2} \\ 
+& = & 0 \\ 
+Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\ 
+& = & \frac{-2 + 1}{2} \\ 
+& = & -\frac{1}{2} 
+      \end{eqnarray*}
+The midpoint is at $S(0;-\frac{1}{2})$. \\ \pagebreak
+        \label{m39119*id69058}It can be confirmed that the distance from each end point to the midpoint is equal. The co-ordinate of the midpoint $S$ is $(0;-0,5)$.\par 
         \label{m39119*id69097}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill PS& =& \sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}\hfill \\ & =& \sqrt{{\left(0-2\right)}^{2}+{\left(-0.5-1\right)}^{2}}\hfill \\ & =& \sqrt{{\left(-2\right)}^{2}+{\left(-1.5\right)}^{2}}\hfill \\ & =& \sqrt{4+2.25}\hfill \\ & =& \sqrt{6.25}\hfill \end{array}\tag{15.9}
-      \end{equation}
+    \begin{eqnarray*}
+PS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
+& = & \sqrt{{(0 - 2)}^{2} + {(-0,5 - 1)}^{2}} \\ 
+& = & \sqrt{{(-2)}^{2} + {(-1,5)}^{2}} \\ 
+& = & \sqrt{4 + 2,25} \\ 
+& = & \sqrt{6,25}
+      \end{eqnarray*}
         \label{m39119*id69323}and\par 
         \label{m39119*id69326}\nopagebreak\noindent{}
           
-    \begin{equation}
-    \begin{array}{ccc}\hfill QS& =& \sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}\hfill \\ & =& \sqrt{{\left(0-\left(-2\right)\right)}^{2}+{\left(-0.5-\left(-2\right)\right)}^{2}}\hfill \\ & =& \sqrt{{\left(0+2\right)\right)}^{2}{+\left(-0.5+2\right)\right)}^{2}}\hfill \\ & =& \sqrt{{\left(2\right)\right)}^{2}{+\left(-1.5\right)\right)}^{2}}\hfill \\ & =& \sqrt{4+2.25}\hfill \\ & =& \sqrt{6.25}\hfill \end{array}\tag{15.10}
-      \end{equation}
+    \begin{eqnarray*}
+QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
+& = & \sqrt{{(0 - (-2))}^{2} + {(-0,5 - (-2))}^{2}} \\ 
+& = & \sqrt{{(0 + 2)}^{2}{+(-0,5 + 2)}^{2}} \\ 
+& = & \sqrt{{(2)}^{2}{+(-1,5)}^{2}} \\ 
+& = & \sqrt{4 + 2,25} \\ 
+& = & \sqrt{6,25}
+      \end{eqnarray*}
         \label{m39119*id69633}It can be seen that $PS=QS$ as expected.\par 
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39119*uid45}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
-        \label{m39119*uid45!!!underscore!!!media}\label{m39119*uid45!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39119_MG10C14_020.png} % m39119;MG10C14\_020.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
-    \rule[.1in]{\figurerulewidth}{.005in} \\
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=.05cm](-2,-2)(2,1)
+% \psline[linewidth=.05cm](0,0)(3,3.5)
+% \psline[linewidth=.05cm](0,0)(3,2)
+% \psline[linewidth=.05cm](0,0)(3,0.5)
+% \uput[ur](.9,3.5){\Large{$T$}}
+\uput[dl](-1,-2){\Large{$Q (-2,-2)$}}
+\uput[u](-2,-2.2){\qdisk(0,0){3pt}}
+\uput[r](0,-.7){\Large{$S$}}
+\uput[r](0,-1.2){\Large{midpoint}}
+\uput[u](0,-.7){\qdisk(0,0){3pt}}
+\uput[ur](2,1){\Large{$P (2,1)$}}
+\uput[u](2,.8){\qdisk(0,0){3pt}}
+% \uput[l](4.8,0){\Large{$x$}}
+% \uput[d](0,4.8){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}       \label{m39119*eip-891}The following video provides a summary of the midpoint of a line.
+ \end{figure} 
+       \label{m39119*eip-891}The following video provides a summary of the midpoint of a line.
     \setcounter{subfigure}{0}
 	\begin{figure}[H] % horizontal\label{m39119*uid666}
     \textnormal{Khan academy video on midpoint of a line}\vspace{.1in} \nopagebreak
@@ -255,17 +370,17 @@
 \label{m39167*eip-966}\begin{itemize}[noitemsep]
             \item Figures can be represented on the Cartesian plane\item The formula for finding the distance between two points is: \label{m39167*eid9734}\nopagebreak\noindent{}
     \begin{equation}
-    \mathrm{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}\tag{15.11}
+    \mathsf{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}
       \end{equation}
     \item The formula for finding the gradient of a line is: \label{m39167*edi6342}\nopagebreak\noindent{}
     \begin{equation}
-    \mathrm{Gradient}=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}\tag{15.12}
+    \mathsf{Gradient}=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}
       \end{equation}
     \item The formula for finding the midpoint between two points is: \label{m39167*eid6743}\nopagebreak\noindent{}
     \begin{equation}
-    S\left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)\tag{15.13}
+    S\left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
       \end{equation}
-\item  If two lines are parallel then they will have the same gradient, i.e. ${m}_{\mathrm{AB}}={m}_{\mathrm{CD}}$. If two lines are perpendicular than we have: $-\frac{1}{{m}_{\mathrm{AB}}}={m}_{\mathrm{CD}}$\end{itemize}
+\item  If two lines are parallel then they will have the same gradient, i.e. ${m}_{\mathsf{AB}}={m}_{\mathsf{CD}}$. If two lines are perpendicular than we have: $-\frac{1}{{m}_{\mathsf{AB}}}={m}_{\mathsf{CD}}$\end{itemize}
 \par 
 \label{m39167*secfhsst!!!underscore!!!id2370}
             \section{ End of Chapter exercises}
@@ -273,78 +388,122 @@
         \label{m39167*id69671}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
             \label{m39167*uid43466}\item 
 Represent the following figures on the Cartesian plane: \label{m39167*id6549695}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid4746}\item 
-Triangle DEF with D(1;2), E(3;2) and F(2;4) 
-\label{m39167*uid4548}\item Quadrilateral GHIJ with G(2;-1), H(0;2), I(-2;-2) and J(1;-3)
-\label{m39167*uid4549}\item  Quadrilateral MNOP with M(1;1), N(-1;3), O(-2;3) and P(-4;1) 
-\label{m39167*uid5450}\item  Quadrilateral WXYZ with W(1;-2), X(-1;-3), Y(2;-4) and Z(3;-2)
+            \label{m39167*uid4746}\item Triangle $DEF$ with $D(1;2)$, $E(3;2)$ and $F(2;4)$ 
+\label{m39167*uid4548}\item Quadrilateral $GHIJ$ with $G(2;-1)$, $H(0;2)$, $I(-2;-2)$ and $J(1;-3)$
+\label{m39167*uid4549}\item Quadrilateral $MNOP$ with $M(1;1)$, $N(-1;3)$, $O(-2;3)$ and $P(-4;1)$ 
+\label{m39167*uid5450}\item Quadrilateral $WXYZ$ with $W(1;-2)$, $X(-1;-3)$, $Y(2;-4)$ and $Z(3;-2)$
 \end{enumerate}
                 \label{m39167*uid46}\item 
-In the diagram given the vertices of a quadrilateral are F(2;0), G(1;5), H(3;7) and I(7;2).
+In the diagram given the vertices of a quadrilateral are $F(2;0)$, $G(1;5)$, $H(3;7)$ and $I(7;2)$.
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39167*id69688}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \label{m39167*id69688!!!underscore!!!media}\label{m39167*id69688!!!underscore!!!printimage}\includegraphics[width=0.4\columnwidth]{col11306.imgs/m39167_MG10C14_021.png} % m39167;MG10C14\_021.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-1,-1)(7,7)
+\pspolygon[linewidth=.05cm,fillstyle=solid,fillcolor=lightgray](2,0)(1,5)(3,7)(7,2)(2,0)
+% \psline[linewidth=.05cm](0,0)(3,3.5)
+% \psline[linewidth=.05cm](0,0)(3,2)
+% \psline[linewidth=.05cm](0,0)(3,0.5)
+% \uput[ur](.9,3.5){\Large{$T$}}
+\uput[d](2,-.2){\normalsize{$F (2,0)$}}
+\uput[ul](1.2,5){\normalsize{$G (1,5)$}}
+\uput[u](3,7){\normalsize{$H (3,7)$}}
+\uput[r](7,2){\normalsize{$I (7,2)$}}
+\uput[l](8,0){\Large{$x$}}
+\uput[d](0,8){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}       \label{m39167*id69695}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+ \end{figure}  
+       \label{m39167*id69695}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39167*uid47}\item 
-What are the lengths of the opposite sides of FGHI?
-\label{m39167*uid48}\item Are the opposite sides of FGHI parallel?
-\label{m39167*uid49}\item  Do the diagonals of FGHI bisect each other?
-\label{m39167*uid50}\item  Can you state what type of quadrilateral FGHI is? Give reasons for your answer.
+What are the lengths of the opposite sides of $FGHI$?
+\label{m39167*uid48}\item Are the opposite sides of $FGHI$ parallel?
+\label{m39167*uid49}\item  Do the diagonals of $FGHI$ bisect each other?
+\label{m39167*uid50}\item  Can you state what type of quadrilateral $FGHI$ is? Give reasons for your answer.
 \end{enumerate}
                 \label{m39167*uid51}\item 
-A quadrialteral ABCD with vertices A(3;2), B(1;7), C(4;5) and D(1;3) is given.
+A quadrialteral $ABCD$ with vertices $A(3;2)$, $B(1;7)$, $C(4;5)$ and $D(1;3)$ is given.
 \label{m39167*id69770}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39167*uid52}\item  Draw the quadrilateral.
 \label{m39167*uid53}\item  Find the lengths of the sides of the quadrilateral.
 \end{enumerate}
-                \label{m39167*uid54}\item ABCD is a quadrilateral with verticies A(0;3), B(4;3), C(5;-1) and D(-1;-1).
+                \label{m39167*uid54}\item $ABCD$ is a quadrilateral with verticies $A(0;3)$, $B(4;3)$, $C(5;-1)$ and $D(-1;-1)$.
 \label{m39167*id69816}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39167*uid55}\item Show that:
 \label{m39167*id69834}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid56}\item AD = BC
-\label{m39167*uid57}\item AB $\^{a}ˆ¥$ DC
+            \label{m39167*uid56}\item $AD = BC$
+\label{m39167*uid57}\item $AB \parallel DC$
 \end{enumerate}
-        \label{m39167*uid58}\item What name would you give to ABCD?
-\label{m39167*uid59}\item Show that the diagonals AC and BD do not bisect each other.
+        \label{m39167*uid58}\item What name would you give to $ABCD$?
+\label{m39167*uid59}\item Show that the diagonals $AC$ and $BD$ do not bisect each other.
 \end{enumerate}
-                \label{m39167*uid60}\item P, Q, R and S are the points (-2;0), (2;3), (5;3), (-3;-3) respectively.
+                \label{m39167*uid60}\item $P$, $Q$, $R$ and $S$ are the points $(-2;0)$, $(2;3)$, $(5;3)$, $(-3;-3)$ respectively.
 \label{m39167*id69919}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \label{m39167*uid61}\item Show that:
 \label{m39167*id69937}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid62}\item SR = 2PQ
-\label{m39167*uid63}\item SR $\^{a}ˆ¥$ PQ
+            \label{m39167*uid62}\item $SR = 2PQ$
+\label{m39167*uid63}\item $SR \parallel PQ$
 \end{enumerate}
         \label{m39167*uid64}\item Calculate:
 \label{m39167*id69993}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid65}\item PS
-\label{m39167*uid66}\item QR
+            \label{m39167*uid65}\item $PS$
+\label{m39167*uid66}\item $QR$
 \end{enumerate}
-        \label{m39167*uid67}\item What kind of a quadrilateral is PQRS? Give reasons for your answers.
+        \label{m39167*uid67}\item What kind of a quadrilateral is $PQRS$? Give reasons for your answers.
 \end{enumerate}
-                \label{m39167*uid68}\item EFGH is a parallelogram with verticies E(-1;2), F(-2;-1) and G(2;0). Find the co-ordinates of H by using the fact that the diagonals of a parallelogram bisect each other.\newline
+                \label{m39167*uid68}\item $EFGH$ is a parallelogram with verticies $E(-1;2)$, $F(-2;-1)$ and $G(2;0)$. Find the co-ordinates of H by using the fact that the diagonals of a parallelogram bisect each other.\newline
 \item  
-PQRS is a quadrilateral with points P(0; \^{a}ˆ'3) ; Q(\^{a}ˆ'2;5) ; R(3;2) and S(3;\^{a}€``2)  in the Cartesian plane.
+$PQRS$ is a quadrilateral with points $P(0;-3)$ ; $Q(-2;5)$ ; $R(3;2)$ and $S(3;-2)$  in the Cartesian plane.
 \label{m39167*id0812312}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*id08123}\item Find the length of QR.\label{m39167*id981221}\item Find the gradient of PS.\label{m39167*id08213}\item Find the midpoint of PR.\label{m39167*id9871293}\item Is PQRS a parallelogram?  Give reasons for your answer. \end{enumerate}
-                \item A(\^{a}€``2;3) and B(2;6) are points in the Cartesian plane.  C(a;b) is the midpoint of AB. Find the values of a and b.\newline
+            \label{m39167*id08123}\item Find the length of $QR$.
+\label{m39167*id981221}\item Find the gradient of $PS$.
+\label{m39167*id08213}\item Find the midpoint of $PR$.
+\label{m39167*id9871293}\item Is $PQRS$ a parallelogram?  Give reasons for your answer. \end{enumerate}
+                \item $A(-2;3)$ and $B(2;6)$ are points in the Cartesian plane. $C(a;b)$ is the midpoint of $AB$. Find the values of $a$ and $b$.
 \item 
-Consider: Triangle ABC with vertices A (1; 3) B (4; 1) and C (6; 4):
+Consider: Triangle $ABC$ with vertices $A(1; 3)$ , $B(4;1)$ and $C (6; 4)$:
 \label{m39167*id9173123}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \item Sketch triangle ABC on the Cartesian plane. \item Show that ABC is an isoceles triangle.\item Determine the co-ordinates of M, the midpoint of AC.\item Determine the gradient of AB.\item Show that the following points are collinear: A, B and D(7;-1)\end{enumerate}
-\item In the diagram, A is the point (-6;1) and B is the point (0;3)
+            \item Sketch triangle $ABC$ on the Cartesian plane. 
+\item Show that $ABC$ is an isoceles triangle.
+\item Determine the co-ordinates of $M$, the midpoint of $AC$.
+\item Determine the gradient of $AB$.
+\item Show that the following points are collinear: $A$, $B$ and $D(7;-1)$
+\end{enumerate}
+\item In the diagram, $A$ is the point $(-6;1)$ and $B$ is the point $(0;3)$
     \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39167*id740344}
+ 	\begin{figure}[H] % horizontal\label{m39107*id63458}
     \begin{center}
-    \label{m39167*id740344!!!underscore!!!media}\label{m39167*id740344!!!underscore!!!printimage}\includegraphics[width=0.4\columnwidth]{col11306.imgs/m39167_MG10C14_5.png} % m39167;MG10C14\_5.png;;;6.0;8.5;
-      \vspace{2pt}
-    \vspace{.1in}
+\scalebox{.8}{
+\begin{pspicture}(-5,-5)(5.5,5.5)
+% \psaxes{<->}(0,0)(5,5)
+\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-10,-1)(1,7)
+\psline[linewidth=.05cm](-6,1)(0,3)
+% \psline[linewidth=.05cm](0,0)(3,3.5)
+% \psline[linewidth=.05cm](0,0)(3,2)
+% \psline[linewidth=.05cm](0,0)(3,0.5)
+% \uput[ur](.9,3.5){\Large{$T$}}
+\uput[d](-6,1){\Large{$A (-6,1)$}}
+\uput[d](-5.9,1.2){\qdisk(0,0){3pt}}
+\uput[ul](-.2,3){\Large{$B (0,3)$}}
+\uput[d](0,3.2){\qdisk(0,0){3pt}}
+\uput[l](1.8,0){\Large{$x$}}
+\uput[d](0,8){\Large{$y$}}
+\end{pspicture}
+}
     \end{center}
- \end{figure}       \label{m39167*id982373}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \item Find the equation of line AB \item Calculate the length of AB\item  A\^{a}€™ is the image of A and B\^{a}€™ is the image of B. Both these images are obtain by applying the transformation: (x;y)$\^{a}†'$(x-4;y-1). Give the coordinates of both A\^{a}€™ and B\^{a}€™\item Find the equation of A\^{a}€™B\^{a}€™\item Calculate the length of A\^{a}€™B\^{a}€™\item Can you state with certainty that AA'B'B is a parallelogram? Justify your answer.\end{enumerate}
+ \end{figure} 
+      \label{m39167*id982373}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \item Find the equation of line $AB$ 
+\item Calculate the length of $AB$
+\item  $A'$ is the image of $A$ and $B'$ is the image of $B$. Both these images are obtain by applying the transformation: $(x;y)\to(x - 4;y - 1)$. Give the coordinates of both $A'$ and $B'$
+\item Find the equation of $A'B'$
+\item Calculate the length of $A'B'$
+\item Can you state with certainty that $AA'B'B$ is a parallelogram? Justify your answer.\end{enumerate}
                  \end{enumerate}
 \label{m39167**end}
   \label{71522cd1c95e0cbedb9f300409036b1b**end}
