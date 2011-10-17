@@ -1,4 +1,30 @@
-   \newenvironment{toc}%
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{icomma}
+\usepackage{tikz, ifthen}
+\usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
+
+% <Must include this>
+% Definitions for coin images
+\def\coinheads{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{H}};}
+\def\cointails{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{T}};}
+% Definitions for dice images
+\input{Gr10-Probability-images/makedice}
+% Definitions for Venn images
+\input{Gr10-Probability-images/venn_union_intersection}
+% </Must include this>
+   
+
+
+
+
+
+
+\newenvironment{toc}%
     {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
     \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
     \setlength{\partopsep}{0cm}}
@@ -20,6 +46,7 @@
       tmargin=1in, bmargin=1in,
       twoside, centering,
       includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
+   \usepackage{etoolbox} 
     \usepackage{wrapfig}
     \usepackage{ifthen,changepage}      
     \usepackage{layouts}
@@ -272,7 +299,7 @@ Note
 \setcounter{workedexamplecounter}{1}
 
 
-%EZ new counters for exercises, they get reset in the \section heading environment
+%EZ new counters for exercises, 
 \newcounter{exercisecounter}
 \setcounter{exercisecounter}{1}
 % make it reset for new chapters
@@ -313,6 +340,36 @@ Note
 
 
 
+\newskip\Vspace@topskip
+\providecommand\Vspace[1]{%
+        \Vspace@topskip\topskip
+        \topskip\z@skip
+        \ifvmode
+                \dimen@\prevdepth
+                \hrule\@height\z@
+                \nobreak
+                \vskip\glueexpr#1\relax
+                \vskip\z@skip
+                \prevdepth\dimen@
+        \else
+                \@bsphack
+                \vadjust{%
+                        \@restorepar
+                        \hrule\@height\z@
+                        \nobreak
+                        \vskip#1%
+                        \vskip\z@skip
+                }%
+                \@esphack
+        \fi
+        \topskip\Vspace@topskip
+}
+
+
+
+
+
+
 
 % can we deprecate the use of this, and use \westep instead
 \newcommand{\westep}[1]
@@ -334,19 +391,33 @@ Note
 \setlength{\parindent}{0pt}
 %% Title and counter
 %\rput(-2.0,0){\pspencil}\noindent
+
 \begin{mdframed}[linewidth=1.5pt,linecolor=darkgray,innertopmargin=10pt, innerbottommargin=10pt]
-{\fontsize{10}]\bfseries\slshape Worked Example \arabic{workedexamplecounter}: }#1
+{\fontsize{10}\bfseries\slshape Worked Example \arabic{workedexamplecounter}: }#1
 \noindent
 \end{mdframed}
-\begin{mdframed}[skipabove=-5pt, skipbelow=3mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
+%\ifdimless{\pagetotal}{4\baselineskip}%4em play with this
+%{\Vspace{8\baselineskip}}{}
+\begin{mdframed}[skipabove=5mm, skipbelow=5mm, backgroundcolor=siyavula-gray, linecolor=siyavula-gray]
+%%% EZ trying a tikzpicture instead of mdframed for the heading. 
+%\begin{tikzpicture}[remember picture,overlay]
+%    \node[anchor=west, yshift=8pt, xshift=-0.82cm, text centered]
+%      {\begin{tikzpicture}[remember picture, overlay]
+%        \draw[color=white, draw=black, very thick] (0,0) rectangle
+%          (\textwidth,0.75cm);
+%       \node[anchor=west, yshift=0.3525cm]
+%              {\color{black}{\fontsize{10}]\bfseries\slshape Worked Example \arabic{workedexamplecounter}: } #1 };
+%       \end{tikzpicture}
+%    };
+%\end{tikzpicture}
+
 \vspace*{\baselineskip}
 \textbf{\textit{QUESTION}} \vspace*{\baselineskip} 
 \hrule
 \vspace*{\baselineskip}
-
 \textit{\noindent #2}
-\par
 \vspace*{2\baselineskip}
+\par
 \textbf{\textit{SOLUTION}}\vspace*{\baselineskip}
 \noindent
 \hrule
@@ -420,7 +491,6 @@ Note
 
 \newenvironment{exercises}[1]
 {
-
 \exercisesheading
 
 %\hrule width \textwidth height 1pt\\
@@ -779,7 +849,7 @@ Note
       };
    \end{tikzpicture}
   }
-\titlespacing*{\section}{1.5cm}{2.5cm}{2cm}
+\titlespacing*{\section}{1.5cm}{1.5cm}{2cm}
 
 
 
