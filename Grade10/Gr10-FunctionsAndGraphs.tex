@@ -2,256 +2,125 @@
 \setcounter{figure}{0}
 \setcounter{subfigure}{0}
 
-Functions are mathematical building blocks for designing machines, predicting natural disasters, curing diseases, understanding world economies and for keeping aeroplanes in the air. Functions can take input from many variables, but always give the same answer, unique to that function. It is the fact that you always get the same answer from a set of inputs that makes functions special.\par 
-A major advantage of functions is that they allow us to visualise equations in terms of a graph. A graph is an accurate drawing of a function and is much easier to read than lists of numbers. In this chapter we will learn how to understand and create real valued functions, how to read graphs and how to draw them.\par 
+\section{Functions in the real world}
+Functions are mathematical building blocks for designing machines, predicting natural disasters, curing diseases, understanding world economies and for keeping aeroplanes in the air. Functions can take input from many variables, but always give the same output, unique to that function. It is the fact that you always get a predictable answer from a set of inputs that makes functions special.\par 
+A major advantage of functions is that they allow us to visualise relationships in terms of a graph. A graph is a two-dimensional representation of a function in the Cartesian plane. Functions are much easier to read and interpret than lists of numbers.\par 
 In addition to their use in the problems facing humanity, functions also appear on a day-to-day level, so they are worth learning about. A function is always dependent on one or more variables, like time, distance or a more abstract quantity.\par 
 
-\subsection*{Functions in the real world}
-\nopagebreak
-Some typical examples of functions you may already have met
-include:-\par 
+Some examples of functions include:\par 
 \begin{itemize}[noitemsep]
-\item how much money you have, as a function of time. You never have more than one amount of money at any time because you can always add everything to give one number. By understanding how your money changes over time, you can plan to spend your money sensibly. Businesses find it very useful to plot the graph of their money over time so that they can see when they are spending too much. Such observations are not always obvious from looking at the numbers alone.
-\item the temperature is a very complicated function because it has so many inputs, including; the time of day, the season, the amount of clouds in the sky, the strength of the wind, where you are and many more. But the important thing is that there is only one temperature when you measure it in a specific place. By understanding how the temperature is effected by these things, you can plan
+\item Money as a function of time. You never have more than one amount of money at any time because you can always add everything to give one number. By understanding how your money changes over time, you can plan to spend your money sensibly. Businesses find it very useful to plot the graph of their money over time so that they can see when they are spending too much. Such observations are not always obvious from looking at the numbers alone.
+\item Temperature as a function of various factors. Temperature is a very complicated function because it has so many inputs, including; the time of day, the season, the amount of clouds in the sky, the strength of the wind, where you are and many more. But the important thing is that there is only one temperature when you measure it in a specific place. By understanding how the temperature is affected by these things, you can plan
 for the day.
-\item where you are is a function of time, because you cannot be in two places at once! If you were to plot the graphs of where two people are as a function of time, if the lines cross it means that the two people meet each other at that time. This idea is used in logistics, an area of mathematics that tries to plan where people and items are for businesses.
-\item your weight is a function of how much you eat and how much exercise you do, but everybody has a different function so that is why people are all different sizes.
+\item Location as a function of time. You can never be in two places at the same time. If you were to plot the graphs of where two people are as a function of time, the place where the lines cross means that the two people meet each other at that time. This idea is used in logistics, an area of mathematics that tries to plan where people and items are for businesses.
+\item Your weight as a function of how much you eat and how much exercise you do, so it differs from person to person.
 \end{itemize}
 
-\section{Basic functions}
-\nopagebreak
-There are many characteristics of graphs that help describe the graph of any function. These properties will be described in this chapter and are:\par 
-
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item dependent and independent variables
-\item domain and range
-\item intercepts with axes
-\item turning points
-\item asymptotes
-\item lines of symmetry
-\item intervals on which the function increases/decreases
-\item continuous nature of the function
-\end{enumerate}
-Some of these words may be unfamiliar to you, but each will be clearly described. Examples of these properties are shown in Figure~\ref{fig:mf:characteristics}.
-
-\begin{figure}[htbp]
-\begin{center}
-\begin{pspicture}(-8,-4.5)(8,4)
-\psset{xunit=0.75,yunit=0.75}
-%\psgrid[gridcolor=lightgray,gridlabels=1,gridwidth=0.5pt,subgriddiv=10]
-\rput(-4,0){\psaxes{<->}(0,0)(-3.9,-4)(3.9,4)
-\psplot[arrows=<->]{-2.35}{2.35}{x 3 exp 4 x mul sub 0.5 add}
-\uput[r](2.5,3){$f(x)$}
-\psdots(0,0.5)(-2.07,0)(1.93,0)(1.155,-2.579)(-1.155,3.579)(0.13,0)
-\uput[ur](0,0.5){$A$}
-\uput[ul](-2,0){$B$}
-\uput[ur](2,0){$C$}
-\uput[dr](1.155,-2.579){$D$}
-\uput[ur](-1.155,3.579){$E$}
-\uput[ur](0.11,0){$F$}}
-\rput(4,0){\psaxes{<->}(0,0)(-3.9,-4)(3.9,4)
-\psplot[arrows=<->]{-3.5}{-0.1}{x -1 exp x add 0.25 mul}
-\psplot[arrows=<->]{0.1}{3.5}{x -1 exp x add 0.25 mul}
-\psplot[linestyle=dashed]{-4}{4}{0.25 x mul}
-\uput[u](-4,-1){$h$}
-\uput[r](0.5,3){$g(x)$}}
-\rput(-4,-4.5){(a)}
-\rput(4,-4.5){(b)}
-\end{pspicture}
+\Definition{function}{A function is a mathematical relationship between two variables, where every input variable has one output.}
+\Note{One output can have different input variables.}
 
 
-\begin{tabular}{|c|c|}\hline
-$A$& $y$-intercept\\\hline
-$B$, $C$, $F$ & $x$-intercept\\\hline
-$D$, $E$ & turning points\\\hline
-\end{tabular}
-
-\caption{(a) Example graphs showing the characteristics of a function. (b) Example graph showing asymptotes of a function.}
-\label{fig:mf:characteristics}
-\end{center}
-\end{figure}
 
 
 \subsection*{Dependent and independent variables}
-\nopagebreak
-Thus far, all the graphs you have drawn have needed two values, an $x$-value and a $y$-value. The $y$-value is usually determined from some relation based on a given or chosen $x$-value. These values are given special names in mathematics. The given or chosen $x$-value is known as the independent variable, because its value can be chosen freely. The calculated $y$-value is known as the dependent variable, because its value depends on the chosen $x$-value.\par 
+In functions, the $x$-value is known as the input or independent variable, because its value can be chosen freely. The calculated $y$-value is known as the output or dependent variable, because its value depends on the chosen input value.\par 
 
 \subsection*{Domain and range}
-\nopagebreak
-The domain of a relation is the set of all the $x$ values for which there exists at least one $y$ value according to that relation. The range is the set of all the $y$ values, which can be obtained using at least one $x$ value.\par 
-If the relation is of height to people, then the domain is all living people, while the range would be about $0,1$ to $3$ metres --- no living person can have a height of $0~\emm$, and while strictly it's not impossible to be taller than $3~\emm$, no one alive is. An important aspect of this range is that it does not contain all the numbers between $0,1$ and $3$, but at most six billion of them (as many as there are people).\par 
-As another example, suppose $x$ and $y$ are real valued variables, and we have the relation $y={2}^{x}$. Then for any value of $x$, there is a value of $y$, so the domain of this relation is the whole set of real numbers. However, we know that no matter what value of $x$ we choose, ${2}^{x}$ can never be less than or equal to $0$. Hence the range of this function is all the real numbers strictly greater than zero.\par 
-These are two ways of writing the domain and range of a function, set notation and interval notation. Both notations are used in mathematics, so you should be familiar with each.\par 
+
+The domain of a function is the set of all input values ($x$-values) for which there is at least one output value ($y$-value) value according to that relation. 
+\\The range is the set of all output values ($y$-values) which can be obtained using at least one input value ($x$-value).\par 
+
+
 
 \subsection*{Set notation}
-\nopagebreak
-A set of certain $x$ values has the following form:\par 
-\nopagebreak\noindent{}
-\begin{equation*}
-x:\mbox{conditions, more conditions}
-\end{equation*}
-We read this notation as ``the set of all $x$ values where all the conditions are satisfied''. For example, the set of all positive real numbers can be written as $\{x:x\in \mathbb{R},x>0\}$ which reads as ``the set of all $x$ values where $x$ is a real number and is greater than zero''.\par 
+Examples:
+\\
+\begin{tabular}{ |p{5cm} | p{8cm} | }
+\hline
+  $\{x: x \in \mathBB{R}, x > 0\}$ &  The set of all $x$-values such that $x$ is an element of the set of real numbers and is greater than $0$
+\\ \hline
+    $\{y: y \in \mathBB{N}, 3 < y \leq 5}$ & The set of all $y$-values such that $y$ is an element of the set of natural numbers, is greater than $3$ and less than or equal to $5$. 
+\\ \hline
+  $\{z: z \in \mathBB{Z}, z \leq 100}$ & The set of all $z$-values such that $z$ is an element of the set of integers and is less than or equal to $100$.  
+\\ \hline
+\end{tabular}
 
 \subsection*{Interval notation}
-\nopagebreak
-Here we write an interval in the form 'lower bracket, lower number, comma, upper number, upper bracket'. We can use two types of brackets, square ones $[;]$ or round ones $(;)$. A square bracket means including the number at the end of the interval whereas a round bracket means excluding the number at the end of the interval. It is important to note that this notation can only be used for all real numbers in an interval. It cannot be used to describe integers in an interval or rational numbers in an interval.\par 
-So if $x$ is a real number greater than $2$ and less than or equal to $8$, then $x$ is any number in the interval\par 
-\nopagebreak\noindent{}
-\begin{equation*}
-(2;8)
-\end{equation*}
-It is obvious that $2$ is the lower number and $8$ the upper number. The round bracket means 'excluding $2$', since $x$ is greater than $2$, and the square bracket means 'including $8$' as $x$ is less than or equal to $8$.\par 
+It is important to note that this notation can only be used to represent an interval of real numbers.
+Examples:
+\\
+\begin{tabular}{ |p{5cm} | p{8cm} | }
+\hline
+  $(4;12)$ &  Round brackets indicate that the number is not included. This interval indicates all real numbers greater than, but not equal to $4$ and less than, but not equal to $12$.
+\\ \hline
+ $(- \infty; -1)$ & Round brackets are always used for positive and negative infinity. 
+\\ \hline
+ $[1; 13)$ & A square bracket indicates that the number is included. This interval indicates all real numbers greater than, and equal to $1$ and less than, but not equal to $13$.
+\\ \hline
+\end{tabular}
 
-\subsection*{Intercepts with the axes}
-\nopagebreak
-The intercept is the point at which a graph intersects an axis. The $x$-intercepts are the points at which the graph cuts the $x$-axis and the $y$-intercepts are the points at which the graph cuts the $y$-axis.\par 
-In Figure~\ref{fig:mf:characteristics}(a), the $A$ is the $y$-intercept and $B$, $C$ and $F$ are $x$-intercepts.\par 
-You will usually need to calculate the intercepts. The two most important things to remember are that at the $x$-intercept, $y=0$ and at the $y$-intercept, $x=0$.\par 
-For example, calculate the intercepts of $y=3x+5$. For the $y$-intercept, $x=0$. Therefore the $y$-intercept is ${y}_{int}=3(0)+5=5$. For the $x$-intercept, $y=0$. Therefore the $x$-intercept is found from $0=3{x}_{int}+5$, giving ${x}_{int}=-\frac{5}{3}$.\par 
+\subsection*{Function notation}
+This is a very useful way to express a function. Instead of writing $y=2x+1$ we write $f(x) = 2x+1$. We say ``$f$ of $x$ is equal to $2x+1$''. Any letter can be used, e.g. $g(x)$, $h(x)$, $p(x)$ etc. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Determine the output value: ``find the value of the function for $x=-3$'' can be written as`` find $f(-3)$''.
+\\Replace $x$ with $-3$: $f(-3)=2(-3)+1=-5 \therefore f(-3)=-5$. \\
+This means that when $x=-3$ the value of the function $(y)$ $~=5$.
+\item Determine the input value: ``find the value of $x$ that will give a $y$-value of $27$'' can be written as ``find $x$ if $f(x)=2x+1 = 27$''. \\
+We write the following equation and solve for $x$: $2x+1 = 27 \therefore x=13$.\\
+This means that when $x=13$ the value of the function $(y)$ $~=27$.
 
-\subsection*{Turning points}
-\nopagebreak
-Turning points only occur for graphs of functions whose highest power is greater than $1$. For example, graphs of the following functions will have turning points.\par 
-\nopagebreak\noindent{}
-\begin{equation*}
-\begin{array}{ccc}\hfill f(x)& =& 2{x}^{2}-2\hfill \\ 
-\hfill g(x)& =& {x}^{3}-2{x}^{2}+x-2\hfill \\ 
-\hfill h(x)& =& \frac{2}{3}{x}^{4}-2\hfill \end{array}
-\end{equation*}
-There are two types of turning points: a minimal turning point and a maximal turning point. A minimal turning point is a point on the graph where the graph stops decreasing in value and starts increasing in value and a maximal turning point is a point on the graph where the graph stops increasing in value and starts decreasing. These are shown in Figure~\ref{m39337*uid48!!!underscore!!!printimage}.\par 
+\end{enumerate}
+\Note{$x$-value = input value\\
+$y$-value = output/function value}
 
-\begin{figure}
-\begin{center}
-\begin{pspicture}(-8,-2.5)(8,2.5)
-%\psgrid[gridcolor=lightgray,gridlabels=10pt,gridwidth=0.5pt,subgriddiv=10]
-\psset{xunit=0.75,yunit=0.75}
-\rput(-4,0){
-\psaxes{<->}(0,0)(0,-2.5)(0,2.5)
-\uput[u](0,2.5){$y$}
-\psplot{-2}{2}{x 2 exp 2 sub}
-\psplot[arrows=->]{-2}{-1.5}{1.2 mul x 2 exp 2.2 sub}
-\psplot[arrows=->]{-0.5}{0.5}{1.2 mul x 2 exp 2.2 sub}
-\psplot[arrows=->]{1.5}{2}{1.2 mul x 2 exp 2.2 sub}
-\uput[l](-2,1){y-values decreasing}
-\uput[r](2,1){y-values increasing}
-\uput[l](-0.5,-2){minimal turning point}
-\psdot(0,-2)}
-\rput(4,0){
-\psaxes{<->}(0,0)(0,-2.5)(0,2.5)
-\uput[u](0,2.5){$y$}
-\psplot{-2}{2}{x 2 exp neg 2 add}
-\psplot[arrows=->]{-2}{-1.5}{1.2 mul x 2 exp neg 2.2 add}
-\psplot[arrows=->]{-0.5}{0.5}{1.2 mul x 2 exp neg 2.2 add}
-\psplot[arrows=->]{1.5}{2}{1.2 mul x 2 exp neg 2.2 add}
-\uput[l](-2,-1){y-values increasing}
-\uput[r](2,-1){y-values decreasing}
-\uput[r](0.5,2){maximal turning point}
-\psdot(0,2)}
-\uput[d](-4,-2.5){(a)}
-\uput[d](4,-2.5){(b)}
-\end{pspicture}
-\caption{(a) Maximal turning point. (b) Minimal turning point.}
-\label{fig:mf:turningpoint}
-\end{center}
-\end{figure}      
+\subsection*{Representations of functions}
+Functions can be expressed in many different ways for different purposes. 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item Words: the relationship between two variables is such that one is always $5$ less than the other.
+\item Mapping diagram: 
+%DIAGRAM HERE
+\item Table: 
+%TABLE HERE
+\item Set of ordered number pairs: $(-3;-8), (0;-5), (5;0)$
+\item Algebraic formula: $y = x-5$, $x \in \{-3; 0; 5\}$
+\item Graph:
+%GRAPH HERE
 
-In Figure~\ref{fig:mf:characteristics}(a), $E$ is a maximal turning point and $D$ is a minimal turning point.\par 
-
-\subsection*{Asymptotes}
-\nopragebreak
-An asymptote is a straight or curved line, which the graph of a function will approach, but never touch.\par 
-In Figure~\ref{fig:mf:characteristics}(b), the $y$-axis and line $h$ are both asymptotes as the graph approaches both these lines, but never touches them.\par 
-
-\subsection*{Lines of symmetry}
-\nopagebreak
-Graphs look the same on either side of lines of symmetry. These lines may include the $x$- and $y$- axes. For example, in Figure~\ref{m39337*uid51!!!underscore!!!printimage} is symmetric about the $y$-axis. This is described as the axis of symmetry. Not every graph will have a line of symmetry.\par 
-
-\setcounter{subfigure}{0}
-\begin{figure}[htbp]
-\begin{center}
-\begin{pspicture}(-2.5,-2)(2.5,2)
-%\psgrid[gridcolor=lightgray,gridlabels=10pt,gridwidth=0.5pt,subgriddiv=10]
-\psaxes[arrows=<->](0,0)(-2.5,-2)(2.5,2)
-\psplot[arrows=<->]{-1.8}{1.8}{x 2 exp 1.5 sub}
-\end{pspicture}
-\caption{Demonstration of axis of symmetry. The $y$-axis is an axis of symmetry, because the graph looks the same on both sides of the $y$-axis.}
-\label{fig:mf:linesofsymmetry}
-\end{center}
-\end{figure}      
-
-\subsection*{Intervals on which the function increases/decreases}
-\nopagebreak
-In the discussion of turning points, we saw that the graph of a function can start or stop increasing or decreasing at a turning point. If the graph in Figure~\ref{fig:mf:characteristics}(a) is examined, we find that the values of the graph increase and decrease over different intervals. We see that the graph increases (i.e. that the $y$-values increase) from -$\infty $ to point $E$, then it decreases (i.e. the $y$-values decrease) from point $E$ to point $D$ and then it increases from point $D$ to $+ \infty $.\par 
-
-\subsection*{Discrete or continuous nature of the graph}
-\nopagebreak
-A graph is said to be continuous if there are no breaks in the graph. For example, the graph in Figure~\ref{fig:mf:characteristics}(a) can be described as a continuous graph, while the graph in Figure~\ref{fig:mf:characteristics}(b) has a break around the asymptotes which means that it is not continuous.
-In Figure~\ref{fig:mf:characteristics}(b), it is clear that the graph does have a break in it around the asymptote.\par 
-
+\end{enumerate}
 
 \begin{exercises}{}
 {
+Write the following in set notation:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item The domain of the function $f(x)=2x+5$ is $-3$; $-3$; $-3$; $0$. Determine the range of $f$.
-\item If $g(x)=-{x}^{2}+5$ and $x$ is between $-3$ and $3$, determine:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item the domain of $g(x)$
-    \item the range of $g(x)$
-    \end{enumerate}
-\item On the following graph label:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item the $x$-intercept(s)
-    \item the $y$-intercept(s)
-    \item regions where the graph is increasing
-    \item regions where the graph is decreasing
-    \end{enumerate}
-
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39337*id237308}
-\begin{center}
-\scalebox{0.8}{
-\begin{pspicture}(-4,-4)(4,5)
-\psaxes{<->}(0,0)(-4,-4)(4,5)
-\psplot[arrows=<->]{-3.5}{1.5}{ x 2 exp 2 x mul add 2 sub}
-\end{pspicture}
-}
-\end{center}
-\end{figure}               
-
-\item On the following graph label:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item the $x$-intercept(s)
-    \item the $y$-intercept(s)
-    \item regions where the graph is increasing
-    \item regions where the graph is decreasing
-    \end{enumerate}
-
-\setcounter{subfigure}{0}
-
-\begin{figure}[H] % horizontal\label{m39337*id237401}
-\begin{center}
-\begin{pspicture}(-3,-3)(3,3.5)
-%\psgrid[subgriddiv=1,griddots=10]
-\psaxes{<->}(0,0)(-3,-3)(3,3.5)
-\psplot[arrows=<->]{-1.1}{2.1}{2 x 3 exp mul 3 x 2 exp mul sub 2 x mul sub 2 add}
-\end{pspicture}
-\end{center}
-\end{figure}  
-             
+ \item $(- \infty; 7]$
+\item $[13;4)$
+\item $(35; \infty)$
+\item $[\frac{3}{4}; 21)$
+\item $[-\frac{1}{2}; \frac{1}{2}$
+\item $(-3; \infty)$
 \end{enumerate}
 
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
-\par \begin{tabular}[h]{cccccc}
-(1.) lxY  &  (2.) lxg  &  (3.) lx4  &  (4.) lx2  & \end{tabular}
-}
+Write the following in interval notation:
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+ \item $\{p: p \in \mathBB{R}, p \leq 6\}$
+ \item $\{k: k \in \mathBB{R}, -5 < k < 5}$
+ \item $\{x: x \in \mathBB{R}, x > \frac{1}{5}\}$
+ \item $\{z: z \in \mathBB{R}, 21 \leq z < 41\}$
+
+\end{enumerate}
+
+} 
 \end{exercises}
 
-\section{Linear functions of the form $y=ax+q$}
-\nopagebreak
+\section{Linear functions of the form $y=mx+c$}
+
 
 \subsection*{Plotting the graph}       
-Functions with a general form of $y=ax+q$ are called straight line functions. In the equation, $y=ax+q$, $a$ and $q$ are constants and have different effects on the graph of the function. The general shape of the graph of functions of this form is shown in Figure~1.8 for the function $f(x)=2x+3$.\par 
+Functions with a general form of $y=mx+c$ are called straight line functions. In the equation, $y=mx+c$, $m$ and $c$ are constants and have different effects on the graph of the function. 
 
+\begin {wex}{Plotting a straight line}
+{
 \begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-6,-2)(6,4.6)
@@ -263,132 +132,154 @@ Functions with a general form of $y=ax+q$ are called straight line functions. In
 %\psplot[showpoints=true](-5,-7)(-5,-7)(-4,-5)(-3,-3)(-2,-1)(-1,1)(-1.5,0)(0,3)(1,5)(2,7)(3,9)(4,11)(5,13)
 \rput(-1.6,1.5){$-\frac 32$}
 \end{pspicture}
-\caption{Graph of $f(x) = 2x + 3$}
-\label{fig:mf:g:straightline}
+% \caption{Graph of $f(x) = 2x + 3$}
+% \label{fig:mf:g:straightline}
 \end{center}
-\end{figure}    
+\end{figure}  
+}
+{
+}
+\end {wex}
 
-\subsection*{Investigating the effects of $a$ and $q$}
-\nopagebreak
+  
+
+\subsection*{Investigating the effects of $m$ and $c$}
+
+\begin{Investigation}{The effects of $m$ and $c$ on a straight line graph}
+
+On the same set of axes, plot the following graphs:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item On the same set of axes, plot the following graphs:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+
     \item $a(x)=x-2$
     \item $b(x)=x-1$
     \item $c(x)=x$
     \item $d(x)=x+1$
     \item $e(x)=x+2$
     \end{enumerate}
-Use your results to deduce the effect of different values of $q$ on the resulting graph.
-\item On the same set of axes, plot the following graphs:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+Use your results to deduce the effect of different values of $c$ on the resulting graph.\\
+\\
+
+On the same set of axes, plot the following graphs:
+
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{5}
     \item $f(x)=-2x$
-    \item $g(x)=-1x$
-    \item $h(x)=0x$
-    \item $j(x)=1x$
+    \item $g(x)=-x$
+    \item $j(x)=x$
 \item $k(x)=2x$
     \end{enumerate}
-Use your results to deduce the effect of different values of $a$ on the resulting graph.
-\end{enumerate}
+Use your results to deduce the effect of different values of $m$ on the resulting graph.
+\end{Investigation}
 
-You may have noticed that the value of $a$ affects the slope of the graph. As $a$ increases, the slope of the graph increases. If $a>0$ then the graph increases from left to right (slopes upwards). If $a<0$ then the graph increases from right to left (slopes downwards). For this reason, $a$ is referred to as the slope or gradient of a straight-line function.\par 
-You should have also found that the value of $q$ affects where the graph passes through the $y$-axis. For this reason, $q$ is known as the y-intercept.\par 
-These different properties are summarised in Table 1.7.\par 
+
 \begin{table}[htb]
 \begin{center}
-\caption{Table summarising general shapes and positions of graphs of functions of the form $y=ax+q$.}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=mx+q=c$.}
 \label{tab:mf:graphs:summarystr10}
-\begin{tabular}{|c|c|c|}\hline
-& $a>0$&$a<0$\\ \hline
-$q>0$&
+\begin{tabular}{|c|c|c|c|}\hline
+& $m<0$&$m=0$ & $m>0$\\ \hline
+$c>0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x neg 1 add}
+\end{pspicture}
+
+&
+&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
 \psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x 1 add}
 \end{pspicture}
+\\\hline
+$c<0$&
 &
+&
+\\ \hline
+$c=0$
+&
+
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x neg 1 add}
-\end{pspicture}\\\hline
-$q<0$&
+\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x neg 1 sub}
+\end{pspicture}
+&
+&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
 \psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x 1 sub}
 
 \end{pspicture}
-&
-\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
-\psset{yunit=0.25,xunit=0.25}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x neg 1 sub}
-\end{pspicture}
 \\\hline
 \end{tabular}
 \end{center}
 \end{table}
 
-\subsection*{Discovering the characteristics} 
+We notice that the value of $m$ affects the slope of the graph. As $m$ increases, the slope of the graph increases. If $m>0$ then the graph increases from left to right (slopes upwards). If $m<0$ then the graph increases from right to left (slopes downwards). For this reason, $m$ is referred to as the slope or gradient of a straight-line function.\par 
+We also notice that the value of $c$ affects where the graph cuts the $y$-axis. For this reason, $c$ is known as the y-intercept. If $c$ increases the graph shifts vertically upwards. If $c$ decreases, the graph shifts vertically downwards.\par 
 
+% These different properties are summarised in Table 1.7.\par 
+
+\subsection*{Discovering the characteristics} 
+The standard form of a straight line graph is the equation $y=mx + c$. 
 \subsection*{Domain and range}
 \nopagebreak
-For $f(x)=ax+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
-The range of $f(x)=ax+q$ is also $\{f(x):f(x)\in \mathbb{R}\}$ because there is no value of $f(x)\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
-For example, the domain of $g(x)=x-1$ is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $g(x)$ is undefined. The range of $g(x)$ is $\{g(x):g(x)\in \mathbb{R}\}$.\par 
+For $f(x)=mx+c$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no value of $x\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
+The range of $f(x)=mx+c$ is also $\{f(x):f(x)\in \mathbb{R}\}$ because there is no value of $f(x)\in \mathbb{R}$ for which $f(x)$ is undefined.\par 
+\par 
 
 \subsection*{Intercepts}
 
-For functions of the form, $y=ax+q$, the details of calculating the intercepts with the $x$ and $y$ axis are given.\par 
-The $y$-intercept is calculated as follows:\par 
-
-\begin{equation*}
-\begin{array}{ccc}\hfill y& =& ax+q\hfill \\
-\hfill {y}_{int}& =& a(0)+q\hfill \\
-& =& q\hfill 
-\end{array}
-\end{equation*}
+Every point on the $y$-axis has an $x$-coordinate of $0$. Therefore, to calculate the $y$-intercept, left $x=0$.\par
 For example, the $y$-intercept of $g(x)=x-1$ is given by setting $x=0$ to get:\par 
 
 \begin{equation*}
-\begin{array}{ccc}\hfill g(x)& =& x-1\hfill \\
-\hfill {y}_{int}& =& 0-1\hfill \\
+\begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+\hfill g(0) &=& 0-1\hfill \\
 & =& -1\hfill 
 \end{array}
 \end{equation*}
-The $x$-intercepts are calculated as follows:\par 
+This gives the point $(0;-1)$.\par
+
+
+Every point on the $x$-axis has a $y$-coordinate of $0$. Therefore to calculate the $x$-intercept, let $y=0$. \par
+For example, the $x$-intercepts of $g(x)=x-1$ is given by setting $y=0$ to get:\par 
 
 \begin{equation*}
-\begin{array}{ccc}\hfill y& =& ax+q\hfill \\
-\hfill 0& =& a{x}_{int}+q\hfill \\
-\hfill a{x}_{int}& =& -q\hfill \\
-\hfill {x}_{int}& =& -\frac{q}{a}\hfill \
-end{array}
-\end{equation*}
-For example, the $x$-intercepts of $g(x)=x-1$ is given by setting $y=0$ to get:\par 
-\nopagebreak\noindent{}
-\begin{equation*}
-\begin{array}{ccc}\hfill g(x)& =& x-1\hfill \\
-\hfill 0& =& {x}_{int}-1\hfill \\
-\hfill {x}_{int}& =& 1\hfill 
+\begin{array}{ccl}\hfill g(x)& =& x-1\hfill \\
+\hfill 0& =& x-1\hfill \\
+\hfill x& =& 1\hfill 
 \end{array}
 \end{equation*}
+This gives the point $(1;0)$.
 
-\subsection*{Sketching graphs of the form $f(x)=ax+q$}
-\nopagebreak
-In order to sketch graphs of the form, $f(x)=ax+q$, we need to determine three characteristics:\par 
+\subsection*{Sketching graphs of the form $f(x)=mx+c$}
+\subsection*{Dual intercept method}
+
+In order to sketch graphs of the form, $f(x)=mx+c$, we need to determine three characteristics:\par 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item sign of $a$
+\item sign of $m$
 \item $y$-intercept
 \item $x$-intercept
 \end{enumerate}
-Only two points are needed to plot a straight line graph. The easiest points to use are the $x$-intercept (where the line cuts the $x$-axis) and the $y$-intercept.\par 
-For example, sketch the graph of $g(x)=x-1$. Mark the intercepts.\par 
-Firstly, we determine that $a>0$. This means that the graph will have an upward slope.\par 
-The $y$-intercept is obtained by setting $x=0$ and was calculated earlier to be ${y}_{int}=-1$. The $x$-intercept is obtained by setting $y=0$ and was calculated earlier to be ${x}_{int}=1$.\par 
+Only two points are needed to plot a straight line graph. The easiest points to use are the $x$-intercept and the $y$-intercept.\par 
 
-\begin{figure}[!ht]
+\begin{wex}{Sketching a straigh line graph using the dual intercept method}
+{Sketch the graph of $g(x)=x-1$ using the dual intercept method}
+{
+\westep{Examine the standard form of the equation}
+$m>0$. This means that the graph increases as $x$ increases.
+
+\westep{Calculate intercepts}
+For $y$-intercept, let $x=0$; therefore $g(0)=-1$.This gives the point $(0;-1)$. \\
+
+For $x$-intercept, let $y=0$; therefore $x=1$.This gives the point $(1;0)$. 
+
+\westep{Plot points and draw graph}
+
 \begin{center}
 \begin{pspicture}(-4,-4)(4,3)
 %\psgrid
@@ -399,61 +290,79 @@ The $y$-intercept is obtained by setting $x=0$ and was calculated earlier to be 
 \uput[r](0,-1.3){$(0;-1)$}
 \uput[ul](1.3,0.3){$(1;0)$}
 \end{pspicture}
-\caption{Graph of the function $g(x)=x-1$}
-\label{fig:mf:g:sketchexamplestr}
+% \caption{Graph of the function $g(x)=x-1$}
+% \label{fig:mf:g:sketchexamplestr}
 \end{center}
-\end{figure}      
 
-
-\begin{wex}{ Drawing a straight line graph }
-
-{Draw the graph of $y=2x+2$} 
-{
-\westep{}
-To find the intercept on the y-axis, let $x=0$
-\begin{equation*}
-\begin{array}{ccc}\hfill y& =& 2(0)+2\hfill \\
- & =& 2\hfill 
-\end{array}
-\end{equation*}
-
-\westep{}
-For the intercept on the x-axis, let $y=0$
-\begin{equation*}
-\begin{array}{ccc}\hfill 0& =& 2x+2\hfill \\
- \hfill 2x& =& -2\hfill \\
- \hfill x& =& -1\hfill 
-\end{array}
-\end{equation*}
-
-\westep{}
-\setcounter{subfigure}{0}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-3.5)(8.0,3.5)
-\rput(4.0,-0.5){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0,0)(-4,-3)(4,4)}
-\psline[linewidth=0.04cm](1.802,-2.818)(4.262,2.062)
-\psline[linewidth=0.04cm](4.002,1.082)(3.982,1.102)
-\usefont{T1}{ptm}{m}{n}
-\rput{63.4}(-1.0020186,-3.3679688){\rput(2.2234063,-2.468){$y = 2x + 2$}}
-\end{pspicture} 
-}     
+Note: this graph is continuous and extends in both directions.       
 }
 \end{wex}
+
+\subsection*{Gradient and $y$-intercept method}
+We can draw a straight line graph of the form $y=mx+c$ using the gradient $m$ and the $y$-intercept $c$. \par We calculate the $y$-intercept by letting $x=0$. This gives us one point for drawing the graph and to calculate the second we use the gradient ($m$).\par
+
+The gradient of a line is the measure of steepness. Steepness is determined by the ratio of vertical change to horizontal change:
+\begin{equation*}
+m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{\mbox{\footnotesize vertical change}}{\mbox{\footnotesize horizontal change}}
+\end{equation*}
+For example: $y=\frac{3}{2}x-1$, therfore $m > 0$ and $y$ increases as $x$ increases
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{3\uparrow}{2\rightarrow} = \dfrac{-3\downarrow}{-2\leftarrow}
+\end{equation*}
+
+
+
+\begin{wex}{Sketching a straigh line graph using the gradient-intercept method}
+{Sketch the graph of $y=\frac{1}{2}x-3$ using the gradient-intercept method}
+{
+\westep{Use the intercept}
+The value of $c$ tells us the $y$-intercept, where the graph cuts the $y$-axis. \\
+$c=-3$ which gives us the point $(0;-3)$.
+
+\westep{Use the gradient}
+
+\begin{equation*}
+ m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{1\uparrow}{2\rightarrow} = \dfrac{-1\downarrow}{-2\leftarrow}
+\end{equation*}
+We start at  $(0;-3)$. Move $1$ unit up and $2$ units to the right. This gives us the second point $(2;-2)$. \\
+Or move $1$ unit down and $2$ units to the lift. This gives us the second point $(-1,-4)$.
+
+\westep{Plot points and draw graph}
+
+\begin{center}
+% \NEW GRAPH HERE
+\end{center}
+
+Note: this graph is continuous and extends in both directions.       
+}
+\end{wex}
+
+\Tip{Always write thefunction in the form $y=mx+c$ and take note of $m$. After plotting the graph, make sure that if $m>0$, the graph increases and that if $m<0$, the graph decreases.}
 
 
 \begin{exercises}{}
 {
 \nopagebreak
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item List the $y$-intercepts for the following straight-line graphs:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item $y=x$
+
+ List the $x$- and $y$-intercepts for the following straight-line graphs. Indicate whether the graph is increasing or decreasing:
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+    \item $y=x+1$
     \item $y=x-1$
     \item $y=2x-1$
     \item $y+1=2x$
+\item $3y-2x=6$
+\item$y=-3$
+\item $x=3y$
+\item $\frac{x}{2} - \frac{y}{3} = 1$
     \end{enumerate}
-\item Give the equation of the illustrated graph below:
+
+
+For the functions in the diagram below, give the equation and domain and range:
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi{8}
+    \item $a(x)$
+%etc - other functions on graph go here
+    \end{enumerate} 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39338*id240155}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -471,9 +380,12 @@ For the intercept on the x-axis, let $y=0$
 \rput(6.775156,0.11953125){$(4;0)$}
 \end{pspicture} 
 }
-\end{figure}               
-
-\item Sketch the following relations on the same set of axes, clearly indicating the intercepts with the axes as well as the co-ordinates of the point of interception of the graph: $x+2y-5=0$ and $3x-y-1=0$\newline
+\end{figure}  
+            
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi{12}
+\item Sketch the following functions on the same set of axes, using the dual intercept method. Clearly indicating the intercepts with the axes as well as the co-ordinates of the point of interception of the graphs: $x+2y-5=0$ and $3x-y-1=0$
+\item On the same system of axes, draw the graphs of $f(x)=3-3x$ and $g(x)=\frac{1}{3}x+1$ using the gradient-intercept method.
 \end{enumerate}
 
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
