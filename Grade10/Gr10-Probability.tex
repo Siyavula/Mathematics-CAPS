@@ -1,65 +1,9 @@
-\documentclass[a4paper,11pt]{report}
-
 % NOTE: There are a couple of \clearpage commands that I used to make
 % things align properly in my PDF. You should delete these when
 % reformatting.
 
-\usepackage{amsmath,amsfonts,amssymb}
-\usepackage{graphics}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{icomma}
-\usepackage{tikz, ifthen}
-\usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
 
-% <Must include this>
-% Definitions for coin images
-\def\coinheads{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{H}};}
-\def\cointails{\draw (0,0) circle (0.9cm); \draw (0,0) circle (0.72cm); \draw (0,0) node {\Huge\textbf{T}};}
-% Definitions for dice images
-\input{Gr10-Probability-images/makedice}
-% Definitions for Venn images
-\input{Gr10-Probability-images/venn_union_intersection}
-% </Must include this>
 
-% <Temporary FHSST definitions>
-\def\Definition#1#2{\paragraph{Definition:} #1 --- #2}
-
-\def\Identity#1#2{\paragraph{Identity:} #1 --- #2}
-
-\newenvironment{wex}[3]%
-{\rule{\linewidth}{0.5mm}
-\textbf{Worked example:} #1
-
-\textbf{Question:} #2
-
-\textbf{Solution:} #3}%
-{\rule{\linewidth}{0.5mm}}
-
-\newcommand{\westep}[1]{\paragraph{Step:} #1}
-
-\newenvironment{exercises}[1]%
-{\rule{\linewidth}{0.5mm}
-\textbf{Exercises:} #1\\}%
-{\rule{\linewidth}{0.5mm}}
-
-\newenvironment{eocexercises}[1]%
-{\section{End of chapter exercises: #1}}%
-{}
-% </Temporary FHSST definitions>
-
-% <Temporary spacing changes>
-\setlength\parindent{0pt}
-\setlength\parskip{0.5\baselineskip}
-\setlength\textwidth{15cm}
-\setlength\textheight{23cm}
-\setlength\oddsidemargin{0.5cm}
-\setlength\topmargin{0cm}
-% </Temporary spacing changes>
-
-\begin{document}
 \chapter{Probability}
 
 \section{Introduction}
@@ -159,7 +103,7 @@ $6$ numbers on the second die. This gives a total of \(n(S) = 6 \times 6
 = 36\) possible outcomes. The figure below shows all of the outcomes
 in the sample space.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -318,11 +262,11 @@ was achieved in $1954$ in the match between Austria and Switzerland,
 where the final score was $7$--$5$.)
 
 \begin{exercises}{Theoretical probability}
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
     balls. A ball is picked at random. What is the probablity that it
     is:
-    \begin{enumerate}
+    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
     \item red
     \item blue or white
     \item not green
@@ -330,13 +274,13 @@ where the final score was $7$--$5$.)
     \end{enumerate}
   \item A playing card is selected randomly from a pack of $52$
     cards. What is the probability that it is:
-    \begin{enumerate}
+    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
     \item the $2$ of hearts
     \item a red card
     \item a picture card
     \item an ace
     \item a number less than $4$?
-    \end{enumerate}
+    \end{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
   \item Even numbers in the range $2$--$100$ are written on cards. What is
     the probability of selecting a multiple of $5$, if a card is drawn
     at random?
@@ -362,10 +306,9 @@ set. Because it is experimental, it is possible to get a different
 relative frequency every time that we repeat an experiment.
 
 \begin{wex}{Relative frequency and theoretical probability}{
-  We toss a coin $40$ times and observe the outcomes. The results of
-  the trials are shown in the table below.
+  We toss a coin $30$ times and observe the outcomes. The results of
+  the trials are shown in the table below. \vspace*{\baselineskip}
 
-\begin{table}[h]
   \begin{center}
     \begin{tabular}{lc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
@@ -380,8 +323,6 @@ relative frequency every time that we repeat an experiment.
       \bottomrule
     \end{tabular}
   \end{center}
-  \caption{Outcomes of tossing a coin $30$ times.}
-\end{table}
 
   What is the relative frequency of observing heads after each trial
   and how does it compare to the theoretical probability of observing
@@ -395,7 +336,6 @@ relative frequency every time that we repeat an experiment.
   $t=20$ trials we have observed heads 8 times and tails 12 times and
   so the positive outcome count is $p=8$.
 
-\begin{table}[h]
   \begin{center}
     \begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
@@ -409,17 +349,17 @@ relative frequency every time that we repeat an experiment.
       $p$ &  $9$ & $10$ & $11$ & $11$ & $12$ & $12$ & $13$ & $13$ & $13$ & $13$ \\
       \bottomrule
     \end{tabular}
-  \end{center}
-  \caption{Number of positive outcomes (heads), $p$, after having completed $t$ trials.}
-\end{table}
+\begin{center} Number of positive outcomes (heads), $p$, after having completed $t$ trials.\end{center}
 
-  \westep{Compute the relative frequency}
+  \end{center}
+  
+
+\westep{Compute the relative frequency}
 
   Since the relative frequency is defined as the ratio between the
   number of positive trials and the total number of trials,
   \[f=\frac{p}{t}\]
 
-\begin{table}[h]
   \begin{center}
     \begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
@@ -433,11 +373,10 @@ relative frequency every time that we repeat an experiment.
       $f$ & $0,43$ & $0,45$ & $0,48$ & $0,46$ & $0,48$ & $0,46$ & $0,48$ & $0,46$ & $0,45$ & $0,43$ \\
       \bottomrule
     \end{tabular}
-  \end{center}
-  \caption{Relative frequency of observing heads, $f$, after having
-    completed $t$ coin tosses.}
-\end{table}
+\begin{center} Relative frequency of observing heads, $f$, after having completed $t$ coin tosses.\end{center}
 
+  \end{center}
+  
 From the last entry in this table we can now easily read the relative
 frequency after $30$ trials, namely $13/30 = 0,4\dot{3}$. The relative
 frequency is close to the theoretical probability of $0,5$. In general,
@@ -475,7 +414,6 @@ probability.
 \begin{wex}{Relative frequency and theoretical probability}{
   While watching $10$ soccer games where Team 1 plays against Team 2, we
   record the following final scores.
-  \begin{table}[h]
     \begin{center}
       \begin{tabular}{lcccccccccc}
         \toprule
@@ -484,11 +422,12 @@ probability.
         Team 1 & $2$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $5$ & $3$ \\
         Team 2 & $0$ & $2$ & $2$ & $2$ & $2$ & $1$ & $1$ & $0$ & $0$ & $0$ \\
         \bottomrule
-      \end{tabular}
+      \end{tabular}\begin{center} Final scores of $10$ soccer matches. \end{center}
+
     \end{center}
-    \caption{Final scores of $10$ soccer matches.}
-  \end{table}
-  What is the relative frequency of Team 1 winning?
+      
+
+What is the relative frequency of Team 1 winning?
 }{
   In this experiment, each trial takes the form of Team 1 playing a
   soccer matich against Team 2.
@@ -555,7 +494,6 @@ all. In the third diagram one event is fully contained in the other.
 Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
 
-\clearpage
 \begin{wex}{Venn diagrams}{
   Represent the sample space of two rolled dice and the two events where
   \begin{itemize}
@@ -569,7 +507,6 @@ sample space contains all possible outcomes of the experiment.
   \end{itemize}
   using a Venn diagram.
 }{
-\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -601,16 +538,15 @@ sample space contains all possible outcomes of the experiment.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-\caption{Venn diagram showing two events, $A$ and $B$, and the sample
+%\caption{Venn diagram showing two events, $A$ and $B$, and the sample
   space, $S$, of rolling two dice.}
 \label{fig:dice_venn}
-\end{figure}
 
 }
 \end{wex}
 
 \begin{exercises}{Venn diagrams}
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item  Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
     denote the set of even numbers from $1$ to $16$ and $Y$ denote the
     set of prime numbers from $1$ to $16$
@@ -659,7 +595,6 @@ sample space contains all possible outcomes of the experiment.
   \end{tabularx}
 \end{exercises}
 
-\clearpage
 \section{Union and intersection}
 \Definition{Union}{The union of two sets is a new set that contains
   all of the elements that are in at least one of the two sets. The
@@ -815,7 +750,7 @@ exclusive events only.
 }{
   \westep{Draw the sample space and the two events}
 
-\begin{figure}[h]
+%\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -846,7 +781,7 @@ exclusive events only.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-\end{figure}
+%\end{figure}
 
   \westep{Determine the intersection}
 
@@ -889,7 +824,7 @@ From the previous two identities, we also know that the
   use: A or B or both. The report of the survey shows that $25$
   people use product A, $35$ people use product B and $15$ people use
   neither product. Use a Venn diagram to work out how many people
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item use product A only,
   \item use product B only,
   \item use both product A and product B.
@@ -942,7 +877,7 @@ From the previous two identities, we also know that the
     \end{center}
 
   \westep{Read off the answers}
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item $20$ people use product A only.
   \item $30$ people use product B only.
   \item $5$ people use both products.
@@ -951,7 +886,7 @@ From the previous two identities, we also know that the
 \end{wex}
 
 \begin{exercises}{Theoretical probability}
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A box contains coloured blocks. The number of each colour is
     given in the following table.
 
@@ -1020,7 +955,7 @@ From the previous two identities, we also know that the
 \end{exercises}
 
 \begin{eocexercises}{Probability}
-  \begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A group of $45$ children were asked if they eat Frosties and/or
     Strawberry Pops. $31$ eat both and $6$ eat only Frosties. What is the
     probability that a child chosen at random will eat only Strawberry
@@ -1153,4 +1088,3 @@ From the previous two identities, we also know that the
 \end{eocexercises}
 
 
-\end{document}
