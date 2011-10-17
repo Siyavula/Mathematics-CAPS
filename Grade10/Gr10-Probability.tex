@@ -30,10 +30,9 @@ a coin, rolling dice, a soccer match.
 \Definition{Outcome}{An outcome of an experiment is a single
   result of that experiment.}
 
-\begin{figure}[h]
-  \paragraph{Experiment 1} A coin is tossed and it lands with either
+\begin{figure}[H]
+\textbf{Experiment 1} A coin is tossed and it lands with either
   heads (H) or tails (T) facing upwards.
-
   \begin{center}
     \begin{tikzpicture}
       \coinheads
@@ -43,8 +42,8 @@ a coin, rolling dice, a soccer match.
     facing up.}
 \end{figure}
 
-\begin{figure}[h]
-  \paragraph{Experiment 2} Two dice are rolled and the total number of
+\begin{figure}[H]
+  \textbf{Experiment 2} Two dice are rolled and the total number of
   dots added up.
 
   \begin{center}
@@ -56,8 +55,8 @@ a coin, rolling dice, a soccer match.
   \caption{An example outcome of rolling two dice.}
 \end{figure}
 
-\begin{figure}[h]
-  \paragraph{Experiment 3} Two teams play in a soccer match and we are
+\begin{figure}[H]
+  \textbf{Experiment 3} Two teams play in a soccer match and we are
   interested in the final score.
 
   \begin{center}
@@ -81,7 +80,7 @@ have a look at the sample spaces of each of our three experiments.
 sample space is the set \(S=\{\textrm{H}; \textrm{T}\}\). The size of the sample space
 is \(n(S)=2\).
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
   \begin{tikzpicture}
     \begin{scope}[xshift=-1.5cm]
@@ -94,7 +93,7 @@ is \(n(S)=2\).
   \end{tikzpicture}
   \end{center}
   \caption{Sample space of a coin toss.}
-\end{figure}
+\end{figure} 
 
 \paragraph{Experiment 2} Each of the dice can land on a number from $1$
 to $6$. In this experiment the sample space of all possible outcomes is
@@ -103,7 +102,7 @@ $6$ numbers on the second die. This gives a total of \(n(S) = 6 \times 6
 = 36\) possible outcomes. The figure below shows all of the outcomes
 in the sample space.
 
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -121,7 +120,7 @@ in the sample space.
 \end{tikzpicture}
 \end{center}
   \caption{Sample space of rolling two dice.}
-\end{figure}
+\end{figure} 
 
 \paragraph{Experiment 3} Each soccer team can get an integer score
 from $0$ upwards. Usually we don't expect a score to go much higher than
@@ -131,7 +130,7 @@ non-negative integers. The figure below shows all of the
 possibilities. Since we do not limit the score of a team, this sample
 space is infinitely large.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
   \begin{tikzpicture}
     \foreach \x in {0, ..., 3} {
@@ -204,7 +203,7 @@ than the second.
 This event set is infinitely large.
 
 %FIGURE: sample space with open curve around event set
-
+\pagebreak
 \section{Theoretical probability}
 \Definition{Probability}{A probability is a real number between
   $0$ and $1$ that describes how likely it is that an event will occur.}
@@ -256,12 +255,11 @@ are not equally likely. For example, we know that a soccer score of
 $1$--$1$ is quite common, while a score of $11$--$15$ is very, very
 rare. Because all outcomes are not equally likely, we cannot use the
 ratio between \(n(E)\) and \(n(S)\) to compute the theoretical
-probability of a team winning. (\textbf{Interesting fact:} the record
-for most goals scored by both teams in the FIFA World Cup is $12$. This
-was achieved in $1954$ in the match between Austria and Switzerland,
-where the final score was $7$--$5$.)
+probability of a team winning. 
+\IFact{The record for most goals scored by both teams in the FIFA World Cup is $12$. This
+was achieved in $1954$ in the match between Austria and Switzerland, where the final score was $7$--$5$.}
 
-\begin{exercises}{Theoretical probability}
+\begin{exercises}{Theoretical probability} \noindent
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
     balls. A ball is picked at random. What is the probablity that it
@@ -307,7 +305,8 @@ relative frequency every time that we repeat an experiment.
 
 \begin{wex}{Relative frequency and theoretical probability}{
   We toss a coin $30$ times and observe the outcomes. The results of
-  the trials are shown in the table below. \vspace*{\baselineskip}
+  the trials are shown in the table below.
+%  \vspace*{\baselineskip}
 
   \begin{center}
     \begin{tabular}{lc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
@@ -381,7 +380,7 @@ From the last entry in this table we can now easily read the relative
 frequency after $30$ trials, namely $13/30 = 0,4\dot{3}$. The relative
 frequency is close to the theoretical probability of $0,5$. In general,
 the relative frequency of an event gets closer to the theoretical
-probability of the event as we perform more trials.
+probability of the event as we perform more trials.\\
 
 A much better way to summarise the table of relative frequencies is in
 a graph. The graph below was generated from the table of numbers above
@@ -393,7 +392,7 @@ shown with a dashed line. As the number of trials increases, the
 relative frequency fluctuates less and gets closer to the theoretical
 probability.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{Gr10-Probability-images/coin_toss_trials.pdf}
   \end{center}
@@ -451,13 +450,13 @@ that we can compute if we have enough information about the
 experiment. If each possible outcome in the sample space is
 equally likely, we can count the number of outcomes in the event set
 and the number of outcomes in the sample space to compute the
-theoretical probability.
+theoretical probability.\\
 
 The relative frequency depends on the sequence of outcomes that we
 observe while doing a statistical experiment. The relative frequency
 can be different every time we redo the experiment. The more trials we
 run during an experiment, the closer the observed relative frequency
-of an event will get to the theoretical probability of the event.
+of an event will get to the theoretical probability of the event.\\
 
 So why do we need statistical experiments if we have theoretical
 probabilities? In some cases, like our soccer experiment, it is
@@ -467,25 +466,59 @@ team will score goals against another, we can never compute the
 theoretical probability of events in soccer. In such cases we can
 still use the relative frequency to estimate the theoretical
 probability, by running experiments and counting the number of
-positive outcomes.
+positive outcomes.\\
 
 \section{Venn diagrams}
 A Venn diagram is a graphical way of representing the relationships
 between sets. In each Venn diagram a set is represented by a closed
 curve. The region inside the curve represents the elements that
 belong to the set, while the region outside the curve represents the
-elements that are excluded from the set.
+elements that are excluded from the set.\\
 
 Venn diagrams are helpful for thinking about probability since we deal
 with different sets. Consider two events, $A$ and $B$, in a sample
-space $S$. The figure below shows the possible ways in which the event
-sets can overlap, represented using Venn diagrams.
+space $S$. Figure~\ref{fig:venndiagrams} shows the possible ways in which the event
+sets can overlap, represented using Venn diagrams.\\
 
-\begin{figure}[h]
-  \input{Gr10-Probability-images/venn_union_intersection1}
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.701875)(10.96,1.721875)
+\psframe[linewidth=0.04,dimen=outer](3.0,1.298125)(0.0,-1.701875)
+\pscircle[linewidth=0.04,dimen=outer](0.78,-0.061875){0.56}
+\pscircle[linewidth=0.04,dimen=outer](1.83,-0.371875){0.91}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7265625,0.728125){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.8471875,0.768125){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8192186,1.528125){S}
+\psframe[linewidth=0.04,dimen=outer](6.98,1.318125)(3.98,-1.681875)
+\pscircle[linewidth=0.04,dimen=outer](4.7,-0.961875){0.56}
+\pscircle[linewidth=0.04,dimen=outer](6.02,-0.001875){0.8}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.7065625,-0.191875){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.0071874,1.008125){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.7992187,1.548125){S}
+\psframe[linewidth=0.04,dimen=outer](10.96,1.318125)(7.96,-1.681875)
+\pscircle[linewidth=0.04,dimen=outer](9.38,0.078125){0.56}
+\pscircle[linewidth=0.04,dimen=outer](9.47,-0.271875){1.13}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.266562,0.828125){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.447187,-0.811875){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.779219,1.548125){S}
+\end{pspicture} 
+}
   \caption{Venn diagrams with different configurations of two events,
     $A$ and $B$, in a sample space, $S$.}
-\end{figure}
+\end{center}
+\label{fig:venndiagrams}
+\end{figure}\\
 
 The sets are represented using a rectangle for $S$ and circles for
 each of $A$ and $B$.  In the first diagram the two events overlap
@@ -493,7 +526,7 @@ partially. In the second diagram the two events do not overlap at
 all. In the third diagram one event is fully contained in the other.
 Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
-
+\vspace{-1cm}
 \begin{wex}{Venn diagrams}{
   Represent the sample space of two rolled dice and the two events where
   \begin{itemize}
@@ -538,14 +571,14 @@ sample space contains all possible outcomes of the experiment.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-%\caption{Venn diagram showing two events, $A$ and $B$, and the sample
+\caption{Venn diagram showing two events, $A$ and $B$, and the sample
   space, $S$, of rolling two dice.}
 \label{fig:dice_venn}
 
 }
 \end{wex}
 
-\begin{exercises}{Venn diagrams}
+\begin{exercises}{Venn diagrams}\noindent
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item  Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
     denote the set of even numbers from $1$ to $16$ and $Y$ denote the
@@ -723,7 +756,7 @@ cannot have any elements in common, or $P(A \cap B) = \emptyset$
 We have already seen the Venn diagrams of mutually exclusive events in
 the middle column of Figure \ref{fig:venn_union_intersection}.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \input{Gr10-Probability-images/venn_union_intersection3}
   \caption{Mutually exclusive events.}
 \end{figure}
@@ -885,7 +918,7 @@ From the previous two identities, we also know that the
 }
 \end{wex}
 
-\begin{exercises}{Theoretical probability}
+\begin{exercises}{Theoretical probability}\noindent
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A box contains coloured blocks. The number of each colour is
     given in the following table.
@@ -954,7 +987,7 @@ From the previous two identities, we also know that the
   \end{tabularx}
 \end{exercises}
 
-\begin{eocexercises}{Probability}
+\begin{eocexercises}{Probability}\noindent
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item A group of $45$ children were asked if they eat Frosties and/or
     Strawberry Pops. $31$ eat both and $6$ eat only Frosties. What is the
