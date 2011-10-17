@@ -1,0 +1,76 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{pst-all}
+\usepackage{pst-eucl}        %Jo
+\usepackage{pst-poly}        %Jo
+\usepackage{pst-spectra}
+\usepackage{pst-slpe}
+\usepackage{pst-math}
+
+%% ************* NB ************
+%% The order in which pstricks packages are loaded
+%% matters - so I copied the order from pst-all.sty
+%% and then added the two additional packages at the end.
+%% ************* End NB ************
+
+%% ************* Packages ************
+\usepackage{pst-circ}
+\usepackage{pst-lens}
+\usepackage{pst-optic}         %Jo
+\usepackage{pstricks-add}         %Jo
+\usepackage{pst-labo}         %Jo   
+\usepackage{auto-pst-pdf}
+
+\usepackage{amsmath}
+\begin{document}
+
+\section{Test}
+
+\psset{yunit=2cm,xunit=2cm}
+\begin{pspicture}(-2,-2)(2,2)
+%  \psgrid[griddots=10,gridlabels=0pt, subgriddiv=0]
+  \psaxes(0,0)(-1.5,-1.5)(1.5, 1.5)
+\psplot[linecolor=black, linewidth=1pt, arrows=<->]{-1.}{1.}{%
+    /a 1.0 def
+    /b 0.0 def
+    /c 0.0 def
+  x x mul a mul b x mul add c add}
+  
+\psplot[plotstyle=dots, dotstyle=o, dotscale=2, plotpoints=3]{-0.5}{0.5}{%
+    /a 1.0 def
+    /b 0.0 def
+    /c 0.0 def
+  x x mul a mul b x mul add c add}
+
+\psplot[plotstyle=dots, plotpoints=3]{-0.5}{0.5}{%
+    /a 1.0 def
+    /b 0.0 def
+    /c 0.0 def
+  x x mul a mul b x mul add c add}
+
+\rput(-0.5,0.5){B}
+\rput(0.5,0.5){A}
+\rput(-0.1,-0.1){O}
+\end{pspicture}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
