@@ -152,7 +152,7 @@ Output variable &$-8$&$-5$&$0$
 \usefont{T1}{ptm}{m}{n}
 \rput(3.3,-1.2384375){$-5$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.9814062,-0.0584375){$O$}
+\rput(2.8,-0.2){$0$}
 \end{pspicture} 
 }
 \end{center}
@@ -198,7 +198,7 @@ Functions with a general form of $y=mx+c$ are called straight line functions. In
 \psaxes[Dy=3]{<->}(0,0)(-6,-8)(6,14)
 \psplot[plotstyle=curve,arrows=<->]{-5}{5}{x 2 mul 3 add}
 \psplot[plotstyle=dots,arrows=<->,plotpoints=9]{-4}{4}{x 2 mul 3 add}
-\rput(0, 0){$0$}
+\rput(-0.2, -0.6){$0$}
 \rput(0.3, 13.6){$y$}
 \rput(6.3, 0.3){$x$}
 \rput(4.5, 9){$f(x)=2x+3$}
@@ -396,6 +396,8 @@ For $x$-intercept, let $y=0$; therefore $x=1$.This gives the point $(1;0)$.
 \uput[ul](1.3,0.3){$(1;0)$}
 \rput(5.2,0.3){$x$}
 \rput(0.3, 4.2){$y$}
+\rput(5.5,3){$g(x)=x-1$}
+\rput(-0.3,-0.3){$0$}
 \end{pspicture}
 % \caption{Graph of the function $g(x)=x-1$}
 % \label{fig:mf:g:sketchexamplestr}
@@ -421,7 +423,7 @@ For example: $y=\frac{3}{2}x-1$, therfore $m > 0$ and $y$ increases as $x$ incre
 {
 % LABEL TICKS
 \begin{pspicture}(0,-4.7584376)(9.34125,4.7584376)
-\rput(4.0,0.3215625){\psaxes[linewidth=0.04,labels=none,ticksize=0.2cm, arrows=<->](0,0)(-4,-5)(5,4)}
+\rput(4.0,0.3215625){\psaxes[linewidth=0.04,ticksize=0.2cm, arrows=<->](0,0)(-5,-5)(5,5)}
 \psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{*-*}(1.92,-3.6984375)(5.96,2.3815625)
 \psarc[linewidth=0.04](4.49,2.3515625){0.49}{0.0}{180.0}
 \psarc[linewidth=0.04](5.51,2.3315625){0.51}{0.0}{180.0}
@@ -438,11 +440,11 @@ For example: $y=\frac{3}{2}x-1$, therfore $m > 0$ and $y$ increases as $x$ incre
 \usefont{T1}{ptm}{m}{n}
 \rput(4.355781,4.6315627){$y$}
 \usefont{T1}{ptm}{m}{n}
-% reposition these labels
-%Add psdot at (0,-1)
-\rput(5.1275,3.1515625){\LARGE$+2\rightarrow$}
+
+\psdot(4,-0.65)
+\rput(5.1275,3.3){\LARGE$+2\rightarrow$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.9310937,0.9715625){\LARGE$+3\uparrow$}
+\rput(2.7,1.5){\LARGE$+3\uparrow$}
 \usefont{T1}{ptm}{m}{n}
 \rput(5.161406,-2.1884375){\LARGE$-3\downarrow$}
 \usefont{T1}{ptm}{m}{n}
@@ -474,16 +476,17 @@ Or move $1$ unit down and $2$ units to the lift. This gives us the second point 
 \psset{yunit=0.75,xunit=0.75}
 \psaxes[arrows=<->](0,0)(-6,-6)(7,4)
 \psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
-\psline[linewidth=.7pt,arrows=->](0,-2)(2,-2)
-\psline[linewidth=.7pt,arrows=->](0,-3)(0,-2)
+\psline[linewidth=.7pt](0,-2)(2,-2)
+\psline[linewidth=.7pt](0,-3)(0,-2)
 \psdots(0,-3)(2,-2)
 \uput[r](0,-3.3){$(0;-3)$}
 \uput[ul](4,-2.5){$(2;-2)$}
 \rput(7.4,0.3){$x$}
 \rput(0.3, 4.2){$y$}
+\rput(-0.3,-0.3){$0$}
 % Add up/across arrows to labels
-\rput(-0.2, -2.5){\footnotesize$1$}
-\rput(1, -1.7){\footnotesize$2$}
+\rput(-0.6, -2.5){\footnotesize$1\uparrow$}
+\rput(1, -1.7){\footnotesize$2\rightarrow$}
 \end{pspicture}
 % \caption{Graph of the function $g(x)=x-1$}
 % \label{fig:mf:g:sketchexamplestr}
@@ -549,7 +552,7 @@ For the functions in the diagram below, give the equation and domain and range:
 \usefont{T1}{ptm}{m}{n}
 \rput(7.9,-2.1032813){$d(x)$}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.2,0.1){$0$}
+\rput(3.8,-0.4){$0$}
 \psline[linewidth=0.04](4.7,-0.87328136)(4.58,-0.45328137)(5.0,-0.45328137)
 \psline[linewidth=0.04](4.94,0.30671862)(4.82,0.7267186)(5.24,0.7267186)
 \end{pspicture} 
@@ -636,13 +639,16 @@ and the following graph:
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
 %\psgrid-\infty ;q
-\psaxes[arrows=<->,dy=0.5](0,0)(-5,-1)(5,5)
+\psaxes[arrows=<->,dy=0.5](0,0)(-5,0)(5,5)
 \psset{yunit=0.5}
 \psplot[plotstyle=curve,arrows=<->]{-3}{3}{x 2 exp}
 \psdots(-2.5, 6.25)(2.5,6.25)
 \rput(-2.2, 6.3){$B$}
 \rput(2.2, 6.3){$A$}
-\rput(0.1, 0.3){$0$}
+% \rput(-0.2, -0.3){$0$}
+\rput(5.3, 0.1){$x$}
+\rput(0.1, 10.3){$y$}
+\rput(3.7, 7){$f(x)=x^{2}$}
 \end{pspicture}
 % \caption{Graph of $f(x)=x^2-1$.}
 \label{fig:mf:g:parabola10}
@@ -1049,6 +1055,8 @@ From the standard form of the equation we see that the turning point is $(0;-3)$
 \uput[r](0,-2.7){$(0;-3)$}
 \rput(0.3, 0.8){$y$}
 \rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(4, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
 \end{pspicture}
 % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
 % % \label{fig:mf:g:sketchexamplepar10}
@@ -1093,19 +1101,37 @@ From the standard form of the equation we see that the turning point is $(0;5)$.
 \begin{center}
 \scalebox{1}
 {
-\psset{xunit=1.0cm,yunit=0.5cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
-\begin{pspicture*}(-2,-2)(4,8)
-\psaxes[xAxis=true,yAxis=true,Dx=1,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2,0)(2,8)[,140] [,-40]
-\rput{0}(0,5){\psplot{-2}{2}{x^2/2/0.17}}
-% \rput[bl](0.56,5.34){$y = 3x^{2} + 5$}
-\usefont{T1}{ptm}{m}{n}
-% add arrows to ends of graph
-\rput(0.3,7.6){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.3,0.3){$x$}
-\end{pspicture*}
+% \psset{xunit=1.0cm,yunit=0.5cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+% \begin{pspicture*}(-2,-2)(4,8)
+
+% % \rput{0}(0,5){\psplot[arrows=<->]{-2}{2}{x^2/2/0.17}}
+% 
+% % \rput[bl](0.56,5.34){$y = 3x^{2} + 5$}
+% \usefont{T1}{ptm}{m}{n}
+% % add arrows to ends of graph
+% \rput(0.3,7.6){$y$}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(2.3,0.3){$x$}
+% \rput(1.5,5){$y={3x}^{2}+5$}
+% \end{pspicture*}
+
+
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,8.5)
+\psplot[plotstyle=curve,arrows=<->]{-1.3}{1.3}{x 2 exp 3 mul 3 add}
+
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 8.5){$y$}
+\rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(2,4){$y={3x}^{2}+5$}
+\end{pspicture}
+
+
 }
-\end{center}\\
+\end{center}
 The domain is $\{x:x \in \mathBB{R}\}$\\
 The range is $\{y: y \geq 5, y \in \mathBB{R}\}$\\
 The axis of symmetry is the line $x=0$.
@@ -1131,45 +1157,39 @@ The following video shows one method of graphing parabolas. Note that in this vi
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Show that if $a<0$ that the range of $f(x)=ax^{2}+q$ is $\{f(x):f(x) \leq q \}$.
 \item Draw the graph of the function $y=-x^{2}+4$ showing all intercepts with the axes.\\
+\end{enumerate}
 Two parabolas are drawn: $g:y=ax^{2}+p$ and $h:y=bx^{2}+q$.
-\setcounter{subfigure}{0}
+
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.61)(9.072187,2.61)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.0,-0.57)(9.04,-0.57 )
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.54,-2.59)(4.56,2.59)
-\psbezier[linewidth=0.04](1.8801522,2.249799)(2.0476475,1.0067352)(2.6697726,-0.42756912)(2.9090517 ,-0.81005025)(3.1483305,-1.1925315)(3.6508162,-1.83)(4.584004,-1.83)
-\psbezier[linewidth=0.04](7.24,2.249799)(7.0725045,1.0067352)(6.4503794,-0.42756912)(6.2111006,-0.81005025)(5.971822,-1.1925315)(5.469336,-1.83)(4.536148 ,-1.83)
-\psbezier[linewidth=0.04](1.2402416,-2.409998)(1.4477341,-1.215622)(2.2184203,0.16250414)(2.5148382,0.53000444)(2.811256,0.8975047)(3.4337332,1.5100052)(4.5897627,1.5100052)
-\psbezier[linewidth=0.04](7.88,-2.409998 )(7.672508,-1.215622)(6.901821,0.16250414)(6.6054034,0.53000444)(6.3089857,0.8975047)(5.686508,1.5100052)(4.530479,1.5100052)
-\usefont{T1}{ptm}{m}{it}
-\rput(4.8129687,2.48){$y$}
-\usefont{T1}{ptm}{m}{it}
-\rput(8.908281 ,-0.3){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(4.2504687,1.73){$23$}
-\usefont{T1}{ptm}{m}{n}
-\rput(4.269219,-2.07){$ -9$}
-\usefont{T1}{ptm}{m}{n}
-\rput(1.730625,0.39){ $(-4;7)$} 
-\usefont{T1}{ptm}{m}{n}
-\rput(7.240625,0.39){$(4;7)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(6.4275,-0.81){ $3$}
-\usefont{T1}{ptm}{m}{it}
-\rput(7.369219,1.87){$g$}
-\usefont{T1}{ptm}{m}{it} 
-\rput{-0.1}(0.0029207817,0.01384337){\rput(7.9021873,-1.69){$h$}}
-\end{pspicture} 
-}       
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[arrows=<->,dx=2,Dx=2,dy=2,Dy=2, labels=none, ticks=none](0,0)(-10,-15)(10,28)
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp  9 sub}
+\psplot[plotstyle=curve,arrows=<->]{-5.5}{5.5}{x 2 exp 1 mul neg 23 add}
+
+\rput(0.6,28){$y$}
+\rput(0.6,-10){$-9$}
+\rput(-5.5,7.5){$(-4;7)$} 
+\rput(5.1,7.5){$(4;7)$}
+\rput(5.3,-0.85){$3$}
+\rput(5.6,17){$g$}
+\rput(5.6,-4){$h$}
+
+\rput(0.5, 24){$23$}
+\rput (10.4, 0.2){$x$}
+\rput(-0.5,-0.85){$0$}
+
+\end{pspicture}
 \end{center}
 
-  
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{2}  
     \item Find the values of $a$ and $p$.
     \item Find the values of $b$ and $q$.
     \item Find the values of $x$ for which $g{x}\ge h{x}$.
-    \item For what values of $x$ is $g$ increasing ?
+    \item For what values of $x$ is $g$ increasing?
   
 \end{enumerate}
 
@@ -1219,8 +1239,9 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
 {
 \westep{Substitute values into the equation}{
 \begin{equation*}
+% Note: the following 2 arrays should be one combined array but have be split to fix a wex-overflow
  \begin{array}{cllll}
-  h(x) &=& \frac{1}{x} & &\\
+  h(x) &=& \frac{1}{x} \\
  h(-3) &=& \frac{1}{-3} &=& -\frac{1}{3} \vspace{5pt}\\ 
  h(-2) &=& \frac{1}{-2} &=& -\frac{1}{2}\vspace{5pt} \\ 
  h(-1) &=& \frac{1}{-1} &=& -1 \vspace{5pt}\\ 
@@ -1228,15 +1249,20 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
  h(-\frac{1}{4}) &=& \dfrac{1}{-\frac{1}{4}} &=& -4 \vspace{5pt}\\ 
  h(0) &=& \frac{1}{0} &=& \mbox{undefined}\vspace{5pt} \\ 
  h(\frac{1}{4}) &=& \dfrac{1}{\frac{1}{4}} &=& 4 \vspace{5pt}\\ 
+ \end{array}
+\end{equation*}
+\begin{equation*}
+ \begin{array}{cllll}
  h(\frac{1}{2}) &=& \dfrac{1}{\frac{1}{2}} &=& 2 \vspace{5pt}\\ 
- h(1) &=& \frac{1}{1} &=& 1 \vspace{5pt}\\ 
- h(2) &=& \frac{1}{2} &=& \frac{1}{2} \vspace{5pt}\\ 
- h(3) &=& \frac{1}{3} &=& \frac{1}{3} \vspace{5pt}\\ 
+ h(1) &=& \frac{1}{1} &=& 1\\ 
+ h(2) &=& \frac{1}{2} &=& \frac{1}{2} \\ 
+ h(3) &=& \frac{1}{3} &=& \frac{1}{3}  
  \end{array}
 \end{equation*}
 
-\begin{table}[H]
 \begin{center}
+\begin{table}[H]
+
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
   $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
@@ -1244,28 +1270,31 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
  $h(x)$& $-\frac{1}{3}$ &$-\frac{1}{2}$&$-1$&$-2$&$-4$&undefined&$4$&$2$&$1$&$\frac{1}{2}$&$\frac{1}{3}$
 \\ \hline
 \end{tabular}
-\end{center}
+
 \end{table}
+\end{center}
 }
 \westep{Plot the points and join with two smooth curves}
-From the table we get the following points: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; -4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$ and $(3; \frac{1}{3})$. \vspace{8pt} \\
+From the table we get the following points: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; -4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$ and $(3; \frac{1}{3})$. 
 
 
-% \setcounter{subfigure}{0}
-% % \begin{figure}[tbp]
-% \begin{center}
-% \begin{pspicture}(-5,-2)(5,5)
-% %\psgrid
-% \psset{yunit=0.75,xunit=0.75}
-% \psaxes[arrows=<->](0,0)(-5,-2.667)(5,6)
-% \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp }
-% \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp }
-% % \psplot[linestyle=dotted,plotstyle=curve]{-5}{2}{x 2 add}
-% \end{pspicture}
-% % \caption{General shape and position of the graph of a function of the form $f(x)=\frac{a}{x} + q$.}
-% \label{fig:mf:g:hyperbola10}
-% \end{center}
-% % \end{figure}      
+\setcounter{subfigure}{0}
+% \begin{figure}[tbp]
+\begin{center}
+\begin{pspicture}(-5,-2)(5,5)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp}
+\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp}
+\rput(5.5,0.3){$x$}
+\rput(0.3,5.5){$y$}
+\rput(2,1.5) {$h(x) = \frac{1}{x}$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+
+\end{center}
+% \end{figure}      
 
 
 For $x=0$ the function $h$ is undefined. This is called a discontinuity at $x=0$. \vspace{8pt} \\
@@ -1323,7 +1352,7 @@ $q>0$&
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg 2 add}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{2}
 \end{pspicture}
 &
 
@@ -1333,7 +1362,7 @@ $q>0$&
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 add}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 add}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{2}
 \end{pspicture}
 \\\hline
 $q=0$ & 
@@ -1343,7 +1372,7 @@ $q=0$ &
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg }
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg }
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
@@ -1352,7 +1381,7 @@ $q=0$ &
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp }
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp }
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
 \end{pspicture}
 \\ \hline
 $q<0$&
@@ -1364,7 +1393,7 @@ $q<0$&
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
-\psplot[linestyle=dotted,plotstyle=curve]{-2}{4}{x neg 2 sub}
+\psplot[linestyle=dotted,plotstyle=curve]{-2}{4}{2 neg}
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
@@ -1373,7 +1402,7 @@ $q<0$&
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
 \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 sub}
+\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{2 neg}
 \end{pspicture}
 \\\hline
 \end{tabular}
@@ -1520,6 +1549,10 @@ The horizontal asymptote is the line $y=2$. The vertical asymptote is the line $
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.4}{x -1 exp 2 mul 2 add}
 \psplot[plotstyle=curve,arrows=<->]{0.4}{5}{x -1 exp 2 mul 2 add}
 \psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.2,0.2){$x$}
+\rput(0.2, 7.3){$y$}
+\rput(3.5,3.3){$g(x)=\frac{2}{x}+2$}
+\rput(-0.3,-0.3){$0$}
 \end{pspicture}
 % \caption{Graph of $g(x)=\frac{2}{x} + 2$.}
 % \label{fig:mf:g:hyperbolasketchexample}
@@ -1529,16 +1562,12 @@ Domain: $x \in \mathBB{R} - \{0\}$\\
 Range: $y \in \mathBB{R} - \{2\}$
 }
 \end{wex}
-
-
-
-
+\pagebreak
 \begin{wex}
 {Drawing a hyperbola}
 {
 Sketch the graph of $y=\frac{-4}{x}+7$.}
 {
-
 \westep{Examine the standard form of the equation}
 We see that $a<0$ therefore the graph lies in the second and fourth quadrants.
 \westep{Calculate the intercepts}
@@ -1546,8 +1575,7 @@ For the $y$-intercept, let $x=0$:
 \begin{equation*}
  \begin{array}{ccc}
  \hfill  y &= & \dfrac{-4}{x}+7 \vspace{4pt}\hfill \\
- \hfill &= & \dfrac {-4}{0} +7  \hfill \\
-
+ \hfill &= & \dfrac {-4}{0} +7  \hfill
  \end{array}
 \end{equation*}
 This is undefined, therefore there is no $y$-intercept. \\
@@ -1568,22 +1596,31 @@ This gives the point $\Big(\dfrac{4}{7};0\Big)$
 The horizontal asymptote is the line $y=7$. The vertical asymptote is the line $x=0$.
 
 \westep{Sketch the graph}
+\par
 \setcounter{subfigure}{0}
-\begin{figure}[H]
-\psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
-\begin{pspicture*}(-10.85,-7.73)(10.36,13.74)
-\psaxes[Axis=true,yAxis=true,Dx=2,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-10.85,-7.73)(10.36,13.74)[,140] [,-40]
-\psplot[plotpoints=200]{-10.849663672784777}{10.361464563594}{-4/x+7}
-\psplot[linestyle=dashed,dash=5pt 5pt]{-10.85}{10.36}{(--7-0*x)/1}
-\rput[bl](-8.13,7.85){$y=-\frac{4}{x} + 7$}
-\end{pspicture*}   
-\end{figure}
+% \begin{figure}[]
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-1)(7,15)
+\psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+\psplot[plotstyle=curve,arrows=<->]{7}{0.5}{x -1 exp -4 mul 7 add}
+\psline[linestyle=dashed](-7,7)(7,7)
+\rput(7.3,0.3){$x$}
+\rput(0.3, 15.3){$y$}
+\rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+\rput(8.2,7){$y=7$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+}
+\end{center}
+
 
 Domain: $x \in \mathBB{R} - \{0\}$\\
 Range: $y \in \mathBB{R} - \{7\}$\\
 Axis of symmetry: $y=x+7$ and $y=-x+7$
-
-
 }
 \end{wex}
 
@@ -1717,7 +1754,29 @@ $H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
 \end{center}
 \end{table}
 \westep{Plot the points and join with a smooth curve}
-% Diagram needed here
+
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp}
+\psplot[plotstyle=curve,arrows=<->]{-5}{1.3}{3 x exp}
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.9}{5 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(2.2,4.2){$f(x)$}
+\rput(1.4,4.4){$g(x)$}
+\rput(0.6,4.4){$h(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+
+\end{center}
+\end{figure}  
+
+    
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item We notice that all graphs pass through the point $(0;1)$. Any number with exponent $0$ is equal to $1$.
 \item The graphs do not cut the $x$-axis because $0^{0}$ is undefined.
@@ -1727,7 +1786,25 @@ Range: $(0; \infty)$
 \item $f(x)=2^{x}$ increases at the slowest rate because it has the smallest base.
 \item True: the greater the value of $k ~(k>1)$, the steeper the graph of $y=k^{x}$.
 \end{enumerate}
-% Another diagram needed here
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-2}{5}{0.5 x exp}
+\psplot[plotstyle=curve,arrows=<->]{-1.3}{5}{0.33 x exp}
+\psplot[plotstyle=curve,arrows=<->]{-0.9}{5}{0.2 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(-2.2,4.2){$F(x)$}
+\rput(-1.4,4.4){$G(x)$}
+\rput(-0.6,4.4){$H(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+\end{center}
+\end{figure}  
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item The $y$-intercept is the point $(0; 1)$ for all the graphs. For any real number $z$, $z^{0}=1$.
 \item $F(x)$ is the reflection of $f(x)$ about the $y$-axis. 
@@ -1741,20 +1818,7 @@ Range: $(0; \infty)$
 }
 \end{wex}
 
-% \par 
-% \setcounter{subfigure}{0}
-% \begin{figure}[H]
-% \begin{center}
-% \begin{pspicture}(-5,-1)(5,4)
-% %\psgrid
-% \psset{yunit=0.75,xunit=0.75}
-% \psaxes[arrows=<->](0,0)(-5,-1)(5,5)
-% \psplot[plotstyle=curve,arrows=<->]{-5}{1.2}{2 x exp 2 add}
-% \end{pspicture}
-% % \caption{General shape and position of the graph of a function of the form $f(x)=ab^{x} + q$.}
-% % \label{fig:mf:g:exponential10}
-% \end{center}
-% \end{figure}     
+   
 
 \subsection*{Investigating the effects of $a$ and $q$}
 \begin{Investigation}{Investigating the effects of $a$ and $q$ on an exponential graph}
@@ -2004,18 +2068,22 @@ The horizontal asymptote is the line $y=2$.
 
 \westep{Plot the points and sketch the graph}
 \setcounter{subfigure}{0}
-\begin{figure}[htbp]
+% \begin{figure}[htbp]
 \begin{center}
 \begin{pspicture}(-5,-1)(5,6)
 %\psgrid
 \psset{yunit=0.75,xunit=0.75}
 \psaxes[arrows=<->](0,0)(-5,-1)(5,7)
-\psplot[plotstyle=curve,arrows=<->]{-5}{0.5}{2 x exp 3 mul 2 add}
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.6}{2 x exp 3 mul 2 add}
+\psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.6,2.2){$y=2$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,3){$y= 3.2^{x}+2$}
+\rput(-0.3,-0.3){$0$}
 \end{pspicture}
-% \caption{Graph of $g(x)=3( 2^{x}) + 2$.}
-% \label{fig:mf:g:exponentialsketchexample10}
 \end{center}
-\end{figure}    
+% \end{figure}    
 \\
 Domain: $\{x \in \mathBB{R}\}$\\
 Range: $\{g(x): g(x) >2\}$\\
@@ -2059,7 +2127,23 @@ This gives the point $(1; 0)$
 
 
 \westep{Plot the points and sketch the graph} 
-% Diagram needed here
+\setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,6)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-5}{0.8}{3 x exp -3 mul 6 add}
+\psline[linestyle=dashed](-5,6)(5,6)
+\rput(5.6,6.2){$y=6$}
+\rput(5.2,0.2){$x$}
+\rput(0.2,7.2){$y$}
+\rput(-3.5,5.3){$y= -2.3^{x}+6$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+% \end{figure}    
 \\
 Domain: $\{x \in \mathBB{R}\}$\\
 Range: $\{g(x): g(x) <6\}$\\
