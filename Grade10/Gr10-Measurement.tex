@@ -503,39 +503,148 @@ $\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 180~cm^2$
 
 \begin{wex}
 {
-Find the total surface area of the prism below:
-\begin{center}
-\scalebox{1.0}{
-%	\begin{pspicture}(-1.5,-1.5)(1,1)
-%	    \psset{yunit=0.1,xunit=0.1}
-% 	    \psset{viewpoint=0 0 200}
-%	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.4 0 0 0.3 0.4 0,h=1.2, RotX=90]
-%            \psLineIIID[linestyle=dashed]
-%	\end{pspicture}}
-%\end{center}
-
-
-
-% vertices of the prism. Easiest way to do it it seems. Bah!
-\savedata{\mydata}[{0, 0, 0}, {8,0,0}, {4,3,0}, {0,0,0}, {0,0,12}, {4,3,12}, {4,3,0}]
-\begin{pspicture}(-1.5,-1.5)(1,1)
-    \psset{yunit=0.1,xunit=0.1}
-    \listplotThreeD{\mydata}
-\end{pspicture}}
-\end{center}
 
 }
 {
-
+Find the total surface area of the prism below:\\
+\scalebox{0.25}{
+	%% Triangular Prism
+        \psset{unit=1, Alpha=60, Beta=30}
+	\begin{pspicture}(-4,-4)(4,4)
+        \pstThreeDSquare(6,0,3)(-12,0,0)(0,-4,-3)
+        \pstThreeDSquare(6,4,0)(-12,0,0)(0,-4,3)
+        \pstThreeDTriangle(6,4,0)(6,-4,0)(6,0,3)
+        \end{pspicture}}
+N.B. Not done!
 
 }
+{%Solution
+
+\westep{Draw a rough sketch of the net of the solid, filling in the relevant values}
+
+% LaTeX Draw
+% \usepackage{pst-plot} % For axes
+\scalebox{1} % Change this value to rescale the drawing.
 {
+\begin{pspicture}(0,-3.538172)(7.7584376,3.5381718)
+\psframe[linewidth=0.02,dimen=outer](6.3,2.2243125)(0.0,-2.2243125)
+\pstriangle[linewidth=0.02,dimen=outer](3.15,2.2072406)(2.87,1.3345875)
+\rput{-180.0}(6.3,-5.7490687){\pstriangle[linewidth=0.02,dimen=outer](3.15,-3.541828)(2.87,1.3345875)}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.541875,2.6831717){3cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](3.14,3.5181718)(3.14,2.2181718)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.298125,0.083171844){12cm}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3982813,1.7031718){8cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](1.74,2.2181718)(1.76,-2.2218282)
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](4.52,2.2381718)(4.54,-2.2018282)
+\end{pspicture} 
+}
+
+\westep{Find the area of the different shapes}
+
+large rectangle = perimeter of triangle $\times$ length
+
+To find the perimeter of the triangle, we have to first find the length of the sides using Pythagoras:
+
+\par
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.97432816)(2.8562837,0.9306719)
+\pstriangle[linewidth=0.02,dimen=outer](1.435,-0.40025938)(2.87,1.3345875)
+\rput(1.826875,0.075671844){3cm}
+\psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](1.425,0.91067183)(1.425,-0.38932815)
+\rput(0.71140623,-0.80432814){4cm}
+\rput(2.0314062,-0.8243282){4cm}
+\end{pspicture} 
+}
 
 
+\begin{align*}
+x^2 &= 3^2 + 4^2 \\
+x &= \sqrt{25} \\
+x &= 5
+\end{align*}
+
+$\therefore \mbox{perimeter of triangle} = 5 + 5 + 8 $
+
+large rectange = perimeter of triangel + length
+
+\begin{align*}
+\phantom{stuffs} &= (5+5+8) \times 12 \\
+                 &= 18 \times 12 \\
+                 &= 216 cm^2 \\
+2 \times \mbox{triangle} &= 2(\dfrac{1}{2} \times 8 \times 3) \\
+                    &= 2(12) \\
+                    &= 24cm^2\\
+\end{align*}
+
+
+\westep{Find the sum of the areas of the faces}
+
+large rectangle + $2\times$ triangle $ = 216 + 24 = 240cm^2$
 
 }
 \end{wex}
 
+
+
+\begin{wex}
+{
+}
+{% Question
+Find the total surface are of the prism below to one decimal place.\\
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
+	    \psellipse[fillcolor=white,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillstyle=solid](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+            \psline(0,0)(1.0,0)
+            \rput(1.5,-1.5){$30cm$}
+            \rput(0.5,0.2){$10cm$}
+	\end{pspicture}
+
+
+
+
+}
+{% solution
+
+\westep{Draw a rough sketch of the net of the solid, filling in the relevant values:}
+
+	%% Cylindrical Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=white,fillstyle=solid,linestyle=solid](4,-4)(1.0,1.0)
+	    \psellipse[fillcolor=white, fillstyle=solid](0,1)(1.0,1)
+	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5,0)
+            \rput(0.2,1.2){$10cm$}
+            \rput(5.5,-1.5){$30cm$}
+	\end{pspicture}
+
+
+
+
+\westep{Find the area of the different shapes}
+
+\begin{align*}
+\mbox{large rectangle} &= \mbox{circumference of circle} \times \mbox{length} \\
+                        &= 2\pi(10) \times 30 \\
+                        &= 1884,96 cm^2 \\
+       2\times \mbox{circle} &= 2(\pi(10^2)) \\
+                             &= 628,32 cm^2
+\end{align*}
+
+\westep{Find the sum of the area of the faces}
+large rectangle + $2\times$ circle = $1884,96 + 628,32$ = $2513,3~cm^2$
+
+
+}
+\end{wex}
 
 \subsubsection{  Discussion : surface areas }
   \nopagebreak
