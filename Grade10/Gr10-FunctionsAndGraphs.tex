@@ -81,13 +81,82 @@ Functions can be expressed in many different ways for different purposes.
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Words: the relationship between two variables is such that one is always $5$ less than the other.
 \item Mapping diagram: 
-%DIAGRAM HERE
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1360937)(6.7240624,1.1360937)
+\psframe[linewidth=0.04,dimen=outer](3.7046876,0.32890624)(2.6246874,-0.75109375)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,0.14890625)(5.0246873,0.40890625)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1446877,-0.57109374)(5.0046873,-0.85109377)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.1046877,-0.21109375)(4.9846873,-0.21109375)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.073937,-0.58032197)(1.2008146,-0.86255836)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.055675,0.13944638)(1.1888499,0.39754358)
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.104793,-0.21942326)(1.2250762,-0.24174327)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.44671875,0.93890625){Input:}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.0242186,0.93890625){Output:}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.82609373,0.41890624){$-3$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7753125,-0.22109374){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.82953125,-0.92109376){$5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1746874,-0.19609375){\large $-5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.368125,0.45890626){$-8$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.3646874,-0.24109375){$-5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.3553123,-0.98109376){$0$}
+\end{pspicture} 
+}
+\end{center}
+\end{figure}
 \item Table: 
-%TABLE HERE
+
+ \begin{table}[H]
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+   \hline
+Input variable & $-3$&$0$&$5$
+\\ \hline
+Output variable &$-8$&$-5$&$0$
+\\ \hline
+  \end{tabular}
+\end{center}
+ \end{table}
+
+
+
 \item Set of ordered number pairs: $(-3;-8), (0;-5), (5;0)$
 \item Algebraic formula: $y = x-5$, $x \in \{-3; 0; 5\}$
 \item Graph:
-%GRAPH HERE
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0284376)(6.52125,3.0684376)
+\rput(3.0,-0.0284375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.3754687,0.1615625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3557813,2.9415624){$y$}
+\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.0,-2.0884376)(5.18,0.8915625)
+\psdots[dotsize=0.16](2.98,-1.1684375)
+\psdots[dotsize=0.16](4.16,-0.0284375)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.1448436,0.2415625){$5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3,-1.2384375){$-5$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9814062,-0.0584375){$O$}
+\end{pspicture} 
+}
+\end{center}
+\end{figure}
 \end{enumerate}
 
 \begin{exercises}{}
@@ -129,9 +198,12 @@ Functions with a general form of $y=mx+c$ are called straight line functions. In
 \psaxes[Dy=3]{<->}(0,0)(-6,-8)(6,14)
 \psplot[plotstyle=curve,arrows=<->]{-5}{5}{x 2 mul 3 add}
 \psplot[plotstyle=dots,arrows=<->,plotpoints=9]{-4}{4}{x 2 mul 3 add}
-
+\rput(0, 0){$0$}
+\rput(0.3, 13.6){$y$}
+\rput(6.3, 0.3){$x$}
+\rput(4.5, 9){$f(x)=2x+3$}
 %\psplot[showpoints=true](-5,-7)(-5,-7)(-4,-5)(-3,-3)(-2,-1)(-1,1)(-1.5,0)(0,3)(1,5)(2,7)(3,9)(4,11)(5,13)
-\rput(-1.6,1.5){$-\frac 32$}
+\rput(-1.6,1.5){$-\frac{3}{2}$}
 \end{pspicture}
 % \caption{Graph of $f(x) = 2x + 3$}
 % \label{fig:mf:g:straightline}
@@ -185,35 +257,60 @@ $c>0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x neg 1 add}
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 add}
 \end{pspicture}
 
-&
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x 1 add}
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5}
+\rput(-0.5, 2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 add}
 \end{pspicture}
 \\\hline
-$c<0$&
+$c=0$&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg}
+\end{pspicture}
+
 &
-&
-\\ \hline
-$c=0$
+---
 &
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-2.6}{2.6}{x neg 1 sub}
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x}
 \end{pspicture}
+\\ \hline
+$c<0$
 &
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x neg 1 sub}
+\end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
-\psplot[plotstyle=curve,arrows=<->]{-1.6}{2.6}{x 1 sub}
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{1.5 neg}
+\rput(-0.5, -2.1){\footnotesize$q$}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 1 sub}
 
 \end{pspicture}
 \\\hline
@@ -262,6 +359,7 @@ For example, the $x$-intercepts of $g(x)=x-1$ is given by setting $y=0$ to get:\
 \end{equation*}
 This gives the point $(1;0)$.
 
+
 \subsection*{Sketching graphs of the form $f(x)=mx+c$}
 
 
@@ -296,6 +394,8 @@ For $x$-intercept, let $y=0$; therefore $x=1$.This gives the point $(1;0)$.
 \psdots(0,-1)(1,0)
 \uput[r](0,-1.3){$(0;-1)$}
 \uput[ul](1.3,0.3){$(1;0)$}
+\rput(5.2,0.3){$x$}
+\rput(0.3, 4.2){$y$}
 \end{pspicture}
 % \caption{Graph of the function $g(x)=x-1$}
 % \label{fig:mf:g:sketchexamplestr}
@@ -316,8 +416,37 @@ For example: $y=\frac{3}{2}x-1$, therfore $m > 0$ and $y$ increases as $x$ incre
 \begin{equation*}
  m = \dfrac{\mbox{\footnotesize change in $y$}}{\mbox{\footnotesize change in $x$}} = \dfrac{3\uparrow}{2\rightarrow} = \dfrac{-3\downarrow}{-2\leftarrow}
 \end{equation*}
-
-
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.7584376)(9.34125,4.7584376)
+\rput(4.0,0.3215625){\psaxes[linewidth=0.04,labels=none,ticksize=0.2cm, arrows=<->](0,0)(-4,-5)(5,4)}
+\psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{*-*}(1.92,-3.6984375)(5.96,2.3815625)
+\psarc[linewidth=0.04](4.49,2.3515625){0.49}{0.0}{180.0}
+\psarc[linewidth=0.04](5.51,2.3315625){0.51}{0.0}{180.0}
+\rput{178.47418}(6.9182076,-7.536676){\psarc[linewidth=0.04](3.509283,-3.7222767){0.49}{0.0}{180.0}}
+\rput{178.47418}(4.8816133,-7.4152513){\psarc[linewidth=0.04](2.4901774,-3.675124){0.51}{0.0}{180.0}}
+\rput{88.38591}(3.753576,-4.18539){\psarc[linewidth=0.04](4.029283,-0.1622766){0.49}{0.0}{180.0}}
+\rput{273.13806}(6.9809837,0.9839488){\psarc[linewidth=0.04](4.010177,-3.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(5.9635777,1.9092364){\psarc[linewidth=0.04](3.9901774,-2.195124){0.51}{0.0}{180.0}}
+\rput{273.13806}(4.9839826,2.874464){\psarc[linewidth=0.04](4.010177,-1.1951239){0.51}{0.0}{180.0}}
+\rput{88.38591}(4.694869,-3.1535814){\psarc[linewidth=0.04](3.969283,0.8377234){0.49}{0.0}{180.0}}
+\rput{88.38591}(5.6944723,-2.1817489){\psarc[linewidth=0.04](3.969283,1.8377234){0.49}{0.0}{180.0}}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.195469,0.6515625){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.355781,4.6315627){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.1275,3.1515625){$+2\rightarrow$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9310937,0.9715625){$+3\uparrow$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.161406,-2.1884375){$-3\downarrow$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9578125,-4.6084375){$-2\leftarrow$}
+\end{pspicture} 
+}
+\end{center}
 
 \begin{wex}{Sketching a straigh line graph using the gradient-intercept method}
 {Sketch the graph of $y=\frac{1}{2}x-3$ using the gradient-intercept method}
@@ -336,9 +465,25 @@ Or move $1$ unit down and $2$ units to the lift. This gives us the second point 
 
 \westep{Plot points and draw graph}
 
-% \begin{center}
-% % \NEW GRAPH HERE
-% \end{center}
+\begin{center}
+\begin{pspicture}(-5,-5)(5,5)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-6,-6)(7,4)
+\psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
+\psline[linewidth=.7pt,arrows=->](0,-2)(2,-2)
+\psline[linewidth=.7pt,arrows=->](0,-3)(0,-2)
+\psdots(0,-3)(2,-2)
+\uput[r](0,-3.3){$(0;-3)$}
+\uput[ul](4,-2.5){$(2;-2)$}
+\rput(7.4,0.3){$x$}
+\rput(0.3, 4.2){$y$}
+\rput(-0.2, -2.5){\footnotesize$1$}
+\rput(1, -1.7){\footnotesize$2$}
+\end{pspicture}
+% \caption{Graph of the function $g(x)=x-1$}
+% \label{fig:mf:g:sketchexamplestr}
+\end{center}
 
 Note: this graph is continuous and extends in both directions.       
 }
@@ -371,22 +516,42 @@ For the functions in the diagram below, give the equation and domain and range:
 %etc - other functions on graph go here
     \end{enumerate} 
 \setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39338*id240155}
+\begin{figure}[H]
+\begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-4.090469)(8.415625,4.130469)
-\rput(4.0,-0.09046875){\psaxes[linewidth=0.03,tickstyle=bottom,labels=none,ticks=none,ticksize=0.08cm](0,0)(-4,-4)(4,4)}
-\psline[linewidth=0.04cm](2.78,1.8295312)(7.76,-0.85046875)
+\begin{pspicture}(0,-4.1467185)(9.519062,4.1867185)
+\rput(4.0,-0.14671862){\psaxes[linewidth=0.03,tickstyle=bottom,labels=none,ticks=none,ticksize=0.08cm, arrows=<->](0,0)(-4,-4)(4,4)}
+\psline[linewidth=0.04cm](2.78,1.7732813)(7.76,-0.9067186)
 \usefont{T1}{ptm}{m}{n}
-\rput(4.2278123,4.039531){$y$}
+\rput(4.2023435,3.9832811){$y$}
 \usefont{T1}{ptm}{m}{n}
-\rput(8.285469,0.01953125){$x$}
+\rput(8.26,-0.036718626){$x$}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.4951563,1.3995312){$(0;3)$}
+\rput(4.4696875,1.3432813){$(0;3)$}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.775156,0.11953125){$(4;0)$}
+\rput(6.9896874,0.043281376){$(4;0)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2445312,1.9167186){$a(x)$}
+\psline[linewidth=0.04cm](3.2,-3.6332815)(8.42,2.3067186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.6996875,-2.8167186){$(0;-6)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.894531,2.4967186){$b(x)$}
+\psline[linewidth=0.04cm](0.98,1.1267186)(7.88,1.1067187)
+\usefont{T1}{ptm}{m}{n}
+\rput(8.3,1.1567186){$c(x)$}
+\psline[linewidth=0.04cm](7.4,-2.0532813)(1.08,1.4467186)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.9,-2.1032813){$d(x)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2,0.1){$0$}
+\psline[linewidth=0.04](4.7,-0.87328136)(4.58,-0.45328137)(5.0,-0.45328137)
+\psline[linewidth=0.04](4.94,0.30671862)(4.82,0.7267186)(5.24,0.7267186)
 \end{pspicture} 
 }
+\end{center}
+
 \end{figure}  
             
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -462,7 +627,22 @@ f(3) &=& (3)^{2} &= &9
 From the table, we get the following points: \\
 $(-3;9)$, $(-2;4)$, $(-1;1)$, $(0;0)$, $(1;1)$, $(2;4)$, $(3;9)$ \\
 and the following graph: 
-%DIAGRAM NEEDED HERE
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,5)
+%\psgrid-\infty ;q
+\psaxes[arrows=<->,dy=0.5](0,0)(-5,-1)(5,5)
+\psset{yunit=0.5}
+\psplot[plotstyle=curve,arrows=<->]{-3}{3}{x 2 exp}
+\psdots(-2.5, 6.25)(2.5,6.25)
+\rput(-2.2, 6.3){$B$}
+\rput(2.2, 6.3){$A$}
+\rput(0.1, 0.3){$0$}
+\end{pspicture}
+% \caption{Graph of $f(x)=x^2-1$.}
+\label{fig:mf:g:parabola10}
+\end{center}
+\end{figure}    
 
 \westep{Determine domain and range}
 Domain: $x \in \mathBB{R}$\\
@@ -491,18 +671,7 @@ We notice that as the value of $x$ increases from $-\infty$ to $0$, $f(x)$ decre
 
 
 
-% \begin{figure}[!ht]
-% \begin{center}
-% \begin{pspicture}(-5,-1)(5,5)
-% %\psgrid-\infty ;q
-% \psaxes[arrows=<->,dy=0.5](0,0)(-5,-1)(5,5)
-% \psset{yunit=0.5}
-% \psplot[plotstyle=curve,arrows=<->]{-3}{3}{x 2 exp 1 sub}
-% \end{pspicture}
-% \caption{Graph of $f(x)=x^2-1$.}
-% \label{fig:mf:g:parabola10}
-% \end{center}
-% \end{figure}      
+  
 
 \subsection*{Investigating the effects of $a$ and $q$ }
 \begin{Investigation}{The effects of $a$ and $q$ on a parabolic graph}
@@ -543,17 +712,7 @@ $a(x)$
 $b(x)$
 &
 &
-&% \begin{center}
-% \begin{table}
-% \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
-% \hline
-%   $x$ &  $-3$ & $-2$ & $-1$ & $-\frac{1}{2}$ & $-\frac{1}{4}$ &$0$&$\frac{1}{4}$&$\frac{1}{2}$&$1$&$2$&$3$
-% \\ \hline
-%  $h(x)$& $-\frac{1}{3}$ &&&&&&&&&&
-% \\ \hline
-% \end{tabular}
-% \end{table}
-% \end{center}
+&
 &
 &
 \\ \hline
@@ -673,9 +832,17 @@ $q>0$&
 \end{pspicture}
 \\\hline
 $q=0$&
-% DIAGRAM HERE
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg}
+\end{pspicture}
 &
-% DIAGRAM HEREs
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{yunit=0.25,xunit=0.25}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psplot[plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp }
+\end{pspicture}
 
 \\ \hline
 $q<0$
@@ -754,7 +921,7 @@ For $f(x)=a{x}^{2}+q$, the domain is $\{x:x\in \mathbb{R}\}$ because there is no
 \par 
 If $a>0$ then we have:
 \begin{equation*}
-\begin{array}{cccc}\hfill {x}^{2}& \ge & 0\hfill & (\mbox{Perfect square is always positive})\hfill \\
+\begin{array}{cccl}\hfill {x}^{2}& \ge & 0\hfill & (\mbox{Perfect square is always positive})\hfill \\
  \hfill a{x}^{2}& \ge & 0\hfill & (\mbox{since } a>0)\hfill \\
  \hfill a{x}^{2}+q& \ge & q\hfill & (\mbox{add $q$ to both sides}) \\
  \hfill \therefore f(x)& \ge & q\hfill & 
@@ -873,7 +1040,9 @@ From the standard form of the equation we see that the turning point is $(0;-3)$
 \psaxes[arrows=<->](0,0)(-5,-7)(5,1)
 \psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp 0.5 mul neg 3 sub}
 \psdots(0,-3)
-\uput[r](0,-2.5){$(0;-3)$}
+\uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 0.8){$y$}
+\rput (5.2, 0.2){$x$}
 \end{pspicture}
 % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
 % % \label{fig:mf:g:sketchexamplepar10}
@@ -922,7 +1091,7 @@ From the standard form of the equation we see that the turning point is $(0;5)$.
 \begin{pspicture*}(-2,-2)(4,8)
 \psaxes[xAxis=true,yAxis=true,Dx=1,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-2,0)(2,8)[,140] [,-40]
 \rput{0}(0,5){\psplot{-2}{2}{x^2/2/0.17}}
-\rput[bl](0.56,5.34){$y = 3x^{2} + 5$}
+% \rput[bl](0.56,5.34){$y = 3x^{2} + 5$}
 \usefont{T1}{ptm}{m}{n}
 \rput(0.3,7.6){$y$}
 \usefont{T1}{ptm}{m}{n}
@@ -1018,7 +1187,6 @@ Functions of the general form $y=\frac{a}{x}+q$ are known as hyperbolic function
 
 Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a system of axes.
 
-
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -1042,7 +1210,7 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
 \end{enumerate}
 }
 {
-\westep{Substitute values into the equation}
+\westep{Substitute values into the equation}{
 \begin{equation*}
  \begin{array}{cllll}
   h(x) &=& \frac{1}{x} & &\\
@@ -1059,7 +1227,7 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
  h(3) &=& \frac{1}{3} &=& \frac{1}{3} \vspace{5pt}\\ 
  \end{array}
 \end{equation*}
-\\
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -1071,10 +1239,27 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
 \end{tabular}
 \end{center}
 \end{table}
-
+}
 \westep{Plot the points and join with two smooth curves}
 From the table we get the following points: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; -4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$ and $(3; \frac{1}{3})$. \vspace{8pt} \\
-% Diagram here
+
+
+% \setcounter{subfigure}{0}
+% % \begin{figure}[tbp]
+% \begin{center}
+% \begin{pspicture}(-5,-2)(5,5)
+% %\psgrid
+% \psset{yunit=0.75,xunit=0.75}
+% \psaxes[arrows=<->](0,0)(-5,-2.667)(5,6)
+% \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp }
+% \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp }
+% % \psplot[linestyle=dotted,plotstyle=curve]{-5}{2}{x 2 add}
+% \end{pspicture}
+% % \caption{General shape and position of the graph of a function of the form $f(x)=\frac{a}{x} + q$.}
+% \label{fig:mf:g:hyperbola10}
+% \end{center}
+% % \end{figure}      
+
 
 For $x=0$ the function $h$ is undefined. This is called a discontinuity at $x=0$. \vspace{8pt} \\
 $y=h(x) = \frac{1}{x}$ therefore we can write that $x \times y = 1$. Since the product of two positive numbers \textbf{and} the product of two negative numbers can be equal to $1$, the graph lies in the first and third quadrants.
@@ -1094,22 +1279,6 @@ The graph of $h(x)$ has two axes of symmetry: the lines $y=x$ and $y=-x$. About 
 
 
 
-% 
-% \setcounter{subfigure}{0}
-% \begin{figure}[tbp]
-% \begin{center}
-% \begin{pspicture}(-5,-2)(5,5)
-% %\psgrid
-% \psset{yunit=0.75,xunit=0.75}
-% \psaxes[arrows=<->](0,0)(-5,-2.667)(5,6)
-% \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
-% \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 add}
-% \psplot[linestyle=dotted,plotstyle=curve]{-5}{2}{x 2 add}
-% \end{pspicture}
-% \caption{General shape and position of the graph of a function of the form $f(x)=\frac{a}{x} + q$.}
-% \label{fig:mf:g:hyperbola10}
-% \end{center}
-% \end{figure}      
 
 \subsection*{Investigating the effects of $a$ and $q$ }
 \begin{Investigation}{Investigating the effects of $a$ and $q$ on a hyperbolic graph}
