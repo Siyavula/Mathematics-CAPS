@@ -1,86 +1,105 @@
 \chapter{  Measurements  }  
+This chapter examines the surface areas and volumes of three dimensional objects otherwise
+known as solids. In order to work with these, you need to know how to calculate the surface
+area and perimeter of the two dimensional shapes below.
 
-\subsubsection{ Areas of Polygons }
-\nopagebreak
+\section{ Areas of Polygons }
+
+\begin{table*}[h]
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\begin{tabular}{|C|D|C|}
+\hline
+\textbf{Name} & \textbf{Shape} & \textbf{Formulae} \\ \hline
+Square &
+        \begin{center}
+\scalebox{0.7}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+            \pspolygon(0,0)(0,1)(1,1)(1,0)
+            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+            \rput(-0.25,0.5){$h$}
+            \rput(0.5,-0.25){$b$}
+        \end{pspicture}}
+        \end{center}
+&
+
+$b \times h$ \\ \hline
+
+Rectangle &
+    \begin{center}
+\scalebox{0.7}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+            \pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
+            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+            \rput(2.75,0.5){$h$}
+            \rput(1.25,-0.25){$b$}
+        \end{pspicture}}
+    \end{center}
+& $ b \times h $ \\ \hline
+
+Triangle &
+\begin{center} 
+\scalebox{0.7}{
+    \begin{pspicture}(0,-0.5)(5,2)
+        \pspolygon(0,0)(2,1)(3,0)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+        \rput(1.8,0.5){$h$}
+        \rput(1.5,-0.25){$b$}
+    \end{pspicture}}
+\end{center}
+
+& $ \dfrac{1}{2} b \times h $ \\ \hline
+
+Trapezium &
+\begin{center}
+\scalebox{0.7}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pspolygon(-1.5,0)(0,1)(2,1)(3,0)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+        \rput(1.8,0.5){$h$}
+        \rput(0.75,-0.25){$s_1$}
+        \rput(1,1.25){$s_2$}
+    \end{pspicture}}
+\end{center}
+& $ \dfrac{1}{2} (s_1 + s_2) \times h $ \\ \hline 
+Parallelogram &
+
+\begin{center}
+\scalebox{0.7}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pspolygon(-1,0)(0,1)(3,1)(2,0)
+        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
+        \pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
+        \rput(0.3,0.5){$h$}
+        \rput(1,-0.25){$b$}
+    \end{pspicture}}
+\end{center}
+
+& $ b \times h $ \\ \hline
+
+Circle &
+
+\begin{center}
+\scalebox{0.7}{
+    \begin{pspicture}(-2,-0.5)(5,2)
+        \pscircle[dimen=outer](0.5,0.5){0.7}
+        \psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
+        \psdots[dotsize=0.12](0.5,0.5)
+        \rput(0.85,0.75){$r$}
+    \end{pspicture}}
+\end{center} & 
+
+$ \pi r^2 $ \\ \hline
+
+
+\end{tabular}
+
+
+%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+\end{table*}
             
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.] 
-    \item Area of triangle: $\frac{1}{2}\ensuremath{\times}$ base $\ensuremath{\times}$ perpendicular height
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(0,-0.5)(5,2)
-		\pspolygon(0,0)(2,1)(3,0)
-		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
-		\pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
-		\rput(1.8,0.5){$h$}
-		\rput(1.5,-0.25){$b$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-
-    \item Area of trapezium: $\frac{1}{2}\ensuremath{\times}$ (sum of $\parallel $ (parallel) sides) $\ensuremath{\times}$ perpendicular height
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(-2,-0.5)(5,2)
-		\pspolygon(-1.5,0)(0,1)(2,1)(3,0)
-		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
-		\pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
-		\rput(1.8,0.5){$h$}
-		\rput(0.75,-0.25){$s_1$}
-		\rput(1,1.25){$s_2$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-
-    \item Area of parallelogram and rhombus: base $\ensuremath{\times}$ perpendicular height
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(-2,-0.5)(5,2)
-		\pspolygon(-1,0)(0,1)(3,1)(2,0)
-		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
-		\pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
-		\rput(0.3,0.5){$h$}
-		\rput(1,-0.25){$b$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-
-    \item Area of rectangle: length $\ensuremath{\times}$ breadth
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(-2,-0.5)(5,2)
-		\pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
-		\pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
-		\rput(2.75,0.5){$h$}
-		\rput(1.25,-0.25){$b$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-
-    \item Area of square: length of side $\ensuremath{\times}$ length of side
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(-2,-0.5)(5,2)
-		\pspolygon(0,0)(0,1)(1,1)(1,0)
-		\pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
-		\rput(-0.25,0.5){$s$}
-		\rput(0.5,-0.25){$s$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-
-    \item Area of circle: $\pi $ x radius${}^{2}$
-    \begin{figure}[H]
-	\begin{center}
-	    \begin{pspicture}(-2,-0.5)(5,2)
-		\pscircle[dimen=outer](0.5,0.5){0.7}
-		\psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
-		\psdots[dotsize=0.12](0.5,0.5)
-		\rput(0.85,0.75){$r$}
-	    \end{pspicture}
-	\end{center}
-    \end{figure}   
-\end{enumerate}      
-
 
 \begin{figure}[H]
     \textnormal{Khan Academy video on area and perimeter}
@@ -142,28 +161,21 @@
 
 
 \begin{exercises}{Polygons}
+\noindent
     \begin{enumerate}[label=\textbf{\arabic*}.] 
-	\item For each case below, say whether the statement is true or false. For false statements, give a counter-example to prove it:
-    
-	\begin{enumerate}[label=\textbf{\alph*}.] 
-	    \item All squares are rectangles
-	    \item All rectangles are squares
-	    \item All pentagons are similar
-	    \item All equilateral triangles are similar
-	    \item All pentagons are congruent
-	    \item All equilateral triangles are congruent
-	\end{enumerate}
+	\item Find the areas of each of the given figures -- remember area is measured in square units ($cm{}^{2}$, $m{}^{2}$, $mm{}^{2}$).
+\begin{center}
+	\scalebox{0.9}
+{
+\begin{pspicture}(0,-4.758281)(14.921875,4.758281) \psline[linewidth=0.04cm](0.381875,1.7882812)(4.381875,1.7882812) \psline[linewidth=0.04cm](4.241875,1.7682812)(4.241875,1.7682812) \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,3.8082812)(2.361875,2.8282812) \psline[linewidth=0.04cm](0.381875,1.7882812)(2.341875,3.7882812) \psline[linewidth=0.04cm](2.361875,3.7882812)(4.341875,1.8282813) \usefont{T1}{ptm}{m}{n} \rput(2.4517188,2.5782812){5cm} \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.7682812) \usefont{T1}{ptm}{m}{n} \rput(2.4365625,1.4182812){10cm} \usefont{T1}{ptm}{m}{n} \rput(0.16203125,3.6182814){a)} \psframe[linewidth=0.04,dimen=outer](9.141875,3.7782812)(5.141875,1.7782812) \usefont{T1}{ptm}{m}{n} \rput(4.72375,3.5982811){b)} \psframe[linewidth=0.04,dimen=outer](5.471875,3.7782812)(5.151875,3.4582813) \psline[linewidth=0.04cm](7.121875,3.9282813)(7.321875,3.7682812) \psline[linewidth=0.04cm](7.1272163,3.6020272)(7.3165336,3.7745354) \psline[linewidth=0.04cm](7.121875,1.9482813)(7.321875,1.7882812) \psline[linewidth=0.04cm](7.1272163,1.6220272)(7.3165336,1.7945354) \psline[linewidth=0.04cm](4.995617,2.7704508)(5.161965,2.965203) \psline[linewidth=0.04cm](5.321874,2.7652996)(5.1555424,2.9600654) \psline[linewidth=0.04cm](4.995617,2.570451)(5.161965,2.765203) \psline[linewidth=0.04cm](5.321874,2.5652997)(5.1555424,2.7600653) \psline[linewidth=0.04cm](8.955617,2.7704508)(9.121964,2.965203) \psline[linewidth=0.04cm](9.281874,2.7652996)(9.115542,2.9600654) \psline[linewidth=0.04cm](8.955617,2.590451)(9.121964,2.785203) \psline[linewidth=0.04cm](9.281874,2.5852997)(9.115542,2.7800653) \usefont{T1}{ptm}{m}{n} \rput(9.711719,2.7182813){5cm} \usefont{T1}{ptm}{m}{n} \rput(7.1965623,1.4182812){10cm} \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](10.901875,2.7482812)(14.901875,2.7482812) \pscircle[linewidth=0.04,dimen=outer](12.911875,2.7582812){2.0} \psdots[dotsize=0.16](12.901875,2.7482812) \usefont{T1}{ptm}{m}{n} \rput(12.876562,2.4182813){10cm} \usefont{T1}{ptm}{m}{n} \rput(10.631406,3.5982811){c)} \usefont{T1}{ptm}{m}{n} \rput(0.19140625,0.19828124){d)} \usefont{T1}{ptm}{m}{n} \rput(5.5117188,-0.8017188){5cm} \usefont{T1}{ptm}{m}{n} \rput(2.5340624,0.29828125){7cm} \psline[linewidth=0.04cm](2.1600447,-1.3315424)(2.358717,-1.4931878) \psline[linewidth=0.04cm](2.162693,-1.6578295)(2.3534274,-1.4868897) \psline[linewidth=0.04cm](1.9601017,-1.3363228)(2.1587741,-1.4979682) \psline[linewidth=0.04cm](1.9627501,-1.6626099)(2.1534846,-1.4916701) \psline[linewidth=0.04cm](0.181875,-1.4917188)(4.181875,-1.4917188) \psline[linewidth=0.04cm](1.401875,0.04828125)(5.401875,0.04828125) \psline[linewidth=0.04cm](3.3800445,0.2084576)(3.578717,0.046812218) \psline[linewidth=0.04cm](3.382693,-0.11782951)(3.5734274,0.053110242) \psline[linewidth=0.04cm](3.1801016,0.20367722)(3.3787742,0.042031832) \psline[linewidth=0.04cm](3.18275,-0.1226099)(3.3734844,0.048329853) \psline[linewidth=0.04cm](4.191091,-1.5022907)(5.394185,0.045147188) \psline[linewidth=0.04cm](4.621163,-0.6958544)(4.8714867,-0.6416498) \psline[linewidth=0.04cm](4.877642,-0.89756864)(4.863264,-0.64184755) \psline[linewidth=0.04cm](0.21109095,-1.4822907)(1.4141852,0.065147184) \psline[linewidth=0.04cm](0.641163,-0.67585444)(0.89148647,-0.6216498) \psline[linewidth=0.04cm](0.8976424,-0.87756866)(0.8832641,-0.62184757) \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](4.161875,-1.4917188)(4.161875,0.04828125) \psframe[linewidth=0.04,dimen=outer](4.471875,0.05828125)(4.151875,-0.26171875) \usefont{T1}{ptm}{m}{n} \rput(4.7753124,0.27828124){3cm} \psline[linewidth=0.04cm](6.021875,-1.4317187)(10.021875,-1.4317187) \psline[linewidth=0.04cm](9.821875,-1.4517188)(9.821875,-1.4517188) \usefont{T1}{ptm}{m}{n} \rput(7.5165625,-1.7217188){12cm} \psline[linewidth=0.04cm](8.837452,0.20483598)(10.026298,-1.4282734) \psline[linewidth=0.04cm](8.821875,0.20828125)(6.021875,-1.4317187) \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](8.821875,0.18828125)(8.821875,-1.4117187) \psframe[linewidth=0.04,dimen=outer](8.851875,-1.1217188)(8.531875,-1.4417187) \usefont{T1}{ptm}{m}{n} \rput(9.217969,-1.6817187){8cm} \usefont{T1}{ptm}{m}{n} \rput(9.936563,-0.44171876){10cm} \usefont{T1}{ptm}{m}{n} \rput(6.2414064,0.23828125){e)} \psline[linewidth=0.04cm](11.561875,-1.3517188)(13.581875,-1.3517188) \psline[linewidth=0.04cm](11.564406,-1.3656596)(12.099343,0.58222204) \psline[linewidth=0.04cm](12.107254,0.5571398)(13.576495,-1.3405774) \psline[linewidth=0.04cm](11.621875,-0.49171874)(11.941875,-0.59171873) \psline[linewidth=0.04cm](11.681875,-0.35171875)(12.001875,-0.45171875) \psline[linewidth=0.04cm](12.161875,-1.1917187)(12.161875,-1.5317187) \psline[linewidth=0.04cm](12.161875,-1.4317187)(12.161875,-1.4317187) \psline[linewidth=0.04cm](12.321875,-1.1917187)(12.321875,-1.5317187) \usefont{T1}{ptm}{m}{n} \rput(11.094063,0.23828125){f)} \usefont{T1}{ptm}{m}{n} \rput(12.7517185,-1.6417187){5cm} \usefont{T1}{ptm}{m}{n} \rput(13.181562,-0.18171875){6cm} \pstriangle[linewidth=0.04,dimen=outer](2.031875,-4.491719)(3.4,2.4) %\pstriangle[linewidth=0.04,dimen=outer](3.181875,-2.6717188)(0.0,0.0) %\pstriangle[linewidth=0.04,dimen=outer](3.161875,-2.7517188)(0.0,0.0) %\pstriangle[linewidth=0.04,dimen=outer](3.001875,-2.5317187)(0.0,0.0) 
+\usefont{T1}{ptm}{m}{n} \rput(0.23140626,-2.2617188){g)} \psline[linewidth=0.04cm](1.901875,-4.331719)(1.901875,-4.6517186) \psline[linewidth=0.04cm](1.101875,-3.1117187)(1.341875,-3.3317187) \psline[linewidth=0.04cm](2.6844237,-3.3744361)(2.9193263,-3.1490014) \usefont{T1}{ptm}{m}{n} \rput(3.6565626,-3.1417189){10cm} \pspolygon[linewidth=0.04](5.201875,-4.371719)(9.201875,-4.371719)(8.181875,-2.6717188)(6.181875,-2.6717188)(6.001875,-2.9717188) \psline[linewidth=0.04cm](6.161875,-2.6717188)(6.161875,-2.6717188) \psline[linewidth=0.04cm](6.161875,-2.6717188)(6.161875,-2.6717188) \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](6.161875,-2.6717188)(6.161875,-4.351719) \psline[linewidth=0.04cm](7.106746,-2.5312762)(7.309965,-2.6871674) \psline[linewidth=0.04cm](7.118735,-2.8573537)(7.3044972,-2.6810234) \psline[linewidth=0.04cm](7.106746,-4.211276)(7.309965,-4.3671675) \psline[linewidth=0.04cm](7.118735,-4.5373535)(7.3044972,-4.3610234) \psframe[linewidth=0.04,dimen=outer](6.471875,-4.061719)(6.151875,-4.3817186) \usefont{T1}{ptm}{m}{n} \rput(5.3565626,-2.9817188){15cm} \usefont{T1}{ptm}{m}{n} \rput(5.5398436,-4.601719){9cm} \usefont{T1}{ptm}{m}{n} \rput(7.6565623,-2.4017189){16cm} \usefont{T1}{ptm}{m}{n} \rput(7.9285936,-4.601719){21cm} \usefont{T1}{ptm}{m}{n} \rput(5.08375,-2.2617188){h)} \end{pspicture}
+}
 
-	\item Find the areas of each of the given figures -- remember area is measured in square units (cm${}^{2}$, m${}^{2}$, mm${}^{2}$).
+\end{center}
 
-	\begin{figure}[H]
-	    \begin{center}
-		\includegraphics{col11306.imgs/m39357_MG10C13_064.png}
-		\vspace{2pt}
-		\vspace{.1in}
-	    \end{center}
-	\end{figure}
-    \end{enumerate}
+\end{enumerate}
+}
+
 
     \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}}
     Find the answers with the short codes:\\
@@ -173,19 +185,25 @@
 \end{exercisers}
 
 
-\subsection{ Right prisms and cylinders }
+\section{ Right prisms and cylinders }
 
-In this section we study how to calculate the surface areas and volumes of right prisms and cylinders. A right prism is a polygon that has been stretched out into a tube so that the height of the tube is perpendicular to the base (the definition is motivated by the fact that the angle between base and side form a right angle). A square prism has a base that is a square and a triangular prism has a base that is a triangle.\par 
+A right prism is a polygon that has been stretched into a tube so that the height of the tube is
+perpendicular to the base. The base and top surface is therefore the same shape and size. We
+call it right prisms because the angle between the base and side form a right angle.
+\par
+A square based prism has a square as its base, a rectangular based prism has a rectangle as its
+base, and triangular based prism has a triangle as its base. A cylinder is another type of right
+prism which has as circle as its base.
+\par 
 
-\rule[.1in]{\figurerulewidth}{.005in}\\
 \begin{figure}[H]
     \begin{center}
 	%% Rectangular Prism
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
-	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=none}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
 	\end{pspicture}
 
@@ -204,7 +222,7 @@ In this section we study how to calculate the surface areas and volumes of right
 % 	    \psset{Alpha=60,Beta=30}
 % 	    \psset{viewpoint=8 12 8}
 	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
-	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.3937]
+	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=1.0]
 	\end{pspicture}
 
 	%% Cylindrical Prism
@@ -220,51 +238,46 @@ In this section we study how to calculate the surface areas and volumes of right
 	\end{pspicture}
 
 	\vspace{0.75cm}
-	\begin{cnxcaption}
-	    \small
-	    \textbf{Figure 13.24: }Examples of a right prism, a right square prism, a right triangular prism and a cylinder.
-	\end{cnxcaption}
-	\rule[.1in]{\figurerulewidth}{.005in}\\
+	\caption{Examples of a right prism, a right square prism, a right triangular prism and a cylinder.}
     \end{center}
 \end{figure}   
 
-%   \addtocounter{footnote}{-0}
-  \label{m39357*id62698}
-  It is relatively simple to calculate the surface areas and volumes of prisms
-  \par 
-%   \label{m39357*uid11}
-  
-\subsubsection{ Surface Area}
+\subsubsection{Surface Area of prisms and cylinders}
   \nopagebreak
 
 %   \label{m39357*id62710}
-  The term \textsl{surface area} refers to the total area of the exposed or outside surfaces of a prism. This is easier to understand if you imagine the prism as a solid object.
-  \par 
+ The term surface area refers to the total area of the exposed or outside surfaces of a prism.
+This is easier to understand if you imagine the prism as a cardboard box that you can unfold.
+A solid that is unfolded like this, is called a net.
+\par 
 %   \label{m39357*id62720}
-  If you examine the prisms in Figure~13.24, you will see that each face of a prism is a simple polygon. For example, the triangular prism has two faces that are triangles and three faces that are rectangles. Therefore, in order to calculate the surface area of a prism you simply have to calculate the area of each face and add it up. In the case of a cylinder the top and bottom faces are circles, while the curved surface flattens into a rectangle.
+ When a triangular prism is unfolded into a net, it is easier to see that it has two faces that are
+triangles and three faces that are rectangles. Therefore, in order to calculate the surface area
+of a prism you simply have to calculate the area of each face and add it up.
   \par
-%   \label{m39357*id62732}
-  \textbf{Surface Area of Prisms}
-  \par 
-%   \label{m39357*id62738}
-  Calculate the area of each face and add the areas together to get the surface area. To do this you need to determine the correct shape of each and every face of the prism and then for each one determine the surface area. The sum of the surface areas of all the faces will give you the total surface area of the prism.
-  \par
-% \label{m39357*secfhsst!!!underscore!!!id107}
+In the case of a cylinder the top and bottom faces are circles, while the curved surface flattens
+into a rectangle with a length that is equal to the circumference of the circular base.
 
-\rule[.1in]{\figurerulewidth}{.005in}\\
+\Note{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+\par
+Below are examples of right prisms that have been unfolded to their nets:
+
 \begin{figure}[H]
-    \begin{center}
+ \caption{Rectangular based prism}
+   \begin{center}
 	%% Rectangular Prism
-	\begin{pspicture}(-2,-3.5)(3,1.5)
+    \scalebox{0.8}{
+        \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
 	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
-	\end{pspicture}
+	\end{pspicture}}
 
 	%% Rectangular Prism Unfolded
-	\begin{pspicture}(-2,-3.5)(3,1.5)
+    \scalebox{0.8}{
+        \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
 	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
@@ -274,9 +287,12 @@ In this section we study how to calculate the surface areas and volumes of right
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
-	\end{pspicture}
+	\end{pspicture}}
+
+
 
 	%% Rectangular Prism Unfolded Birdseye
+\scalebox{0.8}{ 
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=90,Beta=90}
@@ -287,27 +303,31 @@ In this section we study how to calculate the surface areas and volumes of right
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
-	\end{pspicture}
+	\end{pspicture}}
 \newline
-	\rule[.1in]{\figurerulewidth}{.005in}\\
     \end{center}
 \end{figure}   
 
+A rectangular based prism as made up of 6 rectangles. To find the total surface area, one
+would need to find the sum of the area of each face.
 
-\rule[.1in]{\figurerulewidth}{.005in}\\
+
 \begin{figure}[H]
+\caption{Square based prism}
     \begin{center}
 
 	%% Square Prism
-	\begin{pspicture}(-2,-3.5)(3,1.5)
-	    \psset{yunit=0.9,xunit=0.9}
+    \scalebox{0.8}{ 
+        \begin{pspicture}(-2,-3.5)(3,1.5)
+            \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
 	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
-	\end{pspicture}
+	\end{pspicture}}
 
 	%% Square Prism Unfolded
+    \scalebox{0.8}{
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
@@ -318,9 +338,10 @@ In this section we study how to calculate the surface areas and volumes of right
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
-	\end{pspicture}
+	\end{pspicture}}
 
 	%% Square Prism Unfolded Birdseye
+    \scalebox{0.8}{
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=0,Beta=90}
@@ -331,27 +352,30 @@ In this section we study how to calculate the surface areas and volumes of right
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
-	\end{pspicture}
+	\end{pspicture}}
 
-	\rule[.1in]{\figurerulewidth}{.005in}\\
     \end{center}
 \end{figure}   
 
+A square based prism (or a cube) can be flattened to a net with 6 identical squares. To find
+the total surface area of the solid, find the sum of the area of the faces.
 
-\rule[.1in]{\figurerulewidth}{.005in}\\
+
 \begin{figure}[H]
+    \caption{Triangular based prism}
     \begin{center}
 	%% Triangular Prism
-
+    \scalebox{0.8}{
 	\begin{pspicture}(-1.5,-1.5)(1,1)
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
-% 	    \psset{viewpoint=8 12 8}
+% 	    \psset{viewpoint=0 0 200}
 	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
 	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.4]
-	\end{pspicture}
+	\end{pspicture}}
 
 	%% Triangular Prism Unfolded
+    \scalebox{0.8}{
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
@@ -361,29 +385,32 @@ In this section we study how to calculate the surface areas and volumes of right
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
-	\end{pspicture}
+	\end{pspicture}}
 
 	%% Triangular Prism Unfolded Birdseye
+    \scalebox{0.8}{
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
-	    \psset{viewpoint=0 0 20,RotZ=90}
+	    \psset{viewpoint=0 0 20,RotZ=0}
 	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
 	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
-	\end{pspicture}
+	\end{pspicture}}
 
 
-	\rule[.1in]{\figurerulewidth}{.005in}\\
     \end{center}
 \end{figure} 
 
+The triangular based prism has two triangles and one rectangle which is made up of three
+smaller rectangles. The length of the rectangle is equal to the perimeter of the triangle.
 
-\rule[.1in]{\figurerulewidth}{.005in}\\
+
 \begin{figure}[H]
-    \begin{center}
+\caption{Cylinder}
+\begin{center}
 
 	%% Cylindrical Prism
 	\begin{pspicture}(-2,-3.5)(3,1.5)
@@ -399,14 +426,115 @@ In this section we study how to calculate the surface areas and volumes of right
 	%% Cylindrical Prism Unfolded
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
-	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=solid](0,-4)(1.0,1.0)
+	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=solid](4,-4)(1.0,1.0)
 	    \psellipse[fillstyle=none](0,1)(1.0,1)
-	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5.18,0)
+	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5,0)
 	\end{pspicture}
 
-	\rule[.1in]{\figurerulewidth}{.005in}\\
     \end{center}
 \end{figure}   
+
+The net of a cylinder is made up of two identical circles and a rectangle with a length equal to
+the circumference of the circles.
+
+
+\begin{wex}
+{%title
+
+}
+{%Problem
+Find the total surface area of the prism below
+\begin{center}
+\scalebox{0.8}{
+    \begin{pspicture}(-2,-3.5)(3,1.5)
+        \psset{yunit=0.9,xunit=0.9}
+        \psset{Alpha=30,Beta=15}
+        \pstThreeDBox(-1,1,2)(0,0,2)(10,0,0)(0,5,0)
+        \pstThreeDPut(8,6,3){$2cm$}
+        \pstThreeDPut(10,3.5,2){$5cm$}
+        \pstThreeDPut(5,7,2){$10cm$}
+   \end{pspicture}}
+\end{center}
+
+}
+{%Solution
+
+\westep{Draw a rough sketch of the net of the solid, filling in the relevant values}
+
+\begin{center}
+	%% Rectangular Prism Unfolded Birdseye
+\scalebox{0.8}{ 
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=180,Beta=90}
+	    {\psset{fillcolor=white,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
+            \rput(0,6.){5}
+            \rput(1.5, 5.){2}
+            \rput(4.5, 3.){10}
+	\end{pspicture}}
+\end{center}
+
+\westep{Find the area of the different shapes}
+\begin{align*} 
+\mbox{large rectangle} &= \mbox{perimeter of small rectangle} \times \mbox{length} \\
+                        &= (5 +2 + 5 + 2) \times 10 \\
+                        &= 14 \times 10 \\
+                        &= 140~cm^2  \\ \\
+2 \times \mbox{small rectangle} &= 2(5+2) \\
+                                &= 2(10) \\
+                                &= 20~cm^2
+\end{align*}
+
+
+
+\westep{Find the sum of the the area of the faces}
+
+$\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 180~cm^2$
+
+}
+\end{wex}
+
+
+\begin{wex}
+{
+Find the total surface area of the prism below:
+\begin{center}
+\scalebox{1.0}{
+%	\begin{pspicture}(-1.5,-1.5)(1,1)
+%	    \psset{yunit=0.1,xunit=0.1}
+% 	    \psset{viewpoint=0 0 200}
+%	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.4 0 0 0.3 0.4 0,h=1.2, RotX=90]
+%            \psLineIIID[linestyle=dashed]
+%	\end{pspicture}}
+%\end{center}
+
+
+
+% vertices of the prism. Easiest way to do it it seems. Bah!
+\savedata{\mydata}[{0, 0, 0}, {8,0,0}, {4,3,0}, {0,0,0}, {0,0,12}, {4,3,12}, {4,3,0}]
+\begin{pspicture}(-1.5,-1.5)(1,1)
+    \psset{yunit=0.1,xunit=0.1}
+    \listplotThreeD{\mydata}
+\end{pspicture}}
+\end{center}
+
+}
+{
+
+
+}
+{
+
+
+
+}
+\end{wex}
 
 
 \subsubsection{  Discussion : surface areas }
