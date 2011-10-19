@@ -104,7 +104,6 @@
     \sffamily
     \pagestyle{headings}
 
-    
     \usepackage[utf8x]{inputenc}
     \usepackage[C40,T1]{fontenc}
     \renewcommand*\sfdefault{uop}
@@ -407,8 +406,7 @@ linecolor=red%
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
-\nopagebreak 
-\begin{quotation}
+%\begin{quotation}
 \noindent
 \vspace{.5cm}
 \newlength{\oldparindent}
@@ -420,7 +418,7 @@ linecolor=red%
 {\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{6pt}
 \end{mdframed}
-\vspace*{-8pt}
+\vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
@@ -440,7 +438,7 @@ linecolor=red%
 }%
 {%
 \end{mdframed}
-\end{quotation}
+%\end{quotation}
 %\nopagebreak[4]
 %\begin{pspicture}(0,0)(10,0.01)
 % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
@@ -589,18 +587,18 @@ linecolor=red%
     \node[anchor=west ,text centered, xshift=-40pt]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
-          (0.3\textwidth, 28pt);
+          (0.2\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
               { \bfseries ~ \color{black} Activity:};
        \end{tikzpicture}
     };
     
 % now the gray bar to the end of the paragraph
-    \node[anchor=west, xshift=85pt]{
+    \node[anchor=west, xshift=45pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
-          (0.685\textwidth,28pt);
-         \node[anchor=west, yshift=14pt, xshift=20pt, text centered]
+          (0.8\textwidth-5pt,28pt);
+         \node[anchor=west, yshift=14pt, xshift=0pt, text centered]
               { \textit{#1} };
 
        \end{tikzpicture}
@@ -611,7 +609,7 @@ linecolor=red%
 
 }
 
-\begin{mdframed}[leftline=true]
+\begin{mdframed}[leftline=true, topline=false, bottomline=false, rightline=false, linecolor=siyavula-dark-gray, linewidth=10pt]
 }%
 {%
 \vspace{5pt}
