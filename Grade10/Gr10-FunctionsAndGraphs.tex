@@ -1,3 +1,4 @@
+
 \chapter{Functions}
 \setcounter{figure}{0}
 \setcounter{subfigure}{0}
@@ -1887,8 +1888,8 @@ Use your results to deduce the effect of $a$.
 \begin{center}
 % \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
 % \label{tab:mf:graphs:summaryexp10}
-\begin{tabular}{|c|c|c|}\hline
-& $a<0$&$a>0$\\\hline
+\begin{tabular}{|p{1.5cm}|c|c|}\hline
+\fbox{$b>1$}& $a<0$&$a>0$\\\hline
 $q>0$&
 
 
@@ -1897,12 +1898,14 @@ $q>0$&
 \psset{xunit=0.2,yunit=0.2}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 add}
+\psline[linestyle=dotted](-4,2)(4,2)
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{xunit=0.2,yunit=0.2}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 add}
+\psline[linestyle=dotted](-4,2)(4,2)
 \end{pspicture}
 \\\hline
 $q<0$&
@@ -1913,6 +1916,7 @@ $q<0$&
 \psset{xunit=0.2,yunit=0.2}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 sub}
+\psline[linestyle=dotted](-4,-2)(4,-2)
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
@@ -1920,12 +1924,59 @@ $q<0$&
 \psset{xunit=0.2,yunit=0.2}
 \psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
 \psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 sub}
+\psline[linestyle=dotted](-4,-2)(4,-2)
 \end{pspicture}
 \\\hline
 \end{tabular}
 \end{center}
 \end{table}
 
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|p{1.5cm}|c|c|}\hline
+\fbox{$0<b<1$}& $a<0$&$a>0$\\\hline
+$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-2}{5}{0.5 x exp -1 mul 2 add}
+\psline[linestyle=dotted](-4,2)(4,2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-2}{5}{0.5 x exp 2 add}
+\psline[linestyle=dotted](-4,2)(4,2)
+\end{pspicture}
+\\\hline
+$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-2}{5}{0.5 x exp -1 mul 2 sub}
+\psline[linestyle=dotted](-4,-2)(4,-2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-2}{5}{0.5 x exp 2 sub}
+\psline[linestyle=dotted](-4,-2)(4,-2)
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
 \textbf{The effect of $q$}\newline
 
 The effect of $q$ is called a vertical shift because all points are moved the same distance in the same direction (because it slides the entire graph up or down). 
@@ -2054,7 +2105,7 @@ For the $y$-intercept, let $x=0$:
 This gives the point $(0;5)$.\\
 
 For the $x$-intercept, let $y=0$:
-\begin{equation*}
+\begin{equation*}c
 \begin{array}{ccl}\hfill y& =& 3.2^{x}+2\hfill \\
  \hfill 0& =& 3.2^{x}+2\hfill \\
  \hfill -2& =& 3.2^{x}\hfill \\
@@ -2160,27 +2211,30 @@ Range: $\{g(x): g(x) <6\}$\\
 Draw the graphs of $y=2^{x}$ and $y=(\frac{1}{2})^{x}$ on the same set of axes.
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
+
 \item Which graph is represented by the equation $y=2^{-x}$ ? Explain your answer.
 \item Solve the equation $2^{x}=(\frac{1}{2})^{x}$ graphically and check that your answer is correct by using substitution.
 \end{enumerate}
 The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $A(0; 1)$ and $B(2; 9)$ is on $f$.
-% THIS DIAGRAM NEEDS FIXING!
-% \setcounter{subfigure}{0}
-% \begin{center}
-% \scalebox{1} % Change this value to rescale the drawing.
-% {
-% \begin{pspicture}(0,-3.19)(6.3184376,3.21)
-% \psdots[dotsize=0.12](5.0,1.49)
-% \psdots[dotsize= 0.12](1.0,-1.51)
-% \psbezier[linewidth=0.04](0.0,-1.81)(5.0,-0.41)(5.5,2.59)(5.6,3.19)
-% \rput(5.7725,1.7){$B(2;4)$}
-% \rput(1.7076563,-1.8){$A(0;1)$}
-% \rput(1.0,-2.51){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength= 1.4,arrowinset=0.4,ticksize=0.08cm,dx=2.0cm,dy=1.0cm]{<->}(0,0)(-1,0)(5,5)}
-% \rput(5.994375,-2.8){$x$}
-% \rput(0.564375,2.5){$f$}
-% \end{pspicture} 
-% }     
-% \end{center}
+
+\begin{center}
+\begin{pspicture}(-3,-1)(4,4)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,10)
+\psplot[plotstyle=curve,arrows=<->]{-5}{2.1}{3 x exp}
+\psdots(0,1)(2,9)
+\rput(1,1){$A(0;1)$}
+\rput(3,9){$B(2;9)$}
+
+
+\rput(5.2,0.2){$x$}
+\rput(0.2,10.2){$y$}
+
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+\end{center}
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{3}
 \item Determine the equation of the function $f$.
@@ -2299,7 +2353,7 @@ Use graph paper, choose an appropriate scale and plot the values with $sin~\thet
 \footnotesize$-0,87$&
 \footnotesize$-0,5$&
 \footnotesize$0$&
-% \hline
+
 
  \hline
 %--------------------------------------------------------------------
@@ -2308,10 +2362,7 @@ Use graph paper, choose an appropriate scale and plot the values with $sin~\thet
 
 \end{table}
 
-
-
-
-
+\westep{Plot the points and join with a smooth curve}
 \setcounter{subfigure}{0}
 
 \begin{center}
@@ -2320,8 +2371,7 @@ Use graph paper, choose an appropriate scale and plot the values with $sin~\thet
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
 \psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
-\psplot[plotpoints=300, linewidth=1pt]
-     {0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
 \psdots(30,0.5)(60,0.87)(90,1)(120,0.87)(150,0.5)(180,0)(210,-0.5)(240,-0.87)(270,-1)(300,-0.87)(330,-0.5)(360,0)
 \rput(380, 0.2){$\theta$}
 \rput(10, 1.2){$y$}
@@ -2364,7 +2414,105 @@ On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \l
 \item $h(\theta )=sin~\theta $
 \item $i(\theta )=2~sin~\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.\\
+}
+\end{Investigation}
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $a$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x sin 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x sin 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x sin -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<0$}}
+\end{pspicture}
+
+}
+
+
+\\ 
+&
+\\  \cline{1-1}
+$a=1$: basic sine graph&\\ \cline{1-1}
+
+$0<a<1$: negative vertical stretch, amplitude decreases&\\ \cline{1-1}
+$-1<a<0$: reflection about $x$-axis of $0<a<1$&\\ \cline{1-1}
+$a<0$: reflection about $x$-axis of $a>1$&\\ \cline{1-1}
+$a>1$: positive vertical stretch, amplitude increases& \\
+& 
+
+\\ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $q$}&\\
+&
+
+\multirow{9}{*}{
+% \noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x sin 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x sin 1.3 sub}  
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\end{pspicture}
+}
+\\ 
+&
+\\  \cline{1-1}
+$q>0$: vertical shift upwards, by $q$ units&\\ \cline{1-1}
+
+$q=0$: basic sine graph&\\ \cline{1-1}
+$q<0$: vertical shift downwards, by $q$ units&\\ \cline{1-1}
+ 
+& 
 \\
+&
+\\
+&
+\\
+&
+\\ \hline
+ \end{tabular}
+\end{center}
+\end{table}
 
 \textbf{The effect of $q$}
 \\
@@ -2383,13 +2531,11 @@ For $0<a<1$, the amplitude decreases, but remains positive.
 \item If $a<0$, there is a reflection about the $x$-axis and the amplitude increases.\\ 
 For $-1<a<0$, there is a reflection about the $x$-axis and the amplitude decreases.
 \end{itemize}
-
-Note that amplitude is always positive.
-}
-\end{Investigation}
 \Note{When sketching trigonometric graphs, always start with the basic graph.}
+Note that amplitude is always positive.
 
-% \DIAGRAMS NEEDED HERE
+
+
 % \begin{table}[htb]
 % \begin{center}
 % % \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a \sin(x) + q$.}
@@ -2437,6 +2583,8 @@ Note that amplitude is always positive.
 % \end{table}
 % \par
 
+
+
 \subsection*{Discovering the characteristics}
 \subsection*{Domain and range}
 \nopagebreak
@@ -2473,7 +2621,7 @@ The $y$-intercept of $f(\theta )=a~sin~\theta+q$ is simply the value of $f(\thet
 This gives the point $(0;q)$.
 
 \begin{wex}{Sketching a sine graph}
- {Sketch the graph of $f(\theta)=2~sin~\theta+3$ for $\theta \in [0^{\circ}; 360^{\circ}]$}
+{Sketch the graph of $f(\theta)=2~sin~\theta+3$ for $\theta \in [0^{\circ}; 360^{\circ}]$}
 {
 \westep{Examine the standard form of the equation}
 From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
@@ -2513,10 +2661,9 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 \footnotesize$1$&
 \footnotesize$1.27$&
 \footnotesize$2$&
-\footnotesize$3$&
-% \hline0.4
+\footnotesize$3$
+ \\ \hline
 
- \hline
 %--------------------------------------------------------------------
 \end{tabular}
 % \end{center}
@@ -2548,23 +2695,19 @@ $x$-intercepts: none\\
 $y$-intercept: $(0;3)$\\
 Maximum turning point: $(90^{\circ};5)$\\
 Minimum turning point: $(270^{\circ};1)$
-
 }
 \end{wex}
 
 \subsection{Graph of $y=a~cos~\theta +q$}
 \subsection*{Plotting the graph}
 \begin{wex}
- {Plotting a cosine graph}
+{Plotting a cosine graph}
 {
 \begin{equation*}
  y=cos~ \theta~~~~~~[~0 \leq \theta \leq 360^{\circ}]
 \end{equation*}
-
-
 Use your calculator to complete the following table. \\
 Use graph paper, choose an appropriate scale and plot the values with $cos~\theta $ on the $y$-axis and $\theta $ on the $x$-axis. (Round answers to $2$ decimal place). 
-
 
 \begin{table}[H]
 
@@ -2606,21 +2749,6 @@ Use graph paper, choose an appropriate scale and plot the values with $cos~\thet
  \hline
 %--------------------------------------------------------------------
 \end{tabular}
-% \end{center}\begin{center}
-\begin{pspicture}(-4,-2)(4,6)
-\psset{yunit=1, xunit=2}
-%\psgrid[gridcolor=gray]
-\psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{->}(0,0)(0,0)(370,6)
-\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
-     {0}{360}{x sin 2 mul 3 add}  
-\psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
-     {0}{360}{3}  
-\rput(370, 0.2){$\theta$}
-\rput(0.4, 6.2){$y$}
-\rput(380,3.4){$f(\theta)$}
-\psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
-
 
 \end{table}
 }
@@ -2671,7 +2799,7 @@ Use graph paper, choose an appropriate scale and plot the values with $cos~\thet
 
 
 
-
+\westep{Plot the points and join with a smooth curve}
 \setcounter{subfigure}{0}
 
 \begin{center}
@@ -2722,6 +2850,106 @@ On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \l
 \item $i(\theta )=2~cos~\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.\\
 \\
+}
+\end{Investigation}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $a$}&\\
+&
+
+\multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linecolor=gray]{0}{360}{x cos 2 mul}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos -2 mul}  
+\psplot[plotpoints=300, linewidth=1.5pt, linestyle=dotted]{0}{360}{x cos 0.5 mul}  
+\psplot[plotpoints=300, linewidth=1pt,linestyle=dotted, linecolor=gray]{0}{360}{x cos -0.5 mul}  
+\psline[linewidth=1pt, linecolor=gray](420,1)(460,1)
+\rput[l](490,1){\parbox{3cm}{\footnotesize$a>1$}}
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$a=1$}}
+\psline[linewidth=1.5pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$0<a<1$}}
+\psline[linewidth=1pt,linestyle=dotted, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
+\rput[l](490,-1){\parbox{3cm}{\footnotesize$a<0$}}
+\end{pspicture}
+
+}
+
+
+\\ 
+&
+\\  \cline{1-1}
+$a=1$: basic cosine graph&\\ \cline{1-1}
+
+$0<a<1$: negative vertical stretch, amplitude decreases&\\ \cline{1-1}
+$-1<a<0$: reflection about $x$-axis of $0<a<1$&\\ \cline{1-1}
+$a<0$: reflection about $x$-axis of $a>1$&\\ \cline{1-1}
+$a>1$: positive vertical stretch, amplitude increases& \\
+& 
+
+\\ \hline
+
+ \end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+ \begin{tabular}{|p{6.5cm}|m{7cm}|}
+\hline
+
+\textbf{Effect of $q$}&\\
+&
+
+\multirow{9}{*}{
+\noalign{\smallskip}
+\begin{pspicture}(-1,0)(7,7)
+\psset{xunit=1,yunit=1}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=0.5,Dx=0, dy=0, Dy=0, labels=none, ticks=none]{<->}(0,0)(0,-2.5)(400,2.5)
+\psplot[plotpoints=300, linewidth=1pt]{0}{360}{x cos}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dotted]{0}{360}{x cos 1.3 add}  
+\psplot[plotpoints=300, linewidth=1pt, linestyle=dashed, linecolor=gray]{0}{360}{x cos 1.3 sub}  
+\psline[linewidth=1pt](420,0.5)(460,0.5)
+\rput[l](490,0.5){\parbox{3cm}{\footnotesize$q=0$}}
+\psline[linewidth=1pt,linestyle=dotted](420,0)(460,0)
+\rput[l](490,0){\parbox{3cm}{\footnotesize$q>0$}}
+\psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
+\rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\end{pspicture}
+
+}
+\\ 
+&
+\\  \cline{1-1}
+$q>0$: vertical shift upwards, by $q$ units&\\ \cline{1-1}
+
+$q=0$: basic sine graph&\\ \cline{1-1}
+$q<0$: vertical shift downwards, by $q$ units&\\ \cline{1-1}
+ 
+& 
+\\
+&
+\\
+&
+\\
+&
+\\ \hline
+ \end{tabular}
+\end{center}
+\end{table}
 
 \textbf{The effect of $q$}
 \\
@@ -2742,9 +2970,8 @@ For $-1<a<0$, there is a reflection about the $x$-axis and the amplitude decreas
 \end{itemize}
 
 Note that amplitude is always positive.
-}
-\end{Investigation}
-% TABLE DIAGRAMS NEED FIXING
+
+
 % \begin{table}[htb]
 % \begin{center}
 % \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ \cos~x + q$.}
@@ -2915,17 +3142,16 @@ If you shift the whole cosine graph to the right by $90 ^{\circ }$ it will overl
 
 \subsection{Graphs of the form $y=a~tan~\theta+q$}
 \subsection*{Plotting the graph}
+\pagebreak %MANUAL PAGE BREAK TO FORCE WEX TO SPLIT OVER TWO PAGES
 \begin{wex}
- {Plotting a tangent graph}
+{Plotting a tangent graph}
 {
 \begin{equation*}
  y=tan~ \theta~~~~~~[~0 \leq \theta \leq 360^{\circ}]
 \end{equation*}
 
-
 Use your calculator to complete the following table. \\
 Use graph paper, choose an appropriate scale and plot the values with $tan~\theta $ on the $y$-axis and $\theta $ on the $x$-axis. (Round answers to $2$ decimal place). 
-
 
 \begin{table}[H]
 
@@ -3018,24 +3244,19 @@ Use graph paper, choose an appropriate scale and plot the values with $tan~\thet
 % \end{center}
 
 \end{table}
+\westep{Plot the points and join with a smooth curve}
 
-%THIS GRAPH NEEDS PSDOTS PLOTTED
 \begin{center}
 \begin{pspicture}(-6,-3)(6,3)
-\psaxes[Dx=180, dx=2, Dy=2, dy=1]{<->}(0,0)(0,-3)(4.5,3)
-% \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
+\psset{xunit=1}
+\psaxes[Dx=90, dx=1, Dy=1, dy=1]{<->}(0,0)(0,-3)(4.5,3)
 \psline[linestyle=dashed](1,-2.5)(1,2.5)
-% \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
 \psline[linestyle=dashed](3,-2.5)(3,2.5)
-\psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=<->]{0}{80}{x sin x cos div}
-% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div}
-\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div}
-% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
-% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
-\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div}
-% \psdots(0,0)(30,0.58)(60,1.73)(120,-1.73)(150,-0.58)(180,0)(210,0.58)(240,1.73)(300,-1.73)(330,-0.58)(360,0)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{70}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div}
+ \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
 
-% \rput(5.1,-.3){$\theta$\ Degrees}
 \rput(.2,3.3){$y$}
 \rput(4.3,0.3){$\theta$}
 \end{pspicture}
@@ -3119,6 +3340,104 @@ Use your results to deduce the effect of $a$.
 }
 \end{Investigation}
 
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
+\label{tab:mf:graphs:summaryhyp10}
+\begin{tabular}{|m{2cm}|p{4cm}|p{4cm}|}\hline
+& $a<0$&$a>0$\\ 
+\hline
+
+$q>0$&
+
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div -1 mul 0.5 add}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 add}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+
+
+
+&
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-1.5)(4.5,2.5)
+\psline[linestyle=dashed](1,-1.5)(1,2.5)
+\psline[linestyle=dashed](3,-1.5)(3,2.5)
+\psline[linestyle=dotted](0,0.5)(4.5,0.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div 0.5 add}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 add}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 add}
+\psdots(2,0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+
+\\\hline
+$q=0$ & 
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linestyle=dashed](1,-2)(1,2)
+\psline[linestyle=dashed](3,-2)(3,2)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div -1 mul}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul}
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+&
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2)(4.5,2)
+\psline[linestyle=dashed](1,-2)(1,2)
+\psline[linestyle=dashed](3,-2)(3,2)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div }
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div }
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div }
+\psdots(2,0)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\\ \hline
+$q<0$&
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div -1 mul 0.5 sub}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div -1 mul 0.5 sub}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div -1 mul 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+
+
+&
+\begin{pspicture}(-3,-3)(3,3)
+\psset{xunit=0.75}
+\psaxes[Dx=180, dx=2, Dy=2, dy=2, labels=none, ticks=none]{<->}(0,0)(-.5,-2.5)(4.5,1.5)
+\psline[linestyle=dashed](1,-2.5)(1,1.5)
+\psline[linestyle=dashed](3,-2.5)(3,1.5)
+\psline[linestyle=dotted](0,-0.5)(4.5,-0.5)
+\psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{65}{x sin x cos div 0.5 sub}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{115}{245}{x sin x cos div 0.5 sub}
+\psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{295}{360}{x sin x cos div 0.5 sub}
+\psdots(2,-0.5)
+\rput(-0.2,-0.2){\footnotesize$0$}
+\end{pspicture}
+\\\hline
+\end{tabular}
+\end{center}
+\end{table}
 \textbf{The effect of $q$}
 \\
 The effect of $q$ is called a vertical shift because the whole tangent graph shifts up or down by $q$ units. 
@@ -3253,24 +3572,41 @@ We see that $a>1$ so the branches of the curve will be steeper. We also see that
 
 
 %THIS GRAPH NEEDS PSDOTS PLOTTED
+% \begin{center}
+% \begin{pspicture}(-6,-3)(6,3)
+% \psset{xunit=1}
+% \psaxes[Dx=180, dx=2, Dy=1, dy=1]{<->}(0,0)(0,-3)(4.5,3)
+% \psline[linestyle=dashed](1,-2.5)(1,2.5)
+% \psline[linestyle=dashed](3,-2.5)(3,2.5)
+% \psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=<->]{0}{70}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
+% \psplot[xunit=0.0111,yunit=1,plotpoints=300, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
+%  \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
+% 
+% \rput(.2,3.3){$y$}
+% \rput(4.3,0.3){$\theta$}
+% \end{pspicture}
+% \end{center}
+
+
 \begin{center}
 \begin{pspicture}(0,-3)(6,3)
-\psaxes[Dx=180, dx=2, Dy=1, dy=0.4]{<->}(0,0)(0,-3)(4.5,3)
+\psaxes[Dx=180, dx=2, Dy=1, dy=0.5]{<->}(0,0)(0,-3)(4.5,3)
 % \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
 \psline[linestyle=dashed](1,-3)(1,3)
 % \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
 \psline[linestyle=dashed](3,-3)(3,3)
-\psline[linestyle=dashed](0,0.4)(6,0.4)
-\psplot[xunit=0.0111,yunit=0.4, plotpoints=500, arrows=<->]{0}{80}{x sin x cos div 2 mul 1 add}
-% \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div}
-\psplot[xunit=0.0111,yunit=0.4,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div 2 mul 1 add}
+\psline[linestyle=dashed](0,0.5)(4.5,0.5)
+\psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=<->]{0}{70}{x sin x cos div 2 mul 1 add}
+
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{110}{250}{x sin x cos div 2 mul 1 add}
 % \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{-100}{-260}{x sin x cos div}
 % \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{-280}{-360}{x sin x cos div}
-\psplot[xunit=0.0111,yunit=0.4,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div 2 mul 1 add}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{290}{360}{x sin x cos div 2 mul 1 add}
 % \rput(5.1,-.3){$\theta$\ Degrees}
-% \psdots(0,0)(30,0.58)(60,1.73)(120,-1.73)(150,-0.58)(180,0)(210,0.58)(240,1.73)(300,-1.73)(330,-0.58)(360,0)
+ \psdots(0,0.5)(0.33,1.08)(0.66,2.23)(1.33,-1.23)(1.66,-0.08)(2,0.5)(2.33,1.08)(2.66,2.23)(3.33,-1.23)(3.66,-0.08)(4,0.5)
 \rput(.2,3.3){$y$}
-\rput(4.3,0.3){$\theta$}
+\rput(4.5,0.2){$\theta$}
 \end{pspicture}
 \end{center}
 }
@@ -3288,49 +3624,43 @@ Using your knowledge of the effects of $a$ and $q$, sketch each of the following
 \item $y=tan~\theta -2$\item $y=2~cos~\theta -1$
 \end{enumerate}
 Give the equations of each of the following graphs:
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[itemsep=20pt, label=\textbf{\arabic*}. ] 
  \setcounter{enumi}{6}
+
 \item
-% \begin{minipage}{0.6\textwidth}
-\begin{center}
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
-\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-2,-5.1)(4.5,5.1)
-\psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-90}{360}{x cos -4 mul }
+\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
 \uput[d](4.7,0){$x$}
 \uput[r](0,5.1){$y$}
-% \rput(-2.5,2){a)}
+\rput(-0.2,-0.7){$0$}
 \end{pspicture}
-\end{center}
+
+
 \item
 \begin{pspicture}(-0.3,-2)(5,2)
-%\psgrid
 \psset{yunit=0.25}
-\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(0,-5.1)(4.5,5.1)
+\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
 \psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
 \uput[d](4.7,0){$x$}
 \uput[r](0,5.1){$y$}
-% \rput(-1.2,3){b)}
-%\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{-260}{-100}{x sin x cos div 2 mul 1 add}
-%\psplot[xunit=0.0111,plotpoints=500, arrows=<->]{260}{100}{x sin x cos div 2 mul 
+\rput(-0.2,-0.7){$0$}
 \end{pspicture}
-\end{center}
-% \end{minipage}
-% \begin{minipage}{0.35\textwidth}
+
+
 \item
-\begin{center}
 \begin{pspicture}(-2.2,-3)(2.2,3.2)
-%\psgrid
 \psset{yunit=0.2}
 \psaxes[Dx=90, dx=1, Dy=5, dy=5]{<->}(0,0)(-2,-12)(2,12)
 \psline[linestyle=dashed](-1,0)(-1,12.5)
 \psline[linestyle=dashed](1,-12.5)(1,-3)
 \psline[linestyle=dashed](-1,-12.5)(-1,-3)
 \psline[linestyle=dashed](1,0)(1,12.5)
-% \rput(-2,8){c)}
 \psplot[xunit=0.0111, plotpoints=500, arrows=<->]{-75}{83}{x sin x cos div -2 mul 5 add}
+\rput(-0.2,-0.7){$0$}
 \end{pspicture}
-\end{center}
+
 % \end{minipage}      \par 
 \end{enumerate}
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
