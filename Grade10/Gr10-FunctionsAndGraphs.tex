@@ -3673,7 +3673,21 @@ Give the equations of each of the following graphs:
 \begin{wex}{Determining the equation of a parabola}
 {Use the sketch below to determine the values of $a$ and $q$ in the parabola of the form $y=ax^{2}+q$.
 
-% DIAGRAM HERE
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,3)
+\psplot[plotstyle=curve,arrows=<->]{-1.8}{1.8}{x 2 exp -1 mul 1 add}
+ \psdots(0,1)(-1,0)
+% \uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 3.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.6,1.2){$(0;1)$}
+\rput(-2.1,-0.4){$(-1;0)$}
+\end{pspicture}
+\end{center}
 }
 {
 \westep{Examine the sketch}
@@ -3705,9 +3719,25 @@ $a=-1$ and $q=1$, the equation of the parabola is $y=-x^{2} +1$.
 \end{wex}
 
 \begin{wex}{Determining the equation of a hyperbola}
-{Use the sketch below to determine the values of $a$ and $q$ in the parabola of the form $y=\dfrac{a}{x}+q$.
+{Use the sketch below to determine the values of $a$ and $q$ in the hyperbola of the form $y=\dfrac{a}{x}+q$.
 
-% DIAGRAM HERE
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-3,-3)(3,4)
+
+\psplot[plotstyle=curve,arrows=<->]{-2.8}{-0.35}{x -1 exp -1 mul 1 add}
+\psplot[plotstyle=curve,arrows=<->]{0.3}{2.8}{x -1 exp -1 mul 1 add}
+ \psdots(1,0)(-1,2)
+\psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 4.3){$y$}
+\rput(3.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(1.4,-0.4){$(1;0)$}
+\rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+\end{center}
 }
 {
 \westep{Examine the sketch}
@@ -3756,7 +3786,27 @@ $a=-1$ and $q=1$, the equation of the parabola is $y=\dfrac{-1}{x}+1$.
 \end{enumerate}
 
 
-% DIAGRAM HERE
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.75,xunit=0.75}
+\psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-6)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-3.2}{3.2}{x 2 exp -1 mul 4 add}
+\psplot[plotstyle=curve,arrows=<->]{-4}{3}{x 2 sub}
+ \psdots(-2,0)(2,0)(0,-2)(0,4)(-3,-5)
+
+\rput(0.3, 5.3){$y$}
+\rput(5.2, 0.2){$x$}
+\rput(-0.37,-0.3){$0$}
+\rput(0.3,4.3){$C$}
+\rput(2.4,-0.3){$B$}
+\rput(-2.4,-0.3){$A$}
+\rput(0.3,-2.3){$D$}
+\rput(-2.6,-5){$E$}
+\rput(4.2,1){$y=x-2$}
+\rput(-2.5,3.3){$y=-x^{2}+4$}
+\end{pspicture}
+\end{center}
 }
 {
 \westep{Calculate intercepts}
@@ -3830,8 +3880,22 @@ Distance $CD$ is $6$ units.
 \end{wex}
 
 \begin{wex}{Interpreting trigonometric graphs}
-{Use the sketch to determine the equation of the trigonometric function of the form $y=a~trig~\theta +q$
-% DAIGRAM HERE
+{Use the sketch to determine the equation of the trigonometric function of the form $y=a~trig~\theta +q$\\
+\begin{center}
+\begin{pspicture}(-4,-2)(4,6)
+\psset{yunit=1, xunit=2}
+%\psgrid[gridcolor=gray]
+\psset{xunit=0.01111}
+\psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-30,-1)(370,2)
+\psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 0.5 add}  
+\rput(380, 0.2){$\theta$}
+\rput(0.4, 2.2){$y$}
+\psdots(210,0)(90,1.5)(0,0.5)
+\rput(120,1.8){$M(90^{\circ}; \frac{3}{2})$}
+\rput(240,0.3){$N(210^{\circ};0)$}
+\rput(-7,-0.2){$0$}
+\end{pspicture}
+\end{center} 
 }
 {
 \westep{Examine the sketch}
