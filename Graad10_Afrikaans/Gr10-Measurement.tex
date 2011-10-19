@@ -1,0 +1,2472 @@
+\chapter{  Measurements  }  
+
+\subsubsection{ Areas of Polygons }
+\nopagebreak
+            
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.] 
+    \item Area of triangle: $\frac{1}{2}\ensuremath{\times}$ base $\ensuremath{\times}$ perpendicular height
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(0,-0.5)(5,2)
+		\pspolygon(0,0)(2,1)(3,0)
+		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+		\pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+		\rput(1.8,0.5){$h$}
+		\rput(1.5,-0.25){$b$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+
+    \item Area of trapezium: $\frac{1}{2}\ensuremath{\times}$ (sum of $\parallel $ (parallel) sides) $\ensuremath{\times}$ perpendicular height
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(-2,-0.5)(5,2)
+		\pspolygon(-1.5,0)(0,1)(2,1)(3,0)
+		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+		\pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+		\rput(1.8,0.5){$h$}
+		\rput(0.75,-0.25){$s_1$}
+		\rput(1,1.25){$s_2$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+
+    \item Area of parallelogram and rhombus: base $\ensuremath{\times}$ perpendicular height
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(-2,-0.5)(5,2)
+		\pspolygon(-1,0)(0,1)(3,1)(2,0)
+		\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
+		\pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
+		\rput(0.3,0.5){$h$}
+		\rput(1,-0.25){$b$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+
+    \item Area of rectangle: length $\ensuremath{\times}$ breadth
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(-2,-0.5)(5,2)
+		\pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
+		\pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+		\rput(2.75,0.5){$h$}
+		\rput(1.25,-0.25){$b$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+
+    \item Area of square: length of side $\ensuremath{\times}$ length of side
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(-2,-0.5)(5,2)
+		\pspolygon(0,0)(0,1)(1,1)(1,0)
+		\pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+		\rput(-0.25,0.5){$s$}
+		\rput(0.5,-0.25){$s$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+
+    \item Area of circle: $\pi $ x radius${}^{2}$
+    \begin{figure}[H]
+	\begin{center}
+	    \begin{pspicture}(-2,-0.5)(5,2)
+		\pscircle[dimen=outer](0.5,0.5){0.7}
+		\psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
+		\psdots[dotsize=0.12](0.5,0.5)
+		\rput(0.85,0.75){$r$}
+	    \end{pspicture}
+	\end{center}
+    \end{figure}   
+\end{enumerate}      
+
+
+\begin{figure}[H]
+    \textnormal{Khan Academy video on area and perimeter}
+    \vspace{.1in}
+    \nopagebreak
+    \raisebox{-5 pt}{ 
+    \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10096 )}
+    \vspace{2pt}
+    \vspace{.1in}
+\end{figure}   
+\par
+
+
+\begin{figure}[H]
+    \textnormal{Khan Academy video on area of a circle}
+    \vspace{.1in}
+    \nopagebreak
+    \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10097 )}
+    \vspace{2pt}
+    \vspace{.1in}    
+\end{figure}   
+
+\begin{wex}{Finding areas}{
+    Find the area of the following figure:\\
+
+    \begin{center}
+	\begin{pspicture}(-2,-0.5)(5,2)
+	    \pspolygon(-1,0)(0.5,2)(4,2)(2.5,0)
+	    \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,2)(0.5,0)
+	    \pspolygon(0.5,0)(0.5,0.3)(0.8,0.3)(0.8,0)
+	    \rput(-1,-0.2){A}
+	    \rput(0.5,2.2){B}
+	    \rput(4,2.2){C}
+	    \rput(2.5,-0.2){B}
+	    \rput(0.5,-0.2){E}
+	    \rput(-0.5,1){$5$}
+	    \rput(-0.25,-0.2){$3$}
+	    \rput(1.5,-0.2){$4$}
+	\end{pspicture}
+    \end{center}
+    }{
+
+    \westep{We first need to find the height, BE, of the parallelogram. We can use Pythagoras to do this}
+    \begin{eqnarray*}
+	\text{BE}^2 &=& \text{AB}^2 - \text{AE}^2\\
+	\text{BE}^2 &=& 5^2 - 3^2\\
+	\text{BE}^2 &=& 16\\
+	\text{BE} &=& 4
+    \end{eqnarray*}
+    
+    \westep{We apply the formula for the area of a parallelogram to find the area}
+    \begin{eqnarray*}
+	\text{Area} &=& h \times b\\
+		    &=& 4 \times 7\\
+		    &=& 28
+    \end{eqnarray*}
+    }
+\end{wex}
+
+
+\begin{exercises}{Polygons}
+    \begin{enumerate}[label=\textbf{\arabic*}.] 
+	\item For each case below, say whether the statement is true or false. For false statements, give a counter-example to prove it:
+    
+	\begin{enumerate}[label=\textbf{\alph*}.] 
+	    \item All squares are rectangles
+	    \item All rectangles are squares
+	    \item All pentagons are similar
+	    \item All equilateral triangles are similar
+	    \item All pentagons are congruent
+	    \item All equilateral triangles are congruent
+	\end{enumerate}
+
+	\item Find the areas of each of the given figures -- remember area is measured in square units (cm${}^{2}$, m${}^{2}$, mm${}^{2}$).
+
+	\begin{figure}[H]
+	    \begin{center}
+		\includegraphics{col11306.imgs/m39357_MG10C13_064.png}
+		\vspace{2pt}
+		\vspace{.1in}
+	    \end{center}
+	\end{figure}
+    \end{enumerate}
+
+    \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}}
+    Find the answers with the short codes:\\
+    \begin{tabularx}{\textwidth}{ XX }
+	(1)	&	(2)
+    \end{tabularx}
+\end{exercisers}
+
+
+\subsection{ Right prisms and cylinders }
+
+In this section we study how to calculate the surface areas and volumes of right prisms and cylinders. A right prism is a polygon that has been stretched out into a tube so that the height of the tube is perpendicular to the base (the definition is motivated by the fact that the angle between base and side form a right angle). A square prism has a base that is a square and a triangular prism has a base that is a triangle.\par 
+
+\rule[.1in]{\figurerulewidth}{.005in}\\
+\begin{figure}[H]
+    \begin{center}
+	%% Rectangular Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
+	\end{pspicture}
+
+	%% Square Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}
+
+	%% Triangular Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+% 	    \psset{viewpoint=8 12 8}
+	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.3937]
+	\end{pspicture}
+
+	%% Cylindrical Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
+	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+	\end{pspicture}
+
+	\vspace{0.75cm}
+	\begin{cnxcaption}
+	    \small
+	    \textbf{Figure 13.24: }Examples of a right prism, a right square prism, a right triangular prism and a cylinder.
+	\end{cnxcaption}
+	\rule[.1in]{\figurerulewidth}{.005in}\\
+    \end{center}
+\end{figure}   
+
+%   \addtocounter{footnote}{-0}
+  \label{m39357*id62698}
+  It is relatively simple to calculate the surface areas and volumes of prisms
+  \par 
+%   \label{m39357*uid11}
+  
+\subsubsection{ Surface Area}
+  \nopagebreak
+
+%   \label{m39357*id62710}
+  The term \textsl{surface area} refers to the total area of the exposed or outside surfaces of a prism. This is easier to understand if you imagine the prism as a solid object.
+  \par 
+%   \label{m39357*id62720}
+  If you examine the prisms in Figure~13.24, you will see that each face of a prism is a simple polygon. For example, the triangular prism has two faces that are triangles and three faces that are rectangles. Therefore, in order to calculate the surface area of a prism you simply have to calculate the area of each face and add it up. In the case of a cylinder the top and bottom faces are circles, while the curved surface flattens into a rectangle.
+  \par
+%   \label{m39357*id62732}
+  \textbf{Surface Area of Prisms}
+  \par 
+%   \label{m39357*id62738}
+  Calculate the area of each face and add the areas together to get the surface area. To do this you need to determine the correct shape of each and every face of the prism and then for each one determine the surface area. The sum of the surface areas of all the faces will give you the total surface area of the prism.
+  \par
+% \label{m39357*secfhsst!!!underscore!!!id107}
+
+\rule[.1in]{\figurerulewidth}{.005in}\\
+\begin{figure}[H]
+    \begin{center}
+	%% Rectangular Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
+	\end{pspicture}
+
+	%% Rectangular Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
+	\end{pspicture}
+
+	%% Rectangular Prism Unfolded Birdseye
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=90,Beta=90}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
+	\end{pspicture}
+\newline
+	\rule[.1in]{\figurerulewidth}{.005in}\\
+    \end{center}
+\end{figure}   
+
+
+\rule[.1in]{\figurerulewidth}{.005in}\\
+\begin{figure}[H]
+    \begin{center}
+
+	%% Square Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}
+
+	%% Square Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=60,Beta=30}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}
+
+	%% Square Prism Unfolded Birdseye
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psset{Alpha=0,Beta=90}
+	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1.5,1,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,-1.5,2)(2.5,0,0)(0,2.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](4,1,2)(2.5,0,0)(0,2.5,0)
+	\end{pspicture}
+
+	\rule[.1in]{\figurerulewidth}{.005in}\\
+    \end{center}
+\end{figure}   
+
+
+\rule[.1in]{\figurerulewidth}{.005in}\\
+\begin{figure}[H]
+    \begin{center}
+	%% Triangular Prism
+
+	\begin{pspicture}(-1.5,-1.5)(1,1)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+% 	    \psset{viewpoint=8 12 8}
+	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.4]
+	\end{pspicture}
+
+	%% Triangular Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+% 	    \psset{viewpoint=8 12 8}
+	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	\end{pspicture}
+
+	%% Triangular Prism Unfolded Birdseye
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{Alpha=60,Beta=30}
+	    \psset{viewpoint=0 0 20,RotZ=90}
+	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	\end{pspicture}
+
+
+	\rule[.1in]{\figurerulewidth}{.005in}\\
+    \end{center}
+\end{figure} 
+
+
+\rule[.1in]{\figurerulewidth}{.005in}\\
+\begin{figure}[H]
+    \begin{center}
+
+	%% Cylindrical Prism
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
+	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
+	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
+	    \psline(-1.0,-3)(-1.0,-0)
+	    \psline(1.0,-3)(1.0,-0)
+	\end{pspicture}
+
+	%% Cylindrical Prism Unfolded
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=solid](0,-4)(1.0,1.0)
+	    \psellipse[fillstyle=none](0,1)(1.0,1)
+	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5.18,0)
+	\end{pspicture}
+
+	\rule[.1in]{\figurerulewidth}{.005in}\\
+    \end{center}
+\end{figure}   
+
+
+\subsubsection{  Discussion : surface areas }
+  \nopagebreak
+%   \label{m39357*id62753}
+  In pairs, study the following prisms and the adjacent image showing the various surfaces that make up the prism. Explain to your partner, how each relates to the other.
+  \par
+
+%   \label{m39357*id6274366}
+%   \setcounter{subfigure}{0}
+
+  \begin{figure}[H] % horizontal\label{m39357*id62767}
+    \begin{center}
+%       \label{m39357*id62767!!!underscore!!!media}
+%       \label{m39357*id62767!!!underscore!!!printimage}
+%       \includegraphics{col11306.imgs/m39357_MG10C14_002.png} % m39357;MG10C14\_002.png;;;6.0;8.5;
+
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+ \par 
+
+\label{m39357*eip-630}
+            \subsubsection{ Activity: Surface areas}
+            \nopagebreak
+            \label{m39357*eip-802}
+Find (or take one yourself) a picture of a building that does not have a well defined shape (i.e. is not simply a rectangle). For example a castle with towers, or a house with gable windows or a porch. Assume you have to paint the outside of the building. How much paint would you need? Think about what you have learnt about surface area and the area of polygons. Can you find regular polygons on your picture and use those to find the surface area?
+\par \label{m39357*secfhsst!!!underscore!!!id113}
+            \subsubsection{  Surface areas }
+            \nopagebreak
+            
+        \label{m39357*id62786}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m39357*uid12}\item Calculate the surface area in each of the following:
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62804}
+    \begin{center}
+    \label{m39357*id62804!!!underscore!!!media}\label{m39357*id62804!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG10C14_003.png} % m39357;MG10C14\_003.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \label{m39357*uid13}\item  If a litre of paint covers an area of $2{m}^{2}$, how much paint does a painter need to cover:
+\label{m39357*id62841}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \label{m39357*uid14}\item A rectangular swimming pool with dimensions $4m\ensuremath{\times}3m\ensuremath{\times}2,5m$, inside walls and floor only.
+\label{m39357*uid15}\item The inside walls and floor
+of a circular reservoir with diameter $4m$ and height $2,5m$\end{enumerate}
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62926}
+    \begin{center}
+    \label{m39357*id62926!!!underscore!!!media}\label{m39357*id62926!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG10C14_004.png} % m39357;MG10C14\_004.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \end{enumerate}
+        
+        
+
+      
+      \label{m39357*uid16}
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+ \par \begin{tabular}[h]{cccccc}
+ (1.) lT2  &  (2.) lq6  & \end{tabular}
+
+
+
+            \subsubsection{ Volume}
+            \nopagebreak
+            \label{m39357*id62951}The volume of a right prism is calculated by multiplying the area of the base by the height. So, for a square prism of side length $a$ and height $h$ the volume is $a\ensuremath{\times}a\ensuremath{\times}h={a}^{2}h$.\par 
+        \label{m39357*id63000}
+          \textbf{Volume of Prisms}
+        \par 
+        \label{m39357*id63006}Calculate the area of the base and multiply by the height to get the volume of a prism.\par 
+\label{m39357*eip-491}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.6}\label{m39357*eip-115}
+  \label{m39357*eip-540}
+  Find the surface area and volume for the a square prism of height $4\phantom{\rule{2pt}{0ex}}\mathrm{cm}$ and base length, $3\phantom{\rule{2pt}{0ex}}\mathrm{cm}$.
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id6348}
+    \begin{center}
+    \label{m39357*id6348!!!underscore!!!media}\label{m39357*id6348!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39357_squareprism.png} % m39357;squareprism.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+  \par 
+\vspace{5pt}
+
+\label{m39357*eip-51}\noindent\textbf{Solution to Exercise }
+  \label{m39357*eip-226}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item We use the formula for the surface area of a prism:
+      \label{m39357*id1166229703568}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill \mathrm{S.A.}& =& 2\left[2\left(L\ensuremath{\times}b\right)+\left(b\ensuremath{\times}h\right)\right]\hfill \\ & =& 2\left[2\left(3\ensuremath{\times}4\right)+\left(3\ensuremath{\times}4\right)\right]\hfill \\ & =& {72\phantom{\rule{2pt}{0ex}}\mathrm{cm}}^{2}\hfill \end{array}\tag{13.19}
+      \end{equation}
+    
+      \item To find the volume of the prism, we find the area of the base and multiply it by the height:
+      \label{m39357*id1166232868439}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}V\hfill & =& {l}^{2}\ensuremath{\times}h\\ & =& \left({3}^{2}\right)\ensuremath{\times}4\hfill \\ & =& {36\phantom{\rule{2pt}{0ex}}\mathrm{cm}}^{3}\hfill \end{array}\tag{13.20}
+      \end{equation}
+    
+      \end{enumerate}
+        
+
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  \label{m39357*secfhsst!!!underscore!!!id132}
+            \subsubsection{  Volume }
+            \nopagebreak
+            
+        \label{m39357*id63019}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m39357*uid17}\item Write down the formula for each of the following volumes:
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63037}
+    \begin{center}
+    \label{m39357*id63037!!!underscore!!!media}\label{m39357*id63037!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39357_MG10C14_005.png} % m39357;MG10C14\_005.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \label{m39357*uid18}\item Calculate the following volumes:
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63058}
+    \begin{center}
+    \label{m39357*id63058!!!underscore!!!media}\label{m39357*id63058!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG10C14_006.png} % m39357;MG10C14\_006.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \label{m39357*uid19}\item A cube is a special prism that has all edges equal. This means that each face is a square. An example of a cube is a die. Show that for a cube with side length $a$, the surface area is $6{a}^{2}$ and the volume is ${a}^{3}$.
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63117}
+    \begin{center}
+    \label{m39357*id63117!!!underscore!!!media}\label{m39357*id63117!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39357_MG10C14_007.png} % m39357;MG10C14\_007.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \end{enumerate}
+        
+        
+
+        \label{m39357*id63133}Now, what happens to the surface area if one dimension is multiplied by a constant? For example, how does the surface area change when the height of a rectangular prism is divided by 2?\par 
+ \label{m39357*is08324}       
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63644234}
+    \begin{center}
+    \label{m39357*id63644234!!!underscore!!!media}\label{m39357*id63644234!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39357_MG10C14_008.png} % m39357;MG10C14\_008.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.32: }Rectangular prisms
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    \par 
+ 
+    % \textbf{m39357*eip-742}\par
+    
+          \begin{table}[H]
+        
+    % \begin{table}[H]
+    % \\ '' '0'
+    
+        \begin{center}
+      
+      \label{m39357*eip-742}
+      
+    \noindent
+    \tabletail{%
+        \hline
+        \multicolumn{2}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
+        \hline
+      }
+      \tablelasttail{}
+      \begin{xtabular}[t]{|l|l|}\hline
+    
+    
+        $\mathrm{Surface\; area}=2\left(l\ensuremath{\times}h+l\ensuremath{\times}b+b\ensuremath{\times}h\right)$ &
+    
+    
+        $\mathrm{Surface\; area}=2\left(l\ensuremath{\times}\frac{1}{2}h+l\ensuremath{\times}b+b\ensuremath{\times}\frac{1}{2}h\right)$% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        $\mathrm{Volume}=l\ensuremath{\times}b\ensuremath{\times}h$ &
+    
+    
+        $\begin{array}{ccc}\hfill \mathrm{Volume}& =& l\ensuremath{\times}b\ensuremath{\times}\frac{1}{2}h\hfill \\ & =& \frac{1}{2}\ensuremath{\times}l\ensuremath{\times}b\ensuremath{\times}h\hfill \end{array}$% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    \end{xtabular}
+      \end{center}
+    \begin{center}{\small\bfseries Table 13.2}\end{center}
+    \begin{caption}{\small\bfseries Table 13.2}\end{caption}
+\end{table}
+      
+    \par
+  
+\par
+            \label{m39357*secfhsst!!!underscore!!!id147}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.7:  Scaling the dimensions of a prism }
+        \label{m39357*probfhsst!!!underscore!!!id148}
+        \label{m39357*id63614}The size of a prism is specified by the length of its sides. The prism in the diagram has sides of lengths $L$, $b$ and $h$.\par 
+        \label{m39357*id63643}
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63644}
+    \begin{center}
+    \label{m39357*id63644!!!underscore!!!media}\label{m39357*id63644!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG10C14_009.png} % m39357;MG10C14\_009.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+        \par 
+        \label{m39357*id63651}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\label{m39357*uid21}\item Consider enlarging all sides of the prism by a constant factor $x$, where $x\greatthan{}1$. Calculate the volume and surface area of the enlarged prism as a function of the factor $x$ and the volume of the original volume.
+\label{m39357*uid22}\item In the same way as above now consider the case, where $0\lessthan{}x\lessthan{}1$. Now calculate the reduction factor in the volume and the surface area.
+\end{enumerate}
+        
+        
+        \vspace{5pt}
+        \label{m39357*solfhsst!!!underscore!!!id166}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id166}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+        \label{m39357*id63750}The volume of a prism is given by:
+$V=L\ensuremath{\times}b\ensuremath{\times}h$\par 
+        \label{m39357*id63774}The surface area of the prism is given by:
+$A=2\ensuremath{\times}\left(L\ensuremath{\times}b+L\ensuremath{\times}h+b\ensuremath{\times}h\right)$\par 
+        \item  
+        \label{m39357*id63826}If all the sides of the prism get rescaled, the new sides will be:\par 
+        \label{m39357*id63830}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {L}^{\text{'}}& =& x\ensuremath{\times}L\hfill \\ \hfill {b}^{\text{'}}& =& x\ensuremath{\times}b\hfill \\ \hfill {h}^{\text{'}}& =& x\ensuremath{\times}h\hfill \end{array}\tag{13.21}
+      \end{equation}
+    
+        
+        \label{m39357*id63916}The new volume will then be given by:\par 
+        \label{m39357*id63920}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {V}^{\text{'}}& =& {L}^{\text{'}}\ensuremath{\times}{b}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}\hfill \\ & =& x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}b\ensuremath{\times}x\ensuremath{\times}h\hfill \\ & =& {x}^{3}\ensuremath{\times}L\ensuremath{\times}b\ensuremath{\times}h\hfill \\ & =& {x}^{3}\ensuremath{\times}V\hfill \end{array}\tag{13.22}
+      \end{equation}
+    
+        
+        \label{m39357*id64062}The new surface area of the prism will be given by:\par 
+        \label{m39357*id64066}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {A}^{\text{'}}& =& 2\ensuremath{\times}\left({L}^{\text{'}}\ensuremath{\times}{b}^{\text{'}}+{L}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}+{b}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}\right)\hfill \\ & =& 2\ensuremath{\times}\left(x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}b+x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}h+x\ensuremath{\times}b\ensuremath{\times}x\ensuremath{\times}h\right)\hfill \\ & =& {x}^{2}\ensuremath{\times}2\ensuremath{\times}\left(L\ensuremath{\times}b+L\ensuremath{\times}h+b\ensuremath{\times}h\right)\hfill \\ & =& {x}^{2}\ensuremath{\times}A\hfill \end{array}\tag{13.23}
+      \end{equation}
+    
+        
+        \item  
+        \label{m39357*id64313}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\label{m39357*uid23}\item We found above that the new volume is given by:
+${V}^{\text{'}}={x}^{3}\ensuremath{\times}V$
+Since $x\greatthan{}1$, the volume of the prism will be increased by a factor of ${x}^{3}$.
+The surface area of the rescaled prism was given by:
+${A}^{\text{'}}={x}^{2}\ensuremath{\times}A$
+Again, since $x\greatthan{}1$, the surface area will be increased by a factor of ${x}^{2}$. Surface areas which are two dimensional increase with the square of the factor while volumes, which are three dimensional, increase with the cube of the factor.
+\label{m39357*uid24}\item The answer here is based on the same ideas as above.
+In analogy, since here $0\lessthan{}x\lessthan{}1$, the volume will be reduced by a factor of ${x}^{3}$ and the surface area will be decreased by a factor of ${x}^{2}$\end{enumerate}
+        
+        
+        \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+        \label{m39357*id64533}When the length of one of the sides is multiplied by a constant the effect is to multiply the original volume by that constant, as for the example in Figure~13.32.\par 
+      
+    
+
+  \label{m39357*cid323}
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+ \par \begin{tabular}[h]{cccccc}
+ (1.) lTk  &  (2.) lT0  &  (3.) lTT  & \end{tabular}
+
+
+
+\subsection{ Right Pyramids, Right Cones and Spheres}
+      
+A pyramid is a geometric solid that has a polygon base and the base is joined to a point, called the apex. Two examples of pyramids are shown in the left-most and centre figures in . The right-most figure has an apex which is joined to a circular base and this type of geometric solid is called a cone. Cones are similar to pyramids except that their bases are circles instead of polygons.\par 
+      
+\begin{figure}[H]
+    \begin{center}
+	\rule[.1in]{\figurerulewidth}{.005in} \\
+	
+	\begin{pspicture}(-2,-3.5)(3,1.5)
+	    \psset{yunit=0.9,xunit=0.9}
+% 	    \psset{viewpoint=0 0 20,RotZ=90}
+	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.0 -0.5 1 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=tetrahedron,action=draw,r=1,linecolor=blue,action=draw]
+
+	    
+	\end{pspicture}
+
+	\begin{pspicture}(-3,-3)(3,3)
+	    \psset{viewpoint=50 50 20 rtp2xyz,Decran=50,lightsrc=viewpoint}
+	    \psset{color1=cyan,color2=red}
+	    \psSolid[object=sphere,fillstyle=hue,fillcolor=cyan,ngrid=50 50,RotX=180,RotZ=30,grid=false]
+	\end{pspicture}
+
+	\begin{pspicture}(-10,15)(0,0)
+%    \pstThreeDCoor[xMin=0,yMin=0,zMin=0]
+	    \pstThreeDSphere[linewidth=0.5pt,IIIDshowgrid=True](0,0,0){3}
+	    \psset{SphericalCoor}
+	    \pstThreeDNode(3,0,0){x_base}
+	    \pstThreeDNode(6,0,0){x_end}
+	    \psline[linecolor=black]{->}(x_base)(x_end)
+	    \pstThreeDLine[linecolor=green]{->}(3,0,90)(6,0,90)
+	 \end{pspicture}
+
+
+	\begin{pspicture}(-10,15)(0,0)
+	    \psSolid[object=cone,h=1,r=1,fillcolor=cyan,mode=4,grid=false]
+	\end{pspicture}
+
+
+
+	\begin{cnxcaption}
+	    \small 
+	    \textbf{Figure 13.34: }Examples of a square pyramid, a triangular pyramid and a cone.
+	\end{cnxcaption}
+      
+	\vspace{.1in}
+	\rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+\end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \label{m39357*id62647}
+        \textbf{Surface Area of a Pyramid}
+      \par 
+      \label{m39357*eip-485}
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*solid-geometry-volume}
+    
+    
+    \textnormal{Khan academy video on solid geometry volumes}\vspace{.1in} \nopagebreak
+  \label{m39357*yt-media1}\label{m39357*yt-video1}
+            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10098 )}
+      
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    \par \label{m39357*id62653}The surface area of a pyramid is calculated by adding the area of each face together.\par 
+\label{m39357*secfhsst!!!underscore!!!id97}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.8:  Surface Area }
+      \label{m39357*probfhsst!!!underscore!!!id98}
+      \label{m39357*id62672}If a cone has a height of $h$ and a base of radius $r$, show that the surface area is $\pi {r}^{2}+\pi r\sqrt{{r}^{2}+{h}^{2}}$. \par 
+      \vspace{5pt}
+      \label{m39357*solfhsst!!!underscore!!!id101}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id101}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+      \label{m39357*id62752}
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62755}
+    \begin{center}
+    \label{m39357*id62755!!!underscore!!!media}\label{m39357*id62755!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39357_MG11C16_002.png} % ;MG11C16\_002.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \par 
+      \item  
+      \label{m39357*id62766}The cone has two faces: the base and the walls. The base is a circle of radius $r$ and the walls can be opened out to a sector of a circle.\par 
+      \label{m39357*id62778}
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62779}
+    \begin{center}
+    \label{m39357*id62779!!!underscore!!!media}\label{m39357*id62779!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39357_MG11C16_003.png} % ;MG11C16\_003.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \par 
+      \label{m39357*id62785}This curved surface can be cut into many thin triangles with height close to $a$ ($a$ is called the \textsl{slant height}). The area of these triangles will add up to $\frac{1}{2}\ensuremath{\times}$base$\ensuremath{\times}$height(of a small triangle) which is $\frac{1}{2}\ensuremath{\times}2\pi r\ensuremath{\times}a=\pi ra$\par 
+      \item  
+      \label{m39357*id62881}$a$ can be calculated by using the Theorem of Pythagoras. Therefore:\par 
+      \label{m39357*id62892}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    a=\sqrt{{r}^{2}+{h}^{2}}\tag{13.24}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id62928}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    {A}_{b}=\pi {r}^{2}\tag{13.25}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id62960}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill {A}_{w}& =& \pi ra\hfill \\ & =& \pi r\sqrt{{r}^{2}+{h}^{2}}\hfill \end{array}\tag{13.26}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id63035}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill A& =& {A}_{b}+{A}_{w}\hfill \\ & =& \pi {r}^{2}+\pi r\sqrt{{r}^{2}+{h}^{2}}\hfill \end{array}\tag{13.27}
+      \end{equation}
+    
+      
+      
+      \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+      \label{m39357*id63137}\textbf{Volume of a Pyramid:} The volume of a pyramid is found by:\par 
+      \label{m39357*id63144}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}A\ensuremath{\cdot}h\tag{13.28}
+      \end{equation}
+    
+      
+      \label{m39357*id63170}where $A$ is the area of the base and $h$ is the height.\par 
+      \label{m39357*id63191}A cone is like a pyramid, so the volume of a cone is given by:\par 
+      \label{m39357*id63195}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}\pi {r}^{2}h.\tag{13.29}
+      \end{equation}
+    
+      
+      \label{m39357*id62104}A square pyramid has volume\par 
+      \label{m39357*id62107}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}{a}^{2}h\tag{13.30}
+      \end{equation}
+    
+      
+      \label{m39357*id63440}where $a$ is the side length of the square base.\par 
+\label{m39357*secfhsst!!!underscore!!!id330}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.9: Volume of a Pyramid }\label{m39357*probfhsst!!!underscore!!!id331}
+      \label{m39357*id63465}What is the volume of a square pyramid, 3cm high with a side length of 2cm?
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63587}
+    \begin{center}
+    \label{m39357*id63587!!!underscore!!!media}\label{m39357*id63587!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG11C16_004.png} % m39357;MG11C16\_004.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+ \par 
+      \vspace{5pt}
+      \label{m39357*solfhsst!!!underscore!!!id335}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id335}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+      \label{m39357*id63487}The volume of a pyramid is\par 
+      \label{m39357*id63490}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}A\ensuremath{\cdot}h,\tag{13.31}
+      \end{equation}
+    
+      
+      \label{m39357*id63518}where $A$ is the area of the base and $h$ is the height of the pyramid. For a square base this means\par 
+      \label{m39357*id63540}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}a\ensuremath{\cdot}a\ensuremath{\cdot}h\tag{13.32}
+      \end{equation}
+    
+      
+      \label{m39357*id63570}where $a$ is the length of the side of the square base.\par 
+      \item  
+      \label{m39357*id63597}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}& =& \frac{1}{3}\ensuremath{\cdot}2\ensuremath{\cdot}2\ensuremath{\cdot}3\hfill \\ & =& \frac{1}{3}\ensuremath{\cdot}12\hfill \\ & =& 4c{m}^{3}\hfill \end{array}\tag{13.33}
+      \end{equation}
+    
+      
+      
+      \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+      \label{m39357*id63694}We accept the following formulae for volume and surface area of a sphere (ball).\par 
+      \label{m39357*id63698}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill \mathrm{Surface\; area}& =& 4\pi {r}^{2}\hfill \\ \hfill \mathrm{Volume}& =& \frac{4}{3}\pi {r}^{3}\hfill \end{array}\tag{13.34}
+      \end{equation}
+    
+      
+\par
+            \label{m39357*eip-219}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.10}\label{m39357*probid7634}
+\label{m39357*id663}A triangular pyramid is placed on top of a triangular prism. The prism has an equilateral triangle of side length 20 cm as a base, and has a height of 42 cm. The pyramid has a height of 12 cm.\label{m39357*id63425}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item Find the total volume of the object.\item Find the area of each face of the pyramid.\item Find the total surface area of the object.\end{enumerate}
+        
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63921}
+    \begin{center}
+    \label{m39357*id63921!!!underscore!!!media}\label{m39357*id63921!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39357_MG11C16_006.png} % m39357;MG11C16\_006.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    \par 
+\vspace{5pt}
+\label{m39357*solid7634}\noindent\textbf{Solution to Exercise }
+\label{m39357*id6375}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item We use the formula for the volume of a triangular prism:
+\label{m39357*id6923}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}V& =& \frac{1}{2}b{h}^{2}\hfill \\ & =& \frac{1}{2}20{42}^{2}\hfill \\ & =& 17640\hfill \end{array}\tag{13.35}
+      \end{equation}
+    
+\item We use the formula for the volume of a triangular pyramid:
+\label{m39357*id67423}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}V& =& \frac{1}{6}b{h}^{2}\hfill \\ & =& \frac{1}{6}20{42}^{2}\hfill \\ & =& 5880\hfill \end{array}\tag{13.36}
+      \end{equation}
+    
+\item We note that we can simply add the volumes of each of the two shapes. So we obtain: $17640+5880=23520$. This is the answer to part a.\item We note that we have four triangles that make up the pyramid. So the area of each face is simply:
+\label{m39357*id6783}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}\mathrm{Area}& =& \frac{1}{2}bh\hfill \\ & =& \frac{1}{2}2042\hfill \\ & =& 420\hfill \end{array}\tag{13.37}
+      \end{equation}
+    
+
+This is the answer to part b.
+\item The total area of the pyramid is simply $4\ensuremath{\times}420=1680$\item The surface area of the prism is:
+\label{m39357*id69663}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}\mathrm{Surface\; area}& =& b\ensuremath{\times}h+2\ensuremath{\times}H\ensuremath{\times}S+H\ensuremath{\times}b\hfill \\ & =& \mathrm{20}\ensuremath{\times}\mathrm{20}+2\ensuremath{\times}\mathrm{12}\ensuremath{\times}\mathrm{20}+\mathrm{12}\ensuremath{\times}\mathrm{20}\hfill \\ & =& 1120\hfill \end{array}\tag{13.38}
+      \end{equation}
+    
+
+\item To find the total surface area, we must subtract the area of one face of the pyramid from the area of the prism. We must also subtract the area of one of the triangular faces of the prism. Doing this gives the total surface area as:
+$1120-420+1680-420=1960$ This is the answer to part c.\end{enumerate}
+        
+
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  \label{m39357*secfhsst!!!underscore!!!id508}
+            \subsubsection{  Surface Area and Volume }
+            \nopagebreak
+            
+      \label{m39357*id63805}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m39357*uid7654}\item Calculate the volumes and surface areas of the following solids: *Hint for (e): find the perpendicular height using Pythagoras.
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63823}
+    \begin{center}
+    \label{m39357*id63823!!!underscore!!!media}\label{m39357*id63823!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG11C16_005.png} % m39357;MG11C16\_005.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \label{m39357*uid8654}\item Water covers approximately 71\% of the Earth's surface. Taking the radius of the Earth to be 6378 km, what is the total area of land (area not covered by water)?\newline
+            
+\end{enumerate}
+        
+      
+
+      
+
+  \label{m39357**end}
+          
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+ \par \begin{tabular}[h]{cccccc}
+ (1.) l2D  &  (2.) l2W  & \end{tabular}
+
+
+
+         \section{ Transformations}
+    \nopagebreak
+            \label{m39358} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10099 )} \par 
+    
+    
+    
+    
+    
+    
+   
+  \label{m39358*cid6}
+            \subsection{ Transformations - Enrichment, not in CAPS}
+            \nopagebreak
+            
+      
+      \label{m39358*id70076}In this section you will learn about how the co-ordinates of a point change when the point is moved horizontally and vertically on the Cartesian plane. You will also learn about what happens to the co-ordinates of a point when it is reflected on the $x$-axis, $y$-axis and the line $y=x$.\par 
+      \label{m39358*uid569}
+            \subsubsection{ Translation of a Point}
+            \nopagebreak
+            
+        
+        \label{m39358*id70123}When something is moved in a straight line, we say that it is \textsl{translated}. You will recall that the term 'translation' was also mentioned in the section on functions to refer to what happens when an entire function is shifted in a straight line. What happens to the co-ordinates of a point that is translated horizontally or vertically?\par 
+\label{m39358*secfhsst!!!underscore!!!id2414}
+            \subsubsection{  Discussion : Translation of a Point Vertically }
+            \nopagebreak
+            
+        \label{m39358*id70140}Complete the table, by filling in the co-ordinates of the points shown in the figure.\par 
+        \label{m39358*id70146}
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*id70150}
+    \begin{center}
+    \label{m39358*id70150!!!underscore!!!media}\label{m39358*id70150!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39358_MG10C14_022.png} % m39358;MG10C14\_022.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+        \par 
+        
+    % \textbf{m39358*id70156}\par
+    
+          \begin{table}[H]
+        
+    % \begin{table}[H]
+    % \\ '' '0'
+    
+        \begin{center}
+      
+      \label{m39358*id70156}
+      
+    \noindent
+    \tabletail{%
+        \hline
+        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
+        \hline
+      }
+      \tablelasttail{}
+      \begin{xtabular}[t]{|l|l|l|}\hline
+    
+    
+        
+                  \textbf{Point}
+                 &
+    
+    
+        
+                  \textbf{$x$ co-ordinate}
+                 &
+    
+    
+        
+                  \textbf{$y$ co-ordinate}
+                % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        A &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        B &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        C &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        D &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        E &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        F &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        G &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    \end{xtabular}
+      \end{center}
+    \begin{center}{\small\bfseries Table 13.3}\end{center}
+    \begin{caption}{\small\bfseries Table 13.3}\end{caption}
+\end{table}
+      
+    \par
+  
+        
+        \label{m39358*id70410}What do you notice about the $x$ co-ordinates? What do you notice about the $y$ co-ordinates?
+What would happen to the co-ordinates of point A, if it was moved to the position of point G?
+ \par 
+
+        \label{m39358*id70438}When a point is moved vertically up or down on the Cartesian plane, the $x$ co-ordinate of the point remains the same, but the $y$ co-ordinate changes by the amount that the point was moved up or down.\par 
+        \label{m39358*id70461}For example, in  Point A is moved 4 units upwards to the position marked by G. The new $x$ co-ordinate of point A is the same ($x$=1), but the new $y$ co-ordinate is shifted in the positive $y$ direction 4 units and becomes $y$=-2\textbf{+4}=2. The new co-ordinates of point A are therefore G(1;2). Similarly, for point B that is moved downwards by 5 units, the $x$ co-ordinate is the same ($x=-2,5$), but the $y$ co-ordinate is shifted in the negative $y$-direction by 5 units. The new $y$ co-ordinate is therefore $y$=2,5 \textbf{-5}=-2,5.\par 
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*uid7650}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39358*uid70!!!underscore!!!media}\label{m39358*uid70!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39358_MG10C14_023.png} % m39358;MG10C14\_023.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.42: }Point A is moved 4 units upwards to the position marked by G. Point B is moved 5 units downwards to the position marked by H.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+\label{m39358*notfhsst!!!underscore!!!id2490}
+\begin{tabular}{cc}
+	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
+
+	\begin{minipage}{0.85\textwidth}
+	\begin{note}
+      {tip: }If a point is shifted upwards, the new $y$ co-ordinate is given by adding the shift to the old $y$ co-ordinate. If a point is shifted downwards, the new $y$ co-ordinate is given by subtracting the shift from the old $y$ co-ordinate.
+	\end{note}
+	\end{minipage}
+	\end{tabular}
+	\par
+      
+\label{m39358*secfhsst!!!underscore!!!id2491}
+            \subsubsection{  Discussion : Translation of a Point Horizontally }
+            \nopagebreak
+            
+        \label{m39358*id70654}Complete the table, by filling in the co-ordinates of the points shown in the figure.\par 
+        \label{m39358*id70660}
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*id70663}
+    \begin{center}
+    \label{m39358*id70663!!!underscore!!!media}\label{m39358*id70663!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_024.png} % m39358;MG10C14\_024.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+        \par 
+        
+    % \textbf{m39358*id70670}\par
+    
+          \begin{table}[H]
+        
+    % \begin{table}[H]
+    % \\ '' '0'
+    
+        \begin{center}
+      
+      \label{m39358*id70670}
+      
+    \noindent
+    \tabletail{%
+        \hline
+        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
+        \hline
+      }
+      \tablelasttail{}
+      \begin{xtabular}[t]{|l|l|l|}\hline
+    
+    
+        
+                  \textbf{Point}
+                 &
+    
+    
+        
+                  \textbf{$x$ co-ordinate}
+                 &
+    
+    
+        
+                  \textbf{$y$ co-ordinate}
+                % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        A &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        B &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        C &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        D &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        E &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        F &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        G &
+    
+    
+         &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    \end{xtabular}
+      \end{center}
+    \begin{center}{\small\bfseries Table 13.4}\end{center}
+    \begin{caption}{\small\bfseries Table 13.4}\end{caption}
+\end{table}
+      
+    \par
+  
+        
+        \label{m39358*id70923}What do you notice about the $x$ co-ordinates? What do you notice about the $y$ co-ordinates?\par 
+        \label{m39358*id70945}What would happen to the co-ordinates of point A, if it was moved to the position of point G?
+ \par 
+
+        \label{m39358*id70955}When a point is moved horizontally left or right on the Cartesian plane, the $y$ co-ordinate of the point remains the same, but the $x$ co-ordinate changes by the amount that the point was moved left or right.\par 
+        \label{m39358*id70977}For example, in Figure~13.44 Point A is moved 4 units right to the position marked by G. The new $y$ co-ordinate of point A is the same ($y$=1), but the new $x$ co-ordinate is shifted in the positive $x$ direction 4 units and becomes $x$=-2\textbf{+4}=2. The new co-ordinate of point A at G is therefore (2;1). Similarly, for point B that is moved left by 5 units, the $y$ co-ordinate is the same ($y=-2,5$), but the $x$ co-ordinate is shifted in the negative $x$-direction by 5 units. The new $x$ co-ordinate is therefore $x$=2,5 \textbf{-5}=-2,5. The new co-ordinates of point B at H is therefore (-2,5;1).\par 
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*uid7134}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39358*uid7134!!!underscore!!!media}\label{m39358*uid71!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_025.png} % m39358;MG10C14\_025.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.44: }Point A is moved 4 units to the right to the position marked by G. Point B is moved 5 units to the left to the position marked by H.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+\label{m39358*notfhsst!!!underscore!!!id2567}
+\begin{tabular}{cc}
+	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
+
+	\begin{minipage}{0.85\textwidth}
+	\begin{note}
+      {tip: }If a point is shifted to the right, the new $x$ co-ordinate is given by adding the shift to the old $x$ co-ordinate. If a point is shifted to the left, the new $x$ co-ordinate is given by subtracting the shift from the old $x$ co-ordinate.
+	\end{note}
+	\end{minipage}
+	\end{tabular}
+	\par
+      
+      
+      \label{m39358*uid7542}
+            \subsubsection{ Reflection of a Point}
+            \nopagebreak
+            
+        
+        \label{m39358*id71174}When you stand in front of a mirror your reflection is located the same distance ($d$) behind the mirror as you are standing in front of the mirror.\par 
+        \label{m39358*id71188}
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*id71191}
+    \begin{center}
+    \label{m39358*id71191!!!underscore!!!media}\label{m39358*id71191!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39358_MG10C14_026.png} % m39358;MG10C14\_026.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+        \par 
+        \label{m39358*id71197}We can apply the same idea to a point that is reflected on the $x$-axis, the $y$-axis and the line $y=x$.\par 
+        \label{m39358*uid7354}
+            \subsubsection{ Reflection on the $x$-axis}
+            \nopagebreak
+            
+          
+          \label{m39358*id71251}If a point is reflected on the $x$-axis, then the reflection must be the same distance below the $x$-axis as the point is above the $x$-axis and vice-versa, as though it were a mirror image.\par 
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*uid7432}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39358*uid7432!!!underscore!!!media}\label{m39358*uid74!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_027.png} % m39358;MG10C14\_027.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.46: }Points A and B are reflected on the $x$-axis. The original points are shown with $\ensuremath{\bullet}$ and the reflected points are shown with $\circ $.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+\label{m39358*notfhsst!!!underscore!!!id2591}
+\begin{tabular}{cc}
+	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
+
+	\begin{minipage}{0.85\textwidth}
+	\begin{note}
+      {tip: }When a point is reflected about the $x$-axis, only the $y$ co-ordinate of the point changes.
+	\end{note}
+	\end{minipage}
+	\end{tabular}
+	\par
+      
+\label{m39358*secfhsst!!!underscore!!!id2592}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.11:  Reflection on the $x$-axis }
+          \label{m39358*probfhsst!!!underscore!!!id2593}
+          \label{m39358*id71366}Find the co-ordinates of the reflection of the point P, if P is reflected on the $x$-axis. The co-ordinates of P are (5;10). \par 
+          \vspace{5pt}
+          \label{m39358*solfhsst!!!underscore!!!id2596}\noindent\textbf{Solution to Exercise } \label{m39358*listfhsst!!!underscore!!!id2596}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+          \label{m39358*id71399}We are given the point P with co-ordinates (5;10) and need to find the co-ordinates of the point if it is reflected on the $x$-axis.\par 
+          \item  
+          \label{m39358*id71417}The point P is above the $x$-axis, therefore its reflection will be the same distance below the $x$-axis as the point P is above the $x$-axis. Therefore, $y$=-10.\par 
+          \label{m39358*id71457}For a reflection on the $x$-axis, the $x$ co-ordinate remains unchanged. Therefore, $x$=5.\par 
+          \item  
+          \label{m39358*id71490}The co-ordinates of the reflected point are (5;-10).
+ \par 
+          \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+        
+        \label{m39358*uid765}
+            \subsubsection{ Reflection on the $y$-axis}
+            \nopagebreak
+            
+          
+          \label{m39358*id71525}If a point is reflected on the $y$-axis, then the reflection must be the same distance to the left of the $y$-axis as the point is to the right of the $y$-axis and vice-versa.\par 
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*uid7645}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39358*uid7645!!!underscore!!!media}\label{m39358*uid76!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_028.png} % m39358;MG10C14\_028.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.47: }Points A and B are reflected on the $y$-axis. The original points are shown with $\ensuremath{\bullet}$ and the reflected points are shown with $\circ $.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+\label{m39358*notfhsst!!!underscore!!!id2618}
+\begin{tabular}{cc}
+	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
+
+	\begin{minipage}{0.85\textwidth}
+	\begin{note}
+      {tip: }When a point is reflected on the $y$-axis, only the $x$ co-ordinate of the point changes. The $y$ co-ordinate remains unchanged.
+	\end{note}
+	\end{minipage}
+	\end{tabular}
+	\par
+      
+\label{m39358*secfhsst!!!underscore!!!id2619}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.12:  Reflection on the $y$-axis }
+          \label{m39358*probfhsst!!!underscore!!!id2620}
+          \label{m39358*id71649}Find the co-ordinates of the reflection of the point Q, if Q is reflected on the $y$-axis. The co-ordinates of Q are (15;5). \par 
+          \vspace{5pt}
+          \label{m39358*solfhsst!!!underscore!!!id2623}\noindent\textbf{Solution to Exercise } \label{m39358*listfhsst!!!underscore!!!id2623}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+          \label{m39358*id71682}We are given the point Q with co-ordinates (15;5) and need to find the co-ordinates of the point if it is reflected on the $y$-axis.\par 
+          \item  
+          \label{m39358*id71700}The point Q is to the right of the $y$-axis, therefore its reflection will be the same distance to the left of the $y$-axis as the point Q is to the right of the $y$-axis. Therefore, $x$=-15.\par 
+          \label{m39358*id71740}For a reflection on the $y$-axis, the $y$ co-ordinate remains unchanged. Therefore, $y$=5.\par 
+          \item  
+          \label{m39358*id71774}The co-ordinates of the reflected point are (-15;5).
+ \par 
+          \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+        
+        \label{m39358*uid77754}
+            \subsubsection{ Reflection on the line $y=x$}
+            \nopagebreak
+            
+          
+          \label{m39358*id71812}The final type of reflection you will learn about is the reflection of a point on the line $y=x$.\par 
+\label{m39358*secfhsst!!!underscore!!!id2638}
+            \subsubsection{  Casestudy : Reflection of a point on the line $y=x$ }
+            \nopagebreak
+            
+          \label{m39358*id71852}
+            
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*id71857}
+    \begin{center}
+    \label{m39358*id71857!!!underscore!!!media}\label{m39358*id71857!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_029.png} % m39358;MG10C14\_029.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+          \par 
+          \label{m39358*id71863}Study the information given and complete the following table:\par 
+          
+    % \textbf{m39358*id71867}\par
+    
+          \begin{table}[H]
+        
+    % \begin{table}[H]
+    % \\ '' '0'
+    
+        \begin{center}
+      
+      \label{m39358*id71867}
+      
+    \noindent
+    \tabletail{%
+        \hline
+        \multicolumn{3}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
+        \hline
+      }
+      \tablelasttail{}
+      \begin{xtabular}[t]{|l|l|l|}\hline
+    
+    
+         &
+    
+    
+        
+                    \textbf{Point}
+                   &
+    
+    
+        
+                    \textbf{Reflection}
+                  % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        A &
+    
+    
+        (2;1) &
+    
+    
+        (1;2)% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        B &
+    
+    
+        (-$1\frac{1}{2}$;-2) &
+    
+    
+        (-2;-1$\frac{1}{2}$)% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        C &
+    
+    
+        (-1;1) &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    
+    
+        D &
+    
+    
+        (2;-3) &
+    
+    
+        % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}
+      %--------------------------------------------------------------------
+    \end{xtabular}
+      \end{center}
+    \begin{center}{\small\bfseries Table 13.5}\end{center}
+    \begin{caption}{\small\bfseries Table 13.5}\end{caption}
+\end{table}
+      
+    \par
+  
+          
+          \label{m39358*id72055}What can you deduce about the co-ordinates of points that are reflected about the line $y=x$? \par 
+
+          \label{m39358*id72080}The $x$ and $y$ co-ordinates of points that are reflected on the line $y=x$ are swapped around, or interchanged. This means that the $x$ co-ordinate of the original point becomes the $y$ co-ordinate of the reflected point and the $y$ co-ordinate of the original point becomes the $x$ co-ordinate of the reflected point.\par 
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*uid7568}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39358*uid7568!!!underscore!!!media}\label{m39358*uid7568!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_030.png} % m39358;MG10C14\_030.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.49: }Points A and B are reflected on the line $y=x$. The original points are shown with $\ensuremath{\bullet}$ and the reflected points are shown with $\circ $.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+\label{m39358*notfhsst!!!underscore!!!id2694}
+\begin{tabular}{cc}
+	   \hspace*{-50pt}\raisebox{-8 mm}{ \includegraphics[width=0.5in]{col11306.imgs/pstip2.png}  }& 
+
+	\begin{minipage}{0.85\textwidth}
+	\begin{note}
+      {tip: }The $x$ and $y$ co-ordinates of points that are reflected on the line $y=x$ are interchanged.
+	\end{note}
+	\end{minipage}
+	\end{tabular}
+	\par
+      
+\label{m39358*secfhsst!!!underscore!!!id2695}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.13:  Reflection on the line $y=x$ }
+          \label{m39358*probfhsst!!!underscore!!!id2696}
+          \label{m39358*id72261}Find the co-ordinates of the reflection of the point R, if R is reflected on the line $y=x$. The co-ordinates of R are (-5;5). \par 
+          \vspace{5pt}
+          \label{m39358*solfhsst!!!underscore!!!id2699}\noindent\textbf{Solution to Exercise } \label{m39358*listfhsst!!!underscore!!!id2699}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+          \label{m39358*id72300}We are given the point R with co-ordinates (-5;5) and need to find the co-ordinates of the point if it is reflected on the line $y=x$.\par 
+          \item  
+          \label{m39358*id72323}The $x$ co-ordinate of the reflected point is the $y$ co-ordinate of the original point. Therefore, $x$=5.\par 
+          \label{m39358*id72353}The $y$ co-ordinate of the reflected point is the $x$ co-ordinate of the original point. Therefore, $y$=-5.\par 
+          \item  
+          \label{m39358*id72387}The co-ordinates of the reflected point are (5;-5). \par 
+          \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+          \label{m39358*id72402}
+            \uline{Rules of Translation}
+          \par 
+          \label{m39358*id72409}A quick way to write a translation is to use a 'rule of translation'. For example $\left(x;y\right)\to \left(x+a;y+b\right)$ means translate point (x;y) by moving a units horizontally and b units vertically.\par 
+          \label{m39358*id72456}So if we translate (1;2) by the rule $\left(x;y\right)\to \left(x+3;y-1\right)$ it becomes (4;1). We have moved 3 units right and 1 unit down.\par 
+          \label{m39358*id72503}
+            \uline{Translating a Region}
+          \par 
+          \label{m39358*id72511}To translate a region, we translate each point in the region.\par 
+          \label{m39358*id72517}
+            \uline{Example}
+          \par 
+          \label{m39358*id72526}Region A has been translated to region B by the rule: $\left(x;y\right)\to \left(x+4;y+2\right)$\par 
+          \label{m39358*id72572}
+            
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39358*id72575}
+    \begin{center}
+    \label{m39358*id72575!!!underscore!!!media}\label{m39358*id72575!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39358_MG10C14_031.png} % m39358;MG10C14\_031.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+          \par 
+\label{m39358*secfhsst!!!underscore!!!id2730}
+            \subsubsection{  Discussion : Rules of Transformations }
+            \nopagebreak
+            
+          \label{m39358*id72588}Work with a friend and decide which item from column 1 matches each description in column 2.\par 
+          
+    % \textbf{m39358*id72595}\par
+    
+          \begin{table}[H]
+        
+    % \begin{table}[H]
+    % \\ '' '0'
+    
+        \begin{center}
+      
+      \label{m39358*id72595}
+      
+%     \noindent
+%     \tabletail{%
+%         \hline
+%         \multicolumn{2}{|p{\mytableboxwidth}|}{\raggedleft \small \sl continued on next page}\\
+%         \hline
+%       }
+%       \tablelasttail{}
+      \begin{xtabular}[t]{|l|l|}\hline
+    
+    
+        
+                    \textbf{Column 1}
+                   &
+    
+    
+        
+                    \textbf{Column 2}
+                  % make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        1.$\left(x;y\right)\to \left(x;y-3\right)$        &
+    
+    
+        A. a reflection on x-y line% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        2.
+                    $\left(x;y\right)\to \left(x-3;y\right)$
+                   &
+    
+    
+        B. a reflection on the x axis% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        3.
+                    $\left(x;y\right)\to \left(x;-y\right)$
+                   &
+    
+    
+        C. a shift of 3 units left% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        4.
+                    $\left(x;y\right)\to \left(-x;y\right)$
+                   &
+    
+    
+        D. a shift of 3 units down% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    
+    
+        
+5.
+                    $\left(x;y\right)\to \left(y;x\right)$
+                   &
+    
+    
+        E. a reflection on the y-axis% make-rowspan-placeholders
+     \tabularnewline\cline{1-1}\cline{2-2}
+      %--------------------------------------------------------------------
+    \end{xtabular}
+      \end{center}
+    \begin{center}{\small\bfseries Table 13.6}\end{center}
+    \begin{caption}{\small\bfseries Table 13.6}\end{caption}
+\end{table}
+      
+    \par
+  
+\par
+            \label{m39357*secfhsst!!!underscore!!!id147}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.7:  Scaling the dimensions of a prism }
+        \label{m39357*probfhsst!!!underscore!!!id148}
+        \label{m39357*id63614}The size of a prism is specified by the length of its sides. The prism in the diagram has sides of lengths $L$, $b$ and $h$.\par 
+        \label{m39357*id63643}
+          
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63644}
+    \begin{center}
+    \label{m39357*id63644!!!underscore!!!media}\label{m39357*id63644!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG10C14_009.png} % m39357;MG10C14\_009.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+        \par 
+        \label{m39357*id63651}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\label{m39357*uid21}\item Consider enlarging all sides of the prism by a constant factor $x$, where $x\greatthan{}1$. Calculate the volume and surface area of the enlarged prism as a function of the factor $x$ and the volume of the original volume.
+\label{m39357*uid22}\item In the same way as above now consider the case, where $0\lessthan{}x\lessthan{}1$. Now calculate the reduction factor in the volume and the surface area.
+\end{enumerate}
+        
+        
+        \vspace{5pt}
+        \label{m39357*solfhsst!!!underscore!!!id166}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id166}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+        \label{m39357*id63750}The volume of a prism is given by:
+$V=L\ensuremath{\times}b\ensuremath{\times}h$\par 
+        \label{m39357*id63774}The surface area of the prism is given by:
+$A=2\ensuremath{\times}\left(L\ensuremath{\times}b+L\ensuremath{\times}h+b\ensuremath{\times}h\right)$\par 
+        \item  
+        \label{m39357*id63826}If all the sides of the prism get rescaled, the new sides will be:\par 
+        \label{m39357*id63830}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {L}^{\text{'}}& =& x\ensuremath{\times}L\hfill \\ \hfill {b}^{\text{'}}& =& x\ensuremath{\times}b\hfill \\ \hfill {h}^{\text{'}}& =& x\ensuremath{\times}h\hfill \end{array}\tag{13.21}
+      \end{equation}
+    
+        
+        \label{m39357*id63916}The new volume will then be given by:\par 
+        \label{m39357*id63920}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {V}^{\text{'}}& =& {L}^{\text{'}}\ensuremath{\times}{b}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}\hfill \\ & =& x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}b\ensuremath{\times}x\ensuremath{\times}h\hfill \\ & =& {x}^{3}\ensuremath{\times}L\ensuremath{\times}b\ensuremath{\times}h\hfill \\ & =& {x}^{3}\ensuremath{\times}V\hfill \end{array}\tag{13.22}
+      \end{equation}
+    
+        
+        \label{m39357*id64062}The new surface area of the prism will be given by:\par 
+        \label{m39357*id64066}\nopagebreak\noindent{}
+          
+    \begin{equation}
+    \begin{array}{ccc}\hfill {A}^{\text{'}}& =& 2\ensuremath{\times}\left({L}^{\text{'}}\ensuremath{\times}{b}^{\text{'}}+{L}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}+{b}^{\text{'}}\ensuremath{\times}{h}^{\text{'}}\right)\hfill \\ & =& 2\ensuremath{\times}\left(x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}b+x\ensuremath{\times}L\ensuremath{\times}x\ensuremath{\times}h+x\ensuremath{\times}b\ensuremath{\times}x\ensuremath{\times}h\right)\hfill \\ & =& {x}^{2}\ensuremath{\times}2\ensuremath{\times}\left(L\ensuremath{\times}b+L\ensuremath{\times}h+b\ensuremath{\times}h\right)\hfill \\ & =& {x}^{2}\ensuremath{\times}A\hfill \end{array}\tag{13.23}
+      \end{equation}
+    
+        
+        \item  
+        \label{m39357*id64313}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\label{m39357*uid23}\item We found above that the new volume is given by:
+${V}^{\text{'}}={x}^{3}\ensuremath{\times}V$
+Since $x\greatthan{}1$, the volume of the prism will be increased by a factor of ${x}^{3}$.
+The surface area of the rescaled prism was given by:
+${A}^{\text{'}}={x}^{2}\ensuremath{\times}A$
+Again, since $x\greatthan{}1$, the surface area will be increased by a factor of ${x}^{2}$. Surface areas which are two dimensional increase with the square of the factor while volumes, which are three dimensional, increase with the cube of the factor.
+\label{m39357*uid24}\item The answer here is based on the same ideas as above.
+In analogy, since here $0\lessthan{}x\lessthan{}1$, the volume will be reduced by a factor of ${x}^{3}$ and the surface area will be decreased by a factor of ${x}^{2}$\end{enumerate}
+        
+        
+        \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+        \label{m39357*id64533}When the length of one of the sides is multiplied by a constant the effect is to multiply the original volume by that constant, as for the example in Figure~13.32.\par 
+      
+    
+
+  \label{m39357*cid323}
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+ \par \begin{tabular}[h]{cccccc}
+ (1.) lTk  &  (2.) lT0  &  (3.) lTT  & \end{tabular}
+
+
+
+            \subsection{ Right Pyramids, Right Cones and Spheres}
+            \nopagebreak
+            
+      
+      \label{m39357*id62623}A pyramid is a geometric solid that has a polygon base and the base is joined to a point, called the apex. Two examples of pyramids are shown in the left-most and centre figures in . The right-most figure has an apex which is joined to a circular base and this type of geometric solid is called a cone. Cones are similar to pyramids except that their bases are circles instead of polygons.\par 
+      
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*uid676}
+    \begin{center}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        \label{m39357*uid676!!!underscore!!!media}\label{m39357*uid676!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG11C16_001.png} % m39357;MG11C16\_001.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{\rubberspace}\par \begin{cnxcaption}
+	  \small \textbf{Figure 13.34: }Examples of a square pyramid, a triangular pyramid and a cone.
+	\end{cnxcaption}
+      
+    \vspace{.1in}
+    \rule[.1in]{\figurerulewidth}{.005in} \\
+        
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \label{m39357*id62647}
+        \textbf{Surface Area of a Pyramid}
+      \par 
+      \label{m39357*eip-485}
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*solid-geometry-volume}
+    
+    
+    \textnormal{Khan academy video on solid geometry volumes}\vspace{.1in} \nopagebreak
+  \label{m39357*yt-media1}\label{m39357*yt-video1}
+            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10098 )}
+      
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    \par \label{m39357*id62653}The surface area of a pyramid is calculated by adding the area of each face together.\par 
+\label{m39357*secfhsst!!!underscore!!!id97}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.8:  Surface Area }
+      \label{m39357*probfhsst!!!underscore!!!id98}
+      \label{m39357*id62672}If a cone has a height of $h$ and a base of radius $r$, show that the surface area is $\pi {r}^{2}+\pi r\sqrt{{r}^{2}+{h}^{2}}$. \par 
+      \vspace{5pt}
+      \label{m39357*solfhsst!!!underscore!!!id101}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id101}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+      \label{m39357*id62752}
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62755}
+    \begin{center}
+    \label{m39357*id62755!!!underscore!!!media}\label{m39357*id62755!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39357_MG11C16_002.png} % ;MG11C16\_002.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \par 
+      \item  
+      \label{m39357*id62766}The cone has two faces: the base and the walls. The base is a circle of radius $r$ and the walls can be opened out to a sector of a circle.\par 
+      \label{m39357*id62778}
+        
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id62779}
+    \begin{center}
+    \label{m39357*id62779!!!underscore!!!media}\label{m39357*id62779!!!underscore!!!printimage}\includegraphics{col11306.imgs/m39357_MG11C16_003.png} % ;MG11C16\_003.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+      \par 
+      \label{m39357*id62785}This curved surface can be cut into many thin triangles with height close to $a$ ($a$ is called the \textsl{slant height}). The area of these triangles will add up to $\frac{1}{2}\ensuremath{\times}$base$\ensuremath{\times}$height(of a small triangle) which is $\frac{1}{2}\ensuremath{\times}2\pi r\ensuremath{\times}a=\pi ra$\par 
+      \item  
+      \label{m39357*id62881}$a$ can be calculated by using the Theorem of Pythagoras. Therefore:\par 
+      \label{m39357*id62892}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    a=\sqrt{{r}^{2}+{h}^{2}}\tag{13.24}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id62928}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    {A}_{b}=\pi {r}^{2}\tag{13.25}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id62960}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill {A}_{w}& =& \pi ra\hfill \\ & =& \pi r\sqrt{{r}^{2}+{h}^{2}}\hfill \end{array}\tag{13.26}
+      \end{equation}
+    
+      
+      \item  
+      \label{m39357*id63035}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill A& =& {A}_{b}+{A}_{w}\hfill \\ & =& \pi {r}^{2}+\pi r\sqrt{{r}^{2}+{h}^{2}}\hfill \end{array}\tag{13.27}
+      \end{equation}
+    
+      
+      
+      \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+      \label{m39357*id63137}\textbf{Volume of a Pyramid:} The volume of a pyramid is found by:\par 
+      \label{m39357*id63144}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}A\ensuremath{\cdot}h\tag{13.28}
+      \end{equation}
+    
+      
+      \label{m39357*id63170}where $A$ is the area of the base and $h$ is the height.\par 
+      \label{m39357*id63191}A cone is like a pyramid, so the volume of a cone is given by:\par 
+      \label{m39357*id63195}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}\pi {r}^{2}h.\tag{13.29}
+      \end{equation}
+    
+      
+      \label{m39357*id62104}A square pyramid has volume\par 
+      \label{m39357*id62107}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}{a}^{2}h\tag{13.30}
+      \end{equation}
+    
+      
+      \label{m39357*id63440}where $a$ is the side length of the square base.\par 
+\label{m39357*secfhsst!!!underscore!!!id330}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.9: Volume of a Pyramid }\label{m39357*probfhsst!!!underscore!!!id331}
+      \label{m39357*id63465}What is the volume of a square pyramid, 3cm high with a side length of 2cm?
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63587}
+    \begin{center}
+    \label{m39357*id63587!!!underscore!!!media}\label{m39357*id63587!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG11C16_004.png} % m39357;MG11C16\_004.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    
+ \par 
+      \vspace{5pt}
+      \label{m39357*solfhsst!!!underscore!!!id335}\noindent\textbf{Solution to Exercise } \label{m39357*listfhsst!!!underscore!!!id335}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item  
+      \label{m39357*id63487}The volume of a pyramid is\par 
+      \label{m39357*id63490}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}A\ensuremath{\cdot}h,\tag{13.31}
+      \end{equation}
+    
+      
+      \label{m39357*id63518}where $A$ is the area of the base and $h$ is the height of the pyramid. For a square base this means\par 
+      \label{m39357*id63540}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    V=\frac{1}{3}a\ensuremath{\cdot}a\ensuremath{\cdot}h\tag{13.32}
+      \end{equation}
+    
+      
+      \label{m39357*id63570}where $a$ is the length of the side of the square base.\par 
+      \item  
+      \label{m39357*id63597}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}& =& \frac{1}{3}\ensuremath{\cdot}2\ensuremath{\cdot}2\ensuremath{\cdot}3\hfill \\ & =& \frac{1}{3}\ensuremath{\cdot}12\hfill \\ & =& 4c{m}^{3}\hfill \end{array}\tag{13.33}
+      \end{equation}
+    
+      
+      
+      \end{enumerate}
+         
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  
+      \label{m39357*id63694}We accept the following formulae for volume and surface area of a sphere (ball).\par 
+      \label{m39357*id63698}\nopagebreak\noindent{}
+        
+    \begin{equation}
+    \begin{array}{ccc}\hfill \mathrm{Surface\; area}& =& 4\pi {r}^{2}\hfill \\ \hfill \mathrm{Volume}& =& \frac{4}{3}\pi {r}^{3}\hfill \end{array}\tag{13.34}
+      \end{equation}
+    
+      
+\par
+            \label{m39357*eip-219}\vspace{.5cm} 
+      
+      \noindent
+      \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
+      \begin{mdframed}[linewidth=4, leftmargin=40, rightmargin=40]  
+      \begin{exercise}
+    \noindent\textbf{Exercise 13.10}\label{m39357*probid7634}
+\label{m39357*id663}A triangular pyramid is placed on top of a triangular prism. The prism has an equilateral triangle of side length 20 cm as a base, and has a height of 42 cm. The pyramid has a height of 12 cm.\label{m39357*id63425}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item Find the total volume of the object.\item Find the area of each face of the pyramid.\item Find the total surface area of the object.\end{enumerate}
+        
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63921}
+    \begin{center}
+    \label{m39357*id63921!!!underscore!!!media}\label{m39357*id63921!!!underscore!!!printimage}\includegraphics[height=300px]{col11306.imgs/m39357_MG11C16_006.png} % m39357;MG11C16\_006.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+    \par 
+\vspace{5pt}
+\label{m39357*solid7634}\noindent\textbf{Solution to Exercise }
+\label{m39357*id6375}\begin{enumerate}[noitemsep, label=\textbf{Step} \textbf{\arabic*}. ] 
+            \leftskip=20pt\rightskip=\leftskip\item We use the formula for the volume of a triangular prism:
+\label{m39357*id6923}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}V& =& \frac{1}{2}b{h}^{2}\hfill \\ & =& \frac{1}{2}20{42}^{2}\hfill \\ & =& 17640\hfill \end{array}\tag{13.35}
+      \end{equation}
+    
+\item We use the formula for the volume of a triangular pyramid:
+\label{m39357*id67423}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}V& =& \frac{1}{6}b{h}^{2}\hfill \\ & =& \frac{1}{6}20{42}^{2}\hfill \\ & =& 5880\hfill \end{array}\tag{13.36}
+      \end{equation}
+    
+\item We note that we can simply add the volumes of each of the two shapes. So we obtain: $17640+5880=23520$. This is the answer to part a.\item We note that we have four triangles that make up the pyramid. So the area of each face is simply:
+\label{m39357*id6783}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}\mathrm{Area}& =& \frac{1}{2}bh\hfill \\ & =& \frac{1}{2}2042\hfill \\ & =& 420\hfill \end{array}\tag{13.37}
+      \end{equation}
+    
+
+This is the answer to part b.
+\item The total area of the pyramid is simply $4\ensuremath{\times}420=1680$\item The surface area of the prism is:
+\label{m39357*id69663}\nopagebreak\noindent{}
+    \begin{equation}
+    \begin{array}{ccc}\mathrm{Surface\; area}& =& b\ensuremath{\times}h+2\ensuremath{\times}H\ensuremath{\times}S+H\ensuremath{\times}b\hfill \\ & =& \mathrm{20}\ensuremath{\times}\mathrm{20}+2\ensuremath{\times}\mathrm{12}\ensuremath{\times}\mathrm{20}+\mathrm{12}\ensuremath{\times}\mathrm{20}\hfill \\ & =& 1120\hfill \end{array}\tag{13.38}
+      \end{equation}
+    
+
+\item To find the total surface area, we must subtract the area of one face of the pyramid from the area of the prism. We must also subtract the area of one of the triangular faces of the prism. Doing this gives the total surface area as:
+$1120-420+1680-420=1960$ This is the answer to part c.\end{enumerate}
+        
+
+
+    \end{exercise}
+    \end{mdframed}
+    }
+    \noindent
+  \label{m39357*secfhsst!!!underscore!!!id508}
+            \subsubsection{  Surface Area and Volume }
+            \nopagebreak
+            
+      \label{m39357*id63805}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+            \label{m39357*uid7654}\item Calculate the volumes and surface areas of the following solids: *Hint for (e): find the perpendicular height using Pythagoras.
+
+    \setcounter{subfigure}{0}
+
+
+	\begin{figure}[H] % horizontal\label{m39357*id63823}
+    \begin{center}
+    \label{m39357*id63823!!!underscore!!!media}\label{m39357*id63823!!!underscore!!!printimage}\includegraphics[width=300px]{col11306.imgs/m39357_MG11C16_005.png} % m39357;MG11C16\_005.png;;;6.0;8.5;
+        
+      \vspace{2pt}
+    \vspace{.1in}
+    
+    \end{center}
+
+ \end{figure}   
+
+    \addtocounter{footnote}{-0}
+            \label{m39357*uid8654}\item Water covers approximately 71\% of the Earth's surface. Taking the radius of the Earth to be 6378 km, what is the total area of land (area not covered by water)?\newline
+            
+\end{enumerate}
+        
+      
+
+      
+
+  \label{m39357**end}
+          
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+ \par \begin{tabular}[h]{cccccc}
+ (1.) l2D  &  (2.) l2W  & \end{tabular}
+
+\section{Summary}
+\section{End of Chapter Exercise}
