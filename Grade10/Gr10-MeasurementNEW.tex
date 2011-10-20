@@ -42,7 +42,7 @@ Triangle &
 \scalebox{0.9}{
     \begin{pspicture}(0,-0.5)(5,2)
         \pspolygon(0,0)(2,1)(3,0)
-        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
         \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
         \rput(1.8,0.5){$h$}
         \rput(1.5,-0.25){$b$}
@@ -56,7 +56,7 @@ Trapezium &
 \scalebox{0.9}{
     \begin{pspicture}(-2,-0.5)(5,2)
         \pspolygon(-1.5,0)(0,1)(2,1)(3,0)
-        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
         \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
         \rput(1.8,0.5){$h$}
         \rput(0.75,-0.25){$s_1$}
@@ -70,7 +70,7 @@ Parallelogram &
 \scalebox{0.9}{
     \begin{pspicture}(-2,-0.5)(5,2)
         \pspolygon(-1,0)(0,1)(3,1)(2,0)
-        \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
+        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
         \pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
         \rput(0.3,0.5){$h$}
         \rput(1,-0.25){$b$}
@@ -86,7 +86,7 @@ Circle &
     \begin{pspicture}(-2,-0.5)(5,2)
         \pscircle[dimen=outer](0.5,0.5){0.7}
         \psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
-        \psdots[dotsize=0.12](0.5,0.5)
+        \psdots[dotsize=0.08](0.5,0.5)
         \rput(0.85,0.75){$r$}
     \end{pspicture}}
 \end{center} & 
@@ -128,7 +128,7 @@ $ \pi r^2 $ \\ \hline
     \begin{center}
 	\begin{pspicture}(-2,-0.5)(5,2)
 	    \pspolygon(-1,0)(0.5,2)(4,2)(2.5,0)
-	    \psline[linewidth=1pt,linestyle=dashed,dash=0.16cm 0.16cm](0.5,2)(0.5,0)
+	    \psline[linewidth=0.4pt,linestyle=dashed,dash=0.16cm 0.16cm](0.5,2)(0.5,0)
 	    \pspolygon(0.5,0)(0.5,0.3)(0.8,0.3)(0.8,0)
 	    \rput(-1,-0.2){$A$}
 	    \rput(0.5,2.2){$B$}
@@ -163,19 +163,19 @@ $ \pi r^2 $ \\ \hline
 \begin{exercises}{Polygons}
 
 
-Find the areas of each of the given figures - remember area is measured in square units (cm${}^{2}$, m${}^{2}$, mm${}^{2}$).
+Find the areas of each of the given figures
 \begin{center}
 \scalebox{0.9}
 {
 \begin{pspicture}(0,-4.758281)(14.921875,4.758281)
 \psline[linewidth=0.04cm](0.381875,1.7882812)(4.381875,1.7882812) 
 \psline[linewidth=0.04cm](4.241875,1.7682812)(4.241875,1.7682812) 
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,3.8082812)(2.361875,2.8282812) 
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,3.75)(2.361875,2.8282812) 
 \psline[linewidth=0.04cm](0.381875,1.7882812)(2.341875,3.7882812) 
 \psline[linewidth=0.04cm](2.361875,3.7882812)(4.341875,1.8282813) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4517188,2.5782812){$5$ cm} 
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.7682812) 
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.8) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4365625,1.4182812){$10$ cm} 
 % \usefont{T1}{ptm}{m}{n} 
@@ -321,7 +321,7 @@ prism which has as circle as its base.
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
-	    \psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=none}
+	    \psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=none}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)
 	    
 	\end{pspicture}
@@ -330,7 +330,7 @@ prism which has as circle as its base.
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
 	\end{pspicture}
@@ -340,7 +340,7 @@ prism which has as circle as its base.
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
 \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=1.0]
-{\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+{\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \psSolid[object=face,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)}
 % 	    \psset{viewpoint=8 12 8}
 
@@ -352,7 +352,7 @@ prism which has as circle as its base.
 	    \psset{Alpha=60,Beta=30}
 	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
 	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
-	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
 	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
 	    \psline(-1.0,-3)(-1.0,-0)
 	    \psline(1.0,-3)(1.0,-0)
@@ -389,7 +389,7 @@ Below are examples of right prisms that have been unfolded to their nets:
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,1)(2,0,0)(0,3.5,0)
 	\end{pspicture}}
@@ -399,7 +399,7 @@ Below are examples of right prisms that have been unfolded to their nets:
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
@@ -415,7 +415,7 @@ Below are examples of right prisms that have been unfolded to their nets:
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=90,Beta=90}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
@@ -440,7 +440,7 @@ would need to find the sum of the area of each face.
         \begin{pspicture}(-2,-3.5)(3,1.5)
             \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=none,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
 	    \pstThreeDBox[hiddenLine](-1,1,2)(0,0,2.5)(2.5,0,0)(0,2.5,0)
 	\end{pspicture}}
@@ -450,7 +450,7 @@ would need to find the sum of the area of each face.
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=60,Beta=30}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
@@ -464,7 +464,7 @@ would need to find the sum of the area of each face.
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=0,Beta=90}
-	    {\psset{fillcolor=cyan,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    {\psset{fillcolor=lightgray,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2.5,0,0)(0,2.5,0)}
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-3.5,1,2)(2.5,0,0)(0,2.5,0)
 	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,3.5,2)(2.5,0,0)(0,2.5,0)
@@ -489,7 +489,7 @@ the total surface area of the solid, find the sum of the area of the faces.
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
 % 	    \psset{viewpoint=0 0 200}
-	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
 	    \psSolid[object=prisme,action=draw,axe=0 0 1,base=-0.5 -0.5 0.5 -0.5 0 0.5,h=0.4]
 	\end{pspicture}}
 
@@ -499,11 +499,11 @@ the total surface area of the solid, find the sum of the area of the faces.
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
 % 	    \psset{viewpoint=8 12 8}
-	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
 	\end{pspicture}}
 
 	%% Triangular Prism Unfolded Birdseye
@@ -512,11 +512,11 @@ the total surface area of the solid, find the sum of the area of the faces.
 	    \psset{yunit=0.9,xunit=0.9}
 % 	    \psset{Alpha=60,Beta=30}
 	    \psset{viewpoint=0 0 20,RotZ=0}
-	    \psSolid[object=face,fillcolor=cyan,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
-	    \psSolid[object=face,fillcolor=cyan,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,opacity=0.5,base=-0.5 -0.5 0.5 -0.5 0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 0.5 -0.5 0.5 -0.9 -0.5 -0.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.9 0.5 -0.9 0 -1.9](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=-0.5 -0.5 -0.8464102 -0.3 -0.3464102 0.7 0.0 0.5](0,0,0)
+	    \psSolid[object=face,fillcolor=lightgray,incolor=white,base=0.0 0.5 0.3464102 0.7 0.8464102 -0.3 0.5 -0.5](0,0,0)
 	\end{pspicture}}
 
 
@@ -536,7 +536,7 @@ smaller rectangles. The length of the rectangle is equal to the perimeter of the
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psellipse[fillcolor=white,fillstyle=solid](0,-3)(1.0,0.5)
 	    \psframe[linestyle=none,fillcolor=white,fillstyle=solid](-1,-3)(1,0)
-	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=dashed](0,-3)(1.0,0.5)
 	    \psellipse[fillstyle=none](0,-0)(1.0,0.5)
 	    \psline(-1.0,-3)(-1.0,-0)
 	    \psline(1.0,-3)(1.0,-0)
@@ -545,7 +545,7 @@ smaller rectangles. The length of the rectangle is equal to the perimeter of the
 	%% Cylindrical Prism Unfolded
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
-	    \psellipse[fillcolor=cyan,opacity=0.5,fillstyle=solid,linestyle=solid](4,-4)(1.0,1.0)
+	    \psellipse[fillcolor=lightgray,opacity=0.5,fillstyle=solid,linestyle=solid](4,-4)(1.0,1.0)
 	    \psellipse[fillstyle=none](0,1)(1.0,1)
 	    \psframe[linestyle=solid,fillcolor=white,fillstyle=solid](-1,-3)(5,0)
 	\end{pspicture}
@@ -586,16 +586,16 @@ Find the total surface area of the prism below
 	\begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
 	    \psset{Alpha=180,Beta=90}
-	    {\psset{fillcolor=white,fillstyle=solid,opacity=0.5,linestyle=solid,dotstyle=}
+	    {\psset{fillcolor=white,fillstyle=solid,opacity=0,linestyle=solid,dotstyle=}
 	    \pstThreeDSquare(-1,1,2)(2,0,0)(0,3.5,0)}
-	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-2,1,2)(1,0,0)(0,3.5,0)
-	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](1,1,2)(1,0,0)(0,3.5,0)
-	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](2,1,2)(2,0,0)(0,3.5,0)
-	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,4.5,2)(2,0,0)(0,1,0)
-	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0.5](-1,0,2)(2,0,0)(0,1,0)
-            \rput(0,6.){$5$}
-            \rput(1.5, 5.){$2$}
-            \rput(4.5, 3.){$10$}
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-2,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](1,1,2)(1,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](2,1,2)(2,0,0)(0,3.5,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-1,4.5,2)(2,0,0)(0,1,0)
+	    \pstThreeDSquare[fillcolor=white,fillstyle=solid,opacity=0](-1,0,2)(2,0,0)(0,1,0)
+            \rput(0,6.){$5$ cm}
+            \rput(1.5, 5.){$2$ cm}
+            \rput(4.5, 3.){$10$ cm}
 	\end{pspicture}}
 \end{center}
 
@@ -630,7 +630,7 @@ Find the total surface area of the prism below:\\
 \scalebox{1}{
 	%% Triangular Prism
 \begin{pspicture}(0,-1.59875)(4.7,1.61875)
-\pstriangle[linewidth=1pt,dimen=outer](1.09,-1.59875)(2.18,1.72)
+\pstriangle[linewidth=0.04,dimen=outer](1.09,-1.59875)(2.18,1.72)
 \psline[linewidth=1pt](1.08,0.1012499)(3.38,1.59875)
 \psline[linewidth=1pt,linestyle=dotted,dotsep=0.10583334cm](0.06,-1.55875)(2.76,0.15875)
 \psline[linewidth=1pt](3.38,1.57875)(4.64,0.2012498)
@@ -638,7 +638,7 @@ Find the total surface area of the prism below:\\
 \psline[linewidth=1pt,linestyle=dashed,dash=0.16cm 0.16cm](1.08,0.06125)(1.06,-1.57875)
 \psline[linewidth=1pt,linestyle=dotted,dotsep=0.10583334cm](3.38,1.54125)(2.74,0.17875)
 \psline[linewidth=1pt,linestyle=dotted,dotsep=0.10583334cm](4.68,0.19875)(2.78,0.17875)
-\psline[linewidth=0.04](1.089162,-1.3)(1.309162,-1.3)(1.309162,-1.5)(1.309162,-1.6)
+\psline[linewidth=0.03](1.089162,-1.3)(1.309162,-1.3)(1.309162,-1.5)(1.309162,-1.6)
 \rput(1.07, -1.9){$8$ cm}
 \rput(4,-1){$12$ cm}
 \rput(1.5,-1.1){$3$ cm}
@@ -1049,23 +1049,23 @@ Find the volume of the following solid:\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-1.8337499)(4.6800003,1.8137499)
-\pstriangle[linewidth=0.04,dimen=outer](1.09,-1.3462498)(2.18,1.72)
-\psline[linewidth=0.04cm](1.08,0.35375)(3.44,1.77375)
-\psline[linewidth=0.04cm](3.44,1.7937499)(4.6600003,0.4537499)
-\psline[linewidth=0.04cm](2.14,-1.32625)(4.6600003,0.4537501)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.08,0.3137501)(1.06,-1.32625)
-\psframe[linewidth=0.04,dimen=outer](1.24,-1.1462499)(1.0400001,-1.3462499)
-\psline[linewidth=0.04cm](0.38,-0.3462499)(0.76,-0.5462499)
-\psline[linewidth=0.04cm](0.32,-0.4462499)(0.7,-0.6462499)
-\psline[linewidth=0.04cm](1.8,-0.3462499)(1.42,-0.5462499)
-\psline[linewidth=0.04cm](1.8600001,-0.4462499)(1.48,-0.6462499)
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.9828124,-0.5212499){$20$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.2328125,-1.6612499){$8$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.5,-0.8){$10$ cm}
+\begin{pspicture}(0,-1.8489062)(4.7628126,1.8289062)
+\pstriangle[linewidth=0.04,dimen=outer](1.09,-1.3310935)(2.18,1.72)
+\psline[linewidth=0.04cm](1.08,0.36890626)(3.44,1.7889062)
+\psline[linewidth=0.04cm](3.44,1.8089062)(4.6600003,0.46890616)
+\psline[linewidth=0.04cm](2.14,-1.3110938)(4.6600003,0.46890634)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.08,0.32890636)(1.06,-1.3110938)
+\psframe[linewidth=0.04,dimen=outer](1.3077112,-1.0710938)(1.0400001,-1.3310937)
+\psline[linewidth=0.04cm](0.38,-0.33109364)(0.76,-0.53109366)
+\psline[linewidth=0.04cm](0.32,-0.43109366)(0.7,-0.6310936)
+\psline[linewidth=0.04cm](1.8,-0.33109364)(1.42,-0.53109366)
+\psline[linewidth=0.04cm](1.8600001,-0.43109366)(1.48,-0.6310936)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.9578123,-0.5060936){$20$ cm}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2078125,-1.6460936){$8$ cm}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.475,-0.78484374){$10$ cm}
 \end{pspicture} 
 }
 
@@ -1199,7 +1199,7 @@ direction.
 % \usepackage{epsfig}
 % \usepackage{pst-grad} % For gradients
 % \usepackage{pst-plot} % For axes
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1.2} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.9969444)(6.534111,0.99705553)
 \pspolygon[linewidth=0.028222222,fillstyle=solid](2.621611,-0.26305556)(3.099611,0.46944445)(4.068611,-0.47205555)
@@ -1353,20 +1353,19 @@ $\begin{aligned}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-2.1164062)(4.2998643,2.0905173)
-\pspolygon[linewidth=0.028222222,fillstyle=solid, fillcolor=lightgray](0.33234948,-0.4028952)(1.6105834,2.0509098)(4.2018147,-1.1030252)
-\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252292)
-\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](4.2857533,-1.1959214)(1.6116236,2.0764062)(0.32804146,-1.8094827)
-\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.11411111,-0.40252292)(4.2322707,-1.139502)
-\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.6,2.0764062)(2.26,-1.5035938)
-\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235937)(2.48,-1.4635937)(2.5,-1.4635937)
-\psline[linewidth=0.04cm](1.86,-0.5835938)(1.8,-0.8435938)
-\psline[linewidth=0.04cm](0.0,-1.0835937)(0.34,-1.0235938)
-\psline[linewidth=0.04cm](1.78,-1.4435937)(1.96,-1.7035937)
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.485,-1.9135938){$6$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.4,0.38640624){$10$ cm}
+\begin{pspicture}(0,-2.1164062)(4.2998643,2.0964062)
+\pspolygon[linewidth=0.028222222](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252286)
+\pspolygon[linewidth=0.028222222](4.2857533,-1.1959213)(1.6116236,2.0764062)(0.32804146,-1.8094827)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.16cm 0.16cm](0.11411111,-0.40252286)(4.2322707,-1.1395019)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](1.6,2.0764062)(2.26,-1.5035938)
+\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235936)(2.48,-1.4635936)(2.5,-1.4635936)
+\psline[linewidth=0.04cm](1.86,-0.5835937)(1.8,-0.8435938)
+\psline[linewidth=0.04cm](0.0,-1.0835936)(0.34,-1.0235938)
+\psline[linewidth=0.04cm](1.78,-1.4435936)(1.96,-1.7035936)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.46,-1.9135938){$6$ cm}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.375,0.3864063){$10$ cm}
 \end{pspicture} 
 }
 \end{center}
@@ -1420,7 +1419,7 @@ We don't have the height yet but it can be calculated using the Theorem of Pytha
 \begin{wex}{Finding the surface area of a cone}
  {Find the total surface area of the following solid (correct to one decimal place):
 \begin{center}
- \scalebox{0.7} % Change this value to rescale the drawing.
+ \scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
 \psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
@@ -1486,12 +1485,12 @@ We still need to find the slant height $h$. We can do this using the Theorem of 
 \begin{wex}{Finding the surface area of a sphere}
  {Find the total surface area of the following solid (correct to one decimal place):
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.9} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.9)(3.8,1.9)
 \pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
 \psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
-\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.15cm](1.96,-0.14)(3.74,-0.14)
 \psdots[dotsize=0.09](1.92,-0.16)
 \usefont{T1}{ppl}{m}{n}
 \rput(2.6345313,0.2){$5$ cm}
@@ -1519,27 +1518,29 @@ We still need to find the slant height $h$. We can do this using the Theorem of 
 {
 \westep{Draw a picture}
 \begin{center}
-\begin{pspicture}(-5,-2)(2,2)
-%\psgrid
-\rput(-3.5,0){
-\psellipse[fillcolor=white,fillstyle=solid](0,-1)(1.5,1)
-\pspolygon[fillcolor=white,fillstyle=solid,linestyle=none](-1.5,-1)(0,2)(1.5,-1)
-\psellipse[linestyle=dotted](0,-1)(1.5,1)
-\psline(-1.5,-1)(0,2)(1.5,-1)
-\psline[arrows=<->](-1.5,-1)(0,-1)
-\uput[d](-0.75,-1){$r$}
-\psline[arrows=<->](0,-1)(0,2)
-\uput[r](0,0.5){$h$}
-\psline(-0.4,-1.0)(-0.4,-0.6)(-0.0,-0.6) %Right Angle
-}
-\pspolygon(-1.5,-1)(0,2)(1.5,-1)
-\psline[arrows=<->](-1.5,-1.2)(0,-1.2)
-\uput[d](-0.75,-1.2){$r$}
-\psline[arrows=<->](0,-1)(0,2)
-\uput[r](0,0.5){$h$}
-\uput[l](-0.75,0.5){$a$}
-\psline(-0.4,-1.0)(-0.4,-0.6)(-0.0,-0.6)
-\end{pspicture}
+
+\begin{pspicture}(0,-2.07)(6.5141115,2.0841112)
+\psellipse[linewidth=0.028222222,dimen=outer](1.5000001,-1.0699999)(1.5000001,1.0)
+\psellipse[linewidth=0.028222222,linestyle=dotted,dotsep=0.10583334cm,dimen=outer](1.5,-1.07)(1.5,1.0)
+\psline[linewidth=0.028222222](0.02,-0.93)(1.52,2.07)(2.985889,-0.9158889)
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-1.07)(1.5,-1.07)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.71453124,-1.35){$r$}
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.5,-1.07)(1.5058889,1.7241111)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7345313,0.37){$h$}
+\psline[linewidth=0.028222222](1.1,-1.07)(1.1,-0.67)(1.5,-0.67)
+\pspolygon[linewidth=0.028222222](3.5,-1.07)(5.0,1.93)(6.5,-1.07)
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.5,-1.27)(5.0,-1.27)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2945313,-1.57){$r$}
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.0,-1.07)(5.0,1.93)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.134531,0.25){$h$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.9745312,0.63){$a$}
+\psline[linewidth=0.028222222](4.6,-1.07)(4.6,-0.67)(5.0,-0.67)
+\end{pspicture} 
 \end{center}
 
 
@@ -1732,7 +1733,7 @@ $\begin{aligned}
 
 \end{tabular}
 \end{table}
-
+\pagebreak
 \begin{wex}{Volume of a Pyramid}
 {
 What is the volume of a square pyramid, $3$ cm high with a side length of $2$ cm?
@@ -1748,26 +1749,7 @@ where $a$ is the length of the side of the square base.
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
-% \begin{pspicture}(0,-2.95)(6.02,2.95)
-% % \usefont{T1}{ptm}{m}{n}
-% \rput{0.6029805}(-0.0218156,-0.0519640){\rput(4.896719,-2.12){$2$ cm}}
-% % \usefont{T1}{ptm}{m}{n}
-% \rput{-1.0300905}(0.0386375,0.0202694){\rput(1.1167188,-2.16){$2$ cm}}
-% % \usefont{T1}{ptm}{m}{n}
-% \rput(2.5659375,1.315){\small $3$ cm}
-% \psline[linewidth=0.04cm](5.98,-0.91)(3.18,2.91)
-% \psline[linewidth=0.04cm](3.0,-2.93)(3.18,2.93)
-% \psline[linewidth=0.04cm](3.18,2.93)(0.0,-0.87)
-% \psline[linewidth=0.04cm](0.0,-0.89)(3.02,1.09)
-% \psline[linewidth=0.04cm](3.0,1.07)(5.98,-0.91)
-% \psline[linewidth=0.04cm](0.06,-0.89)(3.0,-2.91)
-% \psline[linewidth=0.04cm](3.0,-2.89)(6.0,-0.93)
-% \psdots[dotsize=0.12](2.98,-0.87)
-% \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.9,-0.81)(3.0,2.75)
-% \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.94,-0.79)(1.34,0.09)
-% \psline[linewidth=0.04cm](2.6,-0.63)(2.6,-0.37)
-% \psline[linewidth=0.04cm](2.62,-0.39)(2.82,-0.39)
-% \end{pspicture} 
+
 \begin{pspicture}(0,-2.89)(5.58,2.89)
 % \usefont{T1}{ptm}{m}{n}
 \rput{0.6029805}(-0.022694819,-0.047077317){\rput(4.4319425,-2.1803145){$2~$cm}}
@@ -1806,20 +1788,19 @@ where $a$ is the length of the side of the square base.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-2.1164062)(4.2998643,2.0905173)
-\pspolygon[linewidth=0.028222222,fillstyle=solid, fillcolor=lightgray](0.33234948,-0.4028952)(1.6105834,2.0509098)(4.2018147,-1.1030252)
-\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252292)
-\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](4.2857533,-1.1959214)(1.6116236,2.0764062)(0.32804146,-1.8094827)
-\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.11411111,-0.40252292)(4.2322707,-1.139502)
-\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.6,2.0764062)(2.26,-1.5035938)
-\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235937)(2.48,-1.4635937)(2.5,-1.4635937)
-\psline[linewidth=0.04cm](1.86,-0.5835938)(1.8,-0.8435938)
-\psline[linewidth=0.04cm](0.0,-1.0835937)(0.34,-1.0235938)
-\psline[linewidth=0.04cm](1.78,-1.4435937)(1.96,-1.7035937)
+\begin{pspicture}(0,-2.1164062)(4.2998643,2.0964062)
+\pspolygon[linewidth=0.028222222](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252286)
+\pspolygon[linewidth=0.028222222](4.2857533,-1.1959213)(1.6116236,2.0764062)(0.32804146,-1.8094827)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.11411111,-0.40252286)(4.2322707,-1.1395019)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.1cm](1.6,2.0764062)(2.26,-1.5035938)
+\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235936)(2.48,-1.4635936)(2.5,-1.4635936)
+\psline[linewidth=0.04cm](1.86,-0.5835937)(1.8,-0.8435938)
+\psline[linewidth=0.04cm](0.0,-1.0835936)(0.34,-1.0235938)
+\psline[linewidth=0.04cm](1.78,-1.4435936)(1.96,-1.7035936)
 % \usefont{T1}{ptm}{m}{n}
-\rput(2.485,-1.9135938){$8$ cm}
+\rput(2.46,-1.9135938){$8$ cm}
 % \usefont{T1}{ptm}{m}{n}
-\rput(2.4,0.38640624){$12$ cm}
+\rput(2.375,0.3864063){$12$ cm}
 \end{pspicture} 
 }
 \end{center}
@@ -1890,7 +1871,7 @@ We don't have the height yet but it can be calculated by bisecting the pyramid a
 \begin{wex}{Finding the volume of a cone}
  {Find the volume of the following solid (correct to one decimal place):
 \begin{center}
- \scalebox{0.7} % Change this value to rescale the drawing.
+ \scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
 \psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
@@ -1918,7 +1899,7 @@ We don't have the height yet but it can be calculated by bisecting the pyramid a
 
 \westep{Multiply the area of the base by $\frac{1}{3} \times $ height of pyramid to get the volume}
 \begin{align*}
- \mbox{volume} &= \frac{1}{3} \times 9\pi 11
+ \mbox{volume} &= \frac{1}{3} \times 9\pi 11\\
 &=103,7 \mbox{ units}^3
 \end{align*}
 }
@@ -1927,7 +1908,7 @@ We don't have the height yet but it can be calculated by bisecting the pyramid a
 \begin{wex}{Finding the volume of a sphere}
  {Find the total volume of the following solid (correct to one decimal place):
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.9} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.9)(3.8,1.9)
 \pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
@@ -1963,18 +1944,30 @@ The prism has an equilateral triangle of side length $20$ cm as a base, and has 
 \end{enumerate}
 
 \begin{center}
-% THIS DIAGRAM NEEDS THE ABOVE DIMENSIONS ON IT
+
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-1.97)(1.66,1.97)
+\begin{pspicture}(0,-2.0664062)(5.57,2.0464063)
 \definecolor{color338b}{rgb}{0.6,0.6,0.6}
 \definecolor{color376b}{rgb}{0.8,0.8,0.8}
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](1.22,0.52891)(1.64,1.69)(1.64,-0.72891)(1.22,-1.89)(1.22,-1.89)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](0.8,1.95)(1.64,1.7557143)(1.22,0.53)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](0.8,1.95)(0.0,1.25)(1.2,0.55)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](0.02,1.25)(1.22,0.55)(1.22,-1.95)(0.02,-1.25)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.02,1.29)(1.6,1.73)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.02,-1.25)(1.6,-0.69)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.45,0.6053162)(3.87,1.7664063)(3.87,-0.6525037)(3.45,-1.8135937)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.03,2.0264063)(3.87,1.8321205)(3.45,0.6064063)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](3.03,2.0264063)(2.23,1.3264062)(3.43,0.62640625)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](2.25,1.3264062)(3.45,0.62640625)(3.45,-1.8735938)(2.25,-1.1735938)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,1.3664062)(3.83,1.8064063)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,-1.1735938)(3.83,-0.61359376)
+\psline[linewidth=0.04cm](3.03,-0.75359374)(3.13,-0.9735938)
+\psline[linewidth=0.04cm](2.93,-1.4135938)(2.77,-1.6135937)
+\psline[linewidth=0.04cm](3.53,-1.1335938)(3.77,-1.1935937)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.265,-1.8635937){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.765,0.5964062){$20$ cm}
+\psline[linewidth=0.03,linestyle=dotted,dotsep=0.1cm](3.03,1.9664062)(3.05,1.2664063)(2.79,1.0464063)(2.79,1.0464063)(2.79,1.0464063)(2.75,1.0464063)
+\psline[linewidth=0.04cm](3.05,1.6064062)(1.51,1.6064062)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.705,1.6164062){$12$ cm}
+\psline[linewidth=0.02](3.09,1.4064063)(2.97,1.3464062)(2.97,1.2064062)
 \end{pspicture} 
 }
 \end{center}
@@ -1984,16 +1977,19 @@ The prism has an equilateral triangle of side length $20$ cm as a base, and has 
 
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-1.9570557)(4.1857533,1.9570556)
-\pspolygon[linewidth=0.028222222,fillstyle=solid](0.21823838,-0.536357)(1.4964722,1.917448)(4.0877037,-1.236487)
-\pspolygon[linewidth=0.028222222,fillstyle=solid](0.20588888,-1.9170556)(1.4658889,1.8429444)(0.0,-0.5359847)
-\pspolygon[linewidth=0.028222222,fillstyle=solid](4.171642,-1.3293833)(1.4975125,1.9429444)(0.21393035,-1.9429444)
+\begin{pspicture}(0,-1.9570554)(4.1857533,1.9570554)
+\pspolygon[linewidth=0.028222222](0.20588888,-1.9170556)(1.4658889,1.8429444)(0.0,-0.5359847)
+\pspolygon[linewidth=0.028222222](4.171642,-1.3293831)(1.4975125,1.9429444)(0.21393035,-1.9429444)
 \psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.0,-0.5359847)(4.1181593,-1.2729638)
 \psline[linewidth=0.024,linestyle=dotted,dotsep=0.1cm](1.4858888,1.8829445)(1.4458889,-1.2770555)(4.145889,-1.3170556)
-\psline[linewidth=0.02](1.4458889,-1.0570556)(1.6658889,-1.0570556)(1.6645871,-1.2770555)(1.4458889,-1.2770555)(1.4458889,-1.0570556)
+\psline[linewidth=0.02](1.4458889,-1.0570556)(1.6658889,-1.0629445)(1.6645871,-1.2770555)(1.4458889,-1.2770555)(1.4458889,-1.0570556)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.9,0.44346178){$12 $ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.2608888,-1.8565382){$20 $cm}
 \end{pspicture} 
 }
-
+\hspace{10pt}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.1564062)(4.64,2.097329)
@@ -2008,8 +2004,8 @@ The prism has an equilateral triangle of side length $20$ cm as a base, and has 
 \rput(2.5845313,0.04640625){$h$}
 \end{pspicture} 
 }
-\\
-To find the height of the base triangle:\\
+
+\\To find the height of the base triangle:
 \begin{align*}
  20^2 &= 10^2 + h^2\\
 \therfore h&= \sqrt{20^2-10^2}\\
@@ -2033,7 +2029,7 @@ To find the height of the base triangle:\\
 \end{center}
 
 
-To find the area of the base:\\
+To find the area of the base:
 \begin{align*}
 \mbox{area of triangle } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
 &=100 \sqrt{3}
@@ -2045,13 +2041,41 @@ We already have the area of the base triangle above, therefore:\\
 \mbox{volume } &= 100 \sqrt{3} \times 42\\
 &=7274,661
 \end{align*}
-Total volume:\\
+Total volume:
 \begin{align*}
 \mbox{total volume } &= 7274,661 + 692,82\\
 &=7967,4 \mbox{ cm}^3
 \end{align*}
 \westep{Find the surface area of each exposed face of the solid}
-% DIAGRAM NEEDED HERE - p.24 of Helen's pdf
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.873536)(7.0,3.3485236)
+\psframe[linewidth=0.04,dimen=outer](7.0,1.3682163)(0.0,-2.8717837)
+\psline[linewidth=0.04cm](2.3,1.3082162)(2.3,-2.8517838)
+\psline[linewidth=0.04cm](4.68,1.3282163)(4.7,-2.8317838)
+\pstriangle[linewidth=0.04,dimen=outer](3.53,1.3282162)(2.38,2.04)
+\rput{59.82581}(3.4844987,-0.4001394){\pstriangle[linewidth=0.04,dimen=outer](2.09,1.8082162)(2.38,2.04)}
+\rput{59.386894}(4.588479,-2.390166){\pstriangle[linewidth=0.04,dimen=outer](4.39,1.8082162)(2.38,2.04)}
+\rput{60.432247}(-1.2791417,-4.507204){\pstriangle[linewidth=0.04,dimen=outer](3.23,-4.3717837)(2.38,2.04)}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2545311,2.6982162){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.4545312,1.9182162){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.6445312,2.6382163){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.0945313,-0.56178373){$D$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.4445312,-0.54178375){$E$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.8545313,-0.54178375){$F$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.5745313,-3.4017837){$G$}
+\end{pspicture} 
+}
+\end{center}
+\\
 Above is a rough sketch of the net of the solid. Faces $A$, $B$, $C$ are congruent as they are the
 sides of the triangular based pyramid. The length of the rectangle (made up of the $3$ smaller
 rectangles $D$, $E$, $F$) is equal to the perimeter of the base triangle. The base triangle is exactly
@@ -2059,7 +2083,7 @@ the same area as the base triangle of the pyramid which we calculated earlier.\\
 
 To find the area of $A$, $B$, and $C$:\\
 bisect the pyramid to find the slant height of each face:
-\begin{figure}
+% \begin{figure}
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2076,16 +2100,15 @@ bisect the pyramid to find the slant height of each face:
 \end{pspicture} 
 }
 \end{center}
-\caption{A bisected view of the pyramid to find the slant height of each face}
-\end{figure}
-
+% \caption{}
+% \end{figure}
+A bisected view of the pyramid to find the slant height of each face
 \begin{align*}
 h^2 &= 12^2+10^2\\
 \therefore h &= \sqrt{12^2+10^2}\\
 &=2\sqrt{61} %CHECK THIS?!
-
 \end{align*}
-\begin{figure}
+% \begin{figure}
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2094,16 +2117,17 @@ h^2 &= 12^2+10^2\\
 \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
 \psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
 % \usefont{T1}{ptm}{m}{n}
-\rput(2.5,-1.9535937){$20$ cm}
+% \rput(3.165,-1.9535937){$10$ cm}
 % \usefont{T1}{ptm}{m}{n}
 % \rput(3.945,0.62640625){$h$}
 % \usefont{T1}{ptm}{m}{n}
-\rput(2.5845313,0.04640625){$2\sqrt{61}$ cm}
-
+\rput(2.7,0.04640625){$2\sqrt{61}$}
+\end{pspicture} 
 }
 \end{center}
-\caption{A rough sketch of face $B$}
-\end{figure}
+% \caption{A rough sketch of face $B$}
+% \end{figure}
+A rough sketch of face $B$
 \begin{align*}
 \mbox{area of }B &= \frac{1}{2} \times 20 \times 2\sqrt{61}\\
 &=20\sqrt{61}\\
@@ -2134,13 +2158,150 @@ State the area of $G$:
 \begin{exercises}{}
  {
 Find the total surface area of the following solids (round off to one decimal place if needed):
-%4 diagrams needed here - helen's pdf p. 25
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-6.555141)(11.58,6.555141)
+\psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.8189373,6.4493885)(2.736479,1.7205143)(4.962867,1.6926974)(4.962867,1.831782)(4.935381,1.831782)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7499313,4.485141){$13$ cm}
+\psbezier[linewidth=0.027999999](0.78034645,2.0499592)(0.47451097,1.3570333)(1.3971436,0.47512725)(2.5043025,0.41213384)(3.6114616,0.34914044)(5.026165,0.85308695)(5.026165,1.8609792)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](5.026165,1.7979861)(4.657112,2.3649256)(3.9805148,2.7450073)(3.0888517,2.7754428)(2.1971886,2.8058784)(1.4586524,2.7428854)(0.7205463,1.8609792)
+\psframe[linewidth=0.04,dimen=outer](3.1003997,2.115141)(2.7003999,1.7151409)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.009931,2.0051408){$5$ cm}
+\pspolygon[linewidth=0.028222222](7.28,1.7148592)(8.54,5.474859)(7.074111,3.09593)
+\pspolygon[linewidth=0.028222222](11.245753,2.3025317)(8.571624,5.574859)(7.2880416,1.6889703)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](7.074111,3.09593)(11.19227,2.358951)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.1cm](8.56,5.574859)(9.22,1.9948592)
+\psline[linewidth=0.024](9.18,2.2348592)(9.4,2.2748594)(9.44,2.0348594)(9.46,2.0348594)
+\psline[linewidth=0.04cm](8.82,2.9148593)(8.76,2.6548593)
+\psline[linewidth=0.04cm](6.96,2.4148595)(7.3,2.4748592)
+\psline[linewidth=0.04cm](8.74,2.0548594)(8.92,1.7948594)
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.395,1.5848593){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.31,3.8848593){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0020312,5.3748593){\LARGE \textbf{1.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.9220314,5.3748593){\LARGE\textbf{2.}}
+\pscircle[linewidth=0.027999999,dimen=outer](9.68,-3.4851408){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.68,-3.6151407)(1.84,0.23)
+\psline[linewidth=0.027999999cm,linestyle=dotted,dotsep=0.1cm](9.74,-3.6251407)(11.52,-3.6251407)
+\psdots[dotsize=0.09](9.7,-3.6451406)
+% \usefont{T1}{ppl}{m}{n}
+\rput(10.499532,-3.1651409){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.04,-2.8101408){$12$ cm}
+\psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
+\psline[linewidth=0.04cm](3.76,-6.5151405)(3.6,-0.79514074)
+\psline[linewidth=0.04cm](3.6,-0.79514074)(0.88,-4.5351405)
+\psline[linewidth=0.04cm](0.9,-4.5351405)(3.64,-2.7751408)
+\psline[linewidth=0.04cm](3.62,-2.7751408)(6.42,-4.655141)
+\psline[linewidth=0.04cm](0.86,-4.5351405)(3.76,-6.5351405)
+\psline[linewidth=0.04cm](3.76,-6.5351405)(6.42,-4.655141)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](5.26,-5.4551406)(3.58,-0.91514075)
+\psline[linewidth=0.04cm](5.16,-5.155141)(5.4,-4.9751406)
+\psline[linewidth=0.04cm](5.38,-4.9751406)(5.5,-5.2951407)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.3220313,-1.3851408){\LARGE\textbf{3.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.5220313,-1.4251407){\LARGE\textbf{4.}}
+\end{pspicture} 
+}
+
+\end{center}
 \\
-Find the volume of the following solids (round off to one decimal place if needed):
-%4 diagrams needed here - helen's pdf p. 25
+
+Find the total surface area of the following solids (round off to one decimal place if needed):
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-6.555141)(11.58,6.555141)
+\psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.8189373,6.4493885)(2.736479,1.7205143)(4.962867,1.6926974)(4.962867,1.831782)(4.935381,1.831782)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7499313,4.485141){$13$ cm}
+\psbezier[linewidth=0.027999999](0.78034645,2.0499592)(0.47451097,1.3570333)(1.3971436,0.47512725)(2.5043025,0.41213384)(3.6114616,0.34914044)(5.026165,0.85308695)(5.026165,1.8609792)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](5.026165,1.7979861)(4.657112,2.3649256)(3.9805148,2.7450073)(3.0888517,2.7754428)(2.1971886,2.8058784)(1.4586524,2.7428854)(0.7205463,1.8609792)
+\psframe[linewidth=0.04,dimen=outer](3.1003997,2.115141)(2.7003999,1.7151409)
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.009931,2.0051408){$5$ cm}
+\pspolygon[linewidth=0.028222222](7.28,1.7148592)(8.54,5.474859)(7.074111,3.09593)
+\pspolygon[linewidth=0.028222222](11.245753,2.3025317)(8.571624,5.574859)(7.2880416,1.6889703)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](7.074111,3.09593)(11.19227,2.358951)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.1cm](8.56,5.574859)(9.22,1.9948592)
+\psline[linewidth=0.024](9.18,2.2348592)(9.4,2.2748594)(9.44,2.0348594)(9.46,2.0348594)
+\psline[linewidth=0.04cm](8.82,2.9148593)(8.76,2.6548593)
+\psline[linewidth=0.04cm](6.96,2.4148595)(7.3,2.4748592)
+\psline[linewidth=0.04cm](8.74,2.0548594)(8.92,1.7948594)
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.395,1.5848593){$6$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.31,3.8848593){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0020312,5.3748593){\LARGE\textbf{5.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.9220314,5.3748593){\LARGE\textbf{6.}}
+\pscircle[linewidth=0.027999999,dimen=outer](9.68,-3.4851408){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](9.68,-3.6151407)(1.84,0.23)
+\psline[linewidth=0.027999999cm,linestyle=dotted,dotsep=0.1cm](9.74,-3.6251407)(11.52,-3.6251407)
+\psdots[dotsize=0.09](9.7,-3.6451406)
+% \usefont{T1}{ppl}{m}{n}
+\rput(10.499532,-3.1651409){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.04,-2.8101408){$12$ cm}
+\psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
+\psline[linewidth=0.04cm](3.76,-6.5151405)(3.6,-0.79514074)
+\psline[linewidth=0.04cm](3.6,-0.79514074)(0.88,-4.5351405)
+\psline[linewidth=0.04cm](0.9,-4.5351405)(3.64,-2.7751408)
+\psline[linewidth=0.04cm](3.62,-2.7751408)(6.42,-4.655141)
+\psline[linewidth=0.04cm](0.86,-4.5351405)(3.76,-6.5351405)
+\psline[linewidth=0.04cm](3.76,-6.5351405)(6.42,-4.655141)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](5.26,-5.4551406)(3.58,-0.91514075)
+\psline[linewidth=0.04cm](5.16,-5.155141)(5.4,-4.9751406)
+\psline[linewidth=0.04cm](5.38,-4.9751406)(5.5,-5.2951407)
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.3220313,-1.3851408){\LARGE\textbf{7.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.5220313,-1.4251407){\LARGE\textbf{8.}}
+\end{pspicture} 
+}
+
+\end{center}
 \\
 The solid below is made up of a cube and a square based pyramid. Find it's volume and surface area (round off to one decimal place if needed):
-%diagram needed here - helen's pdf p. 26
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8370537)(6.719142,2.2091963)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=130.79651](1.6439155,-0.50671875)(1.2616725,1.0826066)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2356775,-0.49835977)(1.27,1.0687643)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.85914207,0.46575883)(2.497392,0.74575895)(3.979142,0.49575883)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.8815407,-1.1342412)(2.499142,-0.78424114)(4.019142,-1.1642412)
+\psline[linewidth=0.04](0.839142,0.43575883)(2.439142,1.9957589)(2.439142,0.23575884)(2.439142,0.17575884)(2.459142,0.19575883)(2.459142,0.21575883)
+\psline[linewidth=0.04cm](4.039142,0.45575884)(2.439142,2.0157588)
+\psline[linewidth=0.02](4.619142,2.075759)(4.979142,2.075759)(4.999142,-1.1042411)(4.659142,-1.1042411)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.914142,0.5057588){$11$ cm}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.524142,-1.6342412){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.1611733,2.0057588){\textbf{9.}}
+\end{pspicture} 
+}
+\end{center}
+
 }
 \end{exercises}
 \section{The effect of multiplying a dimension with the factor $k$}
@@ -2160,13 +2321,41 @@ Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply o
 three of its dimensions by a constant factor of $2$ and record the new volume and surface area.\par
 \begin{center}
 \begin{table}[H]
- \begin{tabular}{|c|c|c|}
+ \begin{tabular}{|m{5cm}|c|c|}
 \hline
 Dimensions & 
 Volume & 
 Surface \\ \hline
-Original dimensions &
-% diagram needed here - p. 26 of helen's pdf
+Original dimensions 
+\begin{center}
+\scalebox{0.5} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1364063)(4.0990624,1.1164062)
+\psline[linewidth=0.04cm](0.02,0.8564063)(0.02,-0.02359375)
+\psline[linewidth=0.04cm](0.0,0.83640623)(2.32,0.27640626)
+\psline[linewidth=0.04cm](2.2794049,-0.5718663)(3.1088746,-0.30507085)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.01770038,0.004156353)(0.84,0.31640625)
+\psline[linewidth=0.04cm](0.009931098,0.8281822)(0.83940095,1.0949776)
+\psline[linewidth=0.04cm](2.293427,0.2667113)(3.1228967,0.5335067)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.84,0.29640624)(3.0943224,-0.3008174)
+\psline[linewidth=0.04cm](0.0,-0.00359375)(2.2848525,-0.5676128)
+\psline[linewidth=0.04cm](0.8,1.0964062)(3.126553,0.5432085)
+\psline[linewidth=0.04cm](2.3,0.29640624)(2.2994049,-0.5718663)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.84,1.0764062)(0.84,0.31640625)
+\psline[linewidth=0.04cm](3.1,0.5364063)(3.1,-0.32359374)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.04,-0.26359376)(1.94,-0.76359373)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.52,-0.7235938)(3.08,-0.5235937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.32,0.47640625)(3.32,-0.26359376)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.8045313,-0.73359376){$l$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.9245312,-0.93359375){$b$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7245312,0.14640625){$h$}
+\end{pspicture} 
+}
+\end{center}
+&
  \begin{aligned}
   $V &= l \times b \times h \\
  &= lbh$
@@ -2176,8 +2365,39 @@ Original dimensions &
 &= 2(lh + lb + bh)$
 \end{aligned} \\ \hline
 
-Multiply one dimension by $2$ & 
-%Diagram needed here - p.27
+Multiply one dimension by $2$ 
+\begin{center}
+\scalebox{0.5} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.5764062)(4.1190624,1.5364063)
+\psline[linewidth=0.04cm](0.04,0.41640624)(0.04,-0.46359375)
+\psline[linewidth=0.04cm](2.2994049,-1.0118662)(3.1288748,-0.7450709)
+\psline[linewidth=0.04cm](0.02,-0.44359374)(2.3048525,-1.0076128)
+\psline[linewidth=0.04cm](2.32,-0.14359374)(2.3194048,-1.0118662)
+\psline[linewidth=0.04cm](3.12,0.09640625)(3.12,-0.76359373)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.06,-0.70359373)(1.96,-1.2035937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.54,-1.1635938)(3.1,-0.9635937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.32,0.89640623)(3.34,-0.70359373)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.82453126,-1.1735938){$l$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.9445312,-1.3735938){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.7445312,0.20640625){$h$}
+\psline[linewidth=0.04cm](0.04,1.2764063)(0.04,0.39640626)
+\psline[linewidth=0.04cm](0.02,1.2564063)(2.34,0.69640625)
+\psline[linewidth=0.04cm](2.2994049,-0.15186627)(3.1288748,0.11492915)
+\psline[linewidth=0.04cm](0.029931096,1.2481822)(0.8594009,1.5149776)
+\psline[linewidth=0.04cm](2.313427,0.6867113)(3.1428967,0.9535067)
+\psline[linewidth=0.04cm](0.02,0.41640624)(2.3048525,-0.14761281)
+\psline[linewidth=0.04cm](2.32,0.7164062)(2.3194048,-0.15186627)
+\psline[linewidth=0.04cm](3.12,0.95640624)(3.12,0.09640625)
+\psline[linewidth=0.04cm](0.82,1.5164063)(3.1048524,0.9523872)
+\end{pspicture} 
+}
+\end{center}
+& 
+
 \begin{aligned}
   $V &= l \times b \times 2h \\
  &= 2(lbh)\\
@@ -2188,8 +2408,46 @@ Multiply one dimension by $2$ &
 &= 2(2lh + lb + 2bh)$
 \end{aligned} \\ \hline
 
-Multiply two dimensions by $2$ & 
-%Diagram needed here - p.27
+Multiply two dimensions by $2$ 
+\begin{center}
+\scalebox{0.5} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8564062)(6.3790627,1.8164062)
+\psline[linewidth=0.04cm](2.3,0.13640624)(2.3,-0.74359375)
+\psline[linewidth=0.04cm](4.559405,-1.2918663)(5.3888745,-1.0250709)
+\psline[linewidth=0.04cm](2.28,-0.7235938)(4.5648527,-1.2876128)
+\psline[linewidth=0.04cm](4.58,-0.42359376)(4.579405,-1.2918663)
+\psline[linewidth=0.04cm](5.38,-0.18359375)(5.38,-1.0435938)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.22,-0.46359375)(4.22,-1.4835937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(4.8,-1.4435937)(5.36,-1.2435937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.58,0.61640626)(5.6,-0.98359376)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.8445313,-1.3335937){$l$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.204531,-1.6535938){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.0045314,-0.07359375){$h$}
+\psline[linewidth=0.04cm](2.3,0.99640626)(2.3,0.11640625)
+\psline[linewidth=0.04cm](2.28,0.9764063)(4.6,0.41640624)
+\psline[linewidth=0.04cm](4.559405,-0.43186626)(5.3888745,-0.16507086)
+\psline[linewidth=0.04cm](2.289931,0.9681822)(3.119401,1.2349776)
+\psline[linewidth=0.04cm](4.5734267,0.4067113)(5.402897,0.67350674)
+\psline[linewidth=0.04cm](2.28,0.13640624)(4.5648527,-0.4276128)
+\psline[linewidth=0.04cm](4.58,0.43640625)(4.579405,-0.43186626)
+\psline[linewidth=0.04cm](5.38,0.67640626)(5.38,-0.18359375)
+\psline[linewidth=0.04cm](3.08,1.2364062)(5.3648524,0.6723872)
+\psline[linewidth=0.04cm](0.04,0.69640625)(0.04,-0.18359375)
+\psline[linewidth=0.04cm](0.02,-0.16359375)(2.3048525,-0.7276128)
+\psline[linewidth=0.04cm](0.04,1.5564063)(0.04,0.67640626)
+\psline[linewidth=0.04cm](0.02,1.5364063)(2.34,0.9764063)
+\psline[linewidth=0.04cm](0.029931096,1.5281823)(0.8594009,1.7949777)
+\psline[linewidth=0.04cm](0.02,0.69640625)(2.3048525,0.13238719)
+\psline[linewidth=0.04cm](0.82,1.7964063)(3.1048524,1.2323872)
+\end{pspicture} 
+}
+\end{center}
+& 
+
 \begin{aligned}
   $V &= 2l \times b \times 2h \\
  &= 2.2(lbh)\\
@@ -2200,8 +2458,58 @@ Multiply two dimensions by $2$ &
 &= 2\times 2(2lh + lb + bh)$
 \end{aligned} \\ \hline
 
-Multiply three dimensions by $2$ & 
-%Diagram needed here - p.27
+Multiply three dimensions by $2$ 
+\begin{center}
+\scalebox{0.5} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.8964063)(7.2390623,1.8764062)
+\psline[linewidth=0.04cm](5.339405,-1.2318662)(6.1688747,-0.96507084)
+\psline[linewidth=0.04cm](5.36,-0.36359376)(5.359405,-1.2318662)
+\psline[linewidth=0.04cm](6.16,-0.12359375)(6.16,-0.98359376)
+\psline[linewidth=0.04cm](5.339405,-0.37186626)(6.1688747,-0.10507085)
+\psline[linewidth=0.04cm](3.069931,1.0281823)(3.899401,1.2949777)
+\psline[linewidth=0.04cm](5.353427,0.4667113)(6.1828966,0.73350674)
+\psline[linewidth=0.04cm](5.36,0.49640626)(5.359405,-0.37186626)
+\psline[linewidth=0.04cm](6.16,0.73640627)(6.16,-0.12359375)
+\psline[linewidth=0.04cm](3.86,1.2964063)(6.1448526,0.7323872)
+\psline[linewidth=0.04cm](0.8099311,1.5881822)(1.639401,1.8549776)
+\psline[linewidth=0.04cm](1.6,1.8564062)(3.8848524,1.2923872)
+\psline[linewidth=0.04cm](2.28,-0.06359375)(2.28,-0.94359374)
+\psline[linewidth=0.04cm](4.539405,-1.4918662)(5.3688745,-1.2250708)
+\psline[linewidth=0.04cm](2.26,-0.92359376)(4.5448527,-1.4876128)
+\psline[linewidth=0.04cm](4.56,-0.62359375)(4.559405,-1.4918662)
+\psline[linewidth=0.04cm](5.36,-0.38359374)(5.36,-1.2435937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.2,-0.66359377)(4.2,-1.6835938)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(4.8,-1.6435938)(6.18,-1.1635938)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.8245312,-1.5335938){$l$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.664531,-1.6935937){$b$}
+\psline[linewidth=0.04cm](2.28,0.79640627)(2.28,-0.08359375)
+\psline[linewidth=0.04cm](2.26,0.7764062)(4.58,0.21640626)
+\psline[linewidth=0.04cm](4.539405,-0.6318663)(5.3688745,-0.36507085)
+\psline[linewidth=0.04cm](2.269931,0.7681822)(3.099401,1.0349777)
+\psline[linewidth=0.04cm](4.5534267,0.2067113)(5.382897,0.47350672)
+\psline[linewidth=0.04cm](2.26,-0.06359375)(4.5448527,-0.6276128)
+\psline[linewidth=0.04cm](4.56,0.23640625)(4.559405,-0.6318663)
+\psline[linewidth=0.04cm](5.36,0.47640625)(5.36,-0.38359374)
+\psline[linewidth=0.04cm](3.06,1.0364063)(5.3448524,0.4723872)
+\psline[linewidth=0.04cm](0.02,0.49640626)(0.02,-0.38359374)
+\psline[linewidth=0.04cm](0.0,-0.36359376)(2.2848525,-0.92761284)
+\psline[linewidth=0.04cm](0.02,1.3564062)(0.02,0.47640625)
+\psline[linewidth=0.04cm](0.0,1.3364062)(2.32,0.7764062)
+\psline[linewidth=0.04cm](0.009931098,1.3281822)(0.83940095,1.5949776)
+\psline[linewidth=0.04cm](0.0,0.49640626)(2.2848525,-0.06761281)
+\psline[linewidth=0.04cm](0.8,1.5964062)(3.0848525,1.0323871)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(6.4,0.57640624)(6.38,-0.88359374)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.864531,-0.21359375){$h$}
+\end{pspicture} 
+}
+\end{center}
+& 
+
+
 \begin{aligned}
   $V &= 2l \times 2b \times 2h \\
  &= 8(lbh)\\
@@ -2218,12 +2526,29 @@ Multiply three dimensions by $2$ &
 \end{table}
 \end{center}
 
-n this case we examined the effect of multiplying with a constant factor of $2$. We can express
+In this case we examined the effect of multiplying with a constant factor of $2$. We can express
 it more in terms of any common factor $k$:
 \begin{wex}{}
  {
 Consider a square prism with a height of 4cm and base lengths of $3$ cm.
-%diagram here - pdf p. 27
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.293208)(5.519142,1.2436045)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=130.79651](1.6439155,-0.0028731462)(1.2616725,1.0826066)
+\psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2356775,0.0054858387)(1.27,1.0687643)
+\psline[linewidth=0.027999999](0.85914207,0.94960445)(2.5183952,1.2296045)(4.019142,0.9796044)
+\psline[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm](0.8815407,-0.63039553)(2.419142,-0.32039556)(4.019142,-0.66039556)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.824142,0.20960444){$4$ cm}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.424142,-1.0903956){$3$ cm}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.624142,-1.0303955){$3$ cm}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.499142,1.2196045)(2.5191422,0.6796044)
+\end{pspicture} 
+}
+\end{center}
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item calculate the original surface area and volume
@@ -2272,7 +2597,34 @@ A_n&= 306\mbox{ cm}^2\\
  {
 Prove that if the height of a rectangular prism with dimensions $l$,$b$ and $h$ is multiplied by a
 constant value of $k$, the volume will also increase by a factor $k$.
-%Diagram here - p.28 of pdf
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1364063)(4.0990624,1.1164062)
+\psline[linewidth=0.04cm](0.02,0.8564063)(0.02,-0.02359375)
+\psline[linewidth=0.04cm](0.0,0.83640623)(2.32,0.27640626)
+\psline[linewidth=0.04cm](2.2794049,-0.5718663)(3.1088746,-0.30507085)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.01770038,0.004156353)(0.84,0.31640625)
+\psline[linewidth=0.04cm](0.009931098,0.8281822)(0.83940095,1.0949776)
+\psline[linewidth=0.04cm](2.293427,0.2667113)(3.1228967,0.5335067)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,0.29640624)(3.0943224,-0.3008174)
+\psline[linewidth=0.04cm](0.0,-0.00359375)(2.2848525,-0.5676128)
+\psline[linewidth=0.04cm](0.8,1.0964062)(3.126553,0.5432085)
+\psline[linewidth=0.04cm](2.3,0.29640624)(2.2994049,-0.5718663)
+\psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,1.0764062)(0.84,0.31640625)
+\psline[linewidth=0.04cm](3.1,0.5364063)(3.1,-0.32359374)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.04,-0.26359376)(1.94,-0.76359373)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.52,-0.7235938)(3.08,-0.5235937)
+\psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.32,0.47640625)(3.32,-0.26359376)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.8045313,-0.73359376){$l$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.9245312,-0.93359375){$b$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.7245312,0.14640625){$h$}
+\end{pspicture} 
+}
+\end{center}
 }
 {
 \westep{}
@@ -2294,8 +2646,21 @@ $k$.
 
 \begin{wex}{}
 {Consider a cylinder with a radius of $r$ and a height of $h$. Calculate the new volume and surface area (expressed in terms of $r$ and $h$)
-if the radius is multiplied by a constant factor of $k$.}
-% diagram needed here - pdf p. 28
+if the radius is multiplied by a constant factor of $k$.
+\begin{center}
+\begin{pspicture}(0,-1.6)(3.5434375,1.6) 
+\psellipse[linewidth=0.04,dimen=outer](1.29,-1.09)(1.27,0.51) 
+\psellipse[linewidth=0.04,dimen=outer](1.27,1.09)(1.27,0.51) 
+\psline[linewidth=0.04cm](0.04,-1.1)(0.02,1.14) 
+\psline[linewidth=0.04cm](2.54,1.12)(2.56,-1.1) 
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.3, -1.1)(2.52,-1.1) 
+\rput(1.7,-0.95){$r$} 
+\rput(2.9,0.25){$h$} 
+\end{pspicture} 
+\end{center}
+
+}
+
 {
 \westep{Calculate the original volume and area of the cylinder in terms of $r$ and $h$}
 \begin{align*}
@@ -2336,26 +2701,148 @@ find the new surface area and volume for a prism if all dimensions are increased
 
 \begin{eocexercises}{}
 Consider the solids below and answer the questions that follow (rounded to one decimal place, if necessary):
-% diagram needed here - pdf p. 29
- \begin{enumerate}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-  \item Calculate the surface area 
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.9464064)(10.693593,3.9264061)
+\psline[linewidth=0.04cm](0.75328124,-3.513594)(1.7532812,-2.533594)
+\psline[linewidth=0.04cm](3.753281,-3.493594)(4.733281,-2.533594)
+\psline[linewidth=0.04cm](0.7732813,-3.513594)(3.753281,-3.493594)
+\psline[linewidth=0.04cm](1.7532812,-2.513594)(4.733281,-2.513594)
+\psline[linewidth=0.04cm](4.753281,-1.4735942)(4.733281,-2.573594)
+\psline[linewidth=0.04cm](1.7532812,-1.493594)(1.7732812,-2.513594)
+\psline[linewidth=0.04cm](1.7732812,-1.513594)(4.753281,-1.493594)
+\psline[linewidth=0.04cm](3.753281,-2.433594)(3.753281,-3.493594)
+\psline[linewidth=0.04cm](0.75328124,-2.473594)(0.75328124,-3.533594)
+\psline[linewidth=0.04cm](0.75328124,-2.4535937)(3.7332811,-2.4535937)
+\psline[linewidth=0.04cm](0.7732813,-2.4535937)(1.7532812,-1.513594)
+\psline[linewidth=0.04cm](3.753281,-2.4535937)(4.733281,-1.513594)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.3409375,-0.818594){\textbf{1.}}%number for box
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.1515625,-3.7435937){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.7346873,-3.1435938){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.2,-2.043594){$2$ cm}
+\psellipse[linewidth=0.04,dimen=outer](2.203281,1.1064061)(0.99,0.38)
+\psellipse[linewidth=0.04,dimen=outer](2.203281,2.446406)(0.99,0.38)
+\psline[linewidth=0.04cm](1.233281,2.4064062)(1.233281,1.1464062)
+\psline[linewidth=0.04cm](3.173282,2.446406)(3.173282,1.1264061)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.233281,1.086406)(3.153281,1.1064061)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.197657,1.2364061){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.646093,1.8564061){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.96203125,3.2814062){\textbf{3.}}%number for cylinder
+\pstriangle[linewidth=0.04,dimen=outer](7.083281,0.76640624)(2.18,1.72)
+\psline[linewidth=0.04cm](7.0732813,2.466406)(9.433281,3.886406)
+\psline[linewidth=0.04cm](6.0532813,0.80640626)(9.233281,2.8864062)
+\psline[linewidth=0.04cm](9.433281,3.9064062)(10.653281,2.566406)
+\psline[linewidth=0.04cm](8.133282,0.7864063)(10.653281,2.5664062)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](7.0732813,2.4264064)(7.0532813,0.7864063)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(6.3378124,3.4014063){\textbf{2.}}%number for prism
+% \usefont{T1}{ptm}{m}{n}
+\rput(9.888594,1.4764062){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.591875,1.2892188){$3$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.0415626,0.51640624){$8$ cm}
+\psline[linewidth=0.04cm](9.433281,3.9064062)(9.233281,2.8664062)
+\psline[linewidth=0.04cm](10.653281,2.5664062)(9.193281,2.8664062)
+% \usefont{T1}{ptm}{m}{n}
+\rput{58.291424}(4.633092,-4.489355){\rput(6.311875,1.9092188){$5$ cm}}
+\end{pspicture} 
+}
+\end{center}
+ \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+  \item Calculate the surface area of each solid
 \item Calculate volume of each solid
 \item If the dimensions of the solid are increased by a factor of $3$, calculate the new surface area of each solid.
 \item If the dimensions of the solid are increased by a factor of $3$, calculate the new volume of each solid.
  \end{enumerate}
-
-\begin{enumerate}
-[noitemsep, label=\textbf{\arabic*}. ] 
+Consider the figures below:
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-5.4207597)(13.96,5.741175)
+\definecolor{color3715b}{rgb}{0.996078431372549,0.996078431372549,0.996078431372549}
+\psline[linewidth=0.028222222](1.5205463,1.1100069)(3.6089423,5.727064)(5.826165,1.0025685)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.16cm](3.6189375,5.6354227)(3.536479,0.9065488)(5.762867,0.8787319)(5.762867,1.0178165)(5.735381,1.0178165)
+% \usefont{T1}{ppl}{m}{n}
+\rput(4.409931,3.5911753){\LARGE $10$ cm}
+\psbezier[linewidth=0.027999999](1.5803465,1.2359936)(1.274511,0.5430677)(2.1971436,-0.3388383)(3.3043027,-0.40183172)(4.4114614,-0.46482512)(5.826165,0.039121386)(5.826165,1.0470136)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.16cm 0.16cm](5.826165,0.9840206)(5.457112,1.55096)(4.7805147,1.9310416)(3.888852,1.9614773)(2.9971886,1.991913)(2.2586524,1.9289197)(1.5205463,1.0470136)
+\psframe[linewidth=0.04,dimen=outer](3.9003997,1.3011752)(3.5004,0.9011754)
+% \usefont{T1}{ppl}{m}{n}
+\rput(4.809931,1.1911753){\LARGE $3$ cm}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(1.5420313,5.5008936){\textbf{1.}}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(8.442031,5.5008936){\textbf{2.}}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(0.96203125,-2.3191063){\textbf{3.}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(0.004622919,-0.1373882){\rput(13.026947,0.3702635){\LARGE $15$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(-0.006498412,0.16914946){\rput(9.374943,0.4457077){\LARGE $15$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{90.771416}(14.303988,-7.492464){\rput(10.82,3.3058937){\LARGE  $12$ cm}}
+\psline[linewidth=0.04cm](13.92,1.7008936)(11.12,5.5208936)
+\psline[linewidth=0.04cm](11.28,-0.1791063)(11.12,5.5408936)
+\psline[linewidth=0.04cm](11.12,5.5408936)(8.4,1.8008937)
+\psline[linewidth=0.04cm](8.42,1.8008937)(11.16,3.5608938)
+\psline[linewidth=0.04cm](11.14,3.5608938)(13.94,1.6808937)
+\psline[linewidth=0.04cm](8.38,1.8008937)(11.28,-0.1991063)
+\psline[linewidth=0.04cm](11.28,-0.1991063)(13.94,1.6808937)
+\psdots[dotsize=0.12](11.0,1.8408937)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.02,1.8608937)(11.1,5.4208937)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
+\psline[linewidth=0.04cm](10.78,1.9808937)(10.78,2.3408937)
+\psline[linewidth=0.04cm](10.76,2.3408937)(11.04,2.1408937)
+\rput{14.5046}(-0.70283186,-0.89219034){\pswedge[linewidth=0.04](3.1540546,-3.2075646){2.0675611}{178.8065}{0.0}}
+\rput{13.78588}(-0.6714317,-0.8455882){\psellipse[linewidth=0.04,dimen=outer,fillstyle=solid,fillcolor=color3715b](3.1616797,-3.1998694)(2.0922363,0.47717163)}
+\psdots[dotsize=0.12](3.1473527,-3.2047362)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.1332812,-3.2387989)(5.147353,-2.7047362)
+% \usefont{T1}{ptm}{m}{n}
+\rput{14.285164}(-0.57707244,-1.0637248){\rput(3.9257896,-2.8347287){\LARGE $4$ cm}}
+\end{pspicture} 
+}
+\end{center}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{4}
- \item Calculate the surface area and volume pf each of the following solids:
-% diagram needed here - pdf p. 30
-\item Calculate the volume and surface area of the solid below (correct to 1 decimal place):
-% \diagram needed here - p. 30 of pdf
-\end{enumerate}
+ \item Calculate the surface area of each of the solids
+\item Calculate the volume of each of the solids
 
+\end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{6}
+\item Calculate the volume and surface area of the solid below (correct to 1 decimal place):
+\end{enumerate}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.4992187)(4.081249,1.5192188)
+\psellipse[linewidth=0.04,dimen=outer](2.2743747,-1.1192187)(0.99,0.38)
+\psellipse[linewidth=0.04,dimen=outer](2.2743747,0.22078115)(0.99,0.38)
+\psline[linewidth=0.04cm](1.3043747,0.18078145)(1.3043747,-1.0792186)
+\psline[linewidth=0.04cm](3.2443757,0.22078115)(3.2443757,-1.0992187)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.3043747,-1.1392188)(3.2243748,-1.1192187)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.518282,-0.96921873){$40$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.596718,-0.44921875){$50$}
+\psline[linewidth=0.04](1.31,0.27921876)(2.33,1.4992187)(3.23,0.29921874)(3.23,0.27921876)(3.23,0.27921876)
+\psline[linewidth=0.027999999](0.93,1.4592187)(0.67,1.4592187)(0.67,0.29921874)(0.93,0.29921874)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.38453126,0.88921875){$30$}
+\end{pspicture} 
+}
+
+\end{center}
+
+}
 \end{eocexercises}
 
-
-
- 
-\end{wex}
