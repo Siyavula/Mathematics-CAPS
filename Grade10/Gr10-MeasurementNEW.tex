@@ -1,9 +1,9 @@
-\chapter{  Measurements  }  
+\chapter{ Measurements  }  
 This chapter examines the surface areas and volumes of three dimensional objects otherwise
 known as solids. In order to work with these, you need to know how to calculate the surface
 area and perimeter of the two dimensional shapes below.
 
-\section{ Areas of Polygons }
+\section{Areas of Polygons }
 
 \begin{table*}[h]
 \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
@@ -142,7 +142,7 @@ $ \pi r^2 $ \\ \hline
     \end{center}
     }{
 
-    \westep{We first need to find the height, BE, of the parallelogram. We can use Pythagoras to do this}
+    \westep{We first need to find the height,$ BE$, of the parallelogram. We can use the Theorem of Pythagoras to do this}
     \begin{eqnarray*}
 	BE^2 &=& AB^2 - AE^2\\
 	&=& 5^2 - 3^2\\
@@ -163,7 +163,7 @@ $ \pi r^2 $ \\ \hline
 \begin{exercises}{Polygons}
 
 
-Find the areas of each of the given figures -- remember area is measured in square units (cm${}^{2}$, m${}^{2}$, mm${}^{2}$).
+Find the areas of each of the given figures - remember area is measured in square units (cm${}^{2}$, m${}^{2}$, mm${}^{2}$).
 \begin{center}
 \scalebox{0.9}
 {
@@ -1234,16 +1234,16 @@ direction.
 
 
 
-\begin{table*}[h]
+\begin{table}[H]
 \newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
 \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-\newcolumntype{E}{>{\centering\arraybackslash} m{4.2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
 \begin{tabular}{|C|D|E|}
 \hline
 \textbf{Square based pyramid}
 &
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.7533308)(4.7674937,1.7533307)
 \pspolygon[linewidth=0.028222222,fillstyle=solid](0.095092274,-0.6499687)(2.4242375,1.7392195)(3.794405,-0.4034652)
@@ -1259,15 +1259,17 @@ direction.
 \end{center} 
 &
 $\begin{aligned}
-\mbox{Surface area} &=  \mbox{sum of all the areas of all the faces}\\
-&= \mbox{area of base} +\frac{1}{2} \times \mbox{perimeter of base} \times \mbox{slant height of pyramid}
+\mbox{\small Surface area} &=  \mbox{\small sum of all the areas of all the faces}\\
+&= \mbox{\small area of base } + \textstyle {\frac{1}{2}} \times \\
+&~~~~~~\mbox{\small perimeter of base } \times \\
+&~~~~~~\mbox{\small slant height of pyramid}
  \end{aligned}$
 \\ \hline
 
 
 \textbf{Triangular based pyramid} &
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.9570557)(4.1857533,1.9570556)
 \pspolygon[linewidth=0.028222222,fillstyle=solid](0.21823838,-0.536357)(1.4964722,1.917448)(4.0877037,-1.236487)
@@ -1282,14 +1284,16 @@ $\begin{aligned}
 &
 
 $\begin{aligned}
-\mbox{Surface area} &=  \mbox{sum of all the areas of all the faces}\\
-&= \mbox{area of base} +\frac{1}{2} \times \mbox{perimeter of base} \times \mbox{slant height of pyramid}
+\mbox{\small Surface area} &=  \mbox{\small sum of all the areas of all the faces}\\
+&= \mbox{\small area of base } + \textstyle {\frac{1}{2}} \times \\
+&~~~~~~\mbox{\small perimeter of base } \times \\
+&~~~~~~\mbox{\small slant height of pyramid}
  \end{aligned}$
  \\ \hline
 
 \textbf{Right cone} &
 \begin{center}
- \scalebox{0.9} % Change this value to rescale the drawing.
+ \scalebox{0.7} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
 \psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
@@ -1312,7 +1316,7 @@ $\begin{aligned}
 &
 
 $\begin{aligned}
-\mbox{Surface area} &=  \mbox{area of base }+\mbox{ area of walls}\\
+\mbox{\small Surface area} &=  \mbox{\small area of base }+\mbox{\small area of walls}\\
 &= \pi r^{2} +(\frac{1}{2} \times 2\pi rh)\\
 &=\pi r^{2} +\pi rh\\
 &=\pi r(r+h)\\
@@ -1320,7 +1324,7 @@ $\begin{aligned}
 
 \textbf{Sphere} &
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.9)(3.8,1.9)
 \pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
@@ -1337,12 +1341,12 @@ $\begin{aligned}
 
 &
 $\begin{aligned}
-\mbox{Surface area} &=  4\pi r^{2}
+\mbox{\small Surface area} &=  4\pi r^{2}
  \end{aligned}$\\ \hline
 
 
 \end{tabular}
-\end{table*}
+\end{table}
 
 \begin{wex}{Finding the surface area of a triangular pyramid}
  {Find the total surface area of the following solid (correct to one decimal place):\\
@@ -1374,8 +1378,9 @@ $\begin{aligned}
  \mbox{area of triangle} = \frac{1}{2} bh
 \end{align*}
 We don't have the height yet but it can be calculated using the Theorem of Pythagoras:
+\\
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.1564062)(4.64,2.097329)
 \pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
@@ -1389,7 +1394,6 @@ We don't have the height yet but it can be calculated using the Theorem of Pytha
 \rput(2.5845313,0.04640625){$h$}
 \end{pspicture} 
 }
-
 \end{center}
 
 \begin{align*}
@@ -1410,5 +1414,674 @@ We don't have the height yet but it can be calculated using the Theorem of Pytha
  \mbox{total surface area} &= 9\sqrt{3} + 90\\
 &=105,9\mbox{ cm}^2
 \end{align*}
+}
+\end{wex}
+
+\begin{wex}{Finding the surface area of a cone}
+ {Find the total surface area of the following solid (correct to one decimal place):
+\begin{center}
+ \scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8704202,1.0400556){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$14$ cm}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Find the area of the base of the shape}
+\begin{align*}
+ \mbox{area of circle} &= \pi r^2\\
+&= \pi4^2\\
+&=16\pi
+\end{align*}
+
+\westep{Find the area of the sides}
+\begin{align*}
+ \mbox{area of sides} &= \pi rh
+\end{align*}
+We still need to find the slant height $h$. We can do this using the Theorem of Pythagoras:\\
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7,0.62640625){$H$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.7,0.04640625){$14$ cm}
+\end{pspicture}
+ 
+}
+\end{center}
+\begin{align*}
+ h^2 &= 4^2 + 14^2\\
+\therefore h &= \sqrt{4^2 + 14^2}\\
+&= 2\sqrt{53}\\
+\therefore \mbox{ area of sides } &= \pi(4)(2\sqrt{53})\\
+&= 8\sqrt{53}~\pi
+\end{align*}
+\westep{Find the sum of the areas}
+\begin{align*}
+\mbox{total surface area } &= 16\pi + 8\sqrt{53}~\pi\\
+&=233,2\mbox{ cm}^2
+\end{align*}
+}
+\end{wex}
+
+\begin{wex}{Finding the surface area of a sphere}
+ {Find the total surface area of the following solid (correct to one decimal place):
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.6345313,0.2){$5$ cm}
+\end{pspicture} 
+}
+
+\end{center}
+}
+{
+\westep{Use the formula to find the surface area}
+\begin{align*}
+ \mbox{surface area of sphere} &= 4 \pi r^2\\
+&= 4\pi5^2\\
+&=100\pi\\
+&=314,2\mbox{ cm}^2
+\end{align*}
+}
+
+\end{wex}
+
+
+\begin{wex}
+{Surface Area}
+{If a cone has a height of $h$ and a base of radius $r$, show that the surface area is $\pi r^2 + \pi r \sqrt{r^2+h^2}$.}
+{
+\westep{Draw a picture}
+\begin{center}
+\begin{pspicture}(-5,-2)(2,2)
+%\psgrid
+\rput(-3.5,0){
+\psellipse[fillcolor=white,fillstyle=solid](0,-1)(1.5,1)
+\pspolygon[fillcolor=white,fillstyle=solid,linestyle=none](-1.5,-1)(0,2)(1.5,-1)
+\psellipse[linestyle=dotted](0,-1)(1.5,1)
+\psline(-1.5,-1)(0,2)(1.5,-1)
+\psline[arrows=<->](-1.5,-1)(0,-1)
+\uput[d](-0.75,-1){$r$}
+\psline[arrows=<->](0,-1)(0,2)
+\uput[r](0,0.5){$h$}
+\psline(-0.4,-1.0)(-0.4,-0.6)(-0.0,-0.6) %Right Angle
+}
+\pspolygon(-1.5,-1)(0,2)(1.5,-1)
+\psline[arrows=<->](-1.5,-1.2)(0,-1.2)
+\uput[d](-0.75,-1.2){$r$}
+\psline[arrows=<->](0,-1)(0,2)
+\uput[r](0,0.5){$h$}
+\uput[l](-0.75,0.5){$a$}
+\psline(-0.4,-1.0)(-0.4,-0.6)(-0.0,-0.6)
+\end{pspicture}
+\end{center}
+
+
+\westep{Identify the faces that make up the cone}
+The cone has two faces: the base and the walls. The base is a circle of radius $r$ and the walls can be opened out to a sector of a circle. \\
+
+ \scalebox{1} % Change this value to rescale the drawing. 
+{ \begin{pspicture}(0,-1.2046875)(7.8553123,1.1646875) 
+\psline[linewidth=0.04cm](1.24,1.1046875)(0.02,-0.3753125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(2.44,-0.3753125) 
+\psarc[linewidth=0.04](1.24,1.0046875){1.84}{228.81407}{312.27368} 
+\psline[linewidth=0.04cm](1.24,1.0846875)(0.18,-0.4953125) 
+\psline[linewidth=0.04cm](1.24,1.0846875)(0.34,-0.5953125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(0.5,-0.6753125) 
+\psline[linewidth=0.04cm](1.22,1.1046875)(0.7,-0.7353125) 
+\psline[linewidth=0.04cm](1.22,1.0846875)(0.92,-0.8153125) 
+\psline[linewidth=0.04cm](3.98,-0.6753125)(7.6,-0.6753125) 
+\psline[linewidth=0.04cm](3.98,-0.6753125)(4.16,1.1246876) 
+\psline[linewidth=0.04cm](4.16,1.1246876)(4.24,-0.6753125) 
+\psline[linewidth=0.04cm](4.24,-0.6553125)(4.42,1.1446875) 
+\psline[linewidth=0.04cm](4.42,1.1446875)(4.5,-0.6553125) 
+\psline[linewidth=0.04cm](4.5,-0.6953125)(4.68,1.1046875) 
+\psline[linewidth=0.04cm](4.68,1.1046875)(4.76,-0.6953125) 
+\psline[linewidth=0.04cm](4.76,-0.6753125)(4.94,1.1246876) 
+\psline[linewidth=0.04cm](4.94,1.1246876)(5.02,-0.6753125) 
+\psline[linewidth=0.04cm](5.02,-0.6753125)(5.2,1.1246876) 
+\psline[linewidth=0.04cm](5.2,1.1246876)(5.28,-0.6753125) 
+\psline[linewidth=0.04cm](5.28,-0.6753125)(5.46,1.1246876) 
+\psline[linewidth=0.04cm](5.46,1.1246876)(5.54,-0.6753125) 
+\psline[linewidth=0.04cm](3.96,-0.6753125)(5.58,-0.6753125) 
+\psline[linewidth=0.04cm](5.54,-0.6753125)(5.72,1.1246876) 
+\psline[linewidth=0.04cm](5.72,1.1246876)(5.8,-0.6753125) 
+\psline[linewidth=0.04cm](5.8,-0.6753125)(5.98,1.1246876) 
+\psline[linewidth=0.04cm](5.98,1.1246876)(6.06,-0.6753125) 
+\psline[linewidth=0.04cm](6.06,-0.6953125)(6.24,1.1046875) 
+\psline[linewidth=0.04cm](6.24,1.1046875)(6.32,-0.6953125) 
+\psline[linewidth=0.04cm](6.32,-0.6553125)(6.5,1.1446875) 
+\psline[linewidth=0.04cm](6.5,1.1446875)(6.58,-0.6553125) 
+\psline[linewidth=0.04cm](6.58,-0.6753125)(6.76,1.1246876) 
+\psline[linewidth=0.04cm](6.76,1.1246876)(6.84,-0.6753125) 
+\psline[linewidth=0.04cm](6.84,-0.6753125)(7.02,1.1246876) 
+\psline[linewidth=0.04cm](7.02,1.1246876)(7.1,-0.6753125) 
+\psline[linewidth=0.04cm](7.1,-0.6753125)(7.28,1.1246876) 
+\psline[linewidth=0.04cm](7.28,1.1246876)(7.36,-0.6753125) 
+\psline[linewidth=0.04cm](7.36,-0.6553125)(7.54,1.1446875) 
+\psline[linewidth=0.04cm](7.54,1.1446875)(7.62,-0.6553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.16,-0.8153125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.1246876)(1.42,-0.8553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.66,-0.7553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.22,1.0846875)(1.94,-0.6553125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm](1.2,1.0846875)(2.22,-0.5353125) 
+\psline[linewidth=0.11cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(2.46,0.4246875)(3.04,0.4246875) 
+\rput(3.6859374,0.4146875){$a$} 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.68,0.2646875)(3.68,-0.6753125) 
+\psline[linewidth=0.03cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(3.68,0.5446875)(3.68,1.1246876) 
+\rput(5.6826563,-0.9853125){$2\pi r$ = circumference} \end{pspicture} } 
+\\ This curved surface can be cut into many thin triangles with height close to $a$ ($a$ is called the \emph{slant height}). The area of these triangles will add up to $\frac{1}{2}\times$base$\times$height(of a small triangle) which is $\frac{1}{2}\times2\pi r \times a = \pi r a $ 
+
+\westep{Calculate $a$}
+    $a$ can be calculated by using the Theorem of Pythagoras. Therefore:
+\begin{equation*}
+a = \sqrt{r^{2} + h^{2}}
+\end{equation*}
+\westep{Calculate the area of the circular base}
+\begin{equation*}
+A_{b} = \pi r^{2}
+\end{equation*}
+\westep{Calculate the area of the curved walls}
+\begin{eqnarray*}
+A_{w} &=& \pi r a \\
+&=& \pi r \sqrt{r^{2}+h^{2}}
+\end{eqnarray*}
+\westep{Calculate surface area $A$}
+\begin{eqnarray*}
+ A &=& A_{b} + A_{w} \\
+  &=& \pi r^{2} + \pi r \sqrt{r^{2}+h^{2}}
+\end{eqnarray*}
+}
+\end{wex}
+
+\subsection*{Volume of pyramids, cones and spheres}
+
+Volume is measured in cubic units, for example cm$^2$, m$^2$ or mm$^2$.
+
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+\begin{tabular}{|C|D|E|}
+\hline
+\textbf{Square based pyramid}
+&
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.7533308)(4.7674937,1.7533307)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.095092274,-0.6499687)(2.4242375,1.7392195)(3.794405,-0.4034652)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.753383,-1.4825138)(2.4242375,1.7392195)(1.0540702,-1.7392195)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](1.0593361,-1.7392195)(2.3858888,1.7068307)(0.0,-0.68902683)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.0,-0.68902683)(3.0107446,-0.45565066)
+\psline[linewidth=0.027999999,linestyle=dotted,dotsep=0.1cm](2.465889,1.6668307)(2.3658888,-1.0331693)(3.3458889,-1.5931693)(2.445889,1.6268307)(2.445889,1.6268307)(2.485889,1.5868307)
+\psline[linewidth=0.024cm,linestyle=dashed,dash=0.1cm 0.1cm](3.025889,-0.4731693)(4.7258887,-1.4731693)
+\psline[linewidth=0.02](2.3658888,-0.8331693)(2.545889,-0.9131693)(2.545889,-1.1331693)(2.3658888,-1.0531694)
+\psline[linewidth=0.02cm](2.3658888,-0.8531693)(2.3658888,-1.0531694)
+\end{pspicture} 
+}
+\end{center} 
+&
+$\begin{aligned}
+\mbox{ Volume} &=  \frac{1}{3} \mbox{ area of base}\\
+&~~~~~~\times \mbox{height of pyramid }
+ \end{aligned}$
+\\ \hline
+
+
+\textbf{Triangular based pyramid} &
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9570557)(4.1857533,1.9570556)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.21823838,-0.536357)(1.4964722,1.917448)(4.0877037,-1.236487)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.20588888,-1.9170556)(1.4658889,1.8429444)(0.0,-0.5359847)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.171642,-1.3293833)(1.4975125,1.9429444)(0.21393035,-1.9429444)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.0,-0.5359847)(4.1181593,-1.2729638)
+\psline[linewidth=0.024,linestyle=dotted,dotsep=0.1cm](1.4858888,1.8829445)(1.4458889,-1.2770555)(4.145889,-1.3170556)
+\psline[linewidth=0.02](1.4458889,-1.0570556)(1.6658889,-1.0570556)(1.6645871,-1.2770555)(1.4458889,-1.2770555)(1.4458889,-1.0570556)
+\end{pspicture} 
+}
+\end{center}
+&
+
+$\begin{aligned}
+\mbox{Volume} &= \frac{1}{3} \mbox{ area of base}\\
+&~~~~~~\times \mbox{ height of pyramid }
+ \end{aligned}$
+ \\ \hline
+
+\textbf{Right cone} &
+\begin{center}
+ \scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8704202,1.0400556){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$r$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$H$}
+\end{pspicture} 
+}
+\end{center}
+
+
+
+&
+
+$\begin{aligned}
+\mbox{Volume} &=  \frac{1}{3}\mbox{ area of base}\\
+&~~~~~~\times \mbox{ height of cone }\\
+&= \frac{1}{3} \times \pi r^2 \times h
+ \end{aligned}$\\ \hline
+
+\textbf{Sphere} &
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.6345313,0.2){$r$}
+\end{pspicture} 
+}
+
+\end{center}
+
+
+&
+$\begin{aligned}
+\mbox{Volume} &=  \frac{4}{3}\pi r^{3}
+ \end{aligned}$\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+\begin{wex}{Volume of a Pyramid}
+{
+What is the volume of a square pyramid, $3$ cm high with a side length of $2$ cm?
+}
+{
+\westep{Determine the correct formula}
+The volume of a pyramid is 
+$$V=\frac{1}{3}A\cdot h,$$ \\
+where $A$ is the area of the base and $h$ is the height of the pyramid. For a square base this means
+$$V = \frac{1}{3}a\cdot a \cdot h$$ \\
+where $a$ is the length of the side of the square base.
+
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+% \begin{pspicture}(0,-2.95)(6.02,2.95)
+% % \usefont{T1}{ptm}{m}{n}
+% \rput{0.6029805}(-0.0218156,-0.0519640){\rput(4.896719,-2.12){$2$ cm}}
+% % \usefont{T1}{ptm}{m}{n}
+% \rput{-1.0300905}(0.0386375,0.0202694){\rput(1.1167188,-2.16){$2$ cm}}
+% % \usefont{T1}{ptm}{m}{n}
+% \rput(2.5659375,1.315){\small $3$ cm}
+% \psline[linewidth=0.04cm](5.98,-0.91)(3.18,2.91)
+% \psline[linewidth=0.04cm](3.0,-2.93)(3.18,2.93)
+% \psline[linewidth=0.04cm](3.18,2.93)(0.0,-0.87)
+% \psline[linewidth=0.04cm](0.0,-0.89)(3.02,1.09)
+% \psline[linewidth=0.04cm](3.0,1.07)(5.98,-0.91)
+% \psline[linewidth=0.04cm](0.06,-0.89)(3.0,-2.91)
+% \psline[linewidth=0.04cm](3.0,-2.89)(6.0,-0.93)
+% \psdots[dotsize=0.12](2.98,-0.87)
+% \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.9,-0.81)(3.0,2.75)
+% \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.94,-0.79)(1.34,0.09)
+% \psline[linewidth=0.04cm](2.6,-0.63)(2.6,-0.37)
+% \psline[linewidth=0.04cm](2.62,-0.39)(2.82,-0.39)
+% \end{pspicture} 
+\begin{pspicture}(0,-2.89)(5.58,2.89)
+% \usefont{T1}{ptm}{m}{n}
+\rput{0.6029805}(-0.022694819,-0.047077317){\rput(4.4319425,-2.1803145){$2~$cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-1.0300905}(0.040004794,0.011890239){\rput(1,-2.2194574){$2~$cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.0929687,1.255){\small $3~$cm}
+\psline[linewidth=0.04cm](5.54,-0.97)(2.74,2.85)
+\psline[linewidth=0.04cm](2.9,-2.85)(2.74,2.87)
+\psline[linewidth=0.04cm](2.74,2.87)(0.02,-0.87)
+\psline[linewidth=0.04cm](0.04,-0.87)(2.78,0.89)
+\psline[linewidth=0.04cm](2.76,0.89)(5.56,-0.99)
+\psline[linewidth=0.04cm](0.0,-0.87)(2.9,-2.87)
+\psline[linewidth=0.04cm](2.9,-2.87)(5.56,-0.99)
+\psdots[dotsize=0.12](2.62,-0.83)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](2.64,-0.81)(2.72,2.75)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](2.62,-0.85)(1.44,0.03)
+\psline[linewidth=0.04cm](2.4,-0.69)(2.4,-0.33)
+\psline[linewidth=0.04cm](2.38,-0.33)(2.66,-0.53)
+\end{pspicture} 
+}
+\end{center}
+
+\westep{Substitute the given values}
+\begin{eqnarray*}
+&=&\frac{1}{3}\cdot 2 \cdot 2 \cdot 3\\
+&=&\frac{1}{3} \cdot 12\\
+&=&4\textnormal{ cm}^3
+\end{eqnarray*}
+}
+\end{wex}
+
+
+\begin{wex}{Finding the volume of a triangular pyramid}
+ {Find the volume of the following solid (correct to one decimal place):\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1164062)(4.2998643,2.0905173)
+\pspolygon[linewidth=0.028222222,fillstyle=solid, fillcolor=lightgray](0.33234948,-0.4028952)(1.6105834,2.0509098)(4.2018147,-1.1030252)
+\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](0.32,-1.7835938)(1.58,1.9764062)(0.11411111,-0.40252292)
+\pspolygon[linewidth=0.028222222,fillstyle=solid,fillcolor=lightgray](4.2857533,-1.1959214)(1.6116236,2.0764062)(0.32804146,-1.8094827)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.11411111,-0.40252292)(4.2322707,-1.139502)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.6,2.0764062)(2.26,-1.5035938)
+\psline[linewidth=0.024](2.22,-1.2635938)(2.44,-1.2235937)(2.48,-1.4635937)(2.5,-1.4635937)
+\psline[linewidth=0.04cm](1.86,-0.5835938)(1.8,-0.8435938)
+\psline[linewidth=0.04cm](0.0,-1.0835937)(0.34,-1.0235938)
+\psline[linewidth=0.04cm](1.78,-1.4435937)(1.96,-1.7035937)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.485,-1.9135938){$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.4,0.38640624){$12$ cm}
+\end{pspicture} 
+}
+\end{center}
+}
+
+{
+\westep{Find the area of the base of the shape}
+\begin{align*}
+ \mbox{area of triangle} = \frac{1}{2} bh
+\end{align*}
+We don't have the height yet but it can be calculated using the Theorem of Pythagoras:
+\\
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$8$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$h$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+ 8^2 &= 4^2+h^2\\
+\therefore h&=\sqrt{8^2-3^2}\\
+&=4\sqrt{3}\\
+\therefore \mbox{ area of triangle} &= \frac{1}{2} \times 8 \times 3\sqrt{3}\\
+&=16\sqrt{3}\mbox{ cm}^2
+\end{align*}
+
+\westep{Find the height $H$ of the triangle to calculate the volume}
+We don't have the height yet but it can be calculated by bisecting the pyramid abd using the Theorem of Pythagoras:
+\\
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$12$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$H$}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+ 12^2 &= 4^2+h^2\\
+\therefore H&=\sqrt{12^2-4^2}\\
+&=8\sqrt{2}\\
+\therefore \mbox{ volume} &= \frac{1}{3} \times 16\sqrt{3} \times 8\sqrt{2}\\
+&=104,5\mbox{ cm}^3
+\end{align*}
+}
+\end{wex}
+
+\begin{wex}{Finding the volume of a cone}
+ {Find the volume of the following solid (correct to one decimal place):
+\begin{center}
+ \scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1099448)(4.5657654,3.1100557)
+\psline[linewidth=0.028222222](0.24603535,-1.5211127)(2.3344314,3.0959444)(4.551654,-1.6285512)
+\psbezier[linewidth=0.027999999](0.3058355,-1.3951261)(0.0,-2.088052)(0.9226326,-2.969958)(2.0297916,-3.0329514)(3.1369507,-3.0959444)(4.551654,-2.5919983)(4.551654,-1.584106)
+\psbezier[linewidth=0.022,linestyle=dashed,dash=0.1cm 0.1cm](4.551654,-1.6470991)(4.182601,-1.0801597)(3.5060039,-0.70007807)(2.6143408,-0.6696424)(1.7226781,-0.6392067)(0.9841414,-0.7022)(0.24603535,-1.584106)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
+\psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8704202,1.0400556){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.56042,-1.4399444){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.8404201,0.24005564){$11$ cm}
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Find the area of the base of the shape}
+\begin{align*}
+ \mbox{area of circle} &= \pi r^2\\
+&= \pi3^2\\
+&=9\pi
+\end{align*}
+
+\westep{Multiply the area of the base by $\frac{1}{3} \times $ height of pyramid to get the volume}
+\begin{align*}
+ \mbox{volume} &= \frac{1}{3} \times 9\pi 11
+&=103,7 \mbox{ units}^3
+\end{align*}
+}
+\end{wex}
+
+\begin{wex}{Finding the volume of a sphere}
+ {Find the total volume of the following solid (correct to one decimal place):
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9)(3.8,1.9)
+\pscircle[linewidth=0.027999999,dimen=outer](1.9,0.0){1.9}
+\psellipse[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm,dimen=outer](1.9,-0.13)(1.84,0.23)
+\psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](1.96,-0.14)(3.74,-0.14)
+\psdots[dotsize=0.09](1.92,-0.16)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.6345313,0.2){$4$ cm}
+\end{pspicture} 
+}
+
+\end{center}
+}
+{
+\westep{Use the formula to find the volume}
+\begin{align*}
+ \mbox{volume} &= \frac{4}{3} \pi r^3\\
+&= \frac{4}{3}\pi(4)^2\\
+&=268,1\mbox{ cm}^2
+\end{align*}
+}
+
+\end{wex}
+\pagebreak %Forced pagebreak to get wex to stop overflowing
+\begin{wex}{Finding volume}
+ {A triangular pyramid is placed on top of a triangular prism. 
+The prism has an equilateral triangle of side length $20$ cm as a base, and has a height of $42$ cm. The pyramid has a height of $12$ cm.
+
+\begin{enumerate}
+\item Find the total volume of the object.
+\item Find the surface area of each face of the pyramid.
+\item Find the total surface area of the object.
+\end{enumerate}
+
+\begin{center}
+% THIS DIAGRAM NEEDS THE ABOVE DIMENSIONS ON IT
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.97)(1.66,1.97)
+\definecolor{color338b}{rgb}{0.6,0.6,0.6}
+\definecolor{color376b}{rgb}{0.8,0.8,0.8}
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](1.22,0.52891)(1.64,1.69)(1.64,-0.72891)(1.22,-1.89)(1.22,-1.89)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](0.8,1.95)(1.64,1.7557143)(1.22,0.53)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](0.8,1.95)(0.0,1.25)(1.2,0.55)
+\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](0.02,1.25)(1.22,0.55)(1.22,-1.95)(0.02,-1.25)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.02,1.29)(1.6,1.73)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.02,-1.25)(1.6,-0.69)
+\end{pspicture} 
+}
+\end{center}
+}
+{
+\westep{Calcuate the total volume by finding the individual volumes and adding them together}
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9570557)(4.1857533,1.9570556)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.21823838,-0.536357)(1.4964722,1.917448)(4.0877037,-1.236487)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](0.20588888,-1.9170556)(1.4658889,1.8429444)(0.0,-0.5359847)
+\pspolygon[linewidth=0.028222222,fillstyle=solid](4.171642,-1.3293833)(1.4975125,1.9429444)(0.21393035,-1.9429444)
+\psline[linewidth=0.022cm,linestyle=dashed,dash=0.1cm 0.1cm](0.0,-0.5359847)(4.1181593,-1.2729638)
+\psline[linewidth=0.024,linestyle=dotted,dotsep=0.1cm](1.4858888,1.8829445)(1.4458889,-1.2770555)(4.145889,-1.3170556)
+\psline[linewidth=0.02](1.4458889,-1.0570556)(1.6658889,-1.0570556)(1.6645871,-1.2770555)(1.4458889,-1.2770555)(1.4458889,-1.0570556)
+\end{pspicture} 
+}
+
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$h$}
+\end{pspicture} 
+}
+\\
+To find the height of the base triangle:\\
+\begin{align*}
+ 20^2 &= 10^2 + h^2\\
+\therfore h&= \sqrt{20^2-10^2}\\
+&=10 \sqrt{3}
+\end{align*}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$12$ cm}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(2.5845313,0.04640625){$H$}
+\end{pspicture} 
+}
+\end{center}
+
+
+To find the area of the base:\\
+\begin{align*}
+\mbox{area of triangle } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
+&=100 \sqrt{3}
+\end{align*}
+To find the volume of the pyramid:\\
+We already have the area of the base triangle above, therefore:\\
+
+\begin{align*}
+\mbox{volume } &= 100 \sqrt{3} \times 42\\
+&=7274,661
+\end{align*}
+Total volume:\\
+\begin{align*}
+\mbox{total volume } &= 7274,661 + 692,82\\
+&=7967,4 \mbox{ cm}^3
+\end{align*}
+\westep{Find the surface area of calculating and summing the surface area of each exposed face of the solid}
+% DIAGRAM NEEDED HERE - p.24 of Helen's pdf
+Above is a rough sketch of the net of the solid. Faces $A$, $B$, $C$ are congruent as they are the
+sides of the triangular based pyramid. The length of the rectangle (made up of the $3$ smaller
+rectangles $D$, $E$, $F$) is equal to the perimeter of the base triangle. The base triangle is exactly
+the same area as the base triangle of the pyramid which we calculated earlier.\\
+
+To find the area of $A$, $B$, and $C$:\\
+bisect the pyramid to find the slant height of each face:
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.165,-1.9535937){$10$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.945,0.62640625){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$12$ cm}
+\end{pspicture} 
+}
+\end{center}
+
+\begin{align*}
+h^2 &= 12^2+10^2\\
+\therefore h &= \sqrt{12^2+10^2}\\
+&=2\sqrt{61} %CHECK THIS?!
+
+\end{align*}
+
 }
 \end{wex}
