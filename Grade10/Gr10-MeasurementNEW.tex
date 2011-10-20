@@ -2050,7 +2050,7 @@ Total volume:\\
 \mbox{total volume } &= 7274,661 + 692,82\\
 &=7967,4 \mbox{ cm}^3
 \end{align*}
-\westep{Find the surface area of calculating and summing the surface area of each exposed face of the solid}
+\westep{Find the surface area of each exposed face of the solid}
 % DIAGRAM NEEDED HERE - p.24 of Helen's pdf
 Above is a rough sketch of the net of the solid. Faces $A$, $B$, $C$ are congruent as they are the
 sides of the triangular based pyramid. The length of the rectangle (made up of the $3$ smaller
@@ -2059,6 +2059,7 @@ the same area as the base triangle of the pyramid which we calculated earlier.\\
 
 To find the area of $A$, $B$, and $C$:\\
 bisect the pyramid to find the slant height of each face:
+\begin{figure}
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2075,6 +2076,8 @@ bisect the pyramid to find the slant height of each face:
 \end{pspicture} 
 }
 \end{center}
+\caption{A bisected view of the pyramid to find the slant height of each face}
+\end{figure}
 
 \begin{align*}
 h^2 &= 12^2+10^2\\
@@ -2082,6 +2085,277 @@ h^2 &= 12^2+10^2\\
 &=2\sqrt{61} %CHECK THIS?!
 
 \end{align*}
+\begin{figure}
+\begin{center}
+\scalebox{0.8} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5,-1.9535937){$20$ cm}
+% \usefont{T1}{ptm}{m}{n}
+% \rput(3.945,0.62640625){$h$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.04640625){$2\sqrt{61}$ cm}
 
 }
+\end{center}
+\caption{A rough sketch of face $B$}
+\end{figure}
+\begin{align*}
+\mbox{area of }B &= \frac{1}{2} \times 20 \times 2\sqrt{61}\\
+&=20\sqrt{61}\\
+\therefore A=B=C&=156\mbox{ cm}^2
+\end{align*}
+
+Finding the area of $D$, $E$, and $F$:
+\begin{align*}
+\mbox{area of rectangle} &= \mbox{perimeter of base triangle } \times \mbox{ height of prism}\\
+&= (20+20+20) \times 42\\
+\therefore D+E+F&=2520\mbox{ cm}^2
+\end{align*}
+
+State the area of $G$:
+\begin{align*}
+\mbox{area of }G &= 100\sqrt{3}\\
+&=173,21\mbox{ cm}^2
+\end{align*}
+
+\westep{Find the total surface area by adding together all the areas}
+\begin{align*}
+\mbox{total surface area } &= 100\sqrt{3} + 2520 + 3(20\sqrt{61})\\
+&=3161,8\mbox{ cm}^2
+\end{align*}
+}
+\end{wex}
+
+\begin{exercises}{}
+ {
+Find the total surface area of the following solids (round off to one decimal place if needed):
+%4 diagrams needed here - helen's pdf p. 25
+\\
+Find the volume of the following solids (round off to one decimal place if needed):
+%4 diagrams needed here - helen's pdf p. 25
+\\
+The solid below is made up of a cube and a square based pyramid. Find it's volume and surface area (round off to one decimal place if needed):
+%diagram needed here - helen's pdf p. 26
+}
+\end{exercises}
+\section{The effect of multiplying a dimension with the factor $k$}
+When one or all of the dimensions of a prism or cylinder is multiplied by a constant, the
+surface area and volume will change. The new surface area and volume can be calculated by
+using the same formulas used in the preceding section.\par
+It is possible to see a relationship between the change in dimensions and the resulting change
+in surface area and volume. Knowing these relationships can make it easier and quicker to
+calculate the new volumes or surface areas of a prism or cylinder when the dimensions are
+scaled up or down.\par
+An example is an engineer designing a highway bridge. He is interested in the road surface of
+the bridge and how many car lanes it can take. He is limited by the amount of weight which
+the foundations can support. He might not expect that when he doubles all the dimensions of
+the bridge, the overall volume and concrete weight of the bridge will increases $8$ times
+instead of $2$ times.\par
+Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and then
+three of its dimensions by a constant factor of $2$ and record the new volume and surface area.\par
+\begin{center}
+\begin{table}[H]
+ \begin{tabular}{|c|c|c|}
+\hline
+Dimensions & 
+Volume & 
+Surface \\ \hline
+Original dimensions &
+% diagram needed here - p. 26 of helen's pdf
+ \begin{aligned}
+  $V &= l \times b \times h \\
+ &= lbh$
+\end{aligned} & 
+\begin{aligned} 
+ $A&=2[(l\times h) + (l \times b)+ (b \times h)]\\
+&= 2(lh + lb + bh)$
+\end{aligned} \\ \hline
+
+Multiply one dimension by $2$ & 
+%Diagram needed here - p.27
+\begin{aligned}
+  $V &= l \times b \times 2h \\
+ &= 2(lbh)\\
+&=2V$
+\end{aligned} & 
+\begin{aligned} 
+ $A_1&=2[(l\times 2h) + (l \times b)+ (b \times 2h)]\\
+&= 2(2lh + lb + 2bh)$
+\end{aligned} \\ \hline
+
+Multiply two dimensions by $2$ & 
+%Diagram needed here - p.27
+\begin{aligned}
+  $V &= 2l \times b \times 2h \\
+ &= 2.2(lbh)\\
+&=4V$
+\end{aligned} & 
+\begin{aligned} 
+ $A_2&=2[(2l\times 2h) + (2l \times b)+ (b \times 2h)]\\
+&= 2\times 2(2lh + lb + bh)$
+\end{aligned} \\ \hline
+
+Multiply three dimensions by $2$ & 
+%Diagram needed here - p.27
+\begin{aligned}
+  $V &= 2l \times 2b \times 2h \\
+ &= 8(lbh)\\
+&=2^3V$
+\end{aligned} & 
+\begin{aligned} 
+ $A_3&=2[(2l\times 2h) + (2l \times 2b)+ (2b \times 2h)]\\
+&= 2(4lh + 4lb + 42bh)\\
+&=2.2 \times 2(lh + lb + bh)\\
+&=2^2A$
+\end{aligned} \\ \hline
+ \end{tabular}
+
+\end{table}
+\end{center}
+
+n this case we examined the effect of multiplying with a constant factor of $2$. We can express
+it more in terms of any common factor $k$:
+\begin{wex}{}
+ {
+Consider a square prism with a height of 4cm and base lengths of $3$ cm.
+%diagram here - pdf p. 27
+
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item calculate the original surface area and volume
+\item calculate the new surface area and volume if the base length is multiplied by a constant factor of $3$
+\item express the new surface area and volume as a factor of the original surface area and volume
+\end{enumerate}
+}
+{
+\westep{Calculate the original volume and surface area}
+\begin{align*}
+V&=l\times b\timesh\\
+&=3\times3\times4\\
+&= 36\mbox{ cm}^3
+\end{align*}
+\begin{align*}
+A &= 2[(l \times h) + (l \times b) + (b \times h)]\\
+&= 2[(3 \times 4) + (3 \times 3) + (3 \times 4)]\\
+&= 66 \mbox{ cm}^2
+\end{align*}
+\westep{Calculate the new volume and surface area}
+\begin{align*}
+V_n&=l\timesb\timesh\\
+&=3.3\times3.3\times4.3\\
+&= 324\mbox{ cm}^3
+\end{align*}
+\begin{align*}
+A_n &= 2[(l \times h) + (l \times b) + (b \times h)]\\
+&= 2[(3.3 \times 4) + (3.3 \times 3) + (3.3 \times 4)]\\
+&= 306 \mbox{ cm}^2
+\end{align*}
+\westep{express the new surface area and volume as a factor of the original surface area and volume}
+\begin{align*}
+V&=36\mbox{ cm}^3\\
+V_n&= 324\mbox{ cm}^3\\
+\therefore V_n&=9V=3^{2}V
+\end{align*}
+\begin{align*}
+A &= 66 \mbox{ cm}^2\\
+A_n&= 306\mbox{ cm}^2\\
+\therefore A_n&= 4A
+\end{align*}
+}
+\end{wex}
+
+\begin{wex}{}
+ {
+Prove that if the height of a rectangular prism with dimensions $l$,$b$ and $h$ is multiplied by a
+constant value of $k$, the volume will also increase by a factor $k$.
+%Diagram here - p.28 of pdf
+}
+{
+\westep{}
+We are given the original dimensions $l$,$b$ and $h$\\
+therefore the original volume is $V = lbh$\\
+\\
+The new dimensions are $l$,$b$, and $kh$\\
+therefore the new volume is 
+\begin{align*}
+V_n &= lb(kh)\\
+& = k(lbh)\\
+&= kV
+\end{align*}
+
+It can be seen the new volume $V_n$ is $k$ times the original volume $V$ or increased with a factor
+$k$.
+}
+\end{wex}
+
+\begin{wex}{}
+{Consider a cylinder with a radius of $r$ and a height of $h$. Calculate the new volume and surface area (expressed in terms of $r$ and $h$)
+if the radius is multiplied by a constant factor of $k$.}
+% diagram needed here - pdf p. 28
+{
+\westep{Calculate the original volume and area of the cylinder in terms of $r$ and $h$}
+\begin{align*}
+ V&= \pi r^2 \times h\\
+\end{align*}
+\begin{align*}
+A&= \pi r^2 + 2\pi rh
+\end{align*}
+\westep{Calculate the new volume and area of the cylinder in terms of $r$ and $h$}
+\begin{align*}
+ V_n&= \pi (kr)^{2} \times h\\
+&= \pi k^{2}r^{2} \times h\\
+&=k^{2} \times \pi r^{2} h\\
+&= k^{2}V
+\end{align*}
+\begin{align*}
+A&= \pi (kr)^{2} + 2\pi (kr)h\\
+&= \pi k^{2}r^{2} = 2\pi krh 
+\end{align*}
+}
+\end{wex}
+
+\begin{exercises}{}
+ {
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item If the height of a prism is doubled, by how much does its volume increase?
+\item Describe the change in the volume of a rectangular prism if:
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item length and breadth increase by a constant factor of $3$
+\item length, breadth and height are multiplied by a constant factor of $2$
+\end{enumerate}
+\item Given a prism with a volume of $493$ cm$^{2}$ and a surface area of $6007$ cm$^{2}$, 
+find the new surface area and volume for a prism if all dimensions are increased by a constant factor of $4$. 
+\end{enumerate}
+
+}
+\end{exercises}
+
+\begin{eocexercises}{}
+Consider the solids below and answer the questions that follow (rounded to one decimal place, if necessary):
+% diagram needed here - pdf p. 29
+ \begin{enumerate}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+  \item Calculate the surface area 
+\item Calculate volume of each solid
+\item If the dimensions of the solid are increased by a factor of $3$, calculate the new surface area of each solid.
+\item If the dimensions of the solid are increased by a factor of $3$, calculate the new volume of each solid.
+ \end{enumerate}
+
+\begin{enumerate}
+[noitemsep, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{4}
+ \item Calculate the surface area and volume pf each of the following solids:
+% diagram needed here - pdf p. 30
+\item Calculate the volume and surface area of the solid below (correct to 1 decimal place):
+% \diagram needed here - p. 30 of pdf
+\end{enumerate}
+
+\end{eocexercises}
+
+
+
+ 
 \end{wex}
