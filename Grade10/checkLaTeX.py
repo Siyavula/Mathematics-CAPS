@@ -22,7 +22,9 @@ if __name__ == "__main__":
     print '-'*80
 
     for f in texfiles:
-        content = open(f,'r').read()
+        content = open(f,'r').readlines()
+        # remove the commented lines
+        content = '\n'.join([c for c in content if c.strip() if c.strip()[0] != '%'])
         matching_items = '{,},(,),[,],\\begin,\\end'
         print f, (35-len(f))*' ',
         for m in matching_items.split(','):
