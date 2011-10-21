@@ -1,0 +1,31 @@
+Hi Carl
+
+Stats chapter
+
+I thought a bit about the maths and I think the best contribution
+would be help on the Stats chapter since there is a strong link
+between the Stats and Probability and also that you are very familiar
+with Stats.
+
+Even if you can do a rough outline or write certain sections and we
+take it where you left off. Currently it is the only chapter we
+haven't written or looked at. The rest has been written and I put
+Marina and Alison to check Helen's chapters and vice versa.
+
+- I attach the comparison which states the CAPS requirement, the
+  publisher's table of contents and our table of contents.
+
+- The first two files is a very roughs shuffle I did of pieces when
+  comparing to the publishers and you can choose to use or completely
+  disregard it.
+
+- in the next mail I'll send the old version of the chapter which is
+  the current Github LaTeX version to work from. The exercises and
+  diagrams and data sets may be useful.
+
+Let talk tomorrow.
+
+Thanks and good luck there with the uploading.
+
+Regards
+Neels

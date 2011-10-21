@@ -1,0 +1,28 @@
+Statistics: Summarise data
+
+How?
+  Go from many numbers (individual data) to a few.
+
+Why?
+  Easier to interpret
+  Want to highlight important aspects of the data
+  Figure
+     Side-by-side images of two datasets that are from same
+     distribution but individual datapoints are different. Make point
+     that the summary is closer to what we're interested in than the
+     individual datapoints.
+
+Challenges
+
+  Need to determine which aspects are important and which ones are not
+  since we're throwing away information. Don't want to throw away
+  important information.
+
+-----
+
+Need summary figure of different statistics -- preferably to highlight
+how they are the same and how they are different. Classic example:
+mode v mean v median.
+
+Need to make the point that the most probably value isn't necessarily
+typical.

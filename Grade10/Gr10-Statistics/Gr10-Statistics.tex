@@ -1,0 +1,153 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{icomma}
+\usepackage{tikz, ifthen}
+\usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
+
+% <Temporary FHSST definitions>
+\def\Definition#1#2{\paragraph{Definition:} #1 --- #2}
+
+\def\Identity#1#2{\paragraph{Identity:} #1 --- #2}
+
+\newenvironment{wex}[3]%
+{\rule{\linewidth}{0.5mm}
+\textbf{Worked example:} #1
+
+\textbf{Question:} #2
+
+\textbf{Solution:} #3}%
+{\rule{\linewidth}{0.5mm}}
+
+\newcommand{\westep}[1]{\paragraph{Step:} #1}
+
+\newenvironment{exercises}[1]%
+{\rule{\linewidth}{0.5mm}
+\textbf{Exercises:} #1\\}%
+{\rule{\linewidth}{0.5mm}}
+
+\newenvironment{eocexercises}[1]%
+{\section{End of chapter exercises: #1}}%
+{}
+% </Temporary FHSST definitions>
+
+% <Temporary spacing changes>
+\setlength\parindent{0pt}
+\setlength\parskip{0.5\baselineskip}
+\setlength\textwidth{15cm}
+\setlength\textheight{23cm}
+\setlength\oddsidemargin{0.5cm}
+\setlength\topmargin{0cm}
+% </Temporary spacing changes>
+
+\begin{document}
+\chapter{Statistics}
+
+\section{Introduction}
+
+Statistics: Summarise data
+
+How?
+  Go from many numbers (individual data) to a few.
+
+Why?
+  Easier to interpret
+  Want to highlight important aspects of the data
+  Figure
+     Side-by-side images of two datasets that are from same
+     distribution but individual datapoints are different. Make point
+     that the summary is closer to what we're interested in than the
+     individual datapoints.
+
+Challenges
+
+  Need to determine which aspects are important and which ones are not
+  since we're throwing away information. Don't want to throw away
+  important information.
+
+\section{Measures of central tendency}
+
+\subsection{Mean}
+
+Also known as average. 
+
+\subsection{Median}
+
+The media is literally in the middle of the data. Take a list of
+numbers, sort it, find the one that sits in the middle.
+
+\subsection{Mode}
+Cannot always find the mode in ungrouped data (continuous in particular)
+
+Need to make the point that the most probable value isn't necessarily
+typical.
+
+\subsection{Comparison}
+
+\section{Grouping data}
+
+Why bother... good question. Binning is generally a bad
+idea. Sometimes we are given binned data. E.g. marks. General form:
+range + count for each bin.
+
+Histograms
+
+Now estimating measures of central tendency changes because we've
+already thrown away some information. The best we can do is to assume
+that values are distributed uniformly in a bin. Visualise. This leads
+to the following formulae for mean, median, mode.
+
+\section{Dispersion}
+The centre is not the only or event necessarily most interesting
+statistic. We also want to know how data are spread around the centre.
+
+Give example of datasets with same mean but different dispersions.
+
+Range as (a very poor) measure of dispersion. Extremely sensitive to
+outliers! Range is inter-percentile range between 0th and 100th
+percentile (i.e. min and max).
+
+\section{Percentiles}
+
+These give a more complete picture. Some measures of central tendency
+and dispersion are special cases of percentiles.
+
+There are many percentiles, so we need to specify which one. They are
+generally between 0 and 100. We have already seen the one in the
+middle, the 50th percentile, the median.
+
+For percentiles: same process as median, just different distances from
+the edges.
+
+FIGURE: Show ordered data set again, with 10th percentiles.
+
+0th percentile is the minimum value
+100th percentile is the maximum value
+50th is value in the middle
+
+\subsection{Quartiles}
+Quartiles are special case of percentiles
+
+Interquartile range is a measure of dispersion
+
+Semi-interquartile range is half interquartile range (how silly do
+define this).
+
+\subsection{Five number summary}
+
+Visualisation in the box and whisker plot.
+
+-----
+
+Need summary figure of different statistics -- preferably to highlight
+how they are the same and how they are different. Classic example:
+mode v mean v median.
+
+Need example of something that doesn't follow a bell-shape distribution.
+
+\end{document}
