@@ -224,33 +224,28 @@ angles $\hat{A}$, $\hat{B}$, $\hat{C}$ and $\hat{D}$.\par
 \setcounter{subfigure}{0}
  	\begin{figure}[H] 
     \begin{center}
-\scalebox{.8}{
-\begin{pspicture}(-0.5,-0.5)(5,2)
-%\psgrid
-\psset{xunit=0.7cm,yunit=0.6cm}
-\SpecialCoor
-\psline[arrows=<->](0,0)(6,3)
-\psline[arrows=<->](0,3)(6,0)
-\psdot[dotsize=1pt](3,1.5)
-% \uput[l](0,0){$A$}
-% \uput[r](6,3){$B$}
-% \uput[l](0,3){$C$}
-% \uput[r](6,0){$D$}
-% \uput[u](3,1.5){$X$}
-\psarc(3,1.5){0.4}{330}{30}
-\psarc(3,1.5){0.4}{150}{210}
-\psarc(3,1.5){0.5}{30}{150}
-\psarc(3,1.5){0.5}{210}{330}
-\psarc(3,1.5){0.6}{30}{150}
-\psarc(3,1.5){0.6}{210}{330}
-\rput(3,1.5){
-\uput[r](0.5;0){$\hat{A}$}
-\uput[u](0.6;90){$\hat{B}$}
-\uput[l](0.5;180){$\hat{C}$}
-\uput[d](0.6;270){$\hat{D}$}
+\scalebox{1.2} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.124111)(4.2,1.124111)
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.08588889,-1.11)(4.145889,1.11)
+\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,0.9358889)(4.185889,-1.05)
+\psarc[linewidth=0.028222222](2.1029444,-0.011166667){0.58294445}{330.0}{30.0}
+\psarc[linewidth=0.028222222](1.9629444,-0.057055555){0.53705555}{150.0}{210.0}
+\psarc[linewidth=0.028222222](2.0679445,-0.022055555){0.42205554}{30.0}{157.48302}
+\psarc[linewidth=0.028222222](2.0579445,-0.012055555){0.47205555}{210.0}{330.0}
+\psarc[linewidth=0.028222222](2.0629444,-0.037055556){0.49705556}{30.0}{155.69582}
+\psarc[linewidth=0.028222222](2.0529444,-0.0070555555){0.54705554}{210.0}{330.0}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.4014063,-0.004111111){\small{$\hat{A}$}}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.0214062,0.21588889){\small{$\hat{B}$}}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7014062,-0.04411111){\small{$\hat{C}$}}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.1014063,-0.2841111){\small{$\hat{D}$}}
+\end{pspicture} 
 }
-\end{pspicture}
-}
+
     \end{center}
 % \caption{Two intersecting straight lines with vertical angles $\hat{A},\hat{C}$ and $\hat{B},\hat{D}$.}
 \label{fig:mg:f:specialangles2}
@@ -346,11 +341,11 @@ transversal. The properties of the angles formed by these intersecting lines are
 \begin{pspicture}(0,-1.5)(6,3.5)
 %\psgrid[gridcolor=lightgray]
 \psline{-}(0,0)(6,0)
-\psline[arrows=->](0,0)(1.5,0)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(0,0)(1.5,0)
 \uput[l](0,0){$A$}
 \uput[r](6,0){$B$}
 \psline{-}(0,2)(6,2)
-\psline[arrows=->](0,2)(1.5,2)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(0,2)(1.5,2)
 \uput[l](0,2){$C$}
 \uput[r](6,2){$D$}
 \psline{-}(1,-1)(5,3)
@@ -375,61 +370,64 @@ transversal. The properties of the angles formed by these intersecting lines are
 \begin{center}
 %\caption{Properties of angles formed when parallel lines are intersected by a transversal. The example in Figure~\ref{fig:mg:f:partrans} is used as a reference.}
 \label{tab:mg:f:partrans}
-\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|m{3cm}|}\hline
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}\hline
 \textbf{Name of angle} & \textbf{Definition} & \textbf{Examples} & \textbf{Notes}\\\hline\hline
 Interior angles & Angles that lie inside the parallel lines. & $\hat{a}$, $\hat{b}$, $\hat{c}$ and $\hat{d}$ are interior angles. & Interior means inside. \\ \hline
 Exterior angles & Angles that lie outside the parallel lines. & $\hat{e}$, $\hat{f}$, $\hat{g}$ and $\hat{h}$ are exterior angles. & Exterior means outside. \\ \hline
 Corresponding angles & Equal angles on the same side of the parallel lines and the same side of the transversal. & $\hat{a} = \hat{e}$  $\hat{b} = \hat{f}$,  $\hat{c} = \hat{g}$ and  $\hat{d} = \hat{h}$ are corresponding angles. &
+\raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
 % \begin{center}
 %{
-\begin{pspicture}(0,-0.9846875)(1.48,0.7846875)
-\psline[linewidth=0.04cm](0.2,0.7646875)(1.46,0.7646875)
-\psline[linewidth=0.04cm](0.22,0.1246875)(1.44,0.1246875)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.38,0.1246875)(1.16,0.1246875)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.22,0.7646875)(1.0,0.7646875)
-%\usefont{T1}{ptm}{m}{n}
-\rput(0.7209375,-0.7653125){F shape}
-\psline[linewidth=0.04cm](0.2,0.7646875)(0.2,-0.5353125)
-\psarc[linewidth=0.04](0.2,0.7446875){0.2}{270.0}{351.8699}
-\psarc[linewidth=0.04](0.22,0.1046875){0.2}{270.0}{351.8699}
-\end{pspicture}
+\begin{pspicture}(0,-0.9884375)(1.48,0.7884375)
+\psline[linewidth=0.04cm](0.2,0.7684375)(1.46,0.7684375)
+\psline[linewidth=0.04cm](0.22,0.1284375)(1.44,0.1284375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.38,0.1284375)(1.16,0.1284375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.22,0.7684375)(1.0,0.7684375)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7128125,-0.7615625){F shape}
+\psline[linewidth=0.04cm](0.2,0.7684375)(0.2,-0.5315625)
+\psarc[linewidth=0.04](0.2,0.7484375){0.2}{270.0}{0.0}
+\psarc[linewidth=0.04](0.22,0.1084375){0.2}{270.0}{0.0}
+\end{pspicture} }
 %}
 % \end{center}
 \\\hline
  Co-interior angles on the same side & Co-interior equal angles that lie inside the parallel lines and on the same side of the transversal. &  $\hat{a} + \hat{d} = 180^{\circ}$, $\hat{b} + \hat{c} = 180^{\circ}$&
 % \begin{center}
+\raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
 %{
-\begin{pspicture}(0,-0.8346875)(1.6,0.6346875)
-\psline[linewidth=0.04cm](0.2,0.6146875)(1.46,0.6146875)
-\psline[linewidth=0.04cm](0.22,-0.3453125)(1.58,-0.3453125)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.38,-0.3453125)(1.16,-0.3453125)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.22,0.6146875)(1.0,0.6146875)
-\psarc[linewidth=0.04](0.2,-0.2653125){0.2}{329.03625}{90.0}
-%\usefont{T1}{ptm}{m}{n}
-\rput(0.8084375,-0.6153125){C shape}
-\psline[linewidth=0.04cm](0.2,0.6146875)(0.2,-0.3653125)
-\psarc[linewidth=0.04](0.2,0.5946875){0.2}{270.0}{351.8699}
-\end{pspicture}
+\begin{pspicture}(0,-0.8384375)(1.64,0.6513173)
+\psline[linewidth=0.04cm](0.24,0.6184375)(1.5,0.6184375)
+\psline[linewidth=0.04cm](0.26,-0.3415625)(1.62,-0.3415625)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.42,-0.3415625)(1.2,-0.3415625)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.26,0.6184375)(1.04,0.6184375)
+\psarc[linewidth=0.04](0.24,-0.3815625){0.24}{7.125016}{90.0}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.83671874,-0.6115625){C shape}
+\psline[linewidth=0.04cm](0.24,0.6184375)(0.24,-0.3615625)
+\psarc[linewidth=0.04](0.24,0.5984375){0.2}{270.0}{9.462322}
+\end{pspicture} }
 %}
 % \end{center}
 \\\hline
  Alternate interior angles & Equal interior angles that lie inside the parallel line and on opposite sides of the transversal. & $\hat{a} = \hat{c}$, $\hat{b} = \hat{d}$ &
 % \begin{center}
+\raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
 %{
-\begin{pspicture}(0,-0.8246875)(1.4434375,0.6446875)
-\psline[linewidth=0.04cm](0.0434375,0.6246875)(1.3034375,0.6246875)
-\psline[linewidth=0.04cm](1.3034375,0.6246875)(0.0634375,-0.3353125)
-\psline[linewidth=0.04cm](0.0634375,-0.3353125)(1.4234375,-0.3353125)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.2234375,-0.3353125)(1.0034375,-0.3353125)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.0634375,0.6246875)(0.8434375,0.6246875)
-\psarc[linewidth=0.04](1.2034374,0.5846875){0.2}{168.69006}{243.43495}
-\psarc[linewidth=0.04](0.2034375,-0.2353125){0.2}{329.03625}{45.0}
-%\usefont{T1}{ptm}{m}{n}
-\rput(0.6428125,-0.6053125){Z shape}
-\end{pspicture}
+\begin{pspicture}(0,-0.8184375)(1.4,0.6584375)
+\psline[linewidth=0.04cm](0.0,0.6384375)(1.26,0.6384375)
+\psline[linewidth=0.04cm](1.26,0.6384375)(0.02,-0.3215625)
+\psline[linewidth=0.04cm](0.02,-0.3215625)(1.38,-0.3215625)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.18,-0.3215625)(0.96,-0.3215625)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.02,0.6384375)(0.8,0.6384375)
+\psarc[linewidth=0.04](1.06,0.5784375){0.2}{168.69006}{243.43495}
+\psarc[linewidth=0.04](0.2465625,-0.215){0.2265625}{329.03625}{45.0}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.591875,-0.5915625){Z shape}
+\end{pspicture} }
 %}
 % \end{center}
 \\\hline
@@ -444,20 +442,18 @@ If two lines are intersected by a transversal such that:
 \end{itemize}
 then the two lines are parallel.
 	\begin{figure}[H] % horizontal\label{m38380*angles-3}    
-    \textnormal{Khan Academy video on angles - 3}\vspace{.1in} \nopagebreak
+    \textnormal{Khan Academy video on angles - 3} \nopagebreak
   \label{m38380*yt-media3}\label{m38380*yt-video3}
-            \raisebox{-5 pt}{
-\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  P10116
-)}
- \end{figure} 
+            \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  P10116)}
+ \end{figure} \pagebreak
 \begin{wex}{Finding angles}
 {Find all the unknown angles. Is $EF \parallel CG$? Explain your answer.
  \begin{center}
    \scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.381875)(11.965313,2.381875)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.64]{->>}(3.68,0.2634375)(4.32,0.6234375)
-\psline[linewidth=0.04cm,arrowsize=0.05291667cm 4.0,arrowlength=1.4,arrowinset=0.64]{->>}(8.18,0.0034375)(8.8,0.3634375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.68,0.2634375)(4.32,0.6234375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(8.18,0.0034375)(8.8,0.3634375)
 \rput{-138.03267}(7.6911535,4.7037997){\psarc[linewidth=0.04](4.7476172,0.87697935){0.42959735}{343.58032}{85.22324}}
 \psline[linewidth=0.04cm](0.0,-1.9565625)(6.62,2.0234375)
 \psline[linewidth=0.04cm](4.96,-1.9365625)(11.58,2.0434375)
@@ -510,31 +506,36 @@ then the two lines are parallel.
 \begin{tabular}{l l}
  $AB \parallel CD$ & (given) \\
 $\therefore \hat{x}=60^{\circ}$ & (alt. int. $\angle$'s) \\
- & \\
-$\hat{y} + 160^\circ = 180^{\circ}$  & (co-int. $\angles$'s) \\
-$\therefore \hat{y}= 20^{\circ}$ &  \\
- & \\
-$\hat{p} = \hat{y}$ & (vert. opp. $\angle$'s) \\
-$\therefore \hat{p} = 20^{\circ}$ & \\
- & \\
- $\hat{k} + \hat{p} = 180^{\circ}$  & (sum of $\angle$'s str. line) \\
-$\therefore \hat{k} = 160^{\circ}$ & \\
-& \\
- $\hat{s} + \hat{x} = 90^{\circ}$  & (compl. $\angle$'s) \\ 
- $\hat{s} + 60^\circ = 90^{\circ}$ & \\
-$\therefore \hat{s} = 30^{\circ}$ & 
+\end{tabular} \\
+\begin{tabular}{r@{ = }ll}
+$\hat{y} + 160^\circ$ & $180^{\circ}$  & (co-int. $\angles$'s) \\
+$\therefore \hat{y}$ & $20^{\circ}$ &  \\
+\end{tabular} \\ \\
+\begin{tabular}{r@{ = }ll}
+$\hat{p}$ & $\hat{y}$ & (vert. opp. $\angle$'s) \\
+$\therefore \hat{p}$ & $20^{\circ}$ & \\
+\end{tabular} \\ \\
+\begin{tabular}{r@{ = }ll}
+ $\hat{k} + \hat{p}$ & $180^{\circ}$  & (sum of $\angle$'s str. line) \\
+$\therefore \hat{k}$ & $160^{\circ}$ & \\
+\end{tabular} \\ \\
+\begin{tabular}{r@{ = }ll}
+ $\hat{s} + \hat{x}$ & $90^{\circ}$  & (compl. $\angle$'s) \\ 
+ $\hat{s} + 60^\circ$ & $90^{\circ}$ & \\
+$\therefore \hat{s}$ & $30^{\circ}$ & 
 \end{tabular}
 \westep{Determine whether $EF \parallel CG$}
 If $EF \parallel CG$ then $\hat{p} = \hat{s}$ (corresp. $\angle$'s) \\
 But $\hat{p} = 20^{\circ}$ and $\hat{s} = 30^{\circ}$ \\
-Therefore $EF$ is not paralle to $CG$.
+Therefore $EF$ is not parallel to $CG$.
 }
 \end{wex}
 
   \label{m38380*secfhsst!!!underscore!!!id550}
 \begin{exercises}{Angles}
-        \nopagebreak
-Use adjacent, corresponding, co-interior and alternate angles to fill in all the angles labeled with letters in the diagram below:\\
+        \nopagebreak \noindent
+\begin{enumerate}[label=\textbf{\arabic*}.]
+\item Use adjacent, corresponding, co-interior and alternate angles to fill in all the angles labeled with letters in the diagram below:\\
 \begin{pspicture}(0,-1.7981373)(6.5116725,1.7981373)
 \psline[linewidth=0.04cm](0.34542254,0.6181373)(5.2654223,0.6181373)
 \psline[linewidth=0.04cm](0.34542254,-0.7418627)(5.2654223,-0.7418627)
@@ -555,31 +556,31 @@ Use adjacent, corresponding, co-interior and alternate angles to fill in all the
 \rput(1.6212038,-1.0518627){f}
 \usefont{T1}{ptm}{m}{n}
 \rput(0.7930787,-0.9118627){g}
-\rput{-66.70425}(1.9155159,4.522671){\psarc[linewidth=0.032,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.3934965,0.8061751){0.24084859}{20.012312}{156.69316}}
+\rput{-66.70425}(1.9155159,4.522671){\psarc[linewidth=0.032]{-}(4.3934965,0.8061751){0.24084859}{20.012312}{156.69316}}
 \psline[linewidth=0.04](3.9254224,-0.6018627)(4.2254224,-0.7418627)(3.9454224,-0.8818627)
 \psline[linewidth=0.04](3.6854224,-0.6018627)(3.9854226,-0.7418627)(3.7054226,-0.8818627)
 \psline[linewidth=0.04](2.2454226,0.7581373)(2.5454226,0.6181373)(2.2654226,0.47813728)
 \psline[linewidth=0.04](2.0054226,0.7581373)(2.3054225,0.6181373)(2.0254226,0.47813728)
 \end{pspicture}\\
-Find all the unknown angles in the figure below: \\
+\item Find all the unknown angles in the figure below: \\
 \scalebox{1.3} {
 \begin{pspicture}(0,-1.6504478)(5.097969,1.7279896)
 \psline[linewidth=0.04cm](2.8765626,1.4495522)(4.8165627,-1.4104478)
 \psline[linewidth=0.04cm](0.2365625,1.2295521)(2.1765625,-1.6304479)
-\psline[linewidth=0.04cm,arrowsize=0.1cm 3.0,arrowlength=1.4,arrowinset=0.4]{->>}(0.26,1.1879896)(1.1165625,-0.07044793)
-\psline[linewidth=0.04cm,arrowsize=0.1cm 3.0,arrowlength=1.4,arrowinset=0.4]{->>}(3.0765624,1.1495521)(4.06,-0.25201043)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.26,1.1879896)(1.1165625,-0.07044793)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(3.0765624,1.1495521)(4.06,-0.25201043)
 \psline[linewidth=0.04cm](1.2765625,-0.29044786)(4.2165623,-0.51044786)
 \psline[linewidth=0.04cm](0.6365625,0.66955215)(3.5765624,0.44955212)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(1.2965626,-0.29044792)(2.8965626,-0.43044794)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(0.7765625,0.6695522)(2.54,0.52798957)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(1.2965626,-0.29044792)(2.8965626,-0.43044794)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(0.7765625,0.6695522)(2.54,0.52798957)
 \psline[linewidth=0.04cm](3.5365624,0.44955212)(1.2765625,-0.29044786)
 \psline[linewidth=0.04cm](4.1765623,-0.51044786)(1.9165626,-1.2504479)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(2.9765625,0.26955208)(2.1365626,-0.05044793)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(3.1765625,0.34955207)(2.3365624,0.029552069)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(3.3965626,0.42955208)(2.5565624,0.10955207)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(3.5165625,-0.73044795)(2.66,-1.0320104)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(3.7165625,-0.6504479)(2.8765626,-0.97044796)
-\psline[linewidth=0.04cm,arrowsize=0.08cm 2.5,arrowlength=1.4,arrowinset=0.4]{->}(3.9365625,-0.5704479)(3.0965624,-0.8904479)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(2.9765625,0.26955208)(2.1365626,-0.05044793)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.1765625,0.34955207)(2.3365624,0.029552069)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.3965626,0.42955208)(2.5565624,0.10955207)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.5165625,-0.73044795)(2.66,-1.0320104)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.7165625,-0.6504479)(2.8765626,-0.97044796)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.9365625,-0.5704479)(3.0965624,-0.8904479)
 \usefont{T1}{ptm}{m}{n}
 \rput(0.12375,1.2395521){A}
 \usefont{T1}{ptm}{m}{n}
@@ -626,7 +627,7 @@ Find all the unknown angles in the figure below: \\
 \rput{-45.10457}(1.503625,1.0367023){\psarc[linewidth=0.04](2.0,-1.2920104){0.28}{71.09586}{180.0}}
 \end{pspicture} 
 }  \\ 
-Find the value of $x$ in the figure below: \\
+\item Find the value of $x$ in the figure below: \\
 \scalebox{1.3} 
 {
 \begin{pspicture}(0,-2.1645312)(2.9317186,2.1645312)
@@ -661,7 +662,7 @@ Find the value of $x$ in the figure below: \\
 \rput{-178.50352}(3.0830076,-0.7128394){\psarc[linewidth=0.04](1.536849,-0.3765517){0.17893833}{61.938473}{168.11142}}
 \end{pspicture} 
 } \\
-Determine whether there are pairs of parallel lines in the following figures:
+\item Determine whether there are pairs of parallel lines in the following figures:
 \label{m38380*id79123}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
             \item 
 \scalebox{1} % Change this value to rescale the drawing.
@@ -783,7 +784,7 @@ Determine whether there are pairs of parallel lines in the following figures:
 \end{pspicture} 
 }
     \end{enumerate}
-If AB is parallel to CD and AB is parallel to EF, give an explanation why CD must be parallel to EF.\\
+\item If AB is parallel to CD and AB is parallel to EF, give an explanation why CD must be parallel to EF.\\
 \begin{pspicture}(0,-0.81328124)(3.8328125,0.81328124)
 \psline[linewidth=0.04cm](0.2415625,0.6067188)(3.4415624,0.38671875)
 \psline[linewidth=0.04cm](0.3015625,-0.09328125)(3.4215624,-0.09328125)
@@ -795,6 +796,7 @@ If AB is parallel to CD and AB is parallel to EF, give an explanation why CD mus
 \rput(0.086875,0.61671877){C}
 \rput(3.6504688,0.33671874){D}
 \end{pspicture}  
+\end{enumerate}
     \addtocounter{footnote}{-0}
     \par   
 \par \raisebox{-5
@@ -829,47 +831,76 @@ refer to a triangle with corners labeled \begin{math}A\end{math},
 \begin{tabular}{|c|m{3.8cm}|m{5cm}|}\hline
 Name & Diagram & Properties\\\hline\hline
 Scalene &
-\begin{pspicture}(0,0)(3,1.2)
-%\psgrid[gridcolor=lightgray]
-\rput(0.35,0){\psset{unit=2}
-\pspolygon({1.25;25})({1;0})}
-\end{pspicture}
+\begin{pspicture}(0,-1.531875)(1.3471875,1.531875)
+\usefont{T1}{ptm}{m}{n}
+\rput(0.8534375,1.358125){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.1940625,-1.381875){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.0940625,-0.361875){C}
+\pspolygon[linewidth=0.04](0.326875,-0.31260228)(0.8505114,1.148125)(1.046875,-1.191875)
+\end{pspicture} 
 & All sides and angles are different.\\\hline
 Isosceles &
-\begin{pspicture}(-0.40,-0.4)(3.4,3.4)
-%\psgrid[gridcolor=lightgray]
-\rput(0.7,0){\psset{unit=1.5}
-\pstTriangle(0,0){A}(1;0){B}(2;73.4){C}
-\pstSegmentMark{B}{C}
-\pstSegmentMark{A}{C}
-\pstMarkAngle[LabelSep=0.6]{C}{B}{A}{}
-\pstMarkAngle[LabelSep=0.6]{B}{A}{C}{}
-}
-\end{pspicture}
+\begin{pspicture}(0,-1.801875)(2.7071874,1.801875)
+\pspolygon[linewidth=0.04](0.346875,-1.501875)(2.346875,-1.501875)(1.326875,1.418125)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3134375,1.628125){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.5540626,-1.651875){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.0940625,-1.611875){C}
+\rput{-55.673897}(1.3162568,-0.2902002){\psarc[linewidth=0.04](0.38335124,-1.3914028){0.23107776}{29.682724}{126.98136}}
+\rput{72.39183}(0.24734916,-3.160816){\psarc[linewidth=0.04](2.2833512,-1.4114028){0.23107776}{29.682724}{126.98136}}
+\psline[linewidth=0.04cm](0.766875,0.078125)(0.946875,-0.021875)
+\psline[linewidth=0.04cm](1.746875,-0.041875)(1.906875,0.058125)
+\end{pspicture} 
 & Two sides are equal in length. The angles opposite the equal sides are equal.\\\hline
 Equilateral &
-\begin{pspicture}(-0.40,-0.4)(3.4,3.2)
-%\psgrid[gridcolor=lightgray]
-\psset{unit=1.5}
-\pstTriangle(0,0){A}(2;0){B}(2;60){C}
-\pstSegmentMark{A}{B}
-\pstSegmentMark{B}{C}
-\pstSegmentMark{A}{C}
-\pstMarkAngle[LabelSep=0.6]{A}{C}{B}{$60^{\circ}$}
-\pstMarkAngle[LabelSep=0.6]{C}{B}{A}{$60^{\circ}$}
-\pstMarkAngle[LabelSep=0.6]{B}{A}{C}{$60^{\circ}$}
-\end{pspicture}
+\begin{pspicture}(0,-1.3463392)(3.5196874,1.5227232)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.6934375,1.3489733){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2740624,-1.1310267){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.0940625,-1.1910268){C}
+\rput{-55.673897}(1.0229224,0.096997865){\psarc[linewidth=0.04](0.60330397,-0.920059){0.40486905}{29.682724}{132.28583}}
+\rput{72.39183}(1.0581582,-3.4012027){\psarc[linewidth=0.04](2.8530037,-0.97759825){0.40067577}{29.682724}{126.98136}}
+\psline[linewidth=0.04cm](0.966875,0.19897325)(1.146875,0.098973244)
+\psline[linewidth=0.04cm](2.346875,-0.0010267529)(2.506875,0.098973244)
+\pstriangle[linewidth=0.04,dimen=outer](1.726875,-1.1210268)(2.84,2.3)
+\psline[linewidth=0.04cm](1.726875,-1.0210267)(1.706875,-1.2010268)
+\rput{-168.2292}(3.2047238,2.129785){\psarc[linewidth=0.04](1.7121335,0.8997173){0.44912854}{29.682724}{126.98136}}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.724375,-0.9010267){\small $60^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.724375,-0.9010267){\small $60^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.704375,0.6589733){\small $60^\circ$}
+\end{pspicture} 
 & All three sides are equal in length and all three angles are equal.\\\hline
 Acute & \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-1.03)(2.6,1.03)
-\psline[linewidth=0.04](0.0,-1.01)(2.06,1.01)(2.58,-0.53)(0.02,-0.99)
+\begin{pspicture}(0,-1.261875)(2.1071875,1.261875)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.6734375,1.088125){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.9540625,-1.111875){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.0940625,0.148125){C}
+\pspolygon[linewidth=0.04](0.306875,0.158125)(1.666875,0.918125)(1.786875,-0.921875)
 \end{pspicture} 
 } & All three interior angles are less than $90^{\circ}$. \\ \hline
 Obtuse & \scalebox{0.8} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-0.78)(4.7,0.78)
-\psline[linewidth=0.04](0.0,-0.76)(4.68,0.76)(3.38,-0.72)(0.02,-0.74)
+\begin{pspicture}(0,-1.5745312)(4.5428123,1.5745312)
+\pspolygon[linewidth=0.04](0.426875,-1.3292187)(3.466875,-0.6092188)(4.326875,1.1707813)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.3734374,1.4007813){A}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.5540626,-0.83921874){B}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.0940625,-1.4192188){C}
 \end{pspicture} 
 } & One interior angle is greater than $180^{\circ}$. \\ \hline
 Right-angled &
@@ -989,20 +1020,20 @@ to get three pieces of paper.
 {
 \begin{pspicture}(0,-1.885)(8.72,1.8766212)
 \usefont{T1}{ptm}{m}{n}
-\rput(6.600195,-0.62994766){A}
+\rput{180.0}(13.21914,-1.2361454){\rput(6.6067576,-0.62994766){A}}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.1409054,-0.907437){B}
+\rput(7.128093,-0.907437){B}
 \psframe[linewidth=0.04,dimen=outer](8.68,-1.085)(0.0,-1.885)
 \psline[linewidth=0.04cm](8.7,1.095)(6.58,-1.105)
 \pstriangle[linewidth=0.04,dimen=outer](3.66,-1.135)(6.0,3.02)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.2755153,0.41662124)(5.115515,0.41662124)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.68,-1.095)(3.68,0.405)
 \usefont{T1}{ptm}{m}{n}
-\rput(3.7137501,1.315){A}
+\rput(3.7203126,1.315){A}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.25375,-0.885){B}
+\rput(1.2409375,-0.885){B}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.9796877,-0.885){C}
+\rput(5.966875,-0.885){C}
 \end{pspicture} 
 }
 \end{center}
@@ -1012,9 +1043,9 @@ to get three pieces of paper.
    \label{m38380*eip-370}Two triangles are congruent if one can be placed exactly over the other. This means that both triangles have equal corresponding angles and sides. To determine whether two triangles are congruent, it is not necessary to check every side and every angle. The following table describes the requirements for congruency:\par 
 \begin{table}[H]
  \begin{center}
-\begin{tabular}{|m{3.5cm}|m{3cm}|m{8cm}|}\hline
+\begin{tabular}{|m{3.1cm}|m{3cm}|m{8cm}|}\hline
 \textbf{Rule} & \textbf{Description} & \textbf{Diagram} \\ \hline
-RHS & If the hypotenuse and one side of a right-angled triangle are equal to
+RHS \newline ($90^{\circ}$, hypotenuse, side) & If the hypotenuse and one side of a right-angled triangle are equal to
 the hypotenuse and the corresponding side of another right angled triangle, then the two triangles
 are congruent. & \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
@@ -1047,9 +1078,8 @@ are congruent. & \begin{center}
 \rput(7.82625,-1.231875){F}
 \end{pspicture} 
 }
-\end{center} \\ 
-($90^{\circ}$, hypotenuse, side) & & $\triangle ABC \equiv \triangle DEF$ \\ \hline
-SSS & If three sides of a triangle are equal in length to the corresponding sides of
+\end{center} \newline $\triangle ABC \equiv \triangle DEF$ \\ \hline
+SSS \newline (Side, side, side) & If three sides of a triangle are equal in length to the corresponding sides of
 another triangle, then the two triangles are congruent &  \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
 {
@@ -1085,9 +1115,8 @@ another triangle, then the two triangles are congruent &  \begin{center}
 \rput(9.274375,-1.1139063){U}
 \end{pspicture} 
 }
-\end{center}\\ 
-(Side, side, side) & & $\triangle PQR \equiv \triangle STU$  \\ \hline
-SAS & If two sides and the included angle of one triangle are equal to the
+\end{center} \newline $\triangle PQR \equiv \triangle STU$ \\ \hline
+SAS \newline (Side, angle, side) & If two sides and the included angle of one triangle are equal to the
 corresponding two sides and included angle of another triangle, then the two triangles
 are congruent. & \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
@@ -1120,9 +1149,8 @@ are congruent. & \begin{center}
 \rput(9.135781,-1.0765625){K}
 \end{pspicture} 
 }
-\end{center} \\ 
-(Side, angle, side) & & $\triangle FGH \equiv \triangle IJK$  \\ \hline
-AAS &  If one side and two angles of one triangle are equal to the corresponding one
+\end{center} \newline $\triangle FGH \equiv \triangle IJK$  \\ \hline
+AAS \newline (Angle, angle, side) &  If one side and two angles of one triangle are equal to the corresponding one
 side and two angles of another triangle, then the two triangles are congruent. & \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
 {
@@ -1156,14 +1184,13 @@ side and two angles of another triangle, then the two triangles are congruent. &
 \rput(8.639531,-0.9765625){Z}
 \end{pspicture} 
 }
-\end{center} \\ 
-(Angle, angle, side) & & $\triangle UVW \equiv \triangle XYZ$  \\ \hline 
+\end{center} \newline $\triangle UVW \equiv \triangle XYZ$  \\ \hline 
     \end{tabular}
 \end{center}
 \end{table}
-Notation: The order of letters when labelling congruent triangles is very important. 
+\textbf{Notation:} The order of letters when labeling congruent triangles is very important. 
 \begin{center}
- $\triangle ABC ||| \triangle DEF$ 
+ $\triangle ABC \equiv \triangle DEF$ 
 \end{center}
 This notation indicates the following properties of the two triangles:
 $\hat{A} = \hat{D}, \hat{B} = \hat{E}, \text{and} \hat{C} = \hat{F} $ \\
@@ -1175,9 +1202,9 @@ $AB = DE, AC=DF, \text{and} BC=EF$
           \label{m38380*eip-665}Two triangles are similar if one triangle is an enlargement of the other. This means that their corresponding angles are equal in measure and the ratio of their corresponding sides are in proportion. The two triangles have the same shape, but a different scale. Congruent triangles are similar triangles, but not all similar triangles are congruent. The following table describes the requirements for similarity:\par 
 \begin{table}[H]
         \begin{center}
-\begin{tabular}{|c|m{4cm}|m{6cm}|}\hline
+\begin{tabular}{|m{3.1cm}|m{4cm}|m{6cm}|}\hline
 \textbf{Rule} & \textbf{Description} & \textbf{Diagram} \\ \hline 
-AAA & If all three pairs of corresponding angles of two triangles are equal, then the triangles are similar. &
+AAA \newline (Angle, angle, angle) & If all three pairs of corresponding angles of two triangles are equal, then the triangles are similar. &
 \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
 {
@@ -1210,9 +1237,8 @@ AAA & If all three pairs of corresponding angles of two triangles are equal, the
 \rput(7.26375,-1.0165625){F}
 \end{pspicture} 
 }
-\end{center} \\ 
-(Angle, angle, angle)  & & $\triangle ABC ||| \triangle DEF$  \\ \hline
-SSS  & If all pairs of corresponding sides of two triangles are in proportion, then the triangles are similar.&
+\end{center} \newline $\triangle ABC ||| \triangle DEF$  \\ \hline
+SSS \newline (Side, side, side) & If all pairs of corresponding sides of two triangles are in proportion, then the triangles are similar.&
 \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
 {
@@ -1246,9 +1272,7 @@ SSS  & If all pairs of corresponding sides of two triangles are in proportion, t
 \end{pspicture} 
 }
 \end{center}
-\\
-(side, side, side) & & $\triangle MNL ||| \triangle RST$   \\ 
- & & $\frac{MN}{RS} = \frac{ML}{RT} = \frac{NL}{ST}$   \\ \hline 
+\newline $\triangle MNL ||| \triangle RST$ \newline $\frac{MN}{RS} = \frac{ML}{RT} = \frac{NL}{ST}$   \\ \hline 
 \end{tabular}
       \end{center}
 \end{table}       
@@ -1498,175 +1522,175 @@ label=\textbf{\arabic*}. ]
 \begin{center}
 %\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-5.071875)(12.630625,5.071875)
-\rput{-110.476}(-0.32570845,5.635198){\pstriangle[linewidth=0.04,dimen=outer]
-(1.7926582,1.4546677)(2.2230408,2.9519162)}
-\psline[linewidth=0.04cm](1.6071875,2.2534375)(1.6271875,2.6534376)
-\psline[linewidth=0.04cm](2.123635,3.566676)(1.8700767,3.2154255)
+\begin{pspicture}(0,-5.071875)(12.643125,5.071875)
+\rput{-110.476}(-0.30693707,5.6482253){\pstriangle[linewidth=0.04,dimen=outer](1.8065645,1.4546672)(2.2230408,2.9519162)}
+\psline[linewidth=0.04cm](1.6210938,2.2534375)(1.6410937,2.6534376)
+\psline[linewidth=0.04cm](2.1375413,3.566676)(1.8839829,3.2154255)
 \usefont{T1}{ptm}{m}{n}
-\rput(2.4607813,2.6234374){36$^o$}
+\rput(2.4582813,2.6234374){36$^o$}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.8726562,4.0634375){x}
+\rput(0.8920312,4.0634375){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.415,2.6834376){y}
+\rput(0.42671874,2.6834376){y}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.9970313,4.6434374){N}
+\rput(1.0107813,4.6434374){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.11796875,2.1234374){P}
+\rput(0.11265625,2.1234374){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.2639062,2.2034376){O}
+\rput(3.2645311,2.2034376){O}
 \usefont{T1}{ptm}{m}{n}
 \rput(0.11328125,4.7234373){a)}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.1007814,3.8634374){30$^o$}
+\rput(6.0982814,3.8634374){30$^o$}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.032656,2.6834376){x}
+\rput(7.052031,2.6834376){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.6403127,2.6634376){68$^o$}
+\rput(5.637344,2.6634376){68$^o$}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.8570313,4.7634373){N}
+\rput(5.8707814,4.7634373){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.277969,2.2434375){P}
+\rput(5.2726564,2.2434375){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.023906,2.2234375){O}
+\rput(7.024531,2.2234375){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.490156,4.6434374){b)}
-\psline[linewidth=0.04cm](5.1871877,2.4934375)(8.087188,2.4934375)
-\psline[linewidth=0.04cm](6.0871873,4.7934375)(6.8871875,2.4934375)
-\psline[linewidth=0.04cm](6.0871873,4.7934375)(5.1871877,2.4934375)
-\psline[linewidth=0.04cm](9.327188,2.5334375)(10.227187,4.8534374)
-\psline[linewidth=0.04cm](10.227187,4.8934374)(11.527187,1.9934375)
-\psline[linewidth=0.04cm](9.327188,2.5334375)(11.987187,2.5334375)
+\rput(4.497031,4.6434374){b)}
+\psline[linewidth=0.04cm](5.201094,2.4934375)(8.101094,2.4934375)
+\psline[linewidth=0.04cm](6.101094,4.7934375)(6.901094,2.4934375)
+\psline[linewidth=0.04cm](6.101094,4.7934375)(5.201094,2.4934375)
+\psline[linewidth=0.04cm](9.341094,2.5334375)(10.241094,4.8534374)
+\psline[linewidth=0.04cm](10.241094,4.8934374)(11.541093,1.9934375)
+\psline[linewidth=0.04cm](9.341094,2.5334375)(12.001093,2.5334375)
 \usefont{T1}{ptm}{m}{n}
-\rput(11.760312,2.2834375){68$^o$}
+\rput(11.757343,2.2834375){68$^o$}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.760312,2.7034376){68$^o$}
+\rput(9.757343,2.7034376){68$^o$}
 \usefont{T1}{ptm}{m}{n}
-\rput(11.163906,2.2834375){O}
+\rput(11.164531,2.2834375){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.177969,2.2834375){P}
+\rput(9.172656,2.2834375){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.977032,4.9034376){N}
+\rput(9.990782,4.9034376){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(10.252656,4.4634376){x}
+\rput(10.272031,4.4634376){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(11.435,2.8034375){y}
+\rput(11.446719,2.8034375){y}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.233594,4.6434374){c)}
+\rput(9.233907,4.6434374){c)}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.6585938,-2.9565625){12}
-\psline[linewidth=0.04cm](0.8071875,-4.2665625)(2.5071876,-4.2665625)
-\psline[linewidth=0.04cm](1.0071875,-1.6665626)(2.5071876,-4.2665625)
-\psarc[linewidth=0.04](0.8571875,-4.3165627){0.31}{3.0127876}{93.01279}
-\psarc[linewidth=0.04](1.0471874,-1.7265625){0.38}{260.5377}{303.69006}
-\psline[linewidth=0.04cm](1.0071875,-1.6665626)(0.8071875,-4.2665625)
-\psarc[linewidth=0.04](1.0771875,-1.7565625){0.41}{258.35403}{303.69006}
+\rput(0.6439063,-2.9565625){12}
+\psline[linewidth=0.04cm](0.82109374,-4.2665625)(2.5210938,-4.2665625)
+\psline[linewidth=0.04cm](1.0210937,-1.6665626)(2.5210938,-4.2665625)
+\psarc[linewidth=0.04](0.87109375,-4.3165627){0.31}{3.0127876}{93.01279}
+\psarc[linewidth=0.04](1.0610937,-1.7265625){0.38}{260.5377}{303.69006}
+\psline[linewidth=0.04cm](1.0210937,-1.6665626)(0.82109374,-4.2665625)
+\psarc[linewidth=0.04](1.0910938,-1.7565625){0.41}{258.35403}{303.69006}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.9598438,-2.8565626){14}
+\rput(1.9464062,-2.8565626){14}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.4039063,-4.5165625){O}
+\rput(2.4045312,-4.5165625){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.83703125,-1.5965625){N}
+\rput(0.85078126,-1.5965625){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.67796874,-4.4565625){P}
-\psline[linewidth=0.04cm](3.946614,-2.7353694)(3.1012812,-4.210297)
-\psline[linewidth=0.04cm](6.1029353,-4.2017527)(3.1012812,-4.210297)
-\rput{-119.818535}(8.196195,-0.7583773){\psarc[linewidth=0.04](3.8783712,
--2.753887){0.31}{3.0127876}{93.01279}}
-\rput{-119.818535}(12.67961,-1.06587){\psarc[linewidth=0.04](6.0309887,
--4.206621){0.38}{260.5377}{303.69006}}
-\psline[linewidth=0.04cm](6.1029353,-4.2017527)(3.946614,-2.7353694)
-\rput{-119.818535}(12.627944,-1.1180301){\psarc[linewidth=0.04](5.9900427,
--4.217732){0.41}{258.35403}{303.69006}}
+\rput(0.67265624,-4.4565625){P}
+\psline[linewidth=0.04cm](3.9605203,-2.7353694)(3.1151874,-4.210297)
+\psline[linewidth=0.04cm](6.1168413,-4.2017527)(3.1151874,-4.210297)
+\rput{-119.818535}(8.217016,-0.7463117){\psarc[linewidth=0.04](3.892278,-2.753887){0.31}{3.0127876}{93.01279}}
+\rput{-119.818535}(12.700432,-1.0538051){\psarc[linewidth=0.04](6.044895,-4.206622){0.38}{260.5377}{303.69006}}
+\psline[linewidth=0.04cm](6.1168413,-4.2017527)(3.9605203,-2.7353694)
+\rput{-119.818535}(12.648766,-1.1059643){\psarc[linewidth=0.04](6.0039496,-4.217732){0.41}{258.35403}{303.69006}}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.1871877,-4.4565625){T}
+\rput(6.181094,-4.4565625){T}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.3464062,-4.4365625){S}
+\rput(3.3395312,-4.4365625){S}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.46125,-4.4565625){21}
+\rput(4.4492188,-4.4565625){21}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.8857813,-2.5365624){R}
+\rput(3.8982813,-2.5365624){R}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.092656,-3.1965625){x}
+\rput(5.112031,-3.1965625){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.50375,0.7834375){d)}
-\psline[linewidth=0.04cm](1.8871875,1.1334375)(6.4871874,-1.5665625)
-\psline[linewidth=0.04cm](6.4871874,-1.5665625)(6.4871874,0.4334375)
-\psline[linewidth=0.04cm](6.4871874,0.4334375)(1.3871875,0.3334375)
-\psline[linewidth=0.04cm](1.8871875,1.1334375)(1.3871875,0.3334375)
-\psline[linewidth=0.04cm](2.0871875,1.0334375)(1.9871875,0.8334375)
-\psline[linewidth=0.04cm](1.7871875,0.9334375)(1.9871875,0.8334375)
-\psline[linewidth=0.04cm](6.2871876,0.4334375)(6.2871876,0.2334375)
-\psline[linewidth=0.04cm](6.2871876,0.2334375)(6.4871874,0.2334375)
+\rput(0.50421876,0.7834375){d)}
+\psline[linewidth=0.04cm](1.9010937,1.1334375)(6.501094,-1.5665625)
+\psline[linewidth=0.04cm](6.501094,-1.5665625)(6.501094,0.4334375)
+\psline[linewidth=0.04cm](6.501094,0.4334375)(1.4010937,0.3334375)
+\psline[linewidth=0.04cm](1.9010937,1.1334375)(1.4010937,0.3334375)
+\psline[linewidth=0.04cm](2.1010938,1.0334375)(2.0010939,0.8334375)
+\psline[linewidth=0.04cm](1.8010937,0.9334375)(2.0010939,0.8334375)
+\psline[linewidth=0.04cm](6.301094,0.4334375)(6.301094,0.2334375)
+\psline[linewidth=0.04cm](6.301094,0.2334375)(6.501094,0.2334375)
 \usefont{T1}{ptm}{m}{n}
-\rput(3.1039062,0.1234375){O}
+\rput(3.1045313,0.1234375){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.8970313,1.2834375){N}
+\rput(1.9107813,1.2834375){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.2379688,0.2834375){P}
+\rput(1.2326562,0.2834375){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.7257814,0.5834375){R}
+\rput(6.7382812,0.5834375){R}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.606406,-1.6765625){S}
+\rput(6.599531,-1.6765625){S}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.7126563,0.8434375){x}
+\rput(2.7320313,0.8434375){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.3584375,0.7834375){19}
+\rput(1.3435937,0.7834375){19}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.713594,-0.4565625){76}
+\rput(6.7139063,-0.4565625){76}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.6692185,0.5834375){116}
+\rput(4.655156,0.5834375){116}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.732969,0.7634375){e)}
-\psline[linewidth=0.04cm](8.807187,1.1334375)(8.807187,-1.1665626)
-\psline[linewidth=0.04cm](8.807187,-1.1665626)(10.607187,-1.1665626)
-\psline[linewidth=0.04cm](8.807187,1.1334375)(10.607187,-1.1665626)
-\psline[linewidth=0.04cm](8.807187,-0.9665625)(9.007188,-0.9665625)
-\psline[linewidth=0.04cm](9.007188,-0.9665625)(9.007188,-1.1665626)
+\rput(7.7326565,0.7634375){e)}
+\psline[linewidth=0.04cm](8.821094,1.1334375)(8.821094,-1.1665626)
+\psline[linewidth=0.04cm](8.821094,-1.1665626)(10.621093,-1.1665626)
+\psline[linewidth=0.04cm](8.821094,1.1334375)(10.621093,-1.1665626)
+\psline[linewidth=0.04cm](8.821094,-0.9665625)(9.021094,-0.9665625)
+\psline[linewidth=0.04cm](9.021094,-0.9665625)(9.021094,-1.1665626)
 \usefont{T1}{ptm}{m}{n}
-\rput(8.554218,-0.0565625){15}
+\rput(8.535155,-0.0565625){15}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.776875,-1.3765625){20}
+\rput(9.780469,-1.3765625){20}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.852656,0.1434375){x}
+\rput(9.872031,0.1434375){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(10.643907,-1.4365625){O}
+\rput(10.644532,-1.4365625){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(8.6579685,-1.3765625){P}
+\rput(8.652656,-1.3765625){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(8.777031,1.2634375){N}
-\psline[linewidth=0.04cm](7.3471875,-2.5665624)(12.247188,-2.5665624)
-\psline[linewidth=0.04cm](7.3471875,-2.5665624)(11.147187,-4.6665626)
-\psline[linewidth=0.04cm](12.247188,-2.5665624)(11.147187,-4.6665626)
-\psline[linewidth=0.04cm](7.3471875,-2.5665624)(6.7471876,-3.7665625)
-\psline[linewidth=0.04cm](6.7471876,-3.7665625)(11.147187,-4.6665626)
-\psline[linewidth=0.04cm](11.047188,-4.3665624)(11.247188,-4.4665623)
-\psline[linewidth=0.04cm](11.047188,-4.3665624)(10.947187,-4.5665627)
-\psline[linewidth=0.04cm](7.5471873,-2.6665626)(7.4471874,-2.8665626)
-\psline[linewidth=0.04cm](7.4471874,-2.8665626)(7.2471876,-2.7665625)
+\rput(8.790781,1.2634375){N}
+\psline[linewidth=0.04cm](7.3610935,-2.5665624)(12.261094,-2.5665624)
+\psline[linewidth=0.04cm](7.3610935,-2.5665624)(11.161094,-4.6665626)
+\psline[linewidth=0.04cm](12.261094,-2.5665624)(11.161094,-4.6665626)
+\psline[linewidth=0.04cm](7.3610935,-2.5665624)(6.7610936,-3.7665625)
+\psline[linewidth=0.04cm](6.7610936,-3.7665625)(11.161094,-4.6665626)
+\psline[linewidth=0.04cm](11.061094,-4.3665624)(11.261094,-4.4665623)
+\psline[linewidth=0.04cm](11.061094,-4.3665624)(10.961093,-4.5665627)
+\psline[linewidth=0.04cm](7.5610933,-2.6665626)(7.4610934,-2.8665626)
+\psline[linewidth=0.04cm](7.4610934,-2.8665626)(7.2610936,-2.7665625)
 \usefont{T1}{ptm}{m}{n}
-\rput(11.922344,-3.6365626){9}
+\rput(11.921407,-3.6365626){9}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.934218,-2.8365624){15}
+\rput(9.915155,-2.8365624){15}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.2167187,-3.2965624){5}
+\rput(7.210156,-3.2965624){5}
 \usefont{T1}{ptm}{m}{n}
-\rput(8.772656,-3.0965624){x}
+\rput(8.792031,-3.0965624){x}
 \usefont{T1}{ptm}{m}{n}
-\rput(8.275,-4.2365627){y}
+\rput(8.286718,-4.3365627){y}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.5779686,-3.7965624){P}
+\rput(6.572656,-3.7965624){P}
 \usefont{T1}{ptm}{m}{n}
-\rput(7.2370315,-2.4165626){N}
+\rput(7.2507815,-2.4165626){N}
 \usefont{T1}{ptm}{m}{n}
-\rput(11.163906,-4.9165626){O}
+\rput(11.164531,-4.9165626){O}
 \usefont{T1}{ptm}{m}{n}
-\rput(12.465781,-2.5165625){R}
+\rput(12.478281,-2.5165625){R}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.2328125,-1.7765625){f)}
+\rput(0.23234375,-1.7765625){f)}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.514375,-2.7165625){g)}
-\end{pspicture} 
+\rput(6.5154686,-2.7165625){g)}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.5467187,-4.3965626){y}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3759375,-3.2765625){6}
+\end{pspicture}  
 } 
 \end{center}
  \label{m38380*uid51}\item State whether the following pairs of triangles are congruent or not. Give reasons for your answers. If there is not enough information to make a descision, explain why.
@@ -1843,12 +1867,12 @@ $\therefore \triangle ABC \equiv \triangle CDA$ & (AAS) \\
 $AB = CD$ and $BC = DA$ &  \\ 
 \end{tabular} \\ 
 Opposite sides of a parallelogram are equal. \\ \newline
-\begin{tabular}{ll}
- $\hat{A}_{2} = \hat{C}_{3}$ & ($\triangle ABC \equiv \triangle CDA$) \\
-$\hat{A}_{1} = \hat{C}_{4}$ & \\
-So $\hat{A}_{1} + \hat{A}_{2} = \hat{C}_{3} + \hat{C}_{4}$ & \\
-$\therefore B\hat{A}D = B\hat{C}D$ & \\
-$\hat{B} = \hat{D}$ & \\
+\begin{tabular}{r@{=}ll}
+ $\hat{A}_{2}$ & $\hat{C}_{3}$ & ($\triangle ABC \equiv \triangle CDA$) \\
+$\hat{A}_{1}$ & $\hat{C}_{4}$ & \\
+So $\hat{A}_{1} + \hat{A}_{2}$ & $\hat{C}_{3} + \hat{C}_{4}$ & \\
+$\therefore B\hat{A}D$ & $B\hat{C}D$ & \\
+$\hat{B}$ & $\hat{D}$ & \\
 \end{tabular} \\
 Opposite angles of a parallelogram are equal.
 }
@@ -1965,10 +1989,10 @@ Both pairs of opposite sides of the quadrilateral are parallel, therefore $WXYZ$
 \rput(3.5326562,-1.6465625){R}
 \usefont{T1}{ptm}{m}{n}
 \rput(1.1932813,-1.6665626){S}
-\psline[linewidth=0.02cm,arrowsize=0.173cm 2.0,arrowlength=1.0,arrowinset=0.7]{->}(2.2140625,-1.4965625)(2.4740624,-1.4965625)
-\psline[linewidth=0.02cm,arrowsize=0.173cm 2.0,arrowlength=1.0,arrowinset=0.7]{->}(1.1740625,1.5034375)(1.4340625,1.5034375)
-\psline[linewidth=0.02cm,arrowsize=0.173cm 2.0,arrowlength=1.0,arrowinset=0.7]{->>}(0.8340625,0.0834375)(0.7540625,0.3634375)
-\psline[linewidth=0.02cm,arrowsize=0.173cm 2.0,arrowlength=1.0,arrowinset=0.7]{->>}(2.8340626,0.2034375)(2.7140625,0.4834375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(2.2140625,-1.4965625)(2.4740624,-1.4965625)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(1.1740625,1.5034375)(1.4340625,1.5034375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.8340625,0.0834375)(0.7540625,0.3634375)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(2.8340626,0.2034375)(2.7140625,0.4834375)
 \psline[linewidth=0.04cm](1.3340625,-1.4565625)(2.3540626,1.5234375)
 \end{pspicture} 
 }
@@ -1994,10 +2018,10 @@ $PQRS$ is a rectangle. Prove that the diagonals are equal in length.\\
 \rput(7.3526564,-1.791875){R}
 \usefont{T1}{ptm}{m}{n}
 \rput(0.09328125,-1.771875){S}
-\psline[linewidth=0.04cm,arrowsize=0.113cm 3.0,arrowlength=1.23,arrowinset=0.58]{->}(3.6940625,1.458125)(3.9540625,1.458125)
-\psline[linewidth=0.04cm,arrowsize=0.113cm 3.0,arrowlength=1.23,arrowinset=0.58]{->}(3.7540624,-1.501875)(4.0140624,-1.501875)
-\psline[linewidth=0.04cm,arrowsize=0.113cm 3.0,arrowlength=1.23,arrowinset=0.58]{->>}(0.3340625,0.038125)(0.3340625,0.218125)
-\psline[linewidth=0.04cm,arrowsize=0.113cm 3.0,arrowlength=1.23,arrowinset=0.58]{->>}(7.2340627,-0.141875)(7.2340627,0.178125)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.6940625,1.458125)(3.9540625,1.458125)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.7540624,-1.501875)(4.0140624,-1.501875)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(0.3340625,0.038125)(0.3340625,0.218125)
+\psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->>}(7.2340627,-0.141875)(7.2340627,0.178125)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.3140625,1.458125)(7.2340627,-1.501875)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.3140625,-1.481875)(7.2340627,1.438125)
 \psline[linewidth=0.04cm](0.3140625,1.218125)(0.5540625,1.218125)
@@ -2074,7 +2098,7 @@ $ABCD$ is a quadrilateral. Diagonals $AC$ and $BD$ intersect at $T$. $AC = BD$, 
 \item $ABCD$ is a rectangle.
 \end{enumerate}
 
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.8645313)(3.7246876,2.8645313)
 \psframe[linewidth=0.04,dimen=outer](3.3771875,2.4607813)(0.2571875,-2.4992187)
@@ -2623,10 +2647,11 @@ We can conclude that the line joining the mid-point of two sides of a triangle i
 The converse of this theorem states: If a line is drawn through the mid-point of a side of a triangle parallel to the second side, it will bisect the third side.
 
 \begin{exercises}{Midpoint} \noindent
-Find $x$ in each of the following:
 \begin{enumerate}[label=\textbf{\arabic*}.]
-\item 
-\scalebox{1} % Change this value to rescale the drawing.
+\item Find $x$ in each of the following:\\
+\begin{tabular}{c m{3cm} c m{3cm}} 
+1. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.06)(3.06,1.06)
 \pspolygon[linewidth=0.04](0.0,-0.92)(2.02,1.04)(3.04,-0.94)
@@ -2642,9 +2667,9 @@ Find $x$ in each of the following:
 \usefont{T1}{ptm}{m}{n}
 \rput(2.4654686,-0.15){x}
 \end{pspicture} 
-}
-\item 
-\scalebox{1} % Change this value to rescale the drawing.
+}}
+& 2. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.1392188)(3.0,1.1592188)
 \pspolygon[linewidth=0.04](1.42,-1.1192187)(0.0,0.78078127)(2.98,0.7607812)
@@ -2660,9 +2685,10 @@ Find $x$ in each of the following:
 \psline[linewidth=0.04cm](0.48857507,0.28502357)(0.34528103,0.14550002)
 \psline[linewidth=0.04cm](0.51610273,0.228083)(0.3871381,0.1025118)
 \end{pspicture} 
-}
-\item 
-\scalebox{1} % Change this value to rescale the drawing.
+}}
+\\
+3. & 
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.2821875)(2.58625,1.2621875)
 \pspolygon[linewidth=0.04](0.02,-0.7378125)(2.02,1.2221875)(2.04,-0.7378125)
@@ -2684,9 +2710,9 @@ Find $x$ in each of the following:
 \psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{|-|}(0.0,-0.9578125)(2.02,-0.9578125)
 \psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{|-|}(2.3,1.2421875)(2.3,-0.7378125)
 \end{pspicture} 
-}
-\item 
-\scalebox{1} % Change this value to rescale the drawing.
+}}
+& 4. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.3092188)(4.5684376,1.3092188)
 \pspolygon[linewidth=0.04](0.2375,-1.0092187)(2.2375,0.9507812)(4.2575,-1.0092187)
@@ -2718,9 +2744,10 @@ Find $x$ in each of the following:
 \usefont{T1}{ptm}{m}{n}
 \rput(2.825,0.12578125){\footnotesize 60}
 \end{pspicture} 
-}
-\item 
-\scalebox{1} % Change this value to rescale the drawing.
+}}
+\\
+5. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.1789062)(4.5721874,1.1589062)
 \pspolygon[linewidth=0.04](0.5521875,-0.8410938)(0.5321875,1.1389062)(4.5521874,-0.86109376)
@@ -2745,9 +2772,9 @@ Find $x$ in each of the following:
 \usefont{T1}{ptm}{m}{n}
 \rput(0.71921873,0.8539063){\footnotesize 66}
 \end{pspicture} 
-}
-\end{enumerate}
-Show that $M$ is the midpoint of $AB$ and that $MN=RC$.\\
+}} & & \\
+\end{tabular}
+\item Show that $M$ is the midpoint of $AB$ and that $MN=RC$.\\
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.331875)(2.8815625,1.331875)
@@ -2775,8 +2802,8 @@ Show that $M$ is the midpoint of $AB$ and that $MN=RC$.\\
 \psline[linewidth=0.04cm](1.4540625,-0.831875)(1.5940624,-0.831875)
 \psline[linewidth=0.04cm](1.5940624,-0.831875)(1.5940624,-0.931875)
 \end{pspicture} 
-}\\
-$ABCD$ is a rhombus with $AM = MO$ and $AN = NO$. Prove $ANOM$ is a rhombus.\\
+}
+\item $ABCD$ is a rhombus with $AM = MO$ and $AN = NO$. Prove $ANOM$ is a rhombus.\\
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.2990191)(4.0170274,1.2994184)
@@ -2815,6 +2842,7 @@ $ABCD$ is a rhombus with $AM = MO$ and $AN = NO$. Prove $ANOM$ is a rhombus.\\
 \rput(2.1462464,-0.009019107){O}
 \end{pspicture} 
 }
+\end{enumerate}
 \end{exercises}
 
 
@@ -2830,7 +2858,7 @@ $\mathrm{AB}\parallel \mathrm{CD}$, $\mathrm{AD}\parallel \mathrm{BC}$,
 $\hat{A}=\hat{C}$, and $\hat{B}=\hat{D}$. \\
 Prove that MNOP is a parallelogram.\\
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{2} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.52)(4.91375,1.52)
 \pspolygon[linewidth=0.04](1.37375,0.94)(4.45375,0.96)(3.41375,-1.06)(0.37375,-1.06)
@@ -2921,7 +2949,7 @@ $A\hat{D}C = A\hat{B}C$ & (given) \\
 $AD =BC$ & (given) \\ 
 $\therefore \triangle ADW \equiv \triangle CBY$ & (AAS) \\
 $\therefore DW = BY$ & \\
-\end{tabular}
+\end{tabular}\\ \newline
 \begin{tabular}{ll}
 In $\triangle ABX$ and $\triangle CDZ$ & \\
 $D\hat{C}Z = B\hat{X}$ & (given) \\
@@ -2929,7 +2957,7 @@ $\hat{D}_{1} = \hat{B}_{1}$ & (given) \\
 $DC = AD$ & (given) \\
 $\therefore \triangle ABX \equiv \triangle CDZ$ & (AAS) \\ 
 $\therefore AX = CZ$  & \\
-\end{tabular}
+\end{tabular}\\ \newline
 \begin{tabular}{ll}
 In $\triangle XAM$ and $\triangle ZCO$ & \\
 $X\hat{A}M = Z\hat{C}O$ & (given) \\
@@ -2940,7 +2968,7 @@ $\therefore \hat{Z}_{1} = \hat{M}_{1}$ & \\
 $\hat{M}_1 = \hat{M}_2$ & (vert. opp. $\angle$'s) \\
 $\hat{O}_{1} = \hat{O}_2$ & (vert. opp. $\angle$'s) \\
 $\therefore \hat{M}_2 = \hat{O}_{2}$ & \\
-\end{tabular}
+\end{tabular}\\ \newline
 \begin{tabular}{ll}
 In $\triangle BYN$ and $\triangle DWP$ & \\
 $Y\hat{B}N = W\hat{D}P$ & (given) \\
@@ -2951,7 +2979,7 @@ $\therefore B\hat{N}Y = D\hat{P}W$ & \\
 $D\hat{B}W = M\hat{P}O$ & (vert. opp. $\angle$'s) \\
 $B\hat{N}Y = O\hat{N}M$ & (vert. opp. $\angle$'s) \\
 $\therefore M\hat{P}O = O\hat{M}N$ & \\
-\end{tabular}\\
+\end{tabular}\\ \newline
 Therefore $MNOP$ is a parallelogram with both pairs of opposite angles equal, and both pairs of opposite sides parallel.
 }
 \end{wex}
@@ -3003,49 +3031,56 @@ Therefore $MNOP$ is a parallelogram with both pairs of opposite angles equal, an
 
 \subsection{ End of Chapter Exercises}
 \nopagebreak
+% \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
 %First question
-Identify the types of angles shown below:
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-\item \scalebox{1} % Change this value to rescale the drawing.
+Identify the types of angles shown below:\\
+\begin{tabular}{lm{4cm}lm{3cm}}
+1. & 
+\raisebox{-.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.04)(4.02,0.3)
 \psline[linewidth=0.04cm](0.0,-0.02)(4.0,-0.02)
 \psarc[linewidth=0.04](1.82,0.0){0.28}{0.0}{180.0}
-\end{pspicture} 
+\end{pspicture}} 
 }
-\item \scalebox{1} % Change this value to rescale the drawing.
+& 2. &
+\raisebox{-.8\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.31)(3.18,0.71)
 \psarc[linewidth=0.04](0.98,-0.29){0.4}{0.0}{123.69007}
 \psline[linewidth=0.04](0.0,0.69)(1.1,-0.25)(3.16,-0.25)
-\end{pspicture} 
+\end{pspicture} }
 }
-\item \scalebox{1} % Change this value to rescale the drawing.
+\\
+3. & 
+\raisebox{-.8\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.31)(2.36,0.75)
 \psarc[linewidth=0.04](0.44,-0.29){0.44}{0.0}{66.80141}
 \psline[linewidth=0.04](1.2,0.73)(0.28,-0.29)(2.34,-0.29)
-\end{pspicture} 
+\end{pspicture} }
 }
-\item \scalebox{1} % Change this value to rescale the drawing.
+& 4. &
+\raisebox{-.8\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.66)(2.08,0.66)
 \psline[linewidth=0.04](0.0,0.64)(0.0,-0.62)(2.06,-0.62)
 \psline[linewidth=0.04cm](0.0,-0.4)(0.2,-0.4)
 \psline[linewidth=0.04cm](0.2,-0.4)(0.2,-0.64)
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+}}
+\\ 
+5. &
+\raisebox{-.8\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.62)(3.1,0.62)
 \psline[linewidth=0.04](0.0,-0.6)(1.02,0.28)(3.08,0.28)
 \psarc[linewidth=0.04](1.0,0.3){0.3}{0.0}{225.0}
 \end{pspicture} 
-}
-\item An angle of $91^\circ$ 
-\item An angle of $180^\circ$
-\item An angle of $210^\circ$
-\end{enumerate}
+}}
+& 6. & An angle of $91^\circ$  \\
+7. & An angle of $180^\circ$ & 8. & An angle of $210^\circ$ \\
+\end{tabular}\\
 %Second question 
 Assess whether the following statements are true or false. If the
 statement is false, explain why:
@@ -3062,9 +3097,9 @@ statement is false, explain why:
 \item Both diagonals of a kite bisect the interior angles.
 \end{enumerate}
 %Third question
-Calculate the size of the third angle ($x$) in each of the diagrams below:
-\begin{enumerate}[label=\textbf{\arabic*}. ] 
-\item \scalebox{1} % Change this value to rescale the drawing.
+Calculate the size of the third angle ($x$) in each of the diagrams below:\\
+\begin{tabular}{lm{4.5cm}lm{4cm}}
+1. & \raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.0204266)(4.2938037,1.0995734)
 \pspolygon[linewidth=0.04](0.23380375,-1.0004267)(0.23380375,1.0595734)(4.2738037,1.0795734)
@@ -3077,8 +3112,9 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \rput{107.26479}(5.5713153,-2.3035204){\psarc[linewidth=0.04](3.6338038,0.8995734){0.26}{32.92963}{140.93379}}
 \rput{-20.206701}(0.3015834,0.09886189){\psarc[linewidth=0.04](0.42820147,-0.79682213){0.33352643}{32.92963}{140.93379}}
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+} }
+& 2. &
+\raisebox{-1\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.57905805)(4.94,0.440942)
 \pspolygon[linewidth=0.04](0.0,-0.559058)(2.92,0.42094198)(4.92,-0.539058)
@@ -3092,8 +3128,10 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \rput(4.1709375,-0.40405804){\footnotesize 20}
 \rput{197.50908}(5.536452,1.6237775){\psarc[linewidth=0.04](2.8932536,0.38559344){0.35332903}{357.98285}{146.57666}}
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+} }
+\\
+3. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.4)(4.3225,1.38)
 \pspolygon[linewidth=0.04](0.3425,-1.04)(0.3425,1.36)(4.3025,-1.0157576)
@@ -3113,8 +3151,9 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \usefont{T1}{ptm}{m}{n}
 \rput(1.720625,0.055){\footnotesize y}
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+}}
+& 4. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.3538659)(3.72,1.8261342)
 \pspolygon[linewidth=0.04](0.0,-1.1938658)(2.04,1.8061342)(3.7,-1.1938658)
@@ -3127,8 +3166,9 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \rput{167.76651}(4.302379,2.382765){\psarc[linewidth=0.04](2.0235155,1.4219141){0.32604876}{32.458344}{174.69376}}
 \rput{37.977333}(0.042277616,-2.4176195){\psarc[linewidth=0.04](3.5340343,-1.1473787){0.47183454}{66.86393}{149.30316}}
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+}} \\
+5. &
+\raisebox{-1\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.56560516)(4.1,0.45439485)
 \pspolygon[linewidth=0.04](0.0,0.43439484)(4.08,0.43439484)(2.04,-0.5456052)
@@ -3141,8 +3181,9 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \psline[linewidth=0.04cm](1.14,-0.20560516)(1.28,-0.08560516)
 \psline[linewidth=0.04cm](2.84,-0.005605158)(2.94,-0.20560516)
 \end{pspicture} 
-}
-\item \scalebox{1} % Change this value to rescale the drawing.
+}}
+& 6. &
+\raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.2526648)(4.36,1.2317102)
 \pspolygon[linewidth=0.04](0.0,-0.90828985)(2.5,-0.90828985)(1.34,1.2117101)
@@ -3164,22 +3205,23 @@ Calculate the size of the third angle ($x$) in each of the diagrams below:
 \usefont{T1}{ptm}{m}{n}
 \rput(2.9514062,-0.07828985){7,5}
 \end{pspicture} 
-}
-\end{enumerate}
+}}
+\\ 
+\end{tabular}\\
 %Question 4
-Find all the pairs of parallel lines in the following figures, giving reasons in each case.
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item 
-\scalebox{0.8}{\begin{pspicture}(0,-1.6034375)(5.1659374,1.6034375) \psline[linewidth=0.04cm](0.476875,1.203125)(4.716875,1.203125) \psline[linewidth=0.04cm](0.476875,-1.096875)(4.716875,-1.096875) \psline[linewidth=0.04cm](0.476875,1.203125)(4.676875,-1.096875)
+Find all the pairs of parallel lines in the following figures, giving reasons in each case.\\
+\begin{tabular}{lm{4.5cm}lm{4.5cm}}
+1. & 
+\raisebox{-1.5\height}{\scalebox{0.8}{\begin{pspicture}(0,-1.6034375)(5.1659374,1.6034375) \psline[linewidth=0.04cm](0.476875,1.203125)(4.716875,1.203125) \psline[linewidth=0.04cm](0.476875,-1.096875)(4.716875,-1.096875) \psline[linewidth=0.04cm](0.476875,1.203125)(4.676875,-1.096875)
 \rput(3.1875,-0.766875){62$^{\circ}$}
 \rput(2.2275,0.853125){62$^{\circ}$}
 \rput(0.1175,1.413125){A} 
 \rput(4.97625,1.313125){B}
 \rput(0.22578125,-1.406875){D} 
 \rput(5.0021877,-1.446875){C} 
-\end{pspicture} }   
-\item 
-\scalebox{0.65}{
+\end{pspicture} }  } 
+& 2. &
+\raisebox{-1.5\height}{\scalebox{0.65}{
 \begin{pspicture}(0,-2.7134376)(8.0,2.7134376) \psline[linewidth=0.04cm](0.64,2.153125)(1.94,-2.526875) \psline[linewidth=0.04cm](5.8,2.553125)(7.1,-2.126875) \psline[linewidth=0.04cm](0.0,1.513125)(7.24,2.153125) \psline[linewidth=0.04cm](0.74,-2.126875)(7.98,-1.486875)  \rput(0.1615625,2.023125){M} 
 \rput(6.3395314,2.523125){N} 
 \rput(1.4215626,-2.556875){O} 
@@ -3187,22 +3229,23 @@ Find all the pairs of parallel lines in the following figures, giving reasons in
 \rput(6.7807813,1.743125){57$^{\circ}$}
 \rput(6.485625,-1.956875){123$^{\circ}$} 
 \rput(1.505625,1.983125){137$^{\circ}$} 
-\end{pspicture}}
-\item 
-\scalebox{0.7}{\begin{pspicture}(0,-2.66)(7.791875,2.66) \psline[linewidth=0.04cm](0.7065625,1.72)(6.1865625,1.72) \psline[linewidth=0.04cm](0.0065625,-1.48)(5.5265627,-1.48) \psline[linewidth=0.04cm](1.5465626,2.64)(0.4665625,-2.44) \psline[linewidth=0.04cm](5.8465624,2.44)(4.7665625,-2.64)  \rput(6.5721874,1.27){120$^{\circ}$} 
+\end{pspicture}} }\\
+3. & 
+\raisebox{-1\height}{\scalebox{0.7}{\begin{pspicture}(0,-2.66)(7.791875,2.66) \psline[linewidth=0.04cm](0.7065625,1.72)(6.1865625,1.72) \psline[linewidth=0.04cm](0.0065625,-1.48)(5.5265627,-1.48) \psline[linewidth=0.04cm](1.5465626,2.64)(0.4665625,-2.44) \psline[linewidth=0.04cm](5.8465624,2.44)(4.7665625,-2.64)  \rput(6.5721874,1.27){120$^{\circ}$} 
 \rput(1.7135937,-1.15){60$^{\circ}$} 
 \rput(4.1135936,-1.91){60$^{\circ}$} 
 \rput(1.051875,2.17){G}
 \rput(6.1254687,2.05){H} 
 \rput(0.06421875,-1.89){K} 
 \rput(5.443594,-1.97){L} 
-\end{pspicture} }
-\end{enumerate}
+\end{pspicture} }}
+& & \\
+\end{tabular}\\
 % Question 5
-Find angles $a$, $b$, $c$ and $d$ in each case, giving reasons.
-\begin{enumerate} [noitemsep, label=\textbf{\arabic*}. ]
-\item 
-\begin{pspicture}(0,-1.5101563)(4.01,1.5101563) 
+Find angles $a$, $b$, $c$ and $d$ in each case, giving reasons.\\
+\begin{tabular}{lm{4.5cm}lm{4.5cm}}
+1. & 
+\raisebox{-1.5\height}{\begin{pspicture}(0,-1.5101563)(4.01,1.5101563) 
 \psline[linewidth=0.04cm](0.0,-0.15015624)(2.98,-1.1301563) 
 \psline[linewidth=0.04cm](3.0,0.22984375)(0.96,1.1298437) 
 \psline[linewidth=0.04cm](2.98,0.22984375)(2.98,-1.1501563) 
@@ -3226,9 +3269,9 @@ Find angles $a$, $b$, $c$ and $d$ in each case, giving reasons.
 \rput(2.8010938,0.11484375){\small a} \rput(1.1614063,0.77484375){\small b} 
 \rput(1.1696875,-0.34515625){\small c} \rput(0.76140624,-0.24515624){\small d} 
 \rput(2.6165626,-0.79015625){\footnotesize $73^{\circ}$} 
-\end{pspicture}
-\item 
-\begin{pspicture}(0,-2.0301561)(3.6778126,2.0301561) 
+\end{pspicture}} 
+& 2. &  
+\raisebox{-1.5\height}{\begin{pspicture}(0,-2.0301561)(3.6778126,2.0301561) 
 \psline[linewidth=0.04cm](0.2865625,1.1098437)(3.3065624,1.1098437) 
 \psline[linewidth=0.04cm](0.2865625,0.08984375)(3.2665625,0.08984375) 
 \psline[linewidth=0.04cm](0.2865625,-0.89015627)(3.2865624,-0.89015627) 
@@ -3255,10 +3298,10 @@ Find angles $a$, $b$, $c$ and $d$ in each case, giving reasons.
 \psline[linewidth=0.04cm](0.5865625,-0.11015625)(0.5865625,-0.11015625) 
 \psline[linewidth=0.04cm](0.5865625,-0.11015625)(0.8465625,0.06984375) 
 \psline[linewidth=0.04cm](0.5465625,-0.71015626)(0.8465625,-0.8701562) 
-\psline[linewidth=0.04cm](0.5865625,-1.0901562)(0.8065625,-0.89015627) \end{pspicture}
-\item 
-\begin{pspicture}(0,-1.8901563)(3.724375,1.8901563) \psline[linewidth=0.064cm](0.256875,0.50984377)(0.256875,-1.4901563) \psline[linewidth=0.064cm](3.256875,1.5098437)(3.296875,-0.45015624) \psline[linewidth=0.064cm](0.236875,-1.4501562)(3.296875,1.5498438) \psline[linewidth=0.064cm](0.256875,0.52984375)(3.276875,-0.45015624) \psline[linewidth=0.02cm](0.076875,-0.67015624)(0.236875,-0.21015625) \psline[linewidth=0.02cm](0.276875,-0.25015625)(0.416875,-0.67015624) \psline[linewidth=0.02cm](3.076875,0.20984375)(3.276875,0.64984375) \psline[linewidth=0.02cm](3.256875,0.6298438)(3.476875,0.24984375) \rput(0.10765625,0.63984376){T} \rput(1.7901562,-0.28015625){U} \rput(3.490625,-0.74015623){V} \rput(3.5304687,1.6998438){W} \rput(0.1634375,-1.7401563){X} \rput(3.0579689,-0.16515625){\small a} \rput(0.43828124,-0.9451563){\small b} \rput(1.3065625,-0.06515625){\small d} \rput(1.6782813,0.29484376){\small c} \rput(2.9854689,0.9348438){\small $45^{\circ}$} \rput(0.5106875,0.18984374){\footnotesize $50^{\circ}$} \end{pspicture}
-\end{enumerate}
+\psline[linewidth=0.04cm](0.5865625,-1.0901562)(0.8065625,-0.89015627) \end{pspicture}} \\
+3. &  
+\raisebox{-.5\height}{\begin{pspicture}(0,-1.8901563)(3.724375,1.8901563) \psline[linewidth=0.064cm](0.256875,0.50984377)(0.256875,-1.4901563) \psline[linewidth=0.064cm](3.256875,1.5098437)(3.296875,-0.45015624) \psline[linewidth=0.064cm](0.236875,-1.4501562)(3.296875,1.5498438) \psline[linewidth=0.064cm](0.256875,0.52984375)(3.276875,-0.45015624) \psline[linewidth=0.02cm](0.076875,-0.67015624)(0.236875,-0.21015625) \psline[linewidth=0.02cm](0.276875,-0.25015625)(0.416875,-0.67015624) \psline[linewidth=0.02cm](3.076875,0.20984375)(3.276875,0.64984375) \psline[linewidth=0.02cm](3.256875,0.6298438)(3.476875,0.24984375) \rput(0.10765625,0.63984376){T} \rput(1.7901562,-0.28015625){U} \rput(3.490625,-0.74015623){V} \rput(3.5304687,1.6998438){W} \rput(0.1634375,-1.7401563){X} \rput(3.0579689,-0.16515625){\small a} \rput(0.43828124,-0.9451563){\small b} \rput(1.3065625,-0.06515625){\small d} \rput(1.6782813,0.29484376){\small c} \rput(2.9854689,0.9348438){\small $45^{\circ}$} \rput(0.5106875,0.18984374){\footnotesize $50^{\circ}$} \end{pspicture}} & & \\
+\end{tabular}\\
 %Question 6
 Say which of the following pairs of triangles are congruent with reasons. 
 \begin{enumerate} [noitemsep, label=\textbf{\arabic*}. ]
