@@ -327,70 +327,6 @@ linecolor=red%
 \makeatother
 
 
-% can we deprecate the use of this, and use \westep instead
-%\newcommand{\westep}[1]
-%{\par \par%\pagebreak[1]
-% \textbf{\textit{Step \arabic{stepcounter} : #1}}\par
-% \addtocounter{stepcounter}{1}}
-
-
-\newenvironment{oldwex}[3]
-{% This is a picture at the beginning, a line or bar or something else
-\begin{quotation}
-\noindent
-\vspace{.5cm}
-\setlength{\parindent}{0pt}
-%% Title and counter
-\rput(-2.0,0){\pspencil}\noindent
-%\begin{mdframed}[linewidth =2,margin=40]
-\textbf{\textit{Worked Example \arabic{workedexamplecounter}: }
-#1}\par
-\textbf{Question:} #2\par
-\textbf{Answer}\par #3%
-\addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
-\par%\vspace{.25cm}
-}%
-{%
-%\end{mdframed}
-\end{quotation}
-\begin{flushright}
-\end{flushright}
-\setlength{\parindent}{\saveparindentlength}}
-
-
-
-\newskip\Vspace@topskip
-\providecommand\Vspace[1]{%
-        \Vspace@topskip\topskip
-        \topskip\z@skip
-        \ifvmode
-                \dimen@\prevdepth
-                \hrule\@height\z@
-                \nobreak
-                \vskip\glueexpr#1\relax
-                \vskip\z@skip
-                \prevdepth\dimen@
-        \else
-                \@bsphack
-                \vadjust{%
-                        \@restorepar
-                        \hrule\@height\z@
-                        \nobreak
-                        \vskip#1%
-                        \vskip\z@skip
-                }%
-                \@esphack
-        \fi
-        \topskip\Vspace@topskip
-}
-
-
-
-
-
-
-
-% can we deprecate the use of this, and use \westep instead
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
 \leftskip0pt
@@ -413,16 +349,21 @@ linecolor=red%
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{20pt}
 
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+
 \begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt]
 \vspace*{8pt}
 {\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
-\vspace*{6pt}
+\vspace*{0pt}
 \end{mdframed}
 \vspace*{2pt}
-\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt]
+\begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
 \vspace*{18pt}
+\noindent
 \textit{\noindent #2}
 \vspace*{28pt}
 
@@ -498,6 +439,10 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
+
+\ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
 \exercisesheading
 
 %\hrule width \textwidth height 1pt\\
@@ -580,6 +525,9 @@ linecolor=red%
 
 \newenvironment{activity}[1]
 {
+\ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
 \begin{quotation}
 \vspace*{25.6pt}
 {  \fontsize{12}\bfseries\itshape
@@ -815,6 +763,14 @@ linecolor=red%
 
 
 
+%
+% Counters for the shortcodes at the beginning of sections    
+%
+
+\newcounter{shortcodecounter}
+\setcounter{shortcodecounter}{1}
+
+
 
 
 
@@ -827,7 +783,7 @@ linecolor=red%
 
 \titleformat{\chapter}
   {\gdef\chapterlabel{}
-   \normalfont\sffamily\fontsize{48}\bfseries\slshape}
+   \normalfont\sffamily\fontsize{38}\bfseries\slshape}
   {\gdef\chapterlabel{\thechapter\ }}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
     \node[yshift=-4cm] at (current page.north west)
@@ -836,7 +792,7 @@ linecolor=red%
           (1.2\paperwidth,4cm);
         \node[anchor=west,text centered, yshift=2cm, xshift=0]
               {\color{black} #1  };
-         \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
+        \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
               {\color{white}\chapterlabel};
       \end{tikzpicture}
       };
@@ -846,15 +802,29 @@ linecolor=red%
 
 
 
+\usepackage{marvosym} % for the little symbol.
+
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
    \normalfont\sffamily\fontsize{24}\normalfont\itshape}
-  {\gdef\sectionlabel{\thesection }}{0pt}
+  {\gdef\sectionlabel{\thesection}}{0pt}
 {
-{#1}
+\begin{tikzpicture}[remember picture,overlay]
+   \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray, xshift=-\marginparwidth] (0,0) rectangle
+          (1.5\paperwidth,1.0cm);
+        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
+              {\color{black} #1 };
+        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+\addtocounter{shortcodecounter}{1}
 }
-\titlespacing*{\section}{0pt}{36pt}{18pt}
+\titlespacing*{\section}{1cm}{0cm}{2cm}
 
 
 
@@ -862,7 +832,7 @@ linecolor=red%
 \titleformat{\subsection}
   {\gdef\subsectionlabel{}
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
-  {\gdef\subsectionlabel{\thesubsection\ }}{0pt}
+  {\gdef\subsectionlabel{\thesubsection}}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
    \node[anchor=west, yshift=-1.5cm, xshift=-0.085\paperwidth]
       {\begin{tikzpicture}[remember picture, overlay]
