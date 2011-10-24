@@ -734,8 +734,101 @@ rank of the percentile and then find the range within which that rank
 is.
 
 \begin{wex}{Percentiles in grouped data}{
+    The mathematics marks of $100$ grade $10$ learners at a school have
+    been collected. The data are presented to you in the following
+    table.
+    \begin{center}
+      \begin{tabular}{r@{\ }c@{\ }lc}
+        \toprule
+        \multicolumn{3}{c}{Percentage mark} & Number of learners \\
+        \midrule
+         $0$ & $ \le x < $ &  $20$ &  $2$ \\
+        $20$ & $ \le x < $ &  $30$ &  $5$ \\
+        $30$ & $ \le x < $ &  $40$ & $18$ \\
+        $40$ & $ \le x < $ &  $50$ & $22$ \\
+        $50$ & $ \le x < $ &  $60$ & $18$ \\
+        $60$ & $ \le x < $ &  $70$ & $13$ \\
+        $70$ & $ \le x < $ &  $80$ & $12$ \\
+        $80$ & $ \le x < $ & $100$ & $10$ \\
+        \bottomrule
+      \end{tabular}
+    \end{center}
 
+    \begin{enumerate}
+    \item Compute the mean of this grouped data set.
+    \item In which interval is each of the quartiles of the data set?
+    \item In which interval is the $30$th percentile of the data set?
+    \end{enumerate}
 }{
+
+  \westep{Compute the mean.}
+
+  Since we are given grouped data rather than the original ungrouped
+  data, the best we can do is approximate the mean as if all the
+  learners in each interval were located at the central value of the
+  interval.
+
+  \begin{equation}
+    \frac{
+         2 \cdot 10
+      +  5 \cdot 25
+      + 18 \cdot 35
+      + 22 \cdot 45
+      + 18 \cdot 55
+      + 13 \cdot 65
+      + 12 \cdot 75
+      + 10 \cdot 90
+    }{100}
+    = 54\%
+  \end{equation}
+
+  \westep{Find the quartiles.}
+
+  Since the data have been grouped, they have also already been
+  sorted. Using the percentile formula and the fact that there are
+  $100$ learners, we can find the rank of the $25$th, $50$th and
+  $75$th percentiles as
+  \begin{align}
+    r_{25} &= \frac{25}{100}\left(100-1\right)+1 \\
+          &= 24,75 \\
+    r_{50} &= \frac{50}{100}\left(100-1\right)+1 \\
+          &= 50,5 \\
+    r_{75} &= \frac{75}{100}\left(100-1\right)+1 \\
+          &= 75,25
+  \end{align}
+
+  Now we need to find in which ranges each of these ranks lie.
+  \begin{itemize}
+  \item For the first quartile, we have that there are $2 + 5 = 7$
+    learners in the first two ranges combined and $2 + 5 + 18 = 25$
+    learners in the first three ranges combined. This means that the
+    first quartile (which has rank $r_{25} = 24,75$) lies somewhere in
+    the range $30 \le x < 40$.
+  \item For the second quartile (the median), we have that there are
+    $2 + 5 + 18 + 22 = 47$ learners in the first four ranges combined
+    and $47 + 18 = 65$ learners in the first five ranges
+    combined. This means that the median (which has rank $r_{50} =
+    50,5$) lies somewhere in the range $50 \le x < 60$.
+  \item For the third quartile, we have that there are $65$ learners
+    in the first five ranges combined and $65 + 13 = 78$ learners in
+    the first six ranges combined. This means that the third quartile
+    (which has rank $r_{75} = 75,25$) lies somewhere in the range $60
+    \le x < 70$.
+  \end{itemize}
+
+  \westep{Find the $30$th percentile.}
+
+  Using the same method as for the quartiles, we first find the rank
+  of the $30$th percentile.
+  \begin{align}
+    r &= \frac{30}{100}\left(100-1\right)+1 \\
+      &= 30,7
+  \end{align}
+  Now we have to find the range in which this rank lies. Since there
+  are $25$ learners in the first $3$ ranges combined and $47$ learners
+  in the first $4$ ranges combined, the $30$th percentile lies in the
+  fourth range, namely $40 \le x < 50$.
+
 }
 \end{wex}
 
