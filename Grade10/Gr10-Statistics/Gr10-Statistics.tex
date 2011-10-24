@@ -525,32 +525,224 @@ distributed around the centre.
 \Definition{Range}{The range of a data set is the difference between
   the lowest value and the highest value in the set.}
 
-Range as (a very poor) measure of dispersion. Extremely sensitive to
-outliers! Range is inter-percentile range between 0th and 100th
-percentile (i.e. min and max).
+The most straightforward of the dispersion measures is the range. The
+range simply tells us how far apart the largest and smallest values in
+a data set are. The range is a poor measure of dispersion since it is
+very sensitive to outliers.
 
-The most straightforward of the dispersion measures is the range.
+\Definition{Outlier}{An outlier is a value in the data set that is not
+  typical of the rest of the set. It is usually a value that is much
+  greater or much less than all the other values in the data set.}
 
-\section{Percentiles}
+\begin{wex}{Range}{
+    Find the range of the following data set.
+    \begin{equation}
+      \{1;\ 4;\ 5;\ 8;\ 6\; 7;\ 5;\ 6;\ 7;\ 4;\ 10;\ 9;\ 10\}
+    \end{equation}
+    What would happen if we removed the first datum from the set?
+}{
+  \westep{Find the minimum value.}
+
+  The smallest value in the data set is $1$.
+
+  \westep{Find the maximum value.}
+
+  The largest value in the data set is $10$.
+
+  \westep{Subtract the minimum value from the maximum value.}
+
+  The range is $10-1=9$.
+
+  \westep{Removing the first datum.}
+
+  We don't usually do this, but if the first datum, $1$, were to be
+  removed from the set, the minimum value would change from $1$ to
+  $4$. This means that the range would change to $10-4=6$. This is
+  very different from the previous value of the range.
+
+  This is what we mean when we say that the range is sensitive to
+  outliers. In the data set above, the value $1$ was not typical of
+  the other values. It was an outlier and had a big influence on the
+  range.
+
+}
+\end{wex}
+
+We will look at a more general way of defining ranges later in this
+section, but first we need to discuss the concept of percentiles.
+
+\subsection{Percentiles}
+
+\Definition{Percentile}{The $p$th percentile is the value, $v$, that
+  divides a data set into two parts, such that $p$ per cent of the
+  values in the data set are less than $v$ and $100-p$ per cent of the
+  values are greater than $v$. Percentiles can lie in the range $0 \le
+  p \le 100$.}
+
+The formula for finding the $p$th percentile in an ordered data set
+with $n$ values is
+\begin{equation}
+  r = \frac{p}{100}\left(n-1\right)+1
+\end{equation}
+This gives us the rank, $r$, of the $p$th percentile. To find the
+value of the $p$ percentile, we have to count from the first value in
+the ordered data set up to the $r$th value.
+
+To better understand how to compute percentiles, we will look at three
+examples of percentiles that we have already encountered: the median,
+the minimum and the maximum.
+
+FIGURE: line showing minimum ($0$th), maximum($100$th), median ($50$th).
+
+The median is defined as the value halfway in a sorted data set. Since
+$50\% = \frac{1}{2}$, the median is exactly the same as the $50$th
+percentile.
+
+The minimum value is by definition the smallest and therefore the
+leftmost value in a sorted set. This makes the minimum equivalent to
+the $0$th percentile. Similarly, the maximum is equivalent to the $100$th
+percentile.
+
+\begin{wex}{Using the percentile formula}{
+    Compute the minimum, maximum and median values of the following
+    data set using the percentile formula.
+    \begin{equation}
+      \{14;\ 17;\ 45;\ 20;\ 19;\ 36;\ 7;\ 30;\ 8\}
+    \end{equation}
+}{
+    \westep{Sort the values in the data set.}
+
+    Before we can use the rank to find values in the data set, we
+    always have to order the values from the smallest to the
+    greatest. The sorted data set is
+    \begin{equation}
+      \{7;\ 8;\ 14;\ 17;\ 19;\ 20;\ 30;\ 36;\ 45\}
+    \end{equation}
+
+    \westep{Find the minimum}
+
+    We already know that the minimum value is the first value in the
+    ordered data set. We will now confirm that the percentile formula
+    gives the same answer. The minimum is equivalent to the $0$th
+    percentile. According to the percentile formula the rank, $r$, of the
+    $p = 0$th percentile in a data set with $n=9$ values is
+    \begin{align}
+      r &= \frac{p}{100}\left(n-1\right)+1 \\
+        &= \frac{0}{100}\left(9-1\right)+1 \\
+        &= 1
+    \end{align}
+    This confirms that the minimum value is the first value in the
+    list, namely $7$.
+
+    \westep{Find the maximum}
+
+    We already know that the maximum value is the last value in the
+    ordered data set. The maximum is also equivalent to the $100$
+    percentile. Using the percentile formula with $p=100$ and $n=9$,
+    we find the rank of the maximum value as
+    \begin{align}
+      r &= \frac{p}{100}\left(n-1\right)+1 \\
+        &= \frac{100}{100}\left(9-1\right)+1 \\
+        &= 9
+    \end{align}
+    This confirms that the maximum value is the last (the $9$th) value
+    in the list, namely $45$.
+
+    \westep{Find the median.}
+
+    The median is equivalent to the $50$th percentile. Using the
+    percentile formula with $p=50$ and $n=9$, we find the rank of the
+    median value as
+    \begin{align}
+      r &= \frac{50}{100}\left(n-1\right)+1 \\
+        &= \frac{50}{100}\left(9-1\right)+1 \\
+        &= \frac{1}{2}(8)+1 \\
+        &= 5
+    \end{align}
+    This shows that the median is in the middle (at the $5$th position)
+    of the ordered data set. Therefore the median value is $19$. 
+
+}
+\end{wex}
+
+\Definition{Quartiles}{The quartiles are the three data values that
+  divide an ordered data set into four groups, where each group
+  contains an equal number of data values. The median is the second
+  quartile.}
+
+Another way of writing this is that the quartiles are the $25$th, $50$th
+and $75$th percentiles. They are called quartiles because they divide
+the full data set into four parts.
+
+\begin{wex}{Quartiles}{
+    Determine the quartiles of the following data set:
+    \begin{equation}
+      \{7;\ 45;\ 11;\ 3;\ 9;\ 35;\ 31;\ 7;\ 16;\ 40;\ 12;\ 6\}
+    \end{equation}
+}{
+    \westep{Sort the data set.}
+    \begin{equation}
+      \{3;\ 6;\ 7;\ 7;\ 9;\ 11;\ 12;\ 16;\ 31;\ 35;\ 40;\ 45\}
+    \end{equation}
+
+    \westep{Find the ranks of the quartiles.}
+
+    Using the percentile formula, we can find the rank of the $25$th,
+    $50$th and $75$ percentiles as
+    \begin{align}
+      r_{25} &= \frac{25}{100}\left(12-1\right)+1 \\
+            &= 3,75
+      r_{50} &= \frac{50}{100}\left(12-1\right)+1 \\
+            &= 6,5
+      r_{75} &= \frac{75}{100}\left(12-1\right)+1 \\
+            &= 9,25
+    \end{align}
+
+    \westep{Find the values of the quartiles.}
+
+    Note that each of these ranks is a fraction, meaning that the
+    value for each percentile is somewhere in between two values from
+    the data set.
+
+    For the $25$th percentile the rank is $3,75$, which is between
+    the $3$rd and $4$th values. Since both these values are equal to
+    $7$, the $25$th percentile is $7$.
+
+    For the $50$th percentile (the median) the rank is $6,5$, meaning
+    halfway between the $6$th and $7$th values. The $6$th value is
+    $11$ and the $7$th value is $12$, which means that the median is
+    $\frac{11+12}{2} = 11,5$.
+
+    For the $75$th percentile the rank is $9,25$, meaning a quarter of
+    the way from the $9$th value ($31$) to the $10$th value
+    ($35$). Since there is a distance of $4$ between $31$ and $35$,
+    the $75$th percentile is at $32$.
+
+ }
+\end{wex}
+
+\subsection{Percentiles for grouped data}
+
+In grouped data, the percentiles will lie somewhere inside a range,
+rather than at a specific value. To find the range in which a
+percentile lies, we still use the percentile formula to determine the
+rank of the percentile and then find the range within which that rank
+is.
+
+\begin{wex}{Percentiles in grouped data}{
+
+}{
+}
+\end{wex}
+
+\subsection{Ranges}
+ full and inter-quartile
 
 These give a more complete picture. Some measures of central tendency
 and dispersion are special cases of percentiles.
 
-There are many percentiles, so we need to specify which one. They are
-generally between 0 and 100. We have already seen the one in the
-middle, the 50th percentile, the median.
-
-For percentiles: same process as median, just different distances from
-the edges.
-
-FIGURE: Show ordered data set again, with 10th percentiles.
-
-0th percentile is the minimum value
-100th percentile is the maximum value
-50th is value in the middle
-
-\subsection{Quartiles}
-Quartiles are special case of percentiles
+[Overall] Range is inter-percentile range between 0th and 100th
+percentile (i.e. min and max).
 
 Interquartile range is a measure of dispersion
 
