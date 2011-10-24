@@ -26,6 +26,11 @@
 
 \newcommand{\westep}[1]{\paragraph{Step:} #1}
 
+\newenvironment{example}%
+{\rule{\linewidth}{0.5mm}
+\textbf{Example:} \\}%
+{\rule{\linewidth}{0.5mm}}
+
 \newenvironment{exercises}[1]%
 {\rule{\linewidth}{0.5mm}
 \textbf{Exercises:} #1\\}%
@@ -50,35 +55,37 @@
 
 \section{Introduction}
 
-Statistics is about summarising data.
+When running an experiment or conducting a survey we can potentially
+end up with many hundreds, thousands or even millions of values in the
+resulting data set. Too many data can be overwhelming and we need to
+reduce them or represent them in a way that is easier to understand
+and communicate.
 
-Measuring things gives us (potentially) lots of data.
-(When making measurements about some process or experiment, we often
-end up with many values, or data.)
+Statistics is about summarising data. The methods of statistics allow
+us to represent the essential information in a data set while
+disregarding the unimportant information. We have to be careful to
+make sure that we do not accidentally throw away some of the important
+aspects of a data set.
 
-Too many data can be overwhelming and we need to reduce them or
-represent them in a way that is easier to understand or communicate.
+%The figure below shows one example of how we can reduce the complexity
+%of a data set while still retaining the important information.
 
-The basic process is to take many numbers (the individual data) and to
-reduce them to fewer numbers that contain the essential information of
-the data and that do not throw away any important information.
+%FIGURE: Side-by-side images of two datasets drawn from the same $2$-d
+%normal distribution. $N = 50$. Even though the individual data are
+%different, the statistics (central tendency and dispersion) are very
+%similar. The statistics capture the interesting aspects of the data.
+%\begin{center}
+%  \begin{tikzpicture}
+%  \end{tikzpicture}
+%\end{center}
 
 By applying statistics properly we can highlight the important aspects
 of data and make the data easier to interpret. By applying statistics
 poorly or dishonestly we can also hide important information and let
 people draw the wrong conclusions.
 
-This is not always easy since we need to determine which aspects are
-important and which ones are not since we're throwing away
-information. Don't want to throw away important information.
-
-Understanding statistics helps us avoid the pitfalls and determine
-whether other people have also used statistics in the right way.
-
-FIGURE: Side-by-side images of two datasets drawn from the same $2$-d
-normal distribution. $N = 50$. Even though the individual data are
-different, the statistics (central tendency and dispersion) are very
-similar. The statistics capture the interesting aspects of the data.
+In this chapter we will look at a few numerical and graphical ways in
+which data sets can be represented, to make them easier to interpret.
 
 \section{Collecting data}
 \Definition{Data}{Data refers to the pieces of information that have
@@ -86,41 +93,76 @@ similar. The statistics capture the interesting aspects of the data.
   that the word {\em data} is the plural of the word {\em datum}, and
   therefore one should say, ``the data are'' and not ``the data is''.}
 
-Data are collected to provide answers that help with understanding a
-particular situation. We distinguish between two types of data:
-qualitative and quantitative.
+We distinguish between two main types of data: quantitative and
+qualitative.
 
 \Definition{Quantitative data}{Quantitative data are data that can be
-  written as numbers, for example, when you measure the height or
-  weight of people.}
+  written as numbers.}
+
+Quantitative data can be discrete or continuous. Discrete quantitative
+data can be represented by integers and usually occur when we count
+things, for example, the number of learners in a class, the number of
+molecules in a chemical solution, or the number of SMS messages sent
+in one day.
+
+Continuous quantitative data can be represented by real numbers, for
+example, the height or weight of a person, the distance travelled by a
+car, or the duration of a phone call.
 
 \Definition{Qualitative data}{Qualitative data are data that cannot be
   written as numbers, for example, when you collect responses from
   people about how they feel or what their favourite colour is.}
 
-\begin{itemize}
-\item quantitative
-  \begin{itemize}
-  \item continuous: measuring height, weight, temperature, duration of
-    a phone call
-  \item discrete: counting things: number of learners in a class,
-    number of particles, number of text messages sent or phone calls
-    made per day
-  \end{itemize}
-\item qualitative
-  \begin{itemize}
-  \item categorical: which language did you learn to speak first, what
-    is your favourite cooldrink, colour of your cell phone.
-  \item anecdotal: a story: personal experience when using a product.
-  \end{itemize}
-\end{itemize}
+Two common types of qualitative data are categorical and anecdotal
+data. Categorical data can come from one of a limited number of
+possibilities, for example, your favourite cool drink, the colour of
+your cell phone, or the language that you learned to speak at home.
 
-Qualitative data are sometimes turned into quantitative data by
-counting the number of times that each category appears.
-Example: class with $40$ learners, provide counts of cellphone
-colours. Note that the original data (cell phone colour of each
-learner) are qualitative while the derived data (number of people that
-have a cell phone of a particular colour) are quantitative.
+Anecdotal data take the form of an interview or a story, for example,
+when you ask someone what their personal experience was when using a
+product, or what they think of someone else's behaviour.
+
+Categorical qualitative data are sometimes turned into quantitative
+data by counting the number of times that each category appears.
+
+\begin{example}
+  In a class with $30$ learners, we ask everyone what the colour of
+  their cellphone is and get the following responses.
+
+  \begin{center}
+    \begin{tabular}{cccccccccc}
+      \toprule
+      black & black & black & white & purple & red & red & black & black & black \\
+      white & white & black & black & black & black & purple & black & black & white \\
+      purple & black & red & red & white & black & orange & orange & black & white \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  This is a categorical qualitative data set since each of the
+  responses comes from one of a small number of possible colours.
+
+  We can represent exactly the same data in a different way, by
+  counting how many times each colour appears.
+
+  \begin{center}
+    \begin{tabular}{cc}
+      \toprule
+      colour & count \\
+      \midrule
+      black & 15 \\
+      white & 6 \\
+      red & 4 \\
+      purple & 3 \\
+      orange & 2\\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  This is a discrete quantitative data set since each count is an
+  integer.
+
+\end{example}
 
 \begin{wex}{Qualitative and quantitative data}{
     Andrew is interested in becoming an airtime reseller to his
@@ -165,7 +207,7 @@ have a cell phone of a particular colour) are quantitative.
     Is this data set qualitative or quantitative? Explain your answer.
 }{
   Since each response is not a number, but one of a small number of
-  possibilities, these are qualitative categorical data.
+  possibilities, these are categorical qualitative data.
 
 }
 \end{wex}
