@@ -833,22 +833,118 @@ is.
 \end{wex}
 
 \subsection{Ranges}
- full and inter-quartile
+The common ranges used are defined in terms of percentiles. The
+overall range is simply the difference between the $100$th and the
+$0$th percentile, that is between the maximum and minimum values in
+the data set.
 
-These give a more complete picture. Some measures of central tendency
-and dispersion are special cases of percentiles.
+\Definition{Interquartile range}{The interquartile range is a
+  measure of dispersion, which is calculated by subtracting the first
+  quartile from the third quartile. This gives the range of the middle
+  half of the data set.}
 
-[Overall] Range is inter-percentile range between 0th and 100th
-percentile (i.e. min and max).
+\Definition{Semi interquartile range}{The semi interquartile range is
+  half of the interquartile range.}
 
-Interquartile range is a measure of dispersion
+\subsection{Combining different measures}
+A common way of summarising the overall dataset is with the five
+number summary and the box-and-whisker plot. These two represent
+exactly the same information, numerically in the case of the five
+number summary and graphically in the case of the box-and-whisker
+plot.
 
-Semi-interquartile range is half interquartile range (how silly do
-define this).
+The five number summary consists of the minimum value, the maximum
+value and the three quartiles. Another way of saying this is that the
+five number summary consists of the following percentiles: $0$th,
+$25$th, $50$th, $75$th, $100$th.
 
-\subsection{Five number summary}
+The box-and-whisker plot shows these five percentiles as follows:
 
-Visualisation in the box and whisker plot.
+\begin{center}
+  \begin{tikzpicture}
+    \draw[thick] (-0.5, 0) -- (0.5, 0);
+    \draw (-0.5, -1) rectangle (0.5, 1);
+    \draw (0, -1) -- (0, -2.5);
+    \draw (-0.1, -2.5) -- (0.1, -2.5);
+    \draw (0, 1) -- (0, 2.5);
+    \draw (-0.1, 2.5) -- (0.1, 2.5);
+    \draw (0.6, 2.5) node[anchor=west] {maximum};
+    \draw (0.6, 1) node[anchor=west] {$3$rd quartile};
+    \draw (0.6, 0) node[anchor=west] {median};
+    \draw (0.6, -1) node[anchor=west] {$1$st quartile};
+    \draw (0.6, -2.5) node[anchor=west] {minimum};
+    \draw (3, 2.5) node[anchor=west] {($100$th percentile)};
+    \draw (3, 1) node[anchor=west] {($75$th percentile)};
+    \draw (3, 0) node[anchor=west] {($50$th percentile)};
+    \draw (3, -1) node[anchor=west] {($25$th percentile)};
+    \draw (3, -2.5) node[anchor=west] {($0$th percentile)};
+  \end{tikzpicture}
+\end{center}
+
+\begin{wex}{Five number summary}{
+    Draw a box and whisker diagram for the data set:
+    \begin{equation}
+      \{1,25;\ 1,5;\ 2,5;\ 2,5;\ 3,1;\ 3,2;\ 4,1;\ 4,25;\ 4,75;\ 4,8;\ 4,95;\ 5,1\}
+    \end{equation}
+}{
+  \westep{Determine the minimum and maximum.}
+
+  Since the data set is already sorted, we can read off the minimum as
+  the first value, $1,25$, and the maximum as the last value, $5,1$.
+
+  \westep{Determine the quartiles.}
+
+  There are $12$ values in the data set. Using the percentile formula,
+  we can determine that the median lies between the $6$th and $7$th
+  values, making it
+  \begin{equation}
+    \frac{3,2 + 4,1}{2} = 3,65
+  \end{equation}
+
+  The first quartile lies between the $3$rd and $4$th values, making
+  it
+  \begin{equation}
+    \frac{2,5 + 2,5}{2} = 2,5
+  \end{equation}
+
+  The third quartile lies between the $9$th and $10$th values, making
+  it
+  \begin{equation}
+    \frac{4,75 + 4,8}{2} = 4,775
+  \end{equation}
+
+  This provides the five number summary of the data set and allows us
+  to draw the box-and-whisker plot.
+
+  \begin{center}
+    \begin{tikzpicture}[yscale=1.25]
+      \def\median{3.65}
+      \def\firstquartile{2.5}
+      \def\thirdquartile{4.775}
+      \def\minimum{1.25}
+      \def\maximum{5.1}
+
+      \draw (-0.5, \firstquartile) rectangle (0.5, \thirdquartile);
+      \draw[thick] (-0.5, \median) -- (0.5, \median);
+      \draw (0,    \firstquartile) -- (0,   \minimum);
+      \draw (-0.1, \minimum) -- (0.1,       \minimum);
+      \draw (0,    \thirdquartile) -- (0,   \maximum);
+      \draw (-0.1, \maximum) -- (0.1,       \maximum);
+
+      \draw[thick,<->] (1,1) -- (1,5.5);
+
+      \foreach \y in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+        \draw (1, \y) -- (1.1, \y) node[anchor=west] {$\y$};
+      }
+      \draw[dotted] (0.2, \maximum) -- (1, \maximum);
+      \draw[dotted] (0.6, \thirdquartile) -- (1, \thirdquartile);
+      \draw[dotted] (0.6, \median)  -- (1, \median);
+      \draw[dotted] (0.6, \firstquartile) -- (1, \firstquartile);
+      \draw[dotted] (0.2, \minimum) -- (1, \minimum);
+    \end{tikzpicture}
+  \end{center}
+}
+\end{wex}
 
 -----
 
