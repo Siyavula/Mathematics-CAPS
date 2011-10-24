@@ -106,7 +106,7 @@ molecules in a chemical solution, or the number of SMS messages sent
 in one day.
 
 Continuous quantitative data can be represented by real numbers, for
-example, the height or weight of a person, the distance travelled by a
+example, the height or mass of a person, the distance travelled by a
 car, or the duration of a phone call.
 
 \Definition{Qualitative data}{Qualitative data are data that cannot be
@@ -218,25 +218,25 @@ data by counting the number of times that each category appears.
 \Definition{Mean}{The mean is defined as the sum of a set of values,
   divided by the number of values in the sum.  The notation for the
   mean of a set of values is a horizontal bar over the variable used
-  to represent the set.
+  to represent the set. The formula for the mean of a data set $\{x_1,
+  x_2, \ldots, x_n\}$ is
   \begin{align}
     \overline{x} &= \frac{1}{n}\sum_{i=1}^n x_i \\
                  &= \frac{x_1 + x_2 + \cdots + x_n}{n}
   \end{align}
 }
 
-The mean is sometimes also called the {\em average} or the {\em
-  arithmetic mean}.
+The mean is sometimes also called the average or the arithmetic mean.
 
 \begin{wex}{Calculating the mean}{
-    What is the mean of $\{10;\ 20;\ 30;\ 40;\ 50\}$?
+    What is the mean of the data set $\{10;\ 20;\ 30;\ 40;\ 50\}$?
 }{
   \westep{Compute the sum of the data.}
   \begin{equation}
     10 + 20 + 30 + 40 + 50 = 150
   \end{equation}
 
-  \westep{Divide by the number of values to get the mean.}
+  \westep{Divide by the number of values in the data set to get the mean.}
 
   Since there are $5$ values in the data set, the mean is
   \begin{equation}
@@ -247,24 +247,24 @@ The mean is sometimes also called the {\em average} or the {\em
 
 \subsection{Median}
 \Definition{Median}{
-  The median of a set of data is the data value in the central
-  position, when the data set has been arranged from lowest to highest
-  value. On the number line, an equal number of values from the data
-  set are to the left and to the right of the median.}
+  The median of a data set is the value in the central position,
+  when the data set has been arranged from the lowest to the highest
+  value. Exactly half of the values from the data set are less than
+  the median and the other half are greater than the median.}
 
 To calculate the median of a quantitative data set, first sort the
 data from the smallest to the largest value and then find the value in
 the middle. If there are an odd number of data, the median will be
 equal to one of the values in the data set. If there are an even
-number of data, the median will lie halfway between two values from
+number of data, the median will lie halfway between two values in
 the data set.
 
 \begin{wex}{Median for an odd number of values}{
   What is the median of $\{10;\ 14;\ 86;\ 2;\ 68;\ 99;\ 1\}$?
 }{
-  \westep{Sort the values in the data set.}
+  \westep{Sort the values.}
 
-  The values in the data set, from the smallest to the greatest, are
+  The values in the data set, from the smallest to the largest, are
   \begin{equation}
     1;\ 2;\ 10;\ 14;\ 68;\ 86;\ 99
   \end{equation}
@@ -272,28 +272,29 @@ the data set.
   \westep{Find the number in the middle.}
 
   There are $7$ values in the data set. Since there are an odd number
-  of values, the median will be equal to the value in the middle, that
-  is, at the fourth position. The value in the fourth position is
+  of values, the median will be equal to the value in the middle,
+  namely, at the $4$th position. The value in the $4$th position is
   $14$ and therefore the median of the data set is $14$.
+
 }
 \end{wex}
 
 \begin{wex}{Median for an even number of values}{
   What is the median of $\{11;\ 10;\ 14;\ 86;\ 2;\ 68;\ 99;\ 1\}$?
 }{
-  \westep{Sort the values in the data set.}
+  \westep{Sort the values.}
 
-  The values in the data set, from the smallest to the greatest, are
+  The values in the data set, from the smallest to the largest, are
   \begin{equation}
-    1;\ 2;\ 10;\ 11;\ 14;\ 68;\ 85;\ 99
+    1;\ 2;\ 10;\ 11;\ 14;\ 68;\ 86;\ 99
   \end{equation}
 
   \westep{Find the number in the middle.}
 
   There are $8$ values in the data set. Since there are an even number
   of values, the median will be halfway between the two values in the
-  middle, that is, at the fourth and fifth positions. The value in the
-  fourth position is $11$ and the value in the fifth position is
+  middle, namely, at the $4$th and $5$th positions. The value in the
+  $4$th position is $11$ and the value in the $5$th position is
   $14$. The median lies halfway between these two values and is
   therefore
   \begin{equation}
@@ -303,8 +304,9 @@ the data set.
 \end{wex}
 
 \subsection{Mode}
-\Definition{Mode}{The mode is the data value that occurs most
-  often. You can also describe the mode as the most frequent or most
+\Definition{Mode}{
+  The mode of a data set is the value that occurs most often in the
+  set. The mode can also be described as the most frequent or most
   common value in the data set.}
 
 To calculate the mode, we simply count the number of times that each
@@ -320,16 +322,24 @@ as having many modes or no mode.
 \begin{wex}{Find the mode}{
     Find the mode of the data set
     \begin{equation}
-      \{1;\ 2;\ 3;\ 4;\ 4;\ 4;\ 5;\ 6;\ 7;\ 8;\ 8;\ 9;\ 10;\ 10\}
+      \{2;\ 2;\ 3;\ 4;\ 4;\ 4;\ 6;\ 6;\ 7;\ 8;\ 8;\ 10;\ 10\}
     \end{equation}
 }{
   \westep{Count the number of times that each value appears in the data
     set.}
+
   \begin{center}
-    \begin{tabular}{lcccccccccc}
+    \begin{tabular}{cc}
       \toprule
-      value & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ & $9$ & $10$ \\
-      count & $1$ & $1$ & $1$ & $3$ & $1$ & $1$ & $1$ & $2$ & $1$ & $2$  \\
+      value & count \\
+      \midrule
+      $2$ & $2$ \\
+      $3$ & $1$ \\
+      $4$ & $3$ \\
+      $6$ & $2$ \\
+      $7$ & $1$ \\
+      $8$ & $2$ \\
+      $10$ & $2$ \\
       \bottomrule
     \end{tabular}
   \end{center}
@@ -338,7 +348,7 @@ as having many modes or no mode.
 
   From the table above we can see that $4$ is the only value that
   appears $3$ times, and all the other values appear less
-  often. Therefore the mode of the data set is the value $4$.
+  often. Therefore the mode of the data set is $4$.
 
 }
 \end{wex}
@@ -351,19 +361,14 @@ frequency of each value in the data set will be $1$ and that there will
 be no mode. We will look at one way of adressing this problem in
 Section \ref{sec:statistics_grouping_data} on grouping data.
 
-\subsection{Comparison}
-The following worked example compares the values of the means and
-medians of continuous quantitative data. You will see that the means
-and medians are usually close to one another, but not quite equal.
-
-\begin{wex}{Measures of central tendency}{
+\begin{wex}{Comparison of measures of central tendency}{
     There are regulations in South Africa related to bread production
-    to protect consumers. By law if a loaf of bread is not labelled,
+    to protect consumers. By law, if a loaf of bread is not labelled,
     it must weigh $800$ g, with the leeway of $5$ percent under or $10$
-    percent over.  Vishnu is interested in how a well known national
+    percent over.  Vishnu is interested in how a well-known, national
     retailer measures up to this standard. He visited his local branch
-    and recorded the masses of $10$ different loaves of bread for a
-    week.
+    of the supplier and recorded the masses of $10$ different loaves
+    of bread for one week. Here are the results:
 
     \begin{center}
       \begin{tabular}{ccccccc}
@@ -394,35 +399,27 @@ and medians are usually close to one another, but not quite equal.
     \end{enumerate}
 }{
 
-  \westep{Qualitative or quantitative}
+  \westep{Qualitative or quantitative?}
 
-  Since each measured mass can be represented by a number, the data
+  Since each mass can be represented by a number, the data
   set is quantitative. Furthermore, since a mass can be any real
   number, the data are continuous.
 
-  \westep{Compute the mean}
+  \westep{Compute the mean.}
 
   In each column (for each day of the week), we add up the
   measurements and divide by the number of measurements, $10$.
 
-  For Monday, the sum of the measured values is $8007,9$, which means
-  that the mean for Monday is
+  For Monday, the sum of the measured values is $8007,9$ and so the
+  mean for Monday is
   \begin{equation}
     \frac{8007,9}{10} = 800,8\textrm{ g}
   \end{equation}
 
-  In the same way, we can compute the mean for each of the days as
+  In the same way, we can compute the mean for each day of the
+  week. See the table below for the results.
 
-  \begin{center}
-    \begin{tabular}{ccccccc}
-      \toprule
-      Monday & Tuesday & Wednesday & Thursday & Friday & Saturday & Sunday \\
-      $800,8$ g & $797,2$ g & $798,4$ g & $803,4$ g & $802,0$ g & $801,6$ g & $799,3$ g \\
-      \bottomrule
-    \end{tabular}
-  \end{center}
-
-  \westep{Compute the median}
+  \westep{Compute the median.}
 
   In each column we sort the numbers from lowest to highest and find
   the value in the middle. Since there are an even number of
@@ -433,23 +430,39 @@ and medians are usually close to one another, but not quite equal.
   \begin{equation}
     789,0;\ 789,0;\ 796,2;\ 796,7;\ 801,2;\ 802,3;\ 802,3;\ 802,5;\ 808,7;\ 819,6
   \end{equation}
-  The two numbers in the middle are $801,2$ and $802,3$. This means
-  that the median is $801,8$.
+  The two numbers in the middle are $801,2$ and $802,3$ and so the
+  median is
+  \begin{equation}
+    \frac{801,2 + 802,3}{2} = 801,8
+  \end{equation}
 
-  In the same way, we can compute the median for each of the days as
+  In the same way, we can compute the median for each day of the
+  week. Here is a table with all the means and medians.
 
   \begin{center}
-    \begin{tabular}{ccccccc}
+    \begin{tabular}{lcc}
       \toprule
-      Monday & Tuesday & Wednesday & Thursday & Friday & Saturday & Sunday \\
-      $801,8$ g & $796.1$ g & $797,2$ g & $800,8$ g & $804,3$ g & $801,4$ g & $800,2$ g \\
+      \multicolumn{1}{c}{day} & mean & median \\
+      \midrule
+      Monday & $800,8$ g & $801,8$ g \\
+      Tuesday & $797,2$ g & $796.1$ g \\
+      Wednesday & $798,4$ g & $797,2$ g \\
+      Thursday & $803,4$ g & $800,8$ g \\
+      Friday & $802,0$ g & $804,3$ g \\
+      Saturday & $801,6$ g & $801,4$ g \\
+      Sunday & $799,3$ g & $800,2$ g \\
       \bottomrule
     \end{tabular}
   \end{center}
 
-  \westep{Compute the mode}
+  From the above calculations we can see that the means and medians
+  are close to one another, but not quite equal. In the next worked
+  example we will see that the mean and median are not necessarily
+  close to each other.
 
-  Since The data are continuous we cannot compute the mode. In the next
+  \westep{Compute the mode.}
+
+  Since the data are continuous we cannot compute the mode. In the next
   section we will see how we can group data in order to make it possible
   to compute an approximation for the mode.
 
@@ -461,6 +474,66 @@ and medians are usually close to one another, but not quite equal.
   by Vishnu lies within this range and since the means and medians are
   all close to $800$ g, we can conclude that the supplier is reliable.
 
+}
+\end{wex}
+
+\begin{wex}{Effect of outliers on mean and median}{
+    The heights of $10$ learners are measured in centimetres to obtain
+    the following dataset:
+    \begin{equation}
+      \{150;\ 172;\ 153;\ 156;\ 146;\ 157;\ 157;\ 143;\ 168;\ 157\}
+    \end{equation}
+    Afterwards, we add one more learner to the group, who is
+    exceptionally tall: $181$ cm.
+
+    Compare the mean and median of the heights of the learners before
+    and after the $11$th learner was added.
+}{
+  \westep{Compute the mean with the first $10$ learners.}
+
+  \begin{equation}
+    \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}
+    = 155,9\textrm{ cm}
+  \end{equation}
+
+  \westep{Compute the mean with all $11$ learners.}
+
+  \begin{equation}
+    \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157 + 181}{11}
+    = 158,2\textrm{ cm}
+  \end{equation}
+
+  From this we see that the average height changes by
+  $158,2 - 155,9 = 2,3\textrm{ cm}$ when we introduce
+  the outlier value (the tall person) to the data set.
+
+  \westep{Compute the median with the first $10$ learners.}
+
+  To find the median, we need to sort the data set:
+  \begin{equation}
+    \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172\}
+  \end{equation}
+  Since there are an even number of values, namely $10$, the median
+  lies halfway between the $5$th and $6$th values:
+  \begin{equation}
+    \frac{156+157}{2} = 156,5\textrm{ cm}
+  \end{equation}
+
+  \westep{Compute the median with all $11$ learners.}
+
+  After adding the tall learner, the sorted data set is
+  \begin{equation}
+    \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172;\ 181\}
+  \end{equation}
+  Now, with $11$ values, the median is the $6$th value: $157$ cm.
+  So, the median changes by only $0,5$ cm when we add the outlier
+  value to the data set.
+
+  In general, the median is less affected by the addition of outliers
+  to a data set than the mean is. This is important because it is
+  quite common that outliers are measured during an experiment,
+  because of problems with the equipment or unexpected interference of
+  some kind.
 }
 \end{wex}
 
@@ -665,7 +738,7 @@ percentile.
       \{7;\ 8;\ 14;\ 17;\ 19;\ 20;\ 30;\ 36;\ 45\}
     \end{equation}
 
-    \westep{Find the minimum}
+    \westep{Find the minimum.}
 
     We already know that the minimum value is the first value in the
     ordered data set. We will now confirm that the percentile formula
@@ -680,7 +753,7 @@ percentile.
     This confirms that the minimum value is the first value in the
     list, namely $7$.
 
-    \westep{Find the maximum}
+    \westep{Find the maximum.}
 
     We already know that the maximum value is the last value in the
     ordered data set. The maximum is also equivalent to the $100$
