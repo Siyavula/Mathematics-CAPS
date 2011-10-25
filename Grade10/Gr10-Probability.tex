@@ -32,19 +32,20 @@ a coin, rolling dice, a soccer match.
 
 \begin{figure}[H]
 \textbf{Experiment 1} A coin is tossed and it lands with either
-  heads (H) or tails (T) facing upwards.
+  heads (H) or tails (T) facing upwards. An example outcome of tossing a coin that lands with heads
+    facing up:
   \begin{center}
     \begin{tikzpicture}
       \coinheads
     \end{tikzpicture}
   \end{center}
-  \caption{An example outcome of tossing a coin: it lands with heads
-    facing up.}
+%   \caption{An example outcome of tossing a coin: it lands with heads
+%     facing up.}
 \end{figure}
 
 \begin{figure}[H]
   \textbf{Experiment 2} Two dice are rolled and the total number of
-  dots added up.
+  dots added up. An example outcome of rolling two dice:
 
   \begin{center}
     \begin{tikzpicture}
@@ -52,17 +53,17 @@ a coin, rolling dice, a soccer match.
       \makedie{5}{shift={(1,0)},rotate=-20}
     \end{tikzpicture}
   \end{center}
-  \caption{An example outcome of rolling two dice.}
+%   \caption{An example outcome of rolling two dice.}
 \end{figure}
 
 \begin{figure}[H]
   \textbf{Experiment 3} Two teams play in a soccer match and we are
-  interested in the final score.
+  interested in the final score. An example outcome of a soccer match:
 
   \begin{center}
     \includegraphics[width=3in]{Gr10-Probability-images/5996076302_412ec8d8d0_o.jpg}
   \end{center}
-  \caption{An example outcome of a soccer match. Picture by apasciuto on Flickr.com}
+  \begin{caption*}{(Picture by apasciuto on Flickr.com)}\end{caption*}
 \end{figure}
 
 \Definition{Sample space}{The sample space of an experiment is
@@ -77,8 +78,8 @@ have a look at the sample spaces of each of our three experiments.
 
 \paragraph{Experiment 1} Since a coin can land in one of only two ways
 (we will ignore the possibility that the coin lands on its edge), the
-sample space is the set \(S=\{\textrm{H}; \textrm{T}\}\). The size of the sample space
-is \(n(S)=2\).
+sample space is the set \(S=\{\textrm{H}; \textrm{T}\}\). The size of the sample space of the coin toss
+is \(n(S)=2\):
 
 \begin{figure}[H]
   \begin{center}
@@ -92,7 +93,7 @@ is \(n(S)=2\).
     \draw (-3, -1.5) rectangle (3, 1.5) node[anchor=south east] {$S$};
   \end{tikzpicture}
   \end{center}
-  \caption{Sample space of a coin toss.}
+%   \caption{Sample space of a coin toss.}
 \end{figure} 
 
 \paragraph{Experiment 2} Each of the dice can land on a number from $1$
@@ -100,7 +101,7 @@ to $6$. In this experiment the sample space of all possible outcomes is
 every possible combination of the $6$ numbers on the first die with the
 $6$ numbers on the second die. This gives a total of \(n(S) = 6 \times 6
 = 36\) possible outcomes. The figure below shows all of the outcomes
-in the sample space.
+in the sample space of rolling two dice:
 
 \begin{figure}[H]
 \begin{center}
@@ -119,7 +120,7 @@ in the sample space.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-  \caption{Sample space of rolling two dice.}
+%   \caption{Sample space of rolling two dice.}
 \end{figure} 
 
 \paragraph{Experiment 3} Each soccer team can get an integer score
@@ -128,7 +129,7 @@ $5$ goals, but there is no reason why this cannot happen. So the sample
 space of this experiment consists of all possible combinations of two
 non-negative integers. The figure below shows all of the
 possibilities. Since we do not limit the score of a team, this sample
-space is infinitely large.
+space is infinitely large:
 
 \begin{figure}[H]
 \begin{center}
@@ -150,7 +151,7 @@ space is infinitely large.
     \draw (6cm, 0.5cm) node[anchor=south east] {$S$};
   \end{tikzpicture}
 \end{center}
-  \caption{Sample space of the final score of a soccer match.}
+%   \caption{Sample space of the final score of a soccer match.}
 \end{figure}
 
 \Definition{Event}{An event is a specific set of outcomes of an
@@ -228,8 +229,8 @@ outcomes in the sample space.
   \westep{Write down the size of the sample space}
 
   \begin{itemize}
-  \item[] Experiment 1: $n(S) = 2$
-  \item[] Experiment 2: $n(S) = 36$
+  \item[] Experiment 1 (coin): $n(S) = 2$
+  \item[] Experiment 2 (dice): $n(S) = 36$
   \end{itemize}
   
   \westep{Write down the size of the event set}
@@ -256,30 +257,38 @@ $1$--$1$ is quite common, while a score of $11$--$15$ is very, very
 rare. Because all outcomes are not equally likely, we cannot use the
 ratio between \(n(E)\) and \(n(S)\) to compute the theoretical
 probability of a team winning. 
-\IFact{The record for most goals scored by both teams in the FIFA World Cup is $12$. This
-was achieved in $1954$ in the match between Austria and Switzerland, where the final score was $7$--$5$.}
+%THIS IFACT MUTS BE COMMENTED BACK IN -  BUT FOR NOW (10.20am, 25/10/2011) IT BREAKS THE STYLING THAT FOLLOWS IT
+% \IFact{The record for the total number of goals scored by both teams in the FIFA World Cup is $12$. This
+% was achieved in $1954$ in the match between Austria and Switzerland, where the final score was $7$--$5$.}
 
 \begin{exercises}{Theoretical probability} \noindent
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
-  \item A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
-    balls. A ball is picked at random. What is the probablity that it
+{
+%   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+%   \item 
+A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
+    balls. A ball is picked at random. Determine the probablity that it
     is:
-    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
     \item red
     \item blue or white
     \item not green
-    \item not green or red?
+    \item not green or red
     \end{enumerate}
-  \item A playing card is selected randomly from a pack of $52$
-    cards. What is the probability that it is:
-    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
+%   \item 
+A playing card is selected randomly from a pack of $52$
+    cards. Determine the probability that it is:
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{4}
     \item the $2$ of hearts
     \item a red card
     \item a picture card
     \item an ace
     \item a number less than $4$?
-    \end{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
-  \item Even numbers in the range $2$--$100$ are written on cards. What is
+    \end{enumerate}
+Even numbers in the range $2$--$100$ are written on cards. 
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{9}
+  \item What is
     the probability of selecting a multiple of $5$, if a card is drawn
     at random?
   \end{enumerate}
@@ -288,6 +297,7 @@ was achieved in $1954$ in the match between Austria and Switzerland, where the f
   \begin{tabularx}{\textwidth}{XXXX}
     (1) & (2) & (3) \\
   \end{tabularx}
+}
 \end{exercises}
 
 \section{Relative frequency}
@@ -332,7 +342,7 @@ relative frequency every time that we repeat an experiment.
   A positive outcome is when the outcome is in our event set. The
   table below shows a running count (after each trial $t$) of the
   number of positive outcomes $p$ we have observed. For example, after
-  $t=20$ trials we have observed heads 8 times and tails 12 times and
+  $t=20$ trials we have observed heads $8$ times and tails $12$ times and
   so the positive outcome count is $p=8$.
 
   \begin{center}
@@ -381,24 +391,28 @@ frequency after $30$ trials, namely $13/30 = 0,4\dot{3}$. The relative
 frequency is close to the theoretical probability of $0,5$. In general,
 the relative frequency of an event gets closer to the theoretical
 probability of the event as we perform more trials.\\
-
+\\
 A much better way to summarise the table of relative frequencies is in
-a graph. The graph below was generated from the table of numbers above
+a graph: 
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.75\textwidth]{Gr10-Probability-images/coin_toss_trials.pdf}
+  \end{center}
+%   \caption{Plot of the relative frequency of observing heads, $f$,
+%     after having completed $t$ coin tosses.}
+\end{figure}
+The graph above is the plot of the relative frequency of observing heads, $f$,
+    after having completed $t$ coin tosses. It was generated from the table of numbers above
 by plotting the number of trials that have been completed, $t$, on the
 x-axis and the relative frequency, $f$, on the y-axis. In the
 beginning (after a small number of trials) the relative frequency
 fluctuates a lot around the theoretical probability at $0,5$, which is
 shown with a dashed line. As the number of trials increases, the
 relative frequency fluctuates less and gets closer to the theoretical
-probability.
+probability. 
 
-\begin{figure}[H]
-  \begin{center}
-    \includegraphics[width=0.75\textwidth]{Gr10-Probability-images/coin_toss_trials.pdf}
-  \end{center}
-  \caption{Plot of the relative frequency of observing heads, $f$,
-    after having completed $t$ coin tosses.}
-\end{figure}
+
 }
 \end{wex}
 
@@ -450,13 +464,13 @@ that we can compute if we have enough information about the
 experiment. If each possible outcome in the sample space is
 equally likely, we can count the number of outcomes in the event set
 and the number of outcomes in the sample space to compute the
-theoretical probability.\\
+theoretical probability.\par
 
 The relative frequency depends on the sequence of outcomes that we
 observe while doing a statistical experiment. The relative frequency
 can be different every time we redo the experiment. The more trials we
 run during an experiment, the closer the observed relative frequency
-of an event will get to the theoretical probability of the event.\\
+of an event will get to the theoretical probability of the event.\par
 
 So why do we need statistical experiments if we have theoretical
 probabilities? In some cases, like our soccer experiment, it is
@@ -466,19 +480,21 @@ team will score goals against another, we can never compute the
 theoretical probability of events in soccer. In such cases we can
 still use the relative frequency to estimate the theoretical
 probability, by running experiments and counting the number of
-positive outcomes.\\
+positive outcomes.\par
 
 \section{Venn diagrams}
 A Venn diagram is a graphical way of representing the relationships
 between sets. In each Venn diagram a set is represented by a closed
 curve. The region inside the curve represents the elements that
 belong to the set, while the region outside the curve represents the
-elements that are excluded from the set.\\
+elements that are excluded from the set.\par
 
 Venn diagrams are helpful for thinking about probability since we deal
 with different sets. Consider two events, $A$ and $B$, in a sample
-space $S$. Figure~\ref{fig:venndiagrams} shows the possible ways in which the event
-sets can overlap, represented using Venn diagrams.\\
+space $S$.
+%  Figure~\ref{fig:venndiagrams} 
+The diagram below shows the possible ways in which the event
+sets can overlap, represented using Venn diagrams:\\
 
 \begin{figure}[H]
 \begin{center}
@@ -489,33 +505,33 @@ sets can overlap, represented using Venn diagrams.\\
 \pscircle[linewidth=0.04,dimen=outer](0.78,-0.061875){0.56}
 \pscircle[linewidth=0.04,dimen=outer](1.83,-0.371875){0.91}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.7265625,0.728125){A}
+\rput(0.7265625,0.728125){$A$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.8471875,0.768125){B}
+\rput(1.8471875,0.768125){$B$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.8192186,1.528125){S}
+\rput(2.8192186,1.528125){$S$}
 \psframe[linewidth=0.04,dimen=outer](6.98,1.318125)(3.98,-1.681875)
 \pscircle[linewidth=0.04,dimen=outer](4.7,-0.961875){0.56}
 \pscircle[linewidth=0.04,dimen=outer](6.02,-0.001875){0.8}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.7065625,-0.191875){A}
+\rput(4.7065625,-0.191875){$A$}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.0071874,1.008125){B}
+\rput(6.0071874,1.008125){$B$}
 \usefont{T1}{ptm}{m}{n}
-\rput(6.7992187,1.548125){S}
+\rput(6.7992187,1.548125){$S$}
 \psframe[linewidth=0.04,dimen=outer](10.96,1.318125)(7.96,-1.681875)
 \pscircle[linewidth=0.04,dimen=outer](9.38,0.078125){0.56}
 \pscircle[linewidth=0.04,dimen=outer](9.47,-0.271875){1.13}
 \usefont{T1}{ptm}{m}{n}
-\rput(10.266562,0.828125){A}
+\rput(10.266562,0.828125){$A$}
 \usefont{T1}{ptm}{m}{n}
-\rput(9.447187,-0.811875){B}
+\rput(9.447187,-0.811875){$B$}
 \usefont{T1}{ptm}{m}{n}
-\rput(10.779219,1.548125){S}
+\rput(10.779219,1.548125){$S$}
 \end{pspicture} 
 }
-  \caption{Venn diagrams with different configurations of two events,
-    $A$ and $B$, in a sample space, $S$.}
+%   \caption{Venn diagrams with different configurations of two events,
+%     $A$ and $B$, in a sample space, $S$.}
 \end{center}
 \label{fig:venndiagrams}
 \end{figure}\\
@@ -526,7 +542,7 @@ partially. In the second diagram the two events do not overlap at
 all. In the third diagram one event is fully contained in the other.
 Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
-\vspace{-1cm}
+% \vspace{-1cm}
 \begin{wex}{Venn diagrams}{
   Represent the sample space of two rolled dice and the two events where
   \begin{itemize}
@@ -578,32 +594,35 @@ sample space contains all possible outcomes of the experiment.
 }
 \end{wex}
 
-\begin{exercises}{Venn diagrams}\noindent
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
-  \item  Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
+\begin{exercises}{Venn diagrams}
+{
+
+   Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
     denote the set of even numbers from $1$ to $16$ and $Y$ denote the
     set of prime numbers from $1$ to $16$
-    \begin{enumerate}
+  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ]
     \item Draw a Venn diagram accurately depicting $S$, $X$ and $Y$.
     \item Find $n\left(S\right)$, $n\left(X\right)$, $n\left(Y\right)$,
       $n\left(X\cup Y\right)$, $n\left(X\cap Y\right)$.
     \end{enumerate}
-  \item There are $79$ Grade $10$ learners at school. All of these
+  There are $79$ Grade $10$ learners at school. All of these
     take either Maths, Geography or History. The number who take
     Geography is $41$, those who take History is $36$, and $30$ take
     Maths. The number who take Maths and History is $16$; the number
     who take Geography and History is $6$, and there are $8$ who take
     Maths only and $16$ who take only History.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{2}
     \item Draw a Venn diagram to illustrate all this information.
     \item How many learners take Maths and Geography but not History?
     \item How many learners take Geography only?
     \item How many learners take all three subjects?
     \end{enumerate}
-  \item Pieces of paper labelled with the numbers $1$ to $12$ are
+ Pieces of paper labelled with the numbers $1$ to $12$ are
     placed in a box and the box is shaken. One piece of paper is taken
     out and then replaced.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{6}
     \item What is the sample space, $S$?
     \item Write down the set $A$, representing the event of taking a
       piece of paper labelled with a factor of $12$.
@@ -620,7 +639,7 @@ sample space contains all possible outcomes of the experiment.
       \end{enumerate}
     \item Is $n\left(A\cup B\right)=n\left(A\right)+n\left(B\right)-n\left(A\cap B\right)$?
     \end{enumerate}
-  \end{enumerate}
+%   \end{enumerate}
 
   Find the answers with the short codes: \\
   \begin{tabularx}{\textwidth}{XXXX}
@@ -637,12 +656,12 @@ sample space contains all possible outcomes of the experiment.
   that contains all of the elements that are in both sets. The
   intersection is written as $A \cap B$.}
 
-Figure \ref{fig:venn_union_intersection} shows the union and intersection for different
-configurations of two event in a sample space, using Venn diagrams.
+The figure below shows the union and intersection for different
+configurations of two events in a sample space, using Venn diagrams.
 
 \begin{figure}[H]
   \input{Gr10-Probability-images/venn_union_intersection2}
-  \caption{The unions and intersections of different events. Note that
+  \begin{caption*}{The unions and intersections of different events. Note that
     in the middle column the intersection, $A \cap B$, is empty since
     the two sets do not overlap. Also, in the final column the union,
     $A \cup B$, is equal to $A$ and the intersection, $A \cap B$, is
