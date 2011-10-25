@@ -1,10 +1,7 @@
          \chapter{Number patterns}
     \setcounter{figure}{1}
     \setcounter{subfigure}{1}
-    \label{d2d281c6991a4da87e4a19596c1ef625}
-%%$ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10022 )} \par 
-
-%             
+            
 In earlier grades you saw patterns in the form of pictures and numbers. In this chapter, we learn more about the mathematics of patterns. Patterns are repetitive sequences and can be found in nature, shapes, events, sets of numbers and almost everywhere you care to look. For example, seeds in a sunflower, snowflakes, geometric designs on quilts or tiles, the number sequence $0;4;8;12;16;\mathrm{...}$.\par 
 See if you can spot any patterns in the following sequences: 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -130,23 +127,25 @@ Examine how the number of people sitting is related to the number of tables. Is 
 \psframe(0.6,1.6)(1.2,1.8)
 \psframe(1.6,0.6)(1.8,1.2)}
 \end{pspicture}
-\caption{Two more people can be seated for each table added.}
+\\
+\begin{caption*}Two more people can be seated for each table added.\end{caption*}
 \label{fig:mp:s:arithmetictables}
 \end{center}
 \end{figure}
 }
 {
 \westep{Make a table to see if a pattern forms}
-\begin{center}
-\begin{tabular}{|c|l|}\hline
+
+\begin{center} 
+\begin{tabular}{|c|l|}
 \hline \textbf{Number of Tables}, $n$ & \textbf{Number of people seated}\\\hline
-\hline 1 & $4 = 4$\\
-\hline 2 & $4 + 2 = 6$\\
-\hline 3 & $4 + 2 + 2 = 8$\\
-\hline 4 & $4 + 2 + 2 + 2 = 10$ \\
+ $1$ & $4 = 4$\\
+\hline $2$ & $4 + 2 = 6$\\
+\hline $3$ & $4 + 2 + 2 = 8$\\
+\hline $4$ & $4 + 2 + 2 + 2 = 10$ \\
 \hline \vdots & \qquad \qquad \quad \vdots\\
 \hline $n$ & $4 + 2 + 2 + 2 + \ldots + 2 $\\
-\hline\hline
+\hline
 \end{tabular}
 \end{center}
 \westep{Describe the pattern}
@@ -157,7 +156,6 @@ So for each table added, the number of people increased by $2$.}%\end{wex}
 
 \section{Describing sequences}
 
-%% $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_fullmarks.png} &   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10024 )} \par 
 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -221,10 +219,11 @@ We see that $d$ is constant.
 \begin{wex}{Study table continued...}{As before, you and $3$ friends are studying for Maths and are sitting together at a square table. 
 A few minutes later $2$ other friends arrive so you move another table next to yours. Now $6$ people can sit at the table. 
 Another $2$ friends also join your group, so you take a third table and add it to the existing tables. Now $8$ people can sit together as shown below.\\
-\\
-Find the expression for the number of people seated at $n$ tables. \\
-Use the general formula to determine how many people can sit around twelve tables.\\
-How many tables are needed to seat $20$ people?\\}{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
+\item Find the expression for the number of people seated at $n$ tables. 
+\item Use the general formula to determine how many people can sit around $12$ tables.
+\item How many tables are needed to seat $20$ people?
+\end{enumerate}
 
 \begin{figure}[H]
 \begin{center}
@@ -255,22 +254,23 @@ How many tables are needed to seat $20$ people?\\}{
 \psframe(0.6,1.6)(1.2,1.8)
 \psframe(1.6,0.6)(1.8,1.2)}
 \end{pspicture}
-\caption{Two more people can be seated for each table added.}
+\\
+\begin{caption*}Two more people can be seated for each table added.\end{caption*}
 \label{fig:mp:s:arithmetictables2}
 \end{center}
 \end{figure}
-
+}{
 \westep{Make a table to see the pattern}
 \begin{center}
-\begin{tabular}{|c|l|c|}\hline
-\hline \textbf{Number of Tables}, $n$ & \textbf{Number of people seated} & \textbf{Formula}\\\hline
+\begin{tabular}{|c|l|c|}
+\hline \textbf{Number of Tables}, $n$ & \textbf{Number of people seated} & \textbf{Formula}\\
 \hline 1 & $4 = 4$ & $= 4 + 2 (0)$ \\
 \hline 2 & $4 + 2 = 6$ & $= 4 + 2 t(1)$ \\
 \hline 3 & $4 + 2 + 2 = 8$ & $= 4 + 2 (2)$ \\
 \hline 4 & $4 + 2 + 2 + 2 = 10$ & $= 4 + 2(3)$ \\
 \hline \vdots & \qquad \qquad \quad \vdots & \vdots \\
 \hline $n$ & $4 + 2 + 2 + 2 + \ldots + 2 $ & \: \: \: $= 4 + 2 (n-1)$\\
-\hline\hline
+\hline
 \end{tabular}
 \end{center}
 
@@ -278,8 +278,8 @@ How many tables are needed to seat $20$ people?\\}{
 The number of people seated at $n$ tables is:
 \nequ{T_n=4 + 2(n-1)}
 
-\westep{Calculate the $12^{th}$ term}
-How many people can sit around $12$ tables? We are calculating $T_{12}$, where $n = 12$:
+\westep{Calculate the $12^{th}$ term, in other words, find $T_n$ if $n=12$}
+
 \begin{eqnarray*}
 
 T_{12} &=& 4 + 2  (12 - 1) \\
@@ -288,7 +288,7 @@ T_{12} &=& 4 + 2  (12 - 1) \\
 &=& 26
 \end{eqnarray*}
 Therefore $26$ people can be seated at $12$ tables.
-\westep{Calculate the number of tables needed to seat $20$ people. In other words, find $n$ if $T_n=20$}
+\westep{Calculate the number of tables needed to seat $20$ people, in other words, find $n$ if $T_n=20$}
 \begin{eqnarray*}
 T_n &=& 4 + 2  (n - 1) \\
 20 &=& 4 + 2  (n - 1) \\
@@ -307,8 +307,8 @@ while ${T}_{n}$ is the value of the place held by $n$. From the example above, t
     
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
-\hline $n$ & 1 & 2 & 3 & 4 & \ldots \\
-\hline $T_n$ & 4 & 6 & 8 & 10 & \ldots \\
+\hline $n$ & $1$ & $2$ & $3$ & $4$ & \ldots \\
+\hline $T_n$ $&$ 4 $&$ $6$ & $8$ & $10$ & \ldots \\
 \hline
 \end{tabular}
 \end{center}
@@ -320,20 +320,20 @@ while ${T}_{n}$ is the value of the place held by $n$. From the example above, t
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Write down the next three terms in each of the following sequences:
 
-  \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
   \item $5;~15;~25\ldots$
   \item $-8;-3;~ 2 \ldots$
   \item $30;~27;~24\ldots$
   \end{enumerate}
  \item The general term is given for each sequence below. Calculate the missing terms.
-  \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+  \begin{enumerate} [noitemsep, label=\textbf{(\alph*)} ]
   \item $0;3;\ldots;~15;~24$\hspace{2.2cm}$T_{n}={n}^{2}-1$
   \item $3;2;~1;~0;\ldots;-2$\hspace{2cm}$T_{n}=-n+4$
   \item $-11;\ldots;-7;\ldots;-3$\hspace{1.5cm}$T_{n}=-13+2n$
   \end{enumerate}
      
 \item Find the general formula for the following sequences and then find ${T}_{10}$, ${T}_{50}$ and ${T}_{100}$
-  \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
   \item $2;~5;~8;~11;~14;\ldots$
   \item $0;~4;~8;~12;~16;\ldots$
   \item $2;-1;-4;-7;-10;\ldots$
@@ -381,7 +381,7 @@ Express the odd number as $2y-1$.\\
     \begin{array}{ccc}\hfill \mbox{Sum} &=& 2x + (2y-1)\\  &=& 2x + 2y - 1\\ &=& (2x + 2y) - 1 \\ &=& 2(x+y) -1 \end{array}
 \end{equation}
 From this we can see that $2(x+y)$ is an even number. So then $2(x+y)-1$ is an odd number.\\
-So our conjecture is true.    
+Therefore our conjecture is true.    
 }
 \end{wex}
 
@@ -426,7 +426,7 @@ From this equation we can see that the middle digit of the three-digit number is
 
 
 
-\section{Summary}
+\summary
 \begin{itemize}[noitemsep]
 \item There are several special sequences of numbers: 
     \begin{itemize}[noitemsep]
@@ -442,10 +442,10 @@ From this equation we can see that the middle digit of the three-digit number is
 \end{itemize}
             
 
-\begin{eocexercises}{End of chapter exercises}
+\begin{eocexercises}{}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Find the $6^{th}$ term in each of the following sequences:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $4;~13;~22;~31;\ldots$
     \item $~5;~2;~-1;~-4;\ldots$
     \item $7,4;~ 9,7; ~12; ~14,3; \ldots$
@@ -453,7 +453,7 @@ From this equation we can see that the middle digit of the three-digit number is
 
 
 \item Find the general term of the following sequences:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item$3;~7;~11;~15;\ldots$
     \item $-2;~1;~4;~7;\ldots$
     \item $11;~15;~19;~23;\ldots$
@@ -462,7 +462,7 @@ From this equation we can see that the middle digit of the three-digit number is
 
 \item The seating of a sports stadium is arranged so that the first row has $15$ seats, the second row has $19$ seats, the third row has $23$ seats and so on. Calculate how many seats are in the twenty-fifth row.
 \item A single square is made from $4$ matchsticks. Two squares in a row need $7$ matchsticks and three squares in a row need $10$ matchsticks. For this sequence determine:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item the first term
     \item the common difference
     \item the general formula
@@ -524,7 +524,7 @@ of parts into which the string will be divided.
     \begin{array}{ccl}\hfill 9+16&=& 25\\ 9+28 &=& 37\\9+43&=& 52\end{array}
   \end{equation} 
 
-  \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
   \item What pattern do you see?
   \item Make a conjecture and express it in words.
   \item Generalise your conjecture algebraically.
@@ -534,7 +534,7 @@ of parts into which the string will be divided.
 \end{enumerate}
 
 
-\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:\\
 
 \begin{tabular}[h]{cccccc}
  (1.) lcq  &  (2.) lcl  &  (3.) lci  &  (4.) lOe  &  (5.) lcO  &  (6.) lcc & (7.)
