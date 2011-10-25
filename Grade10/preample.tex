@@ -199,9 +199,6 @@
 
 
 \newcommand{\Definition}[2]{
-\newlength{\oldparindent}
-\setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
 \begin{mdframed}[linewidth=1,linecolor=black, skipabove=36pt]%
 \vspace*{10pt}
 \leftskip20pt
@@ -213,7 +210,6 @@
 
 \vspace*{28pt}
 \end{mdframed}
-\setlength{\parindent}{\oldparindent}
 }
 
 \newcommand{\Identity}[2]{
@@ -328,9 +324,10 @@ linecolor=red%
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
 \leftskip0pt
- \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
-\par
-\leftskip20pt
+\textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
+
+\par\noindent
+\leftskip40pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{239,239,239}
