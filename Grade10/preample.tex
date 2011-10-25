@@ -458,7 +458,7 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 
 %insert the more practise at www.maths10.
-( More practise at \url{www.maths10.co.za} with \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} M049 )
+ More practise, help or complete solutions at www.everythingmaths.co.za 
 }
 
 \newenvironment{eocexercises}[1]
@@ -475,7 +475,9 @@ linecolor=red%
 }%
 {%
 \end{quotation}
-\setlength{\parindent}{\saveparindentlength}}
+\setlength{\parindent}{\saveparindentlength}
+More practise, help or complete solutions at www.everythingmaths.co.za 
+}
 
 \newenvironment{f_experiment}[1]
 {
@@ -834,17 +836,20 @@ linecolor=red%
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
   {\gdef\subsectionlabel{\thesubsection}}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-   \node[anchor=west, yshift=-1.5cm, xshift=-0.085\paperwidth]
+   \node[anchor=west, yshift=-1.5cm, xshift=-1cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.915\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm]
-              {\color{black} #1  };
+        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
+              {\color{black} #1 };
+        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
+\addtocounter{shortcodecounter}{1}
   }
-\titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+\titlespacing*{\subsection}{0cm}{1cm}{2cm}
 
 
 
