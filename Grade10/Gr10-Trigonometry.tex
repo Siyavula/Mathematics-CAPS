@@ -35,7 +35,10 @@ Then, it is possible to deduce ratios between corresponding sides of the two sim
 
 
 \begin{equation*}
-\begin{array}{ccl}\hfill \frac{AB}{BC}& =& \frac{DE}{EF}\hfill \\ \hfill \frac{AB}{AC}& =& \frac{DE}{DF}\hfill \\ \hfill \frac{AC}{BC}& =& \frac{DF}{EF}\hfill \\ \hfill \frac{AB}{DE}& =& \frac{BC}{EF}=\frac{AC}{DF}\hfill \end{array}
+\begin{array}{ccl}\hfill \dfrac{AB}{BC}& =& \dfrac{DE}{EF}\hfill \\[5pt]
+ \hfill \dfrac{AB}{AC}& =& \dfrac{DE}{DF}\hfill \\ [5pt]
+\hfill \dfrac{AC}{BC}& =& \dfrac{DF}{EF}\hfill \\[5pt]
+ \hfill \dfrac{AB}{DE}& =& \dfrac{BC}{EF}=\dfrac{AC}{DF}\hfill \end{array}
 \end{equation*}
 Another important fact about similar triangles $ABC$ and $DEF$ is that the angle at vertex $A$ is equal to the angle at vertex $D$, the angle at $B$ is equal to the angle at $E$, and the angle at $C$ is equal to the angle at $F$.\par 
 
@@ -120,27 +123,27 @@ Draw three similar triangles of different sizes, but each with $\hat{A}={30}^{\c
 \multicolumn{3}{|c|}{Dividing lengths of sides (ratios)}
 \\ \hline
 %--------------------------------------------------------------------
-$\frac{AB}{BC}=$
+\LARGE$\frac{AB}{BC}=$
 &
-$\frac{AB}{AC}=$
+\LARGE$\frac{AB}{AC}=$
 &
-$\frac{CB}{AC}=$
+\LARGE$\frac{CB}{AC}=$
 % make-rowspan-placeholders
 \\ \hline
 %--------------------------------------------------------------------
-$\frac{A'B'}{B'C'}=$
+\LARGE$\frac{A'B'}{B'C'}=$
 &
-$\frac{A'B'}{A'C'}=$
+\LARGE$\frac{A'B'}{A'C'}=$
 &
-$\frac{C'B'}{A'C'}=$
+\LARGE$\frac{C'B'}{A'C'}=$
 % make-rowspan-placeholders
 \\ \hline
 %--------------------------------------------------------------------
-$\frac{A''B''}{B''C''}=$
+\LARGE$\frac{A''B''}{B''C''}=$
 &
-$\frac{A''B''}{A''C''}=$
+\LARGE$\frac{A''B''}{A''C''}=$
 &
-$\frac{C''B''}{A''C''}=$
+\LARGE$\frac{C''B''}{A''C''}=$
 % make-rowspan-placeholders
 \\ \hline
 %--------------------------------------------------------------------
@@ -159,7 +162,7 @@ These equal ratios are used to define the trigonometric ratios.\par
     
 
 \section{Defining of the trigonometric ratios}
-Consider a right-angled triangle.\par 
+Consider a right-angled triangle $ABC$.\par 
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39408*id79667}
@@ -311,13 +314,9 @@ sin^{2}~x + cos^{2}~(90^{\circ}-y) = 1
 }
 {
 \westep{Calculate the left hand side of the equation}
-Press \fbox{(} \fbox{SIN} \fbox{25} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $0,179$\\
-Press \fbox{(} \fbox{COS} \fbox{(} \fbox{90} \fbox{\LARGE -} \fbox{65} \fbox{)} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $0,821$
+Press \fbox{(} \fbox{SIN} \fbox{25} \fbox{)} \fbox{x^{2}} \fbox{\LARGE +} \fbox{(} \fbox{COS} \fbox{(} \fbox{90} \fbox{\LARGE -} \fbox{65} \fbox{)} \fbox{)} \fbox{x^{2}}  \fbox{\LARGE =} $1$
 
-\westep{Add both values together}
-\begin{equation*}
- 0,179+0,821 = 1
-\end{equation*}
+
 \westep{Write the final answer}
 LHS = RHS therefore the statement is true.
 
@@ -328,20 +327,21 @@ LHS = RHS therefore the statement is true.
 
 \begin{exercises}{}
 {
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\item In each of the following triangles, state whether $a$, $b$ and $c$ are the hypotenuse, opposite or adjacent sides of the triangle with respect to $\theta$. 
+% \setcounter{subfigure}{0}
 
-In each of the following triangles, state whether $a$, $b$ and $c$ are the hypotenuse, opposite or adjacent sides of the triangle with respect to \theta. 
-\setcounter{subfigure}{0}
+
 \begin{center}
 \scalebox{0.85} % Change this value to rescale the drawing.
 {
-% EACH FIGURE NEEDS TO BE NUMBERED 1 -6~
 \begin{pspicture}(0,-3.7754679)(20.177345,3.9279697)
-\rput (1,2){\textbf{1.}}
-\rput (5.5,2){\textbf{2.}}
-\rput (10.5,2){\textbf{3.}}
-\rput (1.5,-1.5){\textbf{4.}}
-\rput (6,-1.5){\textbf{5.}}
-\rput (9.5,-1.5){\textbf{6.}}
+\rput (1,2){\textbf{(a)}}
+\rput (5.5,2){\textbf{(b)}}
+\rput (10.5,2){\textbf{(c)}}
+\rput (1.5,-1.5){\textbf{(d)}}
+\rput (6,-1.5){\textbf{(e)}}
+\rput (9.5,-1.5){\textbf{(f)}}
 \psdots[dotsize=0.027999999](2.9173439,-1.5720303)
 \psline[linewidth=0.04cm](5.517344,2.5079696)(7.9173436,0.107969664)
 \psline[linewidth=0.04cm](7.9173436,0.107969664)(9.0173435,1.2079697)
@@ -387,7 +387,7 @@ In each of the following triangles, state whether $a$, $b$ and $c$ are the hypot
 \rput(0.54234374,0.37796965){$\theta$}
 \usefont{T1}{ptm}{m}{n}
 \rput(1.1764063,1.5979697){$a$}
-\rput (1, 2){1.}
+% \rput (1, 2){1.}
 \usefont{T1}{ptm}{m}{n}
 \rput(2.1778126,-0.10203034){$b$}
 \usefont{T1}{ptm}{m}{n}
@@ -438,11 +438,10 @@ In each of the following triangles, state whether $a$, $b$ and $c$ are the hypot
 \end{center}
 
 
-Use your calculator to determine the value of the following (correct to $2$ decimal places):
-
-\begin{enumerate}[itemsep=2pt, label=\textbf{\arabic*}. ] 
+\item Use your calculator to determine the value of the following (correct to $2$ decimal places):
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{multicols}{2} 
-\setcounter{enumi}{6} 
+% \setcounter{enumi}{6} 
 \item $tan~65^{\circ}$
 \item $sin~38^{\circ}$
 \item $cos~74^{\circ}$
@@ -455,10 +454,10 @@ Use your calculator to determine the value of the following (correct to $2$ deci
 \end{multicols}
 \end{enumerate}
 
-If $x=39^{\circ}$ and $y=21^{\circ}$ use a calculator to determine whether the following statements are true or false:
-\begin{enumerate}[itemsep=2pt, label=\textbf{\arabic*}. ] 
+\item If $x=39^{\circ}$ and $y=21^{\circ}$ use a calculator to determine whether the following statements are true or false:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{multicols}{2} 
-\setcounter{enumi}{15} 
+% \setcounter{enumi}{15} 
 \item $cos~x + 2~cos~x=3~cos~x$
 \item $cos~2y = cos~y+cos~y$
 \item $tan~x=\dfrac{sin~x}{cos~x}$
@@ -486,9 +485,9 @@ If $x=39^{\circ}$ and $y=21^{\circ}$ use a calculator to determine whether the f
 % \end{minipage}
 \end{center}
 
-\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{multicols}{2}
-\setcounter{enumi}{19}
+% \setcounter{enumi}{19}
 \item $sin~\hat{A} = \frac{\mbox{opposite}}{\mbox{hypotenuse}}=\dfrac{CB}{AC}$
 \item $cos~\hat{A} = $
 \item $tan~\hat{A}= $
@@ -497,8 +496,8 @@ If $x=39^{\circ}$ and $y=21^{\circ}$ use a calculator to determine whether the f
 \item $tan~\hat{C}= $
 \end{multicols}
 \end{enumerate}
-\\
-Use the triangle below to complete the following:
+
+\item Use the triangle below to complete the following:
 \begin{center}
 % \begin{minipage}{0.25\textwidth}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -520,10 +519,10 @@ Use the triangle below to complete the following:
 % \end{minipage}
 \end{center}
 \\
-\\
-\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{multicols}{2}
-\setcounter{enumi}{25}
+% \setcounter{enumi}{25}
 \item $sin~60^{\circ} = $
 \item $cos~60^{\circ} = $
 \item $tan~60^{\circ}= $
@@ -533,8 +532,8 @@ Use the triangle below to complete the following:
 \end{multicols}
 \end{enumerate}
 
-\\
-Use the triangle below to complete the following:
+
+\item Use the triangle below to complete the following:
 \begin{center}
 % \begin{minipage}{0.25\textwidth}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -555,13 +554,14 @@ Use the triangle below to complete the following:
 % \end{minipage}
 \end{center}
 
-\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 
-\setcounter{enumi}{31}
+% \setcounter{enumi}{31}
 \item $sin~45^{\circ} = $
 \item $cos~45^{\circ} = $
 \item $tan~45^{\circ}= $
 
+\end{enumerate}
 \end{enumerate}
 }
 \end{exercises}
@@ -576,56 +576,50 @@ Remember that the lengths of the sides of a right-angled triangle must obey the 
 \begin{center}
 \setlength{\extrarowheight}{2.5pt}
 
-\begin{tabular}{|m{1.2cm}|l|l|l|l|l|}\hline
+\begin{tabular}{|m{1.2cm}|l|l|l|}\hline
 &
-${0}^{\circ }$
-&
+
 ${30}^{\circ }$
 &
 ${45}^{\circ }$
 &
 ${60}^{\circ }$
-&
-${90}^{\circ }$
+
 
 % make-rowspan-placeholders\tabularnewline\cline{1-1}\cline{2-2}\cline{3-3}\cline{4-4}\cline{5-5}\cline{6-6}\cline{7-7}
 
 \\ \hline
 %--------------------------------------------------------------------
 $cos~\theta $
-&
-$1$ &
+ &
 $\frac{\sqrt{3}}{2}$
 &
 $\frac{1}{\sqrt{2}}$
 &
 $\frac{1}{2}$
-&
-$0 $
 
 \\ \hline
 %--------------------------------------------------------------------
 $sin~\theta $
 &
-$0$ &
+
 $\frac{1}{2} $
 &
 $\frac{1}{\sqrt{2}}$
 &
 $\frac{\sqrt{3}}{2}$
-&
-$1$ 
+
 %  make-rowspan-placeholders
 \\ \hline
 %--------------------------------------------------------------------
 $tan~\theta $
 &
-$0$ &
+
 $\frac{1}{\sqrt{3}}$
 &
 $1$ &
 $\sqrt{3}$
-&
+
 
 
 % make-rowspan-placeholders
@@ -636,31 +630,77 @@ $\sqrt{3}$
 % \begin{center}{\small\bfseries Table 14.3}\end{center}
 % \begin{caption}{\small\bfseries Table 14.3}\end{caption}
 \end{table}
+
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.97)(5.3271875,1.97)
+\psline[linewidth=0.04cm](0.361875,-1.95)(4.061875,-1.95)
+\psline[linewidth=0.04cm](4.061875,-1.95)(4.061875,1.95)
+\psline[linewidth=0.04cm](4.061875,1.95)(0.361875,-1.95)
+\psline[linewidth=0.04cm](3.661875,-1.95)(3.661875,-1.55)
+\psline[linewidth=0.04cm](3.661875,-1.55)(4.061875,-1.55)
+\rput(1.7398437,0.26){\LARGE$2$}
+\rput(1.8,-2.2){\LARGE$1$}
+\rput(1.1554687,-1.64){\LARGE$60^{\circ}$}
+\rput(3.6554687,0.96){\LARGE$30^{\circ}$}
+\rput(4.405469,-0.44){\LARGE$\sqrt{3}$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+\scalebox{0.7} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.24)(5.0271873,2.22)
+\psline[linewidth=0.04cm](0.361875,-1.7)(4.061875,-1.7)
+\psline[linewidth=0.04cm](4.061875,-1.7)(4.061875,2.2)
+\psline[linewidth=0.04cm](4.061875,2.2)(0.361875,-1.7)
+\psline[linewidth=0.04cm](3.661875,-1.7)(3.661875,-1.3)
+\psline[linewidth=0.04cm](3.661875,-1.3)(4.061875,-1.3)
+\rput(2.2314062,-2.09){\LARGE$1$}
+\rput(1.1554687,-1.39){\LARGE$45^{\circ}$}
+\rput(3.7554688,1.41){\LARGE$45^{\circ}$}
+\rput(1.6054688,0.51){\LARGE$\sqrt{2}$}
+\rput(4.331406,0.21){\LARGE$1$}
+\end{pspicture} 
+}
+\end{center}
+\end{minipage}
+
 \par
 These values are useful when we need to solve a problem involving trigonometric functions without using a calculator.\par 
 \begin{exercises}{}
 {
-Calculate the value of the following without using a calculator:
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Calculate the value of the following without using a calculator:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $sin~45^{\circ} \times cos~45^{\circ}$
 \item $cos~60^{\circ} + tan~45^{\circ}$
 \item $sin~60^{\circ} - cos~60^{\circ}$
 \end{enumerate}
-\vspace {10pt}
-Use the table to  show that:
-\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
-\setcounter{enumi}{3}
+
+\item Use the table to  show that:
+\begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{3}
 \item $\dfrac{sin~60^{\circ}}{cos~60^{\circ}} = tan~60^{\circ} $
 \item $sin^{2}~45^{\circ}+ cos^{2}~45^{\circ} =1 $
 \item $cos~30^{\circ} =\sqrt{1- sin^{2}~30^{\circ}$
 \end{enumerate}
-\vspace {10pt}
-Answer the following questions:
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\setcounter{enumi}{6}
+
+\item Use the definitions of the trigonometric rations to answer the following questions:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{6}
 \item Explain why $sin~\alpha \leq 1$ for all values of $\alpha$.
 \item Explain why $cos~\beta$ has a maximum value of $1$.
 \item Is there a maximum value for $tan~\gamma$ ?
+\end{enumerate}
+\end{enumerate}
 }
 \end{exercises}
 
@@ -682,7 +722,13 @@ We can also define these reciprocals for any right-angled triangle:
  \hfill cot~\theta & =& \frac{\mbox{adjacent}}{\mbox{opposite}}\hfill 
 \end{array}
 \end{equation*}
-
+Note that:
+\begin{equation*}
+\begin{array}{ccc}sin~\theta \times cosec~\theta & =& 1 \vspace{3pt}\\
+ cos~\theta \times sec~\theta & =& 1 \vspace{3pt}\\
+tan~\theta \times cot~\theta & =& 1
+\end{array}
+\end{equation*}
 \section{Solving trigonometric equations}
 
 \begin{wex}{Finding lengths}{Find the length of $x$ in the following right-angled triangle: \\
@@ -749,7 +795,7 @@ The following videos provide a summary of what you have learnt so far.
 
 \begin{exercises}{}
 {
-
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
 \item In each triangle find the length of the side marked with a letter. Give answers correct to $2$ decimal places.
 \begin{center}
 \scalebox{0.85} % Change this value to rescale the drawing.
@@ -768,13 +814,13 @@ The following videos provide a summary of what you have learnt so far.
 \psline[linewidth=0.04cm](10.340361,-3.959238)(10.341382,-3.7116852)
 \psline[linewidth=0.04cm](10.341382,-3.7116852)(10.599056,-3.7127483)
 % \usefont{T1}{ptm}{m}{n}
-\rput(0.12453125,3.7196066){\textbf{1.}}
+\rput(0.12453125,3.7196066){\textbf{(a)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(6.133125,3.7396066){\textbf{2.}}
+\rput(6.133125,3.7396066){\textbf{(b)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(0.11421875,-0.26039344){\textbf{3.}}
+\rput(0.11421875,-0.26039344){\textbf{(c)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(6.1343746,-0.28039345){\textbf{4.}}
+\rput(6.1343746,-0.28039345){\textbf{(d)}}
 \usefont{T1}{ptm}{m}{n}
 \rput(4.197969,2.6346066){$37^\circ$}
 \usefont{T1}{ptm}{m}{n}
@@ -815,13 +861,13 @@ The following videos provide a summary of what you have learnt so far.
 \psline[linewidth=0.04cm](1.2352896,1.6606089)(1.5029193,1.5250567)
 \psline[linewidth=0.04cm](1.5029193,1.5250567)(1.3673671,1.2574271)
 % \usefont{T1}{ptm}{m}{n}
-\rput(0.11234375,3.5211668){\textbf{5.}}
+\rput(0.11234375,3.5211668){\textbf{(e)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(6.084844,3.5211668){\textbf{6.}}
+\rput(6.084844,3.5211668){\textbf{(f)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(0.14375,-0.39883313){\textbf{7.}}
+\rput(0.14375,-0.39883313){\textbf{(g)}}
 % \usefont{T1}{ptm}{m}{n}
-\rput(6.1403127,-0.498833){\textbf{8.}}
+\rput(6.1403127,-0.498833){\textbf{(h)}}
 \psline[linewidth=0.04](1.0870312,-0.6888331)(1.0870312,-3.3888335)(5.0870314,-3.3888335)(1.0870312,-0.6888331)
 \psline[linewidth=0.04cm](1.0870312,-3.0888333)(1.3870313,-3.0888333)
 \psline[linewidth=0.04cm](1.3870313,-3.0888333)(1.3870313,-3.3888335)
@@ -859,7 +905,7 @@ The following videos provide a summary of what you have learnt so far.
 }
    
 \end{center}  
-\vspace{10pt}
+
 \item Write down two ratios for each of the following in terms of the sides: $AB$; $BC$; $BD$; $AD$; $DC$ and $AC$\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -877,7 +923,7 @@ The following videos provide a summary of what you have learnt so far.
 \end{pspicture} 
 }
 \end{center}
-    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $sin~\hat{B}$
     \item $cos~\hat{D}$
     \item $tan~\hat{B}$
@@ -885,9 +931,9 @@ The following videos provide a summary of what you have learnt so far.
 \vspace{10pt}
 \item In $\triangle MNP$, $\hat{N}=90^{\circ}$, $MP=20$ and $\hat{P}=40^{\circ}$. Calculate $NP$ and $MN$ (correct to $2$ decimal places).
 \end{enumerate}
-
+\end{enumerate}
 \par 
-\label{m39408*eip-403}
+
 \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 \par \begin{tabular}[h]{cccccc}
 (1.) lc1  & \end{tabular}
@@ -944,8 +990,9 @@ Press \fbox{2ndF} \fbox{TAN} \fbox{(} \fbox{50} \fbox{\div} \fbox{100} \fbox{)} 
 
 \begin{exercises}{}
 {
-Determine the angle (correct to $1$ decimal place):
-   \begin{enumerate}[itemsep=2pt, label=\textbf{\arabic*}. ] 
+   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item Determine the angle (correct to $1$ decimal place):
+    \begin{enumerate}[itemsep=3pt, label=\textbf{(\alph*)} ]
 \begin{multicols}{2}
  \item $tan~\theta = 1,7$
 \item $sin~\theta = 0,8$
@@ -965,18 +1012,18 @@ Determine the angle (correct to $1$ decimal place):
 \end{multicols}
 \end{enumerate}
 
-Determine $\alpha$ in the following right-angled triangles:
+\item Determine $\alpha$ in the following right-angled triangles:
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-4.032389)(7.3778124,4.17849)
 
-\rput(0, 3.5){\textbf{16.}}
-\rput(3.5, 3.5){\textbf{17.}}
-\rput(0, 0.5){\textbf{18.}}
-\rput(3.5, 0.5){\textbf{19.}}
-\rput(0, -2.0){\textbf{20.}}
-\rput(3.5, -2.0){\textbf{21.}}
+\rput(0, 3.5){\textbf{(a)}}
+\rput(3.5, 3.5){\textbf{(b)}}
+\rput(0, 0.5){\textbf{(c)}}
+\rput(3.5, 0.5){\textbf{(d)}}
+\rput(0, -2.0){\textbf{(e)}}
+\rput(3.5, -2.0){\textbf{(f)}}
 \psline[linewidth=0.04,fillstyle=solid](4.128174,1.9359901)(4.129576,3.691884)(6.1603127,1.9559901)(4.142015,1.9498184)(4.142015,1.9498184)(4.115519,1.9649143)
 \psline[linewidth=0.04,fillstyle=solid](0.5403125,3.7206802)(2.3103564,3.7223134)(0.5605087,1.1162983)(0.5542749,3.7072453)(0.5542749,3.7072453)(0.5694489,3.7330344)
 \psline[linewidth=0.04](0.8203125,3.71599)(0.8203125,3.41599)(0.5403125,3.41599)
@@ -998,7 +1045,7 @@ Determine $\alpha$ in the following right-angled triangles:
 \rput(5.470625,3.02294){$13$}
 \usefont{T1}{ptm}{m}{n}
 \rput(5.034219,1.5829399){$7,5$}
-\usefont{T1}{ptm}{m}{n}to the
+\usefont{T1}{ptm}{m}{n}
 \rput(1.75375,-0.057060193){$2,2$}
 \usefont{T1}{ptm}{m}{n}
 \rput(0.2096875,-0.4770602){$1,7$}
@@ -1035,13 +1082,438 @@ Determine $\alpha$ in the following right-angled triangles:
 
 }
 \end{center}
+\end{enumerate}
 \end{exercises}
 
 
+
+\section{Two-dimensional problems}
+Trigonometry was developed in ancient civilisations to solve practical problems such as building construction and navigating by the stars. We will show that trigonometry can also be used to solve some other practical problems. We use the trigonometric functions to solve problems in two dimensions that involve right-angled triangles. 
+
+\begin{wex}{Flying a kite}
+{Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+ \item What is the height ($h$) of the kite above the ground?
+\item If Mandla's friend Sipho stands directly below the kite, calculate the distance ($d$) between the two friends. 
+\end{enumerate}
+}
+{
+\westep{Make a sketch and identify the opposite and adjacent sides and the hypotenuse}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.9664062)(4.6114063,1.9364063)
+\psline[linewidth=0.025999999](4.04,1.3864063)(4.04,1.4664062)(4.02,-1.4735937)(0.36,-1.4735937)(4.04,1.4464062)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.236875,-0.12359375){$h$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.3425002,-1.7635938){$d$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.0521874,-1.2435937){$63$}
+\pscircle[linewidth=0.02,dimen=outer](4.28,-0.80728817){0.1}
+\psline[linewidth=0.02cm](4.28,-0.9072884)(4.28,-1.2935938)
+\psline[linewidth=0.02cm](4.14,-1.4535937)(4.28,-1.2935938)
+\psline[linewidth=0.02cm](4.28,-1.2881135)(4.4,-1.4535937)
+\psline[linewidth=0.02cm](4.16,-1.0760568)(4.4,-1.0760568)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.2839062,0.41640624){$17$}
+\psline[linewidth=0.02](3.96,1.7864063)(4.12,1.9264063)(4.22,1.7597395)(4.0466666,1.4664062)(3.9773333,1.7760359)(4.22,1.7597395)
+\psline[linewidth=0.02cm](4.04,1.4864062)(4.12,1.9064063)
+\pscircle[linewidth=0.02,dimen=outer](0.14,-0.82728827){0.1}
+\psline[linewidth=0.02cm](0.14,-0.92728823)(0.14,-1.3135937)
+\psline[linewidth=0.02cm](0.0,-1.4735937)(0.14,-1.3135937)
+\psline[linewidth=0.02cm](0.14,-1.3081135)(0.26,-1.4735937)
+\psline[linewidth=0.02cm](0.02,-1.0960567)(0.3,-1.0935937)
+\psline[linewidth=0.04](4.02,-1.2135937)(3.74,-1.2135937)(3.74,-1.4735937)
+\end{pspicture} 
+}
+}
+\end{center}
+
+\westep{Use given information and appropriate ratio to solve for $h$ and $d$}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill sin~63^{\circ} &= & \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
+\hfill sin~63^{\circ} &=& \dfrac{h}{17} \hfill \\
+\hfill \therefore h &= & 17~sin ~63^{\circ} \hfill \\
+\hfill &=& 15,15~\mbox{m} \hfill \\
+   \end{array}
+\end{equation*}
+
+\item
+\begin{equation*}
+ \begin{array}{ccl}
+\hfill cos~63^{\circ} &= & \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
+\hfill cos~63^{\circ} &=& \dfrac{d}{17} \hfill \\
+\hfill \therefore d &= & 17~cos ~63^{\circ} \hfill \\
+\hfill  &=& 7,72~\mbox{m} \hfill \\
+\end{array}
+\end{equation*}
+\end{enumerate}
+Note that the third side of the triangle can also be calculated using the Theorem of Pythagoras: $d^{2} = 17^{2} - h^{2}$.
+
+\westep{Write final answers}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item The kite is $15,15$ m above the ground.
+\item Mandla and Sipho are $7,72$ m apart.
+\end{enumerate}
+}
+ 
+\end{wex}
+
+\begin{wex}
+{Calculating angles}
+{
+ABCD is a trapezium with $AB=4\mbox{cm}$, $CD=6\mbox{cm}$, $BC=5\mbox{cm}$ and $AD=5\mbox{cm}$. Point $E$ on diagonal $AC$ divides the diagonal such that $AE=3\mbox{cm}$. $B\hat{E}C = 90^{\circ}$. Find $A\hat{B}C$.
+}
+{
+\westep{Draw trapezium and label all given lengths on diagram. Indicate that $B\hat{E}C$ is a right-angle.}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.8215597)(7.3365626,2.6459403)
+\psline[linewidth=0.04](7.0446873,-2.3765597)(0.2846875,-2.3565598)(1.9846874,2.1834402)(5.5246873,2.1834402)(7.0246873,-2.3565598)
+\psline[linewidth=0.04cm](2.0246875,2.1634402)(7.0246873,-2.3765597)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.5046873,2.1634402)(3.9646876,0.44344023)
+\psline[linewidth=0.04](4.1846876,0.6834402)(4.4246874,0.48344022)(4.1646876,0.20344023)
+\rput{124.910225}(10.204001,-1.1108128){\psarc[linewidth=0.04](5.3916802,2.1056097){0.48547706}{48.07423}{180.0}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.7178125,2.4534402){$B$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.23,-2.2465599){$C$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.885,2.4534402){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.075,-2.2865598){$D$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7692187,0.15344024){$E$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7959375,2.4134402){$4$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.61078125,0.27344024){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.790781,0.19344023){$5$ cm}
+% \usefont{T1}{ptm}{m}{n}
+\rput{-43.673504}(0.04067405,2.2905717){\rput(2.8509376,1.0734402){$3$ cm}}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.4921875,-2.6665597){$6$ cm}
+\end{pspicture} 
+}
+\end{center}
+     
+
+\westep{Use $\triangle ABE$ and $\triangle CBE$ to determine the two angles at $\hat{B}$} 
+
+\westep{Find the first angle $A\hat{B}E$}
+Hypotenuse and opposite side are given for both triangles, therefore use $sin$ function:
+In $\triangle ABE$, \\
+
+\begin{equation*}
+\begin{array}{ccl}\hfill sin~(A\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
+ \hfill & =& \dfrac{3}{4}\hfill \\
+ \therefore A\hat{B}E& =& {48,59}^{\circ }\hfill 
+\end{array}
+\end{equation*}
+
+\westep{Use Theorem of Pythagoras to determine $EC$}
+In $\triangle ABE$, \\
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill BE^{2} &=& AB^{2} - AE^{2} \hfill \\
+\hfill &=& 4^{2} - 3^{2} \hfill \\
+\hfill &=&7\\
+\therefore BE &=& \sqrt{7}
+\end{array}
+\end{equation*}
+
+In $\triangle CBE$, \\
+
+\begin{equation*}
+\begin{array}{ccl}
+ \hfill EC^{2} &=& BC^{2} - BE^{2} \hfill \\
+\hfill &=& 5^{2} - (\sqrt{7})^{2} \hfill \\
+\hfill &=& 18 \hfill \\
+\therefore EC &=& 4,24 \hfill
+\end{array}
+\end{equation*}
+
+\westep{Find the second angle $C\hat{B}E$}
+In $\triangle CBE$ 
+\begin{equation*}
+\begin{array}{ccl}\hfill sin~(C\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
+ \hfill & =& \dfrac{4,24}{5}\hfill \\
+ \therefore C\hat{B}E& =& {58}^{\circ }\hfill 
+\end{array}
+\end{equation*}
+
+\westep{Calculate the sum of the angles}
+\begin{equation*}
+A\hat{B}C = 48,59^{\circ} + 58^{\circ} = 106,59^{\circ}
+\end{equation*}
+}
+\end{wex}
+
+
+
+  
+Another application is using trigonometry to find the height of a building. We could use a tape measure lowered from the roof, but this is impractical (and dangerous) for tall buildings. It is much more sensible to use trigonometry.\par 
+
+\begin{wex}{Finding the height of a building}
+{
+% \setcounter{subfigure}{0}
+% \begin{figure}[htbp]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.5182812)(7.84,2.5717187)
+\psframe[linewidth=0.028222222,dimen=outer,fillstyle=crosshatch,hatchwidth=0.028222222,hatchangle=180.0](7.84,2.0682812)(5.84,-1.9317187)
+\psline[linewidth=0.028222222cm](0.84,-1.9317187)(5.84,-1.9317187)
+\psline[linewidth=0.028222222cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,-1.9317187)(5.84,2.0682812)
+\pswedge[linewidth=0.028222222](0.84,-1.9317187){0.6}{0.0}{38.66}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.315,-2.2317188){$100$ m}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.9145312,-1.6317188){$38.7^\circ$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.6,-1.9317187){$Q$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.8145313,-2.2317188){$B$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.8145313,2.3682814){$T$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.514531,0.06828125){$h$}
+\pscircle[linewidth=0.02,dimen=outer](0.15,-1.8619757){0.1}
+\psline[linewidth=0.02cm](0.15,-1.9619758)(0.15,-2.3482811)
+\psline[linewidth=0.02cm](0.01,-2.5082812)(0.15,-2.3482811)
+\psline[linewidth=0.02cm](0.15,-2.3428009)(0.27,-2.5082812)
+\psline[linewidth=0.02cm](0.03,-2.1307442)(0.31,-2.1282814)
+\psline[linewidth=0.04](5.85,-1.6082813)(5.49,-1.6082813)(5.49,-1.9282813)
+\end{pspicture} 
+}
+\end{center}
+\\
+
+% \end{figure}
+% \caption{Determining the height of a building using trigonometry.}
+% \label{trig:height}
+
+The given diagram shows a building of unknown height $h$. If we $(Q)$ walk $100$ m away from the building $(B)$ and measure the angle from the ground to the top of the building $(T)$, the angle is found to be $38,{7}^{\circ }$. This is called the angle of elevation. \\
+We have a right-angled triangle and know the length of one side and an angle. We can therefore calculate the height of the building (correct to the nearest metre).}
+{
+\westep{Identify the opposite and adjacent sides and the hypotenuse}
+
+\westep{}
+In $\triangle QTB$,
+\begin{equation*}
+\begin{array}{ccl}\hfill tan~38,7^{\circ }& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}\hfill \vspace{4pt} \\
+ & =& \dfrac{h}{100}\hfill
+  \end{array}
+\end{equation*}
+\westep{Rearrange and solve for $h$}
+
+\begin{equation*}
+\begin{array}{ccl}
+
+\hfill h& =& 100\times tan~38,7^{\circ }\hfill \\
+& =& 80\hfill
+  \end{array}
+\end{equation*}
+
+\westep{Write final answer}
+The height of the building in $80$ m.
+}
+\end{wex}
+
+
+\begin{wex}{Angles of elevation and depression}
+{A block of flats is $200$ m away from a cellphone tower. Someone stands at $B$. They measure the angle from $B$ to the top of the tower $E$ to be $34^{\circ}$ (the angle of elevation). They then measure the angle from $B$ to the bottom of the tower $C$ to be $62^{\circ}$ (the angle of depression).
+\\What is the height of the cellphone tower (correct to the nearest metre)?\\
+
+\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.893125)(10.969063,3.893125)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color353b}{rgb}{0.6,0.6,0.6}
+\definecolor{color649b}{rgb}{0.8,0.8,1.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid](2.3,0.8496875)(0.18,-3.2103126)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-0.2903125)(0.4,-0.69031256)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-0.3103125)(1.1,-0.7103125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.0303124)(0.4,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,0.4896875)(0.4,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,0.4896875)(1.1,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,0.4896875)(1.8,0.0896875)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-0.3103125)(1.8,-0.7103125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.0303124)(1.1,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.0303124)(1.8,-1.4303125)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.7303125)(0.4,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.7303125)(1.1,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.7303125)(1.8,-2.1303124)
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](0.5,-2.6103127)(0.2,-3.2103126)
+\pscircle[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=gradient,gradlines=2000,gradmidpoint=1.0](0.35,-2.8603127){0.05}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](10.2,2.2896874)(10.0,-3.2103126)
+\psline[linewidth=0.04cm,linecolor=color194](10.1,3.2896874)(10.1,2.2896874)
+\psline[linewidth=0.025999999cm,linecolor=color194](2.24,0.82968754)(9.98,-3.1703126)
+\psline[linewidth=0.024cm,linecolor=color194](2.28,0.8496875)(10.12,3.2896874)
+\psdots[dotsize=0.12,linecolor=color194](10.1,3.2896874)
+\psline[linewidth=0.024cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](2.26,0.82968754)(10.02,0.82968754)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.776562,-3.6903126){$200$ m}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.78,-2.7703125){$ A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.2557812,1.1896875){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.574532,-3.1703126){$C$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.527812,0.82968754){$D$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.371095,3.6896875){$E$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.8720312,1.0896875){$34^\circ$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.6520312,0.44968748){$62^\circ$}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.07,1.0396874){0.49}{336.25052}{58.24052}
+\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.56,0.80968744){0.94}{294.44397}{0.0}
+\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](10.38,-3.2103126)(0.0,-3.3903124)
+\psline[linewidth=0.04](2.28,-2.886875)(2.6,-2.886875)(2.6,-3.226875)
+\psline[linewidth=0.04](9.7,0.51312506)(9.7,1.153125)(10.05669,1.1505005)
+\psline[linewidth=0.04cm](9.72,0.53312504)(10.0,0.53312504)
+\psline[linewidth=0.04cm](9.72,0.83312505)(10.0,0.83312505)
+\end{pspicture} 
+}\\
+Note: diagram not drawn to scale
+\end{center}
+}
+{
+\westep{To determine height $CE$, first calculate lengths $DE$ and $CD$}
+$\triangle BDE$ and $\triangle BDC$ are both right-angled triangles. In each of the triangles, the length $BD$ is known. Therefore we can calculate the sides of the triangles.
+
+\westep{Calculate $CD$}
+The length $AC$ is given. $CABD$ is a rectangle so $BD = AC = 200\mbox{m}$.\\
+In $\triangle CBD$, 
+\begin{eqnarray*}
+tan ~C\hat{B}D &=& \frac{CD}{BD}\\
+\therrefore CD&=&BD\times tan~ C\hat{B}D \\
+&=& 200\times tan~ 62^{\circ} \\
+&=& 376\mbox{ m}
+\end{eqnarray*}
+
+\westep{Calculate $DE$}
+In $\triangle DBE$,
+\begin{eqnarray*}
+tan~ D\hat{B}E &=& \frac{DE}{BD}\\
+\therefore DE&=&BD\times tan ~D\hat{B}E \\
+&=& 200\times tan~ 34^\circ \\
+&=&135\mbox{ m}
+\end{eqnarray*}
+
+\westep{Add the two heights to get the final answer} 
+The height of the tower $CE=CD+DE=135 \mbox{ m}+376\mbox{ m}=511\mbox{ m}$.
+}
+\end{wex}
+
+
+\begin{wex}{Building plan}
+{Mr Nkosi has a garage at his house and he decides to add a corrugated iron roof to the side of the garage. The garage is $4$ m high, and his sheet for the roof is $5$ m long. If the angle of the roof is $5^\circ$, how high must he build the wall $BD$? Give the answer correct to $1$ decimal place.
+\\
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.783125)(9.368906,1.783125)
+\definecolor{color194}{rgb}{0.2,0.2,0.2}
+\definecolor{color247b}{rgb}{0.8,0.8,0.8}
+\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](8.471094,0.67968744)(8.311094,-1.6403126)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,0.25968745)(3.8510938,-1.6203126)
+\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](1.2910937,0.25968745)(0.75109375,-1.6603125)
+\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,1.3196875)(0.79109377,0.19968745)
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5167189,-0.20031255){Garage}
+% \usefont{T1}{ptm}{m}{n}
+\rput(7.78125,1.2396874){Roof}
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.949843,-0.50031257){Wall}
+\psline[linewidth=0.04cm](0.7710937,1.2996874)(0.7710937,-1.6003126)
+\psline[linewidth=0.04cm](0.75109375,1.2996874)(4.351094,1.2996874)
+\psline[linewidth=0.04cm](4.3710938,1.2996874)(4.3710938,-1.6003126)
+\psline[linewidth=0.04cm](0.7710937,-1.6003126)(1.2710937,-1.6003126)
+\psline[linewidth=0.04cm](1.2710937,-1.6003126)(1.2710937,0.19968745)
+\psline[linewidth=0.04cm](1.2710937,0.19968745)(3.8710938,0.19968745)
+\psline[linewidth=0.04cm](3.8710938,0.19968745)(3.8710938,-1.6003126)
+\psline[linewidth=0.04cm](3.8710938,-1.6003126)(4.3710938,-1.6003126)
+\psline[linewidth=0.024cm,linecolor=color194](4.3710938,1.2996874)(8.44,0.663125)
+\psline[linewidth=0.027999999cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](8.4,0.663125)(4.2510934,0.6996874)
+\psline[linewidth=0.04cm,linecolor=color194](8.291094,0.67968744)(8.291094,-1.6203126)
+\psline[linewidth=0.04cm,linecolor=color194](8.451094,0.67968744)(8.451094,-1.6203126)
+\psline[linewidth=0.018cm,linecolor=color194](8.46,-1.616875)(0.9710938,-1.6003126)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.3,0.07968745){$4$ m}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.3395314,1.2596875){$5$ m}
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.906875,0.6996874){$ B$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.6251564,0.41968745){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(6.073125,0.8796874){$5^\circ$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(4.5270314,1.5796875){$C$}
+\psdots[dotsize=0.12,linecolor=color194](4.3710938,0.6996874)
+\psdots[dotsize=0.12,linecolor=color194](4.3710938,1.2996874)
+% \usefont{T1}{ptm}{m}{n}
+\rput(8.858906,-1.5803125){$ D$}
+\psdots[dotsize=0.1378129,linecolor=color194](8.271093,0.67968744)
+\psline[linewidth=0.04](4.38,0.943125)(4.64,0.943125)(4.64,0.703125)(4.64,0.703125)(4.64,0.723125)
+\end{pspicture} 
+}
+\end{center}
+
+}{
+\westep{Identify opposite and adjacent sides and hypotenuse}
+$\triangle ABC$ is right-angled. The hypotenuse and an angle are known therefore we can calculate $AC$. The height of the wall $BD$ is then the height of the garage minus $AC$.
+\begin{eqnarray*}
+ sin~A\hat{B}C &=& \frac{AC}{BC} \\
+\therefore AC &=& BC \times sin~A\hat{B}C\\
+&=& 5~sin~5^{\circ}\\
+&=& 0,4\mbox{ m}\\
+\\
+\therefore BD&=& 4\mbox{ m}-0,4\mbox{ m}\\
+&=& 3,6\mbox{ m}
+\end{eqnarray*}
+
+
+\westep{Write the final answer}  
+Mr Nkosi must build his wall to be $3,6$ m high.
+}
+\end{wex}
+
+\begin{exercises}{}
+{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+
+\item A boy flying a kite is standing $30~$m from a point directly under the kite. If the kite's string is $50~$m long, find the angle of elevation of the kite.
+\item What is the angle of elevation of the sun when a tree $7,15$ m tall casts a shadow $10,1$ m long?
+\item Susan is $1,4$ m tall. From a distance of $300$ m, she looks up at the top of a lighthouse. The angle of elevation is $5^{\circ}$. Determine the height of the lighthouse to the nearest metre.
+\item A ladder of length $25$ m is resting against a wall, the ladder makes an angle $37^{\circ}$ to the wall. Find the distance between the wall and the base of the ladder. 
+
+\end{enumerate}
+
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
+\par \begin{tabular}[h]{cccccc}
+(1.) lcY  &  (2.) lcr  & \end{tabular}
+    
+}
+\end{exercises} 
+
 \section{Defining ratios in the Cartesian plane}
 
-We have defined the trigonometric functions using right-angled triangles. We can extend these definitions to any angle, noting that the definitions do not rely on the lengths of the sides of the triangle, but only on the size of the angle. So if we plot any point on the Cartesian plane and then draw a line from the origin to that point, we can work out the angle of that line. In the figure below points $P$ and $Q$ have been plotted. A line from the origin ($O$) to each point is drawn. The dotted lines show how we can construct right-angled triangles for each point. Now we can find the angles $A$ and $B$. We can also extend the definitions of the reciprocals in the same way:
-\label{m39411*id89342}\nopagebreak\noindent{}
+We have defined the trigonometric functions using right-angled triangles. We can extend these definitions to any angle, noting that the definitions do not rely on the lengths of the sides of the triangle, but only on the size of the angle. So if we plot any point on the Cartesian plane and then draw a line from the origin to that point, we can work out the angle of that line. In the figure below points $P$ and $Q$ have been plotted. A line from the origin ($O$) to each point is drawn. The dotted lines show how we can construct right-angled triangles for each point. The dotted line must always be drawn to the $x$-axis. Now we can find the angles $A$ and $B$. We can also extend the definitions of the reciprocals in the same way:
+
 
 \setcounter{subfigure}{0}
 \begin{center}
@@ -1100,7 +1572,7 @@ The general definitions for the trigonometric functions are:
 \end{equation*}
 \Note{In trigonometry, angles are always measured from the positive $x$-axis in an anti-clockwise direction.}
 
-The Cartesian plane is divided into $4$ quadrants in an anti-clockwise direction as shown in the diagram below. The letters $C$, $A$, $S$ and $T$ indicate which of the trigonometric functions are positive in that quadrant: \\
+The Cartesian plane is divided into $4$ quadrants in an anti-clockwise direction as shown in the diagram below. Notice that $r$ is always positive but the values of $x$ and $y$ change depending on the position of the point in the Cartesian plane. As a result, the trigonometric ratios can be positive or negative. The letters $C$, $A$, $S$ and $T$ indicate which of the functions are positive in each quadrant: \\
 \\
 Quadrant I: All ratios are positive.\\
 Quadrant II: $y$ values are positive therefore $sin$ and $cosec$ are positive.\\
@@ -1160,8 +1632,6 @@ Quadrant IV: $x$ values are positive therefore $cos$ and $sec$ are positive.\par
 \end{center}
 \\
  This diagram is known as the CAST diagram.
-
-
 \begin{wex}{Ratios in the Cartesian plane}
 {$P(-3;4)$ is a point in the Cartesian plane. $X\hat{O}P=\theta$. Without using a calculator, determine the value of:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -1263,14 +1733,14 @@ Given that $\theta$ lies in the third quadrant, $y$ must be negative.\\
 
 \westep{Substitute values for $x$, $y$ and $r$ and simplify}
 \begin{equation*}
-\begin{array}{ccl}
- \hfill tan^{2}~\theta + 1 &=& sec^{2}~\theta \hfill \\
-\hfill \Big(\dfrac{y}{x}\Big)^{2} + 1 &=& \Big(\dfrac{r}{x}\Big)^{2} \hfill \vspace{5pt} \\
-\hfill \Big(\dfrac{-12}{-5}\Big)^{2} + 1 &=& \Big(\dfrac{13}{-5}\Big)^{2} \hfill \vspace{5pt}\\
-\hfill \Big (\dfrac{144}{25}\Big) + 1 &=& \Big(\dfrac{169}{25}\Big)^{2} \hfill \vspace{5pt}\\
-\hfill \dfrac{144 + 25}{25} &=& \dfrac{169}{25} \hfill \vspace{5pt}\\
-\hfill \dfrac{169}{25} &=& \dfrac{169}{25} \hfill \vspace{5pt}\\
-\hfill \therefore \mbox{LHS} &=& \mbox{RHS} \hfill
+\begin{array}{rclrcl}
+ \hfill \mbox{LHS} &=&  tan^{2}~\theta + 1 	&	\mbox{RHS}	&=&  	sec^{2}~\theta \hfill \\
+\hfill &=& \Big(\dfrac{y}{x}\Big)^{2} + 1  	&	&=&  Big(\dfrac{r}{x}\Big)^{2} \hfill \vspace{5pt} \\
+\hfill&=&  \Big(\dfrac{-12}{-5}\Big)^{2} + 1 	&	&=&  \Big(\dfrac{13}{-5}\Big)^{2} \hfill \vspace{5pt}\\
+\hfill&=&  \Big (\dfrac{144}{25}\Big) + 1  	&	&=&  \Big(\dfrac{169}{25}\Big)^{2} \hfill \vspace{5pt}\\
+\hfill &=& \dfrac{144 + 25}{25} 		&	&=&  \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill &=& \dfrac{169}{25}  			&	&=&  \dfrac{169}{25} \hfill \vspace{5pt}\\
+\hfill \therefore \mbox{LHS} &=& \mbox{RHS}&& \hfill
 
 \end{array}
 \end{equation*}
@@ -1282,7 +1752,8 @@ Given that $\theta$ lies in the third quadrant, $y$ must be negative.\\
 
 \begin{exercises}{}
 {
-$B$ is a point in the Cartesian plane. Determine without using a calculator:
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+   \item $B$ is a point in the Cartesian plane. Determine without using a calculator:
 % \begin{center}
 % \scalebox{1} % Change this value to rescale the drawing.
 % {
@@ -1302,467 +1773,46 @@ $B$ is a point in the Cartesian plane. Determine without using a calculator:
 % \end{pspicture} 
 % }
 % \end{center}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
  \item $OB$
 \item $cos~\beta$
 \item $cosec~\beta$
 \item $tan~\beta$
 \end{enumerate}
 
-\vspace{10pt}
-If $sin~\theta= 0,4$ and $\theta$ is an obtuse angle, determine:
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
-\rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\usefont{T1}{ppl}{m}{n}
-\rput(6.295469,0.0115625){$x$}
-\usefont{T1}{ppl}{m}{n}
-\rput(3.1757812,3.0715625){$y$}
-\psline[linewidth=0.04cm,fillcolor=black](3.0,-0.1784375)(0.8,0.7415625)
-\usefont{T1}{ppl}{m}{n}
-\rput(0.7292187,-0.4884375){$(x;2)$}
-\rput{-45.048485}(1.0440966,2.0498228){\psarc[linewidth=0.04](2.9934452,-0.23391798){0.6961048}{50.894093}{199.87982}}
-\usefont{T1}{ppl}{m}{n}
-\rput(3.150625,-0.4484375){$0$}
-\usefont{T1}{ppl}{m}{n}
-\rput(3.6509376,0.5915625){$\theta$}
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.8,0.7215625)(0.8,-0.1784375)
-\usefont{T1}{ptm}{m}{n}
-\rput(0.5234375,0.2315625){$2$}
-\end{pspicture} 
-}
-\end{center}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\setcounter{enumi}{4}
+
+\item If $sin~\theta= 0,4$ and $\theta$ is an obtuse angle, determine:
+% \begin{center}
+% \scalebox{1} % Change this value to rescale the drawing.
+% {
+% \begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
+% \rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(6.295469,0.0115625){$x$}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.1757812,3.0715625){$y$}
+% \psline[linewidth=0.04cm,fillcolor=black](3.0,-0.1784375)(0.8,0.7415625)
+% \usefont{T1}{ppl}{m}{n}
+% \rput(0.7292187,-0.4884375){$(x;2)$}
+% \rput{-45.048485}(1.0440966,2.0498228){\psarc[linewidth=0.04](2.9934452,-0.23391798){0.6961048}{50.894093}{199.87982}}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.150625,-0.4484375){$0$}
+% \usefont{T1}{ppl}{m}{n}
+% \rput(3.6509376,0.5915625){$\theta$}
+% \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](0.8,0.7215625)(0.8,-0.1784375)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.5234375,0.2315625){$2$}
+% \end{pspicture} 
+% }
+% \end{center}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+% \setcounter{enumi}{4}
  \item $cos~\theta$
 \item $\sqrt{21}~tan~\theta$
-
+\end{enumerate}
 \end{enumerate}
 }
 \end{exercises}
-
-\section{Two-dimensional problems}
-Trigonometry was developed in ancient civilisations to solve practical problems such as building construction and navigating by the stars. We will show that trigonometry can also be used to solve some other practical problems. We use the trigonometric functions to solve problems in two dimensions that involve right-angled triangles. 
-
-\begin{wex}{Flying a kite}
-{Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item What is the height ($h$) of the kite above Mandla's head?
-\item If Mandla's friend Sipho stands directly below the kite, calculate the distance ($d$) between the two friends. 
-\end{enumerate}
-}
-{
-\westep{Make a sketch and identify the opposite and adjacent sides and the hypotenuse}
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-1.9425)(4.3575,1.9125)
-\psline[linewidth=0.025999999](3.98,1.3625)(3.98,1.4425)(3.96,-1.4975)(0.3,-1.4975)(3.98,1.4225)
-\usefont{T1}{ppl}{m}{n}
-\rput(4.202344,-0.1475){$h$}
-\usefont{T1}{ppl}{m}{n}
-\rput(2.3079689,-1.7875){$d$}
-\usefont{T1}{ppl}{m}{n}
-\rput(1.0176562,-1.2675){$63$}
-\pscircle[linewidth=0.02,dimen=outer](4.18,-1.1911944){0.1}
-\psline[linewidth=0.02cm](4.18,-1.2911946)(4.18,-1.6775)
-\psline[linewidth=0.02cm](4.04,-1.8375)(4.18,-1.6775)
-\psline[linewidth=0.02cm](4.18,-1.6720197)(4.3,-1.8375)
-\psline[linewidth=0.02cm](4.06,-1.4599631)(4.3,-1.4599631)
-\usefont{T1}{ppl}{m}{n}
-\rput(2.249375,0.3925){$17$}
-\psline[linewidth=0.02](3.9,1.7625)(4.06,1.9025)(4.16,1.7358333)(3.9866667,1.4425)(3.9173334,1.7521297)(4.16,1.7358333)
-\psline[linewidth=0.02cm](3.98,1.4625)(4.06,1.8825)
-\pscircle[linewidth=0.02,dimen=outer](0.14,-1.2311945){0.1}
-\psline[linewidth=0.02cm](0.14,-1.3311945)(0.14,-1.7175)
-\psline[linewidth=0.02cm](0.0,-1.8775)(0.14,-1.7175)
-\psline[linewidth=0.02cm](0.14,-1.7120197)(0.26,-1.8775)
-\psline[linewidth=0.02cm](0.02,-1.499963)(0.3,-1.4975)
-\psline[linewidth=0.04](3.96,-1.2375)(3.68,-1.2375)(3.68,-1.4975)
-\end{pspicture} 
-}
-\end{center}
-
-\westep{Use given information and appropriate ratio to solve for $h$ and $d$}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item
-\begin{equation*}
- \begin{array}{ccl}
-\hfill sin~63^{\circ} &= & \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
-\hfill sin~63^{\circ} &=& \dfrac{h}{17} \hfill \\
-\hfill \therefore h &= & 17~sin ~63^{\circ} \hfill \\
-\hfill &=& 15,15~\mbox{m} \hfill \\
-   \end{array}
-\end{equation*}
-
-\item
-\begin{equation*}
- \begin{array}{ccl}
-\hfill cos~63^{\circ} &= & \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
-\hfill cos~63^{\circ} &=& \dfrac{d}{17} \hfill \\
-\hfill \therefore d &= & 17~cos ~63^{\circ} \hfill \\
-\hfill  &=& 7,72~\mbox{m} \hfill \\
-\end{array}
-\end{equation*}
-\end{enumerate}
-Note that the third side of the triangle can also be calculated using the Theorem of Pythagoras: $d^{2} = 17^{2} - h^{2}$.
-
-\westep{Write final answers}
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item The kite is $15,15$ m above Mandla's head.
-\item Mandla and Sipho are $7,72$ m apart.
-\end{enumerate}
-}
- 
-\end{wex}
-
-\begin{wex}
-{Calculating angles}
-{
-ABCD is a trapezium with $AB=4\mbox{cm}$, $CD=6\mbox{cm}$, $BC=5\mbox{cm}$ and $AD=5\mbox{cm}$. Point $E$ on diagonal $AC$ divides the diagonal such that $AE=3\mbox{cm}$. $B\hat{E}C = 90^{\circ}$. Find $A\hat{B}C$.
-}
-{
-\westep{Draw trapezium and label all given lengths on diagram. Indicate that $B\hat{E}C$ is a right-angle.}
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.8215597)(7.3365626,2.6459403)
-\psline[linewidth=0.04](7.0446873,-2.3765597)(0.2846875,-2.3565598)(1.9846874,2.1834402)(5.5246873,2.1834402)(7.0246873,-2.3565598)
-\psline[linewidth=0.04cm](2.0246875,2.1634402)(7.0246873,-2.3765597)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.5046873,2.1634402)(3.9646876,0.44344023)
-\psline[linewidth=0.04](4.1846876,0.6834402)(4.4246874,0.48344022)(4.1646876,0.20344023)
-\rput{124.910225}(10.204001,-1.1108128){\psarc[linewidth=0.04](5.3916802,2.1056097){0.48547706}{48.07423}{180.0}}
-% \usefont{T1}{ptm}{m}{n}
-\rput(5.7178125,2.4534402){$B$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(7.23,-2.2465599){$C$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.885,2.4534402){$A$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.075,-2.2865598){$D$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.7692187,0.15344024){$E$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.7959375,2.4134402){$4$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.61078125,0.27344024){$5$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(6.790781,0.19344023){$5$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput{-43.673504}(0.04067405,2.2905717){\rput(2.8509376,1.0734402){$3$ cm}}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.4921875,-2.6665597){$6$ cm}
-\end{pspicture} 
-}
-\end{center}
-     
-
-\westep{Use $\triangle ABE$ and $\triangle CBE$ to determine the two angles at $\hat{B}$} 
-
-\westep{Find the first angle $A\hat{B}E$}
-Hypotenuse and opposite side are given for both triangles, therefore use $sin$ function:
-In $\triangle ABE$, \\
-
-\begin{equation*}
-\begin{array}{ccl}\hfill sin~(A\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
- \hfill & =& \dfrac{3}{4}\hfill \\
- \therefore A\hat{B}E& =& {48,59}^{\circ }\hfill 
-\end{array}
-\end{equation*}
-
-\westep{Use Theorem of Pythagoras to determine $EC$}
-In $\triangle ABE$, \\
-\begin{equation*}
-\begin{array}{ccl}
- \hfill BE^{2} &=& AB^{2} - AE^{2} \hfill \\
-\hfill &=& 4^{2} - 3^{2} \hfill \\
-\hfill &=& 5 \hfill \\
-\hfill &=&7\\
-\therefore BE &=& \sqrt{7}
-\end{array}
-\end{equation*}
-
-In $\triangle CBE$, \\
-
-\begin{equation*}
-\begin{array}{ccl}
- \hfill EC^{2} &=& BC^{2} - BE^{2} \hfill \\
-\hfill &=& 5^{2} - (\sqrt{7})^{2} \hfill \\
-\hfill &=& 18 \hfill \\
-\therefore EC &=& 4,24 \hfill
-\end{array}
-\end{equation*}
-
-\westep{Find the second angle $C\hat{B}E$}
-In $\triangle CBE$ 
-\begin{equation*}
-\begin{array}{ccl}\hfill sin~(C\hat{B}E)& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}\hfill \vspace{5pt}\\
- \hfill & =& \dfrac{4,24}{5}\hfill \\
- \therefore C\hat{B}E& =& {58}^{\circ }\hfill 
-\end{array}
-\end{equation*}
-
-\westep{Calculate the sum of the angles}
-\begin{equation*}
-A\hat{B}C = 48,59^{\circ} + 58^{\circ} = 106,59^{\circ}
-\end{equation*}
-}
-\end{wex}
-
-
-
-  
-Another application is using trigonometry to find the height of a building. We could use a tape measure lowered from the roof, but this is impractical (and dangerous) for tall buildings. It is much more sensible to use trigonometry.\par 
-
-\begin{wex}{Finding the height of a building}
-{
-% \setcounter{subfigure}{0}
-% \begin{figure}[htbp]
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.5182812)(7.84,2.5717187)
-\psframe[linewidth=0.028222222,dimen=outer,fillstyle=crosshatch,hatchwidth=0.028222222,hatchangle=180.0](7.84,2.0682812)(5.84,-1.9317187)
-\psline[linewidth=0.028222222cm](0.84,-1.9317187)(5.84,-1.9317187)
-\psline[linewidth=0.028222222cm,linestyle=dashed,dash=0.16cm 0.16cm](0.84,-1.9317187)(5.84,2.0682812)
-\pswedge[linewidth=0.028222222](0.84,-1.9317187){0.6}{0.0}{38.66}
-\usefont{T1}{ppl}{m}{n}
-\rput(3.315,-2.2317188){$100$ m}
-\usefont{T1}{ppl}{m}{n}
-\rput(1.9145312,-1.6317188){$38.7^\circ$}
-\usefont{T1}{ppl}{m}{n}
-\rput(0.6,-1.9317187){$Q$}
-\usefont{T1}{ppl}{m}{n}
-\rput(5.8145313,-2.2317188){$B$}
-\usefont{T1}{ppl}{m}{n}
-\rput(5.8145313,2.3682814){$T$}
-\usefont{T1}{ppl}{m}{n}
-\rput(5.514531,0.06828125){$h$}
-\pscircle[linewidth=0.02,dimen=outer](0.15,-1.8619757){0.1}
-\psline[linewidth=0.02cm](0.15,-1.9619758)(0.15,-2.3482811)
-\psline[linewidth=0.02cm](0.01,-2.5082812)(0.15,-2.3482811)
-\psline[linewidth=0.02cm](0.15,-2.3428009)(0.27,-2.5082812)
-\psline[linewidth=0.02cm](0.03,-2.1307442)(0.31,-2.1282814)
-\psline[linewidth=0.04](5.85,-1.6082813)(5.49,-1.6082813)(5.49,-1.9282813)
-\end{pspicture} 
-}
-\end{center}
-\\
-
-% \end{figure}
-% \caption{Determining the height of a building using trigonometry.}
-% \label{trig:height}
-
-The given diagram shows a building of unknown height $h$. If we $(Q)$ walk $100$ m away from the building $(B)$ and measure the angle from the ground to the top of the building $(T)$, the angle is found to be $38,{7}^{\circ }$. This is called the angle of elevation. \\
-We have a right-angled triangle and know the length of one side and an angle. We can therefore calculate the height of the building (correct to the nearest metre).}
-{
-\westep{Identify the opposite and adjacent sides and the hypotenuse}
-
-\westep{}
-In $\triangle QTB$, \\
-\begin{equation*}
-\begin{array}{ccl}\hfill tan~38,7^{\circ }& =& \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}\hfill \vspace{4pt} \\
- & =& \dfrac{h}{100}\hfill \\
-  \end{array}
-\end{equation*}
-\westep{Rearrange and solve for $h$}
-
-\begin{equation*}
-\begin{array}{ccl}
-
-\hfill h& =& 100\times}tan~38,7^{\circ }\hfill \\
-& =& 80\hfill
-  \end{array}
-\end{equation*}
-
-\westep{Write final answer}
-The height of the building in $80$ m.
-}
-\end{wex}
-
-
-\begin{wex}{Angles of elevation and depression}
-{A block of flats is $200$ m away from a cellphone tower. Someone stands at $B$. They measure the angle from $B$ to the top of the tower $E$ to be $62^{\circ}$ (the angle of elevation). They then measure the angle from $B$ to the bottom of the tower $C$ to be $34^{\circ}$ (the angle of depression).
-\\What is the height of the cellphone tower (correct to the nearest metre)?\\
-
-\\
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-3.893125)(10.969063,3.893125)
-\definecolor{color194}{rgb}{0.2,0.2,0.2}
-\definecolor{color353b}{rgb}{0.6,0.6,0.6}
-\definecolor{color649b}{rgb}{0.8,0.8,1.0}
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid](2.3,0.8496875)(0.18,-3.2103126)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-0.2903125)(0.4,-0.69031256)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-0.3103125)(1.1,-0.7103125)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.0303124)(0.4,-1.4303125)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,0.4896875)(0.4,0.0896875)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,0.4896875)(1.1,0.0896875)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,0.4896875)(1.8,0.0896875)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-0.3103125)(1.8,-0.7103125)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.0303124)(1.1,-1.4303125)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.0303124)(1.8,-1.4303125)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](0.62,-1.7303125)(0.4,-2.1303124)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](1.32,-1.7303125)(1.1,-2.1303124)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](2.02,-1.7303125)(1.8,-2.1303124)
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](0.5,-2.6103127)(0.2,-3.2103126)
-\pscircle[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=gradient,gradlines=2000,gradmidpoint=1.0](0.35,-2.8603127){0.05}
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color353b](10.2,2.2896874)(10.0,-3.2103126)
-\psline[linewidth=0.04cm,linecolor=color194](10.1,3.2896874)(10.1,2.2896874)
-\psline[linewidth=0.025999999cm,linecolor=color194](2.24,0.82968754)(9.98,-3.1703126)
-\psline[linewidth=0.024cm,linecolor=color194](2.28,0.8496875)(10.12,3.2896874)
-\psdots[dotsize=0.12,linecolor=color194](10.1,3.2896874)
-\psline[linewidth=0.024cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](2.26,0.82968754)(10.02,0.82968754)
-% \usefont{T1}{ptm}{m}{n}
-\rput(5.776562,-3.6903126){$200$ m}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.78,-2.7703125){$ A$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.2557812,1.1896875){$B$}
-\usefont{T1}{ptm}{m}{n}
-\rput(10.574532,-3.1703126){$C$}
-\usefont{T1}{ptm}{m}{n}
-\rput(10.527812,0.82968754){$D$}
-\usefont{T1}{ptm}{m}{n}
-\rput(10.371095,3.6896875){$E$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.8720312,1.0896875){$62^\circ$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.6520312,0.44968748){$34^\circ$}
-\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(4.07,1.0396874){0.49}{336.25052}{58.24052}
-\psarc[linewidth=0.024,linecolor=color194,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(3.56,0.80968744){0.94}{294.44397}{0.0}
-\psframe[linewidth=0.04,linecolor=color194,dimen=outer,fillstyle=solid,fillcolor=color649b](10.38,-3.2103126)(0.0,-3.3903124)
-\psline[linewidth=0.04](2.28,-2.886875)(2.6,-2.886875)(2.6,-3.226875)
-\psline[linewidth=0.04](9.7,0.51312506)(9.7,1.153125)(10.05669,1.1505005)
-\psline[linewidth=0.04cm](9.72,0.53312504)(10.0,0.53312504)
-\psline[linewidth=0.04cm](9.72,0.83312505)(10.0,0.83312505)
-\end{pspicture} 
-}
-\end{center}
-}
-{
-\westep{To determine height $CE$, first calculate lengths $DE$ and $CD$}
-$\triangle BDE$ and $\triangle BDC$ are both right-angled triangles. In each of the triangles, the length $BD$ is known. Therefore we can calculate the sides of the triangles.
-
-\westep{Calculate $CD$}
-The length $AC$ is given. $CABD$ is a rectangle so $BD = AC = 200\mbox{m}$.\\
-In $\triangle CBD$, 
-\begin{eqnarray*}
-tan ~C\hat{B}D &=& \frac{CD}{BD}\\
-\therrefore CD&=&BD\times tan~ C\hat{B}D \\
-&=& 200\times tan~ 34^{\circ} \\
-&=& 135\mbox{ m}
-\end{eqnarray*}
-
-\westep{Calculate $DE$}
-In $\triangle DBE$,
-\begin{eqnarray*}
-tan~ D\hat{B}E &=& \frac{DE}{BD}\\
-\therefore DE&=&BD\times tan ~D\hat{B}E \\
-&=& 200\times tan~ 62^\circ \\
-&=&376\mbox{ m}
-\end{eqnarray*}
-
-\westep{Add the two heights to get the final answer} 
-The height of the tower $CE=CD+DE=135 \mbox{ m}+376\mbox{ m}=511\mbox{ m}$.
-}
-\end{wex}
-
-
-\begin{wex}{Building plan}
-{Mr Nkosi has a garage at his house and he decides to add a corrugated iron roof to the side of the garage. The garage is $4$ m high, and his sheet for the roof is $5$ m long. If the angle of the roof is $5^\circ$, how high must he build the wall $BD$? Give the answer correct to $1$ decimal place.
-\\
-\begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-1.783125)(9.368906,1.783125)
-\definecolor{color194}{rgb}{0.2,0.2,0.2}
-\definecolor{color247b}{rgb}{0.8,0.8,0.8}
-\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](8.471094,0.67968744)(8.311094,-1.6403126)
-\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,0.25968745)(3.8510938,-1.6203126)
-\psframe[linewidth=0.04,linecolor=white,dimen=outer,fillstyle=solid,fillcolor=color247b](1.2910937,0.25968745)(0.75109375,-1.6603125)
-\psframe[linewidth=0.002,linecolor=white,linestyle=dotted,dotsep=0.16cm,dimen=outer,fillstyle=solid,fillcolor=color247b](4.3910937,1.3196875)(0.79109377,0.19968745)
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.5167189,-0.20031255){Garage}
-% \usefont{T1}{ptm}{m}{n}
-\rput(7.78125,1.2396874){Roof}
-% \usefont{T1}{ptm}{m}{n}
-\rput(8.949843,-0.50031257){Wall}
-\psline[linewidth=0.04cm](0.7710937,1.2996874)(0.7710937,-1.6003126)
-\psline[linewidth=0.04cm](0.75109375,1.2996874)(4.351094,1.2996874)
-\psline[linewidth=0.04cm](4.3710938,1.2996874)(4.3710938,-1.6003126)
-\psline[linewidth=0.04cm](0.7710937,-1.6003126)(1.2710937,-1.6003126)
-\psline[linewidth=0.04cm](1.2710937,-1.6003126)(1.2710937,0.19968745)
-\psline[linewidth=0.04cm](1.2710937,0.19968745)(3.8710938,0.19968745)
-\psline[linewidth=0.04cm](3.8710938,0.19968745)(3.8710938,-1.6003126)
-\psline[linewidth=0.04cm](3.8710938,-1.6003126)(4.3710938,-1.6003126)
-\psline[linewidth=0.024cm,linecolor=color194](4.3710938,1.2996874)(8.44,0.663125)
-\psline[linewidth=0.027999999cm,linecolor=color194,linestyle=dashed,dash=0.16cm 0.16cm](8.4,0.663125)(4.2510934,0.6996874)
-\psline[linewidth=0.04cm,linecolor=color194](8.291094,0.67968744)(8.291094,-1.6203126)
-\psline[linewidth=0.04cm,linecolor=color194](8.451094,0.67968744)(8.451094,-1.6203126)
-\psline[linewidth=0.018cm,linecolor=color194](8.46,-1.616875)(0.9710938,-1.6003126)
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.3,0.07968745){$4$ m}
-% \usefont{T1}{ptm}{m}{n}
-\rput(6.3395314,1.2596875){$5$ m}
-% \usefont{T1}{ptm}{m}{n}
-\rput(8.906875,0.6996874){$ B$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.6251564,0.41968745){$A$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(6.073125,0.8796874){$5^\circ$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.5270314,1.5796875){$C$}
-\psdots[dotsize=0.12,linecolor=color194](4.3710938,0.6996874)
-\psdots[dotsize=0.12,linecolor=color194](4.3710938,1.2996874)
-% \usefont{T1}{ptm}{m}{n}
-\rput(8.858906,-1.5803125){$ D$}
-\psdots[dotsize=0.1378129,linecolor=color194](8.271093,0.67968744)
-\psline[linewidth=0.04](4.38,0.943125)(4.64,0.943125)(4.64,0.703125)(4.64,0.703125)(4.64,0.723125)
-\end{pspicture} 
-}
-\end{center}
-
-}{
-\westep{Identify opposite and adjacent sides and hypotenuse}
-$\triangle ABC$ is right-angled. The hypotenuse and an angle are known therefore we can calculate $AC$. The height of the wall $BD$ is then the height of the garage minus $AC$.
-\begin{eqnarray*}
- sin~A\hat{B}C &=& \frac{AC}{BC} \\
-\therefore AC &=& BC \times sin~A\hat{B}C\\
-&=& 5~sin~5^{\circ}\\
-&=& 0,4\mbox{ m}\\
-\\
-\therefore BD&=& 4\mbox{ m}-0,4\mbox{ m}\\
-&=& 3,6\mbox{ m}
-\end{eqnarray*}
-
-
-\westep{Write the final answer}  
-Mr Nkosi must build his wall to be $3,6$ m high.
-}
-\end{wex}
-
-\begin{exercises}{}
-{
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-
-\item A boy flying a kite is standing $30~$m from a point directly under the kite. If the kite's string is $50~$m long, find the angle of elevation of the kite.
-\item What is the angle of elevation of the sun when a tree $7,15$ m tall casts a shadow $10,1$ m long?
-\item Susan is $1,4$ m tall. From a distance of $300$ m, she looks up at the top of a lighthouse. The angle of elevation is $5^{\circ}$. Determine the height of the lighthouse to the nearest metre.
-\item A ladder of length $25$ m is resting against a wall, the ladder makes an angle $37^{\circ}$ to the wall. Find the distance between the wall and the base of the ladder. 
-
-\end{enumerate}
-
-\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
-\par \begin{tabular}[h]{cccccc}
-(1.) lcY  &  (2.) lcr  & \end{tabular}
-    
-}
-\end{exercises} 
-
 
 \summary
 \begin{itemize}[noitemsep]
@@ -1770,7 +1820,7 @@ Mr Nkosi must build his wall to be $3,6$ m high.
 \item Each of these ratios have a reciprocal: cosecant ($cosec$), secant ($sec$) and cotangent ($cot$).
 \item We can use the principles of solving equations and the trigonometric ratios to help us solve simple trigonometric equations.
 \item We can solve problems in two dimensions that involve right-angled triangles.
-\item For some special angles, we can easily find the values of $sin$, $cos$ and $tan$.
+\item For some special angles, we can easily find the values of $sin$, $cos$ and $tan$ without using a calculator.
 \item We can extend the definitions of the trigonometric functions to any angle.
 \item Trigonometry is used to help us solve problems two dimensions, such as finding the height of a building.
 \end{itemize}
@@ -1778,18 +1828,18 @@ Mr Nkosi must build his wall to be $3,6$ m high.
 
 \begin{eocexercises}{}
 
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
 \item Without using a calculator determine the value of 
 \begin{equation*}
 sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
 \end{equation*}
 \item If $3~tan~\alpha = -5$ and $0^{\circ} < \alpha < 270^{\circ}$, use a sketch to determine:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $cos~\alpha$
     \item $tan^{2}~\alpha - sec^{2}~\alpha$
     \end{enumerate}
 \item Solve for $\theta$ if $\theta$ is a postive, acute angle:
-    \begin{enumerate}[itemsep=3pt, label=\textbf{\alph*}. ] 
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $2~sin~\theta = 1,34$
     \item $1 - tan~\theta = -1$
     \item $cos~2\theta = sin~40^{\circ}$ 
@@ -1797,7 +1847,7 @@ sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
     \end{enumerate}
 
 
-\item Calculate the unknown lengths
+\item Calculate the unknown lengths in the diagrams below:
 \begin{center}
 \scalebox{1}  
 { 
@@ -1855,14 +1905,14 @@ sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
 }
 \end{center}
 
-\item{In \triangle $PQR$, $PR=20$~cm, $QR=22$~cm and $P\hat{R}Q = 30^{\circ}$. The perpendicular line from $P$ to $QR$ intersects $QR$ at $X$. Calculate 
-\begin{enumerate} 
-\item the length $XR$, 
-\item the length $PX$, and 
+\item In $\triangle PQR$, $PR=20$ cm, $QR=22$ cm and $P\hat{R}Q = 30^{\circ}$. The perpendicular line from $P$ to $QR$ intersects $QR$ at $X$. Calculate 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item the length $XR$ 
+\item the length $PX$
 \item the angle $Q\hat{P}X$ 
-\end{enumerate}} 
+\end{enumerate} 
 \item A ladder of length $15$ m is resting against a wall, the base of the ladder is $5$ m from the wall. Find the angle between the wall and the ladder. 
-\item In the following triangle find the angle $A\hat{B}C$
+\item In the following triangle find the angle $A\hat{B}C$:
 \begin{center}
 \begin{pspicture}(0,-2.4701562)(5.49875,2.4701562) 
 \pspolygon[linewidth=0.04](0.1665625,-1.7301563)(3.3665626,1.9698437)(5.1665626,-1.7301563)(4.1665626,-1.7301563) 
@@ -1880,7 +1930,7 @@ sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
 \rput(0.8,-1.48){$41^{\circ}$} 
 \end{pspicture} 
 \end{center}
-\item In the following triangle find the length of side $CD$
+\item In the following triangle find the length of side $CD$:
 \begin{center}
 \begin{pspicture}(0,-2.2234375)(6.091875,2.2234375) 
 \pspolygon[linewidth=0.04](0.1665625,-1.776875)(5.1665626,-1.776875)(5.1665626,1.823125) 
@@ -1902,12 +1952,12 @@ sin~60^{\circ}~cos~30^{\circ}-cos~60^{\circ}sin~30^{\circ} + tan~45^{\circ}
 
 \item A right-angled triangle has hypotenuse $13$ mm. Find the length of the other two sides if one of the angles of the triangle is $50^{\circ}$.
 \item One of the angles of a rhombus with perimeter $20$ cm is $30^{\circ}$. 
-\begin{enumerate} 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item Find the sides of the rhombus. 
 \item Find the length of both diagonals. 
 \end{enumerate} 
 \item Captain Jack was sailing towards a cliff with a height of $10$ m. 
-\begin{enumerate} 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
 \item The distance from the boat to the top of the cliff is $30$ m, calculate the angle of elevation from the boat to the top of the cliff (correct to the nearest integer).
 \item If the boat sails $7$ m closer to the cliff, what is the new angle of elevation from the boat to the top of the cliff? 
 \end{enumerate} 
