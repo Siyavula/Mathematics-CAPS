@@ -4,8 +4,8 @@ known as solids. In order to work with these, you need to know how to calculate 
 area and perimeter of the two dimensional shapes below.
 
 \section{Area of polygons }
-
-\begin{table*}[h]
+\Definition{Area}{Area is the two dimensional space inside the boundary of a flat object. It is measured is square units.}
+\begin{table}[H]
 \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
 \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
 \begin{tabular}{|C|D|C|}
@@ -23,7 +23,7 @@ Square &
         \end{center}
 &
 
-$b \times h$ \\ \hline
+$\mbox{Area} = b \times h$ \\ \hline
 
 Rectangle &
     \begin{center}
@@ -35,7 +35,7 @@ Rectangle &
             \rput(1.25,-0.25){$b$}
         \end{pspicture}}
     \end{center}
-& $ b \times h $ \\ \hline
+& $\mbox{Area} =  b \times h $ \\ \hline
 
 Triangle &
 \begin{center} 
@@ -49,7 +49,22 @@ Triangle &
     \end{pspicture}}
 \end{center}
 
-& $ \dfrac{1}{2} b \times h $ \\ \hline
+& $ \mbox{Area} = \dfrac{1}{2} b \times h $ \\ \hline
+
+
+
+\end{tabular}
+% NOTE: table manually split in half for formatting purposes (no time to learn about/make long tables/supertabular)
+\end{table}
+
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\begin{tabular}{|C|D|C|}
+\hline
+\textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
+
+%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
 
 Trapezium &
 \begin{center}
@@ -63,7 +78,7 @@ Trapezium &
         \rput(0.75,1.25){$a$}
     \end{pspicture}}
 \end{center}
-& $ \dfrac{1}{2} (a + b) \times h $ \\ \hline 
+& $\mbox{Area} = \dfrac{1}{2} (a + b) \times h $ \\ \hline 
 Parallelogram &
 
 \begin{center}
@@ -77,7 +92,7 @@ Parallelogram &
     \end{pspicture}}
 \end{center}
 
-& $ b \times h $ \\ \hline
+& $\mbox{Area} =  b \times h $ \\ \hline
 
 Circle &
 
@@ -91,8 +106,8 @@ Circle &
     \end{pspicture}}
 \end{center} & 
 \begin{aligned}$
-&\mbox{Area: }  \pi r^2 \\
-&\mbox{Circumference: } 2\pi r$
+&\mbox{Area} = \pi r^2 \\
+&(\mbox{Circumference}= 2\pi r)$
 \end{aligned}
  \\ \hline
 
@@ -102,7 +117,8 @@ Circle &
 
 
 %\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
-\end{table*}
+\end{table}
+
        \Note{Remember that area is measured in square units: e.g. cm$^2$, m$^2$ or mm$^2$.}     
 
     \textnormal{Khan Academy video on area and perimeter}
@@ -123,22 +139,22 @@ Circle &
 \pspolygon[linewidth=0.028222222](0.31,-1.0003124)(1.81,0.9996875)(5.31,0.9996875)(3.81,-1.0003124)
 \psline[linewidth=0.014111111cm,linestyle=dashed,dash=0.16cm 0.16cm](1.81,0.9996875)(1.81,-1.0003124)
 \pspolygon[linewidth=0.028222222](1.81,-1.0003124)(1.81,-0.7003125)(2.11,-0.7003125)(2.11,-1.0003124)
-\usefont{T1}{ppl}{m}{n}
+% \usefont{T1}{ppl}{m}{n}
 \rput(0.28453124,-1.2003125){$A$}
-\usefont{T1}{ppl}{m}{n}
+% \usefont{T1}{ppl}{m}{n}
 \rput(1.7845312,1.1996875){$B$}
-\usefont{T1}{ppl}{m}{n}
+% \usefont{T1}{ppl}{m}{n}
 \rput(5.284531,1.1996875){$C$}
-\usefont{T1}{ppl}{m}{n}
+% \usefont{T1}{ppl}{m}{n}
 \rput(3.7845314,-1.2003125){$D$}
-\usefont{T1}{ppl}{m}{n}
+% \usefont{T1}{ppl}{m}{n}
 \rput(1.7845312,-1.2003125){$E$}
-\usefont{T1}{ppl}{m}{n}
-\rput(0.78453124,0){$5$}
-\usefont{T1}{ppl}{m}{n}
-\rput(1.0345312,-1.2003125){$3$}
-\usefont{T1}{ppl}{m}{n}
-\rput(2.7845314,-1.2003125){$4$}
+% \usefont{T1}{ppl}{m}{n}
+\rput(0.55,0){$5$ mm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(1.0345312,-1.2003125){$3$ mm}
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.2003125){$4$ mm}
 \psline[linewidth=0.04](4.287036,-0.07316559)(4.5628867,0.011133511)(4.550078,-0.28859293)
 \psline[linewidth=0.04](1.0870358,0.3068344)(1.3628865,0.39113352)(1.3500777,0.09140708)
 \psline[linewidth=0.04](4.427036,0.08683441)(4.7028866,0.1711335)(4.690078,-0.12859292)
@@ -157,7 +173,7 @@ AB^2 &=& BE^2 + AE^2\\
 \therefore BE^2 &=& AB^2 - AE^2\\
 	&=& 5^2 - 3^2\\
 	 &=& 16\\
-	\therefore BE &=& 4
+	\therefore BE &=& 4\mbox{ mm}
     \end{array}
 \end{equation*}
     
@@ -167,7 +183,7 @@ AB^2 &=& BE^2 + AE^2\\
 	\text{Area} &=& b \times h\\
 &=& AD \times BE \\
 		    &=& 7 \times 4\\
-		    &=& 28
+		    &=& 28 \mbox{ mm}^2
     \end{array}
 \end{equation*}
     }
@@ -179,7 +195,7 @@ AB^2 &=& BE^2 + AE^2\\
 
 Find the areas of each of the polygons below:
 \begin{center}
-\scalebox{0.9}
+\scalebox{0.75}
 {
 \begin{pspicture}(0,-4.758281)(14.921875,4.758281)
 \psline[linewidth=0.04cm](0.381875,1.7882812)(4.381875,1.7882812) 
@@ -319,12 +335,10 @@ Find the answers with the short codes:\\
 
 \section{Right prisms and cylinders }
 
-A right prism is a geometric solid that has a polygon as its base and one or more sides perpendicular to the base. The base and top surface are the same shape and size. We
-call it a ``right`` prism because the angles between the base and sides are right-angles.
-\par
+\Definition{Right prism}{A right prism is a geometric solid that has a polygon as its base and one or more sides perpendicular to the base. The base and top surface are the same shape and size. It is called a ``right`` prism because the angles between the base and sides are right-angles.}
 A prism with a square base is called a cube, a rectangular prism has a rectangle as its
-base, and triangular prism has a triangle as its base. A cylinder is another type of right
-prism which has as circle as its base.
+base, and a triangular prism has a triangle as its base. A cylinder is another type of right
+prism which has as circle as its base. Examples of right prisms are given below: a rectangular prism, a square prism (or cube), a triangular prism and a cylinder.
 \par 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -372,13 +386,13 @@ prism which has as circle as its base.
 	\end{pspicture}
 
 	\vspace{0.75cm}
-	\begin{caption*}{Examples of right prisms: a rectangular prism, a square prism (or cube), a triangular prism and a cylinder.}\end{caption}
+% 	\begin{caption*}{}\end{caption}
     \end{center}
 \end{figure}   
 
 \subsection{Surface area of prisms and cylinders}
 
- The term ''surface area`` refers to the total area of the exposed or outer surfaces of a prism.
+\Definition{Surface area}{Surface area is the total area of the exposed or outer surfaces of a prism.}
 This is easier to understand if we imagine the prism to be cardboard box that we can unfold.
 A solid that is unfolded like this, is called a net. When a prism is unfolded into a net, we can clearly see each of its faces. In order to calculate the surface area of the prism, we can then simply calculate the area of each face, and add them all together.
 \par 
@@ -387,12 +401,12 @@ A solid that is unfolded like this, is called a net. When a prism is unfolded in
  For example, when a triangular prism is unfolded into a net, we can see that it has two faces that are
 triangles and three faces that are rectangles. To calculate the surface area of the prism, we find the areas of each triangle and  each rectangle, and add them together.
   \par
-In the case of a cylinder the top and bottom faces are circles and while the curved surface flattens
+In the case of a cylinder the top and bottom faces are circles and the curved surface flattens
 into a rectangle with a length that is equal to the circumference of the circular base. To calculate the surface area we therefore find the area of the two circles and the rectangle and add them together.
 
 \Note{Remember that surface area is measured in square units, for example cm $^2$, m$^2$ or mm$^2$.}
 \par
-Below are examples of right prisms that have been unfolded to their nets:
+Below are examples of right prisms that have been unfolded into nets:
 
 \begin{figure}[H]
  \begin{caption*}{\textbf{Rectangular prism}}\end{caption*}
@@ -619,7 +633,7 @@ Find the surface area of the following rectangular  prism:
                         &= (2+ 5 +2 + 5) \times 10 \\
                         &= 14 \times 10 \\
                         &= 140~\mbox{cm}^2  \\ \\
-2 \times \mbox{small rectangle} &= 2(5+2) \\
+2 \times \mbox{small rectangle} &= 2(5 \times 2) \\
                                 &= 2(10) \\
                                 &= 20~\mbox{cm}^2
 \end{align*}
@@ -628,9 +642,9 @@ Find the surface area of the following rectangular  prism:
 
 \westep{Find the sum of the areas of the faces}
 
-$\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 180$
+$\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 160$ cm$^2$.
 \westep{Write the final answer}
-The surface area of the rectangular prism is 180~cm$^2$.
+The surface area of the rectangular prism is 160~cm$^2$.
 \
 }
 \end{wex}
@@ -729,7 +743,7 @@ To find the perimeter of the triangle, we have to first find the length of its s
 x^2 &=& 3^2 + \frac{8}{2}^2 \\
 x^2 &=& 3^2 + 4^2 \\
 &=& \sqrt{25} \\
-\therefore x &=& 5\\
+\therefore x &=& 5\mbox{ cm}\\
 \therefore \mbox{perimeter of triangle} &=& 5 + 5 + 8 \\
 &=&18\mbox{ cm}\\
 
@@ -779,7 +793,7 @@ The surface area of the triangular prism is $240$ cm$^2$.
 {Finding the surface area of a cylindrical prism
 }
 {% Question
-Find the surface area of the following cylinder (correct to one decimal place):
+Find the surface area of the following cylinder (correct to $1$ decimal place):
 \begin{center}
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
@@ -831,7 +845,7 @@ Find the surface area of the following cylinder (correct to one decimal place):
 
 \begin{equation*}
 \begin{array}{rcl}
-\mbox{area of circle } &= &=\pi r^2 \\
+\mbox{area of circle }  &=\pi r^2 \\
 &=& \pi10^2 \\
 &=&314,16\mbox{ cm}^2
 \end{array}
