@@ -323,15 +323,15 @@ linecolor=red%
 
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
-\leftskip0pt
+\leftskip20pt
 \noindent
 \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
 \leftskip40pt
 \addtocounter{stepcounter}{1}}
 
-\definecolor{siyavula-gray}{RGB}{239,239,239}
-\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
+\definecolor{siyavula-gray}{RGB}{242,242,242}
+\definecolor{siyavula-dark-gray}{RGB}{205,204,204}
 
 \newenvironment{wex}[3]{
 \newlength{\myfloatsep}
@@ -356,17 +356,21 @@ linecolor=red%
 \vspace*{2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
+\begin{quotation}
 \hrule
 \vspace*{18pt}
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
-
+\end{quotation}
 \noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
+\begin{quotation}
+\noindent
  #3%
+\end{quotation}
 \vspace*{28pt}
 \hrule
 \addtocounter{workedexamplecounter}{1}\setcounter{stepcounter}{1}%
