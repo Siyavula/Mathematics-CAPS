@@ -32,19 +32,20 @@ a coin, rolling dice, a soccer match.
 
 \begin{figure}[H]
 \textbf{Experiment 1} A coin is tossed and it lands with either
-  heads (H) or tails (T) facing upwards.
+  heads (H) or tails (T) facing upwards. An example outcome of tossing a coin that lands with heads
+    facing up:
   \begin{center}
     \begin{tikzpicture}
       \coinheads
     \end{tikzpicture}
   \end{center}
-  \caption{An example outcome of tossing a coin: it lands with heads
-    facing up.}
+%   \caption{An example outcome of tossing a coin: it lands with heads
+%     facing up.}
 \end{figure}
 
 \begin{figure}[H]
   \textbf{Experiment 2} Two dice are rolled and the total number of
-  dots added up.
+  dots added up. An example outcome of rolling two dice:
 
   \begin{center}
     \begin{tikzpicture}
@@ -52,17 +53,17 @@ a coin, rolling dice, a soccer match.
       \makedie{5}{shift={(1,0)},rotate=-20}
     \end{tikzpicture}
   \end{center}
-  \caption{An example outcome of rolling two dice.}
+%   \caption{An example outcome of rolling two dice.}
 \end{figure}
 
 \begin{figure}[H]
   \textbf{Experiment 3} Two teams play in a soccer match and we are
-  interested in the final score.
+  interested in the final score. An example outcome of a soccer match:
 
   \begin{center}
     \includegraphics[width=3in]{Gr10-Probability-images/5996076302_412ec8d8d0_o.jpg}
   \end{center}
-  \caption{An example outcome of a soccer match. Picture by apasciuto on Flickr.com}
+  \begin{caption*}{(Picture by apasciuto on Flickr.com)}\end{caption*}
 \end{figure}
 
 \Definition{Sample space}{The sample space of an experiment is
@@ -77,8 +78,8 @@ have a look at the sample spaces of each of our three experiments.
 
 \paragraph{Experiment 1} Since a coin can land in one of only two ways
 (we will ignore the possibility that the coin lands on its edge), the
-sample space is the set \(S=\{\textrm{H}; \textrm{T}\}\). The size of the sample space
-is \(n(S)=2\).
+sample space is the set \(S=\{\textrm{H}; \textrm{T}\}\). The size of the sample space of the coin toss
+is \(n(S)=2\):
 
 \begin{figure}[H]
   \begin{center}
@@ -92,7 +93,7 @@ is \(n(S)=2\).
     \draw (-3, -1.5) rectangle (3, 1.5) node[anchor=south east] {$S$};
   \end{tikzpicture}
   \end{center}
-  \caption{Sample space of a coin toss.}
+%   \caption{Sample space of a coin toss.}
 \end{figure} 
 
 \paragraph{Experiment 2} Each of the dice can land on a number from $1$
@@ -100,7 +101,7 @@ to $6$. In this experiment the sample space of all possible outcomes is
 every possible combination of the $6$ numbers on the first die with the
 $6$ numbers on the second die. This gives a total of \(n(S) = 6 \times 6
 = 36\) possible outcomes. The figure below shows all of the outcomes
-in the sample space.
+in the sample space of rolling two dice:
 
 \begin{figure}[H]
 \begin{center}
@@ -119,7 +120,7 @@ in the sample space.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-  \caption{Sample space of rolling two dice.}
+%   \caption{Sample space of rolling two dice.}
 \end{figure} 
 
 \paragraph{Experiment 3} Each soccer team can get an integer score
@@ -128,7 +129,7 @@ $5$ goals, but there is no reason why this cannot happen. So the sample
 space of this experiment consists of all possible combinations of two
 non-negative integers. The figure below shows all of the
 possibilities. Since we do not limit the score of a team, this sample
-space is infinitely large.
+space is infinitely large:
 
 \begin{figure}[H]
 \begin{center}
@@ -150,7 +151,7 @@ space is infinitely large.
     \draw (6cm, 0.5cm) node[anchor=south east] {$S$};
   \end{tikzpicture}
 \end{center}
-  \caption{Sample space of the final score of a soccer match.}
+%   \caption{Sample space of the final score of a soccer match.}
 \end{figure}
 
 \Definition{Event}{An event is a specific set of outcomes of an
@@ -228,8 +229,8 @@ outcomes in the sample space.
   \westep{Write down the size of the sample space}
 
   \begin{itemize}
-  \item[] Experiment 1: $n(S) = 2$
-  \item[] Experiment 2: $n(S) = 36$
+  \item[] Experiment 1 (coin): $n(S) = 2$
+  \item[] Experiment 2 (dice): $n(S) = 36$
   \end{itemize}
   
   \westep{Write down the size of the event set}
@@ -256,30 +257,38 @@ $1$--$1$ is quite common, while a score of $11$--$15$ is very, very
 rare. Because all outcomes are not equally likely, we cannot use the
 ratio between \(n(E)\) and \(n(S)\) to compute the theoretical
 probability of a team winning. 
-\IFact{The record for most goals scored by both teams in the FIFA World Cup is $12$. This
-was achieved in $1954$ in the match between Austria and Switzerland, where the final score was $7$--$5$.}
+%THIS IFACT MUTS BE COMMENTED BACK IN -  BUT FOR NOW (10.20am, 25/10/2011) IT BREAKS THE STYLING THAT FOLLOWS IT
+% \IFact{The record for the total number of goals scored by both teams in the FIFA World Cup is $12$. This
+% was achieved in $1954$ in the match between Austria and Switzerland, where the final score was $7$--$5$.}
 
 \begin{exercises}{Theoretical probability} \noindent
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
-  \item A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
-    balls. A ball is picked at random. What is the probablity that it
+{
+%   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+%   \item 
+A bag contains $6$ red, $3$ blue, $2$ green and $1$ white
+    balls. A ball is picked at random. Determine the probablity that it
     is:
-    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
     \item red
     \item blue or white
     \item not green
-    \item not green or red?
+    \item not green or red
     \end{enumerate}
-  \item A playing card is selected randomly from a pack of $52$
-    cards. What is the probability that it is:
-    \begin{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
+%   \item 
+A playing card is selected randomly from a pack of $52$
+    cards. Determine the probability that it is:
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{4}
     \item the $2$ of hearts
     \item a red card
     \item a picture card
     \item an ace
     \item a number less than $4$?
-    \end{enumerate[itemsep=5pt, label=\textbf{\arabic*}. ]}
-  \item Even numbers in the range $2$--$100$ are written on cards. What is
+    \end{enumerate}
+Even numbers in the range $2$--$100$ are written on cards. 
+    \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\setcounter{enumi}{9}
+  \item What is
     the probability of selecting a multiple of $5$, if a card is drawn
     at random?
   \end{enumerate}
@@ -288,6 +297,7 @@ was achieved in $1954$ in the match between Austria and Switzerland, where the f
   \begin{tabularx}{\textwidth}{XXXX}
     (1) & (2) & (3) \\
   \end{tabularx}
+}
 \end{exercises}
 
 \section{Relative frequency}
@@ -332,7 +342,7 @@ relative frequency every time that we repeat an experiment.
   A positive outcome is when the outcome is in our event set. The
   table below shows a running count (after each trial $t$) of the
   number of positive outcomes $p$ we have observed. For example, after
-  $t=20$ trials we have observed heads 8 times and tails 12 times and
+  $t=20$ trials we have observed heads $8$ times and tails $12$ times and
   so the positive outcome count is $p=8$.
 
   \begin{center}
