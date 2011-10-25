@@ -88,7 +88,7 @@ In this chapter we will look at a few numerical and graphical ways in
 which data sets can be represented, to make them easier to interpret.
 
 \section{Collecting data}
-\Definition{Data}{Data refers to the pieces of information that have
+\Definition{Data}{Data refer to the pieces of information that have
   been observed and recorded, from an experiment or a survey. Note
   that the word {\em data} is the plural of the word {\em datum}, and
   therefore one should say, ``the data are'' and not ``the data is''.}
@@ -417,7 +417,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   \end{equation}
 
   In the same way, we can compute the mean for each day of the
-  week. See the table below for the results.
+  week. See the table below the next step for the results.
 
   \westep{Compute the median.}
 
@@ -457,7 +457,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
 
   From the above calculations we can see that the means and medians
   are close to one another, but not quite equal. In the next worked
-  example we will see that the mean and median are not necessarily
+  example we will see that the mean and median are not always
   close to each other.
 
   \westep{Compute the mode.}
@@ -468,7 +468,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
 
   \westep{Conclusion: Is the supplier reliable?}
 
-  From the question the requirements are that the mass of a loaf of
+  From the question, the requirements are that the mass of a loaf of
   bread be between $800$ g minus $5$\%, which is $760$ g, and plus
   $10$\%, which is $880$ g. Since every one of the measurements made
   by Vishnu lies within this range and since the means and medians are
@@ -488,19 +488,19 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
       \{150;\ 172;\ 153;\ 156;\ 146;\ 157;\ 157;\ 143;\ 168;\ 157\}
     \end{equation}
     Afterwards, we add one more learner to the group, who is
-    exceptionally tall: $181$ cm.
+    exceptionally tall at $181$ cm.
 
     Compare the mean and median of the heights of the learners before
     and after the $11$th learner was added.
 }{
-  \westep{Compute the mean with the first $10$ learners.}
+  \westep{Compute the mean of the first $10$ learners.}
 
   \begin{equation}
     \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}
     = 155,9\textrm{ cm}
   \end{equation}
 
-  \westep{Compute the mean with all $11$ learners.}
+  \westep{Compute the mean of all $11$ learners.}
 
   \begin{equation}
     \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157 + 181}{11}
@@ -511,7 +511,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   $158,2 - 155,9 = 2,3\textrm{ cm}$ when we introduce
   the outlier value (the tall person) to the data set.
 
-  \westep{Compute the median with the first $10$ learners.}
+  \westep{Compute the median of the first $10$ learners.}
 
   To find the median, we need to sort the data set:
   \begin{equation}
@@ -523,7 +523,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
     \frac{156+157}{2} = 156,5\textrm{ cm}
   \end{equation}
 
-  \westep{Compute the median with all $11$ learners.}
+  \westep{Compute the median of all $11$ learners.}
 
   After adding the tall learner, the sorted data set is
   \begin{equation}
@@ -536,8 +536,8 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   In general, the median is less affected by the addition of outliers
   to a data set than the mean is. This is important because it is
   quite common that outliers are measured during an experiment,
-  because of problems with the equipment or unexpected interference of
-  some kind.
+  because of problems with the equipment or unexpected interference.
+
 }
 \end{wex}
 
@@ -641,11 +641,13 @@ range.
         \draw (\x,0) node[anchor=north] {$\x$};
       }
       % y axis
-      \draw[thick,->] (125,0) -- (125,10);
+      \draw[thick,->] (125,0) -- (125,10) node[midway,sloped,anchor=south,yshift=0.5cm] {count};
       % y labels
       \foreach \y in {0, 1, ..., 9} {
         \draw (125,\y) node[anchor=east] {$\y$} -- (126,\y);
       }
+      % axis labels
+      \draw (155, -1) node[anchor=north] {height (m)};
     \end{tikzpicture}
   \end{center}
 
@@ -673,9 +675,9 @@ range.
     \end{tabular}
   \end{center}
 
-  Draw up a grouped frequency table using intervals
-  $10 < x \le 20$, $20 < x \le 30$, $30 < x \le 40$,
-  $40 < x \le 50$, $50 < x \le 60$.
+  Draw up a grouped frequency table using the intervals
+  $10 < x \le 20$;\ $20 < x \le 30$;\ $30 < x \le 40$;\ 
+  $40 < x \le 50$;\ $50 < x \le 60$.
 
   Also draw the histogram corresponding to the frequency table of the
   grouped data.
@@ -802,16 +804,16 @@ but are clearly quite different.
 \end{figure}
 
 In this section we will look at measures of dispersion. Dispersion is
-a general term for different statistics that describe how values or
+a general term for different statistics that describe how values are
 distributed around the centre.
 
 \subsection{Range}
 \Definition{Range}{The range of a data set is the difference between
-  the lowest value and the highest value in the set.}
+  the maximum and minimum values in the set.}
 
-The most straightforward of the dispersion measures is the range. The
-range simply tells us how far apart the largest and smallest values in
-a data set are. The range is very sensitive to outliers.
+The most straightforward measure of dispersion is the range. The range
+simply tells us how far apart the largest and smallest values in a
+data set are. The range is very sensitive to outliers.
 
 \begin{wex}{Range}{
     Find the range of the following data set.
@@ -862,9 +864,10 @@ To understand percentiles properly, we need to distinguish between $3$
 different aspects of a datum: its value, its rank and its
 percentile. The value of a datum is what we measured and recorded
 during an experiment or survey. The rank of a datum is its position in
-the sorted data set. The percentile at which a particular datum is,
-tells us what percentage of the values in the full data set are less
-than this datum.
+the sorted data set (for example, first, second, third, and so
+on). The percentile at which a particular datum is, tells us what
+percentage of the values in the full data set are less than this
+datum.
 
 \begin{example}
   The table below summarises the value, rank and percentile of the
@@ -977,7 +980,7 @@ equivalent to the $100$th percentile.
     \westep{Find the maximum.}
 
     We already know that the maximum value is the last value in the
-    ordered data set. The maximum is also equivalent to the $100$
+    ordered data set. The maximum is also equivalent to the $100$th
     percentile. Using the percentile formula with $p=100$ and $n=9$,
     we find the rank of the maximum value as
     \begin{align}
@@ -1008,7 +1011,7 @@ equivalent to the $100$th percentile.
 \Definition{Quartiles}{The quartiles are the three data values that
   divide an ordered data set into four groups, where each group
   contains an equal number of data values. The median ($50$th
-  percentile) is the second quartile. The $25$th percentile can also
+  percentile) is the second quartile. The $25$th percentile is also
   be called the lower quartile, and the $75$th percentile the upper
   quartile.}
 
@@ -1049,12 +1052,11 @@ equivalent to the $100$th percentile.
     For the $50$th percentile (the median) the rank is $6,5$, meaning
     halfway between the $6$th and $7$th values. The $6$th value is
     $11$ and the $7$th value is $12$, which means that the median is
-    $\frac{11+12}{2} = 11,5$.
+    \(\frac{11+12}{2} = 11,5\).
 
-    For the $75$th percentile the rank is $9,25$, meaning a quarter of
-    the way from the $9$th value ($31$) to the $10$th value
-    ($35$). Since there is a distance of $4$ between $31$ and $35$,
-    the $75$th percentile is at $32$.
+    For the $75$th percentile the rank is $9,25$, meaning between the
+    $9$th and $10$th values. Therefore the $75$th percentile is
+    \(\frac{31+35}{2} = 33\).
 
   }
 \end{wex}
@@ -1090,7 +1092,7 @@ is.
 
     \begin{enumerate}
     \item Compute the mean of this grouped data set.
-    \item In which interval is each of the quartiles of the data set?
+    \item In which intervals are the quartiles of the data set?
     \item In which interval is the $30$th percentile of the data set?
     \end{enumerate}
 }{
@@ -1133,20 +1135,20 @@ is.
 
   Now we need to find in which ranges each of these ranks lie.
   \begin{itemize}
-  \item For the first quartile, we have that there are $2 + 5 = 7$
+  \item For the lower quartile, we have that there are $2 + 5 = 7$
     learners in the first two ranges combined and $2 + 5 + 18 = 25$
     learners in the first three ranges combined. This means that the
-    first quartile (which has rank $r_{25} = 24,75$) lies somewhere in
-    the range $30 \le x < 40$.
+    lower quartile (which has rank $r_{25} = 24,75$) lies somewhere in
+    the third range: $30 \le x < 40$.
   \item For the second quartile (the median), we have that there are
     $2 + 5 + 18 + 22 = 47$ learners in the first four ranges combined
-    and $47 + 18 = 65$ learners in the first five ranges
+    and $65$ learners in the first five ranges
     combined. This means that the median (which has rank $r_{50} =
-    50,5$) lies somewhere in the range $50 \le x < 60$.
-  \item For the third quartile, we have that there are $65$ learners
+    50,5$) lies somewhere in the fifth range: $50 \le x < 60$.
+  \item For the upper quartile, we have that there are $65$ learners
     in the first five ranges combined and $65 + 13 = 78$ learners in
-    the first six ranges combined. This means that the third quartile
-    (which has rank $r_{75} = 75,25$) lies somewhere in the range $60
+    the first six ranges combined. This means that the upper quartile
+    (which has rank $r_{75} = 75,25$) lies somewhere in the sixth range: $60
     \le x < 70$.
   \end{itemize}
 
@@ -1161,21 +1163,21 @@ is.
   Now we have to find the range in which this rank lies. Since there
   are $25$ learners in the first $3$ ranges combined and $47$ learners
   in the first $4$ ranges combined, the $30$th percentile lies in the
-  fourth range, namely $40 \le x < 50$.
+  fourth range: $40 \le x < 50$.
 
 }
 \end{wex}
 
 \subsection{Ranges}
-The common ranges used are defined in terms of percentiles. The
-overall range is simply the difference between the $100$th and the
-$0$th percentile, that is between the maximum and minimum values in
-the data set.
+We define data ranges in terms of percentiles. We have already
+encountered the data range, which is simply the difference between the
+$100$th and the $0$th percentile (that is, between the maximum and
+minimum values in the data set).
 
-\Definition{Interquartile range}{The interquartile range is a
-  measure of dispersion, which is calculated by subtracting the first
-  quartile from the third quartile. This gives the range of the middle
-  half of the data set.}
+\Definition{Interquartile range}{The interquartile range is a measure
+  of dispersion, which is calculated by subtracting the lower (first)
+  quartile from the upper (third) quartile. This gives the range of
+  the middle half of the data set.}
 
 \Definition{Semi interquartile range}{The semi interquartile range is
   half of the interquartile range.}
@@ -1237,28 +1239,35 @@ first and third quartiles). A line inside the box shows the
 median. The lines extending outside the box (the whiskers) show where
 the minimum and maximum values lie.
 
-\begin{center}
-  \begin{tikzpicture}
-    \draw[thick] (-0.5, 0) -- (0.5, 0);
-    \draw (-0.5, -1) rectangle (0.5, 1);
-    \draw (0, -1) -- (0, -2.5);
-    \draw (-0.1, -2.5) -- (0.1, -2.5);
-    \draw (0, 1) -- (0, 2.5);
-    \draw (-0.1, 2.5) -- (0.1, 2.5);
-    \draw (0.6, 2.5) node[anchor=west] {maximum};
-    \draw (0.6, 1) node[anchor=west] {$3$rd quartile};
-    \draw (0.6, 0) node[anchor=west] {median};
-    \draw (0.6, -1) node[anchor=west] {$1$st quartile};
-    \draw (0.6, -2.5) node[anchor=west] {minimum};
-    \draw (3, 2.5) node[anchor=west] {($100$th percentile)};
-    \draw (3, 1) node[anchor=west] {($75$th percentile)};
-    \draw (3, 0) node[anchor=west] {($50$th percentile)};
-    \draw (3, -1) node[anchor=west] {($25$th percentile)};
-    \draw (3, -2.5) node[anchor=west] {($0$th percentile)};
-    \draw[decoration={brace,amplitude=0.5em},decorate] (-0.7,-1) -- (-0.7,1);
-    \draw (-0.7,0) node[anchor=east,xshift=-0.2cm] {interquartile range};
-  \end{tikzpicture}
-\end{center}
+\begin{figure}[h]
+  \begin{center}
+    \begin{tikzpicture}
+      \draw[thick] (-0.5, 0) -- (0.5, 0);
+      \draw (-0.5, -1) rectangle (0.5, 1);
+      \draw (0, -1) -- (0, -2.5);
+      \draw (-0.1, -2.5) -- (0.1, -2.5);
+      \draw (0, 1) -- (0, 2.5);
+      \draw (-0.1, 2.5) -- (0.1, 2.5);
+      \draw (0.6, 2.5) node[anchor=west] {maximum};
+      \draw (0.6, 1) node[anchor=west] {upper quartile};
+      \draw (0.6, 0) node[anchor=west] {median};
+      \draw (0.6, -1) node[anchor=west] {lower quartile};
+      \draw (0.6, -2.5) node[anchor=west] {minimum};
+      \draw (3.5, 2.5) node[anchor=west] {($100$th percentile)};
+      \draw (3.5, 1) node[anchor=west] {($75$th percentile)};
+      \draw (3.5, 0) node[anchor=west] {($50$th percentile)};
+      \draw (3.5, -1) node[anchor=west] {($25$th percentile)};
+      \draw (3.5, -2.5) node[anchor=west] {($0$th percentile)};
+      \draw[decoration={brace,amplitude=0.5em},decorate] (-0.7,-1) -- (-0.7,1);
+      \draw (-0.7,0) node[anchor=east,xshift=-0.2cm] {interquartile range};
+      \draw[decoration={brace,amplitude=0.5em},decorate] (-4.5,-2.5) -- (-4.5,2.5);
+      \draw (-4.5,0) node[anchor=east,xshift=-0.2cm] {data range};
+    \end{tikzpicture}
+  \end{center}
+  \caption{The box-and-whisker plot along with labels showing how
+    the different percentiles and ranges are represented in the plot.}
+\end{figure}
+
 
 \begin{wex}{Five number summary}{
     Draw a box and whisker diagram for the data set:
@@ -1269,7 +1278,7 @@ the minimum and maximum values lie.
   \westep{Determine the minimum and maximum.}
 
   Since the data set is already sorted, we can read off the minimum as
-  the first value, $1,25$, and the maximum as the last value, $5,1$.
+  the first value ($1,25$) and the maximum as the last value ($5,1$).
 
   \westep{Determine the quartiles.}
 
@@ -1293,7 +1302,7 @@ the minimum and maximum values lie.
   \end{equation}
 
   This provides the five number summary of the data set and allows us
-  to draw the box-and-whisker plot.
+  to draw the following box-and-whisker plot.
 
   \begin{center}
     \begin{tikzpicture}[yscale=1.25]
@@ -1398,15 +1407,15 @@ the minimum and maximum values lie.
         \toprule
         Distance (km) & Count \\
         \midrule
-        1-5 & 4 \\
-        6-10 & 5 \\
-        11-15 & 9 \\
-        16-20 & 10 \\
-        21-25 & 7 \\
-        26-30 & 8 \\
-        31-35 & 3 \\
-        36-40 & 2 \\
-        41-45 &  2 \\
+        $0 < d \le 5$ & $4$ \\
+        $5 < d \le 10$ & $5$ \\
+        $10 < d \le 15$ & $9$ \\
+        $15 < d \le 20$ & $10$ \\
+        $20 < d \le 25$ & $7$ \\
+        $25 < d \le 30$ & $8$ \\
+        $30 < d \le 35$ & $3$ \\
+        $35 < d \le 40$ & $2$ \\
+        $40 < d \le 45$ & $2$ \\
         \bottomrule
       \end{tabular}
     \end{center}
@@ -1414,9 +1423,9 @@ the minimum and maximum values lie.
     \item Find the approximate mean of the data.
     \item What percentage of samples had a speed of
       \begin{enumerate}
-      \item less than 16 km?
-      \item more than 30 km?
-      \item between 16 km and 30 km daily?
+      \item less than $16$ km?
+      \item more than $30$ km?
+      \item between $16$ km and $30$ km daily?
       \end{enumerate}
     \end{enumerate}
 
