@@ -1,56 +1,3 @@
-\documentclass[a4paper,11pt]{report}
-
-\usepackage{amsmath,amsfonts,amssymb}
-\usepackage{graphics}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{icomma}
-\usepackage{tikz, ifthen}
-\usetikzlibrary{arrows,shapes,backgrounds,patterns,decorations.pathreplacing,decorations.pathmorphing}
-
-% <Temporary FHSST definitions>
-\def\Definition#1#2{\paragraph{Definition:} #1 --- #2}
-
-\def\Identity#1#2{\paragraph{Identity:} #1 --- #2}
-
-\newenvironment{wex}[3]%
-{\rule{\linewidth}{0.5mm}
-\textbf{Worked example:} #1
-
-\textbf{Question:} #2
-
-\textbf{Solution:} #3}%
-{\rule{\linewidth}{0.5mm}}
-
-\newcommand{\westep}[1]{\paragraph{Step:} #1}
-
-\newenvironment{example}%
-{\rule{\linewidth}{0.5mm}
-\textbf{Example:} \\}%
-{\rule{\linewidth}{0.5mm}}
-
-\newenvironment{exercises}[1]%
-{\rule{\linewidth}{0.5mm}
-\textbf{Exercises:} #1\\}%
-{\rule{\linewidth}{0.5mm}}
-
-\newenvironment{eocexercises}[1]%
-{\section{End of chapter exercises: #1}}%
-{}
-% </Temporary FHSST definitions>
-
-% <Temporary spacing changes>
-\setlength\parindent{0pt}
-\setlength\parskip{0.5\baselineskip}
-\setlength\textwidth{15cm}
-\setlength\textheight{23cm}
-\setlength\oddsidemargin{0.5cm}
-\setlength\topmargin{0cm}
-% </Temporary spacing changes>
-
-\begin{document}
 \chapter{Statistics}
 
 \section{Introduction}
@@ -1473,5 +1420,3 @@ the minimum and maximum values lie.
 
   \end{enumerate}
 \end{eocexercises}
-
-\end{document}
