@@ -664,7 +664,7 @@ Perpendicular lines have gradients that are the negative inverse of each other. 
 \end{center}
 
 
-\westep{Write the formulaa for the product of perpendicular gradients}
+\westep{Write the formula for the product of perpendicular gradients}
 \begin{equation*}
 m_{AB} \times m_{CD} = -1
 \end{equation*}
@@ -707,29 +707,91 @@ Therefore to prove collinearity, we must prove that two of the gradients between
 equal.
 
 \begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Find any two gradients:}
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
+\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.0245314,-0.81671876){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,1.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.8945312,0.94328123){$B(0;5)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.3167187){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.2845312,0.16328125){$A(-3;3)$}
+\psdots[dotsize=0.12](1.22,-0.16671875)
+\psdots[dotsize=0.12](3.0,0.6532813)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.684531,1.5432812){$C(3;7)$}
+\end{pspicture} 
+}
+
+\end{center}
+
+\westep{Calculate two gradients between any of the three points}
 \begin{equation*}
 m_{AB} = \frac{5-3}{0-(-3)} = \frac{2}{3}
 \end{equation*}
+and
 \begin{equation*}
 m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
 \end{equation*}
-\westep{Establish if the points are collinear and explain your answer:}
+\fbox{OR:}
 \begin{equation*}
-m_{AB} = m_{BC}
+m_{AC} = \frac{3-7}{3-3} = \frac{-4}{-6}=\frac{2}{3}
 \end{equation*}
-$\therefore$ Points $A$, $B$ and $C$ are collinear.
+and
+\begin{equation*}
+m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
+\end{equation*}
+\westep{Explain your answer}
+\begin{equation*}
+m_{AB} = m_{BC}(= m_{AC})
+\end{equation*}
+Therefore the points $A$, $B$ and $C$ are collinear.
 }
 \end{wex}
 
-To prove that three points are collinear using the distance formula requires finding the
-distances between each pair points and then proving that the sum of the two smaller distances
+To prove that three points are collinear using the distance formula, we must calculate the
+distances between each pair of points and then provethat the sum of the two smaller distances
 equals the longest distance.
 
-To show this, let's do the same worked example.
 
 \begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Find all three distances:}
+\westep{Draw a sketch}
+
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
+\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.32,-0.14671876)(2.98,0.63328123)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.0245314,-0.81671876){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,1.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.4,0.8){$B(0;5)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.3167187){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.0,0.16328125){$A(-3;3)$}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.28,-0.48671874)(4.58,1.0332812)
+\psdots[dotsize=0.12](1.22,-0.16671875)
+\psdots[dotsize=0.15](3.0,0.6532813)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.14,0.7132813)(4.44,1.3332813)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.684531,1.5432812){$C(3;7)$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Calculate the three distances $AB$, $BC$ and $AC$}
 \begin{equation*}
 d_{AB} = \sqrt{(-3 - 0)^2 + (3 - 5)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
 \end{equation*}
@@ -739,34 +801,37 @@ d_{BC} = \sqrt{(0 - 3)^2 + (5 - 7)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = 
 \begin{equation*}
 d_{AC} = \sqrt{((-3) - 3)^2 + (3 - 7)^2} = \sqrt{(-6)^2 + (-4)^2} = \sqrt{36 + 16} = \sqrt{52}
 \end{equation*}
-\westep{Find the sum of the two shorter distances:}
+\westep{Find the sum of the two shorter distances}
 \begin{equation*}
 d_{AB} + d_{BC} = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = \sqrt{4 \times 13} = \sqrt{52}
 \end{equation*}
-\westep{Prove that the points are collinear:}
+\westep{Explain your answer}
 \begin{equation*}
 d_{AB} + d_{BC} = d_{AC}
 \end{equation*}
-$\therefore$ Points $A$, $B$ and $C$ are collinear.
+therefore points $A$, $B$ and $C$ are collinear.
 }
 \end{wex}
 
 \begin{exercises}{}
-\begin{enumerate}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+
 \item Determine whether $AB$ is parallel, perpendicular or neither to $CD$ if:
-\begin{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(7;23)$.
 \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$.
 \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$.
 \end{enumerate}
 
 \item Determine whether the following points are collinear:
-\begin{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $E(0;3)$, $F(-2;5)$, $G(2;1)$.
 \item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$.
 \item $K(-6;2)$, $L(-3;1)$, $M(1;-1)$.
 \end{enumerate}
 \item Points $P(-6;2)$, $Q(2;-2)$ and $R(-3;r)$ lie on a straight line. Find the value of $r$.
+\item Line $PQ$ with $P(-1;-7)$ and $Q(q;0)$ has a gradient of $1$. Find $q$.
+\end{enumerate}
 \end{enumerate}
 \end{exercises}
 
@@ -785,10 +850,9 @@ The following video provides a summary of the gradient of a line.
 %     
 %     
 %     
-\section{Straight line}
 
 \section{Mid-point of a line}
-\nopagebreak
+
 Sometimes, knowing the coordinates of the middle point or \textsl{mid-point} of a line is useful. For example, what is the mid-point of the line between point $P$ with coordinates $(2;1)$ and point $Q$ with coordinates $(-2;-2)$.\par 
 The coordinates of the mid-point of any line between any two points $A$ and $B$ with coordinates $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$, is generally calculated as follows. Let the mid-point of $AB$ be at point $S$ with coordinates $(X;Y)$. The aim is to calculate $X$ and $Y$ in terms of $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$.\par 
 \setcounter{subfigure}{0}
@@ -818,7 +882,7 @@ Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\
 \end{eqnarray*}
 From this we obtain the mid-point of a line:
 \Identity{Midpoint}{$S(\frac{{x}_{1} + {x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}) $}
-\label{m39119*id68788}Then the coordinates of the mid-point ($S$) of the line between point $P$ with coordinates $(2;1)$ and point $Q$ with coordinates $(-2;-2)$ is:
+Then the coordinates of the mid-point ($S$) of the line between point $P$ with coordinates $(2;1)$ and point $Q$ with coordinates $(-2;-2)$ is:
 
 
 \begin{eqnarray*}
@@ -848,7 +912,7 @@ QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\
 & = & \sqrt{4 + 2,25} \\ 
 & = & \sqrt{6,25}
 \end{eqnarray*}
-\label{m39119*id69633}It can be seen that $PS=QS$ as expected.\par 
+It can be seen that $PS=QS$ as expected.\par 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
 \begin{center}
@@ -895,30 +959,30 @@ The following video provides a summary of the mid-point of a line.
 \begin{equation*}
 x_1= 6 \hskip2em y_1=2 \hskip2em x_2=-5 \hskip y_2=-1
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the formula you are using}
 \begin{equation*}
 (\frac{x_1+x_2}{2};\frac{y_1+y_2}{2})
 \end{equation*}
-\westep{Substitute known variables and solve:}
+\westep{Substitute known variables and solve}
 \begin{equation*}
 (\frac{6-5}{2};\frac{2-1}{2}) = (\frac{1}{2};\frac{1}{2})
 \end{equation*}
-\westep{Explain your answer:}
+\westep{Explain your answer}
 $(\frac{1}{2};\frac{1}{2})$ is the mid-point of $AB$.
 }
 \end{wex}
 
 \begin{wex}{Midpoint formula II}{The line joining $C(-2;4)$ and $D(x;y)$ has the mid-point $M(1;-3)$. Find point $D$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the coordinates of $C$ be $(x_1;y_1)$ and the co-orindates of $D$ be $(x_2;y_2)$.
 \begin{equation*}
 x_1=-2 \hskip2em y_1=4 \hskip2em x_2=x \hskip2em y_2=y
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the formula you are using}
 \begin{equation*}
 (\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2})
 \end{equation*}
-\westep{Substitue known variables and solve:}
+\westep{Substitue known variables and solve}
 \begin{equation*}
 \begin{array}{rllrl}
 1&=\frac{-2+x}{2}&\hskip10em&-3&=\frac{4+y}{2}\\
@@ -928,7 +992,7 @@ x&=2+2&&y&=-6-4\\
 x&=4&&y&=-10\\
 \end{array}
 \end{equation*}
-\westep{Explain your answer:}
+\westep{Explain your answer}
 Point $D$ is at $(4;-10)$.
 }
 \end{wex}
@@ -941,20 +1005,20 @@ Let the coordinates of $E$ be $(x_1;y_1)$ and the co-orindates of $G$ be $(x_2;y
 \begin{equation*}
 x_1=-1 \hskip2em y_1=0 \hskip2em x_2=8 \hskip2em y_2=11
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the formula you are using}
 \begin{equation*}
 (\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2})
 \end{equation*}
-\westep{Substitue known variables and solve:}
+\westep{Substitue known variables and solve}
 \begin{equation*}
 (\frac{-1+8}{2}; \frac{0+11}{2}) = (\frac{7}{2};\frac{11}{2})
 \end{equation*}
-\westep{For line $FH$, assign new values to $(x_1;y_1)$ and $(x_2;y_2)$:}
+\westep{For line $FH$, assign new values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the coordinates of $F$ be $(x_1;y_1)$ and the co-orindates of $H$ be $(x_2;y_2)$.
 \begin{equation*}
 x_1=0 \hskip2em y_1=3 \hskip2em x_2=x \hskip2em y_2=y
 \end{equation*}
-\westep{Use the mid-point to find H:}
+\westep{Use the mid-point to find H}
 \begin{equation*}
 \begin{array}{rllrl}
 \frac{7}{2}&=\frac{0+x}{2}&\hskip10em&\frac{11}{2}&=\frac{3+y}{2}\\
@@ -962,7 +1026,7 @@ x_1=0 \hskip2em y_1=3 \hskip2em x_2=x \hskip2em y_2=y
 x&=7&&y&=8\\
 \end{array}
 \end{equation*}
-\westep{Explain your answer:}
+\westep{Explain your answer}
 Point $H$ is at $(7;8)$.
 }
 \end{wex}
