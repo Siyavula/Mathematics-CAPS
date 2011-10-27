@@ -1,12 +1,12 @@
 \chapter{Statistics}
 
-\section{Introduction}
+% \section{Introduction}
 
 When running an experiment or conducting a survey we can potentially
 end up with many hundreds, thousands or even millions of values in the
 resulting data set. Too many data can be overwhelming and we need to
 reduce them or represent them in a way that is easier to understand
-and communicate.
+and communicate.\par
 
 Statistics is about summarising data. The methods of statistics allow
 us to represent the essential information in a data set while
@@ -17,7 +17,7 @@ aspects of a data set.
 %The figure below shows one example of how we can reduce the complexity
 %of a data set while still retaining the important information.
 
-%FIGURE: Side-by-side images of two datasets drawn from the same $2$-d
+%FIGURE: Side-by-side images of two data sets drawn from the same $2$-d
 %normal distribution. $N = 50$. Even though the individual data are
 %different, the statistics (central tendency and dispersion) are very
 %similar. The statistics capture the interesting aspects of the data.
@@ -25,19 +25,19 @@ aspects of a data set.
 %  \begin{tikzpicture}
 %  \end{tikzpicture}
 %\end{center}
-
+\par
 By applying statistics properly we can highlight the important aspects
 of data and make the data easier to interpret. By applying statistics
 poorly or dishonestly we can also hide important information and let
-people draw the wrong conclusions.
+people draw the wrong conclusions.\par
 
 In this chapter we will look at a few numerical and graphical ways in
 which data sets can be represented, to make them easier to interpret.
 
 \section{Collecting data}
 \Definition{Data}{Data refer to the pieces of information that have
-  been observed and recorded, from an experiment or a survey. Note
-  that the word {\em data} is the plural of the word {\em datum}, and
+  been observed and recorded, from an experiment or a survey.}
+\Note{The word {\em data} is the plural of the word {\em datum}, and
   therefore one should say, ``the data are'' and not ``the data is''.}
 
 We distinguish between two main types of data: quantitative and
@@ -50,31 +50,29 @@ Quantitative data can be discrete or continuous. Discrete quantitative
 data can be represented by integers and usually occur when we count
 things, for example, the number of learners in a class, the number of
 molecules in a chemical solution, or the number of SMS messages sent
-in one day.
+in one day.\par
 
 Continuous quantitative data can be represented by real numbers, for
 example, the height or mass of a person, the distance travelled by a
 car, or the duration of a phone call.
 
 \Definition{Qualitative data}{Qualitative data are data that cannot be
-  written as numbers, for example, when you collect responses from
-  people about how they feel or what their favourite colour is.}
+  written as numbers.}
 
 Two common types of qualitative data are categorical and anecdotal
 data. Categorical data can come from one of a limited number of
 possibilities, for example, your favourite cool drink, the colour of
-your cell phone, or the language that you learned to speak at home.
+your cell phone, or the language that you learned to speak at home.\par
 
 Anecdotal data take the form of an interview or a story, for example,
 when you ask someone what their personal experience was when using a
-product, or what they think of someone else's behaviour.
+product, or what they think of someone else's behaviour.\par
 
 Categorical qualitative data are sometimes turned into quantitative
-data by counting the number of times that each category appears.
+data by counting the number of times that each category appears.\par
 
-\begin{example}
-  In a class with $30$ learners, we ask everyone what the colours of
-  their cell phones are and get the following responses.
+For example, in a class with $30$ learners, we ask everyone what the colours of
+  their cell phones are and get the following responses:
 
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
@@ -95,7 +93,7 @@ data by counting the number of times that each category appears.
   \begin{center}
     \begin{tabular}{|c|c|}\hline
       
-      \textbf{colour} & \textbf{count} \\ \hline
+      \textbf{Colour} & \textbf{Count} \\ \hline
 
       black & 15 \\
       white & 6 \\
@@ -112,10 +110,11 @@ data by counting the number of times that each category appears.
 \end{example}
 
 \begin{wex}{Qualitative and quantitative data}{
-    Andrew is interested in becoming an air time reseller to his
+    Thembisile is interested in becoming an airtime reseller to his
     classmates. He would like to know how much business he can expect
     from them. He asked each of his $20$ classmates how many SMS
     messages they sent during the previous day. The results were:
+\\
 
     \begin{center}
       \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
@@ -124,11 +123,12 @@ data by counting the number of times that each category appears.
         
       \end{tabular}
     \end{center}
+\vspace{8pt}\\
 
     Is this data set qualitative or quantitative? Explain your answer.
 }{
 \westep{Examine the data and answer the question}
-  The number of SMS messages is a count, which means that it is
+  The number of SMS messages is a count represented by an integer, which means that it is
   quantitative and discrete.
 
 }
@@ -138,7 +138,7 @@ data by counting the number of times that each category appears.
     Thembisile would like to know who the most popular cellular
     provider is among learners in his school. This time Thembisile
     randomly selects $20$ learners from the entire school and asks them
-    which cellular provider they currently use. The $20$ results were:
+    which cellular provider they currently use. The results were:
 
     \begin{center}
       \begin{tabular}{|p{0.17\textwidth}|p{0.17\textwidth}|p{0.17\textwidth}|p{0.17\textwidth}|p{0.17\textwidth}|}\hline
@@ -149,7 +149,7 @@ data by counting the number of times that each category appears.
         Vodacom & Vodacom & Vodacom & Virgin Mobile & MTN \\\hline
       \end{tabular}
     \end{center}
-
+\vspace{8pt}\\
     Is this data set qualitative or quantitative? Explain your answer.
 }{
 \westep{Examine the data and answer the question}
@@ -162,8 +162,8 @@ data by counting the number of times that each category appears.
 \section{Measures of central tendency}
 
 \subsection{Mean}
-\Definition{Mean}{The mean is defined as the sum of a set of values,
-  divided by the number of values in the sum.  The notation for the
+\Definition{Mean}{The mean is the sum of a set of values,
+  divided by the number of values in the set.  The notation for the
   mean of a set of values is a horizontal bar over the variable used
   to represent the set. The formula for the mean of a data set $\{x_1,
   x_2, \ldots, x_n\}$ is
@@ -186,9 +186,10 @@ The mean is sometimes also called the average or the arithmetic mean.
   \westep{Divide by the number of values in the data set to get the mean}
 
   Since there are $5$ values in the data set, the mean is
-  \begin{equation*}
-    \frac{150}{5} = 30
-  \end{equation*}
+  \begin{align*}
+    \mbox{Mean }&=\frac{150}{5} \\
+&= 30
+  \end{align*}
 }
 \end{wex}
 
@@ -196,8 +197,10 @@ The mean is sometimes also called the average or the arithmetic mean.
 \Definition{Median}{
   The median of a data set is the value in the central position,
   when the data set has been arranged from the lowest to the highest
-  value. Exactly half of the values from the data set are less than
-  the median and the other half are greater than the median.}
+  value. }
+
+Note that exactly half of the values from the data set are less than
+  the median and the other half are greater than the median.\par
 
 To calculate the median of a quantitative data set, first sort the
 data from the smallest to the largest value and then find the value in
@@ -211,7 +214,7 @@ the data set.
 }{
   \westep{Sort the values}
 
-  The values in the data set, from the smallest to the largest, are
+  The values in the data set, arranged from the smallest to the largest, are
   \begin{equation*}
     1;\ 2;\ 10;\ 14;\ 68;\ 86;\ 99
   \end{equation*}
@@ -220,7 +223,7 @@ the data set.
 
   There are $7$ values in the data set. Since there are an odd number
   of values, the median will be equal to the value in the middle,
-  namely, at the $4$th position. The value in the $4$th position is
+  namely, in the $4^th$ position. The value in the $4^th$ position is
   $14$ and therefore the median of the data set is $14$.
 
 }
@@ -231,7 +234,7 @@ the data set.
 }{
   \westep{Sort the values}
 
-  The values in the data set, from the smallest to the largest, are
+  The values in the data set, arranged from the smallest to the largest, are
   \begin{equation*}
     1;\ 2;\ 10;\ 11;\ 14;\ 68;\ 86;\ 99
   \end{equation*}
@@ -240,13 +243,14 @@ the data set.
 
   There are $8$ values in the data set. Since there are an even number
   of values, the median will be halfway between the two values in the
-  middle, namely, at the $4$th and $5$th positions. The value in the
-  $4$th position is $11$ and the value in the $5$th position is
+  middle, namely, between the $4^{th}$ and $5^{th}$ positions. The value in the
+  $4^{th}$ position is $11$ and the value in the $5^{th}$ position is
   $14$. The median lies halfway between these two values and is
   therefore
-  \begin{equation*}
-    \frac{11+14}{2} = 12,5
-  \end{equation*}
+  \begin{align*}
+    \mbox{Median } &=\frac{11+14}{2} 
+&= 12,5
+  \end{align*}
 }
 \end{wex}
 
@@ -266,7 +270,7 @@ data set $\{1;\ 2;\ 2;\ 3;\ 3\}$. If all points in a data set occur
 with equal frequency, it is equally accurate to describe the data set
 as having many modes or no mode.
 
-\begin{wex}{Find the mode}{
+\begin{wex}{Finding the mode}{
     Find the mode of the data set
     \begin{equation*}
       \{2;\ 2;\ 3;\ 4;\ 4;\ 4;\ 6;\ 6;\ 7;\ 8;\ 8;\ 10;\ 10\}
@@ -274,7 +278,7 @@ as having many modes or no mode.
 }{
   \westep{Count the number of times that each value appears in the data
     set}
-
+\\
   \begin{center}
     \begin{tabular}{|c|c|} \hline
       \textbf{Value} & \textbf{Count} \\ \hline
@@ -305,7 +309,9 @@ set. Since continuous values can lie anywhere on the real line, any
 particular value will almost never repeat. This means that the
 frequency of each value in the data set will be $1$ and that there will
 be no mode. We will look at one way of addressing this problem in
-Section \ref{sec:statistics_grouping_data} on grouping data.
+the section
+% \ref{sec:statistics_grouping_data} 
+on grouping data.
 
 \begin{wex}{Comparison of measures of central tendency}{
     There are regulations in South Africa related to bread production
@@ -314,7 +320,7 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
     percent over.  Vishnu is interested in how a well-known, national
     retailer measures up to this standard. He visited his local branch
     of the supplier and recorded the masses of $10$ different loaves
-    of bread for one week. Here are the results:
+    of bread for one week. The results, in grams, are given below:\\
 
     \begin{center}
       \begin{tabular}{|c|c|c|c|c|c|c|} \hline
@@ -334,14 +340,14 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
        
       \end{tabular}
     \end{center}
-
+\vspace{8pt}\\
     \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
     \item Is this data set qualitative or quantitative? Explain your
       answer.
     \item Determine the mean, median and mode of the mass of a loaf of bread
-      for each day of the week. Give your answer to one decimal place.
+      for each day of the week. Give your answer correct to $1$ decimal place.
     \item Based on the data, do you think that this supplier is
-      providing bread within the South African guidelines?
+      providing bread within the South African regulations?
     \end{enumerate}
 }{
 
@@ -359,11 +365,11 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   For Monday, the sum of the measured values is $8007,9$ and so the
   mean for Monday is
   \begin{equation*}
-    \frac{8007,9}{10} = 800,8\textrm{ g}
+    \frac{8007,9}{10} = 800,8\mbox{ g}
   \end{equation*}
 
   In the same way, we can compute the mean for each day of the
-  week. See the table below the next step for the results.
+  week. See the table below for the results.
 
   \westep{Calculate the median}
 
@@ -379,24 +385,24 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   The two numbers in the middle are $801,2$ and $802,3$ and so the
   median is
   \begin{equation*}
-    \frac{801,2 + 802,3}{2} = 801,8
+    \frac{801,2 + 802,3}{2} = 801,8\mbox{ g}
   \end{equation*}
 
   In the same way, we can compute the median for each day of the
-  week. Here is a table with all the means and medians.
+  week:
 
   \begin{center}
     \begin{tabular}{|c|c|c|} \hline
 
       \textbf{Day} & \textbf{Mean} &\textbf{Median} \\  \hline
   
-      \textbf{Monday} & $800,8$ g & $801,8$ g \\ \hline
-     \textbf{ Tuesday} & $797,2$ g & $796.1$ g \\ \hline
-     \textbf{ Wednesday} & $798,4$ g & $797,2$ g \\ \hline
-     \textbf{ Thursday} & $803,4$ g & $800,8$ g \\ \hline
-     \textbf{ Friday} & $802,0$ g & $804,3$ g \\ \hline
-     \textbf{ Saturday} & $801,6$ g & $801,4$ g \\ \hline
-     \textbf{ Sunday} & $799,3$ g & $800,2$ g \\ \hline
+      Monday & $800,8$ g & $801,8$ g \\ \hline
+     Tuesday & $797,2$ g & $796.1$ g \\ \hline
+      Wednesday & $798,4$ g & $797,2$ g \\ \hline
+    Thursday & $803,4$ g & $800,8$ g \\ \hline
+     Friday & $802,0$ g & $804,3$ g \\ \hline
+      Saturday & $801,6$ g & $801,4$ g \\ \hline
+     Sunday & $799,3$ g & $800,2$ g \\ \hline
 
     \end{tabular}
   \end{center}
@@ -429,32 +435,32 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
 
 \begin{wex}{Effect of outliers on mean and median}{
     The heights of $10$ learners are measured in centimetres to obtain
-    the following dataset:
+    the following data set:
     \begin{equation*}
       \{150;\ 172;\ 153;\ 156;\ 146;\ 157;\ 157;\ 143;\ 168;\ 157\}
     \end{equation*}
-    Afterwards, we add one more learner to the group, who is
+    Afterwards, we include one more learner in the group, who is
     exceptionally tall at $181$ cm.
 
     Compare the mean and median of the heights of the learners before
-    and after the $11$th learner was added.
+    and after the $11^{th}$ learner was included.
 }{
   \westep{Calculate the mean of the first $10$ learners}
 
-  \begin{equation*}
-    \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}
-    = 155,9\textrm{ cm}
-  \end{equation*}
+  \begin{align*}
+    \mbox{Mean } &=\frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}\\
+    &= 155,9\mbox{ cm}
+  \end{align*}
 
   \westep{Calculate the mean of all $11$ learners}
 
   \begin{equation*}
-    \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157 + 181}{11}
-    = 158,2\textrm{ cm}
+    \mbox{Mean } &= \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157 + 181}{11}\\
+    &= 158,2\mbox{ cm}
   \end{equation*}
 
   From this we see that the average height changes by
-  $158,2 - 155,9 = 2,3\textrm{ cm}$ when we introduce
+  $158,2 - 155,9 = 2,3\mbox{ cm}$ when we introduce
   the outlier value (the tall person) to the data set.
 
   \westep{Calculate the median of the first $10$ learners}
@@ -463,11 +469,13 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   \begin{equation*}
     \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172\}
   \end{equation*}
-  Since there are an even number of values, namely $10$, the median
-  lies halfway between the $5$th and $6$th values:
-  \begin{equation*}
-    \frac{156+157}{2} = 156,5\textrm{ cm}
-  \end{equation*}
+  Since there are an even number of values,$10$, the median
+  lies halfway between the $5^{th}$ and $6^{th}$ values:
+  \begin{align*}
+   \mbox{Median } &=\frac{156+157}{2}\\
+&= = 156,5\mbox{ cm}
+  \end{align*}
+
 
   \westep{Calculate the median of all $11$ learners}
 
@@ -475,9 +483,9 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   \begin{equation*}
     \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172;\ 181\}
   \end{equation*}
-  Now, with $11$ values, the median is the $6$th value: $157$ cm.
+  Now, with $11$ values, the median is the $6^{th}$ value: $157$ cm.\par
   So, the median changes by only $0,5$ cm when we add the outlier
-  value to the data set.
+  value to the data set.\par
 
   In general, the median is less affected by the addition of outliers
   to a data set than the mean is. This is important because it is
@@ -487,9 +495,20 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
 }
 \end{wex}
 
-\begin{exercises}{Measures of central tendency}
+\begin{exercises}{}{
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
-
+\item Calculate the mean, median and mode of the following data sets:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item $2;~5;~8;~8;~11;~13;~22;~23;~27$
+\item $15;~17;~24;~24;~26;~28;~31;~43$
+\item $4;~11;~3;~15;~11;~13;~25;~17;~2;~11$
+\item $24;~35;~28;~41;~32;~49;~31$
+\end{enumerate}
+\item The ages of $15$ runners of the Comrades Marathon were recorded:
+\begin{equation*}
+31;~42;~28;~38;~45;~51;~33;~29;~42;~26;~34;~56;~33;~46;~41
+\end{equation*}
+Calculate the mean, median and modal age.
 \item In the first of a series of jars, there is $1$ sweet. In the
   second jar, there are $3$ sweets. The mean number of sweets in the
   first two jars is $2$.
@@ -504,10 +523,11 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
   age is $2$ and the median age is $3$ years.
 
 \item Four friends each have some marbles. They work out that the mean
-  number of marbles they have is $10$. One of them leaves. She has $4$
+  number of marbles they have is $10$. One friend leaves with $4$
   marbles. How many marbles do the remaining friends have together?
 
 \end{enumerate}
+}
 \end{exercises}
 
 \section{Grouping data}
@@ -515,23 +535,24 @@ Section \ref{sec:statistics_grouping_data} on grouping data.
 A common way of handling continuous quantitative data is to subdivide
 the full range of values into a few sub-ranges.
 By assigning each continuous value to the sub-range within which it
-falls, the dataset changes from continuous to discrete.
+falls, the data set changes from continuous to discrete.\par
 %We will see below that this has some benefits, but we gain the
 %benefits at the cost of losing some information.
 
 Grouping is done by defining a set of ranges and then counting how
-many of the data fall inside each range. The sub-ranges have to be chosen
-such that they do not overlap and such that they cover the entire
-range of the dataset.
+many of the data fall inside each range. The sub-ranges must
+ not overlap and must cover the entire
+range of the data set.\par
 
 One way of visualising grouped data is as a histogram. A histogram is
 a collection of rectangles, where the base of a rectangle (on the
-x-axis) covers the values in the range associated with it, and the
+$x$-axis) covers the values in the range associated with it, and the
 height of a rectangle corresponds to the number of values in its
 range.
 
 \begin{wex}{Groups and histograms}{
     The heights in centimetres of $30$ learners are given below.
+\\
     \begin{center}
       \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
    
@@ -541,7 +562,7 @@ range.
  
       \end{tabular}
     \end{center}
-
+\vspace {8pt}\\
     Group the data into the following ranges and draw a histogram of the
     grouped data:
     \begin{align*}
@@ -551,7 +572,7 @@ range.
       160 &\le h < 170 \\
       170 &\le h < 180
     \end{align*}
-    (Note that the ranges do not overlap since each of starts where
+    (Note that the ranges do not overlap since each one starts where
     the previous one ended.)
 }{
   \westep{Count the number of values in each range}
@@ -571,9 +592,9 @@ range.
   
   \westep{Draw the histogram}
 
-  Since there are $5$ ranges, our histogram will have $5$
+  Since there are $5$ ranges, the histogram will have $5$
   rectangles. The base of each rectangle is defined by its range. The
-  height of each rectangle is defined by the count in its range.
+  height of each rectangle is determined by the count in its range.
   
   \begin{center}
     \begin{tikzpicture}[xscale=0.15,yscale=0.5]
@@ -582,10 +603,13 @@ range.
       \draw[fill=lightgray] (150,0) rectangle (160,7);
       \draw[fill=lightgray] (160,0) rectangle (170,9);
       \draw[fill=lightgray] (170,0) rectangle (180,2);
+
+\draw[thick,->] (125,0) -- (185,0) node[anchor=north] {};
       % x labels
       \foreach \x in {130, 140, ..., 180} {
         \draw (\x,0) node[anchor=north] {$\x$};
       }
+
       % y axis
       \draw[thick,->] (125,0) -- (125,10) node[midway,sloped,anchor=south,yshift=0.5cm] {count};
       % y labels
@@ -606,27 +630,27 @@ range.
 
 \begin{exercises}{}{
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
- \item  An experiment was conducted in class and $50$ learners were asked to
+ \item  A class experiment was conducted and $50$ learners were asked to
   guess the number of sweets in a jar. The following guesses were
   recorded:
-
+\\
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
    
       56 & 49 & 40 & 11 & 33 & 33 & 37 & 29 & 30 & 59 \\ \hline
       21 & 16 & 38 & 44 & 38 & 52 & 22 & 24 & 30 & 34 \\\hline
       42 & 15 & 48 & 33 & 51 & 44 & 33 & 17 & 19 & 44 \\\hline
-      47 & 23 & 27 & 47 & 13 & 25 & 53 & 57 & 28 & 23 \\\hline
+      47 & 23 & 27 & 47 & 13 & 25 & 53 & 57 & 28 & 23 \\\4hline
       36 & 35 & 40 & 23 & 45 & 39 & 32 & 58 & 22 & 40 \\\hline
 
     \end{tabular}
   \end{center}
-
+\vspace {8pt}\\
    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item
  Draw up a grouped frequency table using the intervals
   $10 < x \le 20$;\ $20 < x \le 30$;\ $30 < x \le 40$;\ 
-  $40 < x \le 50$;\ $50 < x \le 60$.
+  $40 < x \le 50$;and \ $50 < x \le 60$.
 
   \item Draw the histogram corresponding to the frequency table of the
   grouped data.
@@ -634,26 +658,26 @@ range.
 \end{enumerate}
 }
 \end{exercises}
-\clearpage
+% \clearpage
  %Put this in other text flows straight out of previous exercises?!?!
+\subsection*{Measures of central tendency}
 With grouped data our estimates of central tendency will change
 because we lose some information when we place each value in a range.
 If all we have to work with is the grouped data, we do not know the
 measured values to the same accuracy as before. The best we can do is
-to assume that values are grouped at the centre of each range.
+to assume that values are grouped at the centre of each range.\par
 
-\begin{example}
 Looking back to the previous worked example, we started with this data
 set of learners' heights.
 \begin{align*}
   \{&132;\ 132;\ 132;\ 133;\ 138;\ 139;\ 139;\ 140;\ 141;\ 142;\ 142;\ 146;\ 150;\ 150;\ 152;\\
     &152;\ 155;\ 156;\ 157;\ 160;\ 161;\ 162;\ 163;\ 164;\ 168;\ 168;\ 169;\ 169;\ 170;\ 172\}
 \end{align*}
-Note that the data are sorted here.
+Note that the data are sorted .
 
 The mean of these data is $151,8$ and the median is $152$. The mode is
 $132$, but remember that there are problems with computing the mode of
-continuous quantitative data.
+continuous quantitative data.\par
 
 After grouping the data, we now have the data set shown below. Note
 that each value is placed at the centre of its range and that the
@@ -665,19 +689,18 @@ counts in each range.
 \end{align*}
 The grouping changes the measures of central tendency since each datum
 is treated as if it occurred at the centre of the range in which it was
-placed.
+placed.\par
 
 The mean is now $153$, the median $155$ and the mode is $165$. This is
 actually a better estimate of the mode, since the grouping showed in
 which range the learners' heights were clustered.
 
-\end{example}
 
-\begin{exercises}{Grouping data}
+\begin{exercises}{}{
   \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
 
   \item Consider the following grouped data and calculate the mean,
-    the modal group and the median group.
+    the modal group and the median group:
 
     \begin{center}
       \begin{tabular}{|c|c|}\hline
@@ -710,14 +733,45 @@ which range the learners' heights were clustered.
 
       \end{tabular}
     \end{center}
-
+\item The histogram below shows the number of passangers that travel in Alfred's minibus taxi per week.\\
+Calculate: 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item the modal interval
+\item the total number of passengers to travel in Alfred's taxi
+\item an estimate of the mean
+\item an estimate of the median
+\item if it is estimated that every passenger travelled an average distance of $5$ km, how much money would Alfred have made if he charged R~$3,50$ per km?
+\end{enumerate}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-5.1475)(9.378126,5.1075)
+\definecolor{color5165b}{rgb}{0.7725490196078432,0.7725490196078432,0.7725490196078432}
+\rput(1.3781264,-3.8925){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,tickstyle=bottom,ticksize=0.10583333cm,dx=1.0cm,dy=1.0cm,Dx=100,Dy=2,Ox=300]{<->}(0,0)(-1,-1)(8,9)}
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](3.392293,-1.8890625)(2.372293,-3.8890624)
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](4.412293,-0.8890625)(3.372293,-3.8890624)
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](5.412293,2.1309376)(4.372293,-3.8890624)
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](6.392293,4.1309376)(5.372293,-3.8890624)
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](7.392293,0.1309375)(6.372293,-3.8890624)
+\psframe[linewidth=0.02,dimen=outer,fillstyle=solid,fillcolor=color5165b](8.392293,-2.8690624)(7.372293,-3.8890624)
+% \usefont{T1}{ptm}{m}{n}
+\rput(5.369637,-4.9225){No. of passengers}
+% \usefont{T1}{ptm}{m}{n}
+\rput{89.854546}(0.73185694,0.38878262){\rput(0.13573053,0.5775){Frequency}}
+\end{pspicture} 
+}
+\end{center}
   \end{enumerate}
+
+
+
+}
 \end{exercises}
 
 \section{Dispersion}
 The central tendency is not the only interesting or useful information
-about a data set. The two data sets illustrated below have the same mean,
-but are clearly quite different. They have the same mean (0), but different spreads
+about a data set. The two data sets illustrated below have the same mean ($0$),
+but have different spreads
     around the mean. Each circle represents one datum.
 
 \begin{figure}[H]
@@ -755,9 +809,9 @@ but are clearly quite different. They have the same mean (0), but different spre
 %   \begin{caption*}\end{caption*}
 \end{figure}
 
-In this section we will look at measures of dispersion. Dispersion is
+ Dispersion is
 a general term for different statistics that describe how values are
-distributed around the centre.
+distributed around the centre. In this section we will look at measures of dispersion.
 
 \subsection{Range}
 \Definition{Range}{The range of a data set is the difference between
@@ -768,9 +822,9 @@ simply tells us how far apart the largest and smallest values in a
 data set are. The range is very sensitive to outliers.
 
 \begin{wex}{Range}{
-    Find the range of the following data set.
+    Find the range of the following data set:
     \begin{equation*}
-      \{1;\ 4;\ 5;\ 8;\ 6\; 7;\ 5;\ 6;\ 7;\ 4;\ 10;\ 9;\ 10\}
+      \{1;\ 4;\ 5;\ 8;\ 6;\ 7;\ 5;\ 6;\ 7;\ 4;\ 10;\ 9;\ 10\}
     \end{equation*}
     What would happen if we removed the first datum from the set?
 }{
@@ -788,25 +842,23 @@ data set are. The range is very sensitive to outliers.
 
   \westep{Remove the first datum}
 
-  We don't usually do this, but if the first datum, $1$, were to be
-  removed from the set, the minimum value would change from $1$ to
+ If the first datum, $1$, were to be
+  removed from the set, the minimum value would be
   $4$. This means that the range would change to $10-4=6$. This is
-  very different from the previous value of the range.
+  very different from the previous value.\par
 
-  This is what we mean when we say that the range is sensitive to
-  outliers. In the data set above, the value $1$ was not typical of
-  the other values. It was an outlier and had a big influence on the
+  This shows that the range is sensitive to
+  outliers. In the data set above, the value $1$ is not typical of
+  the other values. It is an outlier and has a big influence on the
   range.
 
 }
 \end{wex}
 
-We will look at a more general way of defining ranges later in this
-section, but first we need to discuss the concept of percentiles.
 
 \subsection{Percentiles}
 
-\Definition{Percentile}{The $p$th percentile is the value, $v$, that
+\Definition{Percentile}{The $p^{th}$ percentile is the value, $v$, that
   divides a data set into two parts, such that $p$ per cent of the
   values in the data set are less than $v$ and $100-p$ per cent of the
   values are greater than $v$. Percentiles can lie in the range $0 \le
@@ -814,14 +866,18 @@ section, but first we need to discuss the concept of percentiles.
 
 To understand percentiles properly, we need to distinguish between $3$
 different aspects of a datum: its value, its rank and its
-percentile. The value of a datum is what we measured and recorded
-during an experiment or survey. The rank of a datum is its position in
+percentile:
+\begin{itemize}
+ \item The value of a datum is what we measured and recorded
+during an experiment or survey. 
+\item The rank of a datum is its position in
 the sorted data set (for example, first, second, third, and so
-on). The percentile at which a particular datum is, tells us what
+on). 
+\item The percentile at which a particular datum is, tells us what
 percentage of the values in the full data set are less than this
 datum.
-
-% \begin{example}
+\end{itemize}
+\par
   The table below summarises the value, rank and percentile of the
   data set
   \begin{equation*}
@@ -833,34 +889,31 @@ datum.
 
       \textbf{Value} & \textbf{Rank} & \textbf{Percentile} \\\hline
 
-      $10,3$  & $1$    & 0 \\\hline
-      $11,1$  & $2$    & 20 \\\hline
-      $13,0$  & $3$    & 40 \\\hline
-      $13,9$  & $4$    & 60 \\\hline
-      $14,2$  & $5$    & 80 \\\hline
-      $19,8$  & $6$    & 100 \\\hline
+      $10,3$  & $1$    & $0$ \\\hline
+      $11,1$  & $2$    & $20$ \\\hline
+      $13,0$  & $3$    & $40$ \\\hline
+      $13,9$  & $4$    & $60$ \\\hline
+      $14,2$  & $5$    & $80$ \\\hline
+      $19,8$  & $6$    & $100$ \\\hline
 
     \end{tabular}
   \end{center}
 
-  Note that the rank describes the order of the data, from the
-  smallest to the largest.
-
-  As an example, $13,0$ is at the $40$th percentile since there are
+ As an example, $13,0$ is at the $40^{th}$ percentile since there are
   $2$ values less than $13,0$ and $3$ values greater than $13,0$.
   \begin{equation*}
     \frac{2}{2+3} = 0,4 = 40\%
   \end{equation*}
 % \end{example}
 
-In general, the formula for finding the $p$th percentile in an ordered
+In general, the formula for finding the $p^{th}$ percentile in an ordered
 data set with $n$ values is
 \begin{equation*}
   r = \frac{p}{100}\left(n-1\right)+1
 \end{equation*}
-This gives us the rank, $r$, of the $p$th percentile. To find the
+This gives us the rank, $r$, of the $p^{th}$ percentile. To find the
 value of the $p$ percentile, we have to count from the first value in
-the ordered data set up to the $r$th value.
+the ordered data set up to the $r^{th}$ value.
 
 Sometimes the rank will not be an integer. This means that the
 percentile lies between two values in the data set. The convention is
@@ -886,17 +939,17 @@ chapter: the median, the minimum and the maximum.
     \draw (100, -0.75) node[anchor=north] {maximum};
     \draw (0, +0.1) node[anchor=south east,xshift=-0.35cm,yshift=+0.05cm] {$r$};
     \draw (0, +0.1) node[anchor=south] {$1$};
-    \draw (50, +0.1) node[anchor=south] {$\frac{n+1}{2}$};
+    \draw (50, +0.1) node[anchor=south] {$\dfrac{n+1}{2}$};
     \draw (100, +0.1) node[anchor=south] {$n$};
   \end{tikzpicture}
 \end{center}
 
 The median is defined as the value halfway in a sorted data set. Since
-$50\% = \frac{1}{2}$, the median is exactly the same as the $50$th
+$50\% = \frac{1}{2}$, the median is exactly the same as the $50^{th}$
 percentile.  The minimum value is by definition the smallest and
 therefore the leftmost value in a sorted set. This makes the minimum
-equivalent to the $0$th percentile. Similarly, the maximum is
-equivalent to the $100$th percentile.
+equivalent to the $0^{th}$ percentile. Similarly, the maximum is
+equivalent to the $100^{th}$ percentile.
 
 \begin{wex}{Using the percentile formula}{
     Determine the minimum, maximum and median values of the following
@@ -918,9 +971,9 @@ equivalent to the $100$th percentile.
 
     We already know that the minimum value is the first value in the
     ordered data set. We will now confirm that the percentile formula
-    gives the same answer. The minimum is equivalent to the $0$th
+    gives the same answer. The minimum is equivalent to the $0^{th}$
     percentile. According to the percentile formula the rank, $r$, of the
-    $p = 0$th percentile in a data set with $n=9$ values is
+    $p = 0^{th}$ percentile in a data set with $n=9$ values is
     \begin{align*}
       r &= \frac{p}{100}\left(n-1\right)+1 \\
         &= \frac{0}{100}\left(9-1\right)+1 \\
@@ -932,7 +985,7 @@ equivalent to the $100$th percentile.
     \westep{Find the maximum}
 
     We already know that the maximum value is the last value in the
-    ordered data set. The maximum is also equivalent to the $100$th
+    ordered data set. The maximum is also equivalent to the $100^{th}$
     percentile. Using the percentile formula with $p=100$ and $n=9$,
     we find the rank of the maximum value as
     \begin{align*}
@@ -940,12 +993,12 @@ equivalent to the $100$th percentile.
         &= \frac{100}{100}\left(9-1\right)+1 \\
         &= 9
     \end{align*}
-    This confirms that the maximum value is the last (the $9$th) value
+    This confirms that the maximum value is the last (the $9^{th}$) value
     in the list, namely $45$.
 
     \westep{Find the median}
 
-    The median is equivalent to the $50$th percentile. Using the
+    The median is equivalent to the $50^{th}$ percentile. Using the
     percentile formula with $p=50$ and $n=9$, we find the rank of the
     median value as
     \begin{align*}
@@ -954,7 +1007,7 @@ equivalent to the $100$th percentile.
         &= \frac{1}{2}(8)+1 \\
         &= 5
     \end{align*}
-    This shows that the median is in the middle (at the $5$th position)
+    This shows that the median is in the middle (at the $5^{th}$ position)
     of the ordered data set. Therefore the median value is $19$. 
 
 }
@@ -962,10 +1015,10 @@ equivalent to the $100$th percentile.
 
 \Definition{Quartiles}{The quartiles are the three data values that
   divide an ordered data set into four groups, where each group
-  contains an equal number of data values. The median ($50$th
-  percentile) is the second quartile. The $25$th percentile is also
-  be called the lower quartile, and the $75$th percentile the upper
-  quartile.}
+  contains an equal number of data values. The median ($50^{th}$
+  percentile) is the second quartile ($Q2$). The $25^{th}$ percentile is also
+  be called the first or lower quartile ($Q1$), and the $75^{th}$ percentile the third or upper
+  quartile ($Q3$).}
 
 \begin{wex}{Quartiles}{
     Determine the quartiles of the following data set:
@@ -980,8 +1033,8 @@ equivalent to the $100$th percentile.
 
     \westep{Find the ranks of the quartiles}
 
-    Using the percentile formula, we can find the rank of the $25$th,
-    $50$th and $75$th percentiles as
+    Using the percentile formula, $n=12$, we can find the rank of the $25^{th}$,
+    $50^{th}$ and $75^{th}$ percentiles as
     \begin{align*}
       r_{25} &= \frac{25}{100}\left(12-1\right)+1 \\
             &= 3,75 \\
@@ -997,17 +1050,17 @@ equivalent to the $100$th percentile.
     value for each percentile is somewhere in between two values from
     the data set.\par
 
-    For the $25$th percentile the rank is $3,75$, which is between
-    the $3$rd and $4$th values. Since both these values are equal to
-    $7$, the $25$th percentile is $7$.\par
+    For the $25^{th}$ percentile the rank is $3,75$, which is between
+    the $3$rd and $4^{th}$ values. Since both these values are equal to
+    $7$, the $25^{th}$ percentile is $7$.\par
 
-    For the $50$th percentile (the median) the rank is $6,5$, meaning
-    halfway between the $6$th and $7$th values. The $6$th value is
-    $11$ and the $7$th value is $12$, which means that the median is
+    For the $50^{th}$ percentile (the median) the rank is $6,5$, meaning
+    halfway between the $6^{th}$ and $7^{th}$ values. The $6^{th}$ value is
+    $11$ and the $7^{th}$ value is $12$, which means that the median is
     \(\frac{11+12}{2} = 11,5\).\par
 
-    For the $75$th percentile the rank is $9,25$, meaning between the
-    $9$th and $10$th values. Therefore the $75$th percentile is
+    For the $75^{th}$ percentile the rank is $9,25$, meaning between the
+    $9^{th}$ and $10^{th}$ values. Therefore the $75^{th}$ percentile is
     \(\frac{31+35}{2} = 33\).
 
   }
@@ -1023,8 +1076,8 @@ is.
 
 \begin{wex}{Percentiles in grouped data}{
     The mathematics marks of $100$ grade $10$ learners at a school have
-    been collected. The data are presented to you in the following
-    table.
+    been collected. The data are presented in the following
+    table:\\
     \begin{center}
       \begin{tabular}{|c|c|}  \hline
        
@@ -1041,11 +1094,11 @@ is.
    
       \end{tabular}
     \end{center}
-
+\vspace {8pt}\\
     \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
     \item Calculate the mean of this grouped data set.
     \item In which intervals are the quartiles of the data set?
-    \item In which interval is the $30$th percentile of the data set?
+    \item In which interval is the $30^{th}$ percentile of the data set?
     \end{enumerate}
 }{
 
@@ -1056,8 +1109,8 @@ is.
   learners in each interval were located at the central value of the
   interval.
 
-  \begin{equation*}
-    \frac{
+  \begin{align*}
+ \mbox{Mean } &=  \frac{
          2 . 10
       +  5 . 25
       + 18 . 35
@@ -1066,16 +1119,16 @@ is.
       + 13 . 65
       + 12 . 75
       + 10 . 90
-    }{100}
-    = 54\%
+    }{100}\\
+    &= 54\%
   \end{equation*}
 
   \westep{Find the quartiles}
 
   Since the data have been grouped, they have also already been
   sorted. Using the percentile formula and the fact that there are
-  $100$ learners, we can find the rank of the $25$th, $50$th and
-  $75$th percentiles as
+  $100$ learners, we can find the rank of the $25^{th}$, $50^{th}$ and
+  $75^{th}$ percentiles as
   \begin{align*}
     r_{25} &= \frac{25}{100}\left(100-1\right)+1 \\
           &= 24,75 \\
@@ -1104,17 +1157,17 @@ is.
     \le x < 70$.
   \end{itemize}
 
-  \westep{Find the $30$th percentile}
+  \westep{Find the $30^{th}$ percentile}
 
   Using the same method as for the quartiles, we first find the rank
-  of the $30$th percentile.
+  of the $30^{th}$ percentile.
   \begin{align*}
     r &= \frac{30}{100}\left(100-1\right)+1 \\
       &= 30,7
   \end{align*}
   Now we have to find the range in which this rank lies. Since there
   are $25$ learners in the first $3$ ranges combined and $47$ learners
-  in the first $4$ ranges combined, the $30$th percentile lies in the
+  in the first $4$ ranges combined, the $30^{th}$ percentile lies in the
   fourth range: $40 \le x < 50$.
 
 }
@@ -1123,18 +1176,18 @@ is.
 \subsection{Ranges}
 We define data ranges in terms of percentiles. We have already
 encountered the data range, which is simply the difference between the
-$100$th and the $0$th percentile (that is, between the maximum and
+$100^{th}$ and the $0^{th}$ percentile (that is, between the maximum and
 minimum values in the data set).
 
 \Definition{Interquartile range}{The interquartile range is a measure
-  of dispersion, which is calculated by subtracting the lower (first)
-  quartile from the upper (third) quartile. This gives the range of
+  of dispersion, which is calculated by subtracting the first
+  quartile ($Q1$) from the third quartile ($Q3$). This gives the range of
   the middle half of the data set.}
 
 \Definition{Semi interquartile range}{The semi interquartile range is
   half of the interquartile range.}
 
-\begin{exercises}{Dispersion}
+\begin{exercises}{}{
   \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
 
   \item Find the range of the data set
@@ -1171,23 +1224,23 @@ minimum values in the data set).
     \end{enumerate}
   \end{enumerate}
   \end{enumerate}
+}
 \end{exercises}
 
 \section{Combining different measures}
-A common way of summarising the overall dataset is with the five
+A common way of summarising the overall data set is with the five
 number summary and the box-and-whisker plot. These two represent
 exactly the same information, numerically in the case of the five
 number summary and graphically in the case of the box-and-whisker
 plot.
-
+\par
 The five number summary consists of the minimum value, the maximum
 value and the three quartiles. Another way of saying this is that the
-five number summary consists of the following percentiles: $0$th,
-$25$th, $50$th, $75$th, $100$th.
+five number summary consists of the following percentiles: $0^{th}$,
+$25^{th}$, $50^{th}$, $75^{th}$, $100^{th}$.\par
 
-The box-and-whisker plot shows these five percentiles, as in the figure
-below. The box shows the interquartile range (the distance between the
-first and third quartiles). A line inside the box shows the
+The box-and-whisker plot shows these five percentiles as in the figure
+below. The box shows the interquartile range (the distance between $Q1$ and $Q3$). A line inside the box shows the
 median. The lines extending outside the box (the whiskers) show where
 the minimum and maximum values lie.
 
@@ -1205,24 +1258,24 @@ the minimum and maximum values lie.
       \draw (0.6, 0) node[anchor=west] {median};
       \draw (0.6, -1) node[anchor=west] {lower quartile};
       \draw (0.6, -2.5) node[anchor=west] {minimum};
-      \draw (3.5, 2.5) node[anchor=west] {($100$th percentile)};
-      \draw (3.5, 1) node[anchor=west] {($75$th percentile)};
-      \draw (3.5, 0) node[anchor=west] {($50$th percentile)};
-      \draw (3.5, -1) node[anchor=west] {($25$th percentile)};
-      \draw (3.5, -2.5) node[anchor=west] {($0$th percentile)};
+      \draw (3.5, 2.5) node[anchor=west] {($100^{th}$ percentile)};
+      \draw (3.5, 1) node[anchor=west] {($75^{th}$ percentile)};
+      \draw (3.5, 0) node[anchor=west] {($50^{th}$ percentile)};
+      \draw (3.5, -1) node[anchor=west] {($25^{th}$ percentile)};
+      \draw (3.5, -2.5) node[anchor=west] {($0^{th}$ percentile)};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-0.7,-1) -- (-0.7,1);
       \draw (-0.7,0) node[anchor=east,xshift=-0.2cm] {interquartile range};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-4.5,-2.5) -- (-4.5,2.5);
       \draw (-4.5,0) node[anchor=east,xshift=-0.2cm] {data range};
     \end{tikzpicture}
   \end{center}
-  \begin{caption*}The box-and-whisker plot along with labels showing how
-    the different percentiles and ranges are represented in the plot.\end{caption*}
+%   \begin{caption*}The box-and-whisker plot along with labels showing how
+%     the different percentiles and ranges are represented in the plot.\end{caption*}
 \end{figure}
 
 
 \begin{wex}{Five number summary}{
-    Draw a box and whisker diagram for the data set:
+    Draw a box and whisker diagram for the following data set:
     \begin{equation*}
       \{1,25;\ 1,5;\ 2,5;\ 2,5;\ 3,1;\ 3,2;\ 4,1;\ 4,25;\ 4,75;\ 4,8;\ 4,95;\ 5,1\}
     \end{equation*}
@@ -1235,19 +1288,19 @@ the minimum and maximum values lie.
   \westep{Determine the quartiles}
 
   There are $12$ values in the data set. Using the percentile formula,
-  we can determine that the median lies between the $6$th and $7$th
+  we can determine that the median lies between the $6^{th}$ and $7^{th}$
   values, making it
   \begin{equation*}
     \frac{3,2 + 4,1}{2} = 3,65
   \end{equation*}
 
-  The first quartile lies between the $3$rd and $4$th values, making
+  The first quartile lies between the $3$rd and $4^{th}$ values, making
   it
   \begin{equation*}
     \frac{2,5 + 2,5}{2} = 2,5
   \end{equation*}
 
-  The third quartile lies between the $9$th and $10$th values, making
+  The third quartile lies between the $9^{th}$ and $10^{th}$ values, making
   it
   \begin{equation*}
     \frac{4,75 + 4,8}{2} = 4,775
@@ -1286,7 +1339,7 @@ the minimum and maximum values lie.
 }
 \end{wex}
 
-\begin{exercises}{}
+\begin{exercises}{}{
 \begin{enumerate} [itemsep=6pt, label=\textbf{\arabic*}.]
 
 \item Lisa is working in a computer store. She sells the following
@@ -1312,16 +1365,128 @@ the minimum and maximum values lie.
     \{16;\ 14;\ 8;\ 12;\ 6;\ 5;\ 3;\ 5;\ 7\}
   \end{equation*}
   Give the five number summary of Hannah's sales.
+\item Use the diagram below to determine the five number summary:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item 
 
+
+    \begin{tikzpicture}[xscale=0.5]
+      \def\median{25}
+      \def\firstquartile{22}
+      \def\thirdquartile{28}
+      \def\minimum{15}
+      \def\maximum{35}
+
+      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+      \draw (    \firstquartile, 0) -- (\minimum,0   );
+      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+
+      \draw[thick,<->] (12,-1) -- (37,-1);
+
+      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
+      }
+
+      \foreach \x in {13,14,...,36} {
+        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+      }
+      \draw[dotted] ( \maximum, 0.2) -- ( \maximum, -1);
+      \draw[dotted] ( \thirdquartile, 0.6) -- ( \thirdquartile, -1);
+      \draw[dotted] (\median, 0.6)  -- ( \median, -1);
+      \draw[dotted] (\firstquartile, 0.6) -- ( \firstquartile, -1);
+      \draw[dotted] ( \minimum, 0.2) -- ( \minimum, -1);
+    \end{tikzpicture}
+%   \end{center}
+\item 
+    \begin{tikzpicture}[xscale=0.7]
+      \def\median{98}
+      \def\firstquartile{92}
+      \def\thirdquartile{100}
+      \def\minimum{88}
+      \def\maximum{101}
+
+      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+      \draw (    \firstquartile, 0) -- (\minimum,0   );
+      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+
+      \draw[thick,<->] (87,-1) -- (104,-1);
+
+      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
+      }
+
+      \foreach \x in {87,89,...,104} {
+        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+      }
+      \draw[dotted] ( \maximum, 0.2) -- ( \maximum, -1);
+      \draw[dotted] ( \thirdquartile, 0.6) -- ( \thirdquartile, -1);
+      \draw[dotted] (\median, 0.6)  -- ( \median, -1);
+      \draw[dotted] (\firstquartile, 0.6) -- ( \firstquartile, -1);
+      \draw[dotted] ( \minimum, 0.2) -- ( \minimum, -1);
+    \end{tikzpicture}
 \end{enumerate}
+\end{enumerate}
+}
 \end{exercises}
 
 
-% \summary NEED A SUMMARY HERE
+\summary
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
+\item Data refer to the pieces of information that have been observed and recorded, from an experiment or a survey. 
+
+\item Quantitative data are data that can be written as numbers.  Quantitative data can be discrete or continuous.
+
+\item Qualitative data are data that cannot be written as numbers.  There are two common types of qualitative data; categorical and anecdotal data. 
+
+\item The mean is the sum of a set of values divided by the number of values in the set. 
+  \begin{align*}
+    \overline{x} &= \frac{1}{n}\sum_{i=1}^n x_i \\
+                 &= \frac{x_1 + x_2 + .s + x_n}{n}
+  \end{align*}
+
+\item The median of a data set is the value in the central position, when the data set has 
+been arranged from the lowest to the highest value.  If there are an odd number of data, the median will be equal to one of the values in the data set. If there are an even number of data, the median will lie half way between two values in the data set. 
+
+\item The mode of a data set is the value that occurs most often in the set. 
+
+\item An outlier is a value in the data set that is not typical of the rest of the set. It is 
+usually a value that is much greater or much less than all the other values in the data set.
+
+\item Dispersion is a general term for different statistics that describe how values are distributed around the centre. 
+
+\itemThe range of a data set is the difference between the maximum and minimum values 
+in the set. 
+
+\item The $p^{th}$ percentile is the value, $v$, that divides a data set into two parts, such that 
+$p\%$ of the values in the data set are less than $v$ and $100 − p\%$ of the 
+values are greater than $v$. 
+
+The general formula for finding the $p^{th}$ percentile in an ordered data set with $n$ values is 
+\begin{equation*}
+  r = \frac{p}{100}\left(n-1\right)+1
+\end{equation*}
+
+\item The quartiles are the three data values that divide an ordered data set into four groups, where each group contains an equal number of data values. The lower quartile is denoted $Q1$, the median is $Q2$ and the upper quartile is $Q3$.
+
+\item The interquartile range is a measure of dispersion, which is calculated by subtracting the lower (first) quartile from the upper (third) quartile. This gives the range of the middle half of the data set.
+
+\item The semi interquartile range is half of the interquartile range. 
+
+\item The five number summary consists of the minimum value, the maximum value and the three quartiles ($Q1$, $Q2$, and $Q3$). 
+
+\item The box-and-whisker plot is a graphically representation of the five number summary.
+\end{enumerate}
 \begin{eocexercises}{}
   \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}.]
 
-  \item The tallest $7$ trees in a park have heights in metres of
+  \item 
+  In a park, the tallest $7$ trees in a park have heights in metres of
     $41$; $60$; $47$; $42$; $44$; $42$; and $47$. Find the median of
     their heights.
 
@@ -1331,7 +1496,7 @@ the minimum and maximum values lie.
 
   \item An engineering company has designed two different types of
     engines for motorbikes. The two different motorbikes are tested
-    for the time it takes (in seconds) for them to accelerate from $0$
+    for the time (in seconds) it takes for them to accelerate from $0$
     km/h to $60$ km/h.
 
     \begin{center}
@@ -1343,6 +1508,7 @@ the minimum and maximum values lie.
 
       \end{tabular}
     \end{center}
+\vspace {8pt}\\
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item What measure of central tendency should be used for this
       information?
@@ -1354,7 +1520,7 @@ the minimum and maximum values lie.
 
   \item In a traffic survey, a random sample of $50$ motorists were
     asked the distance they drove to work daily. This information is
-    shown in the table below.
+    shown in the table below.\\
     \begin{center}
       \begin{tabular}{|c|c|} \hline
      
@@ -1372,6 +1538,7 @@ the minimum and maximum values lie.
 
       \end{tabular}
     \end{center}
+\vspace {8pt}\\
      \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Find the approximate mean of the data.
     \item What percentage of samples had a speed of
@@ -1380,12 +1547,13 @@ the minimum and maximum values lie.
       \item more than $30$ km?
       \item between $16$ km and $30$ km daily?
       \end{enumerate}
+\item Draw a histogram to represent the data
     \end{enumerate}
 
   \item A company wanted to evaluate the training programme in its
     factory. They gave the same task to trained and untrained
     employees and timed each one in seconds.
-
+\\
     \begin{center}
       \begin{tabular}{|l|c|c|c|c|c|} \hline
 
@@ -1399,13 +1567,16 @@ the minimum and maximum values lie.
 
       \end{tabular}
     \end{center}
+\vspace {8pt}\\
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Find the medians and quartiles for both sets of data
     \item Find the interquartile range for both sets of data
     \item Comment on the results
+\item Draw a box-and-whisker diagram to illustrate the five number summary
     \end{enumerate}
 
   \item A small firm employs nine people. The annual salaries of the employers are:
+\\
     \begin{center}
       \begin{tabular}{|r|r|r|} \hline
       
@@ -1415,6 +1586,7 @@ the minimum and maximum values lie.
    
       \end{tabular}
     \end{center}
+\vspace {8pt}\\
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Find the mean of these salaries
     \item Find the mode
