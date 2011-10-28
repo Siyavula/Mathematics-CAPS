@@ -6,7 +6,7 @@
 
 \chapter{Probability}
 
-\section{Introduction}
+
 We use probability to describe uncertain events. When you accidentally
 drop a slice of bread, you don't know if it's going to fall with the
 buttered side facing upwards or downwards. When your favourite sports
@@ -14,13 +14,12 @@ team plays a game, you don't know whether they will win or not. When
 the weatherman says that there is a $40\%$ chance of rain tomorrow, you
 may or may not end up getting wet.  Uncertainty presents itself to
 some degree in every event that occurs around us and in every decision
-that we make.
+that we make.\par
 
 We will see in this chapter that all of these uncertainties can be
 described using the rules of probability theory and that we can make
-definite conclusions about uncertain processes.
+definite conclusions about uncertain processes.\par
 
-\section{Definitions}
 We'll use three examples of uncertain processes to help you understand
 the meanings of the different words used in probablity theory: tossing
 a coin, rolling dice, a soccer match.
@@ -62,8 +61,9 @@ a coin, rolling dice, a soccer match.
 
   \begin{center}
     \includegraphics[width=3in]{Gr10-Probability-images/5996076302_412ec8d8d0_o.jpg}
-  \end{center}
+ \\
   \begin{caption*}{(Picture by apasciuto on Flickr.com)}\end{caption*}
+ \end{center}
 \end{figure}
 
 \Definition{Sample space}{The sample space of an experiment is
@@ -543,8 +543,78 @@ all. In the third diagram one event is fully contained in the other.
 Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
 % \vspace{-1cm}
+
 \begin{wex}{Venn diagrams}{
-  Represent the sample space of two rolled dice and the two events where
+ Consider the set of diamonds removed from a deck of cards. A random card is selected from the set of diamonds.
+\begin{itemize}
+ \item Write down the sample space, $S$, for the experiment.
+\item What is the value of $n(S)$?
+\item Consider the following two events:
+\begin{itemize}
+\item $P$: An even diamond is chosen
+\item $R$: A royal diamond is chosen
+\end{itemize}
+Represent sample space $S$ and events $P$ and $R$ using a Venn diagram.
+\end{itemize}
+}
+{
+\westep{Write down the sample space $S$}
+\begin{align*}
+S=\{A;~ 2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
+\end{align*}
+\westep{Write down the value of $n(S)$}
+\begin{align*}
+ n(S) = 13
+\end{align*}
+\westep{Draw the Venn diagram}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.2)(4.5590625,2.2)
+\pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+\pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+\pscircle[linewidth=0.04,dimen=outer](2.54,0.76){0.9}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7,1.9){$S$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.9945312,0.83){$J$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.4745312,1.29){$K$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.1745312,0.53){$P$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.1445312,0.71){$2$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.70453125,0.05){$4$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.5645312,0.07){$6$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.1245313,-0.55){$8$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.0945313,-0.51){$10$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.0845313,-0.77){$3$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8845313,-0.49){$5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5445313,-1.45){$7$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.4245312,-1.25){$9$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7745314,0.23){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0145313,1.37){$Q$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5045311,1.83){$R$}
+\end{pspicture} 
+}
+
+\end{center}
+}
+\end{wex}
+
+\begin{wex}{Venn diagrams}{
+  Represent the sample space of two rolled dice and the two events, $A$ and $B$, using a Venn diagram, where
   \begin{itemize}
   \item[] $A:$ the sum of the dice equals $8$
   \item[] $B:$ at least one of the dice shows
@@ -554,7 +624,7 @@ sample space contains all possible outcomes of the experiment.
         \end{scope}
       \end{tikzpicture}}
   \end{itemize}
-  using a Venn diagram.
+  
 }{
 \begin{center}
 \begin{tikzpicture}
@@ -600,11 +670,11 @@ sample space contains all possible outcomes of the experiment.
    \item Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
     denote the set of even numbers from $1$ to $16$ and $Y$ denote the
     set of prime numbers from $1$ to $16$
-  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+%   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Draw a Venn diagram accurately depicting $S$, $X$ and $Y$.
-    \item Find $n\left(S\right)$, $n\left(X\right)$, $n\left(Y\right)$,
-      $n\left(X\cup Y\right)$, $n\left(X\cap Y\right)$.
-    \end{enumerate}
+%     \item Find $n\left(S\right)$, $n\left(X\right)$, $n\left(Y\right)$,
+%       $n\left(X\cup Y\right)$, $n\left(X\cap Y\right)$.
+%     \end{enumerate}
 \item
   There are $79$ Grade $10$ learners at school. All of these
     take either Maths, Geography or History. The number who take
@@ -635,10 +705,10 @@ sample space contains all possible outcomes of the experiment.
       \item $n\left(S\right)$
       \item $n\left(A\right)$
       \item $n\left(B\right)$
-      \item $n\left(A\cap B\right)$
-      \item $n\left(A\cup B\right)$
+%       \item $n\left(A\cap B\right)$
+%       \item $n\left(A\cup B\right)$
       \end{enumerate}
-    \item Is $n\left(A\cup B\right)=n\left(A\right)+n\left(B\right)-n\left(A\cap B\right)$?
+%     \item Is $n\left(A\cup B\right)=n\left(A\right)+n\left(B\right)-n\left(A\cap B\right)$?
     \end{enumerate}
   \end{enumerate}
 
@@ -672,19 +742,21 @@ configurations of two events in a sample space, using Venn diagrams.
 \end{figure}
 
 \section{Probability identities}
-\Identity{Probability of sample space}{
-  \[P(S)=1\]
-}
+\begin{equation*}
+ P(S)=1
+\end{equation*}
+
 
 By definition, the sample space contains all possible outcomes of an
 experiment. So we know that the probability of observing an outcome
 from the sample space is $1$.
 
-\Identity{Union and intersection}{
-  \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
-}
+\begin{equation*}
+ P(A \cup B) = P(A) + P(B) - P(A \cap B)
+\end{equation*}
 
-We will prove this identity using the Venn diagrams given in the previous section.
+
+We will prove this identity using the Venn diagrams given above.
 
 % \ref{fig:venn_union_intersection}
 For each of the $4$ terms in the
@@ -692,15 +764,14 @@ union and intersection identity, we can draw the Venn diagram and then
 add and subtract the different diagrams. The area of a region
 represents its probability.
 
-We will do this for the first column of the Venn diagram figure given previously.
-% \ref{fig:venn_union_intersection}
+We will do this for the first column of the Venn diagram figure given previously% \ref{fig:venn_union_intersection}
 . You should also try it for the
 other columns.
 
 \begin{center}
 \begin{tabular}{m{0.5cm}m{1.5cm}m{0.5cm}m{0.3cm}@{\hspace{0.1cm}}m{1.5cm}m{0.5cm}m{1.5cm}@{\hspace{0.1cm}}m{0.3cm}}
    & $P(A)$ & $+$ && $P(B)$ & $-$ & $P(A \cap B)$ \\[4pt]
- = & \begin{tikzpicture}
+ $=$ & \begin{tikzpicture}
    \begin{scope}[scale=1.5]
      \draw \samplespace;
      \draw[fill=lightgray] \circlepartiala;
@@ -716,7 +787,7 @@ other columns.
      \draw[fill=lightgray] (0.31369, 0.31041) arc (197.38:130.73:0.3cm) arc (39.54:-71.43:0.2cm);
    \end{scope}
 \end{tikzpicture} & $\Bigg)$ \\[4pt]
- = & \begin{tikzpicture}
+$ =$ & \begin{tikzpicture}
    \begin{scope}[scale=1.5]
      \draw \samplespace;
      \draw[fill=lightgray] \circlepartiala;
@@ -727,25 +798,24 @@ other columns.
      \draw[fill=lightgray] (0.31369, 0.31041) arc (-162.62:130.73:0.3cm) arc (39.54:-71.43:0.2cm);
    \end{scope}
 \end{tikzpicture} \\[4pt]
- = & \begin{tikzpicture}
+ $=$ & \begin{tikzpicture}
       \begin{scope}[scale=1.5]
         \draw \samplespace;
         \draw[fill=lightgray] (0.31369, 0.31041) arc (-162.62:130.73:0.3cm) arc (39.54:288.57:0.2cm);
       \end{scope}
 \end{tikzpicture} \\[4pt]
- = & $P(A \cup B)$
+$ =$ & $P(A \cup B)$
 \end{tabular}
 \end{center}
 
 \begin{wex}{Union and intersection of events}{
-  Relate the probabilities of events $A$ and $B$ in Worked Example
-  4 and show that they satisfy the identity
+  Relate the probabilities of events $A$ and $B$ from the previous worked example (two rolled dice) and show that they satisfy the identity
   \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
 }{
   \westep{Write down the probabilities of the two events, their union
     and their intersection.}
   
-  From The figure in Worked Example 4
+  From the Venn diagram in the previous worked example,
 % Figure \ref{fig:dice_venn}
  we can count the number of outcomes in each
   event. To get the probability of an event, we divide the size of
@@ -863,22 +933,24 @@ For an experiment with sample space $S$ and an event $A$ we can derive
 some identities for complementary events. Since every element in $A$ is not in $A'$, we know
   that complementary events are mutually exclusive.
 
-\Identity{Complementary events are mutually exclusive}{
-  \[A \cap A' = \emptyset\]
-}
+\begin{equation*}
+ A \cap A' = \emptyset
+\end{equation*}
+
 
 Since every element in the sample space is either in $A$ or in
   $A'$, the union of complementary events covers the
   sample space.
-\Identity{Complementary events cover the sample space}{
-  \[A \cup A' = S\]
-}
-
+\begin{equation*}
+A \cup A' = S
+\end{equation*}
 From the previous two identities, we also know that the
   probabilities of complementary events sum to $1$.
-\Identity{Probabilities of complementary events}{
-  \[P(A) + P(A') = P(A \cup A') = P(S) = 1\]
-}
+
+\begin{equation*}
+P(A) + P(A') = P(A \cup A') = P(S) = 1
+\end{equation*}
+
 % \clearpage%manual clearpage to fix broken mdframed for Definition below
 \begin{wex}{Reasoning with Venn diagrams}{
   In a survey $70$ people were questioned about which product they
@@ -1060,9 +1132,9 @@ Fiona has $85$ labeled discs, which are numbered from $1$ to
   that contains all of the elements that are in both sets. The
   intersection is written as $A \cap B$.
 
-\item The probability of sample space:  $[P(S)=1]$
+\item The probability of sample space:  $P(S)=1$
 
-\item Union and intersection: $[P(A \cup B) = P(A) + P(B) - P(A \cap B)]$
+\item Union and intersection: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 
 \item Mutually exclusive events are two events that cannot occur at the same time. Whenever an outcome
@@ -1075,13 +1147,13 @@ Fiona has $85$ labeled discs, which are numbered from $1$ to
   $A$. We write the complement of $A$ as $A'$, or
   sometimes as ``$\textrm{not}(A)$''.
 
-\item Complementary events are mutually exclusive: $[A \cap A' = \emptyset]$
+\item Complementary events are mutually exclusive: $A \cap A' = \emptyset$
 
 
-\item Complementary events cover the sample space: $[A \cup A' = S]$
+\item Complementary events cover the sample space: $A \cup A' = S$
 
 
-\item Probabilities of complementary events: $[P(A) + P(A') = P(A \cup A') = P(S) = 1]$
+\item Probabilities of complementary events: $P(A) + P(A') = P(A \cup A') = P(S) = 1$
 
 
 
