@@ -571,8 +571,7 @@ Two lines that run parallel to each other are always the same distance apart and
 % In other words: $\mbox{gradient}_{AB}=\mbox{gradient}_{CD}$. \par
 If two lines intersect perpendicularly, then the product of their gradients is equal to $-1$. \\
 
-If line $WX \perp $ line $YZ$, then $m_{WX} \times m_{YZ} = -1$. Perpendicular lines have gradients that are the negative inverse of each other. This means that when you multiply the gradients together, the answer will be -1.: $-\frac{1}{m_{AB}}=m_{CD}$
-
+If line $WX \perp $ line $YZ$, then $m_{WX} \times m_{YZ} = -1$. Perpendicular lines have gradients that are the negative inverse of each other.
 \begin{wex}{Parallel lines}{Prove that the line $AB$ with points $A(0;2)$ and $B(2,6)$ is parallel to the line $y = 2x-2$.}{
 \westep{Draw a sketch}
 
@@ -739,25 +738,36 @@ equal.
 \end{center}
 
 \westep{Calculate two gradients between any of the three points}
-\begin{align*}
-m&=\dfrac{y_2-y_1}{x_2-x_1}\\[6pt]
-m_{AB} &= \frac{5-3}{0-(-3)} = \frac{2}{3}
-\end{align*}
+\begin{equation*}
+ \begin{array}{rll}
+
+m&=\dfrac{y_2-y_1}{x_2-x_1}&\\[6pt]
+m_{AB} &= \dfrac{5-3}{0-(-3)} &= \dfrac{2}{3}
+\end{array}
+\end{equation*}
 and
 \begin{equation*}
-m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
+ \begin{array}{rll}
+m_{BC} &= \dfrac{7-5}{3-0} &= \dfrac{2}{3}
+\end{array}
 \end{equation*}
 \fbox{OR}
 \begin{equation*}
-m_{AC} = \frac{3-7}{3-3} = \frac{-4}{-6}=\frac{2}{3}
+ \begin{array}{rlll}
+m_{AC} &= \dfrac{3-7}{3-3} &= \dfrac{-4}{-6}&=\dfrac{2}{3}
+\end{array}
 \end{equation*}
 and
 \begin{equation*}
-m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
+ \begin{array}{rll}
+m_{BC} &= \dfrac{7-5}{3-0} &= \dfrac{2}{3}
+\end{array}
 \end{equation*}
 \westep{Explain your answer}
 \begin{equation*}
-m_{AB} = m_{BC}= m_{AC}
+ \begin{array}{r[l}
+m_{AB} &= m_{BC}&= m_{AC}
+\end{array}
 \end{equation*}
 Therefore the points $A$, $B$ and $C$ are collinear.
 }
@@ -1098,7 +1108,7 @@ The coordinates of point $D$ are $(4;-10)$.
 }
 \end{wex}
 
-\begin{wex}{Using the mid-point formula}{Points $E(-1;0)$ , $F(0;3)$ , $G(8;11)$ and $H(x;y)$ are points on the Cartesian plane. Find $H(x;y)$ if $EFGH$ is a parallelogram.}{
+\begin{wex}{Using the mid-point formula}{Points $E(-1;0)$, $F(0;3)$, $G(8;11)$ and $H(x;y)$ are points on the Cartesian plane. Find $H(x;y)$ if $EFGH$ is a parallelogram.}{
 \westep{Draw a sketch}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -1135,7 +1145,7 @@ The coordinates of point $D$ are $(4;-10)$.
 \end{center}
 
 Method: the diagonals of a parallelogram bisect each other, therefore the mid-point of $EG$
-will be the same as the mid-point of $FH$. We must first find the mid-point of $EG$. We can then use it to determine to coordinates of point $H$.
+will be the same as the mid-point of $FH$. We must first find the mid-point of $EG$. We can then use it to determine the coordinates of point $H$.
 \westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the mid-point of $EG$ be $M(x;y)$
 \begin{equation*}
@@ -1151,15 +1161,16 @@ M(x;y) =\Big(\frac{-1+8}{2}; \frac{0+11}{2}\Big) = \Big(\frac{7}{2};\frac{11}{2}
 \end{equation*}
 
 \westep{Use the coordinates of $M$ to determine $H$}
-$M$ is also the mid-point of $FH$ so we use the mid-point formula
-$M(\frac{7}{2};\frac{11}{2}) = \Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)$ and $F(0;3)$ to solve for $H(x;y)$
+$M$ is also the mid-point of $FH$ so we use 
+$M(\frac{7}{2};\frac{11}{2})$ and $F(0;3)$ to solve for $H(x;y)$
 \westep{Substitute values and solve for $x$ and $y$}
 
 \begin{equation*}
 \begin{array}{rllrl}
-\frac{7}{2}&=\frac{0+x}{2}&\hskip10em&\frac{11}{2}&=\frac{3+y}{2}\\
-7&=x+0&&11&=3+y\\
-x&=7&&y&=8\\
+ M\Big(\dfrac{7}{2};\dfrac{11}{2}\Big) &=~\Big(\dfrac{x_1+x_2}{2}; \dfrac{y_1+y_2}{2}\Big)\\[8pt]
+\dfrac{7}{2}&=~\dfrac{0+x}{2}&\hskip10em&\dfrac{11}{2}&=~\dfrac{3+y}{2}\\
+7&=~x+0&&11&=~3+y\\
+x&=~7&&y&=~8\\
 \end{array}
 \end{equation*}
 \westep{Write the final answer}
@@ -1193,7 +1204,7 @@ The coordinates of $H$ are $(7;8)$.
 \begin{equation*}
 d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}
 \end{equation*}
-\item The gradient between two points is determined by the ratio vertical change to horizontal change.
+\item The gradient between two points is determined by the ratio of vertical change to horizontal change.
 
 \item The formula for finding the gradient of a line is: 
 \begin{equation*}
@@ -1202,9 +1213,9 @@ m=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}
 \item A straight line is a set of points with a constant gradient between any two of the
 points.
 \item The standard form of the straight line equation is $y=mx+c$.
-\item The equation of a straight line can also be written as $y-y_1=mx+c$  or 
+\item The equation of a straight line can also be written as  
 \begin{equation*}
-\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}\end{equation*}
+y-y_1=mx+c ~~\mbox{  or  } ~~~\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}\end{equation*}
 \item If two lines are parallel, their gradients are equal.
 \item If two lines are perpendicular, the product of their gradients is equal to $-1$.
 \item For horizontal lines the gradient is equal to $0$.
@@ -1237,7 +1248,8 @@ In the diagram below the vertices of a quadrilateral are $F(2;0)$, $G(1;5)$, $H(
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
 \psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-1,-1)(7.5,7.5)
-\pspolygon[linewidth=1pt,fillstyle=solid,fillcolor=lightgray](2,0)(1,5)(3,7)(7,2)(2,0)
+\pspolygon[linewidth=1pt](2,0)(1,5)(3,7)(7,2)(2,0)
+\psdots(2,0)(1,5)(3,7)(7,2)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
 % \psline[linewidth=.05cm](0,0)(3,2)
 % \psline[linewidth=.05cm](0,0)(3,0.5)
@@ -1256,7 +1268,7 @@ In the diagram below the vertices of a quadrilateral are $F(2;0)$, $G(1;5)$, $H(
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item 
 What are the lengths of the opposite sides of $FGHI$?
-item Are the opposite sides of $FGHI$ parallel?
+\item Are the opposite sides of $FGHI$ parallel?
 \item  Do the diagonals of $FGHI$ bisect each other?
 \item  Can you state what type of quadrilateral $FGHI$ is? Give reasons for your answer.
 \end{enumerate}
@@ -1317,7 +1329,7 @@ Consider triangle $ABC$ with vertices $A(1; 3)$ , $B(4;1)$ and $C (6; 4)$:
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-10,-1)(1,7)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-10,-1)(1,7)
 \psline[linewidth=.05cm](-6,1)(0,3)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
 % \psline[linewidth=.05cm](0,0)(3,2)
@@ -1329,6 +1341,7 @@ Consider triangle $ABC$ with vertices $A(1; 3)$ , $B(4;1)$ and $C (6; 4)$:
 \uput[d](0,3.2){\qdisk(0,0){3pt}}
 \uput[l](1.8,0){\Large{$x$}}
 \uput[d](0,8){\Large{$y$}}
+\uput[d](-0.2,0.1){\Large{$0$}}
 \end{pspicture}
 }
 \end{center}
