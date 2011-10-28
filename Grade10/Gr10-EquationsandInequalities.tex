@@ -685,6 +685,9 @@ The graphs of the two equations are shown below.\\
 \pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
 \pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
 \uput[l](2,1.1){$(2,1)$}
+\uput[l](0.1,-0.2){$0$}
+\uput[r](4,0.1){$x$}
+\uput[r](0,2){$y$}
 \psdot(2,1)
 \end{pspicture}
 
@@ -751,6 +754,9 @@ Notice that both methods give us the same solution.
 \psaxes[dx=1,dy=1,Dy=10,Dx=2,arrows=<->](0,0)(-5,-1)(5,5)
 \pstextpath[c](-2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-10}{10}{0.75 x mul neg 25 add}}{\small{$4y+3x=100$}}
 \pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
+\rput(-0.2,-0.2){$0$}
+\rput(5.2,0.1){$x$}
+\rput(0.1,5.2){$y$}
 \end{pspicture}
 \end{center}
 

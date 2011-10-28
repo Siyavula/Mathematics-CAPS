@@ -29,8 +29,8 @@ degrees, so make sure that your calculator is set to ''deg`` mode.}
 \begin{figure}[H]
 \begin{center}
 \begin{pspicture}(0,-1.1732812)(3.1509376,1.1732812)
-\psline[linewidth=0.04cm](0.2465625,-0.59328127)(2.7065625,0.94671875)
-\psline[linewidth=0.04cm](0.2465625,-0.59328127)(2.8065624,-1.0132812)
+\psline[linewidth=0.04](0.2465625,-0.59328127)(2.7065625,0.94671875)
+\psline[linewidth=0.04](0.2465625,-0.59328127)(2.8065624,-1.0132812)
 \psarc[linewidth=0.04](0.8565625,-0.46328124){0.25}{289.65384}{82.874985}
 % % \usefont{T1}{ptm}{m}{n}
 \rput(2.9871874,-1.0232812){$A$}
@@ -236,13 +236,13 @@ angles $\hat{A}$, $\hat{B}$, $\hat{C}$ and $\hat{D}$.\par
 \psarc[linewidth=0.028222222](2.0629444,-0.037055556){0.49705556}{30.0}{155.69582}
 \psarc[linewidth=0.028222222](2.0529444,-0.0070555555){0.54705554}{210.0}{330.0}
 % % \usefont{T1}{ptm}{m}{n}
-\rput(2.4014063,-0.004111111){\small{$\hat{A}$}}
+\rput(2.4014063,-0.004111111){\small{$A$}}
 % % \usefont{T1}{ptm}{m}{n}
-\rput(2.0214062,0.21588889){\small{$\hat{B}$}}
+\rput(2.0214062,0.21588889){\small{$B$}}
 % % \usefont{T1}{ptm}{m}{n}
-\rput(1.7014062,-0.04411111){\small{$\hat{C}$}}
+\rput(1.7014062,-0.04411111){\small{$C$}}
 % % \usefont{T1}{ptm}{m}{n}
-\rput(2.1014063,-0.2841111){\small{$\hat{D}$}}
+\rput(2.1014063,-0.2841111){\small{$D$}}
 \end{pspicture} 
 }
 
@@ -256,19 +256,19 @@ The following table summarises the special angle pairs that result from two inte
 \begin{center}
 \begin{tabular}{|l|p{4cm}|l|} \hline
 Term & Property & Example\\ \hline
-Acute angle & $0^{\circ} \leq \mbox{angle} \leq 90^{\circ}$ & $\hat{A}$; $\hat{C}$ \\ \hline
+Acute angle & $0^{\circ} < \mbox{angle} < 90^{\circ}$ & $\hat{A}$; $\hat{C}$ \\ \hline
 Right angle & Angle $= 90^{\circ}$ &  \\ \hline
-Obtuse angle & $90^{\circ} \leq \mbox{angle} \leq 180^{\circ}$ & $\hat{B}$; $\hat{D}$ \\ \hline
-Straight angle & Angle $= 180^{\circ}$ & $\hat{A} + \hat{B}$;  \\
-& & $\hat{B} + \hat{C}$ etc.  \\ \hline
+Obtuse angle & $90^{\circ} < \mbox{angle} < 180^{\circ}$ & $\hat{B}$; $\hat{D}$ \\ \hline
+Straight angle & Angle $= 180^{\circ}$ & $\hat{A} + \hat{B}$;  $\hat{B} + \hat{C}$ etc.   \\
+& &  \\ \hline
 Reflex angle & $180^{\circ} < \mbox{angle} < 360^{\circ}$ &  \\ \hline
-Adjacent angles & Angles that share a vertex and a common side. & $\hat{A}$ and $\hat{D}$ \\ 
-& & $\hat{C}$ and $\hat{D}$ etc. \\ \hline
-Vertically opposite angles & Angles opposite each other when two lines intersect. They share a vertex and are equal. & $\hat{A}=\hat{C}$;\\
- &  & $\hat{B}=\hat{D}$\\ \hline
-Supplementary angles & Angles that add up to $180^{\circ}$. & $\hat{A}+\hat{B}=180^{\circ}$;\\ 
-& & $\hat{B}+\hat{C}=180^{\circ}$ etc. \\ \hline
-Complementary angles & Angles that add up to $90^{\circ}$. & \\ \hline
+Adjacent angles & Angles that share a vertex and a common side. & $\hat{A}$ and $\hat{D}$;  $\hat{C}$ and $\hat{D}$ etc. \\ 
+& &  \\ \hline
+Vertically opposite angles & Angles opposite each other when two lines intersect. They share a vertex and are equal. & $\hat{A}=\hat{C}$;  $\hat{B}=\hat{D}$\\
+ &  & \\ \hline
+Supplementary angles & Two angles that add up to $180^{\circ}$. & $\hat{A}+\hat{B}=180^{\circ}$; $\hat{B}+\hat{C}=180^{\circ}$ etc.\\ 
+& &  \\ \hline
+Complementary angles & Two angles that add up to $90^{\circ}$. & \\ \hline
 Revolution & The sum of all angles round a point. &  $\hat{A}+\hat{B}+\hat{C}+\hat{D}=360^{\circ}$ \\ \hline
 
 \end{tabular}
@@ -370,12 +370,11 @@ transversal. The properties of the angles formed by these intersecting lines are
 \begin{center}
 %\caption{Properties of angles formed when parallel lines are intersected by a transversal. The example in Figure~\ref{fig:mg:f:partrans} is used as a reference.}
 \label{tab:mg:f:partrans}
-\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}\hline
+\begin{tabular}{|p{2.5cm}|p{3.5cm}|p{3cm}|p{3cm}|}\hline
 \textbf{Name of angle} & \textbf{Definition} & \textbf{Examples} & \textbf{Notes}\\\hline
 Interior angles & Angles that lie inside the parallel lines. & $\hat{a}$, $\hat{b}$, $\hat{c}$ and $\hat{d}$ are interior angles. & Interior means inside. \\ \hline
 Exterior angles & Angles that lie outside the parallel lines. & $\hat{e}$, $\hat{f}$, $\hat{g}$ and $\hat{h}$ are exterior angles. & Exterior means outside. \\ \hline
-Corresponding angles & Equal angles on the same side of the parallel lines and the same side of the transversal. & $\hat{a} = \hat{e}$,  $\hat{b} = \hat{f}$,  $\hat{c} = \hat{g}$ and  $\hat{d} = \hat{h}$ are corresponding angles. &
-\raisebox{-.8\height}{
+Corresponding angles & Angles on the same side of the lines and the same side of the transversal. & $\hat{a}$ and $\hat{e}$,  $\hat{b}$ and $ \hat{f}$,  $\hat{c} $ and $ \hat{g}$, $\hat{d}$ and $ \hat{h}$ are pairs of corresponding angles. & \raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
 % \begin{center}
 %{
@@ -389,11 +388,15 @@ Corresponding angles & Equal angles on the same side of the parallel lines and t
 \psline[linewidth=0.04cm](0.2,0.7684375)(0.2,-0.5315625)
 \psarc[linewidth=0.04](0.2,0.7484375){0.2}{270.0}{0.0}
 \psarc[linewidth=0.04](0.22,0.1084375){0.2}{270.0}{0.0}
-\end{pspicture} }
-%}
+\end{pspicture} 
 % \end{center}
+}
+%}
+
+&& If the lines are parallel, the corresponding angles will be equal. & $\hat{a}=\hat{e}$,  $\hat{b}= \hat{f}$,  $\hat{c} = \hat{g}$,  $\hat{d}= \hat{h}$&
+
 \\\hline
- Co-interior angles & Equal angles that lie inside the parallel lines and on the same side of the transversal. &  $\hat{a} + \hat{d} = 180^{\circ}$, $\hat{b} + \hat{c} = 180^{\circ}$&
+ Co-interior angles & Angles that lie inside the lines and on the same side of the transversal. &  $\hat{a}$ and $\hat{d}$, $\hat{b}$ and $\hat{c}$ are pairs of co-interior angles.&
 % \begin{center}
 \raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
@@ -411,8 +414,10 @@ Corresponding angles & Equal angles on the same side of the parallel lines and t
 \end{pspicture} }
 %}
 % \end{center}
+
+&& If the lines are parallel, the angles are supplementary &$\hat{a} + \hat{d} = 180^{\circ}$, $\hat{b} + \hat{c} = 180^{\circ}$&
 \\\hline
- Alternate interior angles & Equal interior angles that lie inside the parallel line and on opposite sides of the transversal. & $\hat{a} = \hat{c}$, $\hat{b} = \hat{d}$ &
+ Alternate interior angles & Equal interior angles that lie inside the line and on opposite sides of the transversal. & $\hat{a}$ and $\hat{c}$, $\hat{b}$ and $\hat{d}$ are pairs of alternate interior angles. &
 % \begin{center}
 \raisebox{-.8\height}{
 %\scalebox{1} % Change this value to rescale the drawing.
@@ -428,8 +433,9 @@ Corresponding angles & Equal angles on the same side of the parallel lines and t
 % % \usefont{T1}{ptm}{m}{n}
 \rput(0.591875,-0.8){Z shape}
 \end{pspicture} }
-%}
+%
 % \end{center}
+&& If the lines are parallel, the interior angles will be equal. & $\hat{a} = \hat{c}$, $\hat{b} = \hat{d}$ &
 \\\hline
 \end{tabular}
 \end{center}
@@ -454,7 +460,7 @@ then the two lines are parallel.
 \begin{wex}{Finding angles}
 {Find all the unknown angles. Is $EF \parallel CG$? Explain your answer.
  \begin{center}
-   \scalebox{0.8} % Change this value to rescale the drawing.
+   \scalebox{0.9} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-2.57375)(12.675937,2.57375)
 \psline[linewidth=0.01cm,arrowsize=0.2cm 2.0,arrowlength=1.4,arrowinset=0.5]{->}(3.68,0.07124995)(4.32,0.43124995)
@@ -482,7 +488,7 @@ then the two lines are parallel.
 % \usefont{T1}{ptm}{m}{n}
 \rput(5.6659374,-1.8987501){$s$}
 % \usefont{T1}{ptm}{m}{n}
-\rput(9.165937,0.66124994){$y$}
+\rput(9.165937,0.64){$y$}
 % \usefont{T1}{ptm}{m}{n}
 \rput(10.395937,0.88124996){$r$}
 % \usefont{T1}{ptm}{m}{n}
@@ -579,7 +585,7 @@ AB &\parallel CD & \mbox{(given)} \\
 \\
 \item Find all the unknown angles in the figure: \\
 \\
-\scalebox{1.3} {
+\scalebox{1.2} {
 \begin{pspicture}(0,-1.6967187)(5.5376563,1.7167188)
 \psline[linewidth=0.04cm](3.1065626,1.4032813)(5.0465627,-1.4567187)
 \psline[linewidth=0.04cm](0.4665625,1.1832813)(2.4065626,-1.6767187)
@@ -644,7 +650,7 @@ AB &\parallel CD & \mbox{(given)} \\
 \end{pspicture}
 }  \\ 
 \item Find the value of $x$ in the figure: \\
-\scalebox{1.3} 
+\scalebox{1.2} 
 {
 \begin{pspicture}(0,-2.203125)(2.966696,2.203125)
 \psline[linewidth=0.04cm](0.636875,1.8096874)(0.636875,-1.7303125)
@@ -1397,10 +1403,10 @@ Determine if the two triangles are congruent. Use the result to find $\hat{x}$, 
 \begin{pspicture}(0,-1.3577474)(6.92875,1.3860025)
 \pspolygon[linewidth=0.04](2.3292565,0.5577325)(3.6031892,-0.9840508)(0.47911665,-0.9709866)
 \pspolygon[linewidth=0.04](4.0754857,1.0512655)(6.475274,0.509958)(3.6208026,-0.97852844)
-\psline[linewidth=0.04cm](2.1771874,0.44756502)(2.2971876,0.32756504)
-\psline[linewidth=0.04cm](2.2771876,0.32756504)(2.4171875,0.44756502)
-\psline[linewidth=0.04cm](4.0371876,0.92756504)(4.1971874,0.887565)
-\psline[linewidth=0.04cm](4.2171874,1.027565)(4.1771874,0.887565)
+\psline[linewidth=0.04](2.1771874,0.44756502)(2.2971876,0.32756504)
+\psline[linewidth=0.04](2.2771876,0.32756504)(2.4171875,0.44756502)
+\psline[linewidth=0.04](4.0371876,0.92756504)(4.1971874,0.887565)
+\psline[linewidth=0.04](4.2171874,1.027565)(4.1771874,0.887565)
 \rput{-70.70128}(1.3822622,0.34623298){\psarc[linewidth=0.04](0.9351747,-0.8011761){0.32085204}{40.632694}{135.3551}}
 \rput{-295.01416}(1.1273443,-3.5196986){\psarc[linewidth=0.04](3.3268356,-0.87482005){0.35452697}{40.632694}{135.3551}}
 \rput{-70.70128}(3.1669946,3.063622){\psarc[linewidth=0.04](3.7429023,-0.70045644){0.43128082}{67.50178}{152.92268}}
@@ -4144,10 +4150,10 @@ $LMAO$ is a quadrilateral with $LM=LO$ and diagonals that intersect at $S$ such 
 \uput[r](6,3){$E$}
 \uput{0.5}[20](1,0){$b$}
 
-\uput{0.6}[145](5,0){$c$}
+\uput{0.6}[145](5.1,-0.2){$c$}
 \uput{0.5}[200](4,3){$d$}
 \uput{0.6}[325](4,3){$e$}
-\uput{0.7}[255](4,3){$a$}
+\uput{0.7}[255](4.2,3.2){$a$}
 \end{pspicture}
 
 \end{center}
