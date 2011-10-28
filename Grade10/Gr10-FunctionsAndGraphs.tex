@@ -17,19 +17,19 @@ for the day.
 \item Your weight as a function of how much you eat and how much exercise you do, so it differs from person to person.
 \end{itemize}
 
-\Definition{Function}{A function is a mathematical relationship between two variables, where every input variable has one output.}
+\Definition{Function}{A function is a mathematical relationship between two variables, where every input variable has one output variable.}
 \Note{One output can have different input variables.}
 
 
 
 
 \subsection*{Dependent and independent variables}
-In functions, the $x$-value is known as the input or independent variable, because its value can be chosen freely. The calculated $y$-value is known as the output or dependent variable, because its value depends on the chosen input value.\par 
+In functions, the $x$-variable is known as the input or independent variable, because its value can be chosen freely. The calculated $y$-variable is known as the output or dependent variable, because its value depends on the chosen input value.\par 
 
 \subsection*{Domain and range}
 
-The domain of a function is the set of all independent values ($x$-values) for which there is at least one dependent value ($y$-value) value according to that function. 
-\\The range is the set of all dependent values ($y$-values) which can be obtained using at least one independent value ($x$-value).\par 
+The domain of a function is the set of all independent $x$-values for which there is one dependent $y$-value according to that function. 
+\\The range is the set of all dependent $y$-values which can be obtained using an independent $x$-value value.\par 
 
 
 
@@ -39,11 +39,11 @@ Examples:
 \begin{table}[H]
 \begin{tabular}{ |p{5cm} | p{8cm} | }
 \hline
-  $\{x: x \in \mathBB{R}, x > 0\}$ &  The set of all $x$-values such that $x$ is an element of the set of real numbers and is greater than $0$.
+  $\{x: x \in \mathbb{R}, x > 0\}$ &  The set of all $x$-values such that $x$ is an element of the set of real numbers and is greater than $0$.
 \\ \hline
-    $\{y: y \in \mathBB{N}, 3 < y \leq 5\}$ & The set of all $y$-values such that $y$ is an element of the set of natural numbers, is greater than $3$ and less than or equal to $5$. 
+    $\{y: y \in \mathbb{N}, 3 < y \leq 5\}$ & The set of all $y$-values such that $y$ is an element of the set of natural numbers, is greater than $3$ and less than or equal to $5$. 
 \\ \hline
-  $\{z: z \in \mathBB{Z}, z \leq 100\}$ & The set of all $z$-values such that $z$ is an element of the set of integers and is less than or equal to $100$.  
+  $\{z: z \in \mathbb{Z}, z \leq 100\}$ & The set of all $z$-values such that $z$ is an element of the set of integers and is less than or equal to $100$.  
 \\ \hline
 \end{tabular}
 \end{table}
@@ -56,9 +56,9 @@ Examples:
 \hline
   $(4;12)$ &  Round brackets indicate that the number is not included. This interval includes all real numbers greater than but not equal to $4$ and less than but not equal to $12$.
 \\ \hline
- $(- \infty; -1)$ & Round brackets are always used for positive and negative infinity. 
+ $(- \infty; -1)$ & Round brackets are always used for positive and negative infinity. This interval includes all real numbers less than, but not equal to $-1$.
 \\ \hline
- $[1; 13)$ & A square bracket indicates that the number is included. This interval includes all real numbers greater than and equal to $1$ and less than but not equal to $13$.
+ $[1; 13)$ & A square bracket indicates that the number is included. This interval includes all real numbers greater than or equal to $1$ and less than but not equal to $13$.
 \\ \hline
 \end{tabular}
 \end{table}
@@ -66,7 +66,7 @@ Examples:
 \subsection*{Function notation}
 This is a very useful way to express a function. Another way of writing $y=2x+1$ is $f(x) = 2x+1$. We say ``$f$ of $x$ is equal to $2x+1$''. Any letter can be used, e.g. $g(x)$, $h(x)$, $p(x)$ etc. 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item \textbf{Determine the output value}: ``Find the value of the function for $x=-3$'' can be written as`` find $f(-3)$''.
+ \item \textbf{Determine the output value}: ``Find the value of the function for $x=-3$'' can be written as `` find $f(-3)$''.
 \\Replace $x$ with $-3$: $f(-3)=2(-3)+1=-5 \therefore f(-3)=-5$. \\
 This means that when $x=-3$ the value of the function $(y)$ $~=-5$.\\
 \item \textbf{Determine the input value}: ``Find the value of $x$ that will give a $y$-value of $27$'' can be written as ``find $x$ if $f(x)= 27$''. \\
@@ -179,16 +179,17 @@ Functions can be expressed in many different ways for different purposes.
 \item Write the following in interval notation:
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
 % \setcounter{enumi}{6}
- \item $\{p: p \in \mathBB{R},~ p \leq 6\}$
- \item $\{k: k \in \mathBB{R},~ -5 < k < 5\}$
- \item $\{x: x \in \mathBB{R},~ x > \frac{1}{5}\}$
- \item $\{z: z \in \mathBB{R},~ 21 \leq z < 41\}$
+ \item $\{p: p \in \mathbb{R},~ p \leq 6\}$
+ \item $\{k: k \in \mathbb{R},~ -5 < k < 5\}$
+ \item $\{x: x \in \mathbb{R},~ x > \frac{1}{5}\}$
+ \item $\{z: z \in \mathbb{R},~ 21 \leq z < 41\}$
 \end{enumerate}
 \end{enumerate}
 } 
 \end{exercises}
 
-\section{Linear functions of the form $f(x)=mx+c$}
+
+\section[Linear functions of the form $f(x)=mx+c$]{\Huge Linear functions of the form $f(x)=mx+c$}
 
 
 \subsection*{Plotting the graph}       
@@ -215,7 +216,7 @@ Complete the following table for $f(x)=x$ and plot the points on a system of axe
  \item Join the points with a straight line.
 \item Determine the domain and range.
 \item About which line is $f$ symmetrical?
-\item From your graph, determine the value of $f(x) = 4$. \\Confirm your answer graphically.
+\item Using the graph graph, determine the value of $x$ for which $f(x) = 4$. \\Confirm your answer graphically.
 \item Where does the graph cuts the axes?
 \end{enumerate}
 }
@@ -257,9 +258,9 @@ and the following graph:
 \end{center}
 \end{figure}    
 
-\westep{Determine domain and range}
-Domain: $x \in \mathBB{R}$\\
-Range: $f(x) \in \mathBB{R}$
+\westep{Determine the domain and range}
+Domain: $x \in \mathbb{R}$\\
+Range: $f(x) \in \mathbb{R}$
 
  \westep{Determine the value of $f(x)=4$}
 From the graph we see that when $f(x)=4$, $x=4$. \\
@@ -287,7 +288,7 @@ On the same set of axes, plot the following graphs:
     \item $d(x)=x+1$
     \item $e(x)=x+2$
     \end{enumerate}
-Use your results to deduce the effect of different values of $c$ on the resulting graph.\\
+Use your results to deduce the effect of different values of $c$  on the resulting graph.\\
 \\
 
 On the same set of axes, plot the following graphs:
@@ -437,12 +438,12 @@ Only two points are needed to plot a straight line graph. The easiest points to 
 \westep{Examine the standard form of the equation}
 $m>0$. This means that the graph increases as $x$ increases.
 
-\westep{Calculate intercepts}
+\westep{Calculate the intercepts}
 For $y$-intercept, let $x=0$; therefore $g(0)=-1$.This gives the point $(0;-1)$. \\
 
 For $x$-intercept, let $y=0$; therefore $x=1$.This gives the point $(1;0)$. 
 
-\westep{Plot points and draw the graph}
+\westep{Plot the points and draw the graph}
 
 \begin{center}
 \begin{pspicture}(-4,-4)(4,3)
@@ -526,7 +527,7 @@ $c=-3$ which gives the point $(0;-3)$.
 Start at  $(0;-3)$. Move $1$ unit up and $2$ units to the right. This gives the second point $(2;-2)$. \\
 Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives the second point $(-2,-4)$.
 
-\westep{Plot points and draw the graph}
+\westep{Plot the points and draw the graph}
 
 \begin{center}
 \begin{pspicture}(-5,-5)(5,5)
@@ -633,9 +634,11 @@ Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives t
 \end{exercises}
    
 
-\section{Quadratic functions of the form $f(x)=a{x}^{2}+q$}
+
+\section[Quadratic functions of the form $f(x)=a{x}^{2}+q$]{\Huge Quadratic functions of the form $f(x)=a{x}^{2}+q$}
+
 \subsection*{Plotting the graph}         
-Functions of the general form o$y=a{x}^{2}+q$ are called parabolic functions. In the equation $y=a{x}^{2}+q$, $a$ and $q$ are constants and have different effects on the parabola. 
+Functions of the general form $y=a{x}^{2}+q$ are called parabolic functions. In the equation $y=a{x}^{2}+q$, $a$ and $q$ are constants and have different effects on the parabola. 
 
 \begin{wex}{Plotting a quadratic function}
 {
@@ -657,10 +660,10 @@ Complete the following table for $f(x)=x^{2}$ and plot the points on a system of
 \vspace{10pt}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Join the points with a smooth curve.
-\item The domain of $f$ is $x \in \mathBB{R}$. Determine the range.
+\item The domain of $f$ is $x \in \mathbb{R}$. Determine the range.
 \item About which line is $f$ symmetrical?
-\item Determine the value of $f(x) = \frac{25}{4}$. \\Confirm your answer graphically.
-\item  where the graph cut the axes?
+\item Determine the value of $x$ for which $f(x) = \frac{25}{4}$. \\Confirm your answer graphically.
+\item  where does the graph cut the axes?
 \end{enumerate}
 }
 {
@@ -715,8 +718,8 @@ $(-3;9)$, $(-2;4)$, $(-1;1)$, $(0;0)$, $(1;1)$, $(2;4)$, $(3;9)$ \\
 \end{center}
 \end{figure}    
 
-\westep{Determine domain and range}
-Domain: $x \in \mathBB{R}$\\
+\westep{Determine the domain and range}
+Domain: $x \in \mathbb{R}$\\
 From the graph we see that for all values of $x$, $y \geq 0$.\\
 Range: $y \in [0; \infty)$
 
@@ -894,7 +897,7 @@ Use your results to deduce the effect of $a$.
 $q>0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 add}
 \end{pspicture}
 
@@ -902,20 +905,20 @@ $q>0$&
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 add}
 \end{pspicture}
 \\\hline
 $q=0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg}
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp }
 \end{pspicture}
 
@@ -925,14 +928,14 @@ $q<0$
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp neg 1 sub}
 \end{pspicture}
 &
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{yunit=0.25,xunit=0.25}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-4,-4)(4,4)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none, tickes=none](0,0)(-4,-4)(4,4)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-1.6}{1.6}{x 2 exp 1 sub}
 \end{pspicture}
 \\\hline
@@ -1040,8 +1043,8 @@ For example, the $y$-intercept of $g(x)={x}^{2}+2$ is given by setting $x=0$:\pa
 \end{equation*}
 This gives the point $(0;2)$.\par
 
-\textbf{The $x$-intercept}\\
-Every point on the $x$-axis has a $y$-coordinate of $0$, therefore to calculate the $x$-intercept let $y=0$.\\
+\textbf{The $x$-intercepts}\\
+Every point on the $x$-axis has a $y$-coordinate of $0$, therefore to calculate the $x$-intercepts let $y=0$.\\
 
 For example, the $x$-intercepts of $g(x)={x}^{2}+2$ are given by setting $y=0$:\par
 
@@ -1068,7 +1071,7 @@ The axis of symmetry for functions of the form $f(x)=ax^{2}+q$ is the $y$-axis, 
 
 \subsection*{Sketching graphs of the form $f(x)=ax^{2}+q$}
 
-In order to sketch graphs of the form $f(x)=a^{2}+q$, we need to determine four characteristics:
+In order to sketch graphs of the form $f(x)=ax^{2}+q$, we need to determine four characteristics:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item sign of $a$
 \item $y$-intercept
@@ -1128,8 +1131,8 @@ From the standard form of the equation we see that the turning point is $(0;-3)$
 \end{center}
 % \end{figure}
 \\
-Domain: $x \in \mathBB{R}$\\
-Range: $(- \infty; -3]$. \\
+Domain: $x \in \mathbb{R}$\\
+Range: $y \in (- \infty; -3]$. \\
 The axis of symmetry is the line $x=0$.
 }
 
@@ -1146,7 +1149,7 @@ We notice that $a>0$. Therefore the graph of the function is a ``smile'' and has
 For the $y$-intercept, let $x=0$:
 \begin{equation*}
 \begin{array}{ccl}\hfill y& =& 2x^{2}-4\hfill \\
- \hfill y& =& 2(0)^{2}-4\hfill \\
+ \hfill & =& 2(0)^{2}-4\hfill \\
  \hfill & =& -4\hfill 
 \end{array}
 \end{equation*}
@@ -1162,7 +1165,7 @@ For $x$-intercept, let $y=0$:
 This gives the points $(-\sqrt{2};0)$ and $(\sqrt{2};0)$
 
 \westep{Determine the turning point}
-From the standard form of the equation we see that the turning point is $(0;5)$.
+From the standard form of the equation we see that the turning point is $(0;-4)$.
 
 \westep{Plot the points and sketch the graph}
 \begin{center}
@@ -1189,8 +1192,8 @@ From the standard form of the equation we see that the turning point is $(0;5)$.
 
 }
 \end{center}
-Domain: $\{x:x \in \mathBB{R}\}$\\
-Range: $\{y: y \geq -4, y \in \mathBB{R}\}$\\
+Domain: $\{x:x \in \mathbb{R}\}$\\
+Range: $\{y: y \geq -4, y \in \mathbb{R}\}$\\
 The axis of symmetry is the line $x=0$.
 }
 
@@ -1245,7 +1248,7 @@ The following video shows one method of graphing parabolas. Note that in this vi
  
     \item Find the values of $a$ and $p$.
     \item Find the values of $b$ and $q$.
-    \item Find the values of $x$ for which $g{x}\ge h{x}$.
+    \item Find the values of $x$ for which $g(x)\ge h(x)$.
     \item For what values of $x$ is $g$ increasing?
   
 \end{enumerate}
@@ -1256,7 +1259,8 @@ The following video shows one method of graphing parabolas. Note that in this vi
 }
 \end{exercises}   
 
-\section{Hyperbolic functions of the form $f(x)=\frac{a}{x}+q$}
+
+\section[Hyperbolic functions of the form $f(x)=\frac{a}{x}+q$]{\Huge Hyperbolic functions of the form $f(x)=\frac{a}{x}+q$}
 
 
 \subsection*{Plotting the graph}  
@@ -1289,7 +1293,7 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
 \item What happens if $x=0$?
 \item Explain why the graph of $h(x)=\frac{1}{x}$ consists of two separate curves.
 \item What happens to $h(x)$ as the value of $x$ becomes very small or very large?
-\item The domain of $h(x)$ is $x \in \mathBB{R} - \{0\}$. Determine the range.
+\item The domain of $h(x)$ is $x \in \mathbb{R} - \{0\}$. Determine the range.
 \item About which two lines is $h$ symmetrical?
 \end{enumerate}
 }
@@ -1363,9 +1367,9 @@ As the value of $x$ gets larger, the value of $h(x)$ gets closer to, but does no
 
 We also notice that there is a vertical asymptote, the line $x=0$; as $x$ gets closer to $0$, $h(x)$ approaches the $y$-axis asymptotically.
 \westep{Determine the range}
-Domain: $x \in \mathBB{R} - \{0\}$\\
+Domain: $x \in \mathbb{R} - \{0\}$\\
 From the graph, we see that $y$ is defined for all values except $0$.\\
-Range: $y \in \mathBB{R} - \{0\}$ 
+Range: $y \in \mathbb{R} - \{0\}$ 
 \westep{Determine the lines of symmetry}
 The graph of $h(x)$ has two axes of symmetry: the lines $y=x$ and $y=-x$. About these two lines,\ one half of the hyperbola is a mirror image of the other half. 
 }
@@ -1407,7 +1411,7 @@ $q>0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm, arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
 \psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
@@ -1417,7 +1421,7 @@ $q>0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{5}{x -1 exp 2 add}
 \psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
@@ -1427,7 +1431,7 @@ $q=0$ &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrowsize=0.07cm,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrowsize=0.07cm,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.3}{-0.25}{x -1 exp neg }
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.3}{x -1 exp neg }
 % \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
@@ -1436,7 +1440,7 @@ $q=0$ &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.4}{-0.25}{x -1 exp }
 \psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.4}{x -1 exp }
 % \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
@@ -1448,7 +1452,7 @@ $q<0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
 \psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-2}{4}{2 neg}
@@ -1457,7 +1461,7 @@ $q<0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
 \psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
 \psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2 neg}
@@ -1504,16 +1508,16 @@ We see that $y=\frac{a}{x}+q$ can be re-written as:
  \hfill x& =& \dfrac{a}{y-q}\hfill 
 \end{array}
 \end{equation*}
-This shows that the function is undefined at $y=q$. \\
+This shows that the function is undefined only at $y=q$. \\
 Therefore the range is $\{f(x):f(x)\in (-\infty ;q)\cup (q;\infty )\}$.\par 
 
 \begin{wex}{Domain and range of a hyperbola}
 {If $g(x)=\frac{2}{x}+2$, determine the domain and range of the function.}
 {
 \westep{Determine the domain}
-The domain is $\{x:x\in \mathbb{R},x\ne 0\}$ because $g(x)$ is undefined at $x=0$.
+The domain is $\{x:x\in \mathbb{R},~x\ne 0\}$ because $g(x)$ is undefined only at $x=0$.
 \westep{Determine the range}
-We see that $g(x)$ is also undefined at $y=2$. Therefore the range is $\{g(x):g(x)\in (-\infty ;2)\cup (2;\infty )\}$.
+We see that $g(x)$ is undefined only at $y=2$. Therefore the range is $\{g(x):\in (-\infty ;2)\cup (2;\infty )\}$.
 }
 \end{wex}
 
@@ -1539,7 +1543,7 @@ For example, the $x$-intercept of $g(x)=\frac{2}{x}+2$ is given by setting $y=0$
 \hfill y& =& \dfrac{a}{x}+q\hfill \vspace{4pt}\\
  \hfill 0& =& \dfrac{a}{x}+q\hfill \vspace{4pt} \\
  \hfill \dfrac{a}{x}& =& -q\hfill \\
- \hfill a& =& -q(x)\hfill \vspace{4pt}\\
+ \hfill a& =& -qx\hfill \vspace{4pt}\\
  \hfill x& =& \dfrac{a}{-q}\hfill 
 \end{array}
 \end{equation*}
@@ -1574,7 +1578,7 @@ We notice that $a>0$ therefore the graph of $g(x)$ lies in the first and third q
 \westep{Calculate the intercepts}
 For the $y$-intercept, let $x=0$:
 \begin{equation*}
-\begin{array}{ccl}
+\begin{array}{rcl}
   g(x) = & \dfrac{2}{x} + 2  \vspace{4pt} \\
   g(0) = & \dfrac{2}{0} +2  
  \end{array}
@@ -1583,7 +1587,7 @@ This is undefined, therefore there is no $y$-intercept.\vspace{10pt} \\
 
 For the $x$-intercept, let $y=0$:
 \begin{equation*}
- \begin{array}{ccl}
+ \begin{array}{rcl}
   g(x) = &  \dfrac{2}{x} + 2 \vspace{4pt}\\
  0 = & \dfrac{2}{x} +2\vspace{4pt} \\
 \dfrac{2}{x} = & -2 \\
@@ -1599,7 +1603,7 @@ The horizontal asymptote is the line $y=2$. The vertical asymptote is the line $
 
 \westep{Sketch the graph}
 \setcounter{subfigure}{0}
-\begin{figure}[H]
+% \begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-5,-3)(5,6)
 %\psgrid
@@ -1616,9 +1620,10 @@ The horizontal asymptote is the line $y=2$. The vertical asymptote is the line $
 % \caption{Graph of $g(x)=\frac{2}{x} + 2$.}
 % \label{fig:mf:g:hyperbolasketchexample}
 \end{center}
-\end{figure} 
-Domain: $x \in \mathBB{R} - \{0\}$\\
-Range: $y \in \mathBB{R} - \{2\}$
+% \end{figure} 
+\\
+Domain: $x \in \mathbb{R} - \{0\}$\\
+Range: $y \in \mathbb{R} - \{2\}$
 }
 \end{wex}
 \pagebreak
@@ -1649,7 +1654,7 @@ For the $x$-intercept, let $y=0$:
  \end{array}
 \end{equation*}
 
-This gives the point $\Big(\dfrac{4}{7};0\Big)$.
+This gives the point $\left(\frac{4}{7};0\right)$.
 
 
 \westep{Determine the asymptotes}
@@ -1678,8 +1683,8 @@ The horizontal asymptote is the line $y=7$. The vertical asymptote is the line $
 \end{center}
 
 
-Domain: $x \in \mathBB{R} - \{0\}$\\
-Range: $y \in \mathBB{R} - \{7\}$\\
+Domain: $x \in \mathbb{R} - \{0\}$\\
+Range: $y \in \mathbb{R} - \{7\}$\\
 Axis of symmetry: $y=x+7$ and $y=-x+7$
 }
 \end{wex}
@@ -1711,7 +1716,7 @@ Axis of symmetry: $y=x+7$ and $y=-x+7$
 }
 \end{exercises}
 
-\section{Exponential functions of the form $f(x)=ab^{x}+q$}
+\section[Exponential functions of the form $f(x)=ab^{x}+q$]{\Huge Exponential functions of the form $f(x)=ab^{x}+q$}
 
 \subsection*{Plotting the graph}         
 Functions of the general form $f(x)=ab^{x}+q$ are called exponential functions. In the equation $a$ and $q$ are constants and have different effects on the function.
@@ -1751,7 +1756,7 @@ $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
 \end{enumerate}
 
 Complete the following table for each of the functions and draw the graphs on the same system of axes:
-$F(x) =(\frac{1}{2})^{x}$, $G(x) =(3)^{-x}$, $H(x) =(\frac{1}{5})^{x}$, 
+$F(x) =(\frac{1}{2})^{x}$, $G(x) =(\frac{1}{3}^{x}$, $H(x) =(\frac{1}{5})^{x}$, 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -1841,7 +1846,7 @@ $H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item We notice that all graphs pass through the point $(0;1)$. Any number with exponent $0$ is equal to $1$.
 \item The graphs do not cut the $x$-axis because $0^{0}$ is undefined.
-\item Domain: $x \in \mathBB{R}$\\
+\item Domain: $x \in \mathbb{R}$\\
 Range: $(0; \infty)$
 \item As $x$ increases, $h(x)$ increases.
 \item $f(x)=2^{x}$ increases at the slowest rate because it has the smallest base.
@@ -1870,7 +1875,7 @@ Range: $(0; \infty)$
 \item The $y$-intercept is the point $(0; 1)$ for all the graphs. For any real number $z$, $z^{0}=1$.
 \item $F(x)$ is the reflection of $f(x)$ about the $y$-axis. 
 \item $G(x)$ is the reflection of $g(x)$ about the $y$-axis. 
-\item  Domain: $x \in \mathBB{R}$\\
+\item  Domain: $x \in \mathbb{R}$\\
 Range: $(0; \infty)$
 \item True: the greater the value of $k ~(k>1)$, the steeper the graph of $y=(\frac{1}{k})^{x}$.
 \item The equation of the horizontal asymptote is $y=0$, the $x$-axis.
@@ -1990,7 +1995,7 @@ $q<0$&
 \\\hline
 \end{tabular}
 \end{center}
-\end{table}5
+\end{table}
 
 \begin{table}[H]
 \begin{center}
@@ -2093,7 +2098,7 @@ The domain of $g(x)=5.2^{x}+1$ is $\{x:x\in \mathbb{R}\}$.
  \hfill 5.2^{x}+1& > & 1\hfill 
 \end{array}
 \end{equation*}
-Therefore the range is $\{g(x):g(x) > 1)\}$.\par 
+Therefore the range is $\{g(x):g(x) > 1\}$.\par 
 }
  
 \end{wex}
@@ -2197,7 +2202,7 @@ The horizontal asymptote is the line $y=2$.
 \end{center}
 % \end{figure}    
 \\
-Domain: $\{x \in \mathBB{R}\}$\\
+Domain: $\{x: x \in \mathbb{R}\}$\\
 Range: $\{g(x): g(x) >2\}$\\
 
 Note that there is no axis of symmetry for exponential functions.
@@ -2260,7 +2265,7 @@ This gives the point $(1; 0)$
 \end{center}
 % \end{figure}    
 \\
-Domain: $\{x \in \mathBB{R}\}$\\
+Domain: $\{x:x \in \mathbb{R}\}$\\
 Range: $\{g(x): g(x) <6\}$\\
 
 }
@@ -2279,7 +2284,7 @@ Range: $\{g(x): g(x) <6\}$\\
 \item Which graph is represented by the equation $y=2^{-x}$ ? Explain your answer.
 \item Solve the equation $2^{x}=(\frac{1}{2})^{x}$ graphically and check that your answer is correct by using substitution.
 \end{enumerate}
-\item The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $A(0; 1)$ and $B(2; 9)$ is on $f$.
+\item The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $A(0; 1)$ and passes through the point $B(2; 9)$.
 
 \begin{center}
 \begin{pspicture}(-3,-1)(4,4)
@@ -2664,8 +2669,8 @@ For $a>0$:\par
 \end{array}
 \end{equation*}
 For all values of $\theta $, $f(\theta )$ is always between $-a+q$ and $a+q$. \par
-Therefore for $a>0$, the range of $f(\theta )=a~sin~\theta +q$ is $\{f(\theta ):f(\theta )\in [-a+q,a+q]\}$.\par 
-Similarly, for $a<0$, the range of $f(\theta )=a~sin~\theta +q$ is $\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$.\par 
+Therefore for $a>0$, the range of $f(\theta )=a~sin~\theta +q$ is $\{f(\theta ):f(\theta )\in [-a+q,~a+q]\}$.\par 
+Similarly, for $a<0$, the range of $f(\theta )=a~sin~\theta +q$ is $\{f(\theta ):f(\theta )\in [a+q,~{-a}+q]\}$.\par 
 
 \Tip{The easiest way to find the range is simply to look for the peak and the trough of the graph.}
 
@@ -2768,7 +2773,7 @@ Minimum turning point: $(270^{\circ};1)$
 {Plotting a cosine graph}
 {
 \begin{equation*}
- y=f(\theta)cos~ \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+ y=f(\theta)=cos~ \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
 \end{equation*}
 Use your calculator to complete the following table. \\
 Use graph paper, choose an appropriate scale and plot the values of $\theta $ on the $x$-axis $cos~\theta $ on the $y$-axis. (Round answers to $2$ decimal place). 
@@ -2886,7 +2891,7 @@ Domain: $[~0^{\circ}; 360^{\circ}]$\\
 Range: $[-1;1]$\\
 $x$-intercepts: $(90^{\circ}; 0)$, $(270^{\circ}; 0)$\\
 $y$-intercept: $(0;1)$\\
-Maximum turning point:$(0^{\circ};1)$, $(360^{\circ};1)$\\
+Maximum turning point: $(0^{\circ};1)$, $(360^{\circ};1)$\\
 Minimum turning point: $(180^{\circ};-1)$
 }
 \end{wex}
@@ -3173,7 +3178,7 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 Domain: $[~0^{\circ}; 360^{\circ}]$\\
 Range: $[1;5]$\\
 $x$-intercepts: none\\
-$y$-intercept: $(0;5)$\\
+$y$-intercept: $(0^{\circ};5)$\\
 Maximum turning point: $(0^{\circ};5)$, $(360^{\circ};5)$\\
 Minimum turning point: $(180^{\circ};1)$
 
@@ -3346,7 +3351,7 @@ So we know that for values of $\theta $ for which $sin~\theta =0$, we must also 
 \vspace{8pt}\\
 
 Asympotes: the lines $\theta = 90^{\circ}$ and $\theta = 270^{\circ}$ \\
-Period:$180^{\circ}$ \\
+Period: $180^{\circ}$ \\
 Domain: $[~0^{\circ}; 360^{\circ}]$\\
 Range: $(-\infty;\infty)$\\
 $x$-intercepts: $(0^{\circ}; 0)$, $(180^{\circ}; 0)$, $(360^{\circ}; 0)$\\
@@ -3571,7 +3576,7 @@ The value of $a$ affects the steepness of each of the branches of the graph. The
 \subsection*{Discovering the characteristics}
 \subsection*{Domain and range}
 
-From the graph we see that $tan~\theta$ is undefined at $\theta=90^{\circ}$ and $\theta=270^{\circ}$ therefore the domain is $\{\theta: 0 ^{\circ}\leq\theta\leq360^{\circ} - \{90^{\circ}; 270^{\circ}\}\}$.\\
+From the graph we see that $tan~\theta$ is undefined at $\theta=90^{\circ}$ and $\theta=270^{\circ}$ therefore the domain is $\{\theta: 0 ^{\circ}\leq\theta\leq360^{\circ\}\} - \{90^{\circ}; 270^{\circ}\}$.\\
 The range of $f(\theta)$ is $\{f(\theta): f(\theta) \in (-\infty; \infty)\}$.
 
 \subsection*{Period}
@@ -3688,7 +3693,7 @@ We see that $a>1$ so the branches of the curve will be steeper. We also see that
 \rput(4.5,0.2){$\theta$}
 \end{pspicture}
 \end{center}\\
-Domain: $\{\theta:0^{\circ}\leq\theta\leq360^{\circ}-\{90^{\circ};270^{\circ}\}\}$\\
+Domain: $\{\theta:0^{\circ}\leq\theta\leq360^{\circ}\}-\{90^{\circ};270^{\circ}\}$\\
 Range: $(-\infty;\infty)$
 }
 \end{wex}
@@ -3784,7 +3789,7 @@ The $y$-intercept is the point $(0;1)$
  \end{array}
 
 \end{equation*}
-\westep{Use other given point to determine $a$}
+\westep{Use the other given point to determine $a$}
 Substitute point $(-1;0)$ into the equation:
 \begin{equation*}
  \begin{array}{ccl}
@@ -3824,7 +3829,7 @@ $a=-1$ and $q=1$, the equation of the parabola is $y=-x^{2} +1$.
 {
 \westep{Examine the sketch}
 The two curves of the hyperbola lie in the second and fourth quadrant, therefore $a<0$. We also see that the graph has been shifted vertically upwards, therefore $q>0$. 
-\westep{Substitute given points into the equation and solve}
+\westep{Substitute the given points into the equation and solve}
 Substitute first point:
 \begin{equation*}
  \begin{array}{ccl}
@@ -3842,7 +3847,7 @@ Substitute second point:
  \end{array}
 \end{equation*}
 
-\westep{Solve equations simultaneously using substitution}
+\westep{Solve the equations simultaneously using substitution}
 \begin{equation*}
  \begin{array}{ccl}
   2&=&-a+q\\
@@ -3891,7 +3896,7 @@ $a=-1$ and $q=1$, the equation of the parabola is $y=\dfrac{-1}{x}+1$.
 \end{center}
 }
 {
-\westep{Calculate intercepts}
+\westep{Calculate the intercepts}
 For the parabola, to calculate the $y$-intercept, let $x=0$:
 \begin{equation*}
  \begin{array}{rcl}
@@ -3933,7 +3938,7 @@ x&=&2\\
 \end{equation*}
 This gives the point $B(2;0)$.
 
-\westep{Calculate point of intersection $E$}
+\westep{Calculate the point of intersection $E$}
 At $E$ the two  graphs intersect so we can equate the two equations:
 \begin{equation*}
  \begin{array}{rcl}
@@ -3983,7 +3988,7 @@ Distance $CD$ is $6$ units.
 \westep{Examine the sketch}
 From the sketch we see that the graph is a sine graph that has been shifted vertically upwards. The general form of the equation is $y=a~sin~\theta +q$.
 
-\westep{Substitute given points into equation and solve}
+\westep{Substitute the given points into equation and solve}
 At $N$, $\theta = 210^{\circ}$ and $y=0$:
 \begin{equation*}
  \begin{array}{ccl}.
@@ -4001,7 +4006,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
  &=& a+q \\
  \end{array}
 \end{equation*}
-\westep{Solve equations simultaneously using substitution}
+\westep{Solve the equations simultaneously using substitution}
 \begin{equation*}
  \begin{array}{ccl}
   \dfrac{3}{2}&=&a+\dfrac{a}{2} \vspace{3pt}\\
@@ -4011,7 +4016,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
 \therefore q&=&\dfrac{1}{2}
  \end{array}
 \end{equation*}
-\westep{Write final answer}
+\westep{Write the final answer}
 $y=sin~\theta+\dfrac{1}{2}$
 }
 
@@ -4034,7 +4039,7 @@ $y=sin~\theta+\dfrac{1}{2}$
     \item Linear functions of the form $y=ax+q$.
     \item Parabolic functions of the form $y=a{x}^{2}+q$. 
     \item Hyperbolic functions of the form $y=\frac{a}{x}+q$. 
-    \item Exponential functions of the form $y=a{b}^{(x)}+q$. 
+    \item Exponential functions of the form $y=a{b}^{x}+q$. 
 \item Trigonometric functions of the form \\$y=a~sin~\theta+q$ \\$y=a~cos~\theta+q$\\ $y=a~tan~\theta+q$ 
     \end{itemize}
 \end{itemize}
