@@ -183,16 +183,16 @@
 
 
 \newcommand{\chapterstartvideo}[1]{
-See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingmaths.co.za)
+See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingmaths.co.za)\par
 }
 
 \newcommand{\simulation}[2]{
-See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingmaths.co.za)
+See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingmaths.co.za)\par
 }
 
 
 \newcommand{\mindsetvid}[2]{
-See video about: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #2 at www.everythingmaths.co.za)
+See video about: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #2 at www.everythingmaths.co.za)\par
 }
 
 
@@ -808,10 +808,17 @@ linecolor=red%
       {\begin{tikzpicture}[remember picture, overlay]
         \shade[left color=white, right color=gray] (0,0) rectangle
           (1.2\paperwidth,4cm);
-        \node[anchor=west,text centered, yshift=2cm, xshift=0]
-              {\phantom{xxx}\color{black} #1  };
-        \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
-              {\color{white}\chapterlabel};
+        \node[anchor=west,text centered, yshift=2.5cm, xshift=1cm]
+              {
+              \begin{minipage}{1.2\textwidth}
+              \phantom{xxx}\color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=west,text centered, yshift=2.0cm, xshift=0.85\paperwidth]
+              {\begin{minipage}{\textwidth}
+              \color{white}\chapterlabel
+              \end{minipage}
+              };
       \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -820,28 +827,32 @@ linecolor=red%
 
 
 
-
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
-   \normalfont\sffamily\fontsize{24}\normalfont\itshape}
+   \normalfont\sffamily\fontsize{22}\normalfont\itshape}
   {\gdef\sectionlabel{\thesection}}{0pt}
 {
 \begin{tikzpicture}[remember picture,overlay]
    \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray, xshift=-\marginparwidth] (0,0) rectangle
-          (1.5\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
-              {\color{black} #1 };
-        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~M\arabic{shortcodecounter}};
+          (1.5\paperwidth,2.0cm);
+        \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
+              {
+              \begin{minipage}{0.85\textwidth}
+              \color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
 \addtocounter{shortcodecounter}{1}
 }
-\titlespacing*{\section}{1cm}{0cm}{2cm}
+\titlespacing*{\section}{1cm}{1cm}{2cm}
+
 
 
 
@@ -854,11 +865,14 @@ linecolor=red%
    \node[anchor=west, yshift=-1.5cm, xshift=-1cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
-          (0.915\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
-              {\color{black} #1 };
-        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~M\arabic{shortcodecounter}};
+          (0.915\paperwidth,1.5cm);
+        \node[anchor=west,text centered ,yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth]
+              { \begin{minipage}{0.85\textwidth}
+                \color{black} #1
+                \end{minipage}
+                };
+        \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -877,7 +891,7 @@ linecolor=red%
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {   \color{black} Chapter \chapterlabel | Summary  };
+              {  \phantom{xxx} \color{black} Chapter \chapterlabel | Summary  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
