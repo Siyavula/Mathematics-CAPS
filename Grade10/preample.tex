@@ -856,7 +856,7 @@ linecolor=red%
 
 
 
-\newcommand{\summary}{
+\newcommand{\summary}[1]{
 \vspace{6\baselineskip} \par
 {\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
@@ -874,6 +874,9 @@ linecolor=red%
 \par
 \vspace{\baselineskip}
 \addcontentsline{toc}{section}{Summary}
+
+See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.eps}} Presentation: #1 at www.everythingmaths.co.za)
+
 }
 
 
