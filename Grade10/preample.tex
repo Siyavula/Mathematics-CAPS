@@ -195,6 +195,11 @@
 }
 }
 
+\newcommand{\practiceinfo}[0]{
+\par\vspace*{2em}
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.eps}} More practise 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.eps}} video solutions 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.eps}} or help at www.everythingmaths.co.za}
 
 
 
@@ -327,7 +332,7 @@ linecolor=red%
 \noindent
 \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
-\leftskip40pt
+\leftskip50pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{242,242,242}
@@ -348,12 +353,11 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 
 
-\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt]
-\vspace*{8pt}
+\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
 {\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
-\vspace*{2pt}
+\vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
@@ -361,7 +365,7 @@ linecolor=red%
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
-\noindent
+\par\noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
@@ -454,12 +458,12 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 
 %insert the more practise at www.maths10.
- More practise, help or complete solutions at www.everythingmaths.co.za 
 }
 
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
+\addcontentsline{toc}{section}{End of chapter exercises}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -472,7 +476,6 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-More practise, help or complete solutions at www.everythingmaths.co.za 
 }
 
 \newenvironment{f_experiment}[1]
@@ -523,6 +526,10 @@ More practise, help or complete solutions at www.everythingmaths.co.za
 
 \newenvironment{activity}[1]
 {
+
+\setlength{\saveparindentlength}{\parindent}
+\setlength{\parindent}{0pt}
+
 \ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
@@ -539,7 +546,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
        \end{tikzpicture}
     };
     
-% now the gray bar to the end of the paragraph
+% now the white bar to the end of the paragraph
     \node[anchor=west, xshift=45pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
@@ -816,7 +823,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
         \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
               {\color{black} #1 };
         \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.eps}}~M\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -839,7 +846,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
         \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
               {\color{black} #1 };
         \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.eps}}~M\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -849,7 +856,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
 
 
 
-\newcommand{\summary}{
+\newcommand{\summary}[1]{
 \vspace{6\baselineskip} \par
 {\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
@@ -866,6 +873,10 @@ More practise, help or complete solutions at www.everythingmaths.co.za
 }
 \par
 \vspace{\baselineskip}
+\addcontentsline{toc}{section}{Summary}
+
+See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.eps}} Presentation: #1 at www.everythingmaths.co.za)
+
 }
 
 
