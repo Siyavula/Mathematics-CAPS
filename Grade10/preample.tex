@@ -327,7 +327,7 @@ linecolor=red%
 \noindent
 \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
-\leftskip40pt
+\leftskip50pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{242,242,242}
@@ -348,12 +348,11 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 
 
-\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt]
-\vspace*{8pt}
+\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
 {\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
-\vspace*{2pt}
+\vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{QUESTION}}} \vspace*{4pt} 
 \hrule
@@ -361,7 +360,7 @@ linecolor=red%
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
-\noindent
+\par\noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
@@ -460,6 +459,7 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
+\addcontentsline{toc}{section}{End of chapter exercises}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -866,6 +866,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
 }
 \par
 \vspace{\baselineskip}
+\addcontentsline{toc}{section}{Summary}
 }
 
 
