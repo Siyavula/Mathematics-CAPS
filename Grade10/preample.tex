@@ -195,6 +195,11 @@
 }
 }
 
+\newcommand{\practiceinfo}[0]{
+\par\vspace*{2em}
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.eps}} More practise 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.eps}} video solutions 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.eps}} or help at www.everythingmaths.co.za}
 
 
 
@@ -453,7 +458,6 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 
 %insert the more practise at www.maths10.
- More practise, help or complete solutions at www.everythingmaths.co.za 
 }
 
 \newenvironment{eocexercises}[1]
@@ -472,7 +476,6 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-More practise, help or complete solutions at www.everythingmaths.co.za 
 }
 
 \newenvironment{f_experiment}[1]
@@ -523,6 +526,10 @@ More practise, help or complete solutions at www.everythingmaths.co.za
 
 \newenvironment{activity}[1]
 {
+
+\setlength{\saveparindentlength}{\parindent}
+\setlength{\parindent}{0pt}
+
 \ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
@@ -539,7 +546,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
        \end{tikzpicture}
     };
     
-% now the gray bar to the end of the paragraph
+% now the white bar to the end of the paragraph
     \node[anchor=west, xshift=45pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
@@ -816,7 +823,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
         \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
               {\color{black} #1 };
         \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.eps}}~M\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -839,7 +846,7 @@ More practise, help or complete solutions at www.everythingmaths.co.za
         \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth]
               {\color{black} #1 };
         \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~M\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.eps}}~M\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
