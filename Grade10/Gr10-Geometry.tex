@@ -255,7 +255,7 @@ The following table summarises the special angle pairs that result from two inte
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|p{4cm}|l|} \hline
-Term & Property & Example\\ \hline
+\textbf{Term} & \textbf{Property} & \textbf{Example}\\ \hline
 Acute angle & $0^{\circ} < \mbox{angle} < 90^{\circ}$ & $\hat{A}$; $\hat{C}$ \\ \hline
 Right angle & Angle $= 90^{\circ}$ &  \\ \hline
 Obtuse angle & $90^{\circ} < \mbox{angle} < 180^{\circ}$ & $\hat{B}$; $\hat{D}$ \\ \hline
@@ -456,7 +456,7 @@ then the two lines are parallel.
 \end{figure} 
 
 
-\pagebreak %MANUAL PGBREAK TO FORCE WEX BELOW TO SPLIT (still doesnt split properly. Damn mdframed!!!)
+% \pagebreak %MANUAL PGBREAK TO FORCE WEX BELOW TO SPLIT (still doesnt split properly. Damn mdframed!!!)
 \begin{wex}{Finding angles}
 {Find all the unknown angles. Is $EF \parallel CG$? Explain your answer.
  \begin{center}
@@ -541,7 +541,7 @@ AB &\parallel CD & \mbox{(given)} \\
 \westep{Determine whether $EF \parallel CG$}
 \begin{equation*}
 \begin{array}{rl}
-\mbox{If }EF \parallel CG \mbox{ then } \hat{p} &= \hat{s} \mbox{ (corresp. $\angle$'s)} \\
+\mbox{If }EF \parallel CG \mbox{ then } \hat{p} \mbox{ will be equal to corresponding angle } \hat{s}  \\
 \mbox{But }\hat{p} &= 20^{\circ} \\
 \mbox{ and } \hat{s}&= 30^{\circ} \\
 \mbox{Therefore }EF \mbox{ is not parallel to } CG.&
@@ -650,42 +650,44 @@ AB &\parallel CD & \mbox{(given)} \\
 \end{pspicture}
 }  \\ 
 \item Find the value of $x$ in the figure: \\
-\scalebox{1.2} 
+
+\scalebox{1.2} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-2.203125)(2.966696,2.203125)
-\psline[linewidth=0.04cm](0.636875,1.8096874)(0.636875,-1.7303125)
-\psline[linewidth=0.04cm](1.636875,1.8096874)(1.636875,-1.7303125)
-\psline[linewidth=0.04cm](0.396875,1.0096875)(2.72,-1.116875)
-\psline[linewidth=0.04cm](1.876875,0.18968745)(0.476875,-1.6903126)
+\begin{pspicture}(0,-2.203125)(4.2173834,2.203125)
+\psline[linewidth=0.04cm](0.84234375,1.8096874)(0.84234375,-1.7303125)
+\psline[linewidth=0.04cm](1.8423437,1.8096874)(1.8423437,-1.7303125)
+\psline[linewidth=0.04cm](0.38,0.9631251)(3.36,-0.7768749)
+\psline[linewidth=0.04cm](3.94,0.6631251)(0.12,-0.4368749)
 \usefont{T1}{ptm}{m}{n}
-\rput(0.63859373,1.9996876){$A$}
+\rput(0.81859374,1.9996876){$A$}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.59796876,-2.0003126){$B$}
+\rput(0.77796876,-2.0003126){$B$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.6039063,-2.0003126){$C$}
+\rput(1.7839063,-2.0003126){$C$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.6103125,1.9996876){$D$}
+\rput(1.7903125,1.9996876){$D$}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.29453126,0.67968744){$X$}
+\rput(0.29453126,0.73968744){$X$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.4804688,-0.7010938){$Y$}
+\rput(1.6604688,-0.2610938){$Y$}
 \usefont{T1}{ptm}{m}{n}
-\rput(0.41609374,-1.3803126){$Z$}
-\psline[linewidth=0.04cm](0.616875,1.4496874)(0.736875,1.6896874)
-\psline[linewidth=0.04cm](0.616875,1.5096875)(0.536875,1.6896874)
-\psline[linewidth=0.04cm](1.636875,1.5496875)(1.736875,1.7296875)
-\psline[linewidth=0.04cm](1.636875,1.5496875)(1.536875,1.7096874)
+\rput(0.63609374,-0.5403126){$Z$}
+\psline[linewidth=0.04cm](1.8423437,1.5096875)(1.9423437,1.6896875)
+\psline[linewidth=0.04cm](1.8423437,1.5096875)(1.7423438,1.6696874)
 \usefont{T1}{ptm}{m}{n}
-\rput(0.8385938,0.33468747){\scriptsize $4x$}
+\rput(1.1,-0.0){\scriptsize $60^{\circ}$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.8557812,-0.10531255){\scriptsize $x$}
+\rput(0.9571874,0.45468745){\scriptsize $x$}
 \usefont{T1}{ptm}{m}{n}
-\rput{-40.134434}(1.2350872,1.2198397){\rput(2.2690625,-1.0780938){\scriptsize $x+20^\circ$}}
-\rput{-178.50352}(3.4745831,-0.6899131){\psarc[linewidth=0.04](1.7327864,-0.36764556){0.17893833}{61.938473}{168.11142}}
+\rput{-0.80275255}(0.0,0.046365827){\rput(2.9,-0.006999445){\scriptsize $x-20^\circ$}}
+\rput{-122.44731}(3.35288,1.925009){\psarc[linewidth=0.04](2.205064,0.041774992){0.20109077}{59.366795}{168.11142}}
+\psline[linewidth=0.04cm](0.84234375,1.5296875)(0.9423437,1.7096875)
+\psline[linewidth=0.04cm](0.84234375,1.5296875)(0.7423437,1.6896874)
 \end{pspicture} 
+
 } \\
 \item Determine whether the pairs of lines in the following figures are parallel:
-\begin{enumerate}[itemsep=10pt, label=\textbf{\alph*}. ] 
+\begin{enumerate}[itemsep=10pt, label=\textbf{(\alph)} ] 
             \item 
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -929,7 +931,7 @@ Acute &
 \pspolygon[linewidth=0.04](0.306875,0.158125)(1.666875,0.918125)(1.786875,-0.921875)
 \end{pspicture} 
 }
-\end{center} & All three interior angles are less than $90^{\circ}$. \\ \hline
+\end{center} & Each of the  three interior angles is less than $90^{\circ}$. \\ \hline
 Obtuse & 
 \begin{center}
 \scalebox{0.7} % Change this value to rescale the drawing.
@@ -945,7 +947,7 @@ Obtuse &
 \end{pspicture} 
 }
 \end{center}
- & One interior angle is greater than $180^{\circ}$. \\ \hline
+ & One interior angle is greater than $90^{\circ}$. \\ \hline
 Right-angled &
 \begin{center}
 \scalebox{0.7}{
@@ -1098,7 +1100,8 @@ to get three pieces of paper.
 
  \subsection*{Congruency}
 
-Two triangles are congruent if one can be placed exactly over the other. This means that the triangles have equal corresponding angles and sides. To determine whether two triangles are congruent, it is not necessary to check every side and every angle. The following table describes the requirements for congruency:\par 
+Two triangles are congruent if one can fit exactly over the other. This means that the triangles have equal corresponding angles and sides. To determine whether two triangles are congruent, it is not necessary to check every side and every angle. The following table describes the requirements for congruency:\par 
+% \Note{(Note: if two sides and a non-included angle of a triangle are equal to two sides and a non-included angle of another triangle, the triangles are \textbf{not} necessarily congruent).}
 \begin{table}[H]
 \begin{tabular}{|m{3.1cm}|m{5cm}|m{6cm}|}\hline
 \textbf{Rule} & \textbf{Description} & \textbf{Diagram} \\ \hline
@@ -1178,7 +1181,7 @@ another triangle, then the two triangles are congruent. &
 }
 \newline $\triangle PQR \equiv \triangle STU$ \end{center} \\ \hline
 SAS \newline (Side, angle, side) & If two sides and the included angle of a triangle are equal to the
-corresponding two sides and included angle of another triangle, then the two triangles
+corresponding two sides and \textbf{included} angle of another triangle, then the two triangles
 are congruent. & \begin{center}
 \hspace{15pt}
 \scalebox{0.5} % Change this value to rescale the drawing.
