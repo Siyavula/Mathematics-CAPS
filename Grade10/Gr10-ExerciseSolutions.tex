@@ -541,7 +541,37 @@
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
 
 \item % $x+2y=1$, $\frac{x}{3} + \frac{y}{2} = 1$ NEEDS GRAPHIC
+\begin{pspicture}(-3,-2)(4,2)
+% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+\psaxes[dx=0.5,Dx=1,arrows=<->](0,0)(-3,-5)(6,3)
+\psplot[xunit=0.5,plotstyle=curve,arrows=<->]{-2}{10.5}{x 0.5 neg mul 0.5 add}
+\psplot[xunit=0.5,plotstyle=curve,arrows=<->]{-1}{10.5}{x 0.67 neg mul 2 add}
+\uput[l](2.75,1.5){$y=-\frac{2}{3}x+2$}
+\uput[l](3,-2.5){$y=-\frac{1}{2}x+\frac{1}{2}$}
+\uput[l](0.1,-0.2){$0$}
+\uput[r](6,0.1){$x$}
+\uput[r](0,3){$y$}
+\psdot(4.5,-4)
+\psline[linestyle=dotted](4.5,-4)(4.5,0)
+\psline[linestyle=dotted](0,-4)(4.5,-4)
+% \psline[arrows=<->](-4,1)(4,1)
+\end{pspicture}
 \item %$5= x+y$, $-x = y-2$
+\begin{pspicture}(-3,-2)(4,2)
+% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+\psaxes[dx=1,Dx=1,dy=1, Dy=1,arrows=<->](0,0)(-3,-5)(8,6)
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{6}{x 1 neg mul 5 add}
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{6}{x 2 sub}
+\uput[l](2.7,4.4){$y=-x+5$}
+\uput[l](2.7, -1){$y=x-2$}
+\uput[l](0.1,-0.2){$0$}
+\uput[r](8,0.1){$x$}
+\uput[r](0,6){$y$}
+\psdot(3.5,1.5)
+\psline[linestyle=dotted](3.5,1.5)(3.5,0)
+\psline[linestyle=dotted](0,1.5)(3.5,1.5)
+% \psline[arrows=<->](-4,1)(4,1)
+\end{pspicture}
 \item %$3x - 2y = 0$, $x - 4y + 1 = 0$
 
 \end{enumerate}
