@@ -355,7 +355,6 @@ linecolor=red%
 \setlength{\floatsep}{2mm}
 \begin{quotation}
 \noindent
-\vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{20pt}
@@ -449,7 +448,6 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
@@ -467,8 +465,6 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-
-%insert the more practise at www.maths10.
 }
 
 \newenvironment{eocexercises}[1]
@@ -809,6 +805,7 @@ linecolor=red%
         \node[anchor=west,text centered, yshift=2.5cm, xshift=1cm]
               {
               \begin{minipage}{1.2\textwidth}
+              \raggedright
               \phantom{xxx}\color{black} #1
               \end{minipage}
               };
@@ -839,6 +836,7 @@ linecolor=red%
         \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
               {
               \begin{minipage}{0.85\textwidth}
+              \raggedright
               \color{black} #1
               \end{minipage}
               };
@@ -906,7 +904,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
- \par  \vspace*{3\baselineskip}
+ \par  \vspace*{2\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
@@ -931,7 +929,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
 
 }
 \par
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 }
 
 
