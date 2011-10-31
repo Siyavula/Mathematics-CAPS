@@ -2354,14 +2354,14 @@ Use graph paper, choose an appropriate scale and plot the values of $\theta $ on
 \setcounter{subfigure}{0}
 
 \begin{center}
-\begin{pspicture}(0,-1)(4,1)
+\begin{pspicture}(0,-1)(5,1)
 \psset{xunit=2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
 \psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
 \psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
 \psdots(30,0.5)(60,0.87)(90,1)(120,0.87)(150,0.5)(180,0)(210,-0.5)(240,-0.87)(270,-1)(300,-0.87)(330,-0.5)(360,0)
-\rput(380, 0.2){$\theta$}
+\rput(410, 0.2){$\theta$ (in degrees)}
 \rput(10, 1.2){$y$}
 \end{pspicture}
 \end{center}    
@@ -2675,7 +2675,7 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
      {0}{360}{x sin 2 mul 3 add}  
 \psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
      {0}{360}{3}  
-\rput(370, 0.2){$\theta$}
+\rput(410, 0.2){$\theta$ (in degrees)}
 \rput(0.4, 6.2){$f(\theta)$}
 \rput(380,3.4){$f(\theta)=2\sin\theta+3$}
 \psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
@@ -2805,7 +2805,7 @@ answers to $2$ decimal places.)
 \psplot[plotpoints=300, linewidth=1pt]
      {0}{360}{x cos}  
 \psdots(0,1)(30,0.87)(60,0.5)(90,0)(120,-0.5)(150,-0.87)(180,-1)(210,-0.87)(240,-0.5)(270,0)(300,0.5)(330,0.87)(360,1)
-\rput(380, 0.2){$\theta$}
+\rput(410, 0.2){$\theta$ (in degrees)}
 \rput(10, 1.8){$y$}
 \end{pspicture}
 \end{center}    
@@ -3079,7 +3079,7 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
      {0}{360}{x cos 2 mul 3 add}  
 \psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
      {0}{360}{3}  
-\rput(370, 0.2){$\theta$}
+\rput(410, 0.2){$\theta$ (in degrees)}
 \rput(0.4, 6.2){$f(\theta)$}
 \rput(380,5.4){$f(\theta)=2\cos\theta+3$}
 \psdots(0,5)(30,4.73)(60,4)(90,3)(120,2)(150,1.27)(180,1)(210,1.27)(240,2)(270,3)(300,4)(330,4.73)(360,5)
@@ -3111,7 +3111,7 @@ Minimum turning point: $(180^{\circ};1)$
 
 \rput(400, 1.2){$y=\cos\theta$}
 \rput(405, 0.2){$y=\sin\theta$}
-\rput(380, -0.2){$\theta$}
+\rput(410, -0.2){$\theta$ (in degrees)}
 \rput(10, 1.8){$y$}
 \end{pspicture}
 \end{center}    
@@ -3207,13 +3207,13 @@ Use graph paper, choose an appropriate scale and plot the values with $\theta $ 
 \footnotesize$0,58$&
 
 \footnotesize$1.73$&
-\footnotesize --&
+\footnotesize undf&
 \footnotesize$-1.73$&
 \footnotesize$-0.58$&
 \footnotesize$0$&
 \footnotesize$0,58$&
 \footnotesize$1.73$&
-\footnotesize--&
+\footnotesize undf&
 \footnotesize$-1.73$&
 \footnotesize$-0,58$&
 \footnotesize$0$&
@@ -3239,7 +3239,7 @@ Use graph paper, choose an appropriate scale and plot the values with $\theta $ 
  \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
 
 \rput(.2,3.3){$f(\theta)$}
-\rput(4.3,0.3){$\theta$}
+\rput(5.3,0.3){$\theta$ (in degrees)}
 \end{pspicture}
 \end{center}
 
@@ -3597,7 +3597,7 @@ We see that $a>1$ so the branches of the curve will be steeper. We also see that
 % \rput(5.1,-.3){$\theta$\ Degrees}
  \psdots(0,0.5)(0.33,1.08)(0.66,2.23)(1.33,-1.23)(1.66,-0.08)(2,0.5)(2.33,1.08)(2.66,2.23)(3.33,-1.23)(3.66,-0.08)(4,0.5)
 \rput(.2,3.3){$y$}
-\rput(4.5,0.2){$\theta$}
+\rput(5.5,0.2){$\theta$ (in degrees)}
 \end{pspicture}
 \end{center}\\
 Domain: $[~0^{\circ}; 360^{\circ}] - \{90^{\circ};270^{\circ}\}$ \\
@@ -3625,7 +3625,7 @@ Range: $\mathbb{R}$
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
 \psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
-\uput[d](4.7,0){$x$}
+\uput[d](5.4,0.1){$x$ (in degrees)}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
 \end{pspicture}
@@ -3636,7 +3636,7 @@ Range: $\mathbb{R}$
 \psset{yunit=0.25}
 \psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
 \psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
-\uput[d](4.7,0){$x$}
+\uput[d](5.4,0.1){$x$ (in degrees)}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
 \end{pspicture}
@@ -3860,7 +3860,7 @@ Distance $CD$ is $6$ units.
 \psset{xunit=0.01111}
 \psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-30,-1)(370,2)
 \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 0.5 add}  
-\rput(380, 0.2){$\theta$}
+\rput(410, 0.2){$\theta$ (in degrees)}
 \rput(0.4, 2.2){$y$}
 \psdots(210,0)(90,1.5)(0,0.5)
 \rput(120,1.8){$M(90^{\circ}; \frac{3}{2})$}
@@ -4091,9 +4091,9 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
                 \rput(-30,6){$6$}
                 \rput(-30,1){$1$}
                 \rput(-30,-4){$-4$}
-                \psdots(180,0)(360,0)
-                \rput(160,-0.5){$180^{\circ}$}
-                \rput(340,-0.5){$360^{\circ}$}
+                \psdots(195,0)(350,0)
+                \rput(160,-0.8){$180^{\circ}$}
+                \rput(340,-0.8){$360^{\circ}$}
                 \rput(-20,-0.4){$0$}
               \end{pspicture}
             }
@@ -4120,7 +4120,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(0,-2.5)(4,2)
-                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=x, ticks=x]{<->}(0,0)(-1,-2)(4.5,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-2)(4.5,2)
                 \rput(-1,3){\textbf{(g)}}
                 \psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,2)
                 \psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,2)
@@ -4131,6 +4131,8 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
                 \rput(0.2,2.3){$y$}
                 \rput(4.5,0.2){$x$}
                 \rput(-0.5,-1){$-2$}
+  \rput(2,-0.4){$180^{\circ}$}
+                \rput(4,-0.4){$360^{\circ}$}
                 \psdots(1.5,-0.5)
                 \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
               \end{pspicture}
@@ -4144,7 +4146,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
     \end{center}
 
   \item $y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:
-
+\begin{center}
     \scalebox{0.9}{
       \begin{pspicture}(-5,-5)(5,1)
         %\psgrid
@@ -4165,6 +4167,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
         \psline[linewidth=0.01](-1,0.2)(-0.8,0.2)
         \psline[linewidth=0.01](-0.8,0.2)(-0.8,0)
     \end{pspicture}}
+\end{center}
     \\
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
       % \setcounter{enumi}{39}
@@ -4176,7 +4179,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
     \end{enumerate}
     
   \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and $C(1;-3)$ are given. Answer the questions that follow:
-    
+  \begin{center}  
     \scalebox{1}{
       \begin{pspicture}(-5,-5)(5,1)
         %\psgrid
@@ -4198,6 +4201,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
         \psline[linewidth=0.02](1.2,0.4)(1.2,0)
         
     \end{pspicture}}
+\end{center}
     \\
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
       % \setcounter{enumi}{44}
