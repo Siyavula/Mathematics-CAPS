@@ -1,32 +1,18 @@
-         \chapter{Analytical geometry}
-%     \setcounter{figure}{1}
-%     \setcounter{subfigure}{1}
-%     \label{71522cd1c95e0cbedb9f300409036b1b}
-%          \section{ Cartesian plane \& Distance between two points}
-%     \nopagebreak
-%             \label{m39107} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10107 )} \par 
-%     
-%     
-%     
-%     
-%   
-%       \label{m39107*uid36}
-%             \subsection{ Introduction}
-%             \nopagebreak
-%             
-        \label{m39107*id66769}Analytical geometry, also called co-ordinate geometry and earlier referred to as Cartesian geometry, is the study of geometry using the principles of algebra, and the Cartesian co-ordinate system. It is concerned with defining geometrical shapes in a numerical way, and extracting numerical information from that representation. Some consider that the introduction of analytic geometry was the beginning of modern mathematics.\par 
-      \label{m39107*eip-448}
-            \section{Drawing figures on the Cartesian plane}
-            \nopagebreak
-            \label{m39107*eip-728}If we are given the co-ordinates of the vertices of a figure then we can draw that figure on the Cartesian plane. For example take quadrilateral $ABCD$ with co-ordinates: $A(1,1)$, $B(1,3)$, $C(3,3)$ and $D(1,3)$ and represent it on the Cartesian plane. This is shown in Figure~\ref{fig:cartesianplane}.   
-\par \label{m39107*eip-199}
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\chapter{Analitiese Meetkunde}
+Analitiese meetkunde, ook bekend as koördinaatmeetkunde en vroëer bekend as Cartesiese meetkunde, is die studie van meetkunde op grond van die beginsels van algebra en die Cartesiese koördinaatstelsel. Dit is gemoeid met die definisie van meetkundige figure op ’n numeriese wyse en onttrek numeriese inlligting uit die voorstelling. Sommige beskou die ontwikkeling van analitiese meetkunde as die begin van moderne wiskunde.\par 
+
+\section{Drawing figures on the Cartesian plane}
+As ons die koördinate van die hoekpunte van ’n figuur het, dan kan ons die figuur op die Cartesiese vlak teken.
+Byvoorbeeld, neem die vierhoek $ABCD$ met koördinate $A(1;1)$, $B(3;1)$, $C(3;3)$ en $D(1;3)$ en stel dit voor op die
+Cartesiese vlak. Dit word getoon in Figuur 15.1.\par 
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(0,0)(4,4)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(0,0)(4,4)
 \psaxes[linewidth=2pt,labels=none,ticks=none]{->}(0,0)(0,0)(5,5)
 \pspolygon[linewidth=.1cm](1,1)(1,3)(3,3)(3,1)(1,1)
 \uput[dl](1,1){\Large{$A$}}
@@ -37,199 +23,269 @@
 \uput[d](0,5.7){\Large{$y$}}
 \end{pspicture}
 }
-\caption{Drawing a figure on the Cartesian plane}
-    \end{center}
+% \caption{Drawing a figure on the Cartesian plane}
+\end{center}
 \label{fig:cartesianplane}
- \end{figure}       
-\par \label{m39107*eip-645}To represent any figure on the Cartesian plane, you place a dot at each given co-ordinate and then connect these points with straight lines. One point to note is in naming a figure. In the above example, we called the quadrilateral $ABCD$. This tells us that we move from point $A$, to point $B$, to point $C$, to point $D$ and then back to point $A$ again. So when you are asked to draw a figure on the Cartesian plane, you will follow this naming scheme. If you had the same points, and called it, for example, $ACBD$ you would not get a quadrilateral but a pair of triangles instead. This is important. Sometimes you may be given only some of the points and you will then be required to find the other points using the work covered in the rest of this chapter. \par \label{m39107*uid37}
-            \section{ Distance between Two Points}
-            \nopagebreak
-            \label{m39107*id66786}One of the simplest things that can be done with analytical geometry is to calculate the distance between two points. \Definition{Distance}{Distance is a number that describes how far apart two points are.} For example, point $P$ has co-ordinates $(2,1)$ and point $Q$ has co-ordinates $(-2,-2)$. How far apart are points $P$ and $Q$? In figure~\ref{fig:trianglePQR}, this means how long is the dashed line?\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\end{figure} 
+
+The order of the letters for naming a figure is important. Dit dui vir ons aan dat ons beweeg van punt: $A$ na punt $B$, $B$ na punt $C$, $C$ na punt $D$ na punt $D$  en dan weer terug na punt  $A$. It would also be correct to write quadrilateral $CBAD$ or $BADC$ but it is better to follow the convention of writing letters in alphabetical order.     
+
+\section{Afstand tussen Twee Punte}
+\Definition{Point}{A point is an ordered pair of numbers written as $(x;y)$.}
+A point is a simple geometric object having location as its only property. 
+\Definition{Distance}{Afstand is a getal wat beskryf hoe ver twee punte van mekaar is.}
+
+\begin{activity}{Afstand tussen twee punte}
+Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee. 
+\begin{itemize}
+ \item Can we assume that $\hat{R}=90^{\circ}$? If so, why?
+\item Gebruik die Stelling van Pythagoras $\triangle PQR$ om die lente van $PQ$ te vind.
+\end{itemize}
+
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=2pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=.1cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=.1cm](-2,-2)(2,1)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-3,-3)(3,3)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
 \uput[l](-2,-1.8){\Large{$Q$}}
-\uput[dl](-1.5,-2){\normalsize{$(-2,-2)$}}
+\uput[dl](-1.5,-2){\Large{$(-2;-2)$}}
 \uput[dr](2,-2){\Large{$R$}}
 \uput[u](2.3,0.5){\Large{$P$}}
-\uput[ur](2,1){\normalsize{$(2,1)$}}
-\uput[l](4,0){\Large{$x$}}
-\uput[d](0,4){\Large{$y$}}
+\uput[ur](2,1){\Large{$(2;1)$}}
+\uput[l](3.5,0){\Large{$x$}}
+\uput[d](0,3.5){\Large{$y$}}
+\uput[dr](2.5,-2){\Large{$(2;-2)$}}
 \end{pspicture}
 }
-\caption{Triangle $PQR$}
-    \end{center}
+% \caption{Triangle $PQR$}
+\end{center}
 \label{fig:trianglePQR}
- \end{figure}        
-        \label{m39107*id66883}In figure~\ref{fig:trianglePQR}, it can be seen that the length of the line $PR$ is 3 units and the length of the line $QR$ is four units. However, $\Delta PQR$, has a right angle at $R$. Therefore, the length of the side $PQ$ can be obtained by using the Theorem of Pythagoras:\par 
-        \label{m39107*id66950}\nopagebreak\noindent{}          
-    \begin{eqnarray*}
-     P{Q}^{2} & = & P{R}^{2}+Q{R}^{2} \\ \
-\therefore P{Q}^{2} & = & {3}^{2}+{4}^{2} \\ 
-\therefore PQ & = & \sqrt{{3}^{2}+{4}^{2}}=5  
-      \end{eqnarray*}
-        \label{m39107*id67090}The length of $PQ$ is the distance between the points $P$ and $Q$.\par 
-        \label{m39107*id67126}In order to generalise the idea, assume $A$ is any point with co-ordinates $({x}_{1};{y}_{1})$ and $B$ is any other point with co-ordinates $({x}_{2};{y}_{2})$.\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\end{figure} 
+\end{activity}       
+% SOLUTION FOR TEACHERS' GUIDE BELOW:
+% In figure~\ref{fig:trianglePQR}, it can be seen that the length of the line $PR$ is 3 units and the length of the line $QR$ is four units. However, $\Delta PQR$, has a right angle at $R$. Therefore, the length of the side $PQ$ can be obtained by using the Theorem of Pythagoras:\par 
+%       
+% \begin{eqnarray*}
+% P{Q}^{2} & = & P{R}^{2}+Q{R}^{2} \\ \
+% \therefore P{Q}^{2} & = & {3}^{2}+{4}^{2} \\ 
+% \therefore PQ & = & \sqrt{{3}^{2}+{4}^{2}}=5  
+% \end{eqnarray*}
+% The length of $PQ$ is the distance between the points $P$ and $Q$.\par 
+Die formule vir die berekening van die afstand tussen twee punte word as volg afgelei. Die afstand tussen twee
+punte $A~({x}_{1};{y}_{1})$ en $B~({x}_{2};{y}_{2})$, gebruik ons die Stelling van Pythagoras:\par 
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=.1cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=.1cm](-2,-2)(2,1)
+\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
 \uput[l](-2,-1.8){\Large{$A$}}
-\uput[dl](-1,-2){\Large{$(x_{1},y_{1})$}}
-\uput[dr](2,-2){\Large{$C$}}
+\uput[dl](-1,-2){\Large{$(x_{1};y_{1})$}}
+\uput[dr](2,-1.8){\Large{$C$}}
+\uput[ur](2.5,-2.5){\Large{$(x_{2};y_{1})$}}
 \uput[u](2.3,0.5){\Large{$B$}}
-\uput[ur](1.8,1){\Large{$(x_{2},y_{2})$}}
+\uput[ur](1.8,1){\Large{$(x_{2};y_{2})$}}
 \uput[l](4,0){\Large{$x$}}
 \uput[d](0,4){\Large{$y$}}
+\uput[d](-0.2,-0.05){\Large{$0$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure}       
-        \label{m39107*id67214}The formula for calculating the distance between two points is derived as follows. The distance between the points $A$ and $B$ is the length of the line $AB$. According to the Theorem of Pythagoras, the length of $AB$ is given by:\par 
-        \label{m39107*id67261}\nopagebreak\noindent{}
-          
-    \begin{equation*}
-    AB=\sqrt{A{C}^{2}+B{C}^{2}}
-      \end{equation*}
-        \label{m39107*id67300}However,\par 
-        \label{m39107*id67306}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
-     BC & = & {y}_{2}-{y}_{1} \\ AC & = & {x}_{2}-{x}_{1}
-      \end{eqnarray*}
-        \label{m39107*id67375}Therefore,\par 
-        \label{m39107*id67379}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*} 
-AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\ 
-& =& \sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}} 
-\end{eqnarray*}
-        \label{m39107*id67499}Therefore, for any two points, $\left({x}_{1};{y}_{1}\right)$ and $\left({x}_{2};{y}_{2}\right)$, the formula is:\par 
-       \Identity{Distance}{$\mathrm{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}$}
-        \label{m39107*id67630}Using the formula, distance between the points $P$ and $Q$ with co-ordinates (2;1) and (-2;-2) is then found as follows. Let the co-ordinates of point $P$ be $\left({x}_{1};{y}_{1}\right)$ and the co-ordinates of point $Q$ be $\left({x}_{2};{y}_{2}\right)$. Then the distance is:\par 
-        \label{m39107*id67728}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
-\mathsf{Distance} & = & \sqrt{{({x}_{1}-{x}_{2})}^{2} + {({y}_{1}-{y}_{2})}^{2}} \\ 
-& =& \sqrt{{(2 - (-2))}^{2} + {(1 - (-2))}^{2}} \\ 
-& =& \sqrt{{(2 + 2)}^{2} + {(1+2)}^{2}} \\ 
-& =& \sqrt{16 + 9} \\
-& =& \sqrt{25} \\ 
-& =& 5
-      \end{eqnarray*}
-        \label{m39107*eip-130}The following video provides a summary of the distance formula.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39107*uid99}
-    \textnormal{Khan academy video on distance formula}\vspace{.1in} \nopagebreak
-  \label{m39107*yt-media}\label{m39107*yt-video}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10108 )}
-      \vspace{2pt}
-    \vspace{.1in}
- \end{figure}       \par 
-      \label{m39107**end}
+\end{center}
+\end{figure}       
+}
+\Tip{Always draw a sketch - it helps with your calculation and makes it easier to check if your answer is correct.}
+\begin{align*}
+AB^2&=AC^{2}+BC^{2}\\
+\therefore AB&=\sqrt{AC^{2}+BC^{2}}
+\end{align*}
+}ons sien
 
-\begin{wex}{Distance formula I}{Find the distance between $P(2;1)$ and $Q(-2;-2)$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $P$ be $(x_1;y_1)$ and the co-ordinates of $Q$ be $(x_2;y_2)$.
-\begin{equation*}
- x_1 = 2 \hskip2em y_1 = 1 \hskip2em x_2 = -2 \hskip2em y_2 = -2
-\end{equation*}
-\westep{Write down the formula you are using:}
-\begin{equation*}
- d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
-\end{equation*}
-\westep{Substitute known variables and solve:}
-\begin{equation*}
- \begin{array}{cl}
-  d_{\mathrm{PQ}} &= \sqrt{(2 - (-2))^2 + (1 - (-2))^2}\\
-  & = \sqrt{(4)^2 + (3)^2}\\
-  &= \sqrt{16 + 9}\\
-  &= \sqrt{25}\\
-  &= 5
- \end{array}
-\end{equation*}
-\westep{Explain your answer:}
-The distance between $P$ and $Q$ is $5$ units.
+
+\begin{eqnarray*}
+AC & = & {x}_{2}-{x}_{1}\\
+BC & = & {y}_{2}-{y}_{1} 
+\end{eqnarray*}
+Dan is,
+\begin{eqnarray*} 
+AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\ 
+& =& \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}} 
+\end{eqnarray*}
+Gevolglik, vir enige twee punte, $({x}_{1};{y}_{1})$ en $({x}_{2};{y}_{2})$, is die formule:\par 
+\Identity{Afstand}{$\mbox{Afstand } d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$}
+\Note{Note that $(x_1 - x_2)^2 = (x_2 - x_1)^2$, but remember to be consistent or you will get the wrong answer.\\
+$AB \neq \\ \sqrt{(x_1 - x_2)^2 + (y_2 - 2_1)^2}$.}
+
+ 
+
+Die volgende Khan Akademie video oor die afstandformule.
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*uid99}
+\textnormal{Khan academy video on distance formula}\vspace{.1in} \nopagebreak
+\label{m39107*yt-media}\label{m39107*yt-video}
+\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10108 )}
 \vspace{2pt}
-    \vspace{.1in}
+\vspace{.1in}
+\end{figure}       
+
+\begin{wex}{Deur die gebruik van die afstand formule}{Vind die afstand tussen $S(-2;-5)$ en $Q(7;-2)$.}{
+\westep{Draw a sketch}
+% \begin{figure}
+ \begin{center}
+
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.096719)(8.579062,4.1367188)
+\rput(3.0,1.9032812){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-6)(5,2)}
+\psline[linewidth=0.028222222cm](1.8,-2.0367188)(6.3,0.9632813)
+\psline[linewidth=0.028222222,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.8,-2.0367188)(6.3,-2.0367188)(6.3,0.9632813)
+\psline[linewidth=0.028222222](6.06,-2.0367188)(6.06,-1.7832812)(6.3,-1.7832812)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.7045312,1.6632812){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3545313,3.9332812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(8.204532,2.1432812){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.744531,1.1932813){$T(7,-2)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2,-2.3367188){$S(-2,-5)$}
+\psdots[dotsize=0.127](6.3,0.9632813)
+\psdots[dotsize=0.127](1.8,-2.0367188)
+\end{pspicture} 
+}
+ \end{center}
+% \end{figure}
+
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Gestel die koördinate van punt $S$ is $(x_1;y_1)$ en die koördinate van punt $T$ is $(x_2;y_2)$.
+\begin{equation*}
+x_1 = -2 \hskip2em y_1 = -5 \hskip2em x_2 = -7 \hskip2em y_2 = -2
+\end{equation*}
+\westep{Write down the distance formula}
+\begin{equation*}
+d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
+\end{equation*}
+\westep{Substitute values}
+\begin{equation*}
+\begin{array}{cl}
+d_{\mbox{ST}} &= \sqrt{(2 - (-7))^2 + (-5- (-2))^2}\\
+& = \sqrt{(-9)^2 + (-3)^2}\\
+&= \sqrt{81 + 9}\\
+&= \sqrt{90}\\
+&= 9,5
+\end{array}
+\end{equation*}
+\westep{Write the final answer}
+Die afstand tussen $S$ en $T$ is $9,5$ units.
+\vspace{2pt}
+\vspace{.1in}
 }
 \end{wex}
 
-\begin{wex}{Distance formula II}{Given $RS = 13$, $R(3;9)$ $S(8;y)$, solve for $y$.}{
+\begin{wex}{Using the distance formula}{Gegee $RS = 13$, $R(3;9)$ $S(8;y)$, Vind $y$.}{
+\westep{Draw a sketch}
+% \usepackage{pst-plot} % For axes
+ \begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.6167188)(7.8990626,3.6567187)
+\rput(2.0,-1.6167188){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-2,-2)(5,5)}
+\psline[linewidth=0.028222222,linestyle=dashed,dash=0.17638889cm 0.10583334cm](4.68,2.4567187)(3.1393335,-0.2630555)(4.64,-2.5032814)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7445313,-1.8767188){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.3545313,3.4532812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.3,-1.4567188){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.264531,2.7132812){$S_2(8;y_2)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.0845313,-2.7567186){$S_1(8;y_1)$}
+\psdots[dotsize=0.12](3.14,-0.22328125)
+\psdots[dotsize=0.12](4.68,2.4367187)
+\psdots[dotsize=0.12](4.66,-2.4632812)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.6245313,-0.20671874){$R(3;9)$}
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](4.68,3.4967186)(4.66,-3.5032814)
+\end{pspicture} 
+}
+\end{center}
 \westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $R$ be $(x_1;y_1)$ and the co-ordinates of $S$ be $(x_2;y_2)$.
+Gestel die koördinate van $R$ is $(x_1;y_1)$ en die koördinate van punt $S$ is $(x_2;y_2)$.
 \begin{equation*}
- x_1 = 3 \hskip2em y_1 = 9 \hskip2em x_2 = 8 \hskip2em y_2 = y
+x_1 = 3 \hskip2em y_1 = 9 \hskip2em x_2 = 8 \hskip2em y_2 = y
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the distance formula}
 \begin{equation*}
- d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
+d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
 \end{equation*}
-\westep{Substitute known variables and solve:}
+\westep{Substitute values and solve for $y$}
 \begin{equation*}
- \begin{array}{cl}
-  13 &= \sqrt{(3 - 8)^2 + (9 - y)^2}\\
-  13^2 & = (-5)^2 + (81 - 18y + y^2)\\
-  0 &= y^2 - 18y - 63\\
-  &= (y+3) (y-21)\\
- \end{array}
- \therefore y = -3 \hskip1em \mathrm{or} \hskip1em y = 21
+\begin{array}{cl}
+13 &= \sqrt{(3 - 8)^2 + (9 - y)^2}\\
+13^2 & = (-5)^2 + (81 - 18y + y^2)\\
+0 &= y^2 - 18y - 63\\
+&= (y+3) (y-21)\\
+\therefore y &= -3 \mbox{ or } y = 21
+\end{array}
+
 \end{equation*}
-\westep{Explain your answer:}
+\westep{Write the final answer}
 $S$ is $(8;-3)$ or $(8;21)$
 \vspace{2pt}
-    \vspace{.1in}
+\vspace{.1in}
 }
 \end{wex}
-\begin{exercises}{Distance formula}{
- \begin{enumerate}[label=\textbf{\arabic*}.]
-  \item Find the length of $AB$ if:
-  \begin{enumerate}
-   \item $A(2;7)$ and $B(-3;5)$.
-   \item $A(-3;5)$ and $B(-9;1)$.
-   \item $A(x;y)$ and $B(x+4;y-1)$.
-  \end{enumerate}
-  
-  \item The length of $CD=5$. Find the missing co-ordinate if:
-  \begin{enumerate}
-   \item $C(6;-2)$ and $D(x;2)$.
-   \item $C(4;y)$ and $D(1;-1)$.
-  \end{enumerate}
- \end{enumerate}
 
- Find the answers with the shortcodes:}
+\begin{exercises}{}{
+\begin{enumerate}[label=\textbf{\arabic*}.]
+\item Vind die lente $AB$ as:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $A(2;7)$ en $B(-3;5)$.
+\item $A(-3;5)$ en $B(-9;1)$.
+\item $A(x;y)$ en $B(x+4;y-1)$.
+\end{enumerate}
+
+\item Die lengte van $CD=5$. Find the missing coordinate if:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $C(6;-2)$ en $D(x;2)$.
+\item $C(4;y)$ en $D(1;-1)$.
+\end{enumerate}
+\end{enumerate}
+
+Find the answers with the shortcodes:}
 \end{exercises}
 
 %          \section{ Calculation of the gradient line}
 %     \nopagebreak
-%             \label{m39108} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10109 )} \par 
+%%%             \label{m39108} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10109 )} \par 
 %     
 %     
 %     
-      \label{m39108*uid40}
-            \section{ Gradient of a line}
-            \nopagebreak
-\label{m39108*id67971}The gradient of a line describes how steep the line is. In the figure, line $PT$ is the steepest. Line $PS$ is less steep than $PT$ but is steeper than $PR$, and line $PR$ is steeper than $PQ$.\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+
+\section{Berekening van die Gradiënt van ’n Lyn}
+\Definition{Die gradiënt van die lyn }{ die verhouding tussen die vertikale verandering in posisie en die
+horisontale verandering in posisie.}
+Die gradiënt $m$  van ’n lyn beskryf hoe steil die lyn is, hoe groot die helling van die lyn is.In die figuur hieronder is lyn $OQ$ se helling die grootste, en die lyn $OT$ is die steilste.
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-1,-1)(4,4)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-1,-1)(4,4)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-1,-1)(4,4)
 \psline[linewidth=.05cm](0,0)(1,3.5)
 \psline[linewidth=.05cm](0,0)(3,3.5)
@@ -240,25 +296,26 @@ $S$ is $(8;-3)$ or $(8;21)$
 \uput[ur](3,3.5){\Large{$S$}}
 \uput[ur](3,2){\Large{$R$}}
 \uput[ur](3,0.4){\Large{$Q$}}
-\uput[dl](0,0){\Large{$P$}}
+\uput[dl](0,0){\Large{$O$}}
 % \uput[ur](1.8,1){\Large{$(x_{1},y_{1})$}}
 \uput[l](4.8,0){\Large{$x$}}
 \uput[d](0,4.8){\Large{$y$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure}        
-        \Definition{Gradient}{The gradient of a line is defined as the ratio of the vertical distance to the horizontal distance.} This can be understood by looking at the line as the hypotenuse of a right-angled triangle. Then the gradient is the ratio of the length of the vertical side of the triangle to the horizontal side of the triangle. Consider a line between a point $A$ with co-ordinates $\left({x}_{1};{y}_{1}\right)$ and a point $B$ with co-ordinates $\left({x}_{2};{y}_{2}\right)$.\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\end{center}
+\end{figure}        
+To derive the formula for gradient,Dink aan ’n lyn met koördinate $A~(x_1;y_1)$ en $B~(x_2;y_2)$ met skuinssy $AB$, as shown in the diagram below.  
+Die gradiënt is die verhouding van die lengte van die vertikale sy van die driehoek $y$-values of points $A$ and $B$. The length of the horizontal side of the triangle is the difference in $x$-values of points $A$ and $B$. 
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
 \psline(-2,-2)(2,-2)(2,1)
-\psline[linestyle=solid,linewidth=.1cm](-2,-2)(2,1)
+\psline[linestyle=solid,linewidth=0.04cm](-2,-2)(2,1)
 \uput[l](-2,-1.8){\Large{$A$}}
 \uput[dl](-1,-2){\Large{$(x_{1},y_{1})$}}
 \uput[dr](2,-2){\Large{$C$}}
@@ -266,85 +323,221 @@ $S$ is $(8;-3)$ or $(8;21)$
 \uput[ur](1.8,1){\Large{$(x_{2},y_{2})$}}
 \uput[l](4,0){\Large{$x$}}
 \uput[d](0,4){\Large{$y$}}
+\uput[dl](0,0){\Large{$0$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure}  
-From this we can obtain the following for the gradient of a line:
-\Identity{Gradient}{$\mathsf{gradient} = \frac{y_{2} - y_{1}}{x_{2} - x_{1}}$}
-\Tip{We can also use $m$ for the gradient of a line}
-\begin{wex}{Gradient I}{Find the gradient of the line between the points E$(2;5)$ and F$(-3;9)$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of E be $(x_1;y_1)$ and the co-ordinates of F be $(x_2;y_2)$.
+\end{center}
+\end{figure}  
+Therefore, gradient is determined using the following equation:
+
+\Identity{Gradiënt}{Gradiënt $m= \dfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$ or $= \dfrac{y_{1} - y_{2}}{x_{1} - x_{2}}$
+ \\ [5pt] Remember to be consistent: $m \neq \dfrac{y_{1} - y_{2}}{x_{2} - x_{1}}$}
+\Tip{Remember: we can also use $m$ for the gradient of a line}
+\begin{wex}{Gradient between two points}{Find the gradient of the line between points E$(2;5)$ and F$(-3;9)$.}{
+\westep{Draw a sketch}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.6267188)(6.6990623,3.6667187)
+\rput(3.0,-1.6267188){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-2)(3,5)}
+\psdots[dotsize=0.12](4.82,0.69328123)
+\psdots[dotsize=0.12](1.06,2.8732812)
+\psline[linewidth=0.04cm](4.84,0.67328125)(1.08,2.8532813)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.324531,-1.3767188){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.3045313,3.4632812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.094531,0.5232813){$E~(2;5)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2945312,3.0832813){$F~(-3;9)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.7445312,-1.8367188){$0$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Let the coordinates of $E$ be $(x_1;y_1)$ and the coordinates of $F$ be $(x_2;y_2)$.
 \begin{equation*}
- x_1 = 2 \hskip2em y_1 = 5 \hskip2em x_2 = -3 \hskip2em y_2 = 9
+x_1 = 2 \hskip2em y_1 = 5 \hskip2em x_2 = -3 \hskip2em y_2 = 9
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the formula for gradient}
 \begin{equation*}
- m = \frac{y_2 - y_1}{x_2 - x_1}
+m = \dfrac{y_2 - y_1}{x_2 - x_1}
 \end{equation*}
-\westep{Substitute known variables and solve:}
+\westep{Substitute known values}
 \begin{equation*}
- \begin{array}{cl}
-  m_{\mathrm{EF}} &= \frac{9 - 5}{-3 - 2}\\
-  &= \frac{4}{-5}
- \end{array}
+\begin{array}{cl}
+m_{EF} &= \dfrac{9 - 5}{-3 - 2}\\[5pt]
+&= \dfrac{4}{-5}
+\end{array}
 \end{equation*}
-\westep{Explain your answer:}
-The gradient of $EF = \frac{4}{-5}$
-\vspace{2pt}
-    \vspace{.1in}
+\westep{Write the final answer}
+The gradient of $EF = \dfrac{4}{-5}$
+
 }
 \end{wex}
 
 
-\begin{wex}{Gradient II}{The gradient of $GH = 3$. Find the missing co-ordinate if $G(7;-9)$ and $H(x;0)$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $G$ be $(x_1;y_1)$ and the co-ordinates of $H$ be $(x_2;y_2)$.
+\begin{wex}{Gradient between two points}{Given $G(7;-9)$ and $H(x;0)$, with $m_{GH}= 3$, Find $x$.}{
+\westep{Draw a sketch}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.6867187)(7.1790624,3.7267187)
+\rput(3.0,1.3132813){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,2)}
+\psdots[dotsize=0.12](4.9,1.2932812)
+\psdots[dotsize=0.12](3.9,-0.74671876)
+\psline[linewidth=0.04cm](3.88,-0.76671875)(4.9,1.2732812)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.324531,1.5632813){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1445312,3.5232813){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.324531,1.6032813){$H~(x;0)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.134531,-0.99671876){$G~(7;-9)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.7445312,1.0432812){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.7745314,0.28984374){$m_{GH} = 3$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Laat die koördinate of $G$ wees $(x_1;y_1)$ en die koördinate van $H$ wees $(x_2;y_2)$.
 \begin{equation*}
- x_1 = 7 \hskip2em y_1 = -9 \hskip2em x_2 = x \hskip2em y_2 = 0
+x_1 = 7 \hskip2em y_1 = -9 \hskip2em x_2 = x \hskip2em y_2 = 0
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the formula for gradient}
 \begin{equation*}
- m = \frac{y_2 - y_1}{x_2 - x_1}
+m = \dfrac{y_2 - y_1}{x_2 - x_1}
 \end{equation*}
-\westep{Substitute known variables and solve:}
+\westep{Substitute values and solve for $x$}
 \begin{equation*}
- \begin{array}{cl}
-  3 &= \frac{0 - (-9)}{x - 7}\\
-  3(x-7)&= 9\\
-  x-7 &= \frac{9}{3}\\
-  x-7 &= 3\\
-  x &= 3 + 7\\
-  &= 10 \\
- \end{array}
+\begin{array}{cl}
+3 &= \dfrac{0 - (-9)}{x - 7}\\[5pt]
+3(x-7)&= 9\\
+x-7 &= \frac{9}{3}\\
+x-7 &= 3\\
+x &= 3 + 7\\
+&= 10 \\
+\end{array}
 \end{equation*}
-\westep{Explain your answer:}
-The co-ordinates of $H$ are $(10;0)$.
+\westep{Write the final answer}
+laat die koördinate van $H$ wees $(10;0)$.
 \vspace{2pt}
-    \vspace{.1in}
+\vspace{.1in}
 }
 \end{wex}
-\begin{exercises}{Gradient Formula}
- \begin{enumerate}
-  \item Find the gradient of $AB$ if:
-  \begin{enumerate}
-   \item $A(7;10)$ and $B(-4;1)$.
-   \item $A(-5;-9)$ and $B(3;2)$.
-   \item $A(x-3;y)$ and $B(x;y+4)$.
-  \end{enumerate}
-  
-  \item If the gradient of $CD=\frac{2}{3}$, find the missing co-ordinates:
-  \begin{enumerate}
-   \item $C(16;2)$ and $D(8;y)$.
-   \item $C(3;2y)$ and $D(9;14)$.
-  \end{enumerate}
- \end{enumerate}
 
- Find the answers with the shortcodes:
+
+\begin{exercises}{}
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Find the gradient of $AB$ if
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $A(7;10)$ and $B(-4;1)$
+\item $A(-5;-9)$ and $B(3;2)$
+\item $A(x-3;y)$ and $B(x;y+4)$
+\end{enumerate}
+
+\item If the gradient of $CD=\frac{2}{3}$, vind $P$ gegee
+\begin{enumerate} \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $C(16;2)$ en $D(8;P)$
+\item $C(3;2P)$ en $D(9;14)$
+\end{enumerate}
+\end{enumerate}
+
+Find the answers with the shortcodes:
+}
 \end{exercises}
-  \subsection*{Parallel and Perpendicular Lines}    
-%         \label{m39108*eip-332}We can use the gradient of a line to determine if two lines are parallel or perpendicular. If the lines are parallel (Figure~\ref{fig:parallelperpendicular}a) then they will have the same gradient, i.e. ${m}_{\mathrm{AB}}={m}_{\mathrm{CD}}$. If the lines are perpendicular (Figure~\ref{fig:parallelperpendicular}b) than we have: 
+\subsection*{Reguitlyn}
+\Definition{Reguitlyn}{A straight line is a set of points with a constant gradient between any two of the points.}
+Consider the diagram below with points $A(x;y)$, $B(x_2;y_2)$ and $C(x_1;y_1)$. 
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0667188)(7.5290623,3.1067188)
+\rput(3.97,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12](3.39,0.47328126)
+\psdots[dotsize=0.12](4.57,2.2132812)
+\psline[linewidth=0.04cm](2.17,-1.3467188)(4.69,2.3932812)
+\usefont{T1}{ptm}{m}{n}
+\rput(7.1545315,0.14328125){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2545314,2.9032812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(5.514531,2.1832812){$A(x;y)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.6745312,-0.33671874){$0$}
+\psdots[dotsize=0.12](2.51,-0.86671877)
+\usefont{T1}{ptm}{m}{n}
+\rput(2.5845313,0.5832813){$B(x_2;y_2)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7,-0.7967188){$C(x_1;y_1)$}
+\end{pspicture} 
+}
+\end{center}
+We have $m_{AB} = m_{BC}=m_{AC}$ \par
+and $m = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{y_1-y_2}{x_1-x_2}$\par
+
+The general formula for a straight line is $\dfrac{y-y_1}{x-x_1} = \dfrac{y_2-y_1}{x_2-x_1}$ \\(where $(x;y)$ is any point on the line)\par
+
+The standard form of the straight line equation is $y=mx+c$ where $m$ is the gradient and $c$ is the $y$-intercept.
+
+\begin{wex}{Finding the equation of a straight line}
+ {Find the equation of the straight line through $P(-1;-5)$ and $Q(5;4)$.}
+{
+\westep{Draw a sketch}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0667188)(6.5590625,3.1067188)
+\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.5090275,2.306018)
+\psline[linewidth=0.04cm](2.14,-0.52671874)(4.48,2.3132813)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.184531,0.14328125){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2845314,2.9032812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.8545313,2.6232812){$Q(5;4)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.7045312,-0.33671874){$0$}
+\psdots[dotsize=0.12,dotangle=-5.9493704](2.1408823,-0.5438744)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.7045312,-0.81671876){$P(-1;-5)$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Assign values}
+Let $(x;y)$ be any point on the line. \\
+$x_1 = 5 \hskip2em y_1 = 4 \hskip2em x_1 = x \hskip2em y_2 = -5$
+
+
+\westep{Write down the general formula}
+\begin{align*}
+\dfrac{y-y_1}{x-x_1} &= \dfrac{y_2-y_1}{x_2-x_1}
+\end{align*}
+\westep{Substitute values and make $y$ the subject of the equation}
+\begin{align*}
+ \dfrac{y-(-5)}{x-(-1)} &= \dfrac{4-(-5)}{5-(-1)} \\
+
+ \dfrac{y+5}{x+1)} &= \dfrac{9}{6} = \dfrac{3}{2}\\
+2(y+5) &=3(x+1)\\
+2y +10&=3x+3\\
+2y&=3x-7\\
+y&=\frac{3}{2}x - \frac{7}{2}
+\end{align*}
+\westep{Write the final answer}
+The equation of the straight line is $y&=\frac{3}{2}x - \frac{7}{2}$.
+}
+
+
+\end{wex}
+
+\subsection*{Parallel and perpendicular lines}    
+%         \label{m39108*eip-332}We can use the gradient of a line to determine if two lines are parallel or perpendicular. If the lines are parallel (Figure~\ref{fig:parallelperpendicular}a) then they will have the same gradient, i.e. ${m}_{\mbox{AB}}={m}_{\mbox{CD}}$. If the lines are perpendicular (Figure~\ref{fig:parallelperpendicular}b) than we have: 
 %     \setcounter{subfigure}{0}
 %  	\begin{figure}[H] % horizontal\label{m39107*id63458}
 %     \begin{center}
@@ -374,228 +567,347 @@ The co-ordinates of $H$ are $(10;0)$.
 % \caption{a) Parallel and b) perpendicular lines}
 % \label{fig:parallelperpendicular}
 %  \end{figure}       
-\label{m39108*eip-332}If two lines have equal gradients, it means that the lines are running parallel to each other. In other words: ${gradient}_{\mathrm{AB}}={gradient}_{\mathrm{CD}}$
+Two lines have that run parallel to each other have equal gradients. \\
+In other words: $\mbox{gradient}_{AB}=\mbox{gradient}_{CD}$. \par
+If two lines intersect perpendicularly then the product of their gradients is equal to $-1$. \\
 
-\begin{wex}{Parallel lines}{Prove that the line $AB$ with points $A(2;4)$ and $B(8,16)$ is parallel to the line $f(x) = 2x-2$.}{
-\westep{Find the gradients of both lines:}
+If line $WX \perp $ line $ YZ$ then $m_{WX} \times m_{YZ} = -1$.
+
+\begin{wex}{Parallel lines}{Prove that the line $AB$ with points $A(2;4)$ and $B(8,16)$ is parallel to the line $y = 2x-2$.}{
+\westep{Draw a sketch}
+
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0667188)(6.5590625,3.1067188)
+\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.5090275,2.306018)
+\psline[linewidth=0.04cm](1.56,-1.7267188)(4.52,2.3132813)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.184531,0.14328125){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2845314,2.9032812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.9445314,2.6232812){$B(8;16)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.7845314,-0.31671876){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8345313,0.94328123){$A(2;4)$}
+\psline[linewidth=0.04cm](1.9,-2.0667188)(4.86,1.9732813)
+\psdots[dotsize=0.12](3.4,0.79328126)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1945312,-0.69671875){$-2$}
+\rput(5.2145314,1.2232813){$y=2x-2$}
+\end{pspicture} 
+}
+
+\end{center}
+Be careful - some lines may look parallel but are not!
+
+\westep{Write down the formula for gradient}
 \begin{equation*}
- \begin{array}{cl}
-  m_{AB} &= \frac{16 - 4}{8 - 2}\\
-  &= \frac{12}{6}\\
-  &= 2 \\
-\\
- m_{f(x)} = 2\\
- \end{array}
+m = \dfrac{y_2-y_1}{x_2-x_1}
 \end{equation*}
-\westep{Show that they are parallel:}
+\westep{Substitute values to find the gradient for line $AB$}
 \begin{equation*}
- m_{AB} = m_{f(x)}
+\begin{array}{cl}
+m_{AB} &= \dfrac{16 - 4}{8 - 2}\\[5pt]
+&= \dfrac{12}{6}\\
+&= 2
+\end{array}
 \end{equation*}
+\westep{Check that $y$ is in the standard form $y=mx+c$}
 \begin{equation*}
- \therefore AB \parallel f(x)
+\begin{array}{cl}
+y&=2x-2\\
+\therefore m_{y}&= 2
+\end{array}
 \end{equation*}
+\westep{Write the final answer}
+\begin{equation*}
+\begin{array}{cl}
+m_{AB} &= m_{y}\\
+
+\end{array}
+\end{equation*}
+therefore line $AB$ is parallel to $y=2x-2$.
 }
 \end{wex}
 
-Perpendicular lines have gradients that are the negative inverse of each other. This means that when you multiply the gradients together, the answer will be -1. I.e. $-\frac{1}{{m}_{\mathrm{AB}}}={m}_{\mathrm{CD}}$
+Perpendicular lines have gradients that are the negative inverse of each other. This means that when you multiply the gradients together, the answer will be -1.: $-\frac{1}{m_{AB}}=m_{CD}$
 
-\begin{wex}{Perpendicular lines}{AB is perpendicular to $CD$. Find $y$ if $A(2;-3)$, $B(-2;6)$, $C(4;3)$ and $D(7;y)$.}{
-\westep{Establish how to solve for point $D$:}
+\begin{wex}{Perpendicular lines}{Line $AB$ is perpendicular to line $CD$. Find $y$ given $A(2;-3)$, $B(-2;6)$, $C(4;3)$ and $D(7;y)$.}{
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0667188)(6.7390623,3.1067188)
+\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.089028,0.96601814)
+\psline[linewidth=0.04cm](1.62,-1.5267187)(5.68,2.5732813)
+\usefont{T1}{ptm}{m}{n}
+\rput(6.184531,0.14328125){$x$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.2845314,2.9032812){$y$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3445313,2.4432812){$B(8;16)$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.6845312,-0.25671875){$0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.264531,-0.7967188){$A(2;-3)$}
+\psline[linewidth=0.04cm](1.52,2.1732812)(4.2,-0.56671876)
+\psdots[dotsize=0.12](1.56,2.1732812)
+\psdots[dotsize=0.12](4.18,-0.52671874)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.9845312,1.2232813){$C(4;3)$}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.1,2.8132813)(5.12,-0.44671875)
+\usefont{T1}{ptm}{m}{n}
+\rput(5.914531,1.9032812){$D(7;y)$}
+\psdots[dotsize=0.12](5.12,2.0332813)
+\end{pspicture} 
+}
+\end{center}
+
+
+\westep{Write the formula for the product of perpendicular gradients}
 \begin{equation*}
- m_{AB} \times m_{CD} = -1
+m_{AB} \times m_{CD} = -1
 \end{equation*}
-\westep{Substitute missing values and solve for point $D$:}
+\westep{Substitute values and solve for $y$}
 \begin{equation*}
- \begin{array}{rl}
-  \frac{6 - (-3)}{-2 -2} \times \frac{y - 3}{7 - 4} &= -1\\
-  \frac{9}{-4} \times \frac{y-3}{3} &= -1\\
-  \frac{y-3}{3} &= -1 \times \frac{-4}{9}\\
-  \frac{y-3}{3} &= \frac{4}{9}\\
-  y-3 &= \frac{4}{9} \times 3\\
-  y-3 &= \frac{4}{3}\\
-  y &= \frac{4}{3} + 3\\
-  &= \frac{4 + 9}{3}\\
-  &= \frac{13}{3}\\
-  &= 4 \frac{1}{3}
- \end{array}
+\begin{array}{rl}
+\dfrac{6 - (-3)}{-2 -2} \times \dfrac{y - 3}{7 - 4} &= -1\\[5pt]
+\dfrac{9}{-4} \times \dfrac{y-3}{3} &= -1\\[5pt]
+\dfrac{y-3}{3} &= -1 \times \dfrac{-4}{9}\\[5pt]
+\dfrac{y-3}{3} &= \dfrac{4}{9}\\[5pt]
+y-3 &= \dfrac{4}{9} \times 3\\[5pt]
+y-3 &= \dfrac{4}{3}\\[5pt]
+y &= \dfrac{4}{3} + 3\\[5pt]
+&= \dfrac{4 + 9}{3}\\[5pt]
+&= \dfrac{13}{3}\\[5pt]
+&= 4 \dfrac{1}{3}
+\end{array}
 \end{equation*}
-\begin{equation*}
- \therefore AB \parallel f(x)
-\end{equation*}
+\westep{Write the final answer}
+Therefore the coordinates of $D$ are $(7; 4\frac{1}{3})$.
 }
 \end{wex}
 
-\subsection*{Horizontal and Vertical Lines}
+\subsection*{Horizontal and vertical lines}
 
-When a line runs parallel to the $x$-axis, it is a horizontal line and will have a gradient of zero. This is
-because there is no change in the position of the line along the $y$-axis.
+A line that runs parallel to the $x$-axis is called a horizontal line and has a gradient of zero. This is
+because there is no vertical change in the gradient of the line:\par
+$m = \dfrac{\mbox{change in }y}{\mbox{change in }x} = \dfrac{0}{\mbox{change in }x} =0$\par
 
-When a line runs parallel to the $y$-axis, it is a vertical line. As there is no change in the $x$-values, the
-gradient will be undefined.
+A line runs parallel to the $y$-axis,is called a vertical line and its gradient is undefined. This is because there is no horizontal change in the gradient of the line:\par
+$m = \dfrac{\mbox{change in }y}{\mbox{change in }x} = \dfrac{\mbox{change in }y}{0}=$ undefined\par
 
-\subsection*{Collinear Points}
+\subsection*{Collinear points}
 
-Collinear means to lie on the same line. If a question asks if points are collinear, it is asking if they lie
-on the same line. There are two ways to prove this, an easy way using the gradient method, and a
+Points are collinear if they lie on the same line. There are two methods to prove that points are collinear; the gradient method, and a
 longer method using the distance formula.
 
-If three points are collinear, the line joining them will have the same gradient the whole way across.
-This means that if you can prove that any two of the three gradients between the three points are
-equal, you can prove that the points are collinear.
-
-\begin{wex}{}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Find any two gradients:}
-\begin{equation*}
- m_{AB} = \frac{5-3}{0-(-3)} = \frac{2}{3}
-\end{equation*}
-\begin{equation*}
- m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
-\end{equation*}
-\westep{Establish if the points are collinear and explain your answer:}
-\begin{equation*}
- m_{AB} = m_{BC}
-\end{equation*}
-$\therefore$ Points $A$, $B$ and $C$ are collinear.
-}
-\end{wex}
-
-To prove that three points are collinear using the distance formula requires finding the
-distances between each pair points and then proving that the sum of the two smaller distances
-equals the longest distance.
-
-To show this, let's do the same worked example.
+If three points are collinear then the line joining them will have the same gradient at any point along the line.
+Therefore to prove collinearity, we must prove that two of the gradients between any of the three points are
+equal.
 
 \begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Find all three distances:}
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
+\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.0245314,-0.81671876){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,1.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.8945312,0.94328123){$B(0;5)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.3167187){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.2845312,0.16328125){$A(-3;3)$}
+\psdots[dotsize=0.12](1.22,-0.16671875)
+\psdots[dotsize=0.12](3.0,0.6532813)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.684531,1.5432812){$C(3;7)$}
+\end{pspicture} 
+}
+
+\end{center}
+
+\westep{Calculate two gradients between any of the three points}
 \begin{equation*}
- d_{AB} = \sqrt{(-3 - 0)^2 + (3 - 5)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
+m_{AB} = \frac{5-3}{0-(-3)} = \frac{2}{3}
 \end{equation*}
+and
 \begin{equation*}
- d_{BC} = \sqrt{(0 - 3)^2 + (5 - 7)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
+m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
 \end{equation*}
+\fbox{OR:}
 \begin{equation*}
- d_{AC} = \sqrt{((-3) - 3)^2 + (3 - 7)^2} = \sqrt{(-6)^2 + (-4)^2} = \sqrt{36 + 16} = \sqrt{52}
+m_{AC} = \frac{3-7}{3-3} = \frac{-4}{-6}=\frac{2}{3}
 \end{equation*}
-\westep{Find the sum of the two shorter distances:}
+and
 \begin{equation*}
- d_{AB} + d_{BC} = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = \sqrt{4 \times 13} = \sqrt{52}
+m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
 \end{equation*}
-\westep{Prove that the points are collinear:}
+\westep{Explain your answer}
 \begin{equation*}
- d_{AB} + d_{BC} = d_{AC}
+m_{AB} = m_{BC}(= m_{AC})
 \end{equation*}
-$\therefore$ Points $A$, $B$ and $C$ are collinear.
+Therefore the points $A$, $B$ and $C$ are collinear.
 }
 \end{wex}
 
-\begin{exercises}{Mixed Gradient Formula}
- \begin{enumerate}
-  \item Determine whether $AB$ is parallel, perpendicular or neither to $CD$ if:
-  \begin{enumerate}
-   \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(7;23)$.
-   \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$.
-   \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$.
-  \end{enumerate}
-  
-  \item Determine whether the following points are collinear:
-  \begin{enumerate}
-   \item $E(0;3)$, $F(-2;5)$, $G(2;1)$.
-   \item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$.
-   \item $K(-6;2)$, $L(-3;1)$, $M(1;-1)$.
-  \end{enumerate}
- \end{enumerate}
+To prove that three points are collinear using the distance formula, we must calculate the
+distances between each pair of points and then provethat the sum of the two smaller distances
+equals the longest distance.
+
+
+\begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
+\westep{Draw a sketch}
+
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
+\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.32,-0.14671876)(2.98,0.63328123)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.0245314,-0.81671876){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,1.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.4,0.8){$B(0;5)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7845314,-1.3167187){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.0,0.16328125){$A(-3;3)$}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.28,-0.48671874)(4.58,1.0332812)
+\psdots[dotsize=0.12](1.22,-0.16671875)
+\psdots[dotsize=0.15](3.0,0.6532813)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.14,0.7132813)(4.44,1.3332813)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.684531,1.5432812){$C(3;7)$}
+\end{pspicture} 
+}
+\end{center}
+\westep{Calculate the three distances $AB$, $BC$ and $AC$}
+\begin{equation*}
+d_{AB} = \sqrt{(-3 - 0)^2 + (3 - 5)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
+\end{equation*}
+\begin{equation*}
+d_{BC} = \sqrt{(0 - 3)^2 + (5 - 7)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
+\end{equation*}
+\begin{equation*}
+d_{AC} = \sqrt{((-3) - 3)^2 + (3 - 7)^2} = \sqrt{(-6)^2 + (-4)^2} = \sqrt{36 + 16} = \sqrt{52}
+\end{equation*}
+\westep{Find the sum of the two shorter distances}
+\begin{equation*}
+d_{AB} + d_{BC} = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = \sqrt{4 \times 13} = \sqrt{52}
+\end{equation*}
+\westep{Explain your answer}
+\begin{equation*}
+d_{AB} + d_{BC} = d_{AC}
+\end{equation*}
+therefore points $A$, $B$ and $C$ are collinear.
+}
+\end{wex}
+
+\begin{exercises}{}
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+
+\item Determine whether $AB$ is parallel, perpendicular or neither to $CD$ if:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(7;23)$.
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$.
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$.
+\end{enumerate}
+
+\item Determine whether the following points are collinear:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $E(0;3)$, $F(-2;5)$, $G(2;1)$.
+\item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$.
+\item $K(-6;2)$, $L(-3;1)$, $M(1;-1)$.
+\end{enumerate}
+\item Points $P(-6;2)$, $Q(2;-2)$ and $R(-3;r)$ lie on a straight line. Find the value of $r$.
+\item Line $PQ$ with $P(-1;-7)$ and $Q(q;0)$ has a gradient of $1$. Find $q$.
+\end{enumerate}
+\end{enumerate}
 \end{exercises}
 
-        \label{m39108*eip-611}The following video provides a summary of the gradient of a line.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39108*uid993}
-    \textnormal{Gradient of a line}\vspace{.1in} \nopagebreak
-  \label{m39108*yt-media1}\label{m39108*yt-video1}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10110 )}
-      \vspace{2pt}
-    \vspace{.1in}
- \end{figure}       \par 
-      \label{m39108**end}
+Die volgende video bied ’n opsomming van die gradiënt van ’n lyn.
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39108*uid993}
+\textnormal{Gradient of a line}\vspace{.1in} \nopagebreak
+\label{m39108*yt-media1}\label{m39108*yt-video1}
+\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10110 )}
+\vspace{2pt}
+\vspace{.1in}
+\end{figure}      
 %          \section{ Midpoint of a line}
 %     \nopagebreak
-%             \label{m39119} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10111 )} \par 
+%%%             \label{m39119} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10111 )} \par 
 %     
 %     
 %     
-      \label{m39119*uid43}
-            \section{ Midpoint of a line}
-            \nopagebreak
-\label{m39119*id68364}Sometimes, knowing the co-ordinates of the middle point or \textsl{midpoint} of a line is useful. For example, what is the midpoint of the line between point $P$ with co-ordinates $(2;1)$ and point $Q$ with co-ordinates $(-2;-2)$.\par 
-        \label{m39119*id68433}The co-ordinates of the midpoint of any line between any two points $A$ and $B$ with co-ordinates $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$, is generally calculated as follows. Let the midpoint of $AB$ be at point $S$ with co-ordinates $(X;Y)$. The aim is to calculate $X$ and $Y$ in terms of $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$.\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+
+\section{Middelpunt van ’n Lynstuk}
+\begin{activity}{Finding the mid-point of a line}
+On graph paper, accurately plot the points $P(2;1)$ and $Q(-2;2)$ and draw the line $PQ$.
+\begin{itemize}
+ \item Fold the piece of paper so that point $P$ is exactly on top of point $Q$
+\item Where the folded line intersects with line $PQ$, label point $S$
+\item Count the blocks and find the exact location of $S$
+\item Write down the coordinates of $S$
+\end{itemize}
+
+\end{activity}
+Die koördinate van die middelpunt $M(x;y)$ van ’n lyn tussen enige twee punte A en B met koördinate $A(x_1;y_1)$ en $B(x_2;y_2)$ word as volg bereken:
+
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(0,0)(5,5)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(0,0)(5,5)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(0,0)(5,5)
+\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(0,0)(5.5,5.5)
 \psline[linewidth=.05cm](0,0)(5,5)
-\uput[dl](0,0){\Large{$A (x_{1},y_{1})$}}
+\uput[dl](0,0){\Large{$A (x_{1};y_{1})$}}
 \uput[u](0,-.2){\qdisk(0,0){3pt}}
-\uput[r](2.6,2.4){\Large{$S (X,Y)$}}
+\uput[r](2.6,2.4){\Large{$M (X;Y)$}}
 \uput[u](2.5,2.3){\qdisk(0,0){3pt}}
-\uput[ur](5,5){\Large{$B (x_{2},y_{2})$}}
+\uput[ur](5,5){\Large{$B (x_{2};y_{2})$}}
 \uput[u](5,4.8){\qdisk(0,0){3pt}}
-\uput[l](5.8,0){\Large{$x$}}
-\uput[d](0,5.8){\Large{$y$}}
+\uput[l](6.3,0){\Large{$x$}}
+\uput[d](0,6.3){\Large{$y$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure}      
-        \label{m39119*id68637}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
- X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+\end{center}
+\end{figure}      
+
+\begin{eqnarray*}
+X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
 Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\  
-      \end{eqnarray*}
-From this we obtain the midpoint of a line:
-\Identity{Midpoint}{$S(\frac{{x}_{1} + {x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}) $}
-        \label{m39119*id68788}Then the co-ordinates of the midpoint ($S$) of the line between point $P$ with co-ordinates $(2;1)$ and point $Q$ with co-ordinates $(-2;-2)$ is:\par 
-        \label{m39119*id68860}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
- X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
-& = & \frac{-2 + 2}{2} \\ 
-& = & 0 \\ 
-Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\ 
-& = & \frac{-2 + 1}{2} \\ 
-& = & -\frac{1}{2} 
-      \end{eqnarray*}
-The midpoint is at $S(0;-\frac{1}{2})$. \\ \pagebreak
-        \label{m39119*id69058}It can be confirmed that the distance from each end point to the midpoint is equal. The co-ordinate of the midpoint $S$ is $(0;-0,5)$.\par 
-        \label{m39119*id69097}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
-PS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
-& = & \sqrt{{(0 - 2)}^{2} + {(-0,5 - 1)}^{2}} \\ 
-& = & \sqrt{{(-2)}^{2} + {(-1,5)}^{2}} \\ 
-& = & \sqrt{4 + 2,25} \\ 
-& = & \sqrt{6,25}
-      \end{eqnarray*}
-        \label{m39119*id69323}and\par 
-        \label{m39119*id69326}\nopagebreak\noindent{}
-          
-    \begin{eqnarray*}
-QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
-& = & \sqrt{{(0 - (-2))}^{2} + {(-0,5 - (-2))}^{2}} \\ 
-& = & \sqrt{{(0 + 2)}^{2}{+(-0,5 + 2)}^{2}} \\ 
-& = & \sqrt{{(2)}^{2}{+(-1,5)}^{2}} \\ 
-& = & \sqrt{4 + 2,25} \\ 
-& = & \sqrt{6,25}
-      \end{eqnarray*}
-        \label{m39119*id69633}It can be seen that $PS=QS$ as expected.\par 
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\end{eqnarray*}
+From this we obtain the mid-point of a line:
+\Identity{Midpoint}{Mid-point $M=(\dfrac{{x}_{1} + {x}_{2}}{2};\dfrac{{y}_{1}+{y}_{2}}{2}) $}
+
+\begin{wex}{Calculating the mid-point}
+ {Calculate the coordinates of the mid-point $F(x;y)$ of the line between point $E(2;1)$ and point $G(-2;-2)$.}
+{
+\westep{Draw a sketch}
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
 \psline[linewidth=.05cm](-2,-2)(2,1)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
@@ -605,7 +917,10 @@ QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\
 \uput[dl](-1,-2){\Large{$Q (-2,-2)$}}
 \uput[u](-2,-2.2){\qdisk(0,0){3pt}}
 \uput[r](0,-.7){\Large{$S$}}
-\uput[r](0,-1.2){\Large{midpoint}}
+\uput[r](0,3.2){\Large{$y$}}
+\uput[r](3.2,0){\Large{$x$}}
+\uput[r](-0.4,-0.2){\Large{$0$}}
+\uput[r](0,-1.2){\Large{mid-point}}
 \uput[u](0,-.7){\qdisk(0,0){3pt}}
 \uput[ur](2,1){\Large{$P (2,1)$}}
 \uput[u](2,.8){\qdisk(0,0){3pt}}
@@ -613,258 +928,408 @@ QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\
 % \uput[d](0,4.8){\Large{$y$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure} 
-       \label{m39119*eip-891}The following video provides a summary of the midpoint of a line.
-    \setcounter{subfigure}{0}
-	\begin{figure}[H] % horizontal\label{m39119*uid666}
-    \textnormal{Khan academy video on midpoint of a line}\vspace{.1in} \nopagebreak
-  \label{m39119*yt-media2}\label{m39119*yt-video2}
-            \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10112 )}
-      \vspace{2pt}
-    \vspace{.1in}
- \end{figure}       \par \label{m39119**end}
+\end{center}
+\end{figure} 
+\westep{Substitute values into the mid-point formula}
+\begin{eqnarray*}
+X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+& = & \frac{-2 + 2}{2} \\ 
+& = & 0 \\ 
+Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\ 
+& = & \frac{-2 + 1}{2} \\ 
+& = & -\frac{1}{2} 
+\end{eqnarray*}
+\westep{Write the answer}
+The mid-point is at $F(0;-\frac{1}{2})$
+\westep{Confirm answer using distance formula}
+Dit kan bewys word dat die afstande vanaf die eindpunte na die middelpunt gelyk is: 
+\begin{eqnarray*}
+PS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
+& = & \sqrt{{(0 - 2)}^{2} + {(-0,5 - 1)}^{2}} \\ 
+& = & \sqrt{{(-2)}^{2} + {(-1,5)}^{2}} \\ 
+& = & \sqrt{4 + 2,25} \\ 
+& = & \sqrt{6,25}
+\end{eqnarray*}
+en
+\begin{eqnarray*}
+QS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
+& = & \sqrt{{(0 - (-2))}^{2} + {(-0,5 - (-2))}^{2}} \\ 
+& = & \sqrt{{(0 + 2)}^{2}{+(-0,5 + 2)}^{2}} \\ 
+& = & \sqrt{{(2)}^{2}{+(-1,5)}^{2}} \\ 
+& = & \sqrt{4 + 2,25} \\ 
+& = & \sqrt{6,25}
+\end{eqnarray*}
+Daar kan gesien word dat, $PS=QS$ soos verwag is, dus is $F$ die middelpunt. 
+}
+\end{wex}
+
+
+
+
+Die volgende video verskaf ’n opsomming oor die berekening van die middelpunt van ’n lyn.
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39119*uid666}
+\textnormal{Khan academy video on mid-point of a line}\vspace{.1in} \nopagebreak
+\label{m39119*yt-media2}\label{m39119*yt-video2}
+\raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10112 )}
+\vspace{2pt}
+\vspace{.1in}
+\end{figure}      
 %          \section{ Summary \& Exercises}
 %     \nopagebreak
-%             \label{m39167} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}} {(section shortcode: MG10113 )} \par 
+%%%             \label{m39167} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} {(section shortcode: MG10113 )} \par 
 %     
 %     
 % 
-\begin{wex}{Midpoint formula I}{Find the midpoint of line $AB$ if $A$ is at $(6;2)$ and $B$ is at $(-5;-1)$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
+\begin{wex}{Calculating the mid-point}{Find the mid-point of line $AB$, given $A(6;2)$ and $B(-5;-1)$.}{
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0667188)(6.7990627,3.1067188)
+\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12](3.6,0.25328124)
+\psdots[dotsize=0.12](5.62,1.2532812)
+\psline[linewidth=0.04cm](1.6,-0.74671876)(5.6,1.2532812)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.184531,0.14328125){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,2.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.844531,1.5032812){$A~(6;2)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7045312,-0.33671874){$0$}
+\psdots[dotsize=0.12](1.62,-0.74671876)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.7945313,0.66328126){$M(x;y)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.3945312,-0.99671876){$B(-5;-1)$}
+\end{pspicture} 
+}
+
+\end{center}
+
+From the sketch we estimate that $M$ will lie in Quadrant I, with positive $x$- and $y$-coordinates.
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Let the mid-point be $M(x;y)$
 \begin{equation*}
- x_1= 6 \hskip2em y_1=2 \hskip2em x_2=-5 \hskip y_2=-1
+x_1= 6 \hskip2em y_1=2 \hskip2em x_2=-5 \hskip2em y_2=-1
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the mid-point formula}
 \begin{equation*}
- (\frac{x_1+x_2}{2};\frac{y_1+y_2}{2})
+M(x;y) = \Big(\frac{x_1+x_2}{2};\frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitute known variables and solve:}
- \begin{equation*}
-  (\frac{6-5}{2};\frac{2-1}{2}) = (\frac{1}{2};\frac{1}{2})
- \end{equation*}
-\westep{Explain your answer:}
- $(\frac{1}{2};\frac{1}{2})$ is the midpoint of $AB$.
+\westep{Substitute values and simplify}
+\begin{equation*}
+\Big(\frac{6-5}{2};\frac{2-1}{2}\Big) = \Big(\frac{1}{2};\frac{1}{2}\Big)
+\end{equation*}
+\westep{Write the final answer}
+$M(\frac{1}{2};\frac{1}{2})$ is the mid-point of line $AB$.
 }
 \end{wex}
 
-\begin{wex}{Midpoint formula II}{The line joining $C(-2;4)$ and $D(x;y)$ has the midpoint $M(1;-3)$. Find point $D$.}{
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $C$ be $(x_1;y_1)$ and the co-orindates of $D$ be $(x_2;y_2)$.
+\begin{wex}{Using the mid-point formula}{The line joining $C(-2;4)$ and $D(x;y)$ has the mid-point $M(1;-3)$. Find point $D$.}{
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.0795312)(6.5590625,3.1067188)
+\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12](3.56,-0.70671874)
+\psdots[dotsize=0.12](5.2,-2.7067187)
+\psline[linewidth=0.04cm](1.84,1.3532813)(5.2,-2.7067187)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.184531,0.14328125){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2845314,2.9032812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.5245314,-2.95){$A~(6;2)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.7045312,-0.33671874){$0$}
+\psdots[dotsize=0.12](1.86,1.3332813)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.3,-0.69671875){$M(x;y)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.6945312,1.5){$B(-5;-1)$}
+\psline[linewidth=0.04cm](2.683925,0.52424794)(2.5044158,0.37533036)
+\psline[linewidth=0.04cm](2.7355843,0.45123214)(2.556075,0.30231455)
+\psline[linewidth=0.04cm](4.483925,-1.6357521)(4.3044157,-1.7846696)
+\psline[linewidth=0.04cm](4.5355844,-1.7087679)(4.3560753,-1.8576854)
+\end{pspicture} 
+}
+\end{center}
+From the sketch we estimate that $D$ will lie in Quadrant IV, with a positive $x$- and negative $y$-coordinate.
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Let the coordinates of $C$ be $(x_1;y_1)$ and the coordinates of $D$ be $(x_2;y_2)$.
 \begin{equation*}
- x_1=-2 \hskip2em y_1=4 \hskip2em x_2=x \hskip2em y_2=y
+x_1=-2 \hskip2em y_1=4 \hskip2em x_2=x \hskip2em y_2=y
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the mid-point formula}
 \begin{equation*}
- (\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2})
+M(x;y) = \Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitue known variables and solve:}
+\westep{Substitue values and solve for $x$ and $y$}
 \begin{equation*}
- \begin{array}{rllrl}
-  1&=\frac{-2+x}{2}&\hskip10em&-3&=\frac{4+y}{2}\\
-  1\times 2&=-2+x&&-3\times 2&=4+y\\
-  2&=-2+x&&-6&=4+y\\
-  x&=2+2&&y&=-6-4\\
-  x&=4&&y&=-10\\
- \end{array}
+\begin{array}{rllrl}
+1&=\frac{-2+x}{2}&\hskip10em&-3&=\frac{4+y}{2}\\
+1\times 2&=-2+x&&-3\times 2&=4+y\\
+2&=-2+x&&-6&=4+y\\
+x&=2+2&&y&=-6-4\\
+x&=4&&y&=-10\\
+\end{array}
 \end{equation*}
-\westep{Explain your answer:}
- Point $D$ is at $(4;-10)$.
+\westep{Write the final answer}
+The coordinates of point $D$ are $(4;-10)$.
 }
 \end{wex}
 
-\begin{wex}{Midpoint formula III}{Points $E(-1;0)$ , $F(0;3)$ , $G(8;11)$ and $H(x;y)$ are points on the Cartesian plane. Find $H(x;y)$ if $EFGH$ is a parallelogram.}{
-Remember, the diagonals of a parallelogram bisect each other. This mean that the midpoint of $EG$
-will be equal to the midpoint of $FH$. If we find the first midpoint, we can use it to find point $H$.
-\westep{For line $EG$, assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $E$ be $(x_1;y_1)$ and the co-orindates of $G$ be $(x_2;y_2)$.
+\begin{wex}{Using the mid-point formula}{Points $E(-1;0)$ , $F(0;3)$ , $G(8;11)$ and $H(x;y)$ are points on the Cartesian plane. Find $H(x;y)$ if $EFGH$ is a parallelogram.}{
+\westep{Draw a sketch}
+\begin{center}
+ \scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.1267188)(7.2090626,3.1667187)
+\rput(1.69,-2.1267188){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-1,-1)(5,5)}
+\psdots[dotsize=0.12](5.33,1.8132813)
+\psline[linewidth=0.04cm](1.71,-0.86671877)(5.35,1.8332813)
+\psdots[dotsize=0.12](1.69,-0.86671877)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.8345313,-1.8767188){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.9145312,2.9632812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.974531,2.0632813){$G(8;11)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.9345312,-2.3967187){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.764531,0.38328126){$H(x;y)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.76453125,-2.4367187){$E(-1;0)$}
+\psline[linewidth=0.04cm](1.65,-0.88671875)(1.25,-2.1067188)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.27,-2.1067188)(4.97,0.5732812)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.33,1.7932812)(4.93,0.53328127)
+\psdots[dotsize=0.12](1.25,-2.1067188)
+\usefont{T1}{ppl}{m}{n}
+\rput(0.96453124,-0.6767188){$F(0;3)$}
+\psline[linewidth=0.02cm](1.25,-2.0867188)(5.33,1.8132813)
+\psline[linewidth=0.02cm](1.71,-0.8467187)(4.97,0.59328127)
+\usefont{T1}{ptm}{m}{n}
+\rput(3.1045313,-0.07671875){$M$}
+\end{pspicture} 
+}
+\end{center}
+
+Method: the diagonals of a parallelogram bisect each other, therefore the mid-point of $EG$
+will be the same as the mid-point of $FH$. We must first find the mid-point of $EG$. We can then use it to determine to coordinates of point $H$.
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+Let the mid-point of $EG$ be $M(x;y)$
 \begin{equation*}
- x_1=-1 \hskip2em y_1=0 \hskip2em x_2=8 \hskip2em y_2=11
+x_1=-1 \hskip2em y_1=0 \hskip2em x_2=8 \hskip2em y_2=11
 \end{equation*}
-\westep{Write down the formula you are using:}
+\westep{Write down the mid-point formula}
 \begin{equation*}
- (\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2})
+ M(x;y) =\Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitue known variables and solve:}
+\westep{Substitue values calculate the coordinates of $M$}
 \begin{equation*}
-  (\frac{-1+8}{2}; \frac{0+11}{2}) = (\frac{7}{2};\frac{11}{2})
+M(x;y) =\Big(\frac{-1+8}{2}; \frac{0+11}{2}\Big) = \Big(\frac{7}{2};\frac{11}{2}\Big)
 \end{equation*}
-\westep{For line $FH$, assign new values to $(x_1;y_1)$ and $(x_2;y_2)$:}
-Let the co-ordinates of $F$ be $(x_1;y_1)$ and the co-orindates of $H$ be $(x_2;y_2)$.
- \begin{equation*}
-  x_1=0 \hskip2em y_1=3 \hskip2em x_2=x \hskip2em y_2=y
- \end{equation*}
-\westep{Use the midpoint to find H:}
+
+\westep{Use the coordinates of $M$ to determine $H$}
+$M$ is also the mid-point of $FH$ so we use the mid-point formula
+$M(\frac{7}{2};\frac{11}{2}) = \Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)$ and $F(0;3)$ to solve for $H(x;y)$
+\westep{Substitute values and solve for $x$ and $y$}
+
 \begin{equation*}
- \begin{array}{rllrl}
-  \frac{7}{2}&=\frac{0+x}{2}&\hskip10em&\frac{11}{2}&=\frac{3+y}{2}\\
-  7&=x+0&&11&=3+y\\
-  x&=7&&y&=8\\
- \end{array}
+\begin{array}{rllrl}
+\frac{7}{2}&=\frac{0+x}{2}&\hskip10em&\frac{11}{2}&=\frac{3+y}{2}\\
+7&=x+0&&11&=3+y\\
+x&=7&&y&=8\\
+\end{array}
 \end{equation*}
-\westep{Explain your answer:}
-Point $H$ is at $(7;8)$.
+\westep{Write the final answer}
+
+The coordinates of $H$ are $(7;8)$.
 }
 \end{wex}
-
-\begin{exercises}{Midpoint Formula}
- \begin{enumerate}
-  \item Find the midpoints of the following lines:
-  \begin{enumerate}
-   \item $A(2;5)$, $B(-4;7)$.
-   \item $C(5;9)$, $D(23;55)$.
-   \item $E(x+2;y-1)$, $F(x-5;y-4)$.
-  \end{enumerate}
-  
-  \item The midpoint $M$ of $PQ$ is (3;9). Find $P$ is $Q$ is $(-2;5)$:
-
-  \item $MNOP$ is a parallelogram with the points $M(5;3)$, $N(2;1)$ and $O(7;-3)$. Find point $P$.
- \end{enumerate}
-\end{exercises}    
-  \label{m39167*fs-id5760712}
-            \section{ Summary }
-            \nopagebreak
-\label{m39167*fs-id1165371842904}
-\label{m39167*eip-966}\begin{itemize}[noitemsep]
-            \item Figures can be represented on the Cartesian plane\item The formula for finding the distance between two points is: \label{m39167*eid9734}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathsf{Distance}=\sqrt{{\left({x}_{1}-{x}_{2}\right)}^{2}+{\left({y}_{1}-{y}_{2}\right)}^{2}}
-      \end{equation}
-    \item The formula for finding the gradient of a line is: \label{m39167*edi6342}\nopagebreak\noindent{}
-    \begin{equation}
-    \mathsf{Gradient}=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}
-      \end{equation}
-    \item The formula for finding the midpoint between two points is: \label{m39167*eid6743}\nopagebreak\noindent{}
-    \begin{equation}
-    S\left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
-      \end{equation}
-\item  If two lines are parallel then they will have the same gradient, i.e. ${m}_{\mathsf{AB}}={m}_{\mathsf{CD}}$. If two lines are perpendicular than we have: $-\frac{1}{{m}_{\mathsf{AB}}}={m}_{\mathsf{CD}}$\end{itemize}
-\par 
-\label{m39167*secfhsst!!!underscore!!!id2370}
-            \section{ End of Chapter exercises}
-            \nopagebreak
-        \label{m39167*id69671}\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-            \label{m39167*uid43466}\item 
-Represent the following figures on the Cartesian plane: \label{m39167*id6549695}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid4746}\item Triangle $DEF$ with $D(1;2)$, $E(3;2)$ and $F(2;4)$ 
-\label{m39167*uid4548}\item Quadrilateral $GHIJ$ with $G(2;-1)$, $H(0;2)$, $I(-2;-2)$ and $J(1;-3)$
-\label{m39167*uid4549}\item Quadrilateral $MNOP$ with $M(1;1)$, $N(-1;3)$, $O(-2;3)$ and $P(-4;1)$ 
-\label{m39167*uid5450}\item Quadrilateral $WXYZ$ with $W(1;-2)$, $X(-1;-3)$, $Y(2;-4)$ and $Z(3;-2)$
+\Tip{Remember to draw sketches!}
+\begin{exercises}{}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
+\item Find the mid-points of the following lines:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $A(2;5)$, $B(-4;7)$
+\item $C(5;9)$, $D(23;55)$
+\item $E(x+2;y-1)$, $F(x-5;y-4)$
 \end{enumerate}
-                \label{m39167*uid46}\item 
-In the diagram given the vertices of a quadrilateral are $F(2;0)$, $G(1;5)$, $H(3;7)$ and $I(7;2)$.
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+
+\item The mid-point $M$ of $PQ$ is $(3;9)$. Find $P$ if $Q$ is $(-2;5)$
+\item $PQRS$ is a parallelogram with the points $P(5;3)$, $Q(2;1)$ and $R(7;-3)$. Find point $S$.
+
+\item $MPNO$ is a parallelogram with the points $M(5;3)$, $N(2;1)$ and $O(7;-3)$. Find point $P$.
+\end{enumerate}
+\end{exercises}    
+
+\summary
+\begin{itemize}[noitemsep]
+\item A point is an ordered pair of numbers written as $(x;y)$.
+\item Distance is a measure of the length between two points.
+\item The formula for finding the distance between  any two points is: 
+\begin{equation*}
+d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}
+\end{equation*}
+\item The gradient between two points is determined by the ratio vertical change to horizontal change.
+
+\item Die formule om die gradiënt van ’n lyn te vind: 
+\begin{equation*}
+m=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}
+\end{equation*}
+\item A straight line is a set of points with a constant gradient between any two of the
+points.
+\item The standard form of the straight line equation is $y=mx+c$.
+\item The equation of a straight line can also be written as $y-y_1=mx+c$  or 
+\begin{equation*}
+\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}\end{equation*}
+\item As twee lyne parallel is, sal hulle dieselfde gradiënt hê.
+\item As twee lyne loodreg is op mekaar,
+dan het ons $-1$.
+\item For horizontal lines the gradient is equal to $0$.
+\item For vertical lines the gradient is undefined.
+\item Collinear points all lie on the same line.
+\item Die formule om die middelpunt van die lyn tussen twee punte te vind: 
+\begin{equation*}
+M(x;y) = \Big(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\Big)
+\end{equation*}
+\end{itemize}
+
+
+\begin{eocexercises}{}
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item 
+Stel die volgende vorms op die Cartesiese vlak voor: 
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Driehoek $DEF$ met $D(1;2)$, $E(3;2)$ en $F(2;4)$ 
+\item Vierhoek $GHIJ$ met $G(2;-1)$, $H(0;2)$, $I(-2;-2)$ en $J(1;-3)$
+\item Vierhoek $MNOP$ met $M(1;1)$, $N(-1;3)$, $O(-2;3)$ en $P(-4;1)$ 
+\item Vierhoek $WXYZ$ met $W(1;-2)$, $X(-1;-3)$, $Y(2;-4)$ en $Z(3;-2)$
+\end{enumerate}
+\item 
+In die gegewe diagram is die hoekpunte van ’n veelhoek $F(2;0)$, $G(1;5)$, $H(3;7)$ en $I(7;2)$.
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-1,-1)(7,7)
 \pspolygon[linewidth=.05cm,fillstyle=solid,fillcolor=lightgray](2,0)(1,5)(3,7)(7,2)(2,0)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
 % \psline[linewidth=.05cm](0,0)(3,2)
 % \psline[linewidth=.05cm](0,0)(3,0.5)
 % \uput[ur](.9,3.5){\Large{$T$}}
-\uput[d](2,-.2){\normalsize{$F (2,0)$}}
-\uput[ul](1.2,5){\normalsize{$G (1,5)$}}
-\uput[u](3,7){\normalsize{$H (3,7)$}}
-\uput[r](7,2){\normalsize{$I (7,2)$}}
+\uput[d](2,-.2){\normalsize{$F (2;0)$}}
+\uput[ul](1.2,5){\normalsize{$G (1;5)$}}
+\uput[u](3,7){\normalsize{$H (3;7)$}}
+\uput[r](7,2){\normalsize{$I (7;2)$}}
 \uput[l](8,0){\Large{$x$}}
 \uput[d](0,8){\Large{$y$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure}  
-       \label{m39167*id69695}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid47}\item 
-What are the lengths of the opposite sides of $FGHI$?
-\label{m39167*uid48}\item Are the opposite sides of $FGHI$ parallel?
-\label{m39167*uid49}\item  Do the diagonals of $FGHI$ bisect each other?
-\label{m39167*uid50}\item  Can you state what type of quadrilateral $FGHI$ is? Give reasons for your answer.
-\end{enumerate}
-                \label{m39167*uid51}\item 
-A quadrialteral $ABCD$ with vertices $A(3;2)$, $B(1;7)$, $C(4;5)$ and $D(1;3)$ is given.
-\label{m39167*id69770}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid52}\item  Draw the quadrilateral.
-\label{m39167*uid53}\item  Find the lengths of the sides of the quadrilateral.
-\end{enumerate}
-                \label{m39167*uid54}\item $ABCD$ is a quadrilateral with verticies $A(0;3)$, $B(4;3)$, $C(5;-1)$ and $D(-1;-1)$.
-\label{m39167*id69816}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid55}\item Show that:
-\label{m39167*id69834}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid56}\item $AD = BC$
-\label{m39167*uid57}\item $AB \parallel DC$
-\end{enumerate}
-        \label{m39167*uid58}\item What name would you give to $ABCD$?
-\label{m39167*uid59}\item Show that the diagonals $AC$ and $BD$ do not bisect each other.
-\end{enumerate}
-                \label{m39167*uid60}\item $P$, $Q$, $R$ and $S$ are the points $(-2;0)$, $(2;3)$, $(5;3)$, $(-3;-3)$ respectively.
-\label{m39167*id69919}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*uid61}\item Show that:
-\label{m39167*id69937}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid62}\item $SR = 2PQ$
-\label{m39167*uid63}\item $SR \parallel PQ$
-\end{enumerate}
-        \label{m39167*uid64}\item Calculate:
-\label{m39167*id69993}\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-            \label{m39167*uid65}\item $PS$
-\label{m39167*uid66}\item $QR$
-\end{enumerate}
-        \label{m39167*uid67}\item What kind of a quadrilateral is $PQRS$? Give reasons for your answers.
-\end{enumerate}
-                \label{m39167*uid68}\item $EFGH$ is a parallelogram with verticies $E(-1;2)$, $F(-2;-1)$ and $G(2;0)$. Find the co-ordinates of H by using the fact that the diagonals of a parallelogram bisect each other.\newline
-\item  
-$PQRS$ is a quadrilateral with points $P(0;-3)$ ; $Q(-2;5)$ ; $R(3;2)$ and $S(3;-2)$  in the Cartesian plane.
-\label{m39167*id0812312}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \label{m39167*id08123}\item Find the length of $QR$.
-\label{m39167*id981221}\item Find the gradient of $PS$.
-\label{m39167*id08213}\item Find the midpoint of $PR$.
-\label{m39167*id9871293}\item Is $PQRS$ a parallelogram?  Give reasons for your answer. \end{enumerate}
-                \item $A(-2;3)$ and $B(2;6)$ are points in the Cartesian plane. $C(a;b)$ is the midpoint of $AB$. Find the values of $a$ and $b$.
+\end{center}
+\end{figure}  
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
 \item 
-Consider: Triangle $ABC$ with vertices $A(1; 3)$ , $B(4;1)$ and $C (6; 4)$:
-\label{m39167*id9173123}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \item Sketch triangle $ABC$ on the Cartesian plane. 
-\item Show that $ABC$ is an isoceles triangle.
-\item Determine the co-ordinates of $M$, the midpoint of $AC$.
-\item Determine the gradient of $AB$.
-\item Show that the following points are collinear: $A$, $B$ and $D(7;-1)$
+Wat is die lengtes van die sye van $FGHI$?
+\item Is die teenoorstaande sye van $FGHI$ parallel?
+\item Halveer die hoeklyne van $FGHI$ mekaar?
+\item Watter tipe veelhoek is  $FGHI$ Gee redes vir jou antwoord.
 \end{enumerate}
-\item In the diagram, $A$ is the point $(-6;1)$ and $B$ is the point $(0;3)$
-    \setcounter{subfigure}{0}
- 	\begin{figure}[H] % horizontal\label{m39107*id63458}
-    \begin{center}
+\item 
+ ’n Veelhoek
+$ABCD$ met hoekpunte $A(3;2)$, $B(1;7)$, $C(4;5)$ en $D(1;3)$ word gegee.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item  Teken die veelhoek.
+\item  Bepaal die sylengtes van die veelhoek.
+\end{enumerate}
+\item $ABCD$ is ’n veelhoek met hoekpunte $A(0;3)$, $B(4;3)$, $C(5;-1)$ en $D(-1;-1)$.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Wys dat:
+\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
+\item $AD = BC$
+\item $AB \parallel DC$
+\end{enumerate}
+\item Benoem $ABCD$?
+\item Wys dat die hoeklyne $AC$ en $BD$ mekaar nie halveer nie.
+\end{enumerate}
+\item $P$, $Q$, $R$ en $S$ is die punte $(-2;0)$, $(2;3)$, $(5;3)$, $(-3;-3)$ onderskeidelik.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Wys dat:
+\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
+\item $SR = 2PQ$
+\item $SR \parallel PQ$
+\end{enumerate}
+\item Bereken:
+\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
+\item $PS$
+\item $QR$
+\end{enumerate}
+\item Watter tipe veelhoek is $PQRS$? Gee redes vir jou antwoord.
+\end{enumerate}
+\item $EFGH$ is ’n parallelogram met hoekpunte $E(-1;2)$, $F(-2;-1)$ en $G(2;0)$. Vind die koördinate van H deur gebruik te maak van die feit dat die hoeklyne van ’n parallelogram mekaar halveer.\newline
+\item  
+$PQRS$ is ’n vierhoek met punte $P(0;-3)$ ; $Q(-2;5)$ ; $R(3;2)$ en $S(3;-2)$  in die Cartesiese vlak.
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Vind die lengte van $QR$.
+\item Bepaal die gradiënt van $PS$.
+\item Vind die middelpunt van $PR$.
+\item Is $PQRS$  ’n parallelogram? Verskaf redes vir jou antwoord.
+ \end{enumerate}
+\item $A(-2;3)$ en $B(2;6)$ is punte op die Cartesiese vlak. $C(a;b)$ is die middelpunt van $AB$.Vind die waardes
+van $a$ en $b$.
+\item 
+Beskou: Driehoek $ABC$ met hoekpunte $A(1; 3)$ , $B(4;1)$ en $C (6; 4)$:
+\\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Skets die driehoek $ABC$ op die Cartesiese vlak. 
+\item Wys dat $ABC$ is ’n gelykbenige driehoek is.
+\item Bepaal die koördinate van $M$, die middelpunt van $AC$.
+\item Bepaal die gradiënt van $AB$.
+\item Toon aan dat die volgende punte saamlynig is: $A$, $B$ en $D(7;-1)$
+\end{enumerate}
+\item In die diagram, $A$ is die punt $(-6;1)$ en $B$ is die punt $(0;3)$
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*id63458}
+\begin{center}
 \scalebox{.8}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
-\psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
+% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
 \psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-10,-1)(1,7)
 \psline[linewidth=.05cm](-6,1)(0,3)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
 % \psline[linewidth=.05cm](0,0)(3,2)
 % \psline[linewidth=.05cm](0,0)(3,0.5)
 % \uput[ur](.9,3.5){\Large{$T$}}
-\uput[d](-6,1){\Large{$A (-6,1)$}}
+\uput[d](-6,1){\Large{$A (-6;1)$}}
 \uput[d](-5.9,1.2){\qdisk(0,0){3pt}}
-\uput[ul](-.2,3){\Large{$B (0,3)$}}
+\uput[ul](-.2,3){\Large{$B (0;3)$}}
 \uput[d](0,3.2){\qdisk(0,0){3pt}}
 \uput[l](1.8,0){\Large{$x$}}
 \uput[d](0,8){\Large{$y$}}
 \end{pspicture}
 }
-    \end{center}
- \end{figure} 
-      \label{m39167*id982373}\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-            \item Find the equation of line $AB$ 
-\item Calculate the length of $AB$
-\item  $A'$ is the image of $A$ and $B'$ is the image of $B$. Both these images are obtain by applying the transformation: $(x;y)\to(x - 4;y - 1)$. Give the coordinates of both $A'$ and $B'$
-\item Find the equation of $A'B'$
-\item Calculate the length of $A'B'$
-\item Can you state with certainty that $AA'B'B$ is a parallelogram? Justify your answer.\end{enumerate}
-                 \end{enumerate}
-\label{m39167**end}
-  \label{71522cd1c95e0cbedb9f300409036b1b**end}
-\par \raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}} Find the answers with the shortcodes:
- \par \begin{tabular}[h]{cccccc}
- (1.) lgv  &  (2.) liZ  &  (3.) liB  &  (4.) lac  &  (5.) lax  &  (6.) laa  &  (7.) laY  &  (8.) lag  &  (9.) la4  &  (10.) l4o  & \end{tabular}
+\end{center}
+\end{figure} 
+\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
+\item Vind die vergelyking van die lyn $AB$ 
+\item Bereken die lengte van $AB$
+% \item  $A'$ is the image of $A$ and $B'$ is the image of $B$. Both these images are obtain by applying the transformation: $(x;y)\to(x - 4;y - 1)$. Give the coordinates of both $A'$ and $B'$
+% \item Find the equation of $A'B'$
+% \item Calculate the length of $A'B'$
+% \item Can you state with certainty that $AA'B'B$ is a parallelogram? Justify your answer.
+\end{enumerate}
+\end{enumerate}
+\
+\par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Kry die oplossing met die kortkodes:
+\par \begin{tabular}[h]{cccccc}
+(1.) lgv  &  (2.) liZ  &  (3.) liB  &  (4.) lac  &  (5.) lax  &  (6.) laa  &  (7.) laY  &  (8.) lag  &  (9.) la4  &  (10.) l4o  & \end{tabular}
+\end{eocexercises}
