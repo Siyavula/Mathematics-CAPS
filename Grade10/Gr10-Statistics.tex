@@ -120,7 +120,7 @@ colours of their cell phones are and get the following responses:
         
       \end{tabular}
     \end{center}
-\vspace{8pt}\\
+    \vspace{8pt}\\
 
     Is this data set qualitative or quantitative? Explain your answer.
 }{
@@ -263,11 +263,8 @@ with equal frequency, it is equally accurate to describe the data set
 as having many modes or no mode.
 
 \begin{wex}{Finding the mode}
-{Find the mode of the data set
-    \begin{equation*}
-      \{2;\ 2;\ 3;\ 4;\ 4;\ 4;\ 6;\ 6;\ 7;\ 8;\ 8;\ 10;\ 10\}
-    \end{equation*}
-}{
+{Find the mode of the data set $\{2;\ 2;\ 3;\ 4;\ 4;\ 4;\ 6;\ 6;\ 7;\ 8;\ 8;\ 10;\ 10\}$.}
+{
   \westep{Count the number of times that each value appears in the data
     set}
 \\
@@ -616,7 +613,7 @@ range.
     \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
     \item  A class experiment was conducted and $50$ learners were asked to
       guess the number of sweets in a jar. The following guesses were
-      recorded
+      recorded:
       \\
       \begin{center}
         \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
@@ -627,6 +624,8 @@ range.
           36 & 35 & 40 & 23 & 45 & 39 & 32 & 58 & 22 & 40 \\\hline
         \end{tabular}
       \end{center}
+      \vspace{8pt}\\
+
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
       \item
         Draw up a grouped frequency table using the intervals
@@ -1089,14 +1088,14 @@ is.
 
   \begin{align*}
  \mbox{Mean } &=  \frac{
-         2 \times 10
-      +  5 \times 25
-      + 18 \times 35
-      + 22 \times 45
-      + 18 \times 55
-      + 13 \times 65
-      + 12 \times 75
-      + 10 \times 90
+         2\:.\:10
+      +  5\:.\:25
+      + 18\:.\:35
+      + 22\:.\:45
+      + 18\:.\:55
+      + 13\:.\:65
+      + 12\:.\:75
+      + 10\:.\:90
     }{100}\\
     &= 54\%
   \end{align*}
@@ -1355,72 +1354,70 @@ the minimum and maximum values lie.
       Give the five number summary of Hannah's sales.
     \item Use the diagram below to determine the five number summary:
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-      \item 
+      \item \raisebox{-2cm}{
+          \begin{tikzpicture}[xscale=0.4]
+            \def\median{25}
+            \def\firstquartile{22}
+            \def\thirdquartile{28}
+            \def\minimum{15}
+            \def\maximum{35}
 
-    \begin{tikzpicture}[xscale=0.4]
-      \def\median{25}
-      \def\firstquartile{22}
-      \def\thirdquartile{28}
-      \def\minimum{15}
-      \def\maximum{35}
+            \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+            \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+            \draw (    \firstquartile, 0) -- (\minimum,0   );
+            \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+            \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+            \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
 
-      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
-      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
-      \draw (    \firstquartile, 0) -- (\minimum,0   );
-      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
-      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
-      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+            \draw[thick,<->] (12,-1) -- (37,-1);
 
-      \draw[thick,<->] (12,-1) -- (37,-1);
+            \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+              \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
+            }
 
-      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
-        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
-      }
+            \foreach \x in {13,14,...,36} {
+              \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+            }
+            \draw[dotted] ( \maximum, 0) -- ( \maximum, -1);
+            \draw[dotted] ( \thirdquartile, 0) -- ( \thirdquartile, -1);
+            \draw[dotted] (\median, 0)  -- ( \median, -1);
+            \draw[dotted] (\firstquartile, 0) -- ( \firstquartile, -1);
+            \draw[dotted] ( \minimum, 0) -- ( \minimum, -1);
+          \end{tikzpicture}
+        }
+      \item \raisebox{-2cm}{
+          \begin{tikzpicture}[xscale=0.667]
+            \def\median{98}
+            \def\firstquartile{92}
+            \def\thirdquartile{100}
+            \def\minimum{88}
+            \def\maximum{101}
 
-      \foreach \x in {13,14,...,36} {
-        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
-      }
-      \draw[dotted] ( \maximum, 0) -- ( \maximum, -1);
-      \draw[dotted] ( \thirdquartile, 0) -- ( \thirdquartile, -1);
-      \draw[dotted] (\median, 0)  -- ( \median, -1);
-      \draw[dotted] (\firstquartile, 0) -- ( \firstquartile, -1);
-      \draw[dotted] ( \minimum, 0) -- ( \minimum, -1);
-    \end{tikzpicture}
-%   \end{center}
-\item 
+            \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+            \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+            \draw (    \firstquartile, 0) -- (\minimum,0   );
+            \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+            \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+            \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
 
-    \begin{tikzpicture}[xscale=0.6]
-      \def\median{98}
-      \def\firstquartile{92}
-      \def\thirdquartile{100}
-      \def\minimum{88}
-      \def\maximum{101}
+            \draw[thick,<->] (87,-1) -- (103,-1);
 
-      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
-      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
-      \draw (    \firstquartile, 0) -- (\minimum,0   );
-      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
-      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
-      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+            \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+              \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
+            }
 
-      \draw[thick,<->] (87,-1) -- (104,-1);
-
-      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
-        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
-      }
-
-      \foreach \x in {87,89,...,104} {
-        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
-      }
-      \draw[dotted] ( \maximum, 0) -- ( \maximum, -1);
-      \draw[dotted] ( \thirdquartile, 0) -- ( \thirdquartile, -1);
-      \draw[dotted] (\median, 0)  -- ( \median, -1);
-      \draw[dotted] (\firstquartile, 0) -- ( \firstquartile, -1);
-      \draw[dotted] ( \minimum, 0) -- ( \minimum, -1);
-    \end{tikzpicture}
-\end{enumerate}
-
-\end{enumerate}
+            \foreach \x in {88,89,...,102} {
+              \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+            }
+            \draw[dotted] ( \maximum, 0) -- ( \maximum, -1);
+            \draw[dotted] ( \thirdquartile, 0) -- ( \thirdquartile, -1);
+            \draw[dotted] (\median, 0)  -- ( \median, -1);
+            \draw[dotted] (\firstquartile, 0) -- ( \firstquartile, -1);
+            \draw[dotted] ( \minimum, 0) -- ( \minimum, -1);
+          \end{tikzpicture}
+        }
+      \end{enumerate}
+    \end{enumerate}
 \practiceinfo
 \par 
 \par \begin{tabular}[h]{cccccc}
