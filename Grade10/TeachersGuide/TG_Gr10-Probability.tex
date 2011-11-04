@@ -1,5 +1,5 @@
 \chapter{Probability}
-\section{Theoretical probability}
+
 \begin{exercises}{}
 {
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
@@ -28,28 +28,39 @@ A playing card is selected randomly from a pack of $52$
     the probability of selecting a multiple of $5$, if a card is drawn
     at random?
 \end{enumerate}
-\practiceinfo
-  \begin{tabularx}{\textwidth}{XXXX}
-    (1.) AAA & (2.) AAA & (3.) AAA \\
-  \end{tabularx}
 }
 \end{exercises}
 
 
  \begin{solutions}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-
-
 \item solution 1
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{6}{12} &=& \frac{1}{2}$
+    \item $\frac{(3 + 1)}{12} &=& \frac{1}{3}$
+    \item $1 - (\frac{2}{12}) &=& \frac{5}{6}$
+    \item $1 - \frac{(2 + 6)}{12} &= \frac{4}{12}\\
+				  &= \frac{1}{3}$
+    \end{enumerate}
 \item solution 2
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{1}{52}$ (only one in the deck)
+    \item $\frac{1}{2}$ (half the cards are red, half are black)
+    \item $\frac{3}{13}$ (for each suite of 13 cards, there are three picture cards: J, Q, K)
+    \item $\frac{4}{52} = \frac{1}{13}$ (four aces in the deck)
+    \item $\frac{3}{13}$ (for each suite of 13 cards, there are three cards less than 4: A, 2 and 3)
+    \end{enumerate}
 \item solution 3
-
+    There are 50 cards.  They are all even.\\
+    All even numbers that are also multiples of 5 are multiples of 10 (10, 20,...., 100).\\
+    There are 10 of them.\\
+    Therefore, the probability is $\frac{10}{50} = \frac{1}{5}$.
 \end{enumerate}}
 \end{solutions}
 
 
-\section{Relative frequency}
-\section{Venn diagrams}
+% \section{Relative frequency}
+% \section{Venn diagrams}
 \begin{exercises}{}
 {
     \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
@@ -87,33 +98,193 @@ A playing card is selected randomly from a pack of $52$
       \end{enumerate}
     \end{enumerate}
   \end{enumerate}
-\practiceinfo
-  \begin{tabularx}{\textwidth}{XXXX}
-    (1.) AAA & (2.) AAA & (3.) AAA \\
-  \end{tabularx}
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
 }
 \end{exercises}
 
 
  \begin{solutions}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-
-
 \item solution 1
+	  \scalebox{0.5} % Change this value to rescale the drawing.
+	  {
+	  \begin{pspicture}(0,-2.2)(4.5590625,2.2)
+	  \pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+	  \pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+	  \pscircle[linewidth=0.04,dimen=outer](2.82,0.48){1.18}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(4.184531,1.89){\LARGE$S$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.1845312,0.27){\LARGE$2$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.2445313,0.89){\LARGE$4$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.64453125,0.51){\LARGE$6$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.3245312,0.19){\LARGE$8$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.6745312,-0.15){\LARGE$10$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.6045313,1.19){\LARGE$3$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.3245313,1.13){\LARGE $5$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.9645312,0.63)\LARGE{$7$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.9045312,-1.41){\LARGE$9$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.0045313,1.5){\LARGE$X$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(2.4945312,1.9){\LARGE$Y$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(0.75453126,-0.59){\LARGE$12$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.7545313,-0.61){\LARGE$14$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.3945312,-1.03){\LARGE$16$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.5145311,0.35){\LARGE$11$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.2545311,-0.17){\LARGE$13$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(1.8445313,-1.69){\LARGE$1$}
+	  \usefont{T1}{ppl}{m}{n}
+	  \rput(3.6745312,-0.87){\LARGE$15$}
+	  \end{pspicture} 
+	  }
 \item solution 2
-\item solution 3
-\item solution 4
-\item solution 5
-\item solution 6
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item
+		      \scalebox{0.5} % Change this value to rescale the drawing.
+		      {
+		      \begin{pspicture}(0,-2.393125)(4.7790623,2.393125)
+		      \pscircle[linewidth=0.04,dimen=outer](1.64,0.7196875){1.18}
+		      \pscircle[linewidth=0.04,dimen=outer](1.16,-0.8203125){1.16}
+		      \pscircle[linewidth=0.04,dimen=outer](2.64,-0.2603125){1.18}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(4.3,0.6096875){\LARGE$G:41$}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(0.77453125,-2.2){\LARGE$H:36$}
+		      \usefont{T1}{ppl}{m}{n}
+		      \rput(1.9145312,2.1896875){\LARGE$M:30$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(0.81453127,-1.1503125){\LARGE$16$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.7445313,1.3096875){\LARGE$8$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.9245312,-0.7503125){\LARGE$6$}
+		      \usefont{T1}{ptm}{m}{n}
+		      \rput(1.1945312,-0.0303125){\LARGE$16$}
+		      \end{pspicture} 
+		      }
 
+    \item Each student must do exactly one of the following:
+    \begin{itemize}
+	\item Take only geography;
+	\item Only take maths and/or history;
+    \end{itemize}
+    There are $30 + 36 -16 =     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]50$ students doing the second one, therefore the must be $79 - 50 = 29$ only doing geography.\\
+    \newline
+    Each student must do exactly on of:
+    \begin{itemize}
+	\item Only take geography;
+	\item Only take maths;
+	\item Take history;
+	\item Take geography and maths, but not history;
+    \end{itemize}
+    There are $29, 8$ and $36$ of the first three, so the answer to B is:\\
+    $79 - 29 -8 - 36 = 6$ people
+
+    \item Calculated already: $29$
+
+    \item Each student must do exactly one of:
+    \begin{itemize}
+	\item Do geography
+	\item Only do maths
+	\item Only do history
+	\item Do maths and history but not geography
+    \end{itemize}
+    Using the same method as before, the number of people in the last group is:\\
+    \newline
+    $79 - 41 - 8 - 16 = 14$\\
+    \newline
+    But, $16$ people do maths and history, so there must be $16 - 14$ people who do all three.
+    \end{enumerate}
+
+\item solution 3
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $S = \{1, 2,...., 12\}$
+    
+    \item $A = \{1, 2, 3, 4, 6, 12\}$
+
+    \item $B = \{2, 3, 5, 7, 11\}$
+
+    \item
+    		  \scalebox{0.5} % Change this value to rescale the drawing.
+		  {
+		  \begin{pspicture}(0,-2.2)(4.5590625,2.2)
+		  \pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+		  \pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+		  \pscircle[linewidth=0.04,dimen=outer](2.82,0.48){1.18}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(4.184531,1.89){\LARGE $S$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.0045311,0.65){\LARGE$2$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.8645313,0.19){\LARGE$4$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.4645313,-0.27){\LARGE$6$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.9245312,-1.67){\LARGE$8$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(3.5345314,-1.03){\LARGE$10$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.2245312,0.07){\LARGE$3$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.7645311,1.17){\LARGE$5$}
+		  \usefont{T1}{ppl}{m}{n}\practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
+}
+		  \rput(3.3045313,0.57){\LARGE$7$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.8045313,-1.47){\LARGE$9$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.9945313,1.41){\LARGE$A$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(2.4945312,1.83){\LARGE$B$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(1.6145313,-0.95){\LARGE$12$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(3.1945312,-0.01){\LARGE$11$}
+		  \usefont{T1}{ppl}{m}{n}
+		  \rput(0.9845312,0.77){\LARGE$1$}
+		  \end{pspicture} 
+		  }
+
+    \item
+	\begin{enumerate}[noitemsep, label=\textbf{\roman*.} ]
+	\item $12$
+	\item $6$
+	\item $5$
+% 	\item $2$
+% 	\item $9$
+	\end{enumerate}
+    
+%     \item yes
+    \end{enumerate}
 \end{enumerate}}
 \end{solutions}
 
 
-\section{Union and intersection}
-\section{Probability identities}
-\section{Mutually exclusive events}
-\section{Complementary events}
+% \section{Union and intersection}
+% \section{Probability identities}
+% \section{Mutually exclusive events}
+% \section{Complementary events}
 \begin{exercises}{}
 {
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
@@ -145,7 +316,7 @@ A playing card is selected randomly from a pack of $52$
     \end{center}
     If a pupil is selected at random what is the probability that the
     pupil will be:
-  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item a female
     \item a $4$ year old male
     \item aged $3$ or $4$
@@ -153,15 +324,14 @@ A playing card is selected randomly from a pack of $52$
     \item not $5$
     \item either $3$ or female?
     \end{enumerate}
-\item
-Fiona has $85$ labelled discs, which are numbered from $1$ to
+  \item Fiona has $85$ labelled discs, which are numbered from $1$ to
     $85$. If a disc is selected at random what is the probability that
     the disc number:
-  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\setcounter{enumi}{10}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \setcounter{enumi}{10}
     \item ends with $5$
-    \item can be multiplied by $3$
-    \item can be multiplied by $6$
+    \item is a multiple of $3$
+    \item is a multiple of $6$
     \item is number $65$
     \item is not a multiple of $5$
     \item is a multiple of $4$ or $3$
@@ -169,21 +339,114 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
     \item is number $1$?
     \end{enumerate}
  \end{enumerate}
-\practiceinfo
-  \begin{tabularx}{\textwidth}{XXXX}
-    (1.) AAA & (2.) AAA & (3.) AAA \\
-  \end{tabularx}
-}
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
+% }
 \end{exercises}
 
 
- \begin{solutions}{}{
+\begin{solutions}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 
-
 \item solution 1
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    Before we answer the questions we first work out how many blocks there are in total. This gives us the sample space.\\
+    $n(S) = 24 + 32 + 41 + 19$\\
+	 $= 116$\\
+    \item The probability that a block is purple is:\\
+    $P(purple) = \frac{n(E)}{n(S)}\\
+     P(purple) = \frac{24}{116}\\
+     P(purple) = 0,21$
+
+    \item The probability that a block is either purple or white is:\\
+    $P(purple \cup white) = P(purple) + P(white) - P(purple \cap white)\\
+    = \frac{24}{116} + \frac{41}{116} - \frac{24}{116} \times \frac{41}{116}\\
+    = 0,64$
+
+    \item Since one block cannot be two colours the probability of this event is $0$.
+
+    \item We first work out the probability that a block is orange:\\
+    $P(orange) = \frac{32}{116}
+	       = 0,28$\\
+    The probability that a block is not orange is:\\
+    $P(not orange) = 1 - 0,28\\
+		   = 0,72$
+    \end{enumerate}
+    
 \item solution 2
+We calculate the total number of pupils at the school:\\
+$6 + 2 + 5 + 7 + 4 + 6 = 30$
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item The total number of female children is $6 + 5 + 4 = 15$.\\
+    The probability of a randomly selected child being female is:\\
+    $P(female) = \frac{n(E)}{n(S)}\\
+     P(female) = \frac{15}{30}\\
+     P(female) = 0,5$
+
+    \item The probability of a randomly selected child being a 4 year old male is:\\
+    $P(4male) = \frac{7}{30}\\
+	      = 0,23$
+
+    \item There are $6 + 2 + 5 + 7 = 20$ children aged 3 or 4.\\
+    The probability of a randomly selected child being either 3 or 4 is:\\
+    $\frac{20}{30} = 0,67$
+
+    \item A child cannot be both 3 and 4, so the probability is $0$.
+
+    \item This is the same as a randomly selected child being either 3 or 4 and so is $0,67$.
+
+    \item The probability of a child being either 3 or female is:\\
+    $P(3 \cup female) = P(3) + P(female) - P(3 \cap female)\\
+		      = \frac{10}{30} + 0,5 - \frac{10}{30} \times \frac{15}{30}\\
+		      = 0,67$
+    \end{enumerate}
+    
 \item solution 3
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item The set of all discs ending with $5$ is: $\{5, 15, 25, 35, 45, 55, 65, 75, 85\}$. This has $9$ elements.\\
+    \newline
+    The probability of drawing a disc that ends with $5$ is:\\
+    $P(5) = \frac{n(E)}{n(S)}\\
+     P(5) = \frac{9}{85}\\
+     P(5) = 0,11$
+
+    \item The set of all discs that are multiples of $3$ is: $\{3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84\}$. This has $28$ elements.\\
+    \newline
+    The probability of drawing a disc that is a multiple of $3$ is:
+    $P(3_m) = \frac{28}{85}
+	    = 0,33$
+
+    \item The set of all discs that are multiples of $6$ is: $\{6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84\}$. This set has $14$ elements.\\
+    \newline
+    The probability of drawing a disc that is a multiple of $6$ is:\\
+    $P(6_m) = \frac{14}{85}\\
+	    = 0,16$
+
+    \item There is only one element in this set and so the probability of drawing $65$ is:\\
+    $P(65) = \frac{1}{85}\\
+	   = 0,01$
+
+    \item The set of all discs that is a multiple of $5$ is: $\{5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85\}$. This set contains $17$ elements. Therefore the number of discs that are not multiples of $5$ is: $85 − 17 = 68$.\\
+    \newline
+    The probability of drawing a disc that is not a multiple of $5$ is:\\
+    $P(not5_m) = \frac{68}{85}\\
+	       = 0,80$
+
+    \item In part b, we worked out the probability for a disc that is a multiple of $3$. Now we work out the number of elements in the set of all discs that are multiples of $4$: $\{4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84\}$. This has $28$ elements.\\
+    \newline
+    The probability that a disc is a multiple of either $3$ or $4$ is:\\
+    $P(3_m \cup 4_m) = P(3_m) + P(4_m) - P(3_m \cap 4_m)\\
+    = 0,33 + \frac{28}{85} - 0,33 \times \frac{28}{85}\\
+    = 0,55$
+    
+    \item The set of all discs that are a multiples of $2$ and $6$ is the same as the set of all discs that are a multiple of $6$. Therefore the probability of drawing a disc that is both a multiple of $2$ and $6$ is:\\
+    \newline
+    $0,16$
+    
+    \item There is only $1$ element in this set and so the probability is $0,01$.
+    \end{enumerate}
 
 \end{enumerate}}
 \end{solutions}
@@ -201,7 +464,11 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
     random has:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item both chips and Fanta
-    \item only Fanta?
+    \item only Fanta?\practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA \\
+%   \end{tabularx}
+}
     \end{enumerate}
   \item Use a Venn diagram to work out the following probabilities
     from a die being rolled:
@@ -270,7 +537,7 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
       \end{enumerate}
     \item If there are $70$ sweets in the jar how many purple ones are
       there?
-    \item $\frac{1}{4}$ of the purple sweets in b) have streaks on
+    \item $\frac{2}{5}$ of the purple sweets in b) have streaks on
       them and the rest do not. How many purple sweets have streaks?
     \end{enumerate}
 \item For each of the following, draw a Venn diagram to represent
@@ -298,12 +565,12 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
       (Hint: Find any elements of $P$ in $N$ and of $N$ in $P$.)
     \end{enumerate}
   \end{enumerate}
-\practiceinfo
-  \begin{tabularx}{\textwidth}{XXXXX}
-    (1.) AAA & (2.) AAA & (3.) AAA& (4.) AAA& (5.) AAA\\
-    (6.) AAA& (7.) AAA& (8.) AAA& (9.) AAA& (10.) AAA\\
-    (11.) AAA& (12.) AAA& (13.) AAA \\
-  \end{tabularx}
+% \practiceinfo
+%   \begin{tabularx}{\textwidth}{XXXXX}
+%     (1.) AAA & (2.) AAA & (3.) AAA& (4.) AAA& (5.) AAA\\
+%     (6.) AAA& (7.) AAA& (8.) AAA& (9.) AAA& (10.) AAA\\
+%     (11.) AAA& (12.) AAA& (13.) AAA \\
+%   \end{tabularx}
 \end{eocexercises}
 
 
@@ -311,25 +578,134 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 
 
-\item solution 1
-\item solution 2
-\item solution 3
-\item solution 4
-\item solution 5
-\item solution 6
-\item solution 7
-\item solution 8
-\item solution 9
-\item solution 10
-\item solution 11
-\item solution 12
-\item solution 13
-\item solution 14
-\item solution 15
-\item solution 16
-\item solution 17
-\item solution 18
+\item solution 1\\
+$45($All$) - 6($only Frosties$) - 31 ($both$) = 8 ($only Strawberry Pops$)$
 
+\item solution 2
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{7}{42} = \frac{1}{6}$
+
+    \item Since $42 - 3 = 39$ had at least one, and $23 + 7$ had a packet of chips, then $39 - 30 = 9$ only had Fanta.\\
+    $\frac{9}{42} = \frac{3}{14}$
+    \end{enumerate}
+
+\item solution 3
+	    \scalebox{0.5} % Change this value to rescale the drawing.
+	    {
+	    \begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+	    \pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+	    \pscircle[linewidth=0.04,dimen=outer](1.08,-0.03671875){0.94}
+	    \pscircle[linewidth=0.04,dimen=outer](2.01,1.2132813){0.45}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(3.1245313,1.7132813){\LARGE$S$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.0045313,0.5132812){\LARGE$2$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(0.6045312,0.03328125){\LARGE$4$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.3245312,-0.34671876){\LARGE$6$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(2.8445313,-0.50671875){\LARGE$3$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(1.9845313,1.1732812){\LARGE$5$}
+	    \usefont{T1}{ppl}{m}{n}
+	    \rput(2.7645311,0.03328125){\LARGE$1$}
+	    \pscircle[linewidth=0.04,dimen=outer](2.81,-0.20671874){0.69}
+	    \end{pspicture}
+	    }\\
+    Multiples of $5 :5$\\
+    Odd number: $1, 3, 5$\\
+    Neither: $2, 4, 6$\\
+    Both: $5$
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{1}{6}$
+    \item $\frac{3}{6} = \frac{1}{2}$
+    \item $\frac{2}{6} = \frac{1}{3}$
+    \end{enumerate}
+\item solution 4\\
+$1 - \frac{7}{12} = \frac{5}{12}$
+\item solution 5
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{190}{300} = \frac{19}{30}$
+    \item $1 - \frac{19}{30} = \frac{11}{30}$
+    \end{enumerate}
+\item solution 6
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{8}{18} = \frac{4}{9}$
+    \item $1 - \frac{4}{9} = \frac{5}{9}$
+    \item $\frac{2}{18} = \frac{1}{9}$
+    \item $1 - \frac{1}{9} = \frac{8}{9}$
+    \item $\frac{1}{9} + \frac{4}{9} = \frac{5}{9}$
+    \item $1 - \frac{5}{9} = \frac{4}{9}$
+    \end{enumerate}
+\item solution 7
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Total number of biscuits is $9 + 4 + 11 + 18 = 42$\\
+    $\frac{4}{42} + \frac{18}{42} = \frac{22}{42}$\\
+    $\frac{11}{21}$
+    \item $1 - \frac{9}{42} = 1 - \frac{3}{14}$\\
+    $\frac{11}{14}$
+    \end{enumerate}
+\item solution 8
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\frac{15}{280} = \frac{3}{56}$
+    \item $1 - \frac{3}{56} = \frac{53}{56}$
+    \end{enumerate}
+\item solution 9
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item All $4$ groups are mutually exclusive, so total number of children is $44 + 14 + 5 + 40 = 103$.
+    \item
+	\begin{enumerate}[itemsep=1pt,  label=\textbf{\roman*}. ]
+	\item $\frac{19}{103}$
+	\item $\frac{58}{103}$
+	\end{enumerate}
+    \item $\frac{14}{(14 + 5)} = \frac{14}{19}$
+    \end{enumerate}
+\item solution 10
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item 
+	\begin{enumerate}[itemsep=1pt,  label=\textbf{\roman*}. ]
+	\item Same as not black: $1 - \frac{3}{5} = \frac{2}{5}$
+	\item $\frac{3}{5}$
+	\item $\frac{1}{7}$
+	\end{enumerate}
+    \item $\frac{1}{7} \times 70 = 10$
+    \item $10 \times \frac{2}{5} = 4$
+    \end{enumerate}
+\item solution 11
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item
+%     			\scalebox{0.5} % Change this value to rescale the drawing.
+% 			{
+			\begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+			\pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+			\pscircle[linewidth=0.04,dimen=outer](1.2,-0.07671875){0.94}
+			\usefont{T1}{ppl}{m}{n}
+			\rput(3.1245313,1.7132813){\LARGE$S$}
+			\pscircle[linewidth=0.04,dimen=outer](2.45,-0.06671875){0.87}
+			\end{pspicture}
+% 			}
+    \item
+% 			\scalebox{0.5} % Change this value to rescale the drawing.
+% 			{
+			\begin{pspicture}(0,-1.8767188)(3.62,1.9167187)
+			\pscircle[linewidth=0.04,dimen=outer](1.81,-0.06671875){1.81}
+			\usefont{T1}{ppl}{m}{n}
+			\rput(3.1245313,1.7132813){\LARGE$S$}
+			\psline[linewidth=0.04cm](2.78,1.4032812)(0.88,-1.5767188)
+			\end{pspicture}
+% 			}
+    \end{enumerate}
+\item solution 12
+NEED TO CREATE VENN DIAGRAM!!!
+\item solution 13
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $\{$deck of cards without clubs$\}$
+    \item $P = \{$J, Q, K of hearts, diamonds or spades$\}$
+    \item $N = \{$A, $2, 3, 4, 5, 6, 7, 8, 9, 10$ or hearts, diamonds or spades$\}$
+    \item $\{$Mutually exclusive and complementary$\}$
+    \item Complementary
+    \end{enumerate}
 \end{enumerate}}
 \end{solutions}
 
