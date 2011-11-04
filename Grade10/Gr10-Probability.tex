@@ -15,7 +15,7 @@ the weatherman says that there is a $40\%$ chance of rain tomorrow, you
 may or may not end up getting wet.  Uncertainty presents itself to
 some degree in every event that occurs around us and in every decision
 that we make.\par
-\chapterstartvid{VMbxk}
+
 We will see in this chapter that all of these uncertainties can be
 described using the rules of probability theory and that we can make
 definite conclusions about uncertain processes.\par
@@ -24,6 +24,8 @@ We'll use three examples of uncertain processes to help you understand
 the meanings of the different words used in probability theory: tossing
 a coin, rolling dice, and a soccer match.
 
+\chapterstartvideo{VMbxk}
+
 \Definition{Experiment}{An experiment refers to an uncertain process.}
 
 \Definition{Outcome}{An outcome of an experiment is a single
@@ -31,8 +33,8 @@ a coin, rolling dice, and a soccer match.
 
 \begin{figure}[H]
 \textbf{Experiment 1} A coin is tossed and it lands with either
-  heads (H) or tails (T) facing upwards. An example outcome of tossing a coin that lands with heads
-    facing up:
+  heads (H) or tails (T) facing upwards. An example outcome of tossing
+  a coin is that it lands with heads facing up:
   \begin{center}
     \begin{tikzpicture}
       \coinheads
@@ -56,7 +58,7 @@ a coin, rolling dice, and a soccer match.
 \end{figure}
 
 \begin{figure}[H]
-  \textbf{Experiment 3} Two teams play in a soccer match and we are
+  \textbf{Experiment 3} Two teams play a soccer match and we are
   interested in the final score. An example outcome of a soccer match:
 
   \begin{center}
@@ -159,7 +161,7 @@ space is infinitely large:
   letter \(E\) and the number of outcomes in the event with \(n(E)\).}
 
 \paragraph{Experiment 1} Let's say that we would like the coin to land
-heads up. Here the event contains a single outcome
+heads up. Here the event contains a single outcome:
 \(E=\{\textrm{H}\}\), \(n(E)=1\).
 
 \paragraph{Experiment 2} Let's say that we are interested in the sum
@@ -214,7 +216,7 @@ This event set is infinitely large.
 \item A probability of $0,5$ means that an event will occur half the
   time, or $1$ time out of every $2$.
 \end{itemize}
-\mindsetvid{calculating probabilities}{VMbzp}
+\mindsetvid{Calculating probabilities}{VMbzp}
 When all of the possible outcomes of an experiment have an equal
 chance of occurring, we can compute the exact theoretical probability
 of an event. The probability of an event is the ratio between the
@@ -222,10 +224,10 @@ number of outcomes in the event set and the number of possible
 outcomes in the sample space.
 \[P(E) = \frac{n(E)}{n(S)}\]
 
-\begin{wex}{Theoretical probabilities}{
-  What is the theoretical probability of each of the events in the
-  first two of our three experiments?
-}{
+\begin{wex}{Theoretical probabilities}
+{What is the theoretical probability of each of the events in the
+  first two of our three experiments?}
+{
   \westep{Write down the size of the sample space}
 
   \begin{itemize}
@@ -243,8 +245,8 @@ outcomes in the sample space.
   \westep{Compute the theoretical probability}
 
   \begin{itemize}
-  \item[] Experiment 1: $P(E) = \frac{n(E)}{n(S)} = \frac{1}{2} = 0,5$
-  \item[] Experiment 2: $P(E) = \frac{n(E)}{n(S)} = \frac{5}{36} = 0,13\dot{8}$
+  \item[] Experiment 1: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{1}{2} = 0,5$
+  \item[] Experiment 2: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{5}{36} = 0,13\dot{8}$
   \end{itemize}
 }
 \end{wex}
@@ -283,9 +285,9 @@ A playing card is selected randomly from a pack of $52$
     \item a red card
     \item a picture card
     \item an ace
-    \item a number less than $4$?
+    \item a number less than $4$
     \end{enumerate}
-\item Even numbers in the range $2$--$100$ are written on cards. 
+\item Even numbers from $2$ to $100$ are written on cards. 
   What is
     the probability of selecting a multiple of $5$, if a card is drawn
     at random?
@@ -311,9 +313,9 @@ experimental one. We have to repeat an experiment a number of times
 and count how many times the outcome of the trial is in the event
 set. Because it is experimental, it is possible to get a different
 relative frequency every time that we repeat an experiment.
-\mindsetvid{relative frequency}{VMbzy}
-\begin{wex}{Relative frequency and theoretical probability}{
-  We toss a coin $30$ times and observe the outcomes. The results of
+\mindsetvid{Relative frequency}{VMbzy}
+\begin{wex}{Relative frequency and theoretical probability}
+{We toss a coin $30$ times and observe the outcomes. The results of
   the trials are shown in the table below.
 %  \vspace*{\baselineskip}
 
@@ -331,6 +333,7 @@ relative frequency every time that we repeat an experiment.
       \bottomrule
     \end{tabular}
   \end{center}
+  \vspace{8pt}\\
 
   What is the relative frequency of observing heads after each trial
   and how does it compare to the theoretical probability of observing
@@ -357,16 +360,16 @@ relative frequency every time that we repeat an experiment.
       $p$ &  $9$ & $10$ & $11$ & $11$ & $12$ & $12$ & $13$ & $13$ & $13$ & $13$ \\
       \bottomrule
     \end{tabular}
-\begin{center} Number of positive outcomes (heads), $p$, after having completed $t$ trials.\end{center}
-
   \end{center}
-  
+  \vspace{8pt}\\
 
-\westep{Compute the relative frequency}
+  \westep{Compute the relative frequency}
 
   Since the relative frequency is defined as the ratio between the
   number of positive trials and the total number of trials,
   \[f=\frac{p}{t}\]
+  The relative frequency of observing heads, $f$, after having
+  completed $t$ coin tosses is:
 
   \begin{center}
     \begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
@@ -381,9 +384,8 @@ relative frequency every time that we repeat an experiment.
       $f$ & $0,43$ & $0,45$ & $0,48$ & $0,46$ & $0,48$ & $0,46$ & $0,48$ & $0,46$ & $0,45$ & $0,43$ \\
       \bottomrule
     \end{tabular}
-\begin{center} Relative frequency of observing heads, $f$, after having completed $t$ coin tosses.\end{center}
-
   \end{center}
+  \vspace{8pt}\\
   
 From the last entry in this table we can now easily read the relative
 frequency after $30$ trials, namely $13/30 = 0,4\dot{3}$. The relative
@@ -401,17 +403,16 @@ a graph:
 %   \caption{Plot of the relative frequency of observing heads, $f$,
 %     after having completed $t$ coin tosses.}
 \end{figure}
-The graph above is the plot of the relative frequency of observing heads, $f$,
-    after having completed $t$ coin tosses. It was generated from the table of numbers above
+
+\noindent The graph above is the plot of the relative frequency of observing heads, $f$,
+after having completed $t$ coin tosses. It was generated from the table of numbers above
 by plotting the number of trials that have been completed, $t$, on the
-x-axis and the relative frequency, $f$, on the y-axis. In the
+$x$-axis and the relative frequency, $f$, on the $y$-axis. In the
 beginning (after a small number of trials) the relative frequency
 fluctuates a lot around the theoretical probability at $0,5$, which is
 shown with a dashed line. As the number of trials increases, the
 relative frequency fluctuates less and gets closer to the theoretical
 probability. 
-
-
 }
 \end{wex}
 
@@ -423,9 +424,9 @@ probability.
 %This is close to the theoretical probability, which we compute earlier
 %as $0,13\dot{8}$.
 
-\begin{wex}{Relative frequency and theoretical probability}{
-  While watching $10$ soccer games where Team 1 plays against Team 2, we
-  record the following final scores.
+\begin{wex}{Relative frequency and theoretical probability}
+{While watching $10$ soccer games where Team 1 plays against Team 2, we
+  record the following final scores:
     \begin{center}
       \begin{tabular}{lcccccccccc}
         \toprule
@@ -434,10 +435,8 @@ probability.
         Team 1 & $2$ & $0$ & $1$ & $1$ & $1$ & $1$ & $1$ & $0$ & $5$ & $3$ \\
         Team 2 & $0$ & $2$ & $2$ & $2$ & $2$ & $1$ & $1$ & $0$ & $0$ & $0$ \\
         \bottomrule
-      \end{tabular}\begin{center} Final scores of $10$ soccer matches. \end{center}
-
+      \end{tabular}
     \end{center}
-      
 
 What is the relative frequency of Team 1 winning?
 }{
@@ -487,7 +486,7 @@ between sets. In each Venn diagram a set is represented by a closed
 curve. The region inside the curve represents the elements that
 belong to the set, while the region outside the curve represents the
 elements that are excluded from the set.\par
-\mindsetvid{venn diagrams and probabilities}{VMcbf}
+\mindsetvid{{V}enn diagrams and probabilities}{VMcbf}
 Venn diagrams are helpful for thinking about probability since we deal
 with different sets. Consider two events, $A$ and $B$, in a sample
 space $S$.
@@ -543,8 +542,56 @@ Note that events will always appear inside the sample space since the
 sample space contains all possible outcomes of the experiment.
 % \vspace{-1cm}
 
-\begin{wex}{Venn diagrams}{
- Consider the set of diamonds removed from a deck of cards. A random card is selected from the set of diamonds.
+\begin{wex}{Venn diagrams}
+{\wexlabel{wex:dice_venn}%
+Represent the sample space of two rolled dice and the following two events using a Venn diagram:
+  \begin{itemize}
+  \item[] Event $A$: the sum of the dice equals $8$
+  \item[] Event $B$: at least one of the dice shows\ \raisebox{-2pt}{
+      \begin{tikzpicture}
+        \begin{scope}[scale=0.333]
+          \makediegeneral{2}{}{0.175cm*0.333}
+        \end{scope}
+      \end{tikzpicture}
+    }
+  \end{itemize}
+}{
+\begin{center}
+\begin{tikzpicture}
+  \begin{scope}[scale=0.5]
+    \begin{scope}[draw=gray,fill=gray]
+      \foreach \x in {1, ..., 6} {
+        \foreach \y in {1, ..., 6} {
+          \pgfmathparse{15*rand} \let\rot\pgfmathresult
+          \makediesmall{\x}{shift={(4cm*\x-0.66cm,-2cm*\y)},rotate=\rot}
+          \pgfmathparse{15*rand} \let\rot\pgfmathresult
+          \makediesmall{\y}{shift={(4cm*\x+0.66cm,-2cm*\y)},rotate=\rot}
+        }
+      }
+    \end{scope}
+    \draw[thick] (1.5cm, -0.5cm) rectangle (26.5cm, -13.5cm);
+    \draw (26.5cm, -0.5cm) node[anchor=south east] {$S$};
+    \draw[thick,rounded corners]
+      (6.25cm, -1cm) -- (6.25cm, -3cm) -- (2.25cm, -3cm) -- (2.25cm, -5cm) --
+      (6.25cm, -5cm) -- (6.25cm, -13cm) -- (9.75cm, -13cm) -- (9.75cm, -5cm) --
+      (25.75cm, -5cm) -- (25.75cm, -3cm) -- (9.75cm, -3cm) -- (9.75cm, -1cm) -- cycle;
+    \draw (10.2cm, -1.3cm) node {$B$};
+    \begin{scope}[xshift=16cm,yshift=-8cm,rotate=26.57]
+      \def\d{9.5cm}
+      \def\r{1cm}
+      \draw[thick]
+        (+\d, +\r) -- (-\d, +\r) arc (90:270:\r) -- 
+        (+\d, -\r) arc (-90:90:\r) -- cycle;
+    \end{scope}
+    \draw (14.25cm, -7.1cm) node {$A$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+}
+\end{wex}
+
+\begin{wex}{Venn diagrams}
+{Consider the set of diamonds removed from a deck of cards. A random card is selected from the set of diamonds.
 \begin{itemize}
  \item Write down the sample space, $S$, for the experiment.
 \item What is the value of $n(S)$?
@@ -607,59 +654,7 @@ S=\{A;~ 2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
 \rput(2.5045311,1.83){$R$}
 \end{pspicture} 
 }
-
 \end{center}
-}
-\end{wex}
-\clearpage
-\begin{wex}{Venn diagrams}{
-  Represent the sample space of two rolled dice and the two events, $A$ and $B$, using a Venn diagram, where
-  \begin{itemize}
-  \item[] $A:$ the sum of the dice equals $8$
-  \item[] $B:$ at least one of the dice shows
-    \raisebox{-2pt}{\begin{tikzpicture}
-        \begin{scope}[scale=0.333]
-          \makediegeneral{2}{}{0.175cm*0.333}
-        \end{scope}
-      \end{tikzpicture}}
-  \end{itemize}
-  
-}{
-\begin{center}
-\begin{tikzpicture}
-  \begin{scope}[scale=0.5]
-    \begin{scope}[draw=gray,fill=gray]
-      \foreach \x in {1, ..., 6} {
-        \foreach \y in {1, ..., 6} {
-          \pgfmathparse{15*rand} \let\rot\pgfmathresult
-          \makediesmall{\x}{shift={(4cm*\x-0.66cm,-2cm*\y)},rotate=\rot}
-          \pgfmathparse{15*rand} \let\rot\pgfmathresult
-          \makediesmall{\y}{shift={(4cm*\x+0.66cm,-2cm*\y)},rotate=\rot}
-        }
-      }
-    \end{scope}
-    \draw[thick] (1.5cm, -0.5cm) rectangle (26.5cm, -13.5cm);
-    \draw (26.5cm, -0.5cm) node[anchor=south east] {$S$};
-    \draw[thick,rounded corners]
-      (6.25cm, -1cm) -- (6.25cm, -3cm) -- (2.25cm, -3cm) -- (2.25cm, -5cm) --
-      (6.25cm, -5cm) -- (6.25cm, -13cm) -- (9.75cm, -13cm) -- (9.75cm, -5cm) --
-      (25.75cm, -5cm) -- (25.75cm, -3cm) -- (9.75cm, -3cm) -- (9.75cm, -1cm) -- cycle;
-    \draw (10.2cm, -1.3cm) node {$B$};
-    \begin{scope}[xshift=16cm,yshift=-8cm,rotate=26.57]
-      \def\d{9.5cm}
-      \def\r{1cm}
-      \draw[thick]
-        (+\d, +\r) -- (-\d, +\r) arc (90:270:\r) -- 
-        (+\d, -\r) arc (-90:90:\r) -- cycle;
-    \end{scope}
-    \draw (14.25cm, -7.1cm) node {$A$};
-  \end{scope}
-\end{tikzpicture}
-\end{center}
-\caption{Venn diagram showing two events, $A$ and $B$, and the sample
-  space, $S$, of rolling two dice.}
-\label{fig:dice_venn}
-
 }
 \end{wex}
 
@@ -668,7 +663,7 @@ S=\{A;~ 2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
     \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
    \item Let $S$ denote the set of whole numbers from $1$ to $16$, $X$
     denote the set of even numbers from $1$ to $16$ and $Y$ denote the
-    set of prime numbers from $1$ to $16$. Draw a Venn diagram accurately depicting $S$, $X$ and $Y$.
+    set of prime numbers from $1$ to $16$. Draw a Venn diagram depicting $S$, $X$ and $Y$.
 %     \item Find $n\left(S\right)$, $n\left(X\right)$, $n\left(Y\right)$,
 %       $n\left(X\cup Y\right)$, $n\left(X\cap Y\right)$.
 %     \end{enumerate}
@@ -678,7 +673,7 @@ S=\{A;~ 2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
     Geography is $41$, those who take History is $36$, and $30$ take
     Maths. The number who take Maths and History is $16$; the number
     who take Geography and History is $6$, and there are $8$ who take
-    Maths only and $16$ who take only History.
+    Maths only and $16$ who take History only.
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 
     \item Draw a Venn diagram to illustrate all this information.
@@ -724,7 +719,7 @@ S=\{A;~ 2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
 \Definition{Intersection}{The intersection of two sets is a new set
   that contains all of the elements that are in both sets. The
   intersection is written as $A \cap B$.}
-\mindsetvid{inclusive and exclusive events}{VMcci}
+\mindsetvid{Inclusive and exclusive events}{VMcci}
 The figure below shows the union and intersection for different
 configurations of two events in a sample space, using Venn diagrams.
 
@@ -732,7 +727,7 @@ configurations of two events in a sample space, using Venn diagrams.
   \input{Gr10-Probability-images/venn_union_intersection2}
   \begin{caption*}{The unions and intersections of different events. Note that
     in the middle column the intersection, $A \cap B$, is empty since
-    the two sets do not overlap. Also, in the final column the union,
+    the two sets do not overlap. In the final column the union,
     $A \cup B$, is equal to $A$ and the intersection, $A \cap B$, is
     equal to $B$ since $B$ is fully contained in $A$.}\end{caption*}
   \label{fig:venn_union_intersection}
@@ -805,34 +800,36 @@ $ =$ & $P(A \cup B)$
 \end{tabular}
 \end{center}
 
-\begin{wex}{Union and intersection of events}{
-  Relate the probabilities of events $A$ and $B$ from the previous worked example (two rolled dice) and show that they satisfy the identity
+\begin{wex}{Union and intersection of events}
+{Relate the probabilities of events $A$ and $B$ from
+  Worked Example \wexref{wex:dice_venn}
+  (two rolled dice) and show that they satisfy the identity
   \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
 }{
   \westep{Write down the probabilities of the two events, their union
-    and their intersection.}
+    and their intersection}
   
-  From the Venn diagram in the previous worked example,
-% Figure \ref{fig:dice_venn}
+  From the Venn diagram
+  Worked Example \wexref{wex:dice_venn},
  we can count the number of outcomes in each
   event. To get the probability of an event, we divide the size of
   the event by the size of the sample space, which is $n(S)=36$.
   \[\begin{array}{r@{$\ =\ $}c@{$\ =\ $}l}
     P(A)        & \dfrac{n(A)}{n(S)}        & \dfrac{5}{36}  \\[8pt]
-    P(B)        & \dfrac{n(A)}{n(S)}        & \dfrac{11}{36} \\[8pt]
+    P(B)        & \dfrac{n(B)}{n(S)}        & \dfrac{11}{36} \\[8pt]
     P(A \cap B) & \dfrac{n(A \cap B)}{n(S)} & \dfrac{2}{36}  \\[8pt]
     P(A \cup B) & \dfrac{n(A \cup B)}{n(S)} & \dfrac{14}{36}
   \end{array}\]
   % Sorry for the ugly equation: didn't know how to make the alignment
   % work otherwise
 
-  \westep{Write down and check the identity.}
-  \begin{eqnarray*}
-    P(A \cup B) &=& P(A) + P(B) - P(A \cap B) \\
-    \frac{14}{36} &=& \dfrac{5}{36} + \frac{11}{36} - \frac{2}{36} \\
-    &=& \frac{5}{36} + \frac{9}{36} \\
-    &=& \frac{14}{36} 
-  \end{eqnarray*}
+  \westep{Write down and check the identity}
+  \begin{align*}
+    P(A \cup B) &= P(A) + P(B) - P(A \cap B) \\
+    \frac{14}{36} &= \dfrac{5}{36} + \frac{11}{36} - \frac{2}{36} \\
+    &= \frac{5}{36} + \frac{9}{36} \\
+    &= \frac{14}{36} 
+  \end{align*}
 }
 \end{wex}
 
@@ -847,32 +844,32 @@ cannot have any elements in common, or $P(A \cap B) = \emptyset$
 (where $\emptyset$ denotes the empty set).
 
 We have already seen the Venn diagrams of mutually exclusive events in
-the middle column of the Venn diagrams provided in 'Union and intersection'.
+the middle column of the Venn diagrams provided on page \pageref{fig:venn_union_intersection}.
 
 % Figure \ref{fig:venn_union_intersection}.
 
 \begin{figure}[H]
   \input{Gr10-Probability-images/venn_union_intersection3}
-  \begin{center}\begin{caption*}{Mutually exclusive events.}\end{caption*}\end{center}
 \end{figure}
 
-From the above figure you can see that the intersection has no
+From this figure you can see that the intersection has no
 elements. You can also see that the probability of the union is the
 sum of the probabilities of the events.
 \[P(A \cup B) = P(A) + P(B)\]
 This relationship is true for mutually
 exclusive events only.
 
-\begin{wex}{Mutually exclusive events}{
-  We roll two dice and are interested in the following two events:
+\begin{wex}{Mutually exclusive events}
+{We roll two dice and are interested in the following two events:
   \begin{itemize}
   \item[] $A:$ The sum of the dice equals $8$
-  \item[] $B:$ At least one of the dice shows
-    \raisebox{-2pt}{\begin{tikzpicture}
+  \item[] $B:$ At least one of the dice shows\ \raisebox{-2pt}{
+      \begin{tikzpicture}
         \begin{scope}[scale=0.333]
           \makediegeneral{1}{}{0.175cm*0.333}
         \end{scope}
-      \end{tikzpicture}}
+      \end{tikzpicture}
+    }
   \end{itemize}
   Show that the events are mutually exclusive.
 }{
@@ -916,7 +913,6 @@ exclusive events only.
   From the above figure we notice that there are no elements in common in
   $A$ and $B$. Therefore the events are mutually exclusive.
 }
-
 \end{wex}
 %  %manual clearpage to fix broken mdframed for Definition below
 \section{Complementary events}
@@ -929,7 +925,6 @@ exclusive events only.
 For an experiment with sample space $S$ and an event $A$ we can derive
 some identities for complementary events. Since every element in $A$ is not in $A'$, we know
   that complementary events are mutually exclusive.
-\mindsetvid{complementary events}{VMcdl}
 \begin{equation*}
  A \cap A' = \emptyset
 \end{equation*}
@@ -948,12 +943,14 @@ From the previous two identities, we also know that the
 P(A) + P(A') = P(A \cup A') = P(S) = 1
 \end{equation*}
 
+\mindsetvid{Complementary events}{VMcdl}
+
 % %manual clearpage to fix broken mdframed for Definition below
-\begin{wex}{Reasoning with Venn diagrams}{
-  In a survey $70$ people were questioned about which product they
+\begin{wex}{Reasoning with Venn diagrams}
+{In a survey $70$ people were questioned about which product they
   use: A or B or both. The report of the survey shows that $25$
   people use product A, $35$ people use product B and $15$ people use
-  neither product. Use a Venn diagram to work out how many people
+  neither. Use a Venn diagram to work out how many people
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item use product A only,
   \item use product B only,
@@ -961,7 +958,7 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
   \end{enumerate}
 }{
   \westep{Summarise the sizes of the sample space, the event sets,
-    their union and their intersection.}
+    their union and their intersection}
   \begin{itemize}
   \item We are told that $70$ people were questioned, so the size of the
     sample space is $n(S) = 70$.
@@ -973,17 +970,13 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
   \item We are not told how many people use both products, so we have
     to work out the size of the intersection, $A \cap B$, by using the
     identity
-    \begin{equation*}
-     \begin{array}{rcl}
-       P(A \cup B) & = & P(A) + P(B) - P(A \cap B) \vspace{8pt}\\
-      \dfrac{n(A \cup B)}{n(S)} & = & \dfrac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \dfrac{n(A \cap B)}{n(S)}\vspace{8pt} \\
-      \dfrac{55}{70} & = & \dfrac{25}{70} + \dfrac{35}{70} - \dfrac{n(A \cap B)}{70}\vspace{8pt}  \\
-      \therefore n(A \cap B) & = & 25 + 35 - 55 \\
-      & = & 5
-     \end{array}
-
-    \end{equation*}
-
+    \begin{align*}
+      P(A \cup B) &= P(A) + P(B) - P(A \cap B) \\
+      \frac{n(A \cup B)}{n(S)} &= \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)} \\
+      \frac{55}{70} &= \frac{25}{70} + \frac{35}{70} - \frac{n(A \cap B)}{70} \\
+      \therefore n(A \cap B) &= 25 + 35 - 55 \\
+      &= 5
+    \end{align*}
   \end{itemize}
 
   \westep{Determine whether the events are mutually exclusive}
@@ -1099,13 +1092,13 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
 
 \item The sample space of an experiment is
   the set of all possible outcomes of that experiment. The sample
-  space is denoted with the symbol $(S)$ and the size of the sample
+  space is denoted with the symbol $S$ and the size of the sample
   space (the total number of possible outcomes) is denoted with
-  $(n(S))$.
+  $n(S)$.
 
 \item An event is a specific set of outcomes of an
   experiment that you are interested in. An event is denoted with the
-  letter $(E)$ and the number of outcomes in the event with $(n(E))$.
+  letter $E$ and the number of outcomes in the event with $n(E)$.
 
 \item A probability is a real number between
   $0$ and $1$ that describes how likely it is that an event will occur.
@@ -1129,13 +1122,13 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
   that contains all of the elements that are in both sets. The
   intersection is written as $A \cap B$.
 
-\item The probability of sample space:  $P(S)=1$
+\item The probability of sample space:  $P(S)=1$.
 
-\item Union and intersection: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+\item Union and intersection: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
 
 
 \item Mutually exclusive events are two events that cannot occur at the same time. Whenever an outcome
-  of an experiment is in the first event it can not also be in the
+  of an experiment is in the first event, it can not also be in the
   second event.
 
 
@@ -1144,13 +1137,13 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
   $A$. We write the complement of $A$ as $A'$, or
   sometimes as ``$\textrm{not}(A)$''.
 
-\item Complementary events are mutually exclusive: $A \cap A' = \emptyset$
+\item Complementary events are mutually exclusive: $A \cap A' = \emptyset$.
 
 
-\item Complementary events cover the sample space: $A \cup A' = S$
+\item Complementary events cover the sample space: $A \cup A' = S$.
 
 
-\item Probabilities of complementary events: $P(A) + P(A') = P(A \cup A') = P(S) = 1$
+\item Probabilities of complementary events sum to $1$: $P(A) + P(A') = P(A \cup A') = P(S) = 1$.
 
 \end{itemize}
 
@@ -1169,7 +1162,7 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
     \item only Fanta?
     \end{enumerate}
   \item Use a Venn diagram to work out the following probabilities
-    from a die being rolled:
+    for a die being rolled:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item a multiple of $5$ and an odd number
     \item a number that is neither a multiple of $5$ nor an odd
@@ -1177,7 +1170,7 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
     \item a number which is not a multiple of $5$, but is odd
     \end{enumerate}
   \item A packet has yellow and pink sweets. The probability of taking
-    out a pink sweet is $\frac{7}{12}$.What is the probability of taking out a yellow sweet?
+    out a pink sweet is $\frac{7}{12}$. What is the probability of taking out a yellow sweet?
 
   \item In a car park with $300$ cars, there are $190$ Opels. What is the
     probability that the first car to leave the car park is:
@@ -1236,7 +1229,7 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
       \end{enumerate}
     \item If there are $70$ sweets in the jar how many purple ones are
       there?
-    \item $\frac{1}{4}$ of the purple sweets in b) have streaks on
+    \item $\frac{1}{4}$ of the purple sweets in (b) have streaks on
       them and the rest do not. How many purple sweets have streaks?
     \end{enumerate}
 \item For each of the following, draw a Venn diagram to represent
@@ -1248,8 +1241,8 @@ Fiona has $85$ labelled discs, which are numbered from $1$ to
       complementary
     \end{enumerate}
 \item Use a Venn diagram to prove that the probability of either
-    event $A$ or $B$ occurring is given by: ($A$ and $B$ are not
-    exclusive)
+    event $A$ or $B$ occurring ($A$ and $B$ are not
+    mutually exclusive) is given by: 
     \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
 \item All the clubs are taken out of a pack of cards. The remaining
     cards are then shuffled and one card chosen. After being chosen,

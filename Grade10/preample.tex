@@ -349,6 +349,9 @@ linecolor=red%
 \definecolor{siyavula-gray}{RGB}{242,242,242}
 \definecolor{siyavula-dark-gray}{RGB}{205,204,204}
 
+\newcommand{\wexlabel}[1]{\newcounter{#1}\setcounter{#1}{\value{workedexamplecounter}}}
+\newcommand{\wexref}[1]{\arabic{#1}}
+
 \newenvironment{wex}[3]{
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
