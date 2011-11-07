@@ -39,7 +39,7 @@ using an independent $x$-value.
 Examples:
 \\
 \begin{table}[H]
-\begin{tabular}{ |p{5cm} | p{8cm} | }
+\begin{tabular}{|p{5cm}|p{8cm}|}
 \hline
   $\{x: x \in \mathbb{R}, x > 0\}$ &  The set of all $x$-values such that $x$ is an element of the set of real numbers and is greater than $0$.
 \\ \hline
@@ -55,7 +55,7 @@ Examples:
 Examples:
 \\
 \begin{table}[H]
-\begin{tabular}{ |p{5cm} | p{8cm} | }
+\begin{tabular}{|p{5cm}|p{8cm}|}
 \hline
   $(4;12)$ &  Round brackets indicate that the number is not included. This interval includes all real numbers greater than but not equal to $4$ and less than but not equal to $12$.
 \\ \hline
@@ -179,8 +179,6 @@ Functions can be expressed in many different ways for different purposes.
 \begin{exercises}{}
 {
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-
-
 \item Write the following in set notation:
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  \item $(-\infty; 7]$
@@ -593,7 +591,7 @@ Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives t
       \end{enumerate}
 
 
-\item For the functions in the diagram below, give the equation and the domain and range:
+\item For the functions in the diagram below, give the equation of the line:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
   \item $a(x)$
   \item $b(x)$
@@ -1101,8 +1099,6 @@ From the standard form of the equation we see that the turning point is $(0;-4)$
 \begin{center}
 \scalebox{1}
 {
-
-
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
 \psset{yunit=1,xunit=1}
@@ -1552,8 +1548,7 @@ Range: $y \in \mathbb{R} - \{2\}$
 
 \begin{wex}
 {Sketching a hyperbola}
-{
-Sketch the graph of $y=\frac{-4}{x}+7$.}
+{Sketch the graph of $y=\frac{-4}{x}+7$.}
 {
 \westep{Examine the standard form of the equation}
 We see that $a<0$ therefore the graph lies in the second and fourth quadrants.
@@ -1612,26 +1607,23 @@ Axis of symmetry: $y=x+7$ and $y=-x+7$
 }
 \end{wex}
 
-\begin{exercises}{}
-{
-   \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{exercises}{}{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Using graph paper, draw the graph of $xy=-6$.
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item Does the point $(-2; 3)$ lie on the graph ? Give a reason for your answer.
-
-    \item If the $x$-value of a point on the drawn graph is $0,25$ what is the corresponding $y$-value?
-    \item What happens to the $y$-values as the $x$-values become very large?
-\item Calculate the shortest distance from the origin to the graph.
-\item Give the equations of the asymptotes.
-    \item With the line $y=-x$ as line of symmetry, what is the point symmetrical to $(-2; 3)$?
-    \end{enumerate}
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+  \item Does the point $(-2; 3)$ lie on the graph? Give a reason for your answer.
+  \item If the $x$-value of a point on the drawn graph is $0,25$ what is the corresponding $y$-value?
+  \item What happens to the $y$-values as the $x$-values become very large?
+  \item Give the equations of the asymptotes.
+  \item With the line $y=-x$ as line of symmetry, what is the point symmetrical to $(-2; 3)$?
+  \end{enumerate}
 \item Draw the graph of $h(x)=\frac{8}{x}$.
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-% \setcounter{enumi}{7}
-    \item How would the graph $g(x)=\frac{8}{x}+3$ compare with that of $h(x)=\frac{8}{x}$? Explain your answer fully.
-    \item Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
-    \end{enumerate}
- \end{enumerate}
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+  % \setcounter{enumi}{7}
+  \item How would the graph $g(x)=\frac{8}{x}+3$ compare with that of $h(x)=\frac{8}{x}$? Explain your answer fully.
+  \item Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
+  \end{enumerate}
+\end{enumerate}
 \practiceinfo
 \par 
 \par \begin{tabular}[h]{cccccc}
@@ -1639,14 +1631,16 @@ Axis of symmetry: $y=x+7$ and $y=-x+7$
 }
 \end{exercises}
 
-\section[Exponential functions of the form $f(x)=ab^{x}+q$]{\Huge Exponential functions of the form $f(x)=ab^{x}+q$}
+\section{Exponential functions of the form $f(x)=ab^{x}+q$}
 
 \subsection*{Plotting the graph}         
 Functions of the general form $f(x)=ab^{x}+q$ are called exponential functions. In the equation $a$ and $q$ are constants and have different effects on the function.
 \mindsetvid{The exponential function}{VMaxx}
 \begin{wex}{Plotting an exponential function}
- {
-\begin{equation*} y=f(x) =b^{x} \mbox{ for } b>0 \mbox{ and } b \neq 1 \end{equation*}
+{
+\begin{equation*}
+  y=f(x)=b^{x} \mbox{ for } b>0 \mbox{ and } b \neq 1
+\end{equation*}
 
 Complete the following table for each of the functions and draw the graphs on the same system of axes:
 $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
@@ -1705,7 +1699,6 @@ $y=(\frac{1}{5})^{x}$&  &&&&
 \item For $y=(\frac{1}{k})^{x}$ and $k>1$, the greater the value of $k$, the steeper the curve of the graph. True or false?
 \item Give the equation of the asymptote for the functions.
 \end{enumerate}
-
 }
 {
 \westep{Substitute values into the equations}
@@ -1770,10 +1763,10 @@ $H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
 \item We notice that all graphs pass through the point $(0;1)$. Any number with exponent $0$ is equal to $1$.
 \item The graphs do not cut the $x$-axis because $0^{0}$ is undefined.
 \item Domain: $x \in \mathbb{R}$\\
-Range: $(0; \infty)$
+  Range: $(0; \infty)$
 \item As $x$ increases, $h(x)$ increases.
 \item $f(x)=2^{x}$ increases at the slowest rate because it has the smallest base.
-\item True: the greater the value of $k ~(k>1)$, the steeper the graph of $y=k^{x}$.
+\item True: the greater the value of $k$ $(k>1)$, the steeper the graph of $y=k^{x}$.
 \end{enumerate}
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -1800,7 +1793,7 @@ Range: $(0; \infty)$
 \item $G(x)$ is the reflection of $g(x)$ about the $y$-axis. 
 \item  Domain: $x \in \mathbb{R}$\\
 Range: $(0; \infty)$
-\item True: the greater the value of $k ~(k>1)$, the steeper the graph of $y=(\frac{1}{k})^{x}$.
+\item True: the greater the value of $k$ $(k>1)$, the steeper the graph of $y=(\frac{1}{k})^{x}$.
 \item The equation of the horizontal asymptote is $y=0$, the $x$-axis.
 \end{enumerate}
 }
@@ -2132,8 +2125,7 @@ Note that there is no axis of symmetry for exponential functions.
 
  
 \begin{wex}{Drawing an exponential graph}
-{
-Sketch the graph of $y=-2 \times 3^{x}+6$.}
+{Sketch the graph of $y=-2 \times 3^{x}+6$.}
 {
 \westep{Examine the standard form of the equation} 
 From the equation we see that $a<0$ therefore the graph curves downwards. $q>0$ therefore the graph is shifted vertically upwards by $6$ units.
@@ -2190,19 +2182,14 @@ Range: $\{g(x): g(x) <6\}$
 }
 \end{wex}
 
-
-
-
-\begin{exercises}{ }
- {
- \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{exercises}{}{
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Draw the graphs of $y=2^{x}$ and $y=(\frac{1}{2})^{x}$ on the same set of axes.
- \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
-
-\item Which graph is represented by the equation $y=2^{-x}$ ? Explain your answer.
-\item Solve the equation $2^{x}=(\frac{1}{2})^{x}$ graphically and check that your answer is correct by using substitution.
-\end{enumerate}
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+  \item Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
+  \item Which graph is represented by the equation $y=2^{-x}$? Explain your answer.
+  \item Solve the equation $2^{x}=(\frac{1}{2})^{x}$ graphically and check that your answer is correct by using substitution.
+  \end{enumerate}
 \item The curve of the exponential function $f$ in the accompanying diagram cuts the $y$-axis at the point $A(0; 1)$ and passes through the point $B(2; 9)$.
 
 \begin{center}
@@ -2228,7 +2215,7 @@ Range: $\{g(x): g(x) <6\}$
 \item Determine the equation of the function $f$.
 \item Determine the equation of $h$, the reflection of $f$ in the $x$-axis.
 \item Determine the range of $h$.
-\item Determine the equation of $g$, the reflection of $g$ in the $y$-axis.
+\item Determine the equation of $g$, the reflection of $f$ in the $y$-axis.
 \item Determine the equation of $j$ if $j$ is a vertical stretch of $f$ by $+2$ units.
 \item Determine the equation of $k$ if $k$ is a vertical shift of $f$ by $-3$ units.
 \end{enumerate}
@@ -2247,7 +2234,7 @@ This section describes the graphs of trigonometric functions.\par
 \subsection{Sine functions of the form $f(\theta)=a~sin~\theta+q$}
 \subsection*{Plotting the graph}
 \begin{wex}
- {Plotting a sine graph}
+{Plotting a sine graph}
 {
 \begin{equation*}
   y = f(\theta) = \sin\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
@@ -2381,8 +2368,7 @@ Minimum turning point: $(270^{\circ};-1)$
 
 \subsection*{Investigating the effects of $a$ and $q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a sine graph}
-{
-In the equation, $y=a\sin\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+{In the equation, $y=a\sin\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
 
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -2825,8 +2811,7 @@ Minimum turning point: $(180^{\circ};-1)$
 
 \subsection*{The effects of $a$ and $q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a cosine graph}
-{
-In the equation, $y=a\cos\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+{In the equation, $y=a\cos\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
 
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
@@ -3018,7 +3003,7 @@ The $y$-intercept of $f(\theta )=a\cos\theta+q$ is calculated in the same way as
 This gives the point $(0^{\circ};a+q)$.
 
 \begin{wex}{Sketching a cosine graph}
- {Sketch the graph of $f(\theta)=2\cos\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$}
+{Sketch the graph of $f(\theta)=2\cos\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$}
 {
 \westep{Examine the standard form of the equation}
 From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
@@ -3302,8 +3287,7 @@ $y$-intercept: $(0^{\circ};0)$
 
 \subsection*{Investigating the effects of $a$ and $q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a tangent graph}
-{
-On the same set of axes, plot the following graphs for $0^{\circ}\leq\theta\leq360^{\circ}$:
+{On the same set of axes, plot the following graphs for $0^{\circ}\leq\theta\leq360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item $a(\theta )=\tan\theta -2$
 \item $b(\theta )=\tan\theta -1$
@@ -3609,7 +3593,7 @@ Range: $\mathbb{R}$
 \end{wex}
 
 \begin{exercises}{}
- {
+{
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Using your knowledge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [~{0}^{\circ };{360}^{\circ }]$.
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -4034,11 +4018,13 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
                 \psplot[plotstyle=curve,arrows=<->]{-1.7}{1.7}{x 2 exp -2 mul 3 add}
                 \rput(-5,5){\textbf{(b)}}
-                \psdots(1,1)
+                \psdots(1,1)(0,3)
                 \rput(0.3, 5.3){$y$}
                 \rput(5.2, 0.2){$x$}
                 \rput(-0.37,-0.3){$0$}
                 \rput(1.5,1.5){$(1;1)$}
+
+\rput(0.8,3.3){$(0;3)$}
             \end{pspicture}}
           \end{center}
           \\ \hline
@@ -4181,7 +4167,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
     \item Give the range of both graphs.
     \end{enumerate}
     
-  \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and$C$ are given. Answer the questions that follow:
+  \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and $C$ are given. Answer the questions that follow:
   \begin{center}  
     \scalebox{1}{
       \begin{pspicture}(-5,-5)(5,1)
