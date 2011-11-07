@@ -328,9 +328,9 @@ by arrow symbols as shown below.
 
 In writing we use two vertical lines to indicate that two lines are
 parallel:
-\begin{equation}
+\begin{equation*}
   AB \parallel CD \textrm{ and } MN \parallel OP
-\end{equation}
+\end{equation*}
 
 \Note{A section of the Australian National Railways Trans-Australian line is perhaps
 one of the longest pairs of man-made parallel lines.
@@ -533,24 +533,19 @@ then the two lines are parallel.
 
 \westep{Determine the unknown angles}
 \begin{equation*}
-\begin{array}{r@{\;}ll}
-               AB  &\parallel CD & \mbox{(given)} \\
-\therefore \hat{x} &=60^{\circ}   & \mbox{(alt.\ int.\ $\angle$'s)}  \vspace{10pt} \\
-
-\hat{y} + 160^\circ &= 180^{\circ} & \mbox{(co-int. $\angle$'s)} \\
-\therefore \hat{y} &= 20^{\circ}  & \vspace{8pt}\\
-
-
-           \hat{p} &= \hat{y}    & \mbox{(vert.\ opp.\ $\angle$'s)} \\
-\therefore \hat{p} &= 20^{\circ}  &  \vspace{10pt}\\
-
- \hat{r} + \hat{p} &= 180^{\circ} &\mbox{ (sum of $\angle$'s str.\ line)} \\
-\therefore \hat{r} &= 160^{\circ} &  \vspace{10pt}\\
-
- \hat{s} + \hat{x} &= 90^{\circ}  & \mbox{(compl. $\angle$'s)} \\ 
- \hat{s} + 60^\circ &= 90^{\circ} & \\
-\therefore \hat{s} &= 30^{\circ} &  
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    AB  &\parallel CD & \mbox{(given)} \\
+    \therefore \hat{x} &=60^{\circ}   & \mbox{(alt.\ int.\ $\angle$'s)}  \vspace{10pt} \\
+    \hat{y} + 160^\circ &= 180^{\circ} & \mbox{(co-int.\ $\angle$'s)} \\
+    \therefore \hat{y} &= 20^{\circ}  & \vspace{8pt}\\
+    \hat{p} &= \hat{y}    & \mbox{(vert.\ opp.\ $\angle$'s)} \\
+    \therefore \hat{p} &= 20^{\circ}  &  \vspace{10pt}\\
+    \hat{r} + \hat{p} &= 180^{\circ} &\mbox{(sum of $\angle$'s str.\ line)} \\
+    \therefore \hat{r} &= 160^{\circ} &  \vspace{10pt}\\
+    \hat{s} + \hat{x} &= 90^{\circ}  & \mbox{(compl.\ $\angle$'s)} \\ 
+    \hat{s} + 60^\circ &= 90^{\circ} & \\
+    \therefore \hat{s} &= 30^{\circ} &  
+  \end{array}
 \end{equation*} 
 \westep{Determine whether $EF \parallel CG$}
 
@@ -593,7 +588,7 @@ Therefore $EF$ is not parallel to $CG$.
 \\
 \item Find all the unknown angles in the figure: \\
 \\
-\scalebox{1.2} {
+\scalebox{1.2}{
 \begin{pspicture}(0,-1.6967187)(5.5376563,1.7167188)
 \psline[linewidth=0.04cm](3.1065626,1.4032813)(5.0465627,-1.4567187)
 \psline[linewidth=0.04cm](0.4665625,1.1832813)(2.4065626,-1.6767187)
@@ -2091,7 +2086,7 @@ We can use any of the following properties to prove a quadrilateral is a paralle
  \item If both pairs of opposite sides of a quadrilateral are parallel, then the quadrilateral is a parallelogram.
  \item If both pairs of opposite sides of a quadrilateral are equal, then the quadrilateral is a parallelogram.
  \item If both pairs of opposite angles of a quadrilateral are equal, then the quadrilateral is a parallelogram.
- \item If the diagonals of a quadrilateral bisect each another, then the quadrilateral is a parallelogram.
+ \item If the diagonals of a quadrilateral bisect each other, then the quadrilateral is a parallelogram.
  \item If one pair of opposite sides of a quadrilateral are both equal and parallel, then the quadrilateral is a parallelogram.
 \end{enumerate}
 % %MANUAL PAGEBREAK TO SPLIT WEX BELOW
@@ -2228,16 +2223,16 @@ therefore $WXYZ$ is a parallelogram.
 \westep{Prove $\triangle PSR \equiv \triangle QRS$}
 In $\triangle PSR$ and $\triangle QRS$ \\
 \begin{equation*}
-  \begin{array}{rcll}
-    PS &=& QR & \mbox{(equal opp.\ sides of rectangle)} \\
-    SR &&\mbox{is a common side}& \\
-    P \hat{S}R &=& Q\hat{R} S = 90^\circ & \mbox{(int. $\angle$ of rectangle)} \\
-    \therefore \triangle PSR &\equiv& \triangle QRS & \mbox{(SAS)} \\
-    \mbox{Therefore }PR &=& QS &   
+  \begin{array}{r@{\;}l@{\quad}l}
+    PS &= QR & \mbox{(equal opp.\ sides of rectangle)} \\
+    \multicolumn{2}{c}{SR \mbox{ is a common side}} & \\
+    P \hat{S}R &= Q\hat{R} S = 90^\circ & \mbox{(int. $\angle$ of rectangle)} \\
+    \therefore \triangle PSR &\equiv \triangle QRS & \mbox{(SAS)} \\
+    \mbox{Therefore }PR &= QS &   
   \end{array}
 \end{equation*}
 
-The diagonals of a rectangle are equal in length.
+The diagonals of a rectangle are of equal length.
 }
 \end{wex}
  
@@ -2286,7 +2281,7 @@ Summary of the properties of a rectangle:\par
 \label{fig:mgt:p:q:rectangle}
 \end{center}
 \end{figure} 
-angles at
+
 \begin{exercises}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
 \item $ABCD$ is a quadrilateral. Diagonals $AC$ and $BD$ intersect at $T$. $AC = BD$, $AT=TC$, $DT=TB$. Prove that:
@@ -2320,11 +2315,11 @@ angles at
 
 
 \subsection{Rhombus}
-\Definition{Rhombus}{A rhombus is a parallelogram that has all four sides equal in length.}\par
+\Definition{Rhombus}{A rhombus is a parallelogram with all four sides of equal length.}\par
 \begin{wex}{Properties of a rhombus}
 {$XYZT$ is a rhombus. Prove that:
 \begin{enumerate}[label=\textbf{\alph*}.]
-\item the diagonals bisect each other perpendicularly.
+\item the diagonals bisect each other perpendicularly;
 \item the diagonals bisect the interior angles.
 \end{enumerate}
 \begin{center}
@@ -2379,44 +2374,42 @@ angles at
 {\westep{Use the definition of a rhombus to fill in on the diagram all equal angles and sides}
 \westep{Prove $\triangle XTO \equiv \triangle ZTO$}
 \begin{equation*}
- \begin{array}{rcll}
-XT &=& ZT & \mbox{(all sides equal for rhombus)} \\
-TO \mbox{ is a common side} &&& \\
-XO &=& OZ & \mbox{(diag.\ of rhombus bisect)} \\ 
-\therefore \triangle XTO &\equiv& \triangle ZTO & \mbox{(SSS)} \\
-\hat{O}_1 &=& \hat{O}_4 & \\
-\mbox{But }\hat{O}_1 + \hat{O}_4 &=& 180^\circ & \mbox{(sum $\angle$'s on str.\ line)} \\
-\therefore \hat{O}_1 &=& \hat{O}_4 = 90^\circ & 
- \end{array}
-
+  \begin{array}{r@{\;}l@{\quad}l}
+    XT &= ZT & \mbox{(all sides equal for rhombus)} \\
+    \multicolumn{2}{c}{TO \mbox{ is a common side}} & \\
+    XO &= OZ & \mbox{(diag.\ of rhombus bisect)} \\ 
+    \therefore \triangle XTO &\equiv \triangle ZTO & \mbox{(SSS)} \\
+    \therefore \hat{O}_1 &= \hat{O}_4 & \\
+    \mbox{But } \hat{O}_1 + \hat{O}_4 &= 180^\circ & \mbox{(sum $\angle$'s on str.\ line)} \\
+    \therefore \hat{O}_1 &= \hat{O}_4 = 90^\circ & 
+  \end{array}
 \end{equation*}
 
+We can further conclude that $\hat{O}_1 = \hat{O}_2 = \hat{O}_3 = \hat{O}_4 = 90^\circ$.
+Therefore the diagonals bisect each other perpendicularly.
 
-We can also conclude that $\hat{O}_1 = \hat{O}_2 = \hat{O}_3 = \hat{O}_4 = 90^\circ$. \\
-Therefore diagonals bisect one another perpendicularly.
 \westep{Use properties of congruent triangles to prove diagonals bisect interior angles} 
 \begin{equation*}
- \begin{array}{rcll}
- \hat{X}_1 &=& \hat{Z}_1 & \mbox{($\triangle XTO \equiv \triangle ZTO$)} \\
-\mbox{and }\hat{X}_1 &=& \hat{Z}_2 & \mbox{(alt.\ int.\ $\angle$'s, $XT \parallel YZ$)} \\
-\therefore \hat{Z}_1 &=& \hat{Z}_2 & \\
- \end{array}
-
+  \begin{array}{r@{\;}l@{\quad}l}
+    \hat{X}_2 &= \hat{Z}_1 & \mbox{($\triangle XTO \equiv \triangle ZTO$)} \\
+    \mbox{and } \hat{X}_2 &= \hat{Z}_2 & \mbox{(alt.\ int.\ $\angle$'s, $XT \parallel YZ$)} \\
+    \therefore \hat{Z}_1 &= \hat{Z}_2 & \\
+  \end{array}
 \end{equation*}
-Therefore diagonal $XZ$ bisects $\hat{X}$. \\
-\newline
-Similarly, we can show that $XY$ also bisects $\hat{Z}$. \\
-And that diagonal $TY$ bisects $\hat{T}$ and $\hat{Y}$. \\ \newline
-We can conclude that the diagonals of a rhombus bisect the interior angles.
-}
+Therefore diagonal $XZ$ bisects $\hat{Z}$. Similarly, we can show that
+$XZ$ also bisects $\hat{X}$; and that diagonal $TY$ bisects $\hat{T}$
+and $\hat{Y}$.\newline
+We conclude that the diagonals of a rhombus bisect the interior
+angles.}
 \end{wex}
 
+Summary of the properties of a rhombus:
 \begin{itemize}[noitemsep]
 \item Both pairs of opposite sides are parallel.
 \item All sides are equal in length.
 \item Both pairs of opposite angles are equal.
-\item Both diagonals bisect each other at ${90}^{\circ}$.
-\item Diagonals of a rhombus bisect both pairs of opposite angles.
+\item The diagonals bisect each other at ${90}^{\circ}$.
+\item The diagonals bisect both pairs of opposite angles.
 \end{itemize}
 \begin{figure}[H]
 \begin{center}
@@ -2450,7 +2443,7 @@ We can conclude that the diagonals of a rhombus bisect the interior angles.
 \end{center}
 \end{figure}   
 
-To prove a parallelogram is a rhombus, we need to show one of the following:
+To prove a parallelogram is a rhombus, we need to show any one of the following:
 \begin{itemize}
  \item All sides are equal in length.
  \item Diagonals intersect at right angles.
@@ -2468,13 +2461,13 @@ To prove a parallelogram is a rhombus, we need to show one of the following:
 % \westep{Step 2:}
 % }
 % \end{wex}
-A square is a quadrilateral with all the properties:
+A square is a quadrilateral with all the following properties:
 \begin{itemize}[noitemsep]
 \item All interior angles equal ${90}^{\circ}$.
-\item Both pairs of interior angles are equal.
 \item Diagonals bisect each other at ${90}^{\circ }$.
 \item Diagonals are equal in length.
-\item Diagonals bisect both pairs of interior opposite angles (i.e.\@{} all ${45}^{\circ }$).
+\item Diagonals bisect both pairs of interior opposite angles
+  (i.e.\@{} all are ${45}^{\circ}$).
 \end{itemize}
 
 \begin{figure}[H]
@@ -2515,12 +2508,14 @@ A square is a quadrilateral with all the properties:
 \end{center}
 \end{figure}      
 
-To prove a parallelogram is a square, we need to show one of the following:
+To prove a parallelogram is a square, we need to show either one of the following:
 \begin{itemize}
- \item it is a rhombus (all four sides equal in length) with interior angles equal to $90^{\circ}$.
- \item it is a rectangle (interior angles equal to $90^{\circ}$) with all four sides equal in length.
-
+ \item It is a rhombus (all four sides of equal length) with interior
+   angles equal to $90^{\circ}$.
+ \item It is a rectangle (interior angles equal to $90^{\circ}$) with
+   all four sides of equal length.
 \end{itemize}
+
 \subsection{Trapezium}
 \Definition{Trapezium}{A trapezium is a quadrilateral with one pair of opposite sides parallel.}
 \begin{center}
@@ -2605,34 +2600,33 @@ To prove a parallelogram is a square, we need to show one of the following:
 }
 {
 \westep{Prove $\triangle ADC \equiv \triangle ABC$}
- In $\triangle ADC $ and $\triangle ABC$,\\
+In $\triangle ADC $ and $\triangle ABC$,
 \begin{equation*}
- \begin{array}{rcll}
-
-AD &=& AB & \mbox{(given)} \\
-CD &=& CB &  \mbox{(given)} \\
-AC  \mbox{ is a common side} &&&  \\
-\therefore \triangle ADC &\equiv& \triangle ABC &  \mbox{(SSS)} \\
-\therefore A \hat{D}C &=& A \hat{B}C & \\
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    AD &= AB & \mbox{(given)} \\
+    CD &= CB & \mbox{(given)} \\
+    \multicolumn{2}{c}{AC \mbox{ is a common side}} & \\
+    \therefore \triangle ADC &\equiv \triangle ABC & \mbox{(SSS)} \\
+    \therefore A\hat{D}C &= A\hat{B}C & \\
+  \end{array}
 \end{equation*}
-Therefore one pair opposite angles are equal in kite $ABCD$.
+Therefore one pair of opposite angles are equal in kite $ABCD$.
+
 \westep{Use properties of congruent triangles to prove $AC$ bisects $\hat{A}$ and $\hat{C}$}
 \begin{equation*}
- \begin{array}{rcll}
- \hat{A}_{1} &=& \hat{A}_{2} & \mbox{($\triangle ADC \equiv \triangle ABC$)} \\ 
-\mbox{and }\hat{C}_{1} &=& \hat{C}_{2} &  \mbox{($\triangle ADC \equiv \triangle ABC$)}\\ 
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    \hat{A}_{1} &= \hat{A}_{2} & \mbox{($\triangle ADC \equiv \triangle ABC$)} \\ 
+    \mbox{and } \hat{C}_{1} &= \hat{C}_{2} &  \mbox{($\triangle ADC \equiv \triangle ABC$)}\\ 
+  \end{array}
 \end{equation*}
-Therefore diagonal $AC$ bisects $\hat{A}$ and $\hat{C}$. \\ \newline
-We can conclude that the diagonal between equal sides of a kite bisects the two interior angles.
+Therefore diagonal $AC$ bisects $\hat{A}$ and $\hat{C}$. We conclude
+that the diagonal between equal sides of a kite bisects the two
+interior angles.
 }
 \end{wex}
 
 
-
 A kite is a quadrilateral with the following properties:
-
 \begin{figure}[H]
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -2694,81 +2688,77 @@ A kite is a quadrilateral with the following properties:
 \begin{itemize}[noitemsep]
 \item One pair of opposite angles are equal (the angles between unequal sides).
 \item Diagonal between equal sides bisects the other diagonal.
-\item Diagonal between equal sides bisects the interior angles
+\item Diagonal between equal sides bisects the interior angles.
 \item Diagonals intersect at $90^{\circ}$.
 \end{itemize}
 
 
-
-\begin{exercises}{}
-{
+\begin{exercises}{}{
 \begin{enumerate}[itemsep=10pt, label=\textbf{\arabic*}.]
- \item Use the sketch of kite $ABCD$ to prove the diagonals are perpendicular to one another.\\
- \scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-1.3692187)(4.6646876,1.3692187)
-\psline[linewidth=0.04cm](0.2971875,0.05078125)(4.2571874,0.01078125)
-\psline[linewidth=0.04cm](1.2571875,-0.96921873)(1.2771875,0.99078125)
-\psline[linewidth=0.04cm](0.7571875,-0.34921876)(0.6371875,-0.46921876)
-\psline[linewidth=0.04cm](0.6771875,0.57078123)(0.7771875,0.41078126)
-\psline[linewidth=0.04cm](2.3947396,-0.5207606)(2.4519124,-0.696064)
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.2339063,0.02078125){$O$}
-\pspolygon[linewidth=0.04](0.2571875,0.05078125)(1.2771875,1.0107813)(4.2971873,0.01078125)(1.2571875,-1.0092187)
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.12375,0.06078125){$A$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.264375,1.2007812){$B$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.504375,0.02078125){$C$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.2571875,-1.2192187){$D$}
-\psline[linewidth=0.04cm](2.3424625,-0.54237354)(2.3996353,-0.7176769)
-\psline[linewidth=0.04cm](2.4469252,0.7103273)(2.359111,0.5481894)
-\psline[linewidth=0.04cm](2.395264,0.73337305)(2.3074498,0.5712352)
-\psdots[dotsize=0.12](0.5371875,0.17078125)
-\psdots[dotsize=0.12](0.5371875,-0.06921875)
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.589375,0.13){\footnotesize $x$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.589375,-0.08421875){\footnotesize $x$}
-\end{pspicture} 
-}
-\item
-Explain why quadrilateral $WXYZ$ is a kite. Write down all the properties of quadrilateral $WXYZ$.\\
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-1.3292187)(4.79,1.3292187)
-\psline[linewidth=0.04cm](2.4753125,-0.42921874)(2.4553125,0.99078125)
-\pspolygon[linewidth=0.04](0.4953125,-1.0092187)(2.4353125,0.99078125)(4.4353123,-1.0092187)(2.4753125,-0.44921875)
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.16140625,-1.1192187){$W$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.481875,1.1607813){$X$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.4179688,-0.77921873){$Z$}
-\psline[linewidth=0.04cm](3.4050503,-0.6296727)(3.3172362,-0.7918106)
-\psline[linewidth=0.04cm](3.3533888,-0.6066269)(3.2655747,-0.7687648)
-\psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{-|*}(1.4753125,-0.00921875)(1.5553125,0.09078125)
-\psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{-|*}(3.3953125,0.03078125)(3.2753124,0.15078124)
-\psline[linewidth=0.04cm](1.7328646,-0.5807606)(1.7900374,-0.756064)
-\psline[linewidth=0.04cm](1.6805876,-0.60237354)(1.7377604,-0.7776769)
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.6209373,-1.1792188){$Y$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.3439062,0.6357812){\tiny $1$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.6034374,0.6357812){\tiny $2$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.9367187,-0.68421876){\tiny $3$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.6648438,-0.28421876){\tiny $4$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.2978125,-0.28421876){\tiny $5$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.0414063,-0.68421876){\tiny $6$}
-\end{pspicture} 
-}
+\item Use the sketch of kite $ABCD$ to prove the diagonals are perpendicular to each other.\\
+  \scalebox{1}{% Change this value to rescale the drawing.
+    \begin{pspicture}(0,-1.3692187)(4.6646876,1.3692187)
+      \psline[linewidth=0.04cm](0.2971875,0.05078125)(4.2571874,0.01078125)
+      \psline[linewidth=0.04cm](1.2571875,-0.96921873)(1.2771875,0.99078125)
+      \psline[linewidth=0.04cm](0.7571875,-0.34921876)(0.6371875,-0.46921876)
+      \psline[linewidth=0.04cm](0.6771875,0.57078123)(0.7771875,0.41078126)
+      \psline[linewidth=0.04cm](2.3947396,-0.5207606)(2.4519124,-0.696064)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(1.2339063,0.02078125){$O$}
+      \pspolygon[linewidth=0.04](0.2571875,0.05078125)(1.2771875,1.0107813)(4.2971873,0.01078125)(1.2571875,-1.0092187)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(0.12375,0.06078125){$A$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(1.264375,1.2007812){$B$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(4.504375,0.02078125){$C$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(1.2571875,-1.2192187){$D$}
+      \psline[linewidth=0.04cm](2.3424625,-0.54237354)(2.3996353,-0.7176769)
+      \psline[linewidth=0.04cm](2.4469252,0.7103273)(2.359111,0.5481894)
+      \psline[linewidth=0.04cm](2.395264,0.73337305)(2.3074498,0.5712352)
+      \psdots[dotsize=0.12](0.5371875,0.17078125)
+      \psdots[dotsize=0.12](0.5371875,-0.06921875)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(3.589375,0.13){\footnotesize $x$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(3.589375,-0.08421875){\footnotesize $x$}
+    \end{pspicture} 
+  }
+\item Explain why quadrilateral $WXYZ$ is a kite. Write down all the
+  properties of quadrilateral $WXYZ$.\\
+  \scalebox{1}{% Change this value to rescale the drawing.
+    \begin{pspicture}(0,-1.3292187)(4.79,1.3292187)
+      \psline[linewidth=0.04cm](2.4753125,-0.42921874)(2.4553125,0.99078125)
+      \pspolygon[linewidth=0.04](0.4953125,-1.0092187)(2.4353125,0.99078125)(4.4353123,-1.0092187)(2.4753125,-0.44921875)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(0.16140625,-1.1192187){$W$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.481875,1.1607813){$X$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.4179688,-0.77921873){$Z$}
+      \psline[linewidth=0.04cm](3.4050503,-0.6296727)(3.3172362,-0.7918106)
+      \psline[linewidth=0.04cm](3.3533888,-0.6066269)(3.2655747,-0.7687648)
+      \psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{-|*}(1.4753125,-0.00921875)(1.5553125,0.09078125)
+      \psline[linewidth=0.04cm,tbarsize=0.07055555cm 5.0]{-|*}(3.3953125,0.03078125)(3.2753124,0.15078124)
+      \psline[linewidth=0.04cm](1.7328646,-0.5807606)(1.7900374,-0.756064)
+      \psline[linewidth=0.04cm](1.6805876,-0.60237354)(1.7377604,-0.7776769)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(4.6209373,-1.1792188){$Y$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.3439062,0.6357812){\tiny $1$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.6034374,0.6357812){\tiny $2$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(3.9367187,-0.68421876){\tiny $3$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.6648438,-0.28421876){\tiny $4$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.2978125,-0.28421876){\tiny $5$}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(1.0414063,-0.68421876){\tiny $6$}
+    \end{pspicture} 
+  }
 \end{enumerate}
 \practiceinfo
  \par \begin{tabular}[h]{cccccc}
@@ -2808,7 +2798,7 @@ Explain why quadrilateral $WXYZ$ is a kite. Write down all the properties of qua
  \item Draw a large scalene triangle on a sheet of paper. 
 \item Name the vertices $A$, $B$ and $C$. Find the mid-points ($D$ and $E$) of two sides and connect them. 
 \item Cut out $\triangle ABC$ and cut along line $DE$.
-\item Place $\triangle ADE$ on quadrilateral $BDCE$ with vertex $E$ on vertex $C$. Write down your observations.
+\item Place $\triangle ADE$ on quadrilateral $BCED$ with vertex $E$ on vertex $C$. Write down your observations.
 \item Shift $\triangle ADE$ to place vertex $D$ on vertex $B$. Write down your observations.
 \item What do you notice about the lengths $DE$ and $BC$?
 \item Make a conjecture regarding the line joining the mid-point of two sides of a triangle.
@@ -2877,36 +2867,37 @@ Explain why quadrilateral $WXYZ$ is a kite. Write down all the properties of qua
 }
 \end{center}
 \westep{Prove $BCFD$ is a parallelogram}
- In $\triangle EAD$ and $\triangle ECF$ 
+In $\triangle EAD$ and $\triangle ECF$:
 \begin{equation*}
- \begin{array}{rcll}
-\hat{E}_{1} &=& \hat{E}_{2} & \mbox{(vert.\ opp.\ $\angle$'s)} \\
-AE &=& CE & \mbox{(given)} \\
-DE &=& EF & \mbox{(by construction)} \\
-\triangle EAD &\equiv& \triangle ECF & \mbox{(SAS)} \\
-\therefore A\hat{D}E &=& C\hat{F}E & \\ 
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    \hat{E}_{1} &= \hat{E}_{2} & \mbox{(vert.\ opp.\ $\angle$'s)} \\
+    AE &= CE & \mbox{(given)} \\
+    DE &= EF & \mbox{(by construction)} \\
+    \therefore \triangle EAD &\equiv \triangle ECF & \mbox{(SAS)} \\
+    \therefore A\hat{D}E &= C\hat{F}E & \\ 
+  \end{array}
 \end{equation*}
-but these are alternate interior angles, therefore $BD \parallel ubsection*FC$  \\ \newline
+But these are alternate interior angles, therefore $BD \parallel FC$
 \begin{equation*}
- \begin{array}{rcll}
- BD &=& DA & \mbox{(given)} \\
-BD &=& FC & \mbox{($\triangle EAD \equiv \triangle ECF$)} \\
-\therefore BCFD \mbox{ is a parallelogram} & &&\mbox{(one pair opp.\ sides $=$ and $\parallel$)} \\
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    BD &= DA & \mbox{(given)} \\
+       &= FC & \mbox{($\triangle EAD \equiv \triangle ECF$)} \\
+    \multicolumn{2}{c}{\therefore BCFD \mbox{ is a parallelogram}} & \mbox{(one pair opp.\ sides $=$ and $\parallel$)}
+  \end{array}
 \end{equation*}
-Therefore $DE \parallel BC$ \\
-We can conclude that the line joining the two mid-points of two sides of a triangle is parallel to the third side.
+Therefore $DE \parallel BC$. \\
+We conclude that the line joining the two mid-points of two sides of a triangle is parallel to the third side.
+
 \westep{Use properties of parallelogram $BCFD$ to prove that $DE = \frac{1}{2} BC$}
 \begin{equation*}
- \begin{array}{rcll}
- DF &=& BC & \mbox{(opp.\ sides parm equal)}\\
-\mbox{and }DF &=& 2(DE) & \mbox{(by construction)} \\
-\therefore 2DE &=& BC & \\
-\therefore DE &=& \frac{1}{2}BC &\\
-\end{array}
+  \begin{array}{r@{\;}l@{\quad}l}
+    DF &= BC & \mbox{(opp.\ sides parm equal)}\\
+    \mbox{and } DF &= 2(DE) & \mbox{(by construction)} \\
+    \therefore 2DE &= BC & \\
+    \therefore DE &= \frac{1}{2}BC &\\
+  \end{array}
 \end{equation*}
-We can conclude that the line joining the mid-point of two sides of a triangle is equal to half the length of the third side.
+We conclude that the line joining the mid-point of two sides of a triangle is equal to half the length of the third side.
 }
 \end{wex}
 
@@ -2916,7 +2907,7 @@ The converse of this theorem states: If a line is drawn through the mid-point of
 \begin{exercises}{}{
 \begin{enumerate}[itemsep=6pt,label=\textbf{\arabic*}.]
 \item 
-Find $x$ and $y$ in each of the following:\\
+Find $x$ and $y$ in the following:\\
 \begin{tabular}{c m{3cm} c m{3cm}} 
 \textbf{(a)} &
 \raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
@@ -3127,14 +3118,13 @@ Find $x$ and $y$ in each of the following:\\
 \section{Proofs and conjectures}
 
 You can use geometry and the properties of polygons to find unknown lengths and angles in various quadrilaterals and triangles. The following worked example will help make this clearer. 
-\mindsetvid{conjectures, proofs and triangles}{VMckg}
+\mindsetvid{Conjectures, proofs and triangles}{VMckg}
 \par 
 \begin{wex}{Proving a parallelogram}
 {In parallelogram $ABCD$, the bisectors of the angles ($AW$, $BX$, $CY$ and $DZ$) have been
-constructed. You are also given that $\mathrm{AB}=\mathrm{CD}$, $\mathrm{AD}=\mathrm{BC}$,
-$\mathrm{AB}\parallel \mathrm{CD}$, $\mathrm{AD}\parallel \mathrm{BC}$, 
-$\hat{A}=\hat{C}$, and $\hat{B}=\hat{D}$. \\
-Prove that MNOP is a parallelogram.\\
+constructed. You are also given $AB = CD$, $AD = BC$, $AB \parallel
+CD$, $AD \parallel BC$, $\hat{A}=\hat{C}$, and
+$\hat{B}=\hat{D}$. Prove that $MNOP$ is a parallelogram.\\
 \begin{center}
 \scalebox{1.5} % Change this value to rescale the drawing.
 {
@@ -3218,58 +3208,51 @@ Prove that MNOP is a parallelogram.\\
 } 
 {
 \westep{Use properties of the parallelogram $ABCD$ to fill in on the diagram all equal sides and angles} 
-\westep{Prove that }%Prove what?! 
-In $\triangle ADW$ and $\triangle{CBY}$
-\begin{equation*}
- \begin{array}{rcll}
-\hat{A}_{1} &=& \hat{C}_{1} & \mbox{(given)} \\
-A\hat{D}C &=&A\hat{B}C & \mbox{(given)} \\
-AD &=&BC & \mbox{(given)} \\ 
-\therefore \triangle ADW &\equiv& \triangle CBY & \mbox{(AAS)} \\
-\therefore DW &=& BY &   
- \end{array}
-\end{equation*}
-
-In $\triangle ABX$ and $\triangle CDZ$ & \\
-\begin{equation*}
- \begin{array}{rcll}
-D\hat{C}Z &=& B\hat{X} & \mbox{(given)} \\
-\hat{D}_{1} &=& \hat{B}_{1} & \mbox{(given)} \\
-DC &=& AD & \mbox{(given) }\\
-\therefore \triangle ABX &\equiv& \triangle CDZ & \mbox{(AAS)} \\ 
-\therefore AX &=& CZ  & 
- \end{array}
-\end{equation*}
-
-In $\triangle XAM$ and $\triangle ZCO$ \\
-\begin{equation*}
- \begin{array}{rcll}
-X\hat{A}M &=& Z\hat{C}C & \mbox{(given)} \\
-A\hat{X}M &=& C\hat{Z}O & \mbox{(proved above)} \\
-AX &=& CZ & \mbox{(proved above)} \\
-\therefore \triangle XAM &\equiv& \triangle COS & \mbox{(AAS)} \\
-\therefore \hat{Z}_{1} &=& \hat{M}_{1} & \\
-\hat{M}_1 &=& \hat{M}_2 & \mbox{(vert.\ opp.\ $\angle$'s)} \\
-\hat{O}_{1} &=& \hat{O}_2 & \mbox{(vert.\ opp.\ $\angle$'s)} \\
-\therefore \hat{M}_2 &=& \hat{O}_{1} & \\
- \end{array}
-\end{equation*}
-
-% In $\triangle BYN$ and $\triangle DWP$ & \\
-% \begin{equation*}
-%  \begin{array}{rcll}
-% Y\hat{B}N &=& W\hat{D}P & \mbox{(given)} \\
-% B\hat{Y}N &=& W\hat{D}P & \mbox{(proved above)} \\
-% DW &=& BY & \mbox{(proved above)} \\
-% \therefore \triangle YBN &\equiv& \triangle WDP & \mbox{(AAS)} \\
-% \therefore B\hat{N}Y &=& D\hat{P}W & \\
-% D\hat{B}W &=& M\hat{P}O & \mbox{(vert. opp. $\angle$'s)} \\
-% B\hat{N}Y &=& O\hat{N}M & \mbox{(vert. opp. $\angle$'s)} \\
-% \therefore M\hat{P}O &=& O\hat{M}N & \\
+\westep{Prove that $\hat{M}_2 = \hat{O}_2$}
+%In $\triangle ADW$ and $\triangle{CBY}$:
+%\begin{equation*}
+%  \begin{array}{r@{\;}l@{\quad}l}
+%    \hat{A}_{1} &= \hat{C}_{1} & \mbox{(given)} \\
+%    A\hat{D}C &= A\hat{B}C & \mbox{(given)} \\
+%    AD &= BC & \mbox{(given)} \\ 
+%    \therefore \triangle ADW &\equiv \triangle CBY & \mbox{(AAS)} \\
+%    \therefore DW &= BY &
 %  \end{array}
-% \end{equation*}
-Similarly, we can show that $\hat{N}_2 = \hat{P}_2$. \\
-Therefore $MNOP$ is a parallelogram with both pairs of opposite angles equal, and both pairs of opposite sides parallel.
+%\end{equation*}
+%
+In $\triangle ABX$ and $\triangle CDZ$:
+\begin{equation*}
+  \begin{array}{r@{\;}l@{\quad}l}
+    D\hat{C}Z &= B\hat{A}X & \mbox{(given)} \\
+    \hat{D}_{1} &= \hat{B}_{1} & \mbox{(given)} \\
+    DC &= AB & \mbox{(given)}\\
+    \therefore \triangle ABX &\equiv \triangle CDZ & \mbox{(AAS)} \\ 
+    \therefore AX &= CZ & \\
+    \mbox{and } A\hat{X}B &= C\hat{Z}D &
+  \end{array}
+\end{equation*}
+
+In $\triangle XAM$ and $\triangle ZCO$:
+\begin{equation*}
+  \begin{array}{r@{\;}l@{\quad}l}
+    X\hat{A}M &= Z\hat{C}O & \mbox{(given)} \\
+    A\hat{X}M &= C\hat{Z}O & \mbox{(proved above)} \\
+    AX &= CZ & \mbox{(proved above)} \\
+    \therefore \triangle XAM &\equiv \triangle ZCO & \mbox{(AAS)} \\
+    \therefore \hat{O}_{1} &= \hat{M}_{1} & \\
+    \mbox{but } \hat{M}_1 &= \hat{M}_2 & \mbox{(vert.\ opp.\ $\angle$'s)} \\
+    \mbox{and } \hat{O}_{1} &= \hat{O}_2 & \mbox{(vert.\ opp.\ $\angle$'s)} \\
+    \therefore \hat{M}_2 &= \hat{O}_{2} &
+  \end{array}
+\end{equation*}
+
+\westep{Similarly, we can show that $\hat{N}_2 = \hat{P}_2$}
+First show $\triangle ADW \equiv \triangle CBY$. Then show $\triangle
+PDW \equiv \triangle NBY$.
+
+\westep{Conclusion}
+Both pairs of opposite angles of $MNOP$ are equal. Therefore $MNOP$ is
+a parallelogram.
 }
 \end{wex}
 
@@ -3278,49 +3261,49 @@ Therefore $MNOP$ is a parallelogram with both pairs of opposite angles equal, an
 \begin{itemize}
 \item A quadrilateral is a closed shape consisting of four straight line segments.
 \item A parallelogram is a quadrilateral with both pairs of opposite sides parallel.
-\begin{itemize}
-\item Both pairs of opposite sides are equal in length.
-\item Both pairs of opposite angles are equal.
-\item Both diagonals bisect each other.
-\end{itemize}
+  \begin{itemize}
+  \item Both pairs of opposite sides are equal in length.
+  \item Both pairs of opposite angles are equal.
+  \item Both diagonals bisect each other.
+  \end{itemize}
 \item A rectangle is a parallelogram that has all four angles equal to $90^\circ$.
-\begin{itemize}
-\item  Both pairs of opposite sides are parallel.
-\item Both pairs of opposite sides are equal in length.
-\item Both diagonals bisect each other.
-\item Diagonals are equal in length.
-
-\item All interior angles are equal to $90^{\circ}$.
-\end{itemize}
+  \begin{itemize}
+  \item Both pairs of opposite sides are parallel.
+  \item Both pairs of opposite sides are equal in length.
+  \item The diagonals bisect each other.
+  \item The diagonals are equal in length.
+  \item All interior angles are equal to $90^{\circ}$.
+  \end{itemize}
 \item A rhombus is a parallelogram that has all four sides equal in length.
-\begin{itemize}
-\item Both pairs of opposite sides are parallel.
-\item All sides are equal in length.
-\item Both pairs of opposite angles are equal.
-\item Both diagonals bisect each other at $90^\circ$.
-\item Diagonals of a rhombus bisect both pairs of opposite angles.
-\end{itemize}
+  \begin{itemize}
+  \item Both pairs of opposite sides are parallel.
+  \item All sides are equal in length.
+  \item Both pairs of opposite angles are equal.
+  \item The diagonals bisect each other at $90^\circ$.
+  \item The diagonals of a rhombus bisect both pairs of opposite angles.
+  \end{itemize}
 \item A square is a rhombus that has all four interior angles equal to $90^\circ$.
-\begin{itemize}
-\item All interior angles are equal to $90^\circ$.
-\item Both pairs of interior angles are equal.
-\item Diagonals bisect each other at $90^\circ$.
-\item Diagonals are equal in length.
-\item Diagonals bisect both pairs of interior opposite angles (i.e.\@{} all $45^\circ$)
-\end{itemize}
+  \begin{itemize}
+  \item All interior angles are equal to $90^\circ$.
+  \item The diagonals bisect each other at $90^\circ$.
+  \item The diagonals are equal in length.
+  \item The diagonals bisect both pairs of interior opposite angles
+    (i.e.\@{} all are $45^\circ$).
+  \end{itemize}
 \item A trapezium is a quadrilateral with one pair of opposite sides parallel.
 \item A kite is a quadrilateral with two pairs of adjacent sides equal.
-\begin{itemize}
-\item One pair of opposite angles are equal (the angles are between unequal sides).
-\item Diagonal between equal sides bisects the other diagonal.
-\item Diagonal between equal sides bisects the interior angles.
-\item Diagonals intersect at $90^\circ$.
-\end{itemize}
-\item The mid-point theorem: The line joining the mid-points of two sides of a triangle is parallel to the third side and equal to half the length of the third side.
+  \begin{itemize}
+  \item One pair of opposite angles are equal (the angles are between unequal sides).
+  \item The diagonal between equal sides bisects the other diagonal.
+  \item The diagonal between equal sides bisects the interior angles.
+  \item The diagonals intersect at $90^\circ$.
+  \end{itemize}
+\item The mid-point theorem: The line joining the mid-points of two
+  sides of a triangle is parallel to the third side and equal to half
+  the length of the third side.
 \end{itemize}
 
 \begin{eocexercises}{}
-
 \begin{enumerate}[itemsep=20pt, label=\textbf{\arabic*}.]
 %First question
 \item Identify the types of angles shown below:\\
@@ -3392,7 +3375,7 @@ statement is false, explain why:
 \item Both diagonals of a kite bisect the interior angles.
 \end{enumerate}
 %Third question
-\item Calculate the size of the third angle ($x$) in each of the diagrams below:\\
+\item Calculate $x$ and $y$ in the diagrams below:\\
 \begin{center}
 \begin{tabular}{lm{4.5cm}lm{4cm}}
 \textbf{(a)} & \raisebox{-1.5\height}{\scalebox{1} % Change this value to rescale the drawing.
@@ -3864,7 +3847,7 @@ statement is false, explain why:
 \end{center}
 \end{enumerate}
 %Question 8
-\item Consider the diagram below. Is $\triangle ABC ||| \triangle DEF$? Give reasons for your answer. \\
+\item Consider the diagram below. Is $\triangle ABC\;|||\;\triangle DEF$? Give reasons for your answer. \\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -3897,7 +3880,7 @@ statement is false, explain why:
 
 
 %Question 9
-\item Explain why $\triangle PQR$ is similar to $\triangle TRS$ and calculate the values of $x$ and $y$.\\
+\item Explain why $\triangle PQR$ is similar to $\triangle TSR$ and calculate the values of $x$ and $y$.\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -4032,7 +4015,7 @@ Given that $AF=HC$, show that:
 
 
 \item
-$\triangle PQR$ and $\triangle PSR$ are equilateral triangles. Prove that $PQRS$ is a rhombus:\\
+$\triangle PQR$ and $\triangle PSR$ are equilateral triangles. Prove that $PQRS$ is a rhombus.\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -4090,10 +4073,10 @@ $\triangle PQR$ and $\triangle PSR$ are equilateral triangles. Prove that $PQRS$
 \end{center}
 \end{enumerate}
 
-\item Given that $WZ=ZY=YX$ and $WZ \parallel ZY$, prove that:
+\item Given that $WZ=ZY=YX$ and $WX \parallel ZY$, prove that:
    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $XZ$ bisects $\hat{X}$
-\item $WY=YZ$
+\item $WY=XZ$
 % \begin{figure}[H]
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
