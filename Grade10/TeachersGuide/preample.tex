@@ -445,12 +445,14 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}}
 
 
+
 \newenvironment{solutions}[1]
 {
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
-\textbf{\LARGE Solutions - will style later}
+\solutionsheading
+
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -464,6 +466,9 @@ linecolor=red%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
 }
+
+
+
 
 \newenvironment{exercises}[1]
 {
@@ -918,6 +923,36 @@ linecolor=red%
 
 See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../../icons/video.pdf}} Presentation: #1 at www.everythingmaths.co.za)
 
+}
+
+
+\newcommand{\solutionsheading}{
+ \par  \vspace*{2\baselineskip}
+{  \fontsize{12}\bfseries\itshape
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west ,text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
+          (0.5\textwidth, 28pt);
+       \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
+              { \bfseries ~ \color{black} Solutions for exercise \chapterlabel~-~\arabic{exercisecounter}   };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.52\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=white, color=white] (0,0) rectangle
+          (0.5\textwidth,28pt);
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+%\vspace{\baselineskip}
 }
 
 
