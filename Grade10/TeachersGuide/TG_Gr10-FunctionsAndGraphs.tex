@@ -121,7 +121,7 @@
 \item %List the $x$- and $y$-intercepts for the following straight line graphs. Indicate whether the graph is increasing or decreasing:
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item $(0;1)$ and $(-1;0)$; increasing%$y=x+1$
-      \item $(0;-1)$ and $(1;0)$;increasing%$y=x-1$
+      \item $(0;-1)$ and $(1;0)$; increasing%$y=x-1$
       \item $(0;-1)$ and $(\frac{1}{2};0)$; increasing%$h(x)=2x-1$
       \item $(0;1)$ and $(\frac{1}{3};0)$; decreasing%$y+1=2x$
       \item $(0;2)$ and $(-3;0)$; increasing%$3y-2x=6$
@@ -414,6 +414,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \rput(5.2,0.2){$x$}
 \rput(0.2,10.2){$y$}
 \rput(-0.3,-0.3){$0$}
+
 \end{pspicture}
 \end{center}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -448,6 +449,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \rput(2.7, 2.7){$y= 2^x$}
 \rput(-2.7, 2.7){$y= \frac{1}{2}^{x}$}
 \rput(-0.3,-0.3){$0$}
+\rput(0.25, 1.55){$1$}
 % \rput(0.8,4){$(0;4)$}
 % \rput(1.5,0.5){$(1;0)$}
 \end{pspicture}}
@@ -714,7 +716,7 @@ Therefore the equation is $f(x) = 3^x$.
     \item $y=\tan\theta+2$
     \item $y=\dfrac{\cos\theta}{2}$
     \end{enumerate}
-  \item Given the general equations in this chapter, determine the
+  \item Given the general equations $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ and $y=a~tan~x$, determine the
     specific equations for each of the following graphs:\vspace{20pt}\\
     \begin{center}
       \begin{table}[H]
@@ -918,7 +920,7 @@ Therefore the equation is $f(x) = 3^x$.
     \item Give the equation of $k(x)$ reflected about the line $y=4$.
     \item Give the domain and range of $h$.
     \end{enumerate}
-  \item Sketch the graphs $f(\theta)=2\sin\theta$ and $g(\theta)=\cos\theta-1$ on the same set of axes. Use your sketch to determine:
+  \item Sketch the graphs $f(\theta)=2 sin~\theta$ and $g(\theta)= cos~\theta-1$ on the same set of axes. Use your sketch to determine:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $f(180^{\circ})$
     \item $g(180^{\circ})$
@@ -1045,10 +1047,10 @@ Therefore the equation is $f(x) = 3^x$.
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
    \item False - the given or chosen $y$-value is the dependent variable, because it's value depends on the independent variable $X$.%The given or chosen $y$-value is known as the independent variable.
     \item False - a graph is said to be \textit{continuous} if there are no breaks in it.%A graph is said to be congruent if there are no breaks in the graph.
-    \item True%Functions of the form $y=ax+q$ are straight lines.
+    \item True.%Functions of the form $y=ax+q$ are straight lines.
     \item False - functions of the form $y=\frac{a}{x}+q$ are hyperbolic functions.
     \item False - an asymptote is a straight line that a graph will \textit{never} intersect.% An asymptote is a straight line which a graph will intersect at least once.
-    \item True%Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
+    \item True.%Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
     \end{enumerate}
 \item %Given the functions $f(x)=-2{x}^{2}-18$ and $g(x)=-2x+6$
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -1089,12 +1091,13 @@ Therefore the points of intersection are $(3;0)$ and $(-2;10)$%Calculate the poi
 \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
 \item $
 f(x)>0\\
-−2x2+18>0\\
-2x2<18\\
+−2x^2+18>0\\
+2x^2<18\\
 x2<9\\
 −3<x<3\\$
 %$f(x)>0$
-	\item $
+
+\item $
 
 \frac{−2x^2+18}{−2x+6}\leq0\\
 \frac{x^2−9}{x−3} \leq 0\\
@@ -1105,7 +1108,14 @@ x\leq−3$
 \end{enumerate}
 	\item $y=2x^2-18$%Give the equation of the reflection of $f$ in the $x$-axis.
 \end{enumerate}
-	 \item $h=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
+	 \item 
+
+$y=5(0,8)^x\\
+= 5(\frac{4}{5})^x\\
+$ if $x = 5$ then $y = 5(\frac{4}{5})^5\\
+= 5(\frac{1024}{3125})\\
+=5(0,38)\\
+=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
 
 % What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?
 
@@ -1120,28 +1130,29 @@ x\leq−3$
 % label the axes
 %\psgrid-\infty ;q
 \psset{yunit=0.2, xunit=0.2}
-\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(15,20)
+\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(20,20)
 
-\psplot[plotstyle=curve,arrows=<->]{-2}{12}{x -1 mul 15 add}
-\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-4}{12}{x 3 sub}
+\psplot[plotstyle=curve,arrows=<->]{-2}{18}{x -1 mul 15 add}
+\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-7}{14}{x 3 add}
 % \psdots(-2,-2)(-1,-1)(0,0)(1,1)(2,2)
-
+\psline[linewidth=1pt,linestyle=dotted](0,9)(6,9)
+\psline[linewidth=1pt,linestyle=dotted](6,9)(6,0)
 % \rput(-0.2, -0.3){$0$}
-\rput(15.8, 0.1){$x$}
+\rput(20.8, 0.1){$x$}
 \rput(0.1, 20.8){$y$}
 \uput[r](12,4){\small$y=-x+15$}
-\uput[r](12,9){\small\color{gray}$y=x-3$}
-\uput[dl](0,0){$0$}
+\uput[r](12,14){\small\color{gray}$y=x+3$}
+% \uput[dl](0,0){$0$}
 \end{pspicture}}
  \item 
 Substitute value of $y=-x+15$ into second equation:\\
-$-x+15=x-3\\
--2x = -18\\
-\therefore x=9$\\
+$-x+15=x+3\\
+-2x = -12\\
+\therefore x=6$\\
 Substitute value of $x$ back into first equation:\\
-$y = -(9) + 15\\
-= 6$\\
-Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
+$y = -(6) + 15\\
+= 9$\\
+Mark has $6$ R $5$ coins and $9$ R~$2$ coins.
     \end{enumerate}
 
 \item %Sketch graphs of the following trigonometric functions for $\theta \in[0;360]$ (show intercepts and asymptotes):
@@ -1230,22 +1241,27 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 \uput[l](0,0.5){$\frac{1}{2}$}
 \end{pspicture}}
 \end{enumerate}
-\item %Given the general equation, determine the values of $a$ and $q$ for each of the following graphs:\vspace{20pt}\\
+\item %Given the general equations $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ and $y=a~tan~x$, determine the
+    %specific equations for each of the following graphs:\vspace{20pt}\\
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $a=3,~q=0$
-    \item $a=-2,~q=3$
-    \item $a=-3,~q=0$
-    \item $a=1,~q=2$
-    \item $a=5,~q=1$
-    \item $a=2,~q=1$
-    \item $a=-1,~q=-2$
+    \item $y=3x$
+    \item $y=-2x^2 +3$
+    \item $y = \frac{-3}{x}$
+    \item $y=x+2$
+    \item $y=5~sin~x +1$
+    \item $y=2.2^x + 1$
+    \item $y = -tan~x -2$
     \end{enumerate}
 \item %$y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:\\
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $M(0;1), N(0;-1)$%Calculate the coordinates of $M$ and $N$.
-\item $MN=2$ units%Calculate the length of $MN$.
-\item $PQ=1$ unit%Calculate length $PQ$ if $OR=1$ unit.
+\item At $M$, $y=2^0\\=1\\$therefore the coordinates of $M$ are $(0;1)$\\
+At $N$, $y= -(2^0)\\ = -1\\$therefore the coordinates of $N$ are$(0;-1)$%Calculate the coordinates of $M$ and $N$.
+\item $MN=1+1=2$ units%Calculate the length of $MN$.
+\item At $P$, $x=-1$\\
+$\therefore y = 2^{-1} = \frac{1}{2}.\\
+$ At $Q$, $y=-(2^{-1}) = -\frac{1}{2}$.\\
+Therefore length $PQ = \frac{1}{2} + \frac{1}{2} =1$ unit.%Calculate length $PQ$ if $OR=1$ unit.
 \item $y=2^{-x}$%Give the equation of $y=2^x$ reflected about the $y$-axis.
 \item Range $y=2^x$: $(0;\infty)$;\\
       Range $y=-2^x$: $(-\infty;0)$%Give the range of both graphs.
@@ -1255,10 +1271,10 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $q=1$%Calculate the coordinates of $M$ and $N$.
-\item $BC=7$ units%Calculate the length of $MN$.
-\item $y=-4^{x}$%Calculate length $PQ$ if $OR=1$ unit.
-\item $y=4^{x}+1$%Give the equation of $y=2^x$ reflected about the $y$-axis.
+\item $q=1$%C
+\item $BC=7$ units%.
+\item $y=-4^{x}$%
+\item $y=4^{x}+1$%
 \item $x=0$%Give the range of both graphs.
 \item Range $f(x)$: $(0;\infty)$\\
       Range $g(x)$: $(-\infty;1]$
@@ -1284,7 +1300,9 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 % \newcounter{enumii_saved}
 %       \setcounter{enumii_saved}{\value{enumii}}
 % \setcounter{enumii}{1}
- \item DELETE ME%Describe the relationship between $h$ and $k$.
+ \item $h(x) = x^2 - 4$\\
+$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$.\\
+$k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the relationship between $h$ and $k$.%Describe the relationship between $h$ and $k$.
 \item $y=x^2+4$%Give the equation of $k(x)$ reflected about the line $y=4$.
 \item Domain $h$: $(-\infty;\infty)$\\
       Range $h$: $[-4;\infty)$%Give the domain and range of $h$.
@@ -1309,7 +1327,8 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $f(180^{\circ})=0$%$f(180^{\circ})$
 \item $g(180^{\circ})=-2$%$g(180^{\circ})$
-\item $g(270^{\circ}) -f(270^{\circ})=1$%$g(270^{\circ}) -f(270^{\circ})$
+\item $g(270^{\circ}) -f(270^{\circ})=-1-(02)\\
+=-1+2\\=1$%$g(270^{\circ}) -f(270^{\circ})$
 \item Domain: $[0^{\circ}$; $360^{\circ}]$\\
       Range: $[-2;0]$%The domain and range of $g$.
 \item Amplitude $=2$;\\
