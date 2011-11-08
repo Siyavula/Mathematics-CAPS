@@ -31,31 +31,31 @@
 
 
 
-\newenvironment{toc}%
-    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-    \setlength{\partopsep}{0cm}}
-    {\end{description}}
-
-    \newenvironment{indexheading}%
-    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
-    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
-    \setlength{\partopsep}{0cm}
-    \setlength{\labelwidth}{0cm}\setlength{\labelsep}{0cm}%
-    \setlength{\leftmargin}{-1cm} \item[] \noindent}
-    {\end{description}}
+%\newenvironment{toc}%
+%    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%    \setlength{\partopsep}{0cm}}
+%    {\end{description}}
+%
+%    \newenvironment{indexheading}%
+%    {\begin{description}\setlength{\topsep}{0cm}\setlength{\itemsep}{0cm}%%
+%    \setlength{\parskip}{0cm}\setlength{\parsep}{0cm}%%
+%    \setlength{\partopsep}{0cm}
+%    \setlength{\labelwidth}{0cm}\setlength{\labelsep}{0cm}%
+%    \setlength{\leftmargin}{-1cm} \item[] \noindent}
+%    {\end{description}}
 
 
     \usepackage{marginnote}
   
-    \usepackage[paper=letter, 
+    \usepackage[paper=a4paper, 
       lmargin=0.1\paperwidth, rmargin=0.25\paperwidth, 
       tmargin=1in, bmargin=1in,
       twoside, centering,
       includehead, marginsep=3mm, marginparwidth=0.225\paperwidth ]{geometry}
    \usepackage{etoolbox} 
     \usepackage{wrapfig}
-    \usepackage{ifthen,changepage}      
+    \usepackage[strict]{changepage}      
     \usepackage{layouts}
     \usepackage{multicol}
     \usepackage{amsmath} %for \underset, \overset, and more?
@@ -120,7 +120,7 @@
     \renewcommand{\labelitemii}{\ensuremath{\cdot} }
     \usepackage{enumerate}
     \usepackage{enumitem}
-    \setcounter{tocdepth}{3}
+    \setcounter{tocdepth}{1}
     \DeclareUnicodeCharacter {9653} {\bigtriangleup}
     \DeclareUnicodeCharacter {183} {\ensuremath{\cdot}}
     \DeclareUnicodeCharacter {785} {\textasciibreve}
@@ -179,52 +179,66 @@
     \DeclareUnicodeCharacter {62839}{\ensuremath{\longrightarrow}}
     \DeclareUnicodeCharacter {62843}{\ensuremath{\leftrightarrow}}
 
+%change some namew
+\renewcommand{\figurename}{Figuur}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\chaptername}{Hoofstuk}
+\renewcommand{\contentsname}{Inhoud}
+
+\newcommand{\chapterstartvideo}[1]{
+See introductory video: (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #1 at www.everythingmaths.co.za)\par
+}
+
+\newcommand{\simulation}[2]{
+See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Simulation: #2 at www.everythingmaths.co.za)\par
+}
 
 
-
-\newenvironment{IFact}[1]%
-{\vspace{3mm}\rmfamily
- \begin{center}\begin{pspicture}(0,0)(5,0.01)
- \psline[linecolor=red]{-}(0,0)(5,0)
-\end{pspicture}\end{center}
-%\psshadowbox{
- \begin{quote}%
-\rput(-1.5,0){\psfact}\noindent #1%
-\end{quote}%
- }%}
-{\begin{center}\begin{pspicture}(0,0)(5,0.01)
- \psline[linecolor=red]{-}(0,-0.1)(5,-0.1)
-\end{pspicture}\end{center}
-\vspace{3mm}\sffamily}%
+\newcommand{\mindsetvid}[2]{
+See video about: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Video: #2 at www.everythingmaths.co.za)\par
+}
 
 
+\newcommand{\IFact}[1]{
+\marginpar{%odd
+\begin{minipage}[m]{0.225\paperwidth}
+\begin{mdframed}[linecolor=black, linewidth=1.0pt,leftmargin=15pt, rightmargin=15pt]
+\textbf{\textit{FEIT}}
+\end{mdframed}
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt, leftmargin=15pt, rightmargin=15pt]
+\small #1
+\end{mdframed}
+\end{minipage}
+}
+}
 
+\newcommand{\practiceinfo}[0]{
+\par\vspace*{2em}
+\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} Meer oefening 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video oplossings 
+\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} of hulp by www.everythingscience.co.za
+\vspace*{2em}
+}
 
 \newcommand{\Definition}[2]{
-\newlength{\oldparindent}
-\setlength{\oldparindent}{\parindent}
-\setlength{\parindent}{20pt}
-\begin{mdframed}[linewidth=1,linecolor=black, skipabove=36pt]%
+\begin{mdframed}[nobreak=true, linewidth=1,linecolor=black, skipabove=36pt]%
 \vspace*{10pt}
 \leftskip20pt
 \rightskip20pt
-{\large\textsl{DEFINISIE: } \textit{#1}}
+{\Large\textsl{DEFINISIE: } \textit{#1}}
 
 \par
 #2
 
 \vspace*{28pt}
 \end{mdframed}
-\setlength{\parindent}{\oldparindent}
 }
 
-\newcommand{\Identity}[2]{
+\newcommand{\Identity}[1]{
 \begin{mdframed}[linewidth=1pt,linecolor=black,skipbelow=\baselineskip,%
 skipabove=\baselineskip]%
-\begin{flushleft}
 %\uppercase{\textsl{#1}}\nopagebreak
-#2
-\end{flushleft}
+#1
 \end{mdframed}
 }
 
@@ -232,10 +246,10 @@ skipabove=\baselineskip]%
 \newcommand{\Tip}[1]{
 \marginpar{%odd
 \begin{minipage}[m]{0.225\paperwidth}
-\begin{mdframed}[linecolor=black, linewidth=1.0pt]
-\textbf{\textit{Wenk}}
+\begin{mdframed}[linecolor=black, linewidth=1.0pt, leftmargin=15pt, rightmargin=15pt]
+\textbf{\textit{WENK}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=lightgray, linecolor=lightgray,skipabove=-4pt,leftmargin=15pt, rightmargin=15pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -250,7 +264,7 @@ linecolor=red%
 \vspace{3mm}
 \begin{center}
 \noindent%
-\textbf{Waarskuwing:}\par
+\textbf{WAARSKUWING:}\par
 #1
 \end{center}
 \end{mdframed}
@@ -261,10 +275,10 @@ linecolor=red%
 \marginpar{%odd
 \begin{minipage}[h]{0.225\paperwidth}
 
-\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, margin=10pt]
-\textbf{\textit{Nota}}
+\begin{mdframed}[linecolor=siyavula-dark-gray, backgroundcolor=siyavula-dark-gray, skipbelow=-pt, leftmargin=15pt, rightmargin=15pt]
+\textbf{\textit{NOTA}}
 \end{mdframed}
-\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray, margin=10pt, skipabove=-4pt]
+\begin{mdframed}[backgroundcolor=siyavula-gray, linecolor=siyavula-gray,leftmargin=15pt, rightmargin=15pt, skipabove=-4pt]
 \small #1
 \end{mdframed}
 \end{minipage}
@@ -328,22 +342,25 @@ linecolor=red%
 
 \newcommand{\westep}[1]
 {\par \vspace{3mm}%\pagebreak[1]
-\leftskip0pt
- \textit{Stap \arabic{stepcounter}} : \textit{\textbf{#1}}
-\par
 \leftskip20pt
+\noindent
+\textit{Stap \arabic{stepcounter}} : \textit{\textbf{#1}}
+\par\noindent
+\leftskip50pt
 \addtocounter{stepcounter}{1}}
 
-\definecolor{siyavula-gray}{RGB}{239,239,239}
-\definecolor{siyavula-dark-gray}{RGB}{194,194,194}
+\definecolor{siyavula-gray}{RGB}{242,242,242}
+\definecolor{siyavula-dark-gray}{RGB}{205,204,204}
+
+\newcommand{\wexlabel}[1]{\newcounter{#1}\setcounter{#1}{\value{workedexamplecounter}}}
+\newcommand{\wexref}[1]{\arabic{#1}}
 
 \newenvironment{wex}[3]{
 \newlength{\myfloatsep}
 \setlength{\myfloatsep}{\floatsep}
 \setlength{\floatsep}{2mm}
-%\begin{quotation}
+\begin{quotation}
 \noindent
-\vspace{.5cm}
 \newlength{\oldparindent}
 \setlength{\oldparindent}{\parindent}
 \setlength{\parindent}{20pt}
@@ -352,12 +369,11 @@ linecolor=red%
 {\clearpage\vspace*{-\topskip}}{} 
 
 
-\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt]
-\vspace*{8pt}
+\begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
 {\Large\textbf{\textit{Voorbeeld \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
-\vspace*{2pt}
+\vspace*{-2pt}
 \begin{mdframed}[linecolor=siyavula-gray,backgroundcolor=siyavula-gray, leftmargin=10pt, skipbelow=18pt]
 {\large\textbf{\textit{PROBLEEM}}} \vspace*{4pt} 
 \hrule
@@ -365,11 +381,11 @@ linecolor=red%
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
-
-\noindent
-\large\textbf{\textit{OPLOSSING}}\vspace*{4pt}
+\par\noindent
+\textbf{\large\textit{OPLOSSING}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
+\noindent
  #3%
 \vspace*{28pt}
 \hrule
@@ -378,7 +394,7 @@ linecolor=red%
 }%
 {%
 \end{mdframed}
-%\end{quotation}
+\end{quotation}
 %\nopagebreak[4]
 %\begin{pspicture}(0,0)(10,0.01)
 % \psline[linecolor=gray,linewidth=3pt]{-}(0,0)(10,0)
@@ -438,7 +454,6 @@ linecolor=red%
 
 \newenvironment{exercises}[1]
 {
-
 \ifdimless{\pagegoal-\pagetotal}{4cm}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
@@ -446,6 +461,7 @@ linecolor=red%
 
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
+\noindent
 \setlength{\parindent}{0pt}
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
@@ -455,17 +471,15 @@ linecolor=red%
 {%
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}
-
-%insert the more practise at www.maths10.
-( More practise at \url{www.maths10.co.za} with \raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}} M049 )
 }
 
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
+\addcontentsline{toc}{section}{Einde van hoofstuk oefeninge }
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
-%\noindent
+\noindent
 %\vspace{.5cm}
 \setlength{\parindent}{0pt}
 %\textbf{\textit{End of chapter exercises:}
@@ -474,9 +488,8 @@ linecolor=red%
 }%
 {%
 \end{quotation}
-
-Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
-\setlength{\parindent}{\saveparindentlength}}
+\setlength{\parindent}{\saveparindentlength}
+}
 
 \newenvironment{f_experiment}[1]
 {
@@ -501,7 +514,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Informal Experiment:}
+\textbf{\textit{Informele Eksperiment:}
 #1}\par
 }%
 {%
@@ -516,7 +529,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{General Experiment:}
+\textbf{\textit{Algemene Eksperiment:}
 #1}\par
 }%
 {%
@@ -526,6 +539,10 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 
 \newenvironment{activity}[1]
 {
+
+\setlength{\saveparindentlength}{\parindent}
+\setlength{\parindent}{0pt}
+
 \ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
 {\clearpage\vspace*{-\topskip}}{} 
 
@@ -538,11 +555,11 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
         \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
           (0.2\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Activity:};
+              { \bfseries ~ \color{black} Aktiwiteit:};
        \end{tikzpicture}
     };
     
-% now the gray bar to the end of the paragraph
+% now the white bar to the end of the paragraph
     \node[anchor=west, xshift=45pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
@@ -574,7 +591,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 \setlength{\parindent}{0pt}
 \hrule width \textwidth height 1pt\\
 \vspace{1pt}\hrule width \textwidth height 1pt\vspace{7pt}
-\textbf{\Large\textit{Group Discussion:}
+\textbf{\Large\textit{Groep Bespreking:}
 #1}
 \vspace{5pt}
 \hrule width \textwidth height 1pt
@@ -619,7 +636,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Project:}
+\textbf{\textit{Projek:}
 #1}\par
 }%
 {%
@@ -632,7 +649,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 \noindent
 \vspace{.5cm}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Investigation:}
+\textbf{\textit{Ondersoeking:}
 #1}\par
 }%
 {%
@@ -791,10 +808,18 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
       {\begin{tikzpicture}[remember picture, overlay]
         \shade[left color=white, right color=gray] (0,0) rectangle
           (1.2\paperwidth,4cm);
-        \node[anchor=west,text centered, yshift=2cm, xshift=0]
-              {\color{black} #1  };
-        \node[anchor=west,text centered, yshift=2cm, xshift=0.85\paperwidth]
-              {\color{white}\chapterlabel};
+        \node[anchor=west,text centered, yshift=2.5cm, xshift=1cm]
+              {
+              \begin{minipage}{1.2\textwidth}
+              \raggedright
+              \phantom{xxx}\color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=west,text centered, yshift=2.0cm, xshift=0.85\paperwidth]
+              {\begin{minipage}{\textwidth}
+              \color{white}\chapterlabel
+              \end{minipage}
+              };
       \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -803,29 +828,33 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 
 
 
-\usepackage{marvosym} % for the little symbol.
-
 \newcommand*\sectionlabel{}
 \titleformat{\section}
   {\gdef\sectionlabel{}
-   \normalfont\sffamily\fontsize{24}\normalfont\itshape}
+   \normalfont\sffamily\fontsize{22}\normalfont\itshape}
   {\gdef\sectionlabel{\thesection}}{0pt}
 {
 \begin{tikzpicture}[remember picture,overlay]
    \node[anchor=west, yshift=-1.5cm, xshift=-4.0cm]
       {\begin{tikzpicture}[remember picture, overlay]
-        \draw[fill=siyavula-gray, color=siyavula-gray, xshift=-\marginparwidth] (0,0) rectangle
-          (1.5\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth]
-              {\color{black} #1 };
-        \node[anchor=east,text centered, yshift=0.5cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \Info~W\arabic{shortcodecounter}};
+        \draw[fill=siyavula-gray, color=siyavula-dark-gray, xshift=-\marginparwidth] (0,0) rectangle
+          (1.5\paperwidth,2.0cm);
+        \node[anchor=west,text centered ,yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth]
+              {
+              \begin{minipage}{0.85\textwidth}
+              \raggedright
+              \color{black} #1
+              \end{minipage}
+              };
+        \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
 \addtocounter{shortcodecounter}{1}
 }
-\titlespacing*{\section}{1cm}{0cm}{2cm}
+\titlespacing*{\section}{1cm}{1cm}{2cm}
+
 
 
 
@@ -835,21 +864,27 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
    \normalfont\sffamily\fontsize{18}\bfseries\slshape}
   {\gdef\subsectionlabel{\thesubsection}}{0pt}
   {\begin{tikzpicture}[remember picture,overlay]
-   \node[anchor=west, yshift=-1.5cm, xshift=-0.085\paperwidth]
+   \node[anchor=west, yshift=-1.5cm, xshift=-0.5cm]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
-          (0.915\paperwidth,1.0cm);
-        \node[anchor=west,text centered ,yshift=0.5cm]
-              {\color{black} #1  };
+          (0.915\paperwidth,1.5cm);
+        \node[anchor=west,text centered ,yshift=0.75cm, xshift=\hoffset+0.02\marginparwidth]
+              { \begin{minipage}{0.85\textwidth}
+                \color{black} #1
+                \end{minipage}
+                };
+        \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
+\addtocounter{shortcodecounter}{1}
   }
-\titlespacing*{\subsection}{1.5cm}{1cm}{2cm}
+\titlespacing*{\subsection}{0cm}{1cm}{2cm}
 
 
 
-\newcommand{\summary}{
+\newcommand{\summary}[1]{
 \vspace{6\baselineskip} \par
 {\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
@@ -858,7 +893,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (1.2\paperwidth,2cm);
         \node[anchor=west,text centered ,yshift=1.cm, xshift=0.3\paperwidth]
-              {   \color{black} Hoofstuk \chapterlabel | Opsomming  };
+              {  \phantom{xxx} \color{black} Hoofstuk \chapterlabel | Opsomming  };
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -866,17 +901,21 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 }
 \par
 \vspace{\baselineskip}
+\addcontentsline{toc}{section}{Opsomming}
+
+Sien die opsommingsaandbieding (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Aanbieding: #1 by www.everythingmaths.co.za)
+
 }
 
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
- \par  \vspace*{3\baselineskip}
+ \par  \vspace*{2\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west ,text centered]
       {\begin{tikzpicture}[remember picture, overlay]
-        \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
+        \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.3\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
               { \bfseries ~ \color{black} Oefening \chapterlabel~-~\arabic{exercisecounter}   };
@@ -896,7 +935,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
 
 }
 \par
-\vspace{\baselineskip}
+%\vspace{\baselineskip}
 }
 
 
@@ -920,7 +959,7 @@ Meer oefening, hulp of volle antwoorde by \url{www.everythingmaths.co.za}
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
             \node[anchor=west, yshift=0.75cm, text centered]
-              {   \color{black} Einde van hoofstuk oefeninge };
+              {\color{black} Einde van hoofstuk oefeninge };
 
        \end{tikzpicture}
 
