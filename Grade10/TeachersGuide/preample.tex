@@ -491,6 +491,29 @@ linecolor=red%
 \setlength{\parindent}{\saveparindentlength}
 }
 
+
+
+
+\newenvironment{eocsolutions}[1]
+{
+\eocsolutionsheading
+\addcontentsline{toc}{section}{Solutions to End of chapter exercises}
+%\hrule width \textwidth height 1pt\\
+\begin{quotation}
+\noindent
+%\vspace{.5cm}
+\setlength{\parindent}{0pt}
+%\textbf{\textit{End of chapter exercises:}
+%#1}
+\par
+}%
+{%
+\end{quotation}
+\setlength{\parindent}{\saveparindentlength}
+}
+
+
+
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
@@ -935,7 +958,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.5\textwidth, 28pt);
        \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
-              { \bfseries ~ \color{black} Solutions for exercise \chapterlabel~-~\arabic{exercisecounter}   };
+              { \bfseries ~ \color{black} Solutions to Exercise \chapterlabel~-~\arabic{exercisecounter}   };
        \end{tikzpicture}
     };
     
@@ -1021,3 +1044,34 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
 }
 
 
+\newcommand{\eocsolutionsheading}{
+\par \vspace*{3\baselineskip} 
+{\normalfont \sffamily\fontsize{16}\bfseries
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west, yshift=6\baselineskip, xshift=0., text centered]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black, very thick] (0,0) rectangle
+          (0.3\textwidth,1.5cm);
+       \node[anchor=west, yshift=0.75cm, text centered]
+              { ~~  \color{black} Chapter \chapterlabel };
+       \end{tikzpicture}
+    };
+    
+% now the gray bar to the end of the paragraph
+    \node[anchor=west, xshift=0.31\textwidth]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
+          (0.69\textwidth,1.5cm);
+            \node[anchor=west, yshift=0.75cm, text centered]
+              {   \color{black} Solutions to End of Chapter Exercises};
+
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+\par
+\vspace{\baselineskip}
+}
