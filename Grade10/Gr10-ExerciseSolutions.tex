@@ -1368,7 +1368,7 @@ $\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$,
 \end{enumerate}
 	\item $y=2x^2-18$%Give the equation of the reflection of $f$ in the $x$-axis.
 \end{enumerate}
-	 \item $h=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
+	 \item $1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
 
 % What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?
 
@@ -1383,18 +1383,19 @@ $\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$,
 % label the axes
 %\psgrid-\infty ;q
 \psset{yunit=0.2, xunit=0.2}
-\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(15,20)
+\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(20,20)
 
-\psplot[plotstyle=curve,arrows=<->]{-2}{12}{x -1 mul 15 add}
-\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-4}{12}{x 3 sub}
+\psplot[plotstyle=curve,arrows=<->]{-2}{18}{x -1 mul 15 add}
+\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-7}{14}{x 3 add}
 % \psdots(-2,-2)(-1,-1)(0,0)(1,1)(2,2)
-
+\psline[linewidth=1pt,linestyle=dotted](0,9)(6,9)
+\psline[linewidth=1pt,linestyle=dotted](6,9)(6,0)
 % \rput(-0.2, -0.3){$0$}
-\rput(15.8, 0.1){$x$}
+\rput(20.8, 0.1){$x$}
 \rput(0.1, 20.8){$y$}
 \uput[r](12,4){\small$y=-x+15$}
-\uput[r](12,9){\small\color{gray}$y=x-3$}
-\uput[dl](0,0){$0$}
+\uput[r](12,14){\small\color{gray}$y=x+3$}
+% \uput[dl](0,0){$0$}
 \end{pspicture}}
  \item $x=6$ and $y=9$%What is the solution?
     \end{enumerate}
@@ -1487,13 +1488,15 @@ $\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$,
 \end{enumerate}
 \item %Given the general equation, determine the values of $a$ and $q$ for each of the following graphs:\vspace{20pt}\\
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $a=3,~q=0$
-    \item $a=-2,~q=3$
-    \item $a=-3,~q=0$
-    \item $a=1,~q=2$
-    \item $a=5,~q=1$
-    \item $a=2,~q=1$
-    \item $a=-1,~q=-2$
+%     \item $a=3,~q=0$
+%     \item $a=-2,~q=3$
+%     \item $a=-3,~q=0$
+%     \item $a=1,~q=2$
+%     \item $a=5,~q=1$
+%     \item $a=2,~q=1$
+%     \item $a=-1,~q=-2$
+
+
     \end{enumerate}
 \item %$y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:\\
 
@@ -1510,11 +1513,18 @@ $\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$,
 
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $q=1$%Calculate the coordinates of $M$ and $N$.
-\item $BC=7$ units%Calculate the length of $MN$.
-\item $y=-4^{x}$%Calculate length $PQ$ if $OR=1$ unit.
-\item $y=4^{x}+1$%Give the equation of $y=2^x$ reflected about the $y$-axis.
-\item $x=0$%Give the range of both graphs.
+\item $g(x) = -4x^2 + q\\
+$Substitute in values of point $A(0;1)$:\\
+$\therefore 1 = -4(0)^2 + q\\
+\therefore q=1$%
+\item Substitute in values of point $B(1;4)$:\\
+$g(1) = -4(1)^2) + 1\\
+=-4+1\\
+=-3\\
+\therefore BC = 4+3 = 7$ units.
+\item $y=-4^{x}$%
+\item $y=4^{x}+1$%G.
+\item $x=0$%
 \item Range $f(x)$: $(0;\infty)$\\
       Range $g(x)$: $(-\infty;1]$
 \end{enumerate}
@@ -1539,7 +1549,7 @@ $\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$,
 \newcounter{enumii_saved}
       \setcounter{enumii_saved}{\value{enumii}}
 \setcounter{enumii}{1}
-% \item DELETE ME%Describe the relationship between $h$ and $k$.
+% \item DELETE ME
 \item $y=x^2+4$%Give the equation of $k(x)$ reflected about the line $y=4$.
 \item Domain $h$: $(-\infty;\infty)$\\
       Range $h$: $[-4;\infty)$%Give the domain and range of $h$.

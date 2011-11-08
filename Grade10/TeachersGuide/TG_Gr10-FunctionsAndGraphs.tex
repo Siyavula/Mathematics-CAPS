@@ -4,6 +4,7 @@
 {
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Write the following in set notation:
+\begin{multicols}{2}
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  \item $(-\infty; 7]$
 \item $[13; 4)$
@@ -12,13 +13,16 @@
 \item $[-\frac{1}{2}; \frac{1}{2}]$
 \item $(-\sqrt{3}; \infty)$
 \end{enumerate}
+\end{multicols}
 \item Write the following in interval notation:
+\begin{multicols}{2}
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  \item $\{p: p \in \mathbb{R},~ p \leq 6\}$
  \item $\{k: k \in \mathbb{R},~ -5 < k < 5\}$
  \item $\{x: x \in \mathbb{R},~ x > \frac{1}{5}\}$
  \item $\{z: z \in \mathbb{R},~ 21 \leq z < 41\}$
 \end{enumerate}
+\end{multicols}
 \end{enumerate}
 
 } 
@@ -27,8 +31,8 @@
 
  \begin{solutions}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-
-
+\item
+\begin{multicols}{2}
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  \item $\{x:x\in\mathbb{R}, x\leq7\}$ %$(- \infty; 7]$
 \item $\{y:y\in\mathbb{R}, -13 \leq y<4\}$ %$[13;4)$
@@ -37,14 +41,16 @@
 \item $\{p:p\in\mathbb{R}, -\frac{1}{2}\leq p \leq \frac{1}{2}\}$ %$[-\frac{1}{2}; \frac{1}{2}]$
 \item $\{m:m\in\mathbb{R}, m > -\sqrt{3}\}$  %$(-\sqrt{3}; \infty)$
 \end{enumerate}
+\end{multicols}
 \item %Write the following in interval notation:
+\begin{multicols}{2}
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  \item $(-\infty; 6]$ %$\{p: p \in \mathbb{R},~ p \leq 6\}$
  \item $(-5; 5)$ %$\{k: k \in \mathbb{R},~ -5 < k < 5\}$
  \item $(\frac{1}{5}; \infty)$%$\{x: x \in \mathbb{R},~ x > \frac{1}{5}\}$
  \item $[21; 41)$%$\{z: z \in \mathbb{R},~ 21 \leq z < 41\}$
 \end{enumerate}
-
+\end{multicols}
 \end{enumerate}}
 \end{solutions}
 
@@ -53,6 +59,7 @@
 {
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item List the $x$ and $y$-intercepts for the following straight line graphs. Indicate whether the graph is increasing or decreasing:
+\begin{multicols}{2}
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
       \item $y=x+1$
       \item $y=x-1$
@@ -63,6 +70,7 @@
       \item $x=3y$
       \item $\frac{x}{2} - \frac{y}{3} = 1$
       \end{enumerate}
+\end{multicols}
 \item For the functions in the diagram below, give the equation and the domain and range:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
   \item $a(x)$
@@ -116,12 +124,13 @@
 
 
  \begin{solutions}{}{
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
 
 \item %List the $x$- and $y$-intercepts for the following straight line graphs. Indicate whether the graph is increasing or decreasing:
+\begin{multicols}{2}
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item $(0;1)$ and $(-1;0)$; increasing%$y=x+1$
-      \item $(0;-1)$ and $(1;0)$;increasing%$y=x-1$
+      \item $(0;-1)$ and $(1;0)$; increasing%$y=x-1$
       \item $(0;-1)$ and $(\frac{1}{2};0)$; increasing%$h(x)=2x-1$
       \item $(0;1)$ and $(\frac{1}{3};0)$; decreasing%$y+1=2x$
       \item $(0;2)$ and $(-3;0)$; increasing%$3y-2x=6$
@@ -129,24 +138,25 @@
       \item $(0;0)$; increasing%$x=3y$
       \item $(0;3)$ and $(2;0)$; decreasing%$\frac{x}{2} - \frac{y}{3} = 1$
       \end{enumerate}
-
+\end{multicols}
 
 \item %For the functions in the diagram below, give the equation and domain and range:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
+\begin{multicols}{2}   
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
 
 \item $a(x)= - \frac{3}{4}x+3$%$a(x)$
 \item $b(x)=\frac{3}{2}x-6$%$b(x)$
 \item $p(x)=3$%$c(x)$
 \item $d(x)=-\frac{3}{4}x$%$d(x)$
-
+\end{multicols}
     \end{enumerate}  
-
+ 
 
 \item %Sketch the following functions on the same set of axes, using the dual intercept method. Clearly indicate the intercepts and the point of intersection of the two graphs: $x+2y-5=0$ and $3x-y-1=0$
 \scalebox{1}{
 \begin{pspicture}(-5,-5)(5,5)
 %\psgrid
-\psset{yunit=0.4,xunit=0.4}
+\psset{yunit=0.6,xunit=0.6}
 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-6)(7,4)
 \psplot[plotstyle=curve,arrows=<->]{-4}{6}{x .5  neg mul 2.5 add}
 \psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-1}{2}{x 3  mul 1 sub}
@@ -164,7 +174,7 @@
 \end{pspicture}
 }
 \item %On the same system of axes, draw the graphs of $f(x)=3-3x$ and $g(x)=\frac{1}{3}x+1$ using the gradient-intercept method.
-\scalebox{1}{
+\scalebox{1.3}{
 \begin{pspicture}(-5,-5)(5,5)
 %\psgrid
 \psset{yunit=0.5,xunit=0.5}
@@ -256,7 +266,7 @@ This gives the range as $(-\infty; q)$.
 \scalebox{1}{
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
-\psset{yunit=0.5,xunit=0.5}
+\psset{yunit=0.6,xunit=0.6}
 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-4,-3)(4,5)
 \psplot[plotstyle=curve,arrows=<->]{-2.4}{2.4}{x 2 exp 1 neg mul 4 add}
 \psdots(0,4)(-1;0)(1;0)
@@ -325,18 +335,18 @@ From the graph we see that $g$ lies above $h$ when: $x \leq -4$ or $x \geq 4$
 \scalebox{1}{
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
-\psset{yunit=0.2,xunit=0.2}
+\psset{yunit=0.4,xunit=0.4}
 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-10,-10)(10,10)
 \psplot[plotstyle=curve,arrows=<->]{-8}{-0.6}{x -1 exp -6 mul}
 \psplot[plotstyle=curve,arrows=<->]{8}{0.6}{x -1 exp -6 mul}
 \psdots(-2.45,2.45)(2.45,-2.45)
-\rput(0.3, 10.6){\small$y$}
-\rput (10.6, 0.2){\small$x$}
-\rput(-0.8,-0.8){\small$0$}
+\rput(0.3, 10.6){$y$}
+\rput (10.6, 0.2){$x$}
+\rput(-0.8,-0.8){$0$}
 
 % \uput[ul](-2.45,2.45){\small$P$}
 % \uput[u](2.45,-2.45){\small$Q$}
-\uput[d](5,-2.45){\small$y=-\frac{6}{x}$}
+\uput[d](5,-2.45){$y=-\frac{6}{x}$}
 
 \end{pspicture}}
 
@@ -363,7 +373,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \scalebox{1}{
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
-\psset{yunit=0.2,xunit=0.2}
+\psset{yunit=0.4,xunit=0.4}
 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-10,-10)(10,10)
 \psplot[plotstyle=curve,arrows=<->]{-8}{-0.8}{x -1 exp 8 mul}
 \psplot[plotstyle=curve,arrows=<->]{8}{0.8}{x -1 exp 8 mul}
@@ -371,20 +381,20 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \psplot[plotstyle=curve,linecolor=gray, arrows=<->]{8}{0.8}{x -1 exp 8 mul 4 add}
 \psplot[plotstyle=curve,linecolor=gray, linestyle=dashed]{-8}{8}{x -1  mul 3 add}
 \psdot(-4,1)
-\rput(0.3, 10.6){\small$y$}
-\rput (10.8, 0.2){\small$x$}
-\rput(-0.8,-0.8){\small$0$}
-\uput[u](-3.7,0.7){\small$(-4;1)$}
+\rput(0.3, 10.6){$y$}
+\rput (10.8, 0.2){$x$}
+\rput(-0.8,-0.8){$0$}
+\uput[u](-3.7,0.7){$(-4;1)$}
 \psline[linewidth=0.5pt,linestyle=dashed](-10,3)(10,3)
 % \uput[ul](-2.45,2.45){\small$P$}
 % \uput[u](2.45,-2.45){\small$Q$}
-\uput[d](4.3,6.2){\small$y=\frac{8}{x}$}
-\uput[d](5.5,10.5){\small$y=\frac{8}{x}+3$}
-\uput[ul](0,3){\small$3$}
+\uput[d](3.5,5){$y=\frac{8}{x}$}
+\uput[d](4.5,10.5){$y=\frac{8}{x}+3$}
+\uput[ul](0,3){$3$}
 \end{pspicture}}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item The graph $g(x)=\frac{8}{x}+3$  is the graph of $h(x)=\frac{8}{x}$, vertically shifted upwards by $3$ units. They would be the same shape but the asymptote of $g(x)$ would be $y=3$, instead of $y=0$ (for $h(x)$) and the axis of symmetry would be $y=-x+3$ instead of $y=-x$ (for $h(x)$).%How would the graph compare with that of ? Explain your answer fully.
-%     \item %GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
+    \item (Graph of $y=\frac{8}{x}+3$ is on the set of axes above)%GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
     \end{enumerate}
  \end{enumerate}
 
@@ -414,6 +424,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \rput(5.2,0.2){$x$}
 \rput(0.2,10.2){$y$}
 \rput(-0.3,-0.3){$0$}
+
 \end{pspicture}
 \end{center}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -436,7 +447,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \scalebox{1}{
 \begin{pspicture}(-5,-1)(5,6)
 %\psgrid
-\psset{yunit=0.5,xunit=0.5}
+\psset{yunit=0.6,xunit=0.6}
 \psaxes[labels=none,ticks=none,arrows=<->](0,0)(-3.5,-1)(3.5,5)
 \psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-2.5}{2}{2 x exp}
 \psplot[plotstyle=curve,arrows=<->]{-2}{2.5}{0.5 x exp}
@@ -448,6 +459,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \rput(2.7, 2.7){$y= 2^x$}
 \rput(-2.7, 2.7){$y= \frac{1}{2}^{x}$}
 \rput(-0.3,-0.3){$0$}
+\rput(0.25, 1.55){$1$}
 % \rput(0.8,4){$(0;4)$}
 % \rput(1.5,0.5){$(1;0)$}
 \end{pspicture}}
@@ -463,7 +475,7 @@ LHS = RHS, therefore the answer is correct.%S %Solve the equation $$ graphically
 \item %The curve of the exponential function $f$ in the accompanying diagram cuts the y-axis at the point $
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 
-\item $f(x)=3^{x}$%Determine the equation of the function $f$.
+\item %Determine the equation of the function $f$.
 The general form of the equation is $f(x)=a^x+q$. \\
 We are given $A(0; 1)$ and $B(2; 9)$.\\
 Substitute in the values of point $A$:\\
@@ -495,6 +507,7 @@ Therefore the equation is $f(x) = 3^x$.
  {
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Using your knowledge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [~{0}^{\circ };{360}^{\circ }]$.
+\begin{multicols}{2}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $y=2\sin\theta $
 \item $y=-4\cos\theta $
@@ -502,6 +515,7 @@ Therefore the equation is $f(x) = 3^x$.
 \item $y=\sin\theta -3$
 \item $y=\tan\theta -2$\item $y=2\cos\theta -1$
 \end{enumerate}
+\end{multicols}
 \item Give the equations of each of the following graphs:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item
@@ -532,9 +546,10 @@ Therefore the equation is $f(x) = 3^x$.
  \begin{solutions}{}{
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item %Using your knowledge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [{0}^{\circ };{360}^{\circ }]$
+\begin{multicols}{2}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item %$y=2~sin~\theta $
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.5}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-2.6)(4.5,2.6)
@@ -549,7 +564,7 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}}
 
 \item %$y=-4~cos~\theta $
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
@@ -565,7 +580,7 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}}
 
 \item %$y=-2~cos~\theta +1$
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
@@ -581,7 +596,7 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}}
 
 \item %$y=sin~\theta -3$
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.5}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,2)
@@ -596,7 +611,7 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}}
 
 \item %$y=tan~\theta -2$
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(0,-2.5)(4,2)
 \psset{yunit=0.5}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,2)
@@ -616,7 +631,7 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}}
 
 \item %$y=2~cos~\theta -1$
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
@@ -630,6 +645,7 @@ Therefore the equation is $f(x) = 3^x$.
 \uput[l](0,-3){$-3$}
 \end{pspicture}}
 \end{enumerate}
+\end{multicols}
 \item %Give the equations of each of the following graphs:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item$y=2~cos~\theta$
@@ -646,29 +662,37 @@ Therefore the equation is $f(x) = 3^x$.
 \begin{eocexercises}{}
   \begin{enumerate}[itemsep=9pt, label=\textbf{\arabic*}. ] 
   \item Sketch the graphs of the following: 
+\begin{multicols}{3}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $y=2x+4$ 
     \item $y-3x=0$ 
     \item $2y=4-x$
     \end{enumerate}
+\end{multicols}
   \item Sketch the following functions: 
+\begin{multicols}{3}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{3} 
     \item $y=x^{2}+3$ 
     \item $y=\frac{1}{2}x^{2}+4$
     \item $y=2x^{2}-4$
     \end{enumerate}
+\end{multicols}
   \item Sketch the following functions and identify the asymptotes: 
+\begin{multicols}{3}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{6} 
     \item $y=3^{x}+2$ 
     \item $y=-4 \times 2^{x}$ 
     \item $y=\Big(\dfrac{1}{3}\Big)^{x}-2$ 
     \end{enumerate}
+\end{multicols}
   \item Sketch the following functions and identify the asymptotes: 
+\begin{multicols}{3}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{9} 
-    \item $y=\frac{3}{x}+4$ 
-    \item $y=\frac{1}{x}$ 
-    \item $y=\frac{2}{x}-2$ 
+    \item $y=\dfrac{3}{x}+4$ 
+    \item $y=\dfrac{1}{x}$ 
+    \item $y=\dfrac{2}{x}-2$ 
     \end{enumerate}
+\end{multicols}
   \item Determine whether the following statements are true or false. If the statement is false, give reasons why:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{12} 
     \item The given or chosen $y$-value is known as the independent variable.
@@ -683,7 +707,7 @@ Therefore the equation is $f(x) = 3^x$.
     \item Draw $f$ and $g$ on the same set of axes.
     \item Calculate the points of intersection of $f$ and $g$.
     \item Use your graphs and the points of intersection to solve for $x$ when:
-      \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] % \setcounter{enumi}{20} 
+      \begin{enumerate}[itemsep=3pt, label=\textbf{\roman*}. ] % \setcounter{enumi}{20} 
       \item $f(x)>0$
       \item $\dfrac{f(x)}{g(x)}\le 0$
       \end{enumerate}
@@ -707,14 +731,16 @@ Therefore the equation is $f(x) = 3^x$.
   \item Sketch graphs of the following trigonometric functions for
     $\theta \in[~0^{\circ};360^{\circ}]$. Show intercepts and
     asymptotes.
+\begin{multicols}{2}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  % \setcounter{enumi}{27} 
-    \item $y=-4\cos\theta$
-    \item $y=\sin\theta -2$
-    \item $y=-2\sin\theta +1$
-    \item $y=\tan\theta+2$
-    \item $y=\dfrac{\cos\theta}{2}$
+    \item $y=-4~cos~\theta$
+    \item $y=~sin~\theta -2$
+    \item $y=-2~sin~\theta +1$
+    \item $y=~tan~\theta+2$
+    \item $y=\dfrac{cos~\theta}{2}$
     \end{enumerate}
-  \item Given the general equations in this chapter, determine the
+\end{multicols}
+  \item Given the general equations $y=mx+c$; $y=ax^2+q$; $y=\frac{a}{x}+q$; $y=a~sin~x+q$; $y=a^x +q$ and $y=a~tan~x$, determine the
     specific equations for each of the following graphs:\vspace{20pt}\\
     \begin{center}
       \begin{table}[H]
@@ -918,7 +944,7 @@ Therefore the equation is $f(x) = 3^x$.
     \item Give the equation of $k(x)$ reflected about the line $y=4$.
     \item Give the domain and range of $h$.
     \end{enumerate}
-  \item Sketch the graphs $f(\theta)=2\sin\theta$ and $g(\theta)=\cos\theta-1$ on the same set of axes. Use your sketch to determine:
+  \item Sketch the graphs $f(\theta)=2 sin~\theta$ and $g(\theta)= cos~\theta-1$ on the same set of axes. Use your sketch to determine:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $f(180^{\circ})$
     \item $g(180^{\circ})$
@@ -932,13 +958,14 @@ Therefore the equation is $f(x) = 3^x$.
 
 
  \begin{solutions}{}{
-  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{multicols}{2}
+  \begin{enumerate}[itemsep=8pt, label=\textbf{\arabic*}. ] 
 \item %Sketch the graphs of the following: 
 \scalebox{1}{
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
 %\psgrid-\infty ;q
-\psset{yunit=0.5, xunit=0.5}
+\psset{yunit=0.6, xunit=0.6}
 \psaxes[arrows=<->, dy=1,Dy=1,dx=1,Dx=1](0,0)(-4,-4)(5,5)
 
 \psplot[linecolor=gray,linestyle=dashed,plotstyle=curve,arrows=<->]{-3}{0.5}{x 2 mul 4 add}
@@ -965,7 +992,7 @@ Therefore the equation is $f(x) = 3^x$.
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
 %\psgrid-\infty ;q
-\psset{yunit=0.5, xunit=0.5}
+\psset{yunit=0.6, xunit=0.6}
 \psaxes[arrows=<->, dy=1,Dy=1,dx=1,Dx=1](0,0)(-4,-5)(5,8)
 
 \psplot[linecolor=gray,linestyle=dashed,plotstyle=curve,arrows=<->]{-2}{2}{x 2 exp 3 add}
@@ -990,7 +1017,7 @@ Therefore the equation is $f(x) = 3^x$.
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
 %\psgrid-\infty ;q
-\psset{yunit=0.5, xunit=0.5}
+\psset{yunit=0.6, xunit=0.6}
 \psaxes[arrows=<->, dy=1,Dy=1,dx=1,Dx=1](0,0)(-5,-6)(5,8)
 
 \psplot[linecolor=gray,linestyle=dashed, plotstyle=curve,arrows=<->]{-4}{1.5}{3 x exp 2 add}
@@ -1017,7 +1044,7 @@ Therefore the equation is $f(x) = 3^x$.
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
 %\psgrid-\infty ;q
-\psset{yunit=0.25, xunit=0.25}
+\psset{yunit=0.3, xunit=0.3}
 \psaxes[arrows=<->, dy=2,Dy=2,dx=2,Dx=2](0,0)(-10,-10)(10,10)
 
 \psplot[linecolor=gray,linestyle=dashed,plotstyle=curve,arrows=<->]{-8}{-0.6}{x -1 exp 3 mul 4 add}
@@ -1040,15 +1067,20 @@ Therefore the equation is $f(x) = 3^x$.
 %     \item %$y=\dfrac{1}{x}$ 
 %     \item %$y=\dfrac{2}{x}-2$ 
 %     \end{enumerate}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}[itemsep=8pt, label=\textbf{\arabic*}. ] 
+\setcounter{enumi}{4}
 
 \item %Determine whether the following statements are true or false. If the statement is false, give reasons why:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-   \item False - the given or chosen $y$-value is the dependent variable, because it's value depends on the independent variable $X$.%The given or chosen $y$-value is known as the independent variable.
+   \item False - the given or chosen $y$-value is the dependent variable, because it's value depends on the independent variable $x$.%The given or chosen $y$-value is known as the independent variable.
     \item False - a graph is said to be \textit{continuous} if there are no breaks in it.%A graph is said to be congruent if there are no breaks in the graph.
-    \item True%Functions of the form $y=ax+q$ are straight lines.
+    \item True.%Functions of the form $y=ax+q$ are straight lines.
     \item False - functions of the form $y=\frac{a}{x}+q$ are hyperbolic functions.
     \item False - an asymptote is a straight line that a graph will \textit{never} intersect.% An asymptote is a straight line which a graph will intersect at least once.
-    \item True%Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
+    \item True.%Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
     \end{enumerate}
 \item %Given the functions $f(x)=-2{x}^{2}-18$ and $g(x)=-2x+6$
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -1089,12 +1121,13 @@ Therefore the points of intersection are $(3;0)$ and $(-2;10)$%Calculate the poi
 \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
 \item $
 f(x)>0\\
-−2x2+18>0\\
-2x2<18\\
+−2x^2+18>0\\
+2x^2<18\\
 x2<9\\
 −3<x<3\\$
 %$f(x)>0$
-	\item $
+
+\item $
 
 \frac{−2x^2+18}{−2x+6}\leq0\\
 \frac{x^2−9}{x−3} \leq 0\\
@@ -1105,7 +1138,14 @@ x\leq−3$
 \end{enumerate}
 	\item $y=2x^2-18$%Give the equation of the reflection of $f$ in the $x$-axis.
 \end{enumerate}
-	 \item $h=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
+	 \item 
+
+$y=5(0,8)^x\\
+= 5(\frac{4}{5})^x\\
+$ if $x = 5$ then $y = 5(\frac{4}{5})^5\\
+= 5(\frac{1024}{3125})\\
+=5(0,38)\\
+=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) and the height of the bounce ($y$) for a certain ball. 
 
 % What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?
 
@@ -1120,35 +1160,37 @@ x\leq−3$
 % label the axes
 %\psgrid-\infty ;q
 \psset{yunit=0.2, xunit=0.2}
-\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(15,20)
+\psaxes[arrows=<->, dy=3,Dy=3,dx=2,Dx=2](0,0)(-10,-10)(20,20)
 
-\psplot[plotstyle=curve,arrows=<->]{-2}{12}{x -1 mul 15 add}
-\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-4}{12}{x 3 sub}
+\psplot[plotstyle=curve,arrows=<->]{-2}{18}{x -1 mul 15 add}
+\psplot[linecolor=gray,plotstyle=curve,arrows=<->]{-7}{14}{x 3 add}
 % \psdots(-2,-2)(-1,-1)(0,0)(1,1)(2,2)
-
+\psline[linewidth=1pt,linestyle=dotted](0,9)(6,9)
+\psline[linewidth=1pt,linestyle=dotted](6,9)(6,0)
 % \rput(-0.2, -0.3){$0$}
-\rput(15.8, 0.1){$x$}
+\rput(20.8, 0.1){$x$}
 \rput(0.1, 20.8){$y$}
 \uput[r](12,4){\small$y=-x+15$}
-\uput[r](12,9){\small\color{gray}$y=x-3$}
-\uput[dl](0,0){$0$}
+\uput[r](12,14){\small\color{gray}$y=x+3$}
+% \uput[dl](0,0){$0$}
 \end{pspicture}}
  \item 
 Substitute value of $y=-x+15$ into second equation:\\
-$-x+15=x-3\\
--2x = -18\\
-\therefore x=9$\\
+$-x+15=x+3\\
+-2x = -12\\
+\therefore x=6$\\
 Substitute value of $x$ back into first equation:\\
-$y = -(9) + 15\\
-= 6$\\
-Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
+$y = -(6) + 15\\
+= 9$\\
+Mark has $6$ R $5$ coins and $9$ R~$2$ coins.
     \end{enumerate}
 
 \item %Sketch graphs of the following trigonometric functions for $\theta \in[0;360]$ (show intercepts and asymptotes):
+\begin{multicols}{2}
 	 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
  
     \item %$y=-4~cos~\theta$
-\scalebox{1}{
+\scalebox{0.9}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
@@ -1165,7 +1207,7 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
     
 
 \item %$y=sin~\theta -2$
-\scalebox{1}{
+\scalebox{.9}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.5}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-2.6)(4.5,2.6)
@@ -1180,7 +1222,7 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 \end{pspicture}}
 
 \item %$y=-2~sin~\theta +1$
-\scalebox{1}{
+\scalebox{.9}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
@@ -1196,7 +1238,7 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 \end{pspicture}}
 
 \item %$y=tan~\theta+2$
-\scalebox{1}{
+\scalebox{.9}{
 \begin{pspicture}(0,-2.5)(4,2)
 \psset{yunit=0.5}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-2)(4.5,5)
@@ -1216,7 +1258,7 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 \end{pspicture}}
 
 \item %$y=\dfrac{cos~\theta}{2}$
-\scalebox{1}{
+\scalebox{.9}{
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=1}
 \psaxes[Dx=180, dx=2, Dy=1, dy=1, labels=none, ticks=x]{<->}(0,0)(-0.5,-1)(4.5,1)
@@ -1230,22 +1272,30 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 \uput[l](0,0.5){$\frac{1}{2}$}
 \end{pspicture}}
 \end{enumerate}
-\item %Given the general equation, determine the values of $a$ and $q$ for each of the following graphs:\vspace{20pt}\\
+\end{multicols}
+\item %Given the general equations $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ and $y=a~tan~x$, determine the
+    %specific equations for each of the following graphs:\vspace{20pt}\\
+\begin{multicols}{2}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $a=3,~q=0$
-    \item $a=-2,~q=3$
-    \item $a=-3,~q=0$
-    \item $a=1,~q=2$
-    \item $a=5,~q=1$
-    \item $a=2,~q=1$
-    \item $a=-1,~q=-2$
+    \item $y=3x$
+    \item $y=-2x^2 +3$
+    \item $y = \frac{-3}{x}$
+    \item $y=x+2$
+    \item $y=5~sin~x +1$
+    \item $y=2.2^x + 1$
+    \item $y = -tan~x -2$
     \end{enumerate}
+\end{multicols}
 \item %$y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:\\
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $M(0;1), N(0;-1)$%Calculate the coordinates of $M$ and $N$.
-\item $MN=2$ units%Calculate the length of $MN$.
-\item $PQ=1$ unit%Calculate length $PQ$ if $OR=1$ unit.
+\item At $M$, $y=2^0\\=1\\$therefore the coordinates of $M$ are $(0;1)$\\
+At $N$, $y= -(2^0)\\ = -1\\$therefore the coordinates of $N$ are$(0;-1)$%Calculate the coordinates of $M$ and $N$.
+\item $MN=1+1=2$ units%Calculate the length of $MN$.
+\item At $P$, $x=-1$\\
+$\therefore y = 2^{-1} = \frac{1}{2}.\\
+$ At $Q$, $y=-(2^{-1}) = -\frac{1}{2}$.\\
+Therefore length $PQ = \frac{1}{2} + \frac{1}{2} =1$ unit.%Calculate length $PQ$ if $OR=1$ unit.
 \item $y=2^{-x}$%Give the equation of $y=2^x$ reflected about the $y$-axis.
 \item Range $y=2^x$: $(0;\infty)$;\\
       Range $y=-2^x$: $(-\infty;0)$%Give the range of both graphs.
@@ -1253,17 +1303,17 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 
 \item %$f(x)=4^x$ and $g(x)=4x^2+q$ and sketched below. The points $A(0;1)$, $B(1;4)$ and $C(1,-3)$ are given. Answer the questions that follow:\\
 
-
+\begin{multicols}{2}
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $q=1$%Calculate the coordinates of $M$ and $N$.
-\item $BC=7$ units%Calculate the length of $MN$.
-\item $y=-4^{x}$%Calculate length $PQ$ if $OR=1$ unit.
-\item $y=4^{x}+1$%Give the equation of $y=2^x$ reflected about the $y$-axis.
+\item $q=1$%C
+\item $BC=7$ units%.
+\item $y=-4^{x}$%
+\item $y=4^{x}+1$%
 \item $x=0$%Give the range of both graphs.
 \item Range $f(x)$: $(0;\infty)$\\
       Range $g(x)$: $(-\infty;1]$
 \end{enumerate}
-
+\end{multicols}
 \item %Sketch the graphs $h(x)=x^2-4$ and $k(x)=-x^2+4$ on the same set of axes and answer the questions that follow: 
 \scalebox{1}{
 \begin{pspicture}(-5,-1)(5,5)
@@ -1284,7 +1334,9 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
 % \newcounter{enumii_saved}
 %       \setcounter{enumii_saved}{\value{enumii}}
 % \setcounter{enumii}{1}
- \item DELETE ME%Describe the relationship between $h$ and $k$.
+ \item $h(x) = x^2 - 4$\\
+$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$.\\
+$k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the relationship between $h$ and $k$.%Describe the relationship between $h$ and $k$.
 \item $y=x^2+4$%Give the equation of $k(x)$ reflected about the line $y=4$.
 \item Domain $h$: $(-\infty;\infty)$\\
       Range $h$: $[-4;\infty)$%Give the domain and range of $h$.
@@ -1309,7 +1361,8 @@ Mark has $9$ R $5$ coins and $6$ R~$2$ coins.
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $f(180^{\circ})=0$%$f(180^{\circ})$
 \item $g(180^{\circ})=-2$%$g(180^{\circ})$
-\item $g(270^{\circ}) -f(270^{\circ})=1$%$g(270^{\circ}) -f(270^{\circ})$
+\item $g(270^{\circ}) -f(270^{\circ})=-1-(02)\\
+=-1+2\\=1$%$g(270^{\circ}) -f(270^{\circ})$
 \item Domain: $[0^{\circ}$; $360^{\circ}]$\\
       Range: $[-2;0]$%The domain and range of $g$.
 \item Amplitude $=2$;\\

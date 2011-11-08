@@ -121,13 +121,9 @@ sirkel &
 
        \Note{Onthou area word gemeet in vierkante eenhede: e.g. cm$^2$, m$^2$ or mm$^2$.}     
 
-    \textnormal{Khan Akademie video oor area en omtrek}
-    \raisebox{-5 pt}{ 
-    \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10096 )}
+\mindsetvid{area and perimeter}{VMdxu}%Khan Academy
 \par
-
-    \textnormal{Khan Akademie video oor area van ’n sirkel}
-    \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10097 )}
+\mindsetvid{area of a circle}{VMdya}%Khan academy
 
 \begin{wex}{Finding the area of a polygon}{
     Vind die area van die volgende parallelogram:\\
@@ -193,7 +189,7 @@ berekening te doen:}
 
 
 \begin{exercises}{Poligone}
-
+{
 
 Vind die areas vir elk van die gegewe figure:
 \begin{center}
@@ -207,7 +203,11 @@ Vind die areas vir elk van die gegewe figure:
 \psline[linewidth=0.04cm](2.361875,3.7882812)(4.341875,1.8282813) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4517188,2.5782812){$5$ cm} 
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.8) 
+\psline[linewidth=0.04cm,linestyle=d\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}}
+Kry die oplossing met die kortkodes:\\
+\begin{tabularx}{\textwidth}{ XX }
+(1)	&	(2)
+\end{tabularx}ashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.8) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4365625,1.4182812){$10$ cm} 
 % \usefont{T1}{ptm}{m}{n} 
@@ -324,14 +324,8 @@ Vind die areas vir elk van die gegewe figure:
 
 \end{center}
 
+\insertpracticeinfo{8}
 }
-
-
-\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}}
-Kry die oplossing met die kortkodes:\\
-\begin{tabularx}{\textwidth}{ XX }
-(1)	&	(2)
-\end{tabularx}
 \end{exercises}
 
 
@@ -341,6 +335,9 @@ Kry die oplossing met die kortkodes:\\
 ’n Reghoekige prisma is ’n veelhoek wat uitgerek word in ’n kolom sodat die hoogte van die
 kolom reghoekig tot sy basis is. ’n Vierkantige prisma het ’n vierkantige basis en ’n driehoekige prisma het ’n
 driehoekige basis.
+
+\mindsetvid{different viewpoints}{VMcph}
+
 \par 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -399,6 +396,7 @@ Dit is makliker om te verstaan as ’n mens aan die prisma dink as ’n soliede 
 A solid that is unfolded like this, is called a net. When a prism is unfolded into a net, we can clearly see each of its faces. In order to calculate the surface area of the prism, we can then simply calculate the area of each face, and add them all together.
 \par 
 
+\mindsetvid{triangular prisms}{VMcre}
 
 Byvoorbeeld, Die driehoekige prisma het twee syvlakke wat driehoekig is en drie syvlakke wat reghoekig is. Om
 die oppervlakarea van ’n prisma te bereken moet die oppervlak van elke syvlak bereken word en bymekaar getel
@@ -867,7 +865,8 @@ The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
 
 
 
-\begin{exercises}{ }
+\begin{exercises}{}
+{
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Calculate the surface area of the following prisms:
 
@@ -964,14 +963,18 @@ areas te verf:
 
 \addtocounter{footnote}{-0}
 
- \end{enumerate}       
+ \end{enumerate}
+
+\insertpracticeinfo{2}
 }
-\end{exercises}        
+\end{exercises}
+
+
 \subsection{Volume van ’n Prisma en silinder}
 \Definition{Volume}{Volume is the three dimensional space occupied by an object, or the contents of an object. It is measured in cubic units.}
 Die volume van ’n reghoekige prisma word bereken deur die area van die basis met die hoogte te vermenigvuldig. 
 
-
+\mindsetvid{calculating volume}{VMcth}
 
 
 \begin{table*}[h]
@@ -1233,6 +1236,7 @@ Die volume van die silinder is $754,1\mbox{ cm}^{3}$.
 \end{wex}
 
 \begin{exercises}{}
+{
 Berekn die volume van die volgende prismas (korrek tot een desimale plek):
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -1292,6 +1296,9 @@ Berekn die volume van die volgende prismas (korrek tot een desimale plek):
 }
  
 \end{center}
+
+\insertpracticeinfo{3}
+}
 \end{exercises}
 
 \section{Right Piramides, Regte Kegels (Keëls / Konusse), Sfere}
@@ -2329,7 +2336,7 @@ Dit gee die totale oppervlakarea as $3137,2$ cm$^{2}$.
 \end{wex}
 
 \begin{exercises}{}
- {
+{
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
 \item Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale plek if necessary):
 \begin{center}
@@ -2475,10 +2482,14 @@ This solid  is made up of a cube and a square pyramid. Find it's volume and surf
 }
 \end{center}
 \end{enumerate}
+
+\insertpracticeinfo{3}
 }
 \end{exercises}
+
+
 % slight mod to this long heading. Makes it fit in book and TOC.
-\section[The effect of multiplying a dimension with the factor $k$]{\Huge The effect of multiplying a dimension with the factor $k$}
+\section{The effect of multiplying a dimension with the factor $k$}
 When one or more of the dimensions of a prism or cylinder is multiplied by a constant, the
 surface area and volume will change. The new surface area and volume can be calculated by
 using the formulae from the preceding section.\par
@@ -2486,6 +2497,8 @@ It is possible to see a relationship between the change in dimensions and the re
 in surface area and volume. These relationships make it simpler to
 calculate the new volume or surface area of an object when its dimensions are
 scaled up or down.\par
+
+\mindsetvid{increasing surface area}{VMctl}
 
 Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and
 three of its dimensions by a constant factor of $5$ and calculate the new volume and surface area.\par
@@ -2978,10 +2991,11 @@ A_n&= \pi (kr)^{2} + 2\pi (kr)h\\
 find the new surface area and volume for a prism if all dimensions are increased by a constant factor of $4$. 
 \end{enumerate}
 
+\insertpracticeinfo{3}
 }
 \end{exercises}
 
-\Opsomming
+\summary{VMdml}
 \begin{itemize}[noitemsep]
  \item Area is the two dimensional space inside the boundary of a flat object. It is measured
 is square units.
@@ -2996,6 +3010,7 @@ is square units.
 \end{itemize}
 \item oppervlakarea is the total area of the exposed or outer surfaces of a prism.
 \item A net is the unfolded 'plan' of a solid.
+}
 \item Volume is the three dimensional space occupied by an object, or the contents of an
 object. It is measured in cubic units.
 \begin{itemize}[noitemsep]
@@ -3012,6 +3027,7 @@ point called the apex (in other words the sides are not perpendicular to the bas
 \item driehoekige piramide $= \frac{1}{2}b(h_b +3h_s)$
 \item regte kegel $= \pi r(r+h_s)$
 \item sfeer $= 4\pi r^2$
+}
 \end{itemize}
 \item Volume formulae:
 \begin{itemize}[noitemsep]
@@ -3021,10 +3037,13 @@ point called the apex (in other words the sides are not perpendicular to the bas
 \item sfeer $= \frac{1}{3} \times 4\pi r^2$
 \end{itemize}
 \item Multiplying one or more dimensions of a prism or cylinder by a constant $k$ affects the surface area and volume.
+
+
 \begin{eocexercises}{}
 
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
 \item Consider the solids below and answer the questions that follow (correct to one decimal place, if necessary):
+}
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -3085,6 +3104,7 @@ point called the apex (in other words the sides are not perpendicular to the bas
   \item Calculate the surface area of each solid.
 \item Calculate volume of each solid.
 \item If each dimension of the solid is increased by a factor of $3$, calculate the new surface area of each solid.
+}
 \item If each dimension of the solid is increased by a factor of $3$, calculate the new volume of each solid.
  \end{enumerate}
 \item 
@@ -3124,7 +3144,8 @@ Consider the solids below:
 \psline[linewidth=0.04cm](11.28,-0.1991063)(13.94,1.6808937)
 \psdots[dotsize=0.12](11.0,1.8408937)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.02,1.8608937)(11.1,5.4208937)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=
+}0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
 \psline[linewidth=0.04cm](10.78,1.9808937)(10.78,2.3408937)
 \psline[linewidth=0.04cm](10.76,2.3408937)(11.04,2.1408937)
 \rput{14.5046}(-0.70283186,-0.89219034){\pswedge[linewidth=0.04](3.1540546,-3.2075646){2.0675611}{178.8065}{0.0}}
@@ -3168,6 +3189,6 @@ Consider the solids below:
 
 \end{center}
 
-}
+\insertpracticeinfo{3}
 \end{eocexercises}
 
