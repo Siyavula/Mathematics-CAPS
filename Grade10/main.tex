@@ -1,7 +1,7 @@
 \documentclass[9pt]{extbook}
     
+\usepackage{pdfpages}
 \include{preample}
-
      
 \begin{document}
     \raggedbottom
@@ -9,7 +9,10 @@
     
     \catcode`\^^J=10 %ignore line feeds since they mean nothing to XML
     \catcode`\^^M=10 %ignore carriage returns since they mean nothing to XML
-    \frontmatter 
+    \frontmatter
+    
+    % front cover
+    \includepdf[pages=1]{../covers/MathsGr10.pdf}
     \include{EverythingMathsTitlePages} 
    
     \tableofcontents
@@ -24,21 +27,22 @@
     % chapter includes
 
 
-\include{Gr10-AlgebraicExpressions}
-\include{Gr10-EquationsandInequalities}
-\include{Gr10-Exponentials}
-\include{Gr10-NumberPatterns}
-\include{Gr10-FunctionsAndGraphs}
-\include{Gr10-Finance}
-\include{Gr10-Trigonometry}
-\include{Gr10-AnalyticalGeometry}
-\include{Gr10-Statistics}
-\include{Gr10-Probability}
-\include{Gr10-Geometry}
-\include{Gr10-Measurement}
-\include{Gr10-ExerciseSolutions}
+ \include{Gr10-AlgebraicExpressions}
+ \include{Gr10-EquationsandInequalities}
+% \include{Gr10-Exponentials}
+% \include{Gr10-NumberPatterns}
+% \include{Gr10-FunctionsAndGraphs}
+% \include{Gr10-Finance}
+% \include{Gr10-Trigonometry}
+% \include{Gr10-AnalyticalGeometry}
+% \include{Gr10-Statistics}
+% \include{Gr10-Probability}
+% \include{Gr10-Geometry}
+% \include{Gr10-Measurement}
+% \include{Gr10-ExerciseSolutions}
 
 
+\includepdf[pages=2]{../covers/MathsGr10.pdf}
 % %     \include{Mathematics_Gr10_Ch_1-chapterReviewofPastWork}
 % % %     \include{Mathematics_Gr10_Ch_5-chapterRationalnumbers}
 % %     \include{Mathematics_Gr10_Ch_7-chapterEstimatingsurds}
@@ -56,4 +60,4 @@
 % 
 
     \end{document}
-  
+%  
