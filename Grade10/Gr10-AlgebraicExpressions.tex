@@ -1,12 +1,12 @@
 \chapter{Algebraic expressions}
 \fancyfoot[LO,RE]{Focus Area: Mathematics}
-\section{Rational and irrational numbers}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
 
-A number is a way of representing quantity. The numbers used in high school are all real numbers, but there are many different ways of writing any single real number.\par 
-This section describes rational and irrational numbers.\par 
-\chapterstartvideo{VMabo}
+% \setcounter{figure}{1}
+% \setcounter{subfigure}{1}
+% 
+% A number is a way of representing quantity. The numbers used in high school are all real numbers, but there are many different ways of writing any single real number.\par 
+% This section describes rational and irrational numbers.\par 
+
 % \setcounter{subfigure}{0}
 % \begin{figure}[H] % horizontal\label{m38348*circuits-1}
 % Khan Academy video on Integers and Rational Numbers\vspace{.1in} \nopagebreak
@@ -16,9 +16,9 @@ This section describes rational and irrational numbers.\par
 % \vspace{.1in}
 % \end{figure}       
 
-\par 
-\subsection*{The big picture of numbers}
-\addcontentsline{toc}{subsection}{The big picture of numbers}
+% \par 
+% \subsection*{The big picture of numbers}
+% \addcontentsline{toc}{subsection}{The big picture of numbers}
 
 
 \setcounter{subfigure}{0}
@@ -55,15 +55,17 @@ This section describes rational and irrational numbers.\par
 \par 
 We use the following definitions:\par 
 \begin{itemize}[itemsep=5pt]
-\item natural numbers are $\{1;~2;~3;~\ldots\}$
-\item whole numbers are $\{0;~1;~2;~3;~\ldots\}$
-\item integers are $\{\ldots;~-3;~-2;~-1;~0;~1;~2;~3;~\ldots\}$
+\item $\mathbb{N}$: natural numbers are $\{1;~2;~3;~\ldots\}$
+\item $\mathbb{N}_0$: whole numbers are $\{0;~1;~2;~3;~\ldots\}$
+\item $\mathbb{Z}$: integers are $\{\ldots;~-3;~-2;~-1;~0;~1;~2;~3;~\ldots\}$
 \end{itemize}
+\par
+\chapterstartvideo{VMabo}
 
-
+\section{Rational and irrational numbers}
 
 \Definition{Rational number}
-{A rational number is any number which can be written as: 
+{A rational number ($\mathbb{Q}$) is any number which can be written as: 
 %       \label{m38348*uid6}\nopagebreak\noindent{}
 
 \begin{equation*}
@@ -71,7 +73,7 @@ We use the following definitions:\par
 \end{equation*}
 where $a$ and $b$ are integers and $b\ne 0$. \par 
 } 
-
+\par
 
 The following numbers are all rational numbers:\par 
 
@@ -82,51 +84,88 @@ The following numbers are all rational numbers:\par
 We see that all numerators and all denominators are integers.
 
 This means that all integers are rational numbers, because they can be
-written with a denominator of $1$.
+written with a denominator of $1$.\\
 
-Consider
+
+% \subsection{Irrational numbers}
+% \setcounter{figure}{1}
+% \setcounter{subfigure}{1}
+
+
+% Writing numbers to many decimal places or a high accuracy is very inconvenient and rarely gives practical answers. For this reason we often estimate the number to a certain number of decimal places.\par 
+
+\Definition{Irrational numbers}{Irrational numbers ($\mathbb{Q'}$) are numbers that cannot be written as a fraction with the numerator and denominator as integers.
+
+%  This means that any number that is not a terminating or recurring decimal number is irrational. 
+}
+
+Examples of irrational numbers:\par 
+
 \begin{equation*}
-\frac{\sqrt{2}}{7};~\frac{20}{\pi}
-\end{equation*}
-These are not rational numbers, because either the numerator or the denominator is not an integer.\par 
-A number may not be written as an integer divided by another integer, but may still
-be a rational number. The rule is, if a number can be written
-as a fraction of integers, it is rational even if it can be written in other
-ways as well. These two examples might not look like rational numbers
-at first glance, but because there have equivalent forms that can be expressed as an
-integer divided by another integer, they are rational:\par 
-\nopagebreak\noindent{}
-\begin{equation*}    
-\frac{-1,33}{-3}=\frac{133}{300}; ~~~~~~\frac{-3}{6,39}=\frac{-300}{639}=\frac{-100}{213}
+  \sqrt{2};~\sqrt{3};~\sqrt[3]{4};~\pi;~\frac{1+\sqrt{5}}{2}
 \end{equation*}
 
+These are not rational numbers, because either the numerator or the denominator is not an integer.\par 
+
+% \Tip{When irrational numbers are written in decimal form, they go on forever and
+% there is no repeated pattern of digits. \\The square roots of non-perfect squares and the cube roots of non-perfect cubes are all irrational.}
+
+
+% \begin{activity}{Irrational numbers }
+% \nopagebreak
+% Which of the following cannot be
+% written as a rational number?\par \vspace{0.5cm}
+% \textbf{Remember}: A rational number is a fraction with numerator and denominator as integers. Terminating decimal numbers or recurring decimal numbers are rational.\par 
+% \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+% \item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
+% \item $1,4$
+% \item $1,618033989\ldots$
+% \item $100$
+% \item $1,7373737373\ldots$
+% \item $0,\overline{02}$
+% \end{enumerate}
+% \end{activity}
+
+% Consider
+% \begin{equation*}
+% \frac{\sqrt{2}}{7};~\frac{20}{\pi}
+% \end{equation*}
+% These are not rational numbers, because either the numerator or the denominator is not an integer.\par 
+% A number may not be written as an integer divided by another integer, but may still
+% be a rational number. The rule is, if a number can be written
+% as a fraction of integers, it is rational even if it can be written in other
+% ways as well. These two examples might not look like rational numbers
+% at first glance, but because there have equivalent forms that can be expressed as an
+% integer divided by another integer, they are rational:\par 
+% \nopagebreak\noindent{}
+% \begin{equation*}    
+% \frac{-1,33}{-3}=\frac{133}{300}; ~~~~~~\frac{-3}{6,39}=\frac{-300}{639}=\frac{-100}{213}
+% \end{equation*}
 
 \subsection*{Decimal numbers}
 \addcontentsline{toc}{subsection}{Decimal numbers}
 \nopagebreak
-All integers and fractions with integer numerators and denominators are rational numbers. There are two more forms of rational numbers.\par 
-
-
-
-
-\begin{activity}{Decimal numbers }
-\nopagebreak
-You can write the rational number
-$\frac{1}{2}$ as the decimal number $0,5$. Write the following numbers as
-decimals:\par 
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $\dfrac{1}{4}$
-\item $\dfrac{1}{10}$
-\item $\dfrac{2}{5}$
-\item $\dfrac{1}{100}$
-\item $\dfrac{2}{3}$
-\end{enumerate}
-Do the digits after the decimal comma end or do they continue? If they continue, is there a recurring pattern to the digits? \par 
-\end{activity}
+All integers and fractions with integer numerators and denominators are rational numbers. %There are two more forms of rational numbers.
+\par 
+ 
+% \begin{activity}{Decimal numbers }
+% \nopagebreak
+% You can write the rational number
+% $\frac{1}{2}$ as the decimal number $0,5$. Write the following numbers as
+% decimals:\par 
+% \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+% \item $\dfrac{1}{4}$
+% \item $\dfrac{1}{10}$
+% \item $\dfrac{2}{5}$
+% \item $\dfrac{1}{100}$
+% \item $\dfrac{2}{3}$
+% \end{enumerate}
+% Do the digits after the decimal comma end or do they continue? If they continue, is there a recurring pattern to the digits? \par 
+% \end{activity}
 
 You can write any rational number as a decimal number but not all
-decimal numbers are rational numbers. However, these types of decimal
-numbers can always be written as rational numbers:\par 
+decimal numbers are rational numbers. These types of decimal
+numbers are rational numbers:\par 
 \begin{itemize}
 \item Decimal numbers that end (or terminate). For example, the fraction $\dfrac{4}{10}$ can be written as $0,4$.
 \item Decimal numbers that have a repeating single digit. For example, the fraction $\dfrac{1}{3}$ can be written as 
@@ -139,17 +178,49 @@ The bar represents a recurring pattern of $1$ and $8$'s i.e.
 $0,\overline{18} = 0,181818\ldots$.
 \end{itemize}
 
+\par
+\textbf{Notation:} You can use a dot or a bar over the repeated numbers to indicate that the decimal is a recurring decimal. If the bar covers more than one number, then all numbers beneath the bar are recurring.
 
-\Tip{You can use a dot or a bar over the repeated numbers to indicate that the decimal is a recurring decimal. If the bar covers more than one number, then all numbers beneath the bar are recurring.}
+\par
+If you are asked to identify whether a number is rational or
+irrational, first write the number in decimal form. If the number
+terminates then it is rational. If it goes on forever, then look for a
+repeated pattern of digits. If there is no repeated pattern, then the
+number is irrational.
+ 
+\par
+When you write irrational numbers in decimal form, you may continue writing them for many, many
+decimal places. However, this is not convenient and it is often necessary to round off.
 
 
+\begin{wex}{Rational and irrational numbers}
+{Which of the following are not rational numbers?\\
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
+\item $1,4$
+\item $1,618033989\ldots$
+\item $100$
+\item $1,7373737373\ldots$
+\item $0,\overline{02}$
+\end{enumerate}}
+{
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item Irrational, decimal does not terminate and has no repeated pattern. 
+\item Rational, decimal terminates.
+\item Irrational, decimal does not terminate and has no repeated pattern. 
+\item Rational, all intergers are rational.
+\item Rational, decimal has repeated pattern.
+\item Rational, decimal has repeated pattern.
+\end{enumerate}
+}
+\end{wex}
 
 \subsection{Converting terminating decimals into rational numbers}
 
 % \addcontentsline{toc}{subsection}{Converting terminating decimals into rational numbers}
 A decimal number has an integer part and a fractional part. For example, $10,589$ has an integer part of $10$ and a fractional part of $0,589$ because $10+0,589=10,589$. The fractional part can be written as a rational number, i.e.\@{} with a numerator and denominator that are integers. \\
 \\
-Each digit after the decimal point is a fraction with a denominator in increasing powers of $10$. For example,
+Each digit after the decimal point is a fraction with a denominator in increasing powers of $10$.\\ For example,
 \begin{itemize}
 \item $0,1$ is $\dfrac{1}{10}$
 \item $0,01$ is $\dfrac{1}{100}$
@@ -159,8 +230,8 @@ Each digit after the decimal point is a fraction with a denominator in increasin
 This means that
 \begin{align*}
   10,589 &= 10 + \dfrac{5}{10} + \dfrac{8}{100} + \dfrac{9}{1~000} \\
-  &= 10 \dfrac{589}{1~000} \\
-  &= \dfrac{10~589}{1~000}
+  &= \dfrac{10~000}{1~000} + \dfrac{500}{1~000} + \dfrac{80}{1~000} + \dfrac{9}{1~000} \\
+  &= \dfrac{10~589}{1~000} \\
 \end{align*}
 
 \subsection{Converting recurring decimals into rational numbers}
@@ -215,9 +286,6 @@ $$ x = \dfrac{5~427}{999} = \dfrac{201}{37} $$
 }
 \end{wex}
 
-
-
-
 In the first example, the decimal was multiplied by $10$ and in the
 second example, the decimal was multiplied by $1~000$. This is because
 there was only one digit recurring (i.e. $3$) in the first example,
@@ -236,55 +304,15 @@ cannot be written with an integer numerator and denominator, because they do not
 
 
 
-\subsection{Irrational numbers}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
-
-
-Writing numbers to many decimal places or a high accuracy is very inconvenient and rarely gives practical answers. For this reason we often estimate the number to a certain number of decimal places.\par 
-
-\Definition{Irrational numbers}{Irrational numbers are numbers that cannot be written as a fraction with the numerator and denominator as integers. This means that any number that is not a terminating or recurring decimal number is irrational. 
-}
-
-Examples of irrational numbers:\par 
-
-\begin{equation*}
-  \sqrt{2};~\sqrt{3};~\sqrt[3]{4};~\pi;~\frac{1+\sqrt{5}}{2}
-\end{equation*}
-
-\Tip{When irrational numbers are written in decimal form, they go on forever and
-there is no repeated pattern of digits. \\The square roots of non-perfect squares and the cube roots of non-perfect cubes are all irrational.}
-
-If you are asked to identify whether a number is rational or
-irrational, first write the number in decimal form. If the number
-terminates then it is rational. If it goes on forever, then look for a
-repeated pattern of digits. If there is no repeated pattern, then the
-number is irrational.
-
-When you write irrational numbers in decimal form, you may (if you
-have a lot of time and paper!) continue writing them for many, many
-decimal places. However, this is not convenient and it is often
-necessary to round off.
-
-
-\begin{activity}{Irrational numbers }
-\nopagebreak
-Which of the following cannot be
-written as a rational number?\par \vspace{0.5cm}
-\textbf{Remember}: A rational number is a fraction with numerator and denominator as integers. Terminating decimal numbers or recurring decimal numbers are rational.\par 
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
-\item $1,4$
-\item $1,618033989\ldots$
-\item $100$
-\item $1,7373737373\ldots$
-\item $0,\overline{02}$
-\end{enumerate}
-\end{activity}
-
-
 \begin{exercises}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item State whether the following numbers are $\mathbb{Q}$ or $\mathbb{Q'}$. If the number is $\mathbb{Q}$, state whether it is $\mathbb{N}_0$, $\mathbb{N}$ or $\mathbb{Z}$:
+\begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ] 
+    \item $-\dfrac{1}{3}$
+    \item $0,651268962154862\ldots$
+    \item $\dfrac{\sqrt{9}}{3}$
+    \item $\pi^2$
+\end{enumerate}
 \item If $a$ is an integer, $b$ is an integer and $c$ is irrational, which of the following are rational numbers? 
   \begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ] 
     \item $\dfrac{5}{6}$
@@ -348,7 +376,7 @@ written as a rational number?\par \vspace{0.5cm}
 \practiceinfo 
 \par 
  \par \begin{tabular}[h]{cccccc}
- (1.) 00bb&  (2.) 00bc&  (3.) 00bd& (4.) 00be& (5.) 00bf& (6.) 00bg\end{tabular}
+ (1.) AAA& (2.) 00bb&  (3.) 00bc&  (4.) 00bd& (5.) 00be& (6.) 00bf& (7.) 00bg\end{tabular}
 }
 \end{exercises}
 
@@ -414,12 +442,12 @@ So, since the first digit after the $|$ is a $5$, we must round up the digit in 
 \begin{exercises}{}
 {Use your calculator to write the following in decimal form, rounded to $3$ decimal places:
 \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ]
- \item $4\pi$
-\item $\sqrt{11}$
-\item $\dfrac{0,8}{3}$
-\item $\sqrt[3]{7}$
-\item $2\sqrt{10}$
-\item $\dfrac{1}{18}$
+\item $12,56637061\ldots$ %$4\pi$
+\item $3,31662479\ldots$ %$\sqrt{11}$
+\item $0,26666666\ldots$ %$\dfrac{0,8}{3}$
+\item $1,912931183\ldots$ %$\sqrt[3]{7}$
+\item $6,32455532\ldots$ %$2\sqrt{10}$
+\item $0,05555555\ldots$ %$\dfrac{1}{18}$
 \end{enumerate}
 \practiceinfo 
 \par 
@@ -442,13 +470,11 @@ It is sometimes useful to know the approximate value of a surd without having to
 \begin{center}
 If $a$ and $b$ are positive whole numbers, and $a\lessthan{}b$, then $\sqrt[n]{a}\lessthan{}\sqrt[n]{b}$. 
 \end{center}}
+
 \par
-       
-\Note{A perfect square is the number obtained when an integer is squared. For example, $9$ is a perfect square since ${3}^{2}=9$. \\Similarly, a perfect cube is a number which is the cube of an integer. For example, $27$ is a perfect cube, because ${3}^{3}=27$.}
-
-
-
-Consider the surd $\sqrt[3]{52}$. It lies somewhere between $3$ and $4$, because $\sqrt[3]{27}=3$ and $\sqrt[3]{64}=4$ and $52$ is between $27$ and $64$. Checking on a calculator we see that $\sqrt[3]{52}=3,73\ldots$ which is indeed between $3$ and $4$.\par 
+A perfect square is the number obtained when an integer is squared. For example, $9$ is a perfect square since ${3}^{2}=9$. \\Similarly, a perfect cube is a number which is the cube of an integer. For example, $27$ is a perfect cube, because ${3}^{3}=27$.
+\par
+Consider the surd $\sqrt[3]{52}$. It lies somewhere between $3$ and $4$, because $\sqrt[3]{27}=3$ and $\sqrt[3]{64}=4$ and $52$ is between $27$ and $64$. %Checking on a calculator we see that $\sqrt[3]{52}=3,73\ldots$ which is indeed between $3$ and $4$.
 
 \begin{wex}{Estimating surds}
 {%question
@@ -458,10 +484,10 @@ another on the number line, for example, $5$ and $6$ or $8$ and $9$).
 }
 {%answer
 
-\westep{Use perfect squares to guess the lower integer}     
+\westep{Use perfect squares to estimate the lower integer}     
 ${5}^{2}=25$. Therefore $5\lessthan{}\sqrt{26}$.
 
-\westep{Use perfect squares to guess the upper integer}
+\westep{Use perfect squares to estimate the upper integer}
 ${6}^{2}=36$. 
 Therefore $\sqrt{26}\lessthan{}6$.
 
@@ -477,9 +503,9 @@ Find the two consecutive integers such that $\sqrt[3]{49}$ lies between them.
 }
 {%
 
-\westep{Use perfect cubes to guess the lower integer}   ${3}^{3}=27$, therefore $3\lessthan{}\sqrt[3]{49}$.
+\westep{Use perfect cubes to estimate the lower integer}   ${3}^{3}=27$, therefore $3\lessthan{}\sqrt[3]{49}$.
 
-\westep{Use perfect cubes to guess the upper integer} ${4}^{3}=64$, therefore $\sqrt[3]{49}\lessthan{}4$. 
+\westep{Use perfect cubes to estimate the upper integer} ${4}^{3}=64$, therefore $\sqrt[3]{49}\lessthan{}4$. 
 
 \westep{Write the answer}
 $3\lessthan{}\sqrt[3]{49}\lessthan{}4$
@@ -532,7 +558,7 @@ expression & $3x^2 + 7xy -5^3$\\ \hline
 coefficient & $3;~7$\\ \hline
 exponent & $2;~1;~3$\\ \hline
 base & $x;~y;~5$\\ \hline
-constant & $3;~7;-14$\\ \hline
+constant & $3;~7$\\ \hline
 variable & $x;~y$\\ \hline
 equation & $3x^2 + 7xy -5^3 = 0$\\ \hline
 
@@ -550,35 +576,21 @@ A monomial is an expression with one term, for example, $3x$ or $y^2$.
 A binomial is a mathematical expression with two terms, for example,
 $ax+b$ or $cx+d$.
 
-\begin{wex}{Applying the distributive law}
-{%
-Write the following without brackets in its simplest form:
-$2a(a-1) - 3(a^{2}-1)$.
-}{%
-
-\westep{Apply the distributive law}
+\begin{wex}{Simplifying brackets}
+{Simplify: $2a(a-1) - 3(a^{2}-1)$.}
+{
 \begin{align*}
   2a(a-1) -3(a^{2}-1) &= 2a(a) + 2a(-1) + (-3)(a^{2})+(-3)(-1) \\
-  &= 2a^{2} - 2a - 3a^{2} + 3
+  &= 2a^{2} - 2a - 3a^{2} + 3 \\
+  &= -a^{2} -2a + 3
 \end{align*}
-
-\westep{Simplify}
-\begin{equation*}
-  = -a^{2} -2a + 3
-\end{equation*}
 }
 \end{wex}
 
 \subsection*{Multiplying two binomials}
 
 Here we multiply (or expand) two linear binomials:
-\begin{align*}
-  (ax+b)(cx+d) &= (ax)(cx)+(ax)d+b(cx)+bd \\
-               &= ac{x}^{2}+adx +bcx+bd \\
-               &= ac{x}^{2}+x(ad+bc)+bd
-\end{align*}
 
-\Note{You may use FOIL = F(firsts) O(outers) I(inners) L(lasts) to remember this technique:
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -589,22 +601,31 @@ Here we multiply (or expand) two linear binomials:
 \psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.33,0.2)(2.05,0.92)(0.6014754,0.7481931)(0.51,0.2576)
 \psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.17,-0.26705882)(1.25,-0.7)(1.71,-0.5917647)(1.75,-0.24)
 \psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.51,-0.2)(0.69,-0.8428571)(2.07,-0.92)(2.39,-0.27714285)
-\usefont{T1}{ptm}{m}{n}
-\rput(0.94453126,0.33){\small$F$}
-\usefont{T1}{ptm}{m}{n}
-\rput(1.8645313,0.35){\small$O$}
-\usefont{T1}{ptm}{m}{n}
-\rput(1.44,-0.37){\small$I$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.0445313,-0.37){\small$L$}
-\end{pspicture} 
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.94453126,0.33)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.8645313,0.35)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.44,-0.37)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(2.0445313,-0.37)
+\end{pspicture}
 }
 \end{center}
-}
+
+
+\begin{align*}
+  (ax+b)(cx+d) &= (ax)(cx)+(ax)d+b(cx)+bd \\
+               &= ac{x}^{2}+adx +bcx+bd \\
+               &= ac{x}^{2}+x(ad+bc)+bd
+\end{align*}
+
+%\Note{You may use FOIL = F(firsts) O(outers) I(inners) L(lasts) to remember this technique:
+
 
 \begin{wex}{Multiplying two binomials }
-{Find the product of $(3x-2)$ and $(5x+8)$. }{
-\westep{Find the product}
+{Find the product: $(3x-2)(5x+8)$. }
+{
 \begin{align*}
   (3x-2)(5x+8) &= (3x)(5x)+(3x)(8)+(-2)(5x)+(-2)(8) \\
   &= 15{x}^{2}+24x-10x-16 \\
@@ -647,38 +668,26 @@ This product yields the difference of two squares.\par
 
 \addtocounter{footnote}{-0}
 
-A trinomial is a mathematical expression with three terms, for example, $ax^{2} + bx + c$.
-Now we learn how to multiply a binomial and a
-trinomial.\par 
+A trinomial is an expression with three terms, for example, $ax^{2} + bx + c$.
+Now we learn how to multiply a binomial and a trinomial.\par 
 
-\Tip{If the binomial is \begin{math}A+B\end{math} and the trinomial is \begin{math}C+D+E\end{math}, then the very first step is to apply the distributive law:
+To find the product of a binomial and a trinomial, multiply out the brackets:\\
 
- $(A+B)(C+D+E)= A(C+D+E)+B(C+D+E) $
+\begin{equation*}
+  (A+B)(C+D+E)= A(C+D+E)+B(C+D+E) 
+\end{equation*}
 
-}
-
-If you remember this, you will never go wrong!
+\par
 \mindsetvid{Products of polynomials}{MG10062}
 \begin{wex}
 {Multiplying a binomial and a trinomial}
-{Multiply $x-1$ by ${x}^{2}-2x+1$.} 
+{Find the product: $(x-1)({x}^{2}-2x+1)$.} 
 {
-\westep{Apply the distributive law}
-$
-(x-1)(x^2-2x+1) &= x(x^2-2x+1)-1(x^2-2x+1)
-$
-
 \westep{Expand the bracket}
-
-$
-\phantom{(x-1)(x^2-2x+1) } = x^3-2x^2+x-x^2+2x-1
-$
-
+$(x-1)(x^2-2x+1) &= x(x^2-2x+1)-1(x^2-2x+1)\\
+\phantom{(x-1)(x^2-2x+1)} &= x^3-2x^2+x-x^2+2x-1$
 \westep{Simplify}
-
-$
-\phantom{(x-1)(x^2-2x+1) } = x^3-3x^2 + 3x-1
-$
+$\phantom{(x-1)(x^2-2x+1) } = x^3-3x^2 + 3x-1$
 }       
 \end{wex}
 
@@ -711,7 +720,7 @@ $
 \item $(2{y}^{6}+3{y}^{5})(-5y-12)$% make-rowspan-placeholders
 \item $(-7y+11)(-12y+3)$% make-rowspan-placeholders
 \item $(7y+3)(7{y}^{2}+3y+10)$% make-rowspan-placeholders
-\item $(9)(8{y}^{2}-2y+3)$ 
+\item $9(8{y}^{2}-2y+3)$ 
 \item $(-6{y}^{4}+11{y}^{2}+3y)(y+4)(y-4)$ 
 \end{enumerate}
 \end{multicols}
@@ -729,7 +738,6 @@ $
 
 Factorisation is the opposite process of expanding brackets. For example, expanding brackets would require $2(x+1)$ to be written as $2x+2$. Factorisation would be to start with $2x+2$ and to end up with $2(x+1)$. 
 
-\Identity{
 \begin{center}
 \begin{small}\hspace{8pt}factorising\end{small}\\
 \begin{Large}
@@ -737,9 +745,8 @@ $2(x+1)$ \begin{Huge} $\leftrightharpoons$ \end{Huge} $2x+2$
 \end{Large}\\
 \begin{small}\hspace{8pt}expanding\end{small}
 \end{center}
-}
 
-The two expressions $2(x+1)$ and $2x+2$ are equivalent; they have the same value for all values of $x$.
+The two expressions $2(x+1)$ and $2x+2$ are equivalent; they have the same value for all values of $x$.\\
 
 \mindsetvid{Revision of factorisation}{VMabz}
 
@@ -756,26 +763,27 @@ For example, $2x-6{x}^{2}$ can be factorised as follows:\par
 2x-6{x}^{2}=2x(1-3x)
 \end{equation*}
 
-\Tip{Check your answer by multiplying the bracket out and make sure you get back to the original expression. 
-\begin{equation*}
- 2x(1-3x) = 2x - 6x^{2}
-\end{equation*}
-is correct.
-}
+% \Tip{Check your answer by multiplying the bracket out and make sure you get back to the original expression. 
+% \begin{equation*}
+%  2x(1-3x) = 2x - 6x^{2}
+% \end{equation*}
+% is correct.
+% }
 
+% 
+% \begin{wex}{Factorising }
+% {Factorise completely: ${b}^{2}{y}^{5}-3ab{y}^{3}$.}
+% {
+% \westep{Take out the highest common factor $by^3$}  
+% \begin{equation*}
+% {b}^{2}{y}^{5}-3ab{y}^{3}& =& b{y}^{3}(b{y}^{2}-3a)
+% \end{equation*}
+% }
+% \end{wex}
 
-\begin{wex}{Factorising }
-{Factorise completely: ${b}^{2}{y}^{5}-3ab{y}^{3}$.}
+\begin{wex}{Factorising using a switch around in brackets }{Factorise: $5(a-2)-b(2-a)$. }
 {
-\westep{Take out the highest common factor $by^3$}  
-\begin{equation*}
-{b}^{2}{y}^{5}-3ab{y}^{3}& =& b{y}^{3}(b{y}^{2}-3a)
-\end{equation*}
-}
-\end{wex}
-
-\begin{wex}{Factorising using a switch around in brackets }{Factorise: $5(a-2)-b(2-a)$. }{
-\westep{Use a ``switch around'' strategy to find the common factor. Notice that $2-a = -(a-2)$ }
+Use a ``switch around'' strategy to find the common factor. \\Notice that $2-a = -(a-2)$ 
 \begin{align*}
   5(a-2)-b(2-a) &= 5(a-2)-[-b(a-2)] \\
   &= 5(a-2)+b(a-2) \\
@@ -783,30 +791,30 @@ is correct.
 \end{align*}
 }
 \end{wex}
-
-\begin{exercises}{}
-{Find the highest common factors of the following pairs of terms:\par
-
-\begin{multicols}{2}
-\begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
-\item $6y;~18x$
-\item $12mn;~8n$
-\item $3st;~4su$ 
-\item $18kl;~9kp$
-\item $abc;~ac$% 
-\item $2xy;~4xyz$
-\item $3uv;~6u$ 
-\item $9xy;~15xz$
-\item $24xyz;~16yz$
-\item $3m;~45n$
-\end{enumerate}
-\end{multicols}
-\practiceinfo 
-\par 
- \par \begin{tabular}[h]{cccccc}
- (1.-5.) 00bp&  (6.-10.) 00bq\end{tabular}
-}
-\end{exercises}
+% 
+% \begin{exercises}{}
+% {Find the highest common factors of the following pairs of terms:\par
+% 
+% \begin{multicols}{2}
+% \begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+% \item $6y;~18x$
+% \item $12mn;~8n$
+% \item $3st;~4su$ 
+% \item $18kl;~9kp$
+% \item $abc;~ac$% 
+% \item $2xy;~4xyz$
+% \item $3uv;~6u$ 
+% \item $9xy;~15xz$
+% \item $24xyz;~16yz$
+% \item $3m;~45n$
+% \end{enumerate}
+% \end{multicols}
+% \practiceinfo 
+% \par 
+%  \par \begin{tabular}[h]{cccccc}
+%  (1.-5.) 00bp&  (6.-10.) 00bq\end{tabular}
+% }
+% \end{exercises}
 
 \subsection* {Difference of two squares}
 We have seen that 
@@ -818,23 +826,22 @@ Therefore
 \begin{equation*}
 {a}^{2}{x}^{2}-{b}^{2}~\mbox{ can be factorised as }~(ax+b)(ax-b)
 \end{equation*}
-For example, ${x}^{2}-16$ can be written as ${x}^{2}-{4}^{2}$ which is a difference of two squares. 
-Therefore, the factors of ${x}^{2}-16$ are $(x-4)$ and $(x+4)$.
+For example, ${x}^{2}-16$ can be written as ${x}^{2}-{4}^{2}$ which is a difference of two squares. Therefore, the factors of ${x}^{2}-16$ are $(x-4)$ and $(x+4)$.
 
-
-\Tip{When factorising, look for expressions
+\par
+To spot a difference of two squares, look for expressions:
 \begin{itemize}
 \item consisting of two terms;
 \item with terms that have different signs (one positive, one negative);
 \item with each term a perfect square.
 \end{itemize}
 For example, $a^{2}-1$; $4x^{2}-y^{2}$; $-49+p^{4}$.
-}
+
 
 
 
 \begin{wex}{The difference of two squares}
-{Factorise completely: $3a(a^2-4)-7(a^2-4)$.}
+{Factorise: $3a(a^2-4)-7(a^2-4)$.}
 {
 \westep{Take out the common factor $(a^2-4)$}
 
@@ -886,6 +893,129 @@ $$
 }
 \end{exercises}
 
+\subsection{Factorising by grouping in pairs}
+
+The taking out of common factors is the starting point in all
+factorisation problems. We know that the factors of $3x+3$ are $3$
+and $(x+1)$. Similarly, the factors of $2{x}^{2}+2x$ are $2x$ and
+$(x+1)$. Therefore, if we have an expression
+\begin{equation*}
+2{x}^{2}+2x+3x+3
+\end{equation*}
+there is no common factor to all four terms, but we can factorise as
+follows:
+\begin{equation*}
+  (2{x}^{2}+2x)+(3x+3) = 2x(x+1)+3(x+1)
+\end{equation*}
+
+We can see that there is another common factor $(x+1)$. Therefore, we can now write:
+\begin{equation*}
+  (x+1)(2x+3)
+\end{equation*}
+We get this by taking out the $(x+1)$ and seeing what is left over. We
+have $2x$ from the first group and $+3$ from the second group. This is
+called factorising by grouping.
+
+%\Tip{Look at the ratios of the coefficients as a guideline for grouping.}
+
+
+\begin{wex}{Factorising by grouping in pairs}
+{Find the factors of $7x+14y+bx+2by$.}
+{
+\westep{There are no factors common to all terms}
+
+\westep{Group terms with common factors together}
+
+$7$ is a common factor of the first two terms and $b$ is a common
+factor of the second two terms. We see that the ratio of the
+coefficients $7:14$ is the same as $b:2b$.
+\begin{align*}
+7x+14y+bx+2by &= (7x+14y)+(bx+2by) \\ 
+              &= 7(x+2y)+b(x+2y)
+\end{align*}
+
+\westep{Take out the common factor $(x+2y)$}
+\begin{equation*}
+  7(x+2y)+b(x+2y)=(x+2y)(7+b)
+\end{equation*}
+
+% \westep{Write the final answer}  
+% The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.\\
+\par
+\large{OR}
+
+\westep{Group terms with common factors together}$x$ is a common factor of the first and third terms and $2y$ is a common factor of the second and fourth terms $(7:b~=~14:2b)$.\par 
+\westep{Rearrange the equation with grouped terms together}
+
+\begin{align*}
+  7x+14y+bx+2by &= (7x+bx)+(14y+2by) \\
+  &= x(7+b)+2y(7+b)
+\end{align*}
+
+\westep{Take out the common factor $(7+b)$}
+
+\begin{equation*}
+x(7+b)+2y(7+b) = (7+b)(x+2y)
+\end{equation*}
+\westep{Write the final answer}  
+The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.
+
+}
+\end{wex}
+
+% There is sometimes more than one correct way to group terms together, as shown in this example.
+
+% \begin{wex}
+% {Factorising by grouping}
+% {Find the factors of $7x+14y+bx+2by$}
+% {
+% \westep{There are no factors common to all terms}
+% 
+% \westep{Group terms with common factors together}$x$ is a common factor of the first and third terms and $2y$ is a common factor of the second and fourth terms $(7:b~=~14:2b)$.\par 
+% \westep{Rearrange the equation with grouped terms together}
+% 
+% \begin{align*}
+%   7x+14y+bx+2by &= (7x+bx)+(14y+2by) \\
+%   &= x(7+b)+2y(7+b)
+% \end{align*}
+% 
+% \westep{Take out the common factor $(7+b)$}
+% 
+% \begin{equation*}
+% x(7+b)+2y(7+b) = (7+b)(x+2y)
+% \end{equation*}
+% \westep{Write the final answer}  
+% The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.
+% }
+% \end{wex}
+
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39394*factorisingtrinomial}
+% \textnormal{Khan Academy video on factorising a trinomial by grouping.}\vspace{.1in} \nopagebreak
+% \label{m39394*yt-media32}\label{m39394*yt-video32}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10065 )}
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{figure}       
+
+\begin{exercises}{}{Factorise the following:
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item $6x+a+2ax+3$
+\item ${x}^{2}-6x+5x-30$
+\item $5x+10y-ax-2ay$
+\item ${a}^{2}-2a-ax+2x$
+\item $5xy-3y+10x-6$
+\item $ab - a^{2} - a + b$
+\end{enumerate}
+\end{multicols}
+\practiceinfo 
+\par 
+\par \begin{tabular}[h]{cccccc}
+(1.) 00bz&  (2.) 00c0&  (3.) 00c1&  (4.) 00c2&  (5.) 00c3& (6.) 00c4\end{tabular}
+}
+\end{exercises}
+
 
 
 \subsection* {Factorising a quadratic trinomial }
@@ -913,6 +1043,7 @@ know that:
 
 So $a^2-b^2$ can be written in factorised form as $(a+b)(a-b)$.
 
+\par
 \mindsetvid{Factorising a quadratic}{MG10064}
 
 This means that if we ever come across a quadratic that is made up of a difference of squares, we can immediately write down the factors. 
@@ -1056,15 +1187,15 @@ We see that Option 3 $(x+2)(x+3)$ is the correct solution. The process of factor
 \begin{equation*}
 (\ x\phantom{\rule{2.em}{0ex}})(\ x\phantom{\rule{2.em}{0ex}})
 \end{equation*}
-\Tip{%
-If $c$ is positive, then the factors of $c$ must be either both positive or both negative. If $c$ is negative, it means only one of the factors of $c$ is negative, the other one being positive.
-Once you get an answer, always multiply out your brackets again just to make sure it really works.
-}
 
 \item Write down a set of factors for $a$ and $c$.
 \item Write down a set of options for the possible factors for the quadratic using the factors of $a$ and $c$.
 \item Expand all options to see which one gives you the correct middle term $bx$.
 \end{enumerate}
+
+\par
+\textbf{Note:} If $c$ is positive, then the factors of $c$ must be either both positive or both negative. If $c$ is negative, it means only one of the factors of $c$ is negative, the other one being positive.
+Once you get an answer, always multiply out your brackets again just to make sure it really works.
 
 \begin{wex}
 {Factorising a quadratic trinomial}
@@ -1164,7 +1295,7 @@ The factors of $3{x}^{2}+2x-1$ are $(x+1)$ and $(3x-1)$.
 \end{enumerate}
 \end{multicols}
 
-\item Factorise completely:
+\item Factorise:
 \begin{multicols}{2}
 \begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ] 
 % \setcounter{enumi}{16}
@@ -1182,114 +1313,6 @@ The factors of $3{x}^{2}+2x-1$ are $(x+1)$ and $(3x-1)$.
  (1.) 00bv&  (2.) 00bw&  (3.) 00bx&  (4.) 00by& \end{tabular}
 }
 \end{exercises} 
-
-
-\subsection{Factorising by grouping}
-
-The taking out of common factors is the starting point in all
-factorisation problems. We know that the factors of $3x+3$ are $3$
-and $(x+1)$. Similarly, the factors of $2{x}^{2}+2x$ are $2x$ and
-$(x+1)$. Therefore, if we have an expression
-\begin{equation*}
-2{x}^{2}+2x+3x+3
-\end{equation*}
-there is no common factor to all four terms, but we can factorise as
-follows:
-\begin{equation*}
-  (2{x}^{2}+2x)+(3x+3) = 2x(x+1)+3(x+1)
-\end{equation*}
-
-We can see that there is another common factor $(x+1)$. Therefore, we can now write:
-\begin{equation*}
-  (x+1)(2x+3)
-\end{equation*}
-We get this by taking out the $(x+1)$ and seeing what is left over. We
-have $2x$ from the first group and $+3$ from the second group. This is
-called factorising by grouping.
-
-\Tip{Look at the ratios of the coefficients as a guideline for grouping.}
-
-
-\begin{wex}{Factorising by grouping}
-{Find the factors of $7x+14y+bx+2by$.}
-{
-\westep{There are no factors common to all terms}
-
-\westep{Group terms with common factors together}
-
-$7$ is a common factor of the first two terms and $b$ is a common
-factor of the second two terms. We see that the ratio of the
-coefficients $7:14$ is the same as $b:2b$.
-\begin{align*}
-7x+14y+bx+2by &= (7x+14y)+(bx+2by) \\ 
-              &= 7(x+2y)+b(x+2y)
-\end{align*}
-
-\westep{Take out the common factor $(x+2y)$}
-\begin{equation*}
-  7(x+2y)+b(x+2y)=(x+2y)(7+b)
-\end{equation*}
-
-\westep{Write the final answer}  
-The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.
-}
-\end{wex}
-
-There is sometimes more than one correct way to group terms together, as shown in this example.
-
-\begin{wex}
-{Factorising by grouping}
-{Find the factors of $7x+14y+bx+2by$}
-{
-\westep{There are no factors common to all terms}
-
-\westep{Group terms with common factors together}$x$ is a common factor of the first and third terms and $2y$ is a common factor of the second and fourth terms $(7:b~=~14:2b)$.\par 
-\westep{Rearrange the equation with grouped terms together}
-
-\begin{align*}
-  7x+14y+bx+2by &= (7x+bx)+(14y+2by) \\
-  &= x(7+b)+2y(7+b)
-\end{align*}
-
-\westep{Take out the common factor $(7+b)$}
-
-\begin{equation*}
-x(7+b)+2y(7+b) = (7+b)(x+2y)
-\end{equation*}
-\westep{Write the final answer}  
-The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.
-}
-\end{wex}
-
-% \setcounter{subfigure}{0}
-% \begin{figure}[H] % horizontal\label{m39394*factorisingtrinomial}
-% \textnormal{Khan Academy video on factorising a trinomial by grouping.}\vspace{.1in} \nopagebreak
-% \label{m39394*yt-media32}\label{m39394*yt-video32}
-% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10065 )}
-% \vspace{2pt}
-% \vspace{.1in}
-% \end{figure}       
-
-
-
-\begin{exercises}{}{Factorise the following:
-\begin{multicols}{2}
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $6x+a+2ax+3$
-\item ${x}^{2}-6x+5x-30$
-\item $5x+10y-ax-2ay$
-\item ${a}^{2}-2a-ax+2x$
-\item $5xy-3y+10x-6$
-\item $ab - a^{2} - a + b$
-\end{enumerate}
-\end{multicols}
-\practiceinfo 
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00bz&  (2.) 00c0&  (3.) 00c1&  (4.) 00c2&  (5.) 00c3& (6.) 00c4\end{tabular}
-}
-\end{exercises}
-
 
 \subsection*{Sum and difference of two cubes}      
 We now look at two special results obtained from multiplying a binomial and a trinomial. 
