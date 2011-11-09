@@ -1,130 +1,122 @@
 
 \chapter{Measurements  }  
-This chapter examines the surface areas and volumes of three dimensional objects, otherwise
-known as solids. In order to work with these, you need to know how to calculate the surface
-area and perimeter of the two dimensional shapes below.
-\chapterstartvid{VMcmk}
+This chapter examines the surface areas of two dimensional objects and
+volumes of three dimensional objects, otherwise known as solids. In
+order to work with these objects, you need to know how to calculate
+the surface area and perimeter of the two dimensional shapes below.
+\chapterstartvideo{VMcmk}
 \section{Area of a polygon }
-\Definition{Area}{Area is the two dimensional space inside the boundary of a flat object. It is measured is square units.}
+
+\Definition{Area}{Area is the two dimensional space inside the
+  boundary of a flat object. It is measured in square units.}
+
 \begin{table}[H]
-\newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
-\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-\begin{tabular}{|C|D|C|}
-\hline
-\textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
-Square &
-        \begin{center}
-\scalebox{0.9}{
-        \begin{pspicture}(-2,-0.5)(5,2)
-            \pspolygon(0,0)(0,1)(1,1)(1,0)
-            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
-            \rput(-0.25,0.5){$h$}
-            \rput(0.5,-0.25){$b$}
-        \end{pspicture}}
-        \end{center}
-&
-
-$\mbox{Area} = b \times h$ \\ \hline
-
-Rectangle &
+  \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
+  \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+  \begin{tabular}{|C|D|C|}
+    \hline
+    \textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
+    Square &
     \begin{center}
-\scalebox{0.9}{
+      \scalebox{0.9}{
         \begin{pspicture}(-2,-0.5)(5,2)
-            \pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
-            \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
-            \rput(2.75,0.5){$h$}
-            \rput(1.25,-0.25){$b$}
+          \pspolygon(0,0)(0,1)(1,1)(1,0)
+          \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+          \rput(-0.25,0.5){$s$}
+          \rput(0.5,-0.25){$s$}
         \end{pspicture}}
     \end{center}
-& $\mbox{Area} =  b \times h $ \\ \hline
+    & $\mbox{Area} = s^2$ \\ \hline
 
-Triangle &
-\begin{center} 
-\scalebox{0.9}{
-    \begin{pspicture}(0,-0.5)(5,2)
-        \pspolygon(0,0)(2,1)(3,0)
-        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
-        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
-        \rput(1.8,0.5){$h$}
-        \rput(1.5,-0.25){$b$}
-    \end{pspicture}}
-\end{center}
+    Rectangle &
+    \begin{center}
+      \scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+          \pspolygon(0,0)(0,1)(2.5,1)(2.5,0)
+          \pspolygon(0,0)(0,0.15)(0.15,0.15)(0.15,0)
+          \rput(2.75,0.5){$h$}
+          \rput(1.25,-0.25){$b$}
+        \end{pspicture}}
+    \end{center}
+    & $\mbox{Area} =  b \times h $ \\ \hline
 
-& $ \mbox{Area} = \dfrac{1}{2} b \times h $ \\ \hline
-
-
-
-\end{tabular}
-% NOTE: table manually split in half for formatting purposes (no time to learn about/make long tables/supertabular)
+    Triangle &
+    \begin{center} 
+      \scalebox{0.9}{
+        \begin{pspicture}(0,-0.5)(5,2)
+          \pspolygon(0,0)(2,1)(3,0)
+          \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+          \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+          \rput(1.8,0.5){$h$}
+          \rput(1.5,-0.25){$b$}
+        \end{pspicture}}
+    \end{center}
+    & $\mbox{Area} = \dfrac{1}{2} b \times h$ \\ \hline
+  \end{tabular}
+  % NOTE: table manually split in half for formatting purposes (no time to learn about/make long tables/supertabular)
 \end{table}
 
 \begin{table}[H]
-\newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
-\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-\begin{tabular}{|C|D|C|}
-\hline
-\textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
+  \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
+  \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+  \begin{tabular}{|C|D|C|}
+    \hline
+    \textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
+    % \caption{Remember that surface area is measured in square units, for example, $cm^2$, $m^2$ or $mm^2$.}
 
-%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+    Trapezium &
+    \begin{center}
+      \scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+          \pspolygon(-1.5,0)(0,1)(2,1)(3,0)
+          \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
+          \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
+          \rput(1.8,0.5){$h$}
+          \rput(0.75,-0.25){$b$}
+          \rput(0.75,1.25){$a$}
+        \end{pspicture}}
+    \end{center}
+    & $\mbox{Area} = \dfrac{1}{2} (a + b) \times h $ \\ \hline 
 
-Trapezium &
-\begin{center}
-\scalebox{0.9}{
-    \begin{pspicture}(-2,-0.5)(5,2)
-        \pspolygon(-1.5,0)(0,1)(2,1)(3,0)
-        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](2,1)(2,0)
-        \pspolygon(2,0)(2,0.15)(2.15,0.15)(2.15,0)
-        \rput(1.8,0.5){$h$}
-        \rput(0.75,-0.25){$b$}
-        \rput(0.75,1.25){$a$}
-    \end{pspicture}}
-\end{center}
-& $\mbox{Area} = \dfrac{1}{2} (a + b) \times h $ \\ \hline 
-Parallelogram &
+    Parallelogram &
+    \begin{center}
+      \scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+          \pspolygon(-1,0)(0,1)(3,1)(2,0)
+          \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
+          \pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
+          \rput(0.3,0.5){$h$}
+          \rput(0.7,-0.25){$b$}
+        \end{pspicture}}
+    \end{center}
+    & $\mbox{Area} =  b \times h $ \\ \hline
 
-\begin{center}
-\scalebox{0.9}{
-    \begin{pspicture}(-2,-0.5)(5,2)
-        \pspolygon(-1,0)(0,1)(3,1)(2,0)
-        \psline[linewidth=0.02cm,linestyle=dashed,dash=0.16cm 0.16cm](0.5,1)(0.5,0)
-        \pspolygon(0.5,0)(0.5,0.15)(0.65,0.15)(0.65,0)
-        \rput(0.3,0.5){$h$}
-        \rput(0.7,-0.25){$b$}
-    \end{pspicture}}
-\end{center}
-
-& $\mbox{Area} =  b \times h $ \\ \hline
-
-Circle &
-
-\begin{center}
-\scalebox{0.9}{
-    \begin{pspicture}(-2,-0.5)(5,2)
-        \pscircle[dimen=outer](0.5,0.5){0.7}
-        \psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
-        \psdots[dotsize=0.08](0.5,0.5)
-        \rput(0.85,0.75){$r$}
-    \end{pspicture}}
-\end{center} & 
-\begin{aligned}$
-&\mbox{Area} = \pi r^2 \\
-&(\mbox{Circumference}= 2\pi r)$
-\end{aligned}
- \\ \hline
-
-
-\end{tabular}
-
-
-
-%\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
+    Circle &
+    \begin{center}
+      \scalebox{0.9}{
+        \begin{pspicture}(-2,-0.5)(5,2)
+          \pscircle[dimen=outer](0.5,0.5){0.7}
+          \psline[linestyle=dashed,dash=0.1cm 0.1cm](0.5,0.5)(1.2,0.5)
+          \psdots[dotsize=0.08](0.5,0.5)
+          \rput(0.85,0.75){$r$}
+        \end{pspicture}}
+    \end{center} &
+%    \begin{aligned}$
+%      &\mbox{Area} = \pi r^2 \\
+%      &(\mbox{Circumference} = 2\pi r)$
+%    \end{aligned}
+    $$\mbox{Area} = \pi r^2$$\vspace{-24pt}
+    $$(\mbox{Circumference} = 2\pi r)$$
+    \\ \hline
+  \end{tabular}
+  % \caption{Remember that surface area is measured in square units, for example, $cm^2$, $m^2$ or $mm^2$.}
 \end{table}
 
-       \Note{Remember that area is measured in square units, for example, cm$^2$, m$^2$ or mm$^2$.}     
+\Note{Remember that area is measured in square units, for example, cm$^2$, m$^2$ or mm$^2$.}     
 
-\mindsetvid{area and perimeter}{VMdxu}%Khan Academy
+\mindsetvid{Area and perimeter}{VMdxu}%Khan Academy
 \par
-\mindsetvid{area of a circle}{VMdya}%Khan academy
+\mindsetvid{Area of a circle}{VMdya}%Khan academy
 
 \begin{wex}{Finding the area of a polygon}
 {Find the area of the following parallelogram:\\
@@ -162,26 +154,22 @@ Circle &
 \end{center}
 }{
   \westep{Find the height $ BE$ of the parallelogram using the Theorem of Pythagoras}
-\begin{equation*}
-\begin{array}{ccl}
-AB^2 &=& BE^2 + AE^2\\
-\therefore BE^2 &=& AB^2 - AE^2\\
-	&=& 5^2 - 3^2\\
-	 &=& 16\\
-	\therefore BE &=& 4\mbox{ mm}
-    \end{array}
-\end{equation*}
+\begin{align*}
+  AB^2 &= BE^2 + AE^2\\
+  \therefore BE^2 &= AB^2 - AE^2\\
+  &= 5^2 - 3^2\\
+  &= 16\\
+  \therefore BE &= 4\mbox{ mm}
+\end{align*}
     
     \westep{Find the area using the formula for a parallelogram}
-\begin{equation*}
-\begin{array}{ccl}
-	\text{Area} &=& b \times h\\
-&=& AD \times BE \\
-		    &=& 7 \times 4\\
-		    &=& 28 \mbox{ mm}^2
-    \end{array}
-\end{equation*}
-    }
+\begin{align*}
+  \mbox{Area} &= b \times h\\
+  &= AD \times BE \\
+  &= 7 \times 4\\
+  &= 28 \mbox{ mm}^2
+\end{align*}
+}
 \end{wex}
 
 
@@ -322,11 +310,19 @@ AB^2 &=& BE^2 + AE^2\\
 
 \section{Right prisms and cylinders }
 
-\Definition{Right prism}{A right prism is a geometric solid that has a polygon as its base and one or more sides perpendicular to the base. The base and top surface are the same shape and size. It is called a ``right'' prism because the angles between the base and sides are right-angles.}
-A prism with a square base is called a cube, a rectangular prism has a rectangle as its
-base, and a triangular prism has a triangle as its base. A cylinder is another type of right
-prism which has as circle as its base. Examples of right prisms are given below: a rectangular prism, a square prism (or cube), a triangular prism and a cylinder.
-\mindsetvid{different viewpoints}{VMcph}
+\Definition{Right prism}{A right prism is a geometric solid that has a
+  polygon as its base and vertical sides perpendicular to the
+  base. The base and top surface are the same shape and size. It is
+  called a ``right'' prism because the angles between the base and
+  sides are right angles.}
+
+A triangular prism has a triangle as its base, a rectangular prism has
+a rectangle as its base, and a cube is a rectangular prism with all
+its sides of equal length.
+A cylinder is another type of right prism which has a circle as its
+base. Examples of right prisms are given below: a rectangular prism, a
+cube, a triangular prism and a cylinder.
+\mindsetvid{Different viewpoints}{VMcph}
 \par 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -380,20 +376,31 @@ prism which has as circle as its base. Examples of right prisms are given below:
 
 \subsection{Surface area of prisms and cylinders}
 
-\Definition{Surface area}{Surface area is the total area of the exposed or outer surfaces of a prism.}
-This is easier to understand if we imagine the prism to be cardboard box that we can unfold.
-A solid that is unfolded like this, is called a net. When a prism is unfolded into a net, we can clearly see each of its faces. In order to calculate the surface area of the prism, we can then simply calculate the area of each face, and add them all together.
-\par 
-\mindsetvid{triangular prisms}{VMcre}
+\Definition{Surface area}{Surface area is the total area of the
+  exposed or outer surfaces of a prism.}
 
- For example, when a triangular prism is unfolded into a net, we can see that it has two faces that are
-triangles and three faces that are rectangles. To calculate the surface area of the prism, we find the areas of each triangle and  each rectangle, and add them together.
-  \par
-In the case of a cylinder the top and bottom faces are circles and the curved surface flattens
-into a rectangle with a length that is equal to the circumference of the circular base. To calculate the surface area we therefore find the area of the two circles and the rectangle and add them together.
+This is easier to understand if we imagine the prism to be a cardboard
+box that we can unfold.  A solid that is unfolded like this is called
+a net. When a prism is unfolded into a net, we can clearly see each of
+its faces. In order to calculate the surface area of the prism, we can
+then simply calculate the area of each face, and add them all
+together.
 
-\Note{Remember that surface area is measured in square units, for example cm $^2$, m$^2$ or mm$^2$.}
-\par
+\mindsetvid{Triangular prisms}{VMcre}
+
+For example, when a triangular prism is unfolded into a net, we can
+see that it has two faces that are triangles and three faces that are
+rectangles. To calculate the surface area of the prism, we find the
+area of each triangle and each rectangle, and add them together.
+
+In the case of a cylinder the top and bottom faces are circles and the
+curved surface flattens into a rectangle with a length that is equal
+to the circumference of the circular base. To calculate the surface
+area we therefore find the area of the two circles and the rectangle
+and add them together.
+
+\Note{Remember that surface area is measured in square units, for example, cm$^2$, m$^2$ or mm$^2$.}
+
 Below are examples of right prisms that have been unfolded into nets:
 
 \begin{figure}[H]
@@ -442,11 +449,11 @@ Below are examples of right prisms that have been unfolded into nets:
     \end{center}
 \end{figure}   
 
-A rectangular prism  unfolded into a net is made up of six rectangles. 
+A rectangular prism unfolded into a net is made up of six rectangles. 
 
 
 \begin{figure}[H]
- \begin{caption*}{\textbf{Square prism or cube}}\end{caption*}
+ \begin{caption*}{\textbf{Cube}}\end{caption*}
     \begin{center}
 
 	%% Square Prism
@@ -490,9 +497,7 @@ A rectangular prism  unfolded into a net is made up of six rectangles.
     \end{center}
 \end{figure}   
 
-A square prism (or cube) unfolded into a net is made up of six identical squares.
-
-
+A cube unfolded into a net is made up of six identical squares.
 
 \begin{figure}[H]
     \begin{caption*}{\textbf{Triangular prism}}\end{caption*}
@@ -537,9 +542,9 @@ A square prism (or cube) unfolded into a net is made up of six identical squares
     \end{center}
 \end{figure} 
 
-A triangular prism unfolded into a net is made up of two triangles and one rectangle, which is made up of three
-smaller rectangles. The length of the rectangle is equal to the perimeter of the triangles.
-
+A triangular prism unfolded into a net is made up of two triangles and
+three rectangles. The sum of the lengths of the rectangles is equal to
+the perimeter of the triangles.
 
 \begin{figure}[H]
 \begin{caption*}{\textbf{Cylinder}}\end{caption*}
@@ -572,11 +577,8 @@ the circumference of the circles.
 
 
 \begin{wex}
-{Finding the surface area of a rectangular prism
-
-}
-{%Problem
-Find the surface area of the following rectangular  prism:
+{Finding the surface area of a rectangular prism}
+{Find the surface area of the following rectangular prism:
 \begin{center}
 \scalebox{0.9}{
     \begin{pspicture}(-2,-3.5)(3,1.5)
@@ -588,10 +590,8 @@ Find the surface area of the following rectangular  prism:
         \pstThreeDPut(5,7,2){$10$ cm}
    \end{pspicture}}
 \end{center}
-
 }
-{%Solution
-
+{
 \westep{Sketch and label the net of the prism}
 
 \begin{center}
@@ -616,7 +616,7 @@ Find the surface area of the following rectangular  prism:
 \end{center}
 
 \westep{Find the areas of the different shapes in the net}
-\begin{align*} 
+\begin{align*}
 \mbox{large rectangle} &= \mbox{perimeter of small rectangle} \times \mbox{length} \\
                         &= (2+ 5 +2 + 5) \times 10 \\
                         &= 14 \times 10 \\
@@ -627,13 +627,11 @@ Find the surface area of the following rectangular  prism:
 \end{align*}
 
 
-
 \westep{Find the sum of the areas of the faces}
 
 $\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 160$ cm$^2$.
 \westep{Write the final answer}
 The surface area of the rectangular prism is 160~cm$^2$.
-\
 }
 \end{wex}
 
@@ -723,62 +721,46 @@ To find the perimeter of the triangle, we have to first find the length of its s
 \end{center}
 
 
-\begin{equation*}
-\begin{array}{rcl}
-x^2 &=& 3^2 + \left(\frac{8}{2}\right)^2 \\
-x^2 &=& 3^2 + 4^2 \\
-&=& \sqrt{25} \\
-\therefore x &=& 5\mbox{ cm}\\
-\therefore \mbox{perimeter of triangle} &=& 5 + 5 + 8 \\
-&=&18\mbox{ cm}\\
+\begin{align*}
+  x^2 &= 3^2 + \left(\frac{8}{2}\right)^2 \\
+  x^2 &= 3^2 + 4^2 \\
+  &= 25 \\
+  \therefore x &= 5\mbox{ cm}\\
+  \therefore \mbox{perimeter of triangle} &= 5 + 5 + 8 \\
+  &= 18\mbox{ cm}
+\end{align*}
 
-\end{array}
-\end{equation*}
+\begin{align*}
+  \therefore \mbox{area of large rectangle}
+  &= \mbox{perimeter of triangle} \times \mbox{length}\\
+  &= 18 \times 12 \\
+  &= 216 \mbox{ cm}^2
+\end{align*}
 
-\begin{equation*}
-\begin{array}{rcl}
- \therefore \mbox{area of large rectangle }&=& \mbox{ perimeter of triangle }\times \mbox{length}\\
-&=& 18 \times 12 \\
-&=&216 \mbox{ cm}^2
-\end{array}
-\end{equation*}
-
-
-
-
-\begin{equation*}
-\begin{array}{rcl}
-\mbox{area of triangle } &= &\frac{1}{2}b \times h\\
-&=&\frac{1}{2} \times 8 \times 3\\
-&=&12 \mbox{ cm}^2
-\end{array}
-\end{equation*}
-
-
+\begin{align*}
+  \mbox{area of triangle} &= \frac{1}{2}b \times h\\
+  &= \frac{1}{2} \times 8 \times 3\\
+  &= 12 \mbox{ cm}^2
+\end{align*}
 
 \westep{Find the sum of the areas of the faces}
 
-\begin{equation*}
-\begin{array}{rcl}
- \mbox{surface area }&=& \mbox{area large rectangle}  + (2\times \mbox{  area of triangle})\\
-&=& 216 + 2(12) \\
-&=& 240\mbox{ cm}^2
-\end{array}
-\end{equation*}
+\begin{align*}
+  \mbox{surface area}
+  &= \mbox{area large rectangle} + (2 \times \mbox{area of triangle}) \\
+  &= 216 + 2(12) \\
+  &= 240\mbox{ cm}^2
+\end{align*}
 
- \westep{Write the final answer}
+\westep{Write the final answer}
 The surface area of the triangular prism is $240$ cm$^2$.
-
 }
 \end{wex}
 
 
-
 \begin{wex}
-{Finding the surface area of a cylindrical prism
-}
-{% Question
-Find the surface area of the following cylinder (correct to $1$ decimal place):
+{Finding the surface area of a cylindrical prism}
+{Find the surface area of the following cylinder (correct to $1$ decimal place):
 \begin{center}
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
@@ -817,30 +799,27 @@ Find the surface area of the following cylinder (correct to $1$ decimal place):
 
 \westep{Find the area of the different shapes in the net}
 
-\begin{equation*}
-\begin{array}{rcl}
-\mbox{area of large rectangle} &=& \mbox{circumference of circle} \times \mbox{length} \\
+\begin{align*}
+  \mbox{area of large rectangle}
+  &= \mbox{circumference of circle} \times \mbox{length} \\
+  &= 2\pi r \times l \\
+  &= 2\pi(10) \times 30 \\
+  &= 1884,96 \mbox{ cm}^2 \\[10pt]
+  \mbox{area of circle}
+  &= \pi r^2 \\
+  &= \pi10^2 \\
+  &= 314,16\mbox{ cm}^2
+\end{align*}
 
-&=& 2\pi r \times l \\
-&=& 2\pi(10) \times 30 \\
-&=& 1884,96 \mbox{ cm}^2 \\[10pt]
-
-\mbox{area of circle }  &=&\pi r^2  \\
-&=& \pi10^2 \\
-&=&314,16\mbox{ cm}^2
-\end{array}
-\end{equation*}
-
-\begin{equation*}
-\begin{array}{rcl}
- \mbox{surface area }&=& \mbox{area large rectangle}  + (2\times \mbox{  area of circle})\\
-&=& 1884,96 + 2(314,16) \\
-&=&2513,3\mbox{ cm}^2
-\end{array}
-\end{equation*}
+\begin{align*}
+  \mbox{surface area}
+  &= \mbox{area large rectangle} + (2 \times \mbox{area of circle}) \\
+  &= 1884,96 + 2(314,16) \\
+  &= 2513,28\mbox{ cm}^2
+\end{align*}
 
 \westep{Write the final answer}
-The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
+The surface area of the cylinder is $2513,28\mbox{ cm}^2$.
 }
 \end{wex}
 
@@ -908,8 +887,8 @@ The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
 \item If a litre of paint covers an area of $2$ m$^{2}$, how much paint does a painter need to cover:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
   % \setcounter{enumi}{3}
-  \item a rectangular swimming pool with dimensions $4$ m $\times~3$ m $\times~2,5$ m (the inside walls and floor only).
-    the inside walls and floor of a circular reservoir with diameter $4$ m and height $2,5$ m.
+  \item a rectangular swimming pool with dimensions $4$ m $\times~3$ m $\times~2,5$ m (the inside walls and floor only);
+  \item the inside walls and floor of a circular reservoir with diameter $4$ m and height $2,5$ m.
   \end{enumerate}
   \setcounter{subfigure}{0}
   \begin{figure}[H] % horizontal\label{m39357*id62926}
@@ -940,7 +919,7 @@ The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
 \Definition{Volume}{Volume is the three dimensional space occupied by an object, or the contents of an object. It is measured in cubic units.}
 The volume of a right prism is simply calculated by multiplying the area of the
 base of a solid by the height of the solid. 
-\mindsetvid{calculating volume}{VMcth}
+\mindsetvid{Calculating volume}{VMcth}
 
 
 
@@ -952,33 +931,33 @@ base of a solid by the height of the solid.
 \textbf{Rectangular prism}
 &
 \begin{center}
-\begin{pspicture}(0,-1.2412498)(4.584375,1.2212498)
-\psline[linewidth=0.04cm](0.0,-0.83875)(1.0,0.14125004)
-\psline[linewidth=0.04cm](3.0,-0.81875)(3.98,0.14125004)
-\psline[linewidth=0.04cm](0.02,-0.83875)(3.0,-0.81875)
-\psline[linewidth=0.04cm](1.0,0.16124995)(3.98,0.16124995)
-\psline[linewidth=0.04cm](4.0,1.2012498)(3.98,0.10124995)
-\psline[linewidth=0.04cm](1.0,1.1812499)(1.02,0.16125014)
-\psline[linewidth=0.04cm](1.02,1.1612499)(4.0,1.1812499)
-\psline[linewidth=0.04cm](3.0,0.24124995)(3.0,-0.81875)
-\psline[linewidth=0.04cm](0.0,0.20125005)(0.0,-0.85875)
-\psline[linewidth=0.04cm](0.0,0.22125006)(2.98,0.22125006)
-\psline[linewidth=0.04cm](0.02,0.22125006)(1.0,1.1612499)
-\psline[linewidth=0.04cm](3.0,0.22125015)(3.98,1.1612499)
-% \usefont{T1}{ptm}{m}{n}
-\rput(1.2896875,-1.0687499){$l$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.9228127,-0.46874985){$b$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.273906,0.63125014){$h$}
+\begin{pspicture}(0,-1.3537499)(4.565781,1.3337499)
+\psline[linewidth=0.04cm](0.04,-0.92625)(1.04,0.05375004)
+\psline[linewidth=0.04cm](3.0,-0.92625)(3.98,0.03375004)
+\psline[linewidth=0.04cm](0.02,-0.94625)(3.0,-0.92625)
+\psline[linewidth=0.04cm](1.0,0.05374995)(3.98,0.05374995)
+\psline[linewidth=0.04cm](4.0,1.3137498)(3.96,-0.0062502)
+\psline[linewidth=0.04cm](1.02,1.2937498)(1.02,0.0337498)
+\psline[linewidth=0.04cm](1.02,1.2937499)(4.0,1.3137499)
+\psline[linewidth=0.04cm](3.0,0.3737498)(3.0,-0.92625)
+\psline[linewidth=0.04cm](0.0,0.3537498)(0.0,-0.96625)
+\psline[linewidth=0.04cm](0.02,0.35375005)(3.0,0.35375005)
+\psline[linewidth=0.04cm](0.04,0.35375005)(1.02,1.2937499)
+\psline[linewidth=0.04cm](2.98,0.35375014)(4.0,1.3137498)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.2710937,-1.1762499){$l$}
+\usefont{T1}{ptm}{m}{n}
+\rput(3.904219,-0.57624984){$b$}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.2553124,0.5237501){$h$}
 \end{pspicture}
 \end{center} 
 &
 $
 \begin{aligned}
 \mbox{Volume} &= \mbox{area of base} \times \mbox{height} \\
-                &= \mbox{area of rectangle} \times \mbox{height} \\
-                &= l \times b \times h \\
+              &= \mbox{area of rectangle} \times \mbox{height} \\
+              &= l \times b \times h \\
 \end{aligned}$   \\ \hline
 
 
@@ -1012,8 +991,8 @@ $
 
 $\begin{aligned}
 \mbox{Volume} &= \mbox{area of base} \times \mbox{height} \\
-                &= \mbox{area of triangle} \times \mbox{height} \\
-                &=(\frac{1}{2}b\times h) \times H \\
+              &= \mbox{area of triangle} \times \mbox{height} \\
+              &= \left(\frac{1}{2}b\times h\right) \times H \\
 \end{aligned}$  \\ \hline
 
 \textbf{Cylinder} &
@@ -1037,8 +1016,8 @@ $\begin{aligned}
 
 $\begin{aligned}
 \mbox{Volume} &= \mbox{area of base} \times \mbox{height} \\
-                &= \mbox{area of circle} \times \mbox{height} \\
-                &= \pi r^2 \times h \\
+              &= \mbox{area of circle} \times \mbox{height} \\
+              &= \pi r^2 \times h \\
 \end{aligned}$  \\ \hline
 
 
@@ -1049,32 +1028,27 @@ $\begin{aligned}
 \Note{Remember that the volume is measured in cubic units, for example, cm$^3$, m$^3$ or mm$^3$.}
 
 
-
-
 \begin{wex}
-{% Title
-Finding the volume of a square prism
-}
-{% question
-Find the volume of the following cube:
+{Finding the volume of a cube}
+{Find the volume of the following cube:
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-1.0258813)(5.423805,1.3541186)
+\begin{pspicture}(0,-0.96908206)(5.3072424,1.2741187)
 \psdiamond[linewidth=0.04,dimen=outer,gangle=-49.7](1.6365356,0.0)(1.27,1.0687643)
 \psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2365355,0.0)(1.27,1.0687643)
-\psline[linewidth=0.04](0.8223988,0.96411866)(2.5318084,1.2441187)(4.02,0.9541186)
-\psline[linewidth=0.04cm](0.6423988,0.14411865)(1.0223988,0.14411865)
-\psline[linewidth=0.04cm](2.2423987,-0.115881346)(2.6223986,-0.115881346)
-\psline[linewidth=0.04cm](3.8423986,0.044118654)(4.2223988,0.044118654)
-\psline[linewidth=0.04cm](1.7123986,0.95411867)(1.7123986,0.5741187)
-\psline[linewidth=0.04cm](1.5723988,-0.60588133)(1.5723988,-0.9858813)
-\psline[linewidth=0.04cm](3.2723987,-0.6258814)(3.2723987,-1.0058813)
-\psline[linewidth=0.04cm](3.292399,1.0141187)(3.292399,0.6341187)
-\psline[linewidth=0.04cm](1.8723989,1.3341186)(1.8723989,0.95411867)
-\psline[linewidth=0.04cm](3.0723987,1.3341186)(3.0723987,0.95411867)
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.728805,0.109118655){$3$ cm}
+\psline[linewidth=0.04](0.8223989,0.96411866)(2.5318086,1.2441187)(4.02,0.9541186)
+\psline[linewidth=0.04cm](2.3400002,-0.115881346)(2.5600002,-0.115881346)
+\psline[linewidth=0.04cm](1.7400001,0.91411865)(1.7400001,0.7141186)
+\usefont{T1}{ptm}{m}{n}
+\rput(4.7184925,0.109118655){$3$ cm}
+\psline[linewidth=0.04cm](0.7200001,0.024118654)(0.9400001,0.024118654)
+\psline[linewidth=0.04cm](3.94,0.044118654)(4.1600003,0.044118654)
+\psline[linewidth=0.04cm](1.5200001,-0.6858813)(1.5200001,-0.8858814)
+\psline[linewidth=0.04cm](3.16,0.89411867)(3.16,0.6941186)
+\psline[linewidth=0.04cm](3.3000002,-0.6858813)(3.3000002,-0.8858814)
+\psline[linewidth=0.04cm](1.9800001,1.2541187)(1.9800001,1.0541186)
+\psline[linewidth=0.04cm](3.1000001,1.2541187)(3.1000001,1.0541186)
 \end{pspicture} 
 }
 \end{center}
@@ -1083,10 +1057,10 @@ Find the volume of the following cube:
 
 \westep{Find the area of the base}
 \begin{align*}
-\mbox{area of square} 
-&=l \times b\\
-&= 3 \times 3 \\
-&= 9~\mbox{ cm}^2
+  \mbox{area of square} 
+  &= s^2 \\
+  &= 3^2 \\
+  &= 9\mbox{ cm}^2
 \end{align*}
 
 \westep{Multiply the area of the base by the height of the solid to find the volume}
@@ -1097,7 +1071,6 @@ Find the volume of the following cube:
 \end{align*}
 \westep{Write the final answer}
 The volume of the cube is $27\mbox{ cm}^3 $. 
-
 }
 \end{wex}
 
@@ -1105,12 +1078,8 @@ The volume of the cube is $27\mbox{ cm}^3 $.
 
 
 \begin{wex}
-{Finding the volume of a triangular prism
-}
-
-{%problem
-Find the volume of the triangular prism:\\
-
+{Finding the volume of a triangular prism}
+{Find the volume of the triangular prism:\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1139,23 +1108,22 @@ Find the volume of the triangular prism:\\
 {%solution
 \westep{Find the area of the base}
 \begin{align*}
-\mbox{area of triangle} 
-&=\dfrac{1}{2}b \times h\\
-&= \Big( \dfrac{1}{2} \times 8 \Big)\times 10\\
-                        &= 40\mbox{ cm}^2
+  \mbox{area of triangle} 
+  &= \frac{1}{2}b \times h\\
+  &= \left(\frac{1}{2} \times 8 \right) \times 10\\
+  &= 40\mbox{ cm}^2
 \end{align*}
 
 \westep{Multiply the area of the base by the height of the solid to find the volume}
 \begin{align*}
-\mbox{volume} &= \mbox{area of base} \times \mbox{height}\\
-
-                        &= \dfrac{1}{2}b \times h \times H \\
- &= 40 \times 20 \\
-                        &= 800\mbox{ cm}^3
+  \mbox{volume} &= \mbox{area of base} \times \mbox{height}\\
+  &= \frac{1}{2}b \times h \times H \\
+  &= 40 \times 20 \\
+  &= 800\mbox{ cm}^3
 \end{align*}
+
 \westep{Write the final answer}
 The volume of the triangular prism is $800\mbox{ cm}^3$.
-
 }
 \end{wex}
 
@@ -1179,20 +1147,21 @@ The volume of the triangular prism is $800\mbox{ cm}^3$.
 {
 \westep{Find the area of the base}
 \begin{align*}
-\mbox{area of circle} &= \pi~r^2\\
-&= \pi(4)^{2} \\
-&= 50,27\mbox{ cm}^{2}\\
+  \mbox{area of circle} &= \pi r^2 \\
+  &= \pi(4)^{2} \\
+  &= 16\pi\mbox{ cm}^{2}
 \end{align*}
 
 \westep{Multiply the area of the base by the height of the solid to find the volume}
 \begin{align*}
-\mbox{volume} &= \mbox{area of base } \times \mbox{ height}\\
-&=\pi r^{2} \times h\\
-&= 50,27\times 15\\
-&= 754,1\mbox{ cm}^{3}\\
+  \mbox{volume} &= \mbox{area of base} \times \mbox{height} \\
+  &= \pi r^{2} \times h\\
+  &= 16\pi \times 15\\
+  &= 754,0\mbox{ cm}^{3}\\
 \end{align*}
+
 \westep{Write the final answer}
-The volume of the cylinder is $754,1\mbox{ cm}^{3}$.
+The volume of the cylinder is $754,0\mbox{ cm}^{3}$.
 }
 \end{wex}
 
@@ -1265,10 +1234,14 @@ The volume of the cylinder is $754,1\mbox{ cm}^{3}$.
 \end{exercises}
 
 \section{Right pyramids, right cones and spheres}
-\Definition{Pyramid}{A pyramid is a geometric solid that has a polygon base and sides that converge at a point called the apex (in other words the sides are \textbf{not} perpendicular to the base).} 
+\Definition{Pyramid}{A pyramid is a geometric solid that has a polygon
+  as its base and sides that converge at a point called the apex. In
+  other words the sides are \textbf{not} perpendicular to the base.}
 
-The triangular pyramid and square pyramid take their names
-from the shape of their base. We call them ``right'' pyramids because the height of the pyramid at the apex is perpendicular to the base. Cones are similar to pyramids except that their bases are circles
+The triangular pyramid and square pyramid take their names from the
+shape of their base. We call a pyramid a ``right pyramid'' if the line
+between the apex and the centre of the base is perpendicular to the
+base. Cones are similar to pyramids except that their bases are circles
 instead of polygons. Spheres are solids that are perfectly round and look the same from any
 direction.\par
 Examples of a square pyramid, a triangular pyramid, a cone and a sphere:
@@ -1314,8 +1287,6 @@ Examples of a square pyramid, a triangular pyramid, a cone and a sphere:
 
 \subsection{Surface area of pyramids, cones and spheres}
 
-
-
 \begin{table}[H]
 \newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
 \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
@@ -1352,14 +1323,15 @@ Examples of a square pyramid, a triangular pyramid, a cone and a sphere:
 }
 \end{center} 
 &
-$\begin{aligned}
-\mbox{Surface area} &= \mbox{ area of base } +\\
-&~~~~~~\mbox{ area of triangular sides } \\
-&=b^{2} + 4\Big(\frac{1}{2}bh\Big)\\
-&=b(b+2h)
- \end{aligned}$
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Surface area} &=& \mbox{area of base } +\\
+    && \mbox{area of triangular sides} \\
+    &=&b^{2} + 4\left(\frac{1}{2}bh\right)\\
+    &=&b(b+2h)
+  \end{array}
+\end{equation*}
 \\ \hline
-
 
 \textbf{Triangular pyramid} &
 \begin{center}
@@ -1390,14 +1362,15 @@ $\begin{aligned}
 }
 \end{center}
 &
-
-$\begin{aligned}
-\mbox{ Surface area} &= \mbox{ area of base } +\\
-&~~~~~~\mbox{area of triangular sides } \\
-&=(\frac{1}{2}b \times h_b) + 3(\frac{1}{2}b \times h_s)\\
-&=\frac{1}{2}b(h_b + 3h_s)
- \end{aligned}$
- \\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Surface area} &=& \mbox{area of base } +\\
+    &&\mbox{area of triangular sides} \\
+    &=&\left(\frac{1}{2}b \times h_b\right) + 3\left(\frac{1}{2}b \times h_s\right)\\
+    &=&\frac{1}{2}b(h_b + 3h_s)
+  \end{array}
+\end{equation*}
+\\ \hline
 
 \textbf{Right cone} &
 \begin{center}
@@ -1410,7 +1383,7 @@ $\begin{aligned}
 \psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
 \psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
 % \usefont{T1}{ptm}{m}{n}
-\rput(3.8704202,1.0400556){\LARGE$h_s$}
+\rput(3.8704202,1.0400556){\LARGE$h$}
 % \usefont{T1}{ptm}{m}{n}
 \rput(3.56042,-1.4399444){\LARGE$r$}
 % \usefont{T1}{ptm}{m}{n}
@@ -1418,17 +1391,16 @@ $\begin{aligned}
 \end{pspicture} 
 }
 \end{center}
-
-
-
 &
-
-$\begin{aligned}
-\mbox{\small Surface area} &=  \mbox{\small area of base }+\mbox{\small area of walls}\\
-&= \pi r^{2} +(\frac{1}{2} \times 2\pi rh_s)\\
-&=\pi r^{2} +\pi rh_s\\
-&=\pi r(r+h_s)\\
- \end{aligned}$\\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Surface area} &=& \mbox{area of base } +\\
+    &&\mbox{area of walls}\\
+    &=& \pi r^{2} + \frac{1}{2} \times 2\pi rh \\
+    &=& \pi r(r+h)\\
+  \end{array}
+\end{equation*}
+\\ \hline
 
 \textbf{Sphere} &
 \begin{center}
@@ -1443,21 +1415,15 @@ $\begin{aligned}
 \rput(2.6345313,0.2){$r$}
 \end{pspicture} 
 }
-
 \end{center}
-
-
 &
-$\begin{aligned}
-\mbox{\small Surface area} &=  4\pi r^{2}
- \end{aligned}$\\ \hline
-
-
+$\mbox{Surface area} =  4\pi r^{2}$
+\\ \hline
 \end{tabular}
 \end{table}
 
 \begin{wex}{Finding the surface area of a triangular pyramid}
- {Find the surface area of the following triangular pyramid (correct to one decimal place):\\
+{Find the surface area of the following triangular pyramid (correct to one decimal place):\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1504,24 +1470,23 @@ To find the height of the base triangle $(h_b)$ we use the Theorem of Pythagoras
 \end{center}
 
 \begin{align*}
-
-6^2 &= 3^2+h_b^2\\
-\therefore h_b&=\sqrt{6^2-3^2}\\
-&=3\sqrt{3}\\
-\therefore \mbox{ area of base triangle} &= \frac{1}{2} \times 6 \times 3\sqrt{3}\\
-&=9\sqrt{3}\mbox{ cm}^2
+  6^2 &= 3^2+h_b^2\\
+  \therefore h_b&=\sqrt{6^2-3^2}\\
+  &=3\sqrt{3}\\
+  \therefore \mbox{ area of base triangle} &= \frac{1}{2} \times 6 \times 3\sqrt{3}\\
+  &=9\sqrt{3}\mbox{ cm}^2
 \end{align*}
+
 \westep{Find the area of the sides}
 \begin{align*}
- \mbox{area of sides} &= 3\Big(\frac{1}{2} \times b\times h_s\Big)\\
-&=3\Big(\frac{1}{2} \times 6 \times 10\Big)\\
-&=90\mbox{ cm}^2
+  \mbox{area of sides} &= 3\left(\frac{1}{2} \times b\times h_s\right)\\
+  &=3\left(\frac{1}{2} \times 6 \times 10\right)\\
+  &=90\mbox{ cm}^2
 \end{align*}
 
 \westep{Find the sum of the areas}
 \begin{align*}
-9\sqrt{3} + 90&=105,6\mbox{ cm}^2\\
-
+  9\sqrt{3} + 90&=105,6\mbox{ cm}^2\\
 \end{align*}
 \westep{Write the final answer}
 The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
@@ -1529,7 +1494,7 @@ The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
 \end{wex}
 
 \begin{wex}{Finding the surface area of a cone}
- {Find the surface area of the following cone (correct to one decimal place):
+{Find the surface area of the following cone (correct to one decimal place):
 \begin{center}
  \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -1540,7 +1505,7 @@ The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
 \psline[linewidth=0.04,linestyle=dotted,dotsep=0.1cm](2.3444264,3.0043032)(2.261968,-1.7245709)(4.488356,-1.7523878)(4.488356,-1.6133032)(4.46087,-1.6133032)
 \psframe[linewidth=0.04,dimen=outer](2.6258888,-1.3299444)(2.225889,-1.7299443)
 % \usefont{T1}{ptm}{m}{n}
-\rput(3.8704202,1.0400556){$h_s$}
+\rput(3.8704202,1.0400556){$h$}
 % \usefont{T1}{ptm}{m}{n}
 \rput(3.56042,-1.4399444){$4$ cm}
 % \usefont{T1}{ptm}{m}{n}
@@ -1552,16 +1517,16 @@ The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
 {
 \westep{Find the area of the base}
 \begin{align*}
- \mbox{area of base circle} &= \pi r^2\\
-&= \pi4^2\\
-&=16\pi
+  \mbox{area of base circle} &= \pi r^2\\
+  &= \pi \times 4^2\\
+  &= 16\pi
 \end{align*}
 
 \westep{Find the area of the walls}
 \begin{align*}
- \mbox{area of sides} &= \pi rh_s
+  \mbox{area of sides} &= \pi rh
 \end{align*}
-To find the slant height $h_s$ we use the Theorem of Pythagoras:\\
+To find the slant height $h$ we use the Theorem of Pythagoras:\\
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing. walls
 {
@@ -1572,36 +1537,38 @@ To find the slant height $h_s$ we use the Theorem of Pythagoras:\\
 % \usefont{T1}{ptm}{m}{n}
 \rput(3.165,-1.9535937){$4$ cm}
 % \usefont{T1}{ptm}{m}{n}
-\rput(3.7,0.62640625){$h_s$}
+\rput(3.7,0.62640625){$h$}
 % \usefont{T1}{ptm}{m}{n}
 \rput(2.7,0.04640625){$14$ cm}
 \end{pspicture}
- 
 }
 \end{center}
+
 \begin{align*}
- h_s^2 &= 4^2 + 14^2\\
-\therefore h_s &= \sqrt{4^2 + 14^2}\\
-&= 2\sqrt{53}\mbox{ cm}^2
+  h^2 &= 4^2 + 14^2\\
+  \therefore h &= \sqrt{4^2 + 14^2}\\
+  &= 2\sqrt{53}\mbox{ cm}^2
 \end{align*}
 
 \begin{align*}
- \mbox{ area of walls } &= \frac{1}{2}2\pi r h_s\\
-&=\pi(4)(2\sqrt{53})\\
-&= 8\pi\sqrt{53}\mbox{ cm}^2
+  \mbox{area of walls} &= \frac{1}{2}2\pi r h\\
+  &=\pi(4)(2\sqrt{53})\\
+  &= 8\pi\sqrt{53}\mbox{ cm}^2
 \end{align*}
+
 \westep{Find the sum of the areas}
 \begin{align*}
-\mbox{total surface area } &= 16\pi + 8\pi\sqrt{53}\\
-&=233,2\mbox{ cm}^2
+  \mbox{total surface area} &= 16\pi + 8\pi\sqrt{53}\\
+  &=233,2\mbox{ cm}^2
 \end{align*}
+
 \westep{Write the final answer}
 The surface area of the cone is $233,2\mbox{ cm}^2$.
 }
 \end{wex}
 
 \begin{wex}{Finding the surface area of a sphere}
- {Find the surface area of the following sphere (correct to $1$ decimal place):
+{Find the surface area of the following sphere (correct to $1$ decimal place):
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
 {
@@ -1615,21 +1582,16 @@ The surface area of the cone is $233,2\mbox{ cm}^2$.
 \rput(2.7095313,0.12){\psframebox[linewidth=0.002,linecolor=color129b,fillstyle=solid,fillcolor=color129b]{$5$ cm}}%this framebox background colour is tweaked to match the wex colour - otherwise radius label sits too close between the dotted lines. framebox behind label blanks out some of eliptical dotted line to make it more legible
 \end{pspicture} 
 }
-
 \end{center}
 }
 {
-\westep{Use the formula to find the surface area}
 \begin{align*}
- \mbox{surface area of sphere} &= 4 \pi r^2\\
-&= 4\pi5^2\\
-&=100\pi\\
-&=314,2\mbox{ cm}^2
+  \mbox{surface area of sphere} &= 4 \pi r^2\\
+  &= 4\pi5^2\\
+  &=100\pi\\
+  &=314,2\mbox{ cm}^2
 \end{align*}
-\westep{Write the final answer}
-The surface area of the sphere is $314,2\mbox{ cm}^2$.
 }
-
 \end{wex}
 
 
@@ -1646,18 +1608,18 @@ The surface area of the sphere is $314,2\mbox{ cm}^2$.
 \psellipse[linewidth=0.028222222,dimen=outer](1.5000001,-1.0699999)(1.5000001,1.0)
 \psellipse[linewidth=0.028222222,linestyle=dotted,dotsep=0.10583334cm,dimen=outer](1.5,-1.07)(1.5,1.0)
 \psline[linewidth=0.028222222](0.02,-0.93)(1.52,2.07)(2.985889,-0.9158889)
-\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-1.07)(1.5,-1.07)
+\psline[linewidth=0.028222222cm,linestyle=dashed](0.0,-1.07)(1.5,-1.07)
 \usefont{T1}{ptm}{m}{n}
 \rput(0.6890625,-1.35){$r$}
-\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.5,-1.07)(1.5258889,1.9641111)
+\psline[linewidth=0.028222222cm,linestyle=dashed](1.5,-1.07)(1.5258889,1.9641111)
 \usefont{T1}{ptm}{m}{n}
 \rput(1.7090626,0.37){$h$}
 \psline[linewidth=0.028222222](1.1,-1.07)(1.1,-0.67)(1.5,-0.67)
 \pspolygon[linewidth=0.028222222](3.5,-1.07)(5.0,1.93)(6.5,-1.07)
-\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.5,-1.27)(5.0,-1.27)
+\psline[linewidth=0.028222222cm,linestyle=dashed](3.5,-1.27)(5.0,-1.27)
 \usefont{T1}{ptm}{m}{n}
 \rput(4.2690625,-1.57){$r$}
-\psline[linewidth=0.028222222cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.0,-1.07)(5.0,1.93)
+\psline[linewidth=0.028222222cm,linestyle=dashed](5.0,-1.07)(5.0,1.93)
 \usefont{T1}{ptm}{m}{n}
 \rput(5.2745314,0.25){$h$}
 \usefont{T1}{ptm}{m}{n}
@@ -1724,37 +1686,39 @@ The cone has two faces: the base and the walls. The base is a circle of radius $
 \end{center}
 \\ This curved surface can be cut into many thin triangles with height close to $a$ (where $a$ is the slant height). The area of these triangles or sectors can be summed as follows: 
 \begin{align*}
-\mbox{Area of sector }&=\frac{1}{2}\times \mbox{ base } \times \mbox{ height (of a small triangle)}\\
- &=\frac{1}{2}\times2\pi r \times a \\
-&= \pi r a 
+  \mbox{Area of sector}
+  &= \frac{1}{2}\times \mbox{base} \times \mbox{height (of a small triangle)}\\
+  &=\frac{1}{2}\times2\pi r \times a \\
+  &= \pi r a 
 \end{align*}
-
 
 \westep{Calculate $a$}
 $a$ can be calculated using the Theorem of Pythagoras:
 \begin{equation*}
-a = \sqrt{r^{2} + h^{2}}
+  a = \sqrt{r^{2} + h^{2}}
 \end{equation*}
+
 \westep{Calculate the area of the circular base ($A_{b}$)}
 \begin{equation*}
-A_{b} = \pi r^{2}
+  A_{b} = \pi r^{2}
 \end{equation*}
+
 \westep{Calculate the area of the curved walls ($A_{w}$)}
-\begin{eqnarray*}
-A_{w} &=& \pi r a \\
-&=& \pi r \sqrt{r^{2}+h^{2}}
-\end{eqnarray*}
+\begin{align*}
+  A_{w} &= \pi r a \\
+  &= \pi r \sqrt{r^{2}+h^{2}}
+\end{align*}
+
 \westep{Find the sum of the areas $A$}
-\begin{eqnarray*}
- A &=& A_{b} + A_{w} \\
-  &=& \pi r^{2} + \pi r \sqrt{r^{2}+h^{2}}\\
-&=& \pi r(r + \sqrt{r^{2}+h^{2}})
-\end{eqnarray*}
+\begin{align*}
+  A &= A_{b} + A_{w} \\
+  &= \pi r^{2} + \pi r \sqrt{r^{2}+h^{2}}\\
+  &= \pi r(r + \sqrt{r^{2}+h^{2}})
+\end{align*}
 }
 \end{wex}
 
 \subsection{Volume of pyramids, cones and spheres}
-
 
 \begin{table}[H]
 \newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
@@ -1792,11 +1756,13 @@ A_{w} &=& \pi r a \\
 }
 \end{center} 
 &
-$\begin{aligned}
-\mbox{ Volume} &=  \frac{1}{3} \times \mbox{ area of base } \times\\
-&~~~~~~ \mbox{height of pyramid }\\
-&=\frac{1}{3}\times b^{2} \times H
- \end{aligned}$
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Volume} &=& \frac{1}{3} \times \mbox{area of base } \times\\
+    && \mbox{height of pyramid} \\
+    &=& \frac{1}{3}\times b^{2} \times H
+  \end{array}
+\end{equation*}
 \\ \hline
 
 
@@ -1825,12 +1791,13 @@ $\begin{aligned}
 }
 \end{center}
 &
-
-$\begin{aligned}
-\mbox{Volume} &= \frac{1}{3} \times \mbox{ area of base } \times \\
-&~~~~~~\mbox{ height of pyramid }\\
-&=\frac{1}{3} \times \frac{1}{2}bh \times H
- \end{aligned}$
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Volume} &=& \frac{1}{3} \times \mbox{area of base } \times \\
+    && \mbox{height of pyramid} \\
+    &=& \frac{1}{3} \times \frac{1}{2}bh \times H
+  \end{array}
+\end{equation*}
  \\ \hline
 
 \textbf{Right cone} &
@@ -1852,16 +1819,15 @@ $\begin{aligned}
 \end{pspicture} 
 }
 \end{center}
-
-
-
 &
-
-$\begin{aligned}
-\mbox{Volume} &=  \frac{1}{3} \times \mbox{ area of base } \times\\
-&~~~~~~ \mbox{ height of cone }\\
-&= \frac{1}{3} \times \pi r^2 \times H
- \end{aligned}$\\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{Volume} &=& \frac{1}{3} \times \mbox{area of base } \times \\
+    && \mbox{height of cone} \\
+    &=& \frac{1}{3} \times \pi r^2 \times H
+  \end{array}
+\end{equation*}
+\\ \hline
 
 \textbf{Sphere} &
 \begin{center}
@@ -1876,17 +1842,10 @@ $\begin{aligned}
 \rput(2.6345313,0.2){$r$}
 \end{pspicture} 
 }
-
 \end{center}
-
-
 &
-$\begin{aligned}
-\mbox{Volume} &=  \frac{1}{3} \times 4\pi r^2\\
-&=\frac{4}{3}\pi r^{3}
- \end{aligned}$\\ \hline
-
-
+$\mbox{Volume} = \frac{4}{3}\pi r^{3}$
+\\ \hline
 \end{tabular}
 \end{table}
 
@@ -1920,24 +1879,23 @@ $\begin{aligned}
 }
 \end{center}
 \westep{Select the correct formula and substitute the given values}
-The volume of a square pyramid is 
-$$V=\frac{1}{3} \times b^{2} \times H$$ \\
+\begin{equation*}
+  \mbox{volume} = \frac{1}{3} \times b^{2} \times H
+\end{equation*}
 We are given $b=2$ and $H=3$, therefore
-\begin{eqnarray*}
-\mbox{volume}&=&\frac{1}{3} \times 2^{2} \times 3\\
-&=&\frac{1}{3} \times 12\\
-&=&4\mbox{ cm}^3
-\end{eqnarray*}
+\begin{align*}
+  \mbox{volume} &= \frac{1}{3} \times 2^{2} \times 3 \\
+  &= \frac{1}{3} \times 12 \\
+  &= 4\mbox{ cm}^3
+\end{align*}
 \westep{Write the final answer}
 The volume of the square pyramid is $4\mbox{ cm}^3$.
 }
-
-
 \end{wex}
 
 
 \begin{wex}{Finding the volume of a triangular pyramid}
- {Find the volume of the following triangular pyramid (correct to $1$ decimal place):\\
+{Find the volume of the following triangular pyramid (correct to $1$ decimal place):\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1984,18 +1942,16 @@ The volume of the square pyramid is $4\mbox{ cm}^3$.
 }
 \end{center}
 The height of the base triangle ($h_b$) can be calculated using the Theorem of Pythagoras:
-\\
-
 \begin{align*}
   8^2 &= 4^2+h_b^2\\
   \therefore h_b&=\sqrt{8^2-4^2}\\
-  &=4\sqrt{3}\mbox{ cm}^2\\
+  &=4\sqrt{3}\mbox{ cm}^2
 \end{align*}
 
 \begin{align*}
-\therefore \mbox{ area of base triangle} &= \frac{1}{2} b \times h_b\\
-&= \frac{1}{2} \times 8 \times 4\sqrt{3}\\
-&=16\sqrt{3}\mbox{ cm}^2
+  \therefore \mbox{ area of base triangle} &= \frac{1}{2} b \times h_b \\
+  &= \frac{1}{2} \times 8 \times 4\sqrt{3} \\
+  &= 16\sqrt{3}\mbox{ cm}^2
 \end{align*}
 
 
@@ -2017,26 +1973,27 @@ The height of the base triangle ($h_b$) can be calculated using the Theorem of P
 \end{pspicture} 
 }
 \end{center}
-
 \begin{align*}
- 12^2 &= 4^2+h^2\\
-\therefore H&=\sqrt{12^2-4^2}\\
-&=8\sqrt{2}\mbox{ cm}^2\\
-
+  12^2 &= 4^2+H^2 \\
+  \therefore H &=\sqrt{12^2-4^2} \\
+  &= 8\sqrt{2}\mbox{ cm}^2
 \end{align*}
+
 \westep{Calculate the volume of the pyramid}
 \begin{align*}
-\mbox{ volume} &= \frac{1}{3} \times \frac{1}{2}bh_b \times H \\ 
-&=\frac{1}{3} \times 16\sqrt{3} \times 8\sqrt{2}\\
-&=104,5\mbox{ cm}^3
+  \mbox{volume}
+  &= \frac{1}{3} \times \frac{1}{2}bh_b \times H \\ 
+  &= \frac{1}{3} \times 16\sqrt{3} \times 8\sqrt{2} \\
+  &= 104,5\mbox{ cm}^3
 \end{align*}
+
 \westep{Write the final answer}
 The volume of the triangular pyramid is $104,5\mbox{ cm}^3$.
 }
 \end{wex}
 
 \begin{wex}{Finding the volume of a cone}
- {Find the volume of the following cone (correct to $1$ decimal place):
+{Find the volume of the following cone (correct to $1$ decimal place):
 \begin{center}
  \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2059,24 +2016,26 @@ The volume of the triangular pyramid is $104,5\mbox{ cm}^3$.
 {
 \westep{Find the area of the base}
 \begin{align*}
- \mbox{area of circle} &= \pi r^2\\
-&= \pi3^2\\
-&=9\pi\mbox{ cm}^2
+  \mbox{area of circle} &= \pi r^2 \\
+  &= \pi \times 3^2 \\
+  &= 9\pi\mbox{ cm}^2
 \end{align*}
 
 \westep{Calculate the volume}
 \begin{align*}
- \mbox{volume} &= \frac{1}{3} \times \pi r^{2} \times H\\
-&=\frac{1}{3} \times 9\pi \times 11\\
-&=103,7\mbox{ cm}^3
+  \mbox{volume}
+  &= \frac{1}{3} \times \pi r^{2} \times H \\
+  &= \frac{1}{3} \times 9\pi \times 11 \\
+  &= 103,7\mbox{ cm}^3
 \end{align*}
+
 \westep{Write the final answer}
 The volume of the cone is $ 103,7\mbox{ cm}^3$.
 }
 \end{wex}
 
 \begin{wex}{Finding the volume of a sphere}
- {Find the volume of the following sphere (correct to $1$ decimal place):
+{Find the volume of the following sphere (correct to $1$ decimal place):
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
 {
@@ -2095,83 +2054,74 @@ The volume of the cone is $ 103,7\mbox{ cm}^3$.
 {
 \westep{Use the formula to find the volume}
 \begin{align*}
- \mbox{volume} &= \frac{4}{3} \pi r^3\\
-&= \frac{4}{3}\pi(4)^2\\
-&=268,1\mbox{ cm}^3
+  \mbox{volume} &= \frac{4}{3} \pi r^3 \\
+  &= \frac{4}{3}\pi(4)^3 \\
+  &= 268,1\mbox{ cm}^3
 \end{align*}
+
 \westep{Write the final answer}
 The volume of the sphere is $268,1\mbox{ cm}^3$
 }
-
 \end{wex}
+
 \begin{wex}{Finding the volume of a complex object}
- {A triangular pyramid is placed on top of a triangular prism, as shown below. 
-The base of the prism is an equilateral triangle of side length $20$ cm and the height of the prism is $42$ cm. The pyramid has a height of $12$ cm. Answer the following questions (correct to $1$ decimal place):
-
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item Calculate the total volume of the object.
-\item Calculate the surface area of each exposed face of the pyramid.
-\item Calculate the total surface area of the object.
-\end{enumerate}
-
+{A triangular pyramid is placed on top of a triangular prism, as shown
+  below. The base of the prism is an equilateral triangle of side
+  length $20$ cm and the height of the prism is $42$ cm. The pyramid
+  has a height of $12$ cm. Calculate the total volume of the object.
 \begin{center}
-
-\scalebox{1} % Change this value to rescale the drawing.
-{
-\begin{pspicture}(0,-2.0664062)(5.57,2.0464063)
-\definecolor{color338b}{rgb}{0.6,0.6,0.6}
-\definecolor{color376b}{rgb}{0.8,0.8,0.8}
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.45,0.6053162)(3.87,1.7664063)(3.87,-0.6525037)(3.45,-1.8135937)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.03,2.0264063)(3.87,1.8321205)(3.45,0.6064063)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](3.03,2.0264063)(2.23,1.3264062)(3.43,0.62640625)
-\pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](2.25,1.3264062)(3.45,0.62640625)(3.45,-1.8735938)(2.25,-1.1735938)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,1.3664062)(3.83,1.8064063)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,-1.1735938)(3.83,-0.61359376)
-\psline[linewidth=0.04cm](3.03,-0.75359374)(3.13,-0.9735938)
-\psline[linewidth=0.04cm](2.93,-1.4135938)(2.77,-1.6135937)
-\psline[linewidth=0.04cm](3.53,-1.1335938)(3.77,-1.1935937)
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.265,-1.8635937){$20$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(4.765,0.5964062){$42$ cm}
-\psline[linewidth=0.03,linestyle=dotted,dotsep=0.1cm](3.03,1.9664062)(3.05,1.2664063)(2.79,1.0464063)(2.79,1.0464063)(2.79,1.0464063)(2.75,1.0464063)
-\psline[linewidth=0.04cm](3.05,1.6064062)(1.51,1.6064062)
-% \usefont{T1}{ptm}{m}{n}
-\rput(0.705,1.6164062){$12$ cm}
-\psline[linewidth=0.02](3.09,1.4064063)(2.97,1.3464062)(2.97,1.2064062)
-\end{pspicture} 
-}
+  \scalebox{1}{% Change this value to rescale the drawing.
+    \begin{pspicture}(0,-2.0664062)(5.57,2.0464063)
+      \definecolor{color338b}{rgb}{0.6,0.6,0.6}
+      \definecolor{color376b}{rgb}{0.8,0.8,0.8}
+      \pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.45,0.6053162)(3.87,1.7664063)(3.87,-0.6525037)(3.45,-1.8135937)
+      \pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color338b](3.03,2.0264063)(3.87,1.8321205)(3.45,0.6064063)
+      \pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](3.03,2.0264063)(2.23,1.3264062)(3.43,0.62640625)
+      \pspolygon[linewidth=0.04,fillstyle=solid,fillcolor=color376b](2.25,1.3264062)(3.45,0.62640625)(3.45,-1.8735938)(2.25,-1.1735938)
+      \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,1.3664062)(3.83,1.8064063)
+      \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.25,-1.1735938)(3.83,-0.61359376)
+      \psline[linewidth=0.04cm](3.03,-0.75359374)(3.13,-0.9735938)
+      \psline[linewidth=0.04cm](2.93,-1.4135938)(2.77,-1.6135937)
+      \psline[linewidth=0.04cm](3.53,-1.1335938)(3.77,-1.1935937)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.265,-1.8635937){$20$ cm}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(4.765,0.5964062){$42$ cm}
+      \psline[linewidth=0.03,linestyle=dotted,dotsep=0.1cm](3.03,1.9664062)(3.05,1.2664063)(2.79,1.0464063)(2.79,1.0464063)(2.79,1.0464063)(2.75,1.0464063)
+      \psline[linewidth=0.04cm](3.05,1.6064062)(1.51,1.6064062)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(0.705,1.6164062){$12$ cm}
+      \psline[linewidth=0.02](3.09,1.4064063)(2.97,1.3464062)(2.97,1.2064062)
+    \end{pspicture} 
+  }
 \end{center}
 }
 {
-\westep{Calculate the volume of the object}
-a) Calculate the volume of the prism\\
-\\
-i) Find the height of the base triangle
+\westep{Calculate the volume of the prism}
+(a) Find the height of the base triangle
 \begin{center}
- \scalebox{0.8}
-{
-\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
-\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
-\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
-\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.165,-1.9535937){\LARGE $10$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.945,0.62640625){\LARGE $20$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.5845313,0.04640625){\LARGE $h_b$}
-\end{pspicture} 
-}
+  \scalebox{0.8}{
+    \begin{pspicture}(0,-2.1564062)(4.64,2.097329)
+      \pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
+      \psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
+      \psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(3.165,-1.9535937){\LARGE $10$ cm}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(3.945,0.62640625){\LARGE $20$ cm}
+      % \usefont{T1}{ptm}{m}{n}
+      \rput(2.5845313,0.04640625){\LARGE $h_b$}
+    \end{pspicture} 
+  }
 \end{center}
 
 \begin{align*}
- 20^2 &= 10^2 + h_b^2\\
-\therfore h_b&= \sqrt{20^2-10^2}\\
-&=10 \sqrt{3}\mbox{ cm}^3
+  20^2 &= 10^2 + h_b^2 \\
+  \therefore h_b &= \sqrt{20^2-10^2} \\
+  &= 10 \sqrt{3}\mbox{ cm}^3
 \end{align*}
 
-ii) Find the area of the base triangle
+(b) Find the area of the base triangle
 % \begin{center}
 % 
 % \scalebox{0.8} % Change this value to rescale the drawing.
@@ -2191,91 +2141,79 @@ ii) Find the area of the base triangle
 % \end{center}
 
 \begin{align*}
-\mbox{Area of base triangle } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
-&=100 \sqrt{3}
+  \mbox{area of base triangle}
+  &= \frac{1}{2} \times 20 \times 10 \sqrt{3} \\
+  &= 100 \sqrt{3}
 \end{align*}
 
-iii) Find the volume of the prism
+(c) Find the volume of the prism
 \begin{align*}
-\therefore \mbox{Volume of prism} &= \mbox{area of base triangle }\times \mbox{ height of prism}\\
-&=100 \sqrt{3} \times 42\\
-&=42000\sqrt{3}\mbox{ cm}^3
+  \therefore \mbox{volume of prism}
+  &= \mbox{area of base triangle} \times \mbox{height of prism} \\
+  &= 100 \sqrt{3} \times 42 \\
+  &= 4~200\,\sqrt{3}\mbox{ cm}^3
 \end{align*}
 
-b) Find the volume of the pyramid\\
-\\
-The area of the base triangles is equal to the area of the base of the pyramid.
-
+\westep{Find the volume of the pyramid}
+The area of the base triangle is equal to the area of the base of the pyramid.
 \begin{align*}
-\therefore \mbox{Volume of pyramid} &= \frac{1}{3} (\mbox{area of base}) \times H\\
-&= \frac{1}{3} \times 100 \sqrt{3} \times 12 \\
-
-&=400\sqrt{3}\mbox{ cm}^3
+  \therefore \mbox{volume of pyramid}
+  &= \frac{1}{3} (\mbox{area of base}) \times H \\
+  &= \frac{1}{3} \times 100 \sqrt{3} \times 12 \\
+  &= 400\sqrt{3}\mbox{ cm}^3
 \end{align*}
-c) Calculate the total volume
+
+\westep{Calculate the total volume}
 \begin{align*}
-\mbox{Total volume } &= 42000\sqrt{3}+400\sqrt{3}\\
-&= 7274,661 + 692,8\\
-&=7967,4\mbox{ cm}^3
+  \mbox{total volume}
+  &= 4~200\,\sqrt{3}+400\sqrt{3} \\
+  &= 4~600\,\sqrt{3} \\
+  &= 7~967,4\mbox{ cm}^3
 \end{align*}
-
-Therefore the total volume of the object is $7967,4 \mbox{ cm}^3$.
-
-\westep{Calculate the surface area of each exposed face of the pyramid}
-a) To calculate the surface area of the sides of the pyramid, we need to calculate its slant height ($h_s$)
-\begin{center}
- \scalebox{0.9}
-{
-\begin{pspicture}(0,-2.1564062)(4.64,2.097329)
-\pstriangle[linewidth=0.04,dimen=outer](2.24,-1.6435938)(4.48,3.76)
-\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](2.28,1.9164063)(2.16,-1.6035937)
-\psframe[linewidth=0.04,dimen=outer](2.5,-1.2635938)(2.14,-1.6235938)
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.5,-1.9535937){ $h_b$ = $10\sqrt{3}$ cm}
-% \usefont{T1}{ptm}{m}{n}
-\rput(3.945,0.62640625){ $h_s$}
-% \usefont{T1}{ptm}{m}{n}
-\rput(2.35,0.04640625){$H = 12$ cm}
-\end{pspicture} 
+Therefore the total volume of the object is $7~967,4\mbox{ cm}^3$.
 }
-\end{center}
-b) We can calculate $h_s$ by bisecting the pyramid and using the Theorem of Pythagoras
+\end{wex}
 
+\begin{wex}{Finding the surface area of a complex object}
+{With the same complex object as in the previous Worked Example, you are given
+  the additional information that the slant height $h_s$ of the
+  triangular pyramid is $13,3$ cm. Now calculate the total surface area
+  of the object.}
+{
+\westep{Calculate the surface area of each exposed face of the pyramid}
 \begin{align*}
- h_s^2 &= \Big(\frac{h_b}{2}\Big)^{2} + H^{2}\\
-&= \Big(\frac{10\sqrt{3}}{2}\Big)^{2} + 12^{2}\\
-\therefore h_s&=\sqrt{219} \mbox{ cm}
+  \mbox{area of one pyramid face}
+  &= \frac{1}{2}b \times h_s \\
+  &= \frac{1}{2} \times 20 \times 13,3 \\
+  &= 133\mbox{ cm}^2
 \end{align*}
+Because the base triangle is equilateral, each face has the same base,
+and therefore the same surface area. Therefore the surface area for
+each face of the pyramid is $133$ cm$^{2}$.
 
-c) We can now calculate the area of each face of the pyramid
+\westep{Calculate the surface area of each side of the prism}
+Each side of the prism is a rectangle with base $b = 20$ cm and height
+$h_p = 42$ cm.
 \begin{align*}
-\mbox{Area of one pyramid face}&= \frac{1}{2}b \times h_s\\
-&= \frac{1}{2} \times 20 \times \sqrt{219}\\
-&=10\sqrt{219}\mbox{ cm}^2
+  \mbox{area of one prism side}
+  &= b \times h_p \\
+  &= 20 \times 42 \\
+  &= 840\mbox{ cm}^2
 \end{align*}
-Because the base triangle is equilateral, each face has the same base, and therefore the same surface area. \\
-Therefore the surface area for each face of the pyramid is $148$ cm$^{2}$.
+Because the base triangle is equilateral, each side of the prism has
+the same area. Therefore the surface area for each side of the prism
+is $840$ cm$^{2}$.
 
 \westep{Calculate the total surface area of the object}
-We need to calculate the surface area of the sides of the prism. This is made up of $3$ rectangles with base $b = 20$ cm and height $h_p = 42$ cm.
-\\
-\\
-a) Calculate the  area of the sides of the prism
-\begin{align*}
- \mbox{Area of prism sides} &= 3(b \times h_p) \\
-&= 3(20 \times 42)\\
-&=2520\mbox{ cm}^2
-\end{align*}
-
-
-b) Calculate the total surface area of the object
-\begin{align*}
- \mbox{Total surface area} &= \mbox{ area of base of prism } + \mbox{ area of sides of prism } + \\
-&~~~~~~~~~\mbox{ area of exposed faces of pyramid } \\
-&= (100 \sqrt{3}) + 2520 + 3(10\sqrt{219})\\
-&=3137,2\mbox{ cm}^3
-\end{align*}
-Therefore the total surface area (of the exposed faces) of the object is $3137,2$ cm$^{2}$.
+\begin{equation*}
+  \begin{array}{r@{\;}c@{\;}l}
+    \mbox{total surface area} &=& \mbox{area of base of prism} + \mbox{area of sides of prism } + \\
+                              & & \mbox{area of exposed faces of pyramid} \\
+    &=& (100 \sqrt{3}) + 3(840) + 3(133) \\
+    &=& 3~092,2\mbox{ cm}^3
+  \end{array}
+\end{equation*}
+Therefore the total surface area (of the exposed faces) of the object is $3~092,2$ cm$^{2}$.
 }
 \end{wex}
 
@@ -2320,7 +2258,7 @@ Therefore the total surface area (of the exposed faces) of the object is $3137,2
 % \usefont{T1}{ptm}{m}{n}
 \rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
-\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
 \rput(5.04,-2.8101408){$12$ cm}
 \psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
@@ -2381,7 +2319,7 @@ Find the volume of the following objects (round off to $1$ decimal place if need
 % \usefont{T1}{ptm}{m}{n}
 \rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
-\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
 \rput(5.04,-2.8101408){$12$ cm}
 \psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
@@ -2440,7 +2378,7 @@ It is possible to see a relationship between the change in dimensions and the re
 in surface area and volume. These relationships make it simpler to
 calculate the new volume or surface area of an object when its dimensions are
 scaled up or down.\par
-\mindsetvid{increasing surface area}{VMctl}
+\mindsetvid{Increasing surface area}{VMctl}
 Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and
 three of its dimensions by a constant factor of $5$ and calculate the new volume and surface area.\par
 \begin{center}
@@ -2478,14 +2416,22 @@ Original dimensions
 }
 \end{center}
 &
- \begin{aligned}
-  $V &= l \times b \times h \\
- &= lbh$
-\end{aligned} & 
-\begin{aligned} 
- $A&=2[(l\times h) + (l \times b)+ (b \times h)]\\
-&= 2(lh + lb + bh)$
-\end{aligned} \\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V
+    &= l \times b \times h \\
+    &= lbh
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  A
+  &= 2[(l\times h) + (l \times b)+ (b \times h)] \\
+  &= 2(lh + lb + bh)
+  \end{array}
+\end{equation*}
+\\ \hline
 
 Multiply one dimension by $5$ 
 \begin{center}
@@ -2511,7 +2457,7 @@ Multiply one dimension by $5$
 \usefont{T1}{ppl}{m}{n}
 \rput(1.1145313,-1.2439559){$b$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.6345313,0.13604417){$h$}
+\rput(1.6345313,0.13604417){$5h$}
 \psline[linewidth=0.02cm](1.09,1.3260442)(1.09,-0.8539558)
 \psline[linewidth=0.02cm](0.6927914,-0.12160144)(1.1021153,0.013442772)
 \psline[linewidth=0.02cm](0.1996086,0.004067012)(0.6954797,-0.11944846)
@@ -2526,16 +2472,23 @@ Multiply one dimension by $5$
 }
 \end{center}
 & 
-
-\begin{aligned}
-  $V_1 &= l \times b \times 5h \\
- &= 5(lbh)\\
-&=5V$
-\end{aligned} & 
-\begin{aligned} 
- $A_1&=2[(l\times 5h) + (l \times b)+ (b \times 5h)]\\
-&= 2(5lh + lb + 5bh)$
-\end{aligned} \\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  V_1
+  &= l \times b \times 5h \\
+  &= 5(lbh) \\
+  &= 5V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+  A_1
+  &= 2[(l\times 5h) + (l \times b)+ (b \times 5h)] \\
+  &= 2(5lh + lb + 5bh)
+  \end{array}
+\end{equation*}
+\\ \hline
 
 Multiply two dimensions by $5$ 
 \begin{center}
@@ -2566,13 +2519,13 @@ Multiply two dimensions by $5$
 \psline[linewidth=0.02cm](0.12000524,1.5492333)(0.62503105,1.696225)
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.7234125)(2.6,-1.3234125)
 \usefont{T1}{ppl}{m}{n}
-\rput(1.0845313,-1.3334125){$l$}
+\rput(1.0845313,-1.3334125){$5l$}
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.8,-1.3034126)(3.18,-1.1634126)
 \usefont{T1}{ppl}{m}{n}
 \rput(3.1045313,-1.4934125){$b$}
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.38,1.0965874)(3.36,-0.9634125)
 \usefont{T1}{ppl}{m}{n}
-\rput(3.7845314,0.04658747){$h$}
+\rput(3.7845314,0.04658747){$5h$}
 \psline[linewidth=0.02cm](3.1573904,1.1145076)(3.1573904,-0.9990659)
 \psline[linewidth=0.02cm](0.13143557,1.5411004)(2.707602,0.9516615)
 \psline[linewidth=0.02cm](0.13143557,1.1532887)(2.707602,0.56384987)
@@ -2585,16 +2538,23 @@ Multiply two dimensions by $5$
 
 \end{center}
 & 
-
-\begin{aligned}
-  $V_2 &= 5l \times b \times 5h \\
- &= 5.5(lbh)\\
-&=5^2 \times V$
-\end{aligned} & 
-\begin{aligned} 
- $A_2&=2[(5l\times 5h) + (5l \times b)+ (b \times 5h)]\\
-&= 2\times 5(5lh + lb + bh)$
-\end{aligned} \\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_2
+    &= 5l \times b \times 5h \\
+    &= 5.5(lbh) \\
+    &= 5^2 \times V
+  \end{array}
+\end{equation*}
+&
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    A_2
+    &= 2[(5l\times 5h) + (5l \times b)+ (b \times 5h)] \\
+    &= 2\times 5(5lh + lb + bh)
+  \end{array}
+\end{equation*}
+\\ \hline
 
 Multiply all three dimensions by $5$ 
 \begin{center}
@@ -2621,13 +2581,13 @@ Multiply all three dimensions by $5$
 \psline[linewidth=0.02cm](0.10143557,-0.8138731)(2.677602,-1.403312)
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.01,-1.0435938)(2.61,-1.6435938)
 \usefont{T1}{ppl}{m}{n}
-\rput(1.0945313,-1.6535938){\LARGE$l$}
+\rput(1.0945313,-1.6535938){\LARGE$5l$}
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(2.81,-1.6035937)(4.81,-1.0035938)
 \usefont{T1}{ppl}{m}{n}
-\rput(3.9545312,-1.5735937){\LARGE$ b$}
+\rput(3.9545312,-1.5735937){\LARGE$ 5b$}
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.03,1.2764063)(5.01,-0.7835938)
 \usefont{T1}{ppl}{m}{n}
-\rput(5.434531,0.22640625){\LARGE$h$}
+\rput(5.434531,0.22640625){\LARGE$5h$}
 \psline[linewidth=0.02cm](0.97357035,1.4960438)(3.5497367,0.90660495)
 \psline[linewidth=0.02cm](3.53,0.9164063)(3.5473905,-1.159247)
 \psline[linewidth=0.02cm](1.3935704,1.6160438)(3.9697368,1.026605)
@@ -2651,20 +2611,25 @@ Multiply all three dimensions by $5$
 }
 \end{center}
 & 
-
-
-\begin{aligned}
-  $V_3 &= 5l \times 5b \times 5h \\
- &= 5^3(lbh)\\
-&=5^3V$
-\end{aligned} & 
-\begin{aligned} 
- $A_3&=2[(5l\times 5h) + (5l \times 5b)+ (5b \times 5h)]\\
-&= 2(5^2 lh + 5^2 lb +  5^2 bh)\\
-&=2. \times 5^2 \times 2(lh + lb + bh)\\
-&=5^2.2(lh+lb+bh)\\
-&=5^2. A$
-\end{aligned} \\ \hline
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_3
+    &= 5l \times 5b \times 5h \\
+    &= 5^3(lbh) \\
+    &= 5^3V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    A_3
+    &= 2[(5l\times 5h) + (5l \times 5b)+ (5b \times 5h)]\\
+    &= 2(5^2 lh + 5^2 lb +  5^2 bh) \\
+    &= 5^2 \times 2(lh + lb + bh) \\
+    &= 5^2 A
+  \end{array}
+\end{equation*}
+\\ \hline
 
 Multiply all three dimensions by $k$ 
 \begin{center}
@@ -2682,13 +2647,13 @@ Multiply all three dimensions by $k$
 \psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](0.73289627,0.015375933)(2.3,-0.3409375)
 \psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.84093744)(3.1,-1.5809375)
 \usefont{T1}{ppl}{m}{n}
-\rput(1.5356251,-1.5909375){\LARGE $l$}
+\rput(1.5356251,-1.5909375){\LARGE $kl$}
 \psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.54,-1.5409374)(6.14,-0.74093753)
 \usefont{T1}{ppl}{m}{n}
-\rput(4.855625,-1.4509375){\LARGE $b$}
+\rput(4.855625,-1.4509375){\LARGE $kb$}
 \psline[linewidth=0.02cm,linestyle=dotted,dotsep=0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(5.62,1.6790625)(5.62,-0.6409375)
 \usefont{T1}{ppl}{m}{n}
-\rput(5.975625,0.6890625){\LARGE $h$}
+\rput(5.975625,0.6890625){\LARGE $kh$}
 \psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.5835704,1.4987)(4.1597366,0.90926117)
 \psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](2.0035703,1.6187001)(4.5797367,1.0292612)
 \psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](4.56,1.0390625)(4.55739,-1.0365908)
@@ -2732,27 +2697,31 @@ Multiply all three dimensions by $k$
 }
 \end{center}
 & 
-
-
-\begin{aligned}
-  $V_k &= kl \times kb \times kh \\
- &= k^3(lbh)\\
-&=k^3V$
-\end{aligned} & 
-\begin{aligned} 
- $A_k&=2[(kl\times kh) + (kl \times kb)+ (kb \times kh)]\\
-% &= 2(5^2 lh + 5^2 lb +  5^2 bh)\\
-% &=2. \times 5^2 \times 2(lh + lb + bh)\\
-&=k^2.2(lh+lb+bh)\\
-&=k^2. A$
-\end{aligned} \\ \hline
- \end{tabular}
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    V_k
+    &= kl \times kb \times kh \\
+    &= k^3(lbh) \\
+    &= k^3V
+  \end{array}
+\end{equation*}
+& 
+\begin{equation*}
+  \begin{array}{r@{\;}l}
+    A_k
+    &= 2[(kl\times kh) + (kl \times kb)+ (kb \times kh)] \\
+    &= k^2 \times 2(lh+lb+bh) \\
+    &= k^2 A
+  \end{array}
+\end{equation*}
+\\ \hline
+\end{tabular}
 
 \end{table}
 \end{center}
 
 
-\begin{wex}{Calculating the new dimensions of a square prism}
+\begin{wex}{Calculating the new dimensions of a rectangular prism}
 {Consider a square prism with a height of $4$ cm and base lengths of $3$ cm.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -2774,61 +2743,64 @@ Multiply all three dimensions by $k$
 \end{center}
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item Calculate the original surface area and volume.
-\item Calculate the new surface area ($A_n$) and volume ($V_n$) if the base length is multiplied by a constant factor of $3$.
-\item Express the new surface area and volume as a factor of the original surface area and volume.
+\item Calculate the surface area and volume.
+\item Calculate the new surface area ($A_n$) and volume ($V_n$) if the
+  base lengths are multiplied by a constant factor of $3$.
+\item Express the new surface area and volume as a factor of the
+  original surface area and volume.
 \end{enumerate}
 }
 {
 \westep{Calculate the original volume and surface area}
 \begin{align*}
-V&=l\times b\times h\\
-&=3\times3\times4\\
-&= 36\mbox{ cm}^3
+  V
+  &= l \times b \times h \\
+  &= 3 \times 3 \times 4 \\
+  &= 36\mbox{ cm}^3 \\
+  \\
+  A
+  &= 2[(l \times h) + (l \times b) + (b \times h)] \\
+  &= 2[(3 \times 4) + (3 \times 3) + (3 \times 4)] \\
+  &= 66\mbox{ cm}^2
 \end{align*}
-\begin{align*}
-A &= 2[(l \times h) + (l \times b) + (b \times h)]\\
-&= 2[(3 \times 4) + (3 \times 3) + (3 \times 4)]\\
-&= 66 \mbox{ cm}^2
-\end{align*}
+
 \westep{Calculate the new volume and surface area}
 Two of the dimensions are multiplied by a factor of $3$.
 \begin{align*}
-V_n&=3l\times 3b \times 3h\\
-&=3.3\times3.3\times4\\
-&= 324\mbox{ cm}^3
+  V_n
+  &= 3l \times 3b \times h \\
+  &= 3.3 \times 3.3 \times 4 \\
+  &= 324\mbox{ cm}^3 \\
+  \\
+  A_n
+  &= 2[(3l \times h) + (3l \times 3b) + (3b \times h)] \\
+  &= 2[(3.3 \times 4) + (3.3 \times 3.3) + (3.3 \times 4)] \\
+  &= 306\mbox{ cm}^2
 \end{align*}
-\begin{align*}
-A_n &= 2[(3l \times h) + (3l \times 3b) + (3b \times h)]\\
-&= 2[(3.3 \times 4) + (3.3 \times 3.3) + (3.3 \times 4)]\\
-&= 306 \mbox{ cm}^2
-\end{align*}
+
 \westep{Express the new dimensions as a factor of the original dimensions}
 \begin{align*}
-V&=36\\
-V_n&= 324\\
-\dfrac{V_n}{V} &=\dfrac{324}{36}\\
-&=9\\
-\therefore V_n&=9V\\
-&=3^2 V
-\end{align*}
-\begin{align*}
-A &= 66 \\
-A_n&= 306\\
-\dfrac{A_n}{A} &=\dfrac{306}{66}\\
-\therefore A_n&= \dfrac{306}{66}A\\
-&=\dfrac{51}{11}A\\
-
+  V &= 36 \\
+  V_n &= 324 \\
+  \frac{V_n}{V} &= \frac{324}{36} \\
+  &= 9 \\
+  \therefore V_n &= 9V \\
+  &= 3^2 V \\
+  \\
+  A &= 66 \\
+  A_n &= 306 \\
+  \frac{A_n}{A} &= \frac{306}{66} \\
+  \therefore A_n &= \frac{306}{66}A \\
+  &= \frac{51}{11}A\\
 \end{align*}
 }
 \end{wex}
 
-We can also express
-this effect in general terms when multiplying by any common factor of value $k$.
 
 \begin{wex}{Multiplying the dimensions of a rectangular prism by $k$}
-{Prove that if the height of a rectangular prism with dimensions $l$,$b$ and $h$ is multiplied by a
-constant value of $k$, the volume will also increase by a factor $k$.
+{Prove that if the height of a rectangular prism with dimensions $l$,
+  $b$ and $h$ is multiplied by a constant value of $k$, the volume
+  will also increase by a factor $k$.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2860,25 +2832,29 @@ constant value of $k$, the volume will also increase by a factor $k$.
 }
 {
 \westep{Calculate the original volume}
-We are given the original dimensions $l$, $b$ and $h$\\
-and so the original volume is $V = l \times b \times h$\\
-\westep{Calculate the new volume}
-The new dimensions are $l$, $b$, and $kh$\\
-and so the new volume is 
-\begin{align*}
-V_n &= l \times b \times (kh)\\
-& = k(lbh)\\
-&= kV
-\end{align*}
-\westep{Write the final answer}
-If the height of a rectangular prism is multiplied by a constant $k$, then the volume also increases by a factor of $k$.
+We are given the original dimensions $l$, $b$ and $h$ and so the
+original volume is $V = l \times b \times h$.
 
+\westep{Calculate the new volume}
+The new dimensions are $l$, $b$, and $kh$ and so the new volume is
+\begin{align*}
+  V_n
+  &= l \times b \times (kh) \\
+  &= k(lbh) \\
+  &= kV
+\end{align*}
+
+\westep{Write the final answer}
+If the height of a rectangular prism is multiplied by a constant $k$,
+then the volume also increases by a factor of $k$.
 }
 \end{wex}
 
 \begin{wex}{Multiplying the dimensions of a cylinder by $k$}
-{Consider a cylinder with a radius of $r$ and a height of $h$. Calculate the new volume and surface area (expressed in terms of $r$ and $h$)
-if the radius is multiplied by a constant factor of $k$.
+{Consider a cylinder with a radius of $r$ and a height of
+  $h$. Calculate the new volume and surface area (expressed in terms
+  of $r$ and $h$) if the radius is multiplied by a constant factor of
+  $k$.
 \begin{center}
 \begin{pspicture}(0,-1.6)(3.5434375,1.6) 
 \psellipse[linewidth=0.04,dimen=outer](1.29,-1.09)(1.27,0.51) 
@@ -2894,23 +2870,23 @@ if the radius is multiplied by a constant factor of $k$.
 {
 \westep{Calculate the original volume and surface area}
 \begin{align*}
- V&= \pi r^2 \times h\\
+  V &= \pi r^2 \times h\\
+  A &= \pi r^2 + 2\pi rh
 \end{align*}
-\begin{align*}
-A&= \pi r^2 + 2\pi rh
-\end{align*}
+
 \westep{Calculate the new volume and surface area}
-The new dimensions are $kr$ and $h$
+The new dimensions are $kr$ and $h$.
 \begin{align*}
- V_n&= \pi (kr)^{2} \times h\\
-&= \pi k^{2}r^{2} \times h\\
-&=k^{2} \times \pi r^{2} h\\
-&= k^{2}V
-\end{align*}
-\begin{align*}
-A_n&= \pi (kr)^{2} + 2\pi (kr)h\\
-&= \pi k^{2}r^{2} +2\pi krh\\
-&= k^2(\pi r^2) + k(2\pi rh) 
+  V_n
+  &= \pi (kr)^{2} \times h \\
+  &= \pi k^{2}r^{2} \times h \\
+  &= k^{2} \times \pi r^{2} h \\
+  &= k^{2}V \\
+  \\
+  A_n
+  &= \pi (kr)^{2} + 2\pi (kr)h \\
+  &= \pi k^{2}r^{2} +2\pi krh \\
+  &= k^2(\pi r^2) + k(2\pi rh) 
 \end{align*}
 }
 \end{wex}
@@ -2920,8 +2896,8 @@ A_n&= \pi (kr)^{2} + 2\pi (kr)h\\
  \item If the height of a prism is doubled, how much will its volume increase?
 \item Describe the change in the volume of a rectangular prism if:
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-\item length and breadth increase by a constant factor of $3$
-\item length, breadth and height are multiplied by a constant factor of $2$
+\item length and breadth increase by a constant factor of $3$;
+\item length, breadth and height are multiplied by a constant factor of $2$.
 \end{enumerate}
 \item Given a prism with a volume of $493$ cm$^{3}$ and a surface area of $6007$ cm$^{2}$, 
 find the new surface area and volume for a prism if all dimensions are increased by a constant factor of $4$. 
@@ -2936,48 +2912,50 @@ find the new surface area and volume for a prism if all dimensions are increased
 \summary{VMdml}
 \begin{itemize}
 \item Area is the two dimensional space inside the boundary of a flat
-  object. It is measured is square units.
+  object. It is measured in square units.
 \item Area formulae:
   \begin{itemize}
-  \item square $= b \times h$
-  \item rectangle $= b \times h$
-  \item triangle $= \frac{1}{2} b \times h$
-  \item trapezium $= \frac{1}{2} (a+b) \times h$
-  \item parallelogram $= b \times h$
-  \item circle $= \pi r^2$
+  \item square: $s^2$
+  \item rectangle: $b \times h$
+  \item triangle: $\frac{1}{2} b \times h$
+  \item trapezium: $\frac{1}{2} (a+b) \times h$
+  \item parallelogram: $b \times h$
+  \item circle: $\pi r^2$
   \end{itemize}
 \item Surface area is the total area of the exposed or outer surfaces of a prism.
 \item A net is the unfolded ``plan'' of a solid.
 \item Volume is the three dimensional space occupied by an object, or the contents of an
   object. It is measured in cubic units.
   \begin{itemize}
-  \item Volume of a rectangular prism $=l \times b \times h$
-  \item Volume of a triangle prism $= (\frac{1}{2} b \times h) \times H$
-  \item Volume of a square prism or cube $=b^2 \times h$
-  \item Volume of a cylinder$=\pi r^2 \times h$
+  \item Volume of a rectangular prism: $l \times b \times h$
+  \item Volume of a triangular prism: $(\frac{1}{2} b \times h) \times H$
+  \item Volume of a square prism or cube: $s^3$
+  \item Volume of a cylinder: $\pi r^2 \times h$
   \end{itemize}
-\item A pyramid is a geometric solid that has a polygon base and sides that converge at a
-  point called the apex (in other words the sides are not perpendicular to the base).
+\item A pyramid is a geometric solid that has a polygon as its base
+  and sides that converge at a point called the apex. The sides are
+  not perpendicular to the base.
 \item Surface area formulae:
   \begin{itemize}
-  \item square pyramid $=b(b+2h)$
-  \item triangular pyramid $= \frac{1}{2}b(h_b +3h_s)$
-  \item right cone $= \pi r(r+h_s)$
-  \item sphere $= 4\pi r^2$
+  \item square pyramid: $b(b+2h)$
+  \item triangular pyramid: $\frac{1}{2}b(h_b +3h_s)$
+  \item right cone: $\pi r(r+h_s)$
+  \item sphere: $4\pi r^2$
   \end{itemize}
 \item Volume formulae:
   \begin{itemize}[noitemsep]
-  \item square pyramid $=\frac{1}{3} \times b^2 \times H$
-  \item triangular pyramid $= \frac{1}{3} \times \frac{1}{2}bh \times H$
-  \item right cone $= \frac{1}{3} \times \pi r^2 \times H$
-  \item sphere $= \frac{1}{3} \times 4\pi r^2$
+  \item square pyramid: $\frac{1}{3} \times b^2 \times H$
+  \item triangular pyramid: $\frac{1}{3} \times \frac{1}{2}bh \times H$
+  \item right cone: $\frac{1}{3} \times \pi r^2 \times H$
+  \item sphere: $\frac{4}{3} \pi r^3$
   \end{itemize}
-\item Multiplying one or more dimensions of a prism or cylinder by a constant $k$ affects the surface area and volume.
+\item Multiplying one or more dimensions of a prism or cylinder by a
+  constant $k$ affects the surface area and volume.
 \end{itemize}
 
 \begin{eocexercises}{}
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
-\item Consider the solids below and answer the questions that follow (correct to one decimal place, if necessary):
+\item Consider the solids below and answer the questions that follow (correct to $1$ decimal place, if necessary):
   \begin{center}
     \scalebox{0.8}{% Change this value to rescale the drawing.
       \begin{pspicture}(0,-3.9464064)(10.693593,3.9264061)
@@ -3036,8 +3014,8 @@ find the new surface area and volume for a prism if all dimensions are increased
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
   \item Calculate the surface area of each solid.
   \item Calculate volume of each solid.
-  \item If each dimension of the solid is increased by a factor of $3$, calculate the new surface area of each solid.
-  \item If each dimension of the solid is increased by a factor of $3$, calculate the new volume of each solid.
+  \item If each dimension of the solids is increased by a factor of $3$, calculate the new surface area of each solid.
+  \item If each dimension of the solids is increased by a factor of $3$, calculate the new volume of each solid.
   \end{enumerate}
 \item Consider the solids below:
   \begin{center}

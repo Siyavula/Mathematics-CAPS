@@ -1,16 +1,14 @@
 \chapter{ Meting }  
-This chapter examines the surface areas and volumes of three dimensional objects, otherwise
-known as solids. In order to work with these, you need to know how to calculate the surface
-area and perimeter of the two dimensional shapes below.
+Hierdie hoofstuk ondersoek die buite-oppervlaktes en volumes van die drie-dimensionele voorwerpe, bekend as vaste liggame. Om hiermee te werk, moet jy weet hoe om die oppervlakte en omtrek van twee-dimensionele voorwerpe te bereken.
 
-\section{Oppervlakte van Poligone}
-\Definition{Area}{Area is the two dimensional space inside the boundary of a flat object. It is measured is square units.}
+\section{Oppervlakte van poligone}
+\Definition{Area}{Area is'n twee-dimensionele ruimte binne die grense van 'n plat voorwerp. Dit word gemeet in vierkante eenheide.}
 \begin{table}[H]
 \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
 \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
 \begin{tabular}{|C|D|C|}
 \hline
-\textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
+\textbf{Naam} & \textbf{Vorm} & \textbf{Formule} \\ \hline
  Vierkant &
         \begin{center}
 \scalebox{0.9}{
@@ -119,13 +117,13 @@ sirkel &
 %\caption{Remember that surface area is measured in square units, for example $cm^2$, $m^2$ or $mm^2$.}
 \end{table}
 
-       \Note{Onthou area word gemeet in vierkante eenhede: e.g. cm$^2$, m$^2$ or mm$^2$.}     
+       \Note{Onthou area word gemeet in vierkante eenhede: b.v. cm$^2$, m$^2$ of mm$^2$.}     
 
 \mindsetvid{area and perimeter}{VMdxu}%Khan Academy
 \par
 \mindsetvid{area of a circle}{VMdya}%Khan academy
 
-\begin{wex}{Finding the area of a polygon}{
+\begin{wex}{Bepaaling van die oppervlakte van 'n poligoon}{
     Vind die area van die volgende parallelogram:\\
 
     \begin{center}
@@ -162,7 +160,7 @@ sirkel &
     \end{center}
     }{
 
-    \westep{Ons moet eers vir $ BE$ die loodregte hoogte van die parallelogram
+    \westep{Ons moet eers $BE$, die loodregte hoogte van die parallelogram,
 vind. Ons kan Pythagoras gebruik om dit te doen:}
 \begin{equation*}
 \begin{array}{ccl}
@@ -189,7 +187,7 @@ berekening te doen:}
 
 
 \begin{exercises}{Poligone}
-{
+
 
 Vind die areas vir elk van die gegewe figure:
 \begin{center}
@@ -203,11 +201,7 @@ Vind die areas vir elk van die gegewe figure:
 \psline[linewidth=0.04cm](2.361875,3.7882812)(4.341875,1.8282813) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4517188,2.5782812){$5$ cm} 
-\psline[linewidth=0.04cm,linestyle=d\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/www.pdf}}
-Kry die oplossing met die kortkodes:\\
-\begin{tabularx}{\textwidth}{ XX }
-(1)	&	(2)
-\end{tabularx}ashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.8) 
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.361875,2.3482811)(2.361875,1.8) 
 % \usefont{T1}{ptm}{m}{n} 
 \rput(2.4365625,1.4182812){$10$ cm} 
 % \usefont{T1}{ptm}{m}{n} 
@@ -324,20 +318,19 @@ Kry die oplossing met die kortkodes:\\
 
 \end{center}
 
-\insertpracticeinfo{8}
 }
+\insertpracticeinfo{8}
 \end{exercises}
 
 
-\section{Reghoekige Prismas en Silinders}
+\section{Regte prismas en silinders}
 
-\Definition{Reghoekige prisma}{'n Reghoekige prisma is a geometric solid that has a polygon as its base and one or more sides perpendicular to the base. The base and top surface are the same shape and size. It is called a ``right`` prism because the angles between the base and sides are right-angles.}
-’n Reghoekige prisma is ’n veelhoek wat uitgerek word in ’n kolom sodat die hoogte van die
-kolom reghoekig tot sy basis is. ’n Vierkantige prisma het ’n vierkantige basis en ’n driehoekige prisma het ’n
-driehoekige basis.
+\Definition{Regte prisma}{'n Regte prisma is a geometriese vaste liggaam met 'n poligoon as basis en een of meer sye loodreg op die basis. Die basis en die boonste vlak het dieselfde grootte en vorm en hulle is ewenydig aan mekaar. Dit word genoem 'n regte prisma omdat die hoeke tussen die basis en die sye regte hoeke is.}
+’n Regte prisma is ’n veelhoek wat uitgerek word in ’n kolom sodat die hoogte van die
+kolom reghoekig tot sy basis is. ’n Vierkantige prisma het ’n vierkantige basis, ’n driehoekige prisma het ’n
+driehoekige basis en 'n reghoekige regte prisma het 'n reghoekige basis.
 
 \mindsetvid{different viewpoints}{VMcph}
-
 \par 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -391,23 +384,22 @@ driehoekige basis.
 
 \subsection{Oppervlakarea van prismas en silinders}
 
-\Definition{oppervlakarea}{Die term oppervlakarea verwys na die totale area van die oppervlak aan die buitekant van die prisma.}
+\Definition{Oppervlakarea}{Die term oppervlakarea verwys na die totale area van die oppervlak aan die buitekant van die prisma. Dit word ook genoem die totale buiteoppervlakte}
 Dit is makliker om te verstaan as ’n mens aan die prisma dink as ’n soliede voorwerp.
-A solid that is unfolded like this, is called a net. When a prism is unfolded into a net, we can clearly see each of its faces. In order to calculate the surface area of the prism, we can then simply calculate the area of each face, and add them all together.
+'n Soliede voorwerp wat oopgevou word, word 'n ontbou\"ing genoem. Wanneer 'n prisma ontvou word, kan ons elke vlak duidelik sien. Om die oppervlakarea van die prisma te bereken, bereken ons eenvoudig die oppervlakte van elke vlak en tel hulle almal bymekaar.
 \par 
-
 \mindsetvid{triangular prisms}{VMcre}
 
-Byvoorbeeld, Die driehoekige prisma het twee syvlakke wat driehoekig is en drie syvlakke wat reghoekig is. Om
-die oppervlakarea van ’n prisma te bereken moet die oppervlak van elke syvlak bereken word en bymekaar getel
+Byvoorbeeld, die driehoekige prisma het twee syvlakke wat driehoekig is en drie syvlakke wat reghoekig is. Om
+die oppervlakarea van ’n driehoekige prisma te bereken moet die oppervlak van al vyf syvlakte bereken en bymekaartel
 word.
 .
   \par
-’n Silinder bestaan uit twee sirkelvormige syvlakke en ’n reghoekige kolom with a length that is equal to the circumference of the circular base. To calculate the surface area we therefore find the area of the two circles and the rectangle and add them together.
+’n Silinder bestaan uit twee sirkelvormige syvlakke en ’n reghoekige kolom met 'n lengte wat gelyk is aan die omtrek van die sirkelvormige basis. Om die oppervlakarea te bereken vind ons die area van die twee sirkels en van die reghoek en tel hulle bymekaar.
 
-\Note{Onthou area word gemeet in vierkante eenhede $^2$, m$^2$ or mm$^2$.}
+\Note{Onthou area word gemeet in vierkante eenhede cm$^2$, m$^2$ of mm$^2$.}
 \par
-Below are examples of right prisms that have been unfolded into nets:
+Onder is voorbeelde van regte prismas wat ontvou is:
 
 \begin{figure}[H]
  \begin{caption*}{\textbf{Reghoekige prisma}}\end{caption*}
@@ -455,11 +447,11 @@ Below are examples of right prisms that have been unfolded into nets:
     \end{center}
 \end{figure}   
 
-A rectangular prism  unfolded into a net is made up of six rectangles. 
+'n Reghoekige prisma wat ontvou is, bestaan uit ses reghoeke. 
 
 
 \begin{figure}[H]
- \begin{caption*}{\textbf{Square prism or cube}}\end{caption*}
+ \begin{caption*}{\textbf{Kubus}}\end{caption*}
     \begin{center}
 
 	%% Square Prism
@@ -503,7 +495,7 @@ A rectangular prism  unfolded into a net is made up of six rectangles.
     \end{center}
 \end{figure}   
 
-A square prism (or cube) unfolded into a net is made up of six identical squares.
+'n Kubus wat ontvou is, bestaan uit ses identiese vierkante. 'n Kubus is 'n vierkantige prisma wat uit ses eenderse vierkante bestaan.
 
 
 
@@ -550,8 +542,7 @@ A square prism (or cube) unfolded into a net is made up of six identical squares
     \end{center}
 \end{figure} 
 
-A triangular prism unfolded into a net is made up of two triangles and one rectangle, which is made up of three
-smaller rectangles. The length of the rectangle is equal to the perimeter of the triangles.
+Die ontvouing van 'n driehoekige prisma bestaan uit twee identiese driehoeke en een reghoek, wat bestaan uit drie reghoeke met dieselfde hoogte.
 
 
 \begin{figure}[H]
@@ -580,8 +571,7 @@ smaller rectangles. The length of the rectangle is equal to the perimeter of the
     \end{center}
 \end{figure}   
 
-A cylinder unfolded into a net is made up of two identical circles and a rectangle with a length equal to
-the circumference of the circles.
+'n Silinder wat ontvou word, bestaan uit twee identiese sirkels en 'n reghoek waarvan die lengte gelyk is aan die omtrek van die sirkels.
 
 
 \begin{wex}
@@ -589,7 +579,7 @@ the circumference of the circles.
 
 }
 {%Problem
-Bereken die oppervlakarea van elk van die volgende reghoekige prisma:
+Bereken die oppervlakarea van die volgende reghoekige prisma:
 \begin{center}
 \scalebox{0.9}{
     \begin{pspicture}(-2,-3.5)(3,1.5)
@@ -605,7 +595,7 @@ Bereken die oppervlakarea van elk van die volgende reghoekige prisma:
 }
 {%Solution
 
-\westep{Sketch and label the net of the prism}
+\westep{Skets die ontvouing van die prisma en skryf die sylengtes neer}
 
 \begin{center}
 	%% Rectangular Prism Unfolded Birdseye
@@ -628,35 +618,35 @@ Bereken die oppervlakarea van elk van die volgende reghoekige prisma:
 	\end{pspicture}}
 \end{center}
 
-\westep{Find the areas of the different shapes in the net}
+\westep{Vind die area van die verskillende vorme in die ontvouing}
 \begin{align*} 
-\mbox{large rectangle} &= \mbox{perimeter of small rectangle} \times \mbox{length} \\
+\mbox{Groot reghoek} &= \mbox{Omtrek van kleiner reghoek} \times \mbox{lengte} \\
                         &= (2+ 5 +2 + 5) \times 10 \\
                         &= 14 \times 10 \\
                         &= 140~\mbox{cm}^2  \\ \\
-2 \times \mbox{small rectangle} &= 2(5 \times 2) \\
+2 \times \mbox{area van kleiner reghoek} &= 2(5 \times 2) \\
                                 &= 2(10) \\
                                 &= 20~\mbox{cm}^2
 \end{align*}
 
 
 
-\westep{Find the sum of the areas of the faces}
+\westep{Vind die som van die areas van die vlakte}
 
-$\mbox{large rectangle} + 2 \times \mbox{small rectangle} = 140 + 20 = 160$ cm$^2$.
-\westep{Write the final answer}
-The surface area of the rectangular prism is 160~cm$^2$.
+$\mbox{groot reghoek} + 2 \times \mbox{klein reghoek} = 140 + 20 = 160$ cm$^2$.
+\westep{Skryf die finale antwoord}
+Die oppervlakarea van die reghoekige prisma is 160~cm$^2$.
 \
 }
 \end{wex}
 
 
 \begin{wex}
-{Finding the surface area of a triangular prism
+{Berekening van die oppervlakarea van 'n driehoekige prisma
 
 }
 {
-Find the surface area of the following triangular prism:\\
+Vind die oppervlakarea van die volgende driehoekige prisma:\\
 \begin{center}
 \scalebox{1}{
 	%% Triangular Prism
@@ -690,7 +680,7 @@ Find the surface area of the following triangular prism:\\
 }
 {%Solution
 
-\westep{Sketch and label the net of the prism}
+\westep{Skets en benoem die ontvouiing van die prisma}
 
 % LaTeX Draw
 % \usepackage{pst-plot} % For axes
@@ -715,8 +705,8 @@ Find the surface area of the following triangular prism:\\
 \end{pspicture} 
 }
 \end{center}
-\westep{Find the area of the different shapes in the net}
-To find the area of the rectangle, we need to calculate its length, which is equal to the perimeter of the triangles.\\
+\westep{Vind die areas van verskillende vorme in die ontvouiing}
+Om die area van 'n reghoek te bereken moet ons sy lengte vind. Dit is gelyk aan die omtrek van die driehoeke.\\
 \\
 Gebruik Pythagoras om die hoogte van die driehoekige vlak te bereken:
 
@@ -745,7 +735,7 @@ x^2 &=& 3^2 + \frac{8}{2}^2 \\
 x^2 &=& 3^2 + 4^2 \\
 &=& \sqrt{25} \\
 \therefore x &=& 5\mbox{ cm}\\
-\therefore \mbox{perimeter of triangle} &=& 5 + 5 + 8 \\
+\therefore \mbox{omtrek van driehoek} &=& 5 + 5 + 8 \\
 &=&18\mbox{ cm}\\
 
 \end{array}
@@ -753,7 +743,7 @@ x^2 &=& 3^2 + 4^2 \\
 
 \begin{equation*}
 \begin{array}{rcl}
- \therefore \mbox{area of large rectangle }&=& \mbox{ perimeter of triangle }\times \mbox{length}\\
+ \therefore \mbox{area van groot driehoek}&=& \mbox{ omtrek van driehoek}\times \mbox{lengte}\\
 &=& 18 \times 12 \\
 &=&216 \mbox{ cm}^2
 \end{array}
@@ -764,7 +754,7 @@ x^2 &=& 3^2 + 4^2 \\
 
 \begin{equation*}
 \begin{array}{rcl}
-\mbox{area of triangle } &= &\frac{1}{2}b \times h\\
+\mbox{area van driehoek } &= &\frac{1}{2}b \times h\\
 &=&\frac{1}{2} \times 8 \times 3\\
 &=&12 \mbox{ cm}^2
 \end{array}
@@ -772,18 +762,18 @@ x^2 &=& 3^2 + 4^2 \\
 
 
 
-\westep{Find the sum of the areas of the faces}
+\westep{Vind die som van die areas van die vlakte}
 
 \begin{equation*}
 \begin{array}{rcl}
- \mbox{surface area }&=& \mbox{area large rectangle}  + (2\times \mbox{  area of triangle})\\
+ \mbox{oppervlakarea}&=& \mbox{area groot reghoek}  + (2\times \mbox{  area driehoek})\\
 &=& 216 + 2(12) \\
 &=& 240\mbox{ cm}^2
 \end{array}
 \end{equation*}
 
- \westep{Write the final answer}
-The surface area of the triangular prism is $240$ cm$^2$.
+ \westep{Skryf die finale antwoord}
+Die oppervlakarea van die driehoekige prisma is $240$ cm$^2$.
 
 }
 \end{wex}
@@ -791,10 +781,10 @@ The surface area of the triangular prism is $240$ cm$^2$.
 
 
 \begin{wex}
-{Finding the surface area of a cylindrical prism
+{Bereken die oppervlakarea van 'n silindriese prisma
 }
 {% Question
-Find the surface area of the following cylinder (correct to $1$ decimal place):
+Vind die oppervlakarea van die volgende silinder (korrek to $1$ desimale plek):
 \begin{center}
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
@@ -815,7 +805,7 @@ Find the surface area of the following cylinder (correct to $1$ decimal place):
 }
 {% solution
 
-\westep{Sketch and label the net of the prism}
+\westep{Skets en benoem die ontvouing van die prisma}
 \begin{center}
 	%% Cylindrical Prism Unfolded
 	\begin{pspicture}(-2,-3.5)(3,1.5)
@@ -831,17 +821,17 @@ Find the surface area of the following cylinder (correct to $1$ decimal place):
 
 
 
-\westep{Find the area of the different shapes in the net}
+\westep{Vind die area van die verskillende vorm in die ontvouiing}
 
 \begin{equation*}
 \begin{array}{rcl}
-\mbox{area of large rectangle} &=& \mbox{circumference of circle} \times \mbox{length} \\
+\mbox{area van groot reghoek} &=& \mbox{omtrek van sirkel} \times \mbox{lengte} \\
 
 &=& 2\pi r \times l \\
 &=& 2\pi(10) \times 30 \\
 &=& 1884,96 \mbox{ cm}^2 \\[10pt]
 
-\mbox{area of circle }  &=&\pi r^2  \\
+\mbox{area van sirkel }  &=&\pi r^2  \\
 &=& \pi10^2 \\
 &=&314,16\mbox{ cm}^2
 \end{array}
@@ -849,14 +839,14 @@ Find the surface area of the following cylinder (correct to $1$ decimal place):
 
 \begin{equation*}
 \begin{array}{rcl}
- \mbox{surface area }&=& \mbox{area large rectangle}  + (2\times \mbox{  area of circle})\\
+ \mbox{oppervlakarea }&=& \mbox{area van groot reghoek}  + (2\times \mbox{  area van sirkel})\\
 &=& 1884,96 + 2(314,16) \\
 &=&2513,3\mbox{ cm}^2
 \end{array}
 \end{equation*}
 
-\westep{Write the final answer}
-The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
+\westep{Skryf die finale antwoord}
+Die oppervlakarea van die silinder is $2513,3\mbox{ cm}^2$.
 }
 \end{wex}
 
@@ -865,10 +855,9 @@ The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
 
 
 
-\begin{exercises}{}
-{
+\begin{exercises}{ }
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item Calculate the surface area of the following prisms:
+\item Bereken die oppervlakarea van:
 
 \setcounter{subfigure}{0}
 \begin{figure}[H]
@@ -934,7 +923,7 @@ The surface area of the cylinder is $2513,3\mbox{ cm}^2$.
 areas te verf:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 % \setcounter{enumi}{3}
-\item ’n Reghoekige swembad met binnewande en bodem met die volgende afmetings $4$ m $\times~3$ m $\times~2,5$ m (the inside walls and floor only).
+\item ’n Reghoekige swembad met binnewande en bodem met die volgende afmetings: $4$ m $\times~3$ m $\times~2,5$ m (slegs binnewande en vloer).
 \item ’n Sirkelvormige opgaardam waarvan die bodem ’n middellyn het van $4$ m en met ’n diepte van $2,5$ m.
 \end{enumerate}
 
@@ -963,18 +952,15 @@ areas te verf:
 
 \addtocounter{footnote}{-0}
 
- \end{enumerate}
-
-\insertpracticeinfo{2}
+ \end{enumerate}       
 }
-\end{exercises}
-
-
-\subsection{Volume van ’n Prisma en silinder}
-\Definition{Volume}{Volume is the three dimensional space occupied by an object, or the contents of an object. It is measured in cubic units.}
+\insertpracticeinfo{2}
+\end{exercises}        
+\subsection{Volume van ’n prisma en silinder}
+\Definition{Volume}{Volume is die drie-dimensionele ruimte wat in beslag geneem word, deur 'n voorwerp, of die inhoud van 'n voorwerp. Dit word gemeet in kubieke eenhede.}
 Die volume van ’n reghoekige prisma word bereken deur die area van die basis met die hoogte te vermenigvuldig. 
 
-\mindsetvid{calculating volume}{VMcth}
+
 
 
 \begin{table*}[h]
@@ -1009,8 +995,8 @@ Die volume van ’n reghoekige prisma word bereken deur die area van die basis m
 &
 $
 \begin{aligned}
-\mbox{Volume} &= \mbox{area of base} \times \mbox{hoogte} \\
-                &= \mbox{area of rectangle} \times \mbox{hoogte} \\
+\mbox{Volume} &= \mbox{area van basis} \times \mbox{hoogte} \\
+                &= \mbox{area van reghoek} \times \mbox{hoogte} \\
                 &= l \times b \times h \\
 \end{aligned}$   \\ \hline
 
@@ -1044,7 +1030,7 @@ $
 &
 
 $\begin{aligned}
-\mbox{Volume} &= \mbox{area of base} \times \mbox{hoogte} \\
+\mbox{Volume} &= \mbox{area van basis} \times \mbox{hoogte} \\
                 &= \mbox{area van driehoek} \times \mbox{hoogte} \\
                 &=(\frac{1}{2}b\times h) \times H \\
 \end{aligned}$  \\ \hline
@@ -1069,7 +1055,7 @@ $\begin{aligned}
 &
 
 $\begin{aligned}
-\mbox{Volume} &= \mbox{are van basis} \times \mbox{hoogte} \\
+\mbox{Volume} &= \mbox{area van basis} \times \mbox{hoogte} \\
                 &= \mbox{area van sirkel} \times \mbox{hoogte} \\
                 &= \pi r^2 \times h \\
 \end{aligned}$  \\ \hline
@@ -1079,17 +1065,17 @@ $\begin{aligned}
 \end{tabular}
 \end{table*}
 
-\Note{Onthou are word gemeet in vierkante eenhede: e.g. cm$^3$, m$^3$ or mm$^3$.}
+\Note{Onthou volume word gemeet in kubieke eenhede: b.v. cm$^3$, m$^3$ or mm$^3$.}
 
 
 
 
 \begin{wex}
 {% Title
-Bereken die volume van 'n vierkantige prisma
+Bereken die volume van 'n kubus
 }
 {% question
-Find the volume of the following cube:
+Vind die volume van die volgende kubus:
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1114,22 +1100,22 @@ Find the volume of the following cube:
 }
 {%solution
 
-\westep{Find the area of the base}
+\westep{Vind die area van die basis}
 \begin{align*}
-\mbox{area van 'n vierkant} 
+\mbox{area van vierkant} 
 &=l \times b\\
 &= 3 \times 3 \\
 &= 9~\mbox{ cm}^2
 \end{align*}
 
-\westep{Multiply the area of the base by the height of the solid to find the volume}
+\westep{Vermenigvuldig die area van die basis van die vaste liggaam met die hoogte om die volume te kry}
 \begin{align*}
 \mbox{volume} &= \mbox{area van basis} \times \mbox{height}\\
                     &= 9 \times 3 \\
                     &= 27\mbox{ cm}^3 
 \end{align*}
-\westep{Write the final asnwer}
-Die volume van 'n kobus is $27\mbox{ cm}^3 $. 
+\westep{Skryf die finale antwoord}
+Die volume van die kubus is $27\mbox{ cm}^3 $. 
 
 }
 \end{wex}
@@ -1138,12 +1124,11 @@ Die volume van 'n kobus is $27\mbox{ cm}^3 $.
 
 
 \begin{wex}
-{Finding die volume van ’n driekantige
-prismas
+{Vind die volume van 'n driehoekige prisma
 }
 
 {%problem
-Vind die volume van ’n driekantige
+Vind die volume van ’n driehoekige
 prisma:\\
 
 \begin{center}
@@ -1172,9 +1157,9 @@ prisma:\\
 \end{center}
 }
 {%solution
-\westep{Find the area of the base}
+\westep{Vind die area van die basis}
 \begin{align*}
-\mbox{area of triangle} 
+\mbox{area van driehoek} 
 &=\dfrac{1}{2}b \times h\\
 &= \Big( \dfrac{1}{2} \times 8 \Big)\times 10\\
                         &= 40\mbox{ cm}^2
@@ -1189,14 +1174,14 @@ hoogte van die prisma}
  &= 40 \times 20 \\
                         &= 800\mbox{ cm}^3
 \end{align*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 Die volume van a driehoekige prisma is $800\mbox{ cm}^3$.
 
 }
 \end{wex}
 
-\begin{wex}{Finding the volume of a cylindrical prism}
-{Vind die volume van die volgende silinder (Korrek tot $1$ desimale plek):
+\begin{wex}{Vind die volume van 'n silindriese prisma}
+{Vind die volume van die volgende silinder (korrek tot $1$ desimale plek):
 \begin{center}
         \begin{pspicture}(-2,-3.5)(3,1.5)
 	    \psset{yunit=0.9,xunit=0.9}
@@ -1213,30 +1198,29 @@ Die volume van a driehoekige prisma is $800\mbox{ cm}^3$.
 \end{center}
 }
 {
-\westep{Find the area of the base}
+\westep{Vind die area van die basis}
 
 
 \begin{align*}
-\mbox{area van 'n sirkel} &= \pi~r^2\\
+\mbox{area van sirkel} &= \pi~r^2\\
 &= \pi(4)^{2} \\
 &= 50,27\mbox{ cm}^{2}\\
 \end{align*}
 
-\westep{vermenigvuldig die basis met die
-hoogte van die prisma to find the volume}
+\westep{Vermenigvuldig die area van die basis met die
+hoogte van die prisma om die volume te kry}
 \begin{align*}
 \mbox{volume} &= \mbox{area van die basis  } \times \mbox{ hoogte}\\
 &=\pi r^{2} \times h\\
 &= 50,27\times 15\\
 &= 754,1\mbox{ cm}^{3}\\
 \end{align*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 Die volume van die silinder is $754,1\mbox{ cm}^{3}$.
 }
 \end{wex}
 
 \begin{exercises}{}
-{
 Berekn die volume van die volgende prismas (korrek tot een desimale plek):
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -1296,20 +1280,15 @@ Berekn die volume van die volgende prismas (korrek tot een desimale plek):
 }
  
 \end{center}
-
 \insertpracticeinfo{3}
-}
 \end{exercises}
 
-\section{Right Piramides, Regte Kegels (Keëls / Konusse), Sfere}
-\Definition{Pyramid}{’n Piramide is ’n soliede geometriese figuur met ’n poligoonbasis wat verbind is aan die toppunt waar die syvlakke
-ontmoet. called the apex (in other words the sides are \textbf{not} perpendicular to the base).} 
+\section{Regte piramides, regte kegels (keëls / konusse), sfere}
+\Definition{Piramide}{’n Piramide is ’n soliede geometriese figuur met ’n poligoonbasis wat verbind is aan die toppunt waar die syvlakke
+ontmoet. (met ander woorde die sye is \textbf{nie} loodreg op die basis nie).} 
 
-The triangular pyramid and square pyramid take their names
-from the shape of their base. We call them 'right' pyramids because the height of the pyramid at the apex is perpendicular to the base. Cones are similar to pyramids except that their bases are circles
-instead of polygons.Kegels is soortgelyk aan piramides behalwe dat hulle basisse sirkels is in plaas
-van poligone.\par
-voorbeelde van vierkant en driehoek piramides, a cone and a sfere:
+Die driehoekige piramide en vierkantige piramide neem hulle name van die vorm van die basis. Ons noem hulle 'regte' piramids omdat die hoogtelyn van die piramide by die tophoek loodreg is op die basis.Kegels is soortgelyk aan piramides behalwe dat hulle basisse sirkels is en nie poligone nie.\par
+Voorbeelde van vierkantige-en driehoekige-piramides, 'n kegel en 'n sfeer:
 \begin{figure}[ht]
 \begin{center}
 % \usepackage[usenames,dvipsnames]{pstricks}
@@ -1350,7 +1329,7 @@ voorbeelde van vierkant en driehoek piramides, a cone and a sfere:
 \end{center}
 \end{figure}
 
-\subsection{Oppervlakarea van ’n Piramide, kegel and sfere}
+\subsection{Oppervlakarea van ’n piramide, kegel and sfeer}
 
 
 
@@ -1360,7 +1339,7 @@ voorbeelde van vierkant en driehoek piramides, a cone and a sfere:
 \newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
 \begin{tabular}{|C|D|E|}
 \hline
-\textbf{Vierkant piramide}
+\textbf{Vierkantige piramide}
 &
 \begin{center}
 
@@ -1392,14 +1371,14 @@ voorbeelde van vierkant en driehoek piramides, a cone and a sfere:
 &
 $\begin{aligned}
 \mbox{oppervlakarea} &= \mbox{ area van basis } +\\
-&~~~~~~\mbox{ area van triangular vlakke } \\
+&~~~~~~\mbox{ area van driehoekige vlakke } \\
 &=b^{2} + 4\Big(\frac{1}{2}bh\Big)\\
 &=b(b+2h)
  \end{aligned}$
 \\ \hline
 
 
-\textbf{Triangular pyramid} &
+\textbf{Driehoekige piramide} &
 \begin{center}
 \scalebox{0.7} % Change this value to rescale the drawing.
 {
@@ -1431,13 +1410,13 @@ $\begin{aligned}
 
 $\begin{aligned}
 \mbox{Oppervlakarea} &= \mbox{ area van basis } +\\
-&~~~~~~\mbox{area of triangular sides } \\
+&~~~~~~\mbox{area van driehoekige sye} \\
 &=(\frac{1}{2}b \times h_b) + 3(\frac{1}{2}b \times h_s)\\
 &=\frac{1}{2}b(h_b + 3h_s)
  \end{aligned}$
  \\ \hline
 
-\textbf{Right cone} &
+\textbf{Regte konus} &
 \begin{center}
  \scalebox{0.5} % Change this value to rescale the drawing.
 {
@@ -1462,13 +1441,13 @@ $\begin{aligned}
 &
 
 $\begin{aligned}
-\mbox{\klein Oppervlakarea} &=  \mbox{\klein area van basis }+\mbox{\small area of walls}\\
+\mbox{\klein Oppervlakarea} &=  \mbox{\klein area van basis }+\mbox{\klein area van kante}\\
 &= \pi r^{2} +(\frac{1}{2} \times 2\pi rh_s)\\
 &=\pi r^{2} +\pi rh_s\\
 &=\pi r(r+h_s)\\
  \end{aligned}$\\ \hline
 
-\textbf{Sfere} &
+\textbf{Sfeer} &
 \begin{center}
 \scalebox{0.7} % Change this value to rescale the drawing.
 {
@@ -1494,8 +1473,8 @@ $\begin{aligned}
 \end{tabular}
 \end{table}
 
-\begin{wex}{Finding the surface area of a triangular pyramid}
- {Vind die oppervlakare van die volgende driehoekige piramide (korrek tot 1 desimale plek):\\
+\begin{wex}{Bereken die oppervlakarea van 'n driehoekige piramide}
+ {Vind die oppervlakarea van die volgende driehoekige piramide (korrek tot 1 desimale plek):\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -1521,10 +1500,10 @@ $\begin{aligned}
 {
 \westep{Vind die area van die basis}
 \begin{align*}
- \mbox{area van 'n dreihoek} &= \frac{1}{2} bh_b\\
+ \mbox{area van 'n driehoek} &= \frac{1}{2} bh_b\\
 
 \end{align*}
-To find the height of the base triangle $(h_b)$ we use the Theorem of Pythagoras:
+Gebruik die stelling van Pythagoras om die hoogte van die basis driehoek $(h_b)$ te kry:
 \\
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
@@ -1548,7 +1527,7 @@ To find the height of the base triangle $(h_b)$ we use the Theorem of Pythagoras
 6^2 &= 3^2+h_b^2\\
 \therefore h_b&=\sqrt{6^2-3^2}\\
 &=3\sqrt{3}\\
-\therefore \mbox{ area of base triangle} &= \frac{1}{2} \times 6 \times 3\sqrt{3}\\
+\therefore \mbox{ van basis driehoek} &= \frac{1}{2} \times 6 \times 3\sqrt{3}\\
 &=9\sqrt{3}\mbox{ cm}^2
 \end{align*}
 \westep{Vind die area van die kante}
@@ -1558,17 +1537,17 @@ To find the height of the base triangle $(h_b)$ we use the Theorem of Pythagoras
 &=90\mbox{ cm}^2
 \end{align*}
 
-\westep{Vind die som cvan die areas}
+\westep{Vind die som van die areas}
 \begin{align*}
 9\sqrt{3} + 90&=105,6\mbox{ cm}^2\\
 
 \end{align*}
-\westep{Write the final answer}
-The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
+\westep{Skryf die finale antwoord}
+Die oppervlakarea van 'n driehoekige piramide is $105,6$ cm$^{2}$.
 }
 \end{wex}
 
-\begin{wex}{Finding the surface area of a cone}
+\begin{wex}{Vind die oppervlakarea van 'n kegel}
  {Vind die oppervlakarea van die volgende kegel (korrek tot 1 desimale plek):
 \begin{center}
  \scalebox{0.8} % Change this value to rescale the drawing.
@@ -1590,18 +1569,18 @@ The surface area of the triangular pyramid is $105,6$ cm$^{2}$.
 \end{center}
 }
 {
-\westep{Find the area of the base}
+\westep{Vind die area van die basis}
 \begin{align*}
- \mbox{area of base circle} &= \pi r^2\\
+ \mbox{area van basis sirkel} &= \pi r^2\\
 &= \pi4^2\\
 &=16\pi
 \end{align*}
 
-\westep{Find the area of the walls}
+\westep{Vind die area van die kante}
 \begin{align*}
- \mbox{area of sides} &= \pi rh_s
+ \mbox{area van kante} &= \pi rh_s
 \end{align*}
-To find the slant height $h_s$ vind die loodregte hoogte met behulp van die stelling van Pythagoras:\\
+Gebruik die stelling van Pythagoras om die skuinshoogte, $h_s$ te vind:\\
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing. walls
 {
@@ -1626,22 +1605,22 @@ To find the slant height $h_s$ vind die loodregte hoogte met behulp van die stel
 \end{align*}
 
 \begin{align*}
- \mbox{ area of walls } &= \frac{1}{2}2\pi r h_s\\
+ \mbox{ area van kante} &= \frac{1}{2}2\pi r h_s\\
 &=\pi(4)(2\sqrt{53})\\
 &= 8\pi\sqrt{53}\mbox{ cm}^2
 \end{align*}
-\westep{Find the sum of the areas}
+\westep{Vind die som van die areas}
 \begin{align*}
-\mbox{total surface area } &= 16\pi + 8\pi\sqrt{53}\\
+\mbox{totale oppervlakarea } &= 16\pi + 8\pi\sqrt{53}\\
 &=233,2\mbox{ cm}^2
 \end{align*}
-\westep{Write the final answer}
-The surface area of the triangular pyramid is $233,2\mbox{ cm}^2$.
+\westep{Skryf die finale antwoord}
+Die oppervlakarea van die driehoekige piramide is $233,2\mbox{ cm}^2$.
 }
 \end{wex}
 
-\begin{wex}{Finding the surface area of a sphere}
- {Find the surface area of the following sphere (correct to $1$ decimal place):
+\begin{wex}{Vind die oppervlakarea van 'n sfeer}
+ {Vind die oppervlakarea van die volgende sfeer (korrek tot $1$ desimale plek):
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
 {
@@ -1659,26 +1638,26 @@ The surface area of the triangular pyramid is $233,2\mbox{ cm}^2$.
 \end{center}
 }
 {
-\westep{Use the formula to find the surface area}
+\westep{Gebruik die formule om die oppervlakarea te vind}
 \begin{align*}
- \mbox{surface area of sphere} &= 4 \pi r^2\\
+ \mbox{oppervlakarea van sfeer} &= 4 \pi r^2\\
 &= 4\pi5^2\\
 &=100\pi\\
 &=314,2\mbox{ cm}^2
 \end{align*}
-\westep{Write the final answer}
-The surface area of the sphere is $314,2\mbox{ cm}^2$.
+\westep{Skryf die finale antwoord neer}
+Die oppervlakarea van 'n sfeer is $314,2\mbox{ cm}^2$.
 }
 
 \end{wex}
 
 
 \begin{wex}
-{Examining die oppervlakare van 'n kegel}
+{Ondersoek die oppervlakarea van 'n kegel}
 {As ’n kegel ’n hoogte het van $h$ en ’n
 basis met radius $r$, toon dat die oppervlakarea gegee word deur:\\ $\pi r^2 + \pi r \sqrt{r^2+h^2}$.}
 {
-\westep{Sketch and label the cone}
+\westep{Skets en benoem die kegel}
 \begin{center}
 
 \scalebox{1} % Change this value to rescale the drawing.
@@ -1709,7 +1688,7 @@ basis met radius $r$, toon dat die oppervlakarea gegee word deur:\\ $\pi r^2 + \
 \end{center}
 
 
-\westep{Identify the faces that make up the cone}
+\westep{Identifiseer die vlakke waaruit die kegel bestaan}
 Die kegel het twee vlakke: die basis en die wand. Die basis is ’n
 sirkel met radius $r$ en die wand kan ontvou word tot ’n sektor van
 ’n sirkel:
@@ -1769,27 +1748,27 @@ sirkel met radius $r$ en die wand kan ontvou word tot ’n sektor van
 waarvan die hoogte, wat byna gelyk is aan $a$ (waar $a$ die skuinshoogte
 genoem word). Die som van die areas van hierdie driehoekies is: 
 \begin{align*}
-\mbox{Area of sector }&=\frac{1}{2}\times \mbox{basis } \times \mbox{ hoogte (van ’n klein driehoekie)}\\
+\mbox{Area of sektor }&=\frac{1}{2}\times \mbox{basis } \times \mbox{ hoogte (van ’n klein driehoekie)}\\
  &=\frac{1}{2}\times2\pi r \times a \\
 &= \pi r a 
 \end{align*}
 
 
-\westep{Calculate $a$}
-$a$ kan bereken word met die Stelling van Pythagoras. Dus:
+\westep{Bereken $a$}
+Bereken $a$ met die Stelling van Pythagoras. Dus:
 \begin{equation*}
 a = \sqrt{r^{2} + h^{2}}
 \end{equation*}
-\westep{Calculate the area of the circular base ($A_{b}$)}
+\westep{Bereken die area van die sirkelvormige basis ($A_{b}$)}
 \begin{equation*}
 A_{b} = \pi r^{2}
 \end{equation*}
-\westep{Calculate the area of the curved walls ($A_{w}$)}
+\westep{Bereken die are van die gebo\"e wand ($A_{w}$)}
 \begin{eqnarray*}
 A_{w} &=& \pi r a \\
 &=& \pi r \sqrt{r^{2}+h^{2}}
 \end{eqnarray*}
-\westep{Find the sum of the areas $A$}
+\westep{Vind die som van die areas $A$}
 \begin{eqnarray*}
  A &=& A_{b} + A_{w} \\
   &=& \pi r^{2} + \pi r \sqrt{r^{2}+h^{2}}\\
@@ -1878,7 +1857,7 @@ $\begin{aligned}
  \end{aligned}$
  \\ \hline
 
-\textbf{Right cone} &
+\textbf{Regte kegel} &
 \begin{center}
  \scalebox{0.7} % Change this value to rescale the drawing.
 {
@@ -1903,8 +1882,8 @@ $\begin{aligned}
 &
 
 $\begin{aligned}
-\mbox{Volume} &=  \frac{1}{3} \times \mbox{ area of base } \times\\
-&~~~~~~ \mbox{ height of cone }\\
+\mbox{Volume} &=  \frac{1}{3} \times \mbox{ area van basis } \times\\
+&~~~~~~ \mbox{ hoogte van kegel }\\
 &= \frac{1}{3} \times \pi r^2 \times H
  \end{aligned}$\\ \hline
 
@@ -1935,13 +1914,13 @@ $\begin{aligned}
 \end{tabular}
 \end{table}
 
-\begin{wex}{Volume van ’n Piramide}
+\begin{wex}{Volume van ’n piramide}
 {
 Wat is die volume van ’n
-vierkantige piramide $3$ cm hoog met ’n sylengte van $2$ cm.
+vierkantige piramide, $3$ cm hoog met ’n sylengte van $2$ cm.
 }
 {
-\westep{Sketch and label the pyramid}
+\westep{Skets en benoem die piramide}
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -1968,7 +1947,7 @@ vierkantige piramide $3$ cm hoog met ’n sylengte van $2$ cm.
 \end{pspicture} 
 }
 \end{center}
-\westep{Select the correct formula and substitute the given values}
+\westep{Gebruik die toepaslike formule en vervang die gegewe waardes}
 Die volume van ’n piramide is 
 $$V=\frac{1}{3} \times b^{2} \times H$$ \\
 Ons word gegee $b=2$ en $H=3$, dus
@@ -1977,7 +1956,7 @@ Ons word gegee $b=2$ en $H=3$, dus
 &=&\frac{1}{3} \times 12\\
 &=&4\mbox{ cm}^3
 \end{eqnarray*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 Die volume van die vierkantige piramide is $4\mbox{ cm}^3$.
 }
 
@@ -1985,8 +1964,8 @@ Die volume van die vierkantige piramide is $4\mbox{ cm}^3$.
 \end{wex}
 
 
-\begin{wex}{Volume van ’n driehoekige Piramide}
- {Vind die volume van ’n driehoekige Piramide (korrek tot $1$ desimale plek):\\
+\begin{wex}{Volume van ’n driehoekige piramide}
+ {Vind die volume van ’n driehoekige piramide (korrek tot $1$ desimale plek):\\
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2035,7 +2014,7 @@ Die volume van die vierkantige piramide is $4\mbox{ cm}^3$.
 \end{pspicture} 
 }
 \end{center}
-die skuinshoogte van die driehoek ($h_b$) kan bereken word met die Stelling van Pythagoras. Dus:
+Die skuinshoogte van die driehoek ($h_b$) kan bereken word met die Stelling van Pythagoras. Dus:
 \\
 
 \begin{align*}
@@ -2052,7 +2031,7 @@ die skuinshoogte van die driehoek ($h_b$) kan bereken word met die Stelling van 
 \end{align*}
 
 
-\westep{Sketch the side trangle and calculate pyramid height $H$}
+\westep{Skets die sykant driehoek en bereken $H$, die loodregte hoogte van die piramide}
 
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
@@ -2077,18 +2056,18 @@ die skuinshoogte van die driehoek ($h_b$) kan bereken word met die Stelling van 
 &=8\sqrt{2}\mbox{ cm}^2\\
 
 \end{align*}
-\westep{Bereken die volume van ’n Piramide}
+\westep{Bereken die volume van piramide}
 \begin{align*}
-\mbox{ volume} &= \frac{1}{3} \times \frac{1}{2}bh_b \times H \\ 
+\mbox{ Volume} &= \frac{1}{3} \times \frac{1}{2}bh_b \times H \\ 
 &=\frac{1}{3} \times 16\sqrt{3} \times 8\sqrt{2}\\
 &=104,5\mbox{ cm}^3
 \end{align*}
-\westep{Write the final asnwer}
+\westep{Skryf die finale antwoord}
 Die volume van die driehoekige piramide is $104,5\mbox{ cm}^3$.
 }
 \end{wex}
 
-\begin{wex}{Finding the volume of a cone}
+\begin{wex}{Bereken die volume van 'n kegel}
  {Vind die volume van die volgende kegel (korrek tot $1$ desimale plek):
 \begin{center}
  \scalebox{0.8} % Change this value to rescale the drawing.
@@ -2110,9 +2089,9 @@ Die volume van die driehoekige piramide is $104,5\mbox{ cm}^3$.
 \end{center}
 }
 {
-\westep{Find the area of the base}
+\westep{Vind die area van die basis}
 \begin{align*}
- \mbox{area van sirkel} &= \pi r^2\\
+ \mbox{Area van sirkel} &= \pi r^2\\
 &= \pi3^2\\
 &=9\pi\mbox{ cm}^2
 \end{align*}
@@ -2123,13 +2102,13 @@ Die volume van die driehoekige piramide is $104,5\mbox{ cm}^3$.
 &=\frac{1}{3} \times 9\pi \times 11\\
 &=103,7\mbox{ cm}^3
 \end{align*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 Die volume van die kegel is $ 103,7\mbox{ cm}^3$.
 }
 \end{wex}
 
-\begin{wex}{Finding the volume of a sphere}
- {Find the volume of the following sphere (correct to $1$ decimal place):
+\begin{wex}{Vind die volume van 'n sfeer}
+ {Vind die volume van die volgende sfeer (korrect tot $1$ desimale plek):
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
 {
@@ -2147,21 +2126,21 @@ Die volume van die kegel is $ 103,7\mbox{ cm}^3$.
 \end{center}
 }
 {
-\westep{Use the formula to find the volume}
+\westep{Gebruik die formule om die volume te berken}
 \begin{align*}
- \mbox{volume} &= \frac{4}{3} \pi r^3\\
+ \mbox{Volume} &= \frac{4}{3} \pi r^3\\
 &= \frac{4}{3}\pi(4)^2\\
 &=268,1\mbox{ cm}^3
 \end{align*}
-\westep{Write the final answer}
-The volume of the sphere is $268,1\mbox{ cm}^3$
+\westep{Skryf die finale antwoord}
+Die volume van die sfeer is $268,1\mbox{ cm}^3$
 }
 
 \end{wex}
-\begin{wex}{Finding the volume of a complex object}
+\begin{wex}{Vind die volume van 'n saamgestelde voorwerp}
  {'n Driehoekige piramide word bo-op ’n driehoekige
 prisma geplaas. Die prisma het ’n gelyksydige driehoek met ’n sylengte
-van $20$ cm as basis en ’n hoogte van  $42$ cm. Die piramide is $12$ cm hoog. Antwoord die volgende vrae( korrek tot $1$ desimale plek):
+van $20$ cm as basis en ’n hoogte van  $42$ cm. Die piramide is $12$ cm hoog. Bereken die volgende( korrek tot $1$ desimale plek):
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Vind die totale volume van die voorwerp.
@@ -2199,10 +2178,10 @@ van $20$ cm as basis en ’n hoogte van  $42$ cm. Die piramide is $12$ cm hoog. 
 \end{center}
 }
 {
-\westep{Calculate the volume of the object}
-a) Ons gebruik die formule vir die volume van ’n reghoekige prisma\\
+\westep{Bereken die volume van die voorwerp}
+a) Ons gebruik die formule vir die volume van ’n regte prisma\\
 \\
-i) Find the height of the base triangle
+i) Vind die hoogte van die basis driehoek
 \begin{center}
  \scalebox{0.8}
 {
@@ -2246,38 +2225,38 @@ ii) Ons gebruik die formule vir die volume van ’n driehoekige piramide
 % \end{center}
 
 \begin{align*}
-\mbox{Area of base triangle } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
+\mbox{Area van basis driehoek } &= \frac{1}{2} \times 20 \times 10 \sqrt{3}\\
 &=100 \sqrt{3}
 \end{align*}
 
-iii) Find the volume of the prism
+iii) Vind die volume van die prisma
 \begin{align*}
-\therefore \mbox{Volume of prism} &= \mbox{area of base triangle }\times \mbox{ height of prism}\\
+\therefore \mbox{Volume van prisma} &= \mbox{area van basis driehoek }\times \mbox{ hoogte van prisma}\\
 &=100 \sqrt{3} \times 42\\
 &=42000\sqrt{3}\mbox{ cm}^3
 \end{align*}
 
-b) Find the volume of the pyramid\\
+b) Vind die volume van die piramide\\
 \\
-The area of the base triangles is equal to the area of the base of the pyramid.
+Die area van die basis driehoek is gelyk aan area van die basis van die piramide.
 
 \begin{align*}
-\therefore \mbox{Volume of pyramid} &= \frac{1}{3} (\mbox{area of base}) \times H\\
+\therefore \mbox{Volume van piramide} &= \frac{1}{3} (\mbox{area van basis}) \times H\\
 &= \frac{1}{3} \times 100 \sqrt{3} \times 12 \\
 
 &=400\sqrt{3}\mbox{ cm}^3
 \end{align*}
-c) Calculate the total volume
+c) Bereken die totale volume
 \begin{align*}
-\mbox{Total volume } &= 42000\sqrt{3}+400\sqrt{3}\\
+\mbox{Totale volume } &= 42000\sqrt{3}+400\sqrt{3}\\
 &= 7274,661 + 692,8\\
 &=7967,4\mbox{ cm}^3
 \end{align*}
 
-Therefore the total volume of the object is $7967,4 \mbox{ cm}^3$.
+Dus die totale volume van die voorwerp is $7967,4 \mbox{ cm}^3$.
 
-\westep{Calculate the surface area of each exposed face of the pyramid}
-a) To calculate the surface area of the sides of the pyramid, ons moet die skuinshoogte bereken ($h_s$)
+\westep{Bereken die oppervlakarea van elke sigbare vlak van die piramide}
+a) Om die oppervlakarea van die wande van die piramide te bereken, moet ons die skuinshoogte bereken ($h_s$)
 \begin{center}
  \scalebox{0.9}
 {
@@ -2294,7 +2273,7 @@ a) To calculate the surface area of the sides of the pyramid, ons moet die skuin
 \end{pspicture} 
 }
 \end{center}
-b) Ons kan $h_s$ bereknen met die Stelling van Pythagoras. Dus:
+b) Ons kan $h_s$ bereken met die Stelling van Pythagoras. Dus:
 
 \begin{align*}
  h_s^2 &= \Big(\frac{h_b}{2}\Big)^{2} + H^{2}\\
@@ -2302,31 +2281,31 @@ b) Ons kan $h_s$ bereknen met die Stelling van Pythagoras. Dus:
 \therefore h_s&=\sqrt{219} \mbox{ cm}
 \end{align*}
 
-c) Bereken die area van elke vlak is:
+c) Bereken die area van elke vlak:
 \begin{align*}
-\mbox{Area of one pyramid face}&= \frac{1}{2}b \times h_s\\
+\mbox{Area van een van die piramide syvlakke}&= \frac{1}{2}b \times h_s\\
 &= \frac{1}{2} \times 20 \times \sqrt{219}\\
 &=10\sqrt{219}\mbox{ cm}^2
 \end{align*}
-Because the base triangle is equilateral, each face has the same base, and therefore the same surface area. \\
-Therefore the surface area for each face of the pyramid is $148$ cm$^{2}$.
+Omdat die basis driehoek gelyksydig is, het elke wand(syvlak) dieselfde basis, en dus dieselfde oppervlakarea. \\
+Dus die oppervlakarea vie elke vlak van die piramide is $148$ cm$^{2}$.
 
-\westep{Die oppervlakarea van die prisma is}
-We need to calculate the surface area of the sides of the prism. This is made up of $3$ rectangles with base $b = 20$ cm and height $h_p = 42$ cm.
+\westep{Die oppervlakarea van die prisma}
+Ons moet die oppervlakarea van die sye van die prisma bereken. DIt bestaan uit $3$ reghoeke met basis $b = 20$ cm en hoogte $h_p = 42$ cm.
 \\
 \\
-a) Calculate the  area of the sides of the prism
+a) Bereken die area van die wande van die prisma
 \begin{align*}
- \mbox{Area of prism sides} &= 3(b \times h_p) \\
+ \mbox{Area van prisma wande(sykante)} &= 3(b \times h_p) \\
 &= 3(20 \times 42)\\
 &=2520\mbox{ cm}^2
 \end{align*}
 
 
-b)  bereken die oppervlakarea van die prisma is
+b)  Bereken die oppervlakarea van die prisma
 \begin{align*}
- \mbox{Totale oppervlakarea} &= \mbox{ area of base of prism } + \mbox{ area of sides of prism } + \\
-&~~~~~~~~~\mbox{ area of exposed faces of pyramid } \\
+ \mbox{Totale oppervlakarea} &= \mbox{ area van basis van prisma } + \mbox{ area van wande van prisma } + \\
+&~~~~~~~~~\mbox{ area van sigbare vlakke van piramide } \\
 &= (100 \sqrt{3}) + 2520 + 3(10\sqrt{219})\\
 &=3137,2\mbox{ cm}^3
 \end{align*}
@@ -2336,9 +2315,9 @@ Dit gee die totale oppervlakarea as $3137,2$ cm$^{2}$.
 \end{wex}
 
 \begin{exercises}{}
-{
+ {
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
-\item Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale plek if necessary):
+\item Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale plek indien nodig):
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2377,7 +2356,7 @@ Dit gee die totale oppervlakarea as $3137,2$ cm$^{2}$.
 % \usefont{T1}{ptm}{m}{n}
 \rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
-\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
 \rput(5.04,-2.8101408){$12$ cm}
 \psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
@@ -2399,7 +2378,7 @@ Dit gee die totale oppervlakarea as $3137,2$ cm$^{2}$.
 \end{center}
 
 \item 
-Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale plek if needed):
+Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale plek waar nodig):
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2438,7 +2417,7 @@ Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale 
 % \usefont{T1}{ptm}{m}{n}
 \rput{0.6029805}(-0.05992648,-0.0624806){\rput(5.8769474,-5.725771){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
-\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$5$ cm}}
+\rput{-1.0300905}(0.10617459,0.030957164){\rput(1.7449429,-5.8903265){$6$ cm}}
 % \usefont{T1}{ptm}{m}{n}
 \rput(5.04,-2.8101408){$12$ cm}
 \psline[linewidth=0.04cm](6.4,-4.635141)(3.6,-0.8151407)
@@ -2460,7 +2439,7 @@ Vind die totale oppervlakarea van die volgende prismas (korrek tot $1$ desimale 
 
 \end{center}
 \item
-This solid  is made up of a cube and a square pyramid. Find it's volume and surface area (correct to $1$ decimal place):
+Die vaste liggaam bestaan uit 'n kubus en 'n vierkantige piramide . Vind die volume en oppervlakarea van die voorwerp (korrek tot $1$ desimale plek):
 \begin{center}
  \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2482,34 +2461,24 @@ This solid  is made up of a cube and a square pyramid. Find it's volume and surf
 }
 \end{center}
 \end{enumerate}
+}
 
 \insertpracticeinfo{3}
-}
 \end{exercises}
-
-
 % slight mod to this long heading. Makes it fit in book and TOC.
-\section{The effect of multiplying a dimension with the factor $k$}
-When one or more of the dimensions of a prism or cylinder is multiplied by a constant, the
-surface area and volume will change. The new surface area and volume can be calculated by
-using the formulae from the preceding section.\par
-It is possible to see a relationship between the change in dimensions and the resulting change
-in surface area and volume. These relationships make it simpler to
-calculate the new volume or surface area of an object when its dimensions are
-scaled up or down.\par
-
+\section[The effect of multiplying a dimension with the factor $k$]{\Huge Die invloed van die vermenigvuldiging van 'n afmeting met 'n faktor $k$}
+Wanneer een of meer van die afmetings van 'n prisma of 'n silinser met 'n konstante vermenigvuldig word, sal die oppervlakarea en die volume verander. Ons ondersoek die nuwe oppervlakarea en volume in die afmdeling wat volg.\par
+Dit is moontlik om 'n verband te sien tussen die verandering in afmetings en die gevolglike veranding in oppervlakarea en volume. Hierdie verwantskap maak dit moontlik om die verandere volume en oppervlakarea te bereken as die afmetings van 'n voorwerp groter of kleiner gemaak word .\par
 \mindsetvid{increasing surface area}{VMctl}
-
-Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and
-three of its dimensions by a constant factor of $5$ and calculate the new volume and surface area.\par
+Beskou 'n rehoekige prisma met afmetings $l$, $b$ en $h$. Ons vermenigvuldig vervolgens een, twee en drie van die prisma se afmetings met 'n konstante faktor van $5$ en bereken dan die nuwe volume en oppervlakarea.\par
 \begin{center}
 \begin{table}[H]
  \begin{tabular}{|m{5cm}|c|c|}
 \hline
-Dimensions & 
+Afmetings & 
 Volume & 
-Surface \\ \hline
-Original dimensions 
+Oppervlakarea \\ \hline
+Oorspronklike afmetings 
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
 {
@@ -2546,7 +2515,7 @@ Original dimensions
 &= 2(lh + lb + bh)$
 \end{aligned} \\ \hline
 
-Multiply one dimension by $5$ 
+Vermenigvuldig een afmeting met $5$ 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2596,7 +2565,7 @@ Multiply one dimension by $5$
 &= 2(5lh + lb + 5bh)$
 \end{aligned} \\ \hline
 
-Multiply two dimensions by $5$ 
+Vermenigvuldig twee afmetings met $5$ 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2655,7 +2624,7 @@ Multiply two dimensions by $5$
 &= 2\times 5(5lh + lb + bh)$
 \end{aligned} \\ \hline
 
-Multiply all three dimensions by $5$ 
+Vermenigvuldig al drie afmetings met $5$ 
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2725,7 +2694,7 @@ Multiply all three dimensions by $5$
 &=5^2. A$
 \end{aligned} \\ \hline
 
-Multiply all three dimensions by $k$ 
+Vermenigvuldig al dire afmetings met $k$ 
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -2811,9 +2780,9 @@ Multiply all three dimensions by $k$
 \end{center}
 
 
-\begin{wex}{Calculating the new dimensions of a square prism}
+\begin{wex}{Bereken die nuwe oppervlakarea en volume van kubus}
  {
-Consider a square prism with a height of $4$ cm and base lengths of $3$ cm.
+Beskou 'n kubus met 'n hoogte van $4$ cm en 'n basis sylengte van $3$ cm.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2834,13 +2803,13 @@ Consider a square prism with a height of $4$ cm and base lengths of $3$ cm.
 \end{center}
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item Calculate the original surface area and volume.
-\item Calculate the new surface area ($A_n$) and volume ($V_n$) if the base length is multiplied by a constant factor of $3$.
-\item Express the new surface area and volume as a factor of the original surface area and volume.
+ \item Bereken die oorspronklike oppervlakarea en volume.
+\item Bereken die nuwe oppervlakarea ($A_n$) en volume ($V_n$) as die lengte van 'n sy van die basis vermeeder word met 'n konstante faktor van $3$.
+\item Druk die nuwe oppervlakarea en volume uit as 'n faktor van die oorspronklike oppervlakarea en volume.
 \end{enumerate}
 }
 {
-\westep{Calculate the original volume and surface area}
+\westep{Bereken die oorsponklike volume en oppervlakarea}
 \begin{align*}
 V&=l\times b\times h\\
 &=3\times3\times4\\
@@ -2851,8 +2820,8 @@ A &= 2[(l \times h) + (l \times b) + (b \times h)]\\
 &= 2[(3 \times 4) + (3 \times 3) + (3 \times 4)]\\
 &= 66 \mbox{ cm}^2
 \end{align*}
-\westep{Calculate the new volume and surface area}
-Two of the dimensions are multiplied by a factor of $3$.
+\westep{Bereken die nuwe volume en oppervlakarea}
+Twee van die afmetings word vermeeder met 'n faktor van $3$.
 \begin{align*}
 V_n&=3l\times 3b \times 3h\\
 &=3.3\times3.3\times4\\
@@ -2863,7 +2832,7 @@ A_n &= 2[(3l \times h) + (3l \times 3b) + (3b \times h)]\\
 &= 2[(3.3 \times 4) + (3.3 \times 3.3) + (3.3 \times 4)]\\
 &= 306 \mbox{ cm}^2
 \end{align*}
-\westep{Express the new dimensions as a factor of the original dimensions}
+\westep{Druk die nuwe volume en oppervlakarea uit as 'n faktor van die oorspronklike volume en oppervlakarea}
 \begin{align*}
 V&=36\\
 V_n&= 324\\
@@ -2883,13 +2852,11 @@ A_n&= 306\\
 }
 \end{wex}
 
-We can also express
-this effect in general terms when multiplying by any common factor of value $k$.
+Ons kan hierdie resultaat in algemene terme uitdruk wanneer ons vermenigvuldig met 'n faktor van $k$.
 
-\begin{wex}{Multiplying the dimensions of a rectangular prism by $k$}
+\begin{wex}{Vermenigvuldig een afmeting van 'n reghoekige prisma met $k$}
  {
-Prove that if the height of a rectangular prism with dimensions $l$,$b$ and $h$ is multiplied by a
-constant value of $k$, the volume will also increase by a factor $k$.
+Bewys dat as die hoogte van 'n reghoekige prisma(met afmetings $l$,$b$ en $h$) met 'n konstante faktor $k$, vermenigvuldig word, sal die volume ook vermenigvuldig word met $k$.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -2920,26 +2887,25 @@ constant value of $k$, the volume will also increase by a factor $k$.
 \end{center}
 }
 {
-\westep{Calculate the original volume}
-We are given the original dimensions $l$, $b$ and $h$\\
-and so the original volume is $V = l \times b \times h$\\
-\westep{Calculate the new volume}
-The new dimensions are $l$, $b$, and $kh$\\
-and so the new volume is 
+\westep{Bereken die oorspronklike volume}
+Ons word oorspronklike afmetings $l$, $b$ en $h$ gegee\\
+Dus die oorspronklike volume is $V = l \times b \times h$\\
+\westep{Bereken die nuwe volume}
+Die nuwe afmetings is $l$, $b$, en $kh$\\
+Dus die nuwe volume is 
 \begin{align*}
 V_n &= l \times b \times (kh)\\
 & = k(lbh)\\
 &= kV
 \end{align*}
-\westep{Write the final answer}
-If the height of a rectangular prism is multiplied by a constant $k$, then the volume also increases by a factor of $k$.
+\westep{Skryf die finale antwoord}
+As die hoogte van 'n reghoekige prisma vermenigvuldig word met 'n faktor $k$, sal die volume ook vermeigvuldig word met $k$.
 
 }
 \end{wex}
 
-\begin{wex}{Multiplying the dimensions of a cylinder by $k$}
-{Consider a cylinder with a radius of $r$ and a height of $h$. Calculate the new volume and surface area (expressed in terms of $r$ and $h$)
-if the radius is multiplied by a constant factor of $k$.
+\begin{wex}{Vermenigvuldig afmetings van 'n silinder met $k$}
+{Beskou 'n silinder met radius $r$ en hoogte $h$. Bereken die nuwe volume en oppervlakarea(uitgedruk in terme van $r$ en $h$) as die radius vermenigvuldig word met 'n konstante faktor van $k$.
 \begin{center}
 \begin{pspicture}(0,-1.6)(3.5434375,1.6) 
 \psellipse[linewidth=0.04,dimen=outer](1.29,-1.09)(1.27,0.51) 
@@ -2955,15 +2921,15 @@ if the radius is multiplied by a constant factor of $k$.
 }
 
 {
-\westep{Calculate the original volume and surface area}
+\westep{Bereken die oorspronklike volume en oppervlakarea}
 \begin{align*}
  V&= \pi r^2 \times h\\
 \end{align*}
 \begin{align*}
 A&= \pi r^2 + 2\pi rh
 \end{align*}
-\westep{Calculate the new volume and surface area}
-The new dimensions are $kr$ and $h$
+\westep{Bereken die nuwe volume en oppervlakarea}
+Die nuwe afmetings van $kr$ en $h$
 \begin{align*}
  V_n&= \pi (kr)^{2} \times h\\
 &= \pi k^{2}r^{2} \times h\\
@@ -2981,25 +2947,24 @@ A_n&= \pi (kr)^{2} + 2\pi (kr)h\\
 \begin{exercises}{}
  {
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item If the height of a prism is doubled, how much will its volume increase?
-\item Describe the change in the volume of a rectangular prism if:
+ \item As die hoogte van 'n prisma verdubbel, met hoeveel sal die volume toeneem?
+\item Beskryf die verandering in die volume van 'n reghoekige prisma as:
 \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item length and breadth increase by a constant factor of $3$
-\item length, breadth and height are multiplied by a constant factor of $2$
+\item die lengte en die breedte vermeeder met 'n konstante faktor van $3$
+\item lengte, breedte en hoogte vermenigvuldig work met 'n konstante faktor van $2$
 \end{enumerate}
-\item Given a prism with a volume of $493$ cm$^{3}$ and a surface area of $6007$ cm$^{2}$, 
-find the new surface area and volume for a prism if all dimensions are increased by a constant factor of $4$. 
+\item Gegewe 'n prisma met 'n volume van $493$ cm$^{3}$ en 'n oppervlakarea van $6007$ cm$^{2}$, 
+Vind die nuwe oppervlakarea en volume vir die prisma as al die afmetings vermeeder word met 'n konstante faktor van $4$. 
 \end{enumerate}
 
-\insertpracticeinfo{3}
 }
+\insertpracticeinfo{3}
 \end{exercises}
 
 \summary{VMdml}
 \begin{itemize}[noitemsep]
- \item Area is the two dimensional space inside the boundary of a flat object. It is measured
-is square units.
-\item Area formulae:
+ \item Area is die twee dimensionele spasie binne die grense van 'n plaat voorwerp, gemeet in vierkante eenhede.
+\item Area formules:
 \begin{itemize}[noitemsep]
 \item vierkantige $= b \times h$
 \item reghoek $= b \times h$
@@ -3008,42 +2973,36 @@ is square units.
 \item parallelogram $= b \times h$
 \item sirkel $= \pi r^2$
 \end{itemize}
-\item oppervlakarea is the total area of the exposed or outer surfaces of a prism.
-\item A net is the unfolded 'plan' of a solid.
-}
-\item Volume is the three dimensional space occupied by an object, or the contents of an
-object. It is measured in cubic units.
+\item Oppervlakarea is die totale area van die buite of sigbare oppervlakke van 'n prisma.
+\item 'n Ontvouiing is die oopgevoude 'plan' van 'n vaste liggaam.
+\item Volume is die drie-dimensionele spasie wat ingeneem word deur 'n voorwerp, of die inhoud van 'n voorwerp. Dit word gemeet in kubieke eenhede.
 \begin{itemize}[noitemsep]
-\item Die volume van die vierkantige prism $=l \times b \times h$
-\item Die volume van die driekhoekige prism $= (\frac{1}{2} b \times h) \times H$
-\item Die volume van die vierkantige prisma or cube $=b^2 \times h$
-\item Die volume van die silinder$=\pi r^2 \times h$
+\item Die volume van 'n kubus $=l \times b \times h$
+\item Die volume van 'n driekhoekige prism $= (\frac{1}{2} b \times h) \times H$
+\item Die volume van 'n vierkantige prisma or cube $=b^2 \times h$
+\item Die volume van 'n silinder$=\pi r^2 \times h$
 \end{itemize}
 \item A pyramid is a geometric solid that has a polygon base and sides that converge at a
 point called the apex (in other words the sides are not perpendicular to the base).
-\item Die oppervlakarea van die prisma is bereken deur:
+\item Die oppervlakarea van die prisma word bereken deur:
 \begin{itemize}[noitemsep]
 \item vierkant piramide $=b(b+2h)$
 \item driehoekige piramide $= \frac{1}{2}b(h_b +3h_s)$
-\item regte kegel $= \pi r(r+h_s)$
+\item kegel $= \pi r(r+h_s)$
 \item sfeer $= 4\pi r^2$
-}
 \end{itemize}
-\item Volume formulae:
+\item Volume formules:
 \begin{itemize}[noitemsep]
-\item svierkantige piramide $=\frac{1}{3} \times b^2 \times H$
-\item dreihoekige piramide $= \frac{1}{3} \times \frac{1}{2}bh \times H$
-\item regte kege $= \frac{1}{3} \times \pi r^2 \times H$
+\item vierkantige piramide $=\frac{1}{3} \times b^2 \times H$
+\item driehoekige piramide $= \frac{1}{3} \times \frac{1}{2}bh \times H$
+\item kegel $= \frac{1}{3} \times \pi r^2 \times H$
 \item sfeer $= \frac{1}{3} \times 4\pi r^2$
 \end{itemize}
-\item Multiplying one or more dimensions of a prism or cylinder by a constant $k$ affects the surface area and volume.
-
-
+\item Vermenigvuldiging van een of meer afmetings van 'n prisma of silinder met 'n konstante $k$ be\"invloed die oppervlakarea en volume.
 \begin{eocexercises}{}
 
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
-\item Consider the solids below and answer the questions that follow (correct to one decimal place, if necessary):
-}
+\item Beskou die vaste liggame hieronder en beantwoord die vrae wat volg(korrek tot $1$ desimale plek waar nodig):
 \begin{center}
 \scalebox{0.8} % Change this value to rescale the drawing.
 {
@@ -3101,14 +3060,13 @@ point called the apex (in other words the sides are not perpendicular to the bas
 }
 \end{center}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-  \item Calculate the surface area of each solid.
-\item Calculate volume of each solid.
-\item If each dimension of the solid is increased by a factor of $3$, calculate the new surface area of each solid.
-}
-\item If each dimension of the solid is increased by a factor of $3$, calculate the new volume of each solid.
+  \item Bereken die oppervlakarea van elke vaste liggaam.
+\item Bereken die volume van elke voorwerp.
+\item As elke afmeting van die voorwerpe vermeerder met 'n faktor van $3$, Bereken die nuwe oppervlakarea van elk.
+\item As elke afmeting van die voorwerpe vermeerder met 'n faktor van  $3$, Bereken die nuwe volume van elk.
  \end{enumerate}
 \item 
-Consider the solids below:
+Beskou die vaste(soliede) liggame hieronder:
 \begin{center}
 \scalebox{0.7} % Change this value to rescale the drawing.
 {
@@ -3144,8 +3102,7 @@ Consider the solids below:
 \psline[linewidth=0.04cm](11.28,-0.1991063)(13.94,1.6808937)
 \psdots[dotsize=0.12](11.0,1.8408937)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.02,1.8608937)(11.1,5.4208937)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=
-}0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](11.0,1.8208936)(9.82,2.7008936)
 \psline[linewidth=0.04cm](10.78,1.9808937)(10.78,2.3408937)
 \psline[linewidth=0.04cm](10.76,2.3408937)(11.04,2.1408937)
 \rput{14.5046}(-0.70283186,-0.89219034){\pswedge[linewidth=0.04](3.1540546,-3.2075646){2.0675611}{178.8065}{0.0}}
@@ -3189,6 +3146,7 @@ Consider the solids below:
 
 \end{center}
 
+}
 \insertpracticeinfo{3}
 \end{eocexercises}
 
