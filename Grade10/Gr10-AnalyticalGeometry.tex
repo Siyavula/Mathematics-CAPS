@@ -169,7 +169,7 @@ $AB \neq \\ \sqrt{(x_1 - x_2)^2 + (y_2 - y_1)^2}$.}
 \westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the coordinates of $S$ be $(x_1;y_1)$ and the coordinates of $T$ be $(x_2;y_2)$.
 \begin{equation*}
-x_1 = -2 \hskip2em y_1 = -5 \hskip2em x_2 = -7 \hskip2em y_2 = -2
+x_1 = -2 \hskip2em y_1 = -5 \hskip2em x_2 = 7 \hskip2em y_2 = -2
 \end{equation*}
 \westep{Write down the distance formula}
 \begin{equation*}
@@ -178,7 +178,7 @@ d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
 \westep{Substitute values}
 \begin{equation*}
 \begin{array}{rl}
-d_{\mbox{ST}} &= \sqrt{(2 - (-7))^2 + (-5- (-2))^2}\\
+d_{ST} &= \sqrt{(-2 - 7)^2 + (-5- (-2))^2}\\
 & = \sqrt{(-9)^2 + (-3)^2}\\
 &= \sqrt{81 + 9}\\
 &= \sqrt{90}\\
@@ -192,7 +192,7 @@ The distance between $S$ and $T$ is $9,5$ units.
 }
 \end{wex}
 
-\begin{wex}{Using the distance formula}{Given $RS = 13$, $R(3;9)$ $S(8;y)$, find $y$.}{
+\begin{wex}{Using the distance formula}{Given $RS = 13$, $R(3;9)$ and $S(8;y)$, find $y$.}{
 \westep{Draw a sketch}
 % \usepackage{pst-plot} % For axes
  \begin{center}
@@ -221,7 +221,7 @@ The distance between $S$ and $T$ is $9,5$ units.
 }
 
 \end{center}
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
+\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the coordinates of $R$ be $(x_1;y_1)$ and the coordinates of $S$ be $(x_2;y_2)$.
 \begin{equation*}
 x_1 = 3 \hskip2em y_1 = 9 \hskip2em x_2 = 8 \hskip2em y_2 = y
@@ -278,8 +278,8 @@ $S$ is $(8;-3)$ or $(8;21)$
 %     
 %     
 
-\section{Gradient between two points}
-\Definition{Gradient}{The gradient between two points is determined by the ratio of vertical change to horizontal change.}
+\section{Gradient of a line}
+\Definition{Gradient}{The gradient of a line is determined by the ratio of vertical change to horizontal change.}
 Gradient ($m$) describes the slope or steepness of the line joining two points. In the figure below, line $OQ$ is the least steep and line $OT$ is the steepest.
 \mindsetvid{The gradient line}{VMbmr}
 \setcounter{subfigure}{0}
@@ -331,7 +331,7 @@ To derive the formula for gradient, we consider any right-angled triangle formed
 }
 \end{center}
 \end{figure}  
-Therefore, gradient is determined using the following equation:
+Therefore, gradient is determined using the following formula:
 
 \Identity{\begin{center}Gradient $(m)= \dfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$ or $\dfrac{y_{1} - y_{2}}{x_{1} - x_{2}}$\end{center}}
 \Tip{Remember to be consistent: $m \neq \dfrac{y_{1} - y_{2}}{x_{2} - x_{1}}$}
@@ -579,7 +579,7 @@ If two lines intersect perpendicularly, then the product of their gradients is e
 
 If line $WX \perp $ line $YZ$, then $m_{WX} \times m_{YZ} = -1$. Perpendicular lines have gradients that are the negative inverse of each other.
 \mindsetvid{Parallel and perpendicular lines}{VMbon}
-\begin{wex}{Parallel lines}{Prove that the line $AB$ with points $A(0;2)$ and $B(2,6)$ is parallel to the line $y = 2x-2$.}{
+\begin{wex}{Parallel lines}{Prove that  line $AB$ with $A(0;2)$ and $B(2,6)$ is parallel to  line $y = 2x-2$.}{
 \westep{Draw a sketch}
 
 \begin{center}
@@ -615,27 +615,28 @@ m = \dfrac{y_2-y_1}{x_2-x_1}
 \end{equation*}
 \westep{Substitute values to find the gradient for line $AB$}
 \begin{equation*}
-\begin{array}{cl}
+\begin{array}{rl}
 m_{AB} &= \dfrac{6 - 2}{2 - 0}\\[5pt]
 &= \dfrac{4}{2}\\
 &= 2
 \end{array}
 \end{equation*}
-\westep{Check that $y$ is in the standard form $y=mx+c$}
+\westep{Check that the equation of $CD$ is in the standard form $y=mx+c$}
 \begin{equation*}
 \begin{array}{cl}
+2x-y&=2\\
 y&=2x-2\\
-\therefore m_{y}&= 2
+\therefore m_{CD}&= 2
 \end{array}
 \end{equation*}
 \westep{Write the final answer}
 \begin{equation*}
 \begin{array}{cl}
-m_{AB} &= m_{y}\\
+m_{AB} &= m_{CD}\\
 
 \end{array}
 \end{equation*}
-therefore line $AB$ is parallel to $y=2x-2$.
+therefore line $AB$ is parallel to $cd$, $y=2x-2$.
 }
 \end{wex}
 
@@ -646,36 +647,38 @@ therefore line $AB$ is parallel to $y=2x-2$.
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.6267188)(7.8990626,3.6667187)
+\begin{pspicture}(0,-3.6267188)(7.9990625,3.6667187)
 \rput(3.0,-0.62671876){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(4,4)}
 \psdots[dotsize=0.12,dotangle=-5.9493704](4.9890275,0.8660181)
-\psline[linewidth=0.04cm](0.98,-0.9267188)(6.58,1.5932813)
+\psline[linewidth=0.04cm](0.98,-0.9267188)(6.58,1.5932814)
 \usefont{T1}{ppl}{m}{n}
-\rput(7.3,-0.5367187){$x$}
+\rput(7.2745314,-0.53671867){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(3.2,3.4632812){$y$}
+\rput(3.1745312,3.4632812){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.6045313,2.6032813){$B(-2;6)$}
+\rput(1.5790626,2.6032813){$B(-2;6)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.6845312,-0.81671876){$0$}
+\rput(2.6590624,-0.81671876){$0$}
 \usefont{T1}{ppl}{m}{n}
-\rput(5.0245314,-2.0967188){$A(2;-3)$}
+\rput(4.6745315,-2.0967188){$A(2;-3)$}
 \psline[linewidth=0.04cm](2.0,2.3132813)(4.02,-2.1067188)
 \psdots[dotsize=0.12](2.0,2.3532813)
 \psdots[dotsize=0.12](4.02,-2.1067188)
 \usefont{T1}{ppl}{m}{n}
-\rput(3.9845312,0.66328126){$C(4;3)$}
+\rput(4.3745313,1.0){$C(4;3)$}
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](6.52,3.3932812)(6.52,-3.4867187)
 \usefont{T1}{ppl}{m}{n}
-\rput(7.034531,2.2832813){$D(7;y)$}
+\rput(7.1745315,1.5){$D(7;y)$}
 \psdots[dotsize=0.12](6.52,1.5732813)
+\rput{23.284023}(0.24130535,-1.2977501){\psframe[linewidth=0.04,dimen=outer](3.44,0.10671873)(3.1,-0.23328127)}
 \end{pspicture} 
 }
 \end{center}
 
 
-\westep{Write down the formula for the product of the gradients of perpendicular lines}
+\westep{Write down the relationship between the gradients of the perpendicular lines $AB \perp CD $}
 \begin{align*}
+
 m_{AB} \times m_{CD} &= -1\\
 \dfrac{y_B-y_A}{x_B-x_A} \times \dfrac{y_D-y_C}{x_D-x_C} &=-1
 \end{align*}
@@ -710,16 +713,16 @@ A line that runs parallel to the $y$-axis is called a vertical line and its grad
   m = \dfrac{\mbox{change in }y}{\mbox{change in }x} = \dfrac{\mbox{change in }y}{0}=\mbox{ undefined}
 \end{equation*}
 
-\subsection*{Collinear points}
-
-Points are collinear if they lie on the same line. There are two methods to prove that points are collinear; the gradient method and a
+\subsection*{Points on a line}
+A straight line is a set of points with a constant gradient between any of the two points.
+There are two methods to prove that points lie on the same line; the gradient method and a
 longer method using the distance formula.
 
-If three points are collinear then the line joining them will have the same gradient at any point along the line.
-Therefore to prove collinearity, we must prove that two of the gradients between any of the three points are
-equal.
+% If three points are collinear then the line joining them will have the same gradient at any point along the line.
+% Therefore to prove collinearity, we must prove that two of the gradients between any of the three points are
+% equal.
 
-\begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
+\begin{wex}{Points on a line}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
 \westep{Draw a sketch}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -835,7 +838,7 @@ d_{AB} + d_{BC} = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = \sqrt{4 \times 13} = \sqr
 \begin{equation*}
 d_{AB} + d_{BC} = d_{AC}
 \end{equation*}
-therefore points $A$, $B$ and $C$ are collinear.
+therefore points $A$, $B$ and $C$ lie on the same straight line.
 }
 \end{wex}
 
@@ -847,7 +850,7 @@ therefore points $A$, $B$ and $C$ are collinear.
   \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$.
   \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$.
   \end{enumerate}
-\item Determine whether the following points are collinear:
+\item Determine whether the following points lie on the same straight line:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
   \item $E(0;3)$, $F(-2;5)$, $G(2;1)$.
   \item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$.
@@ -1046,7 +1049,7 @@ As expected, $PS=QS$, therefore $F$ is the mid-point.
 
 \end{center}
 
-From the sketch, we can estimate that $M$ will lie in Quadrant I, with positive $x$- and $y$-coordinates.
+From the sketch, we can estimate that $M$ will lie in quadrant I, with positive $x$- and $y$-coordinates.
 \westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
 Let the mid-point be $M(x;y)$
 \begin{equation*}
@@ -1229,7 +1232,7 @@ points.
 \item The standard form of the straight line equation is $y=mx+c$.
 \item The equation of a straight line can also be written as  
 \begin{equation*}
-  y-y_1=mx+c ~~\mbox{  or  } ~~~\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}
+\dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}
 \end{equation*}
 \item If two lines are parallel, their gradients are equal.
 \item If two lines are perpendicular, the product of their gradients is equal to $-1$.
@@ -1292,7 +1295,7 @@ M(x;y) = \left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
     \end{enumerate}
   \item $ABCD$ is a quadrilateral with vertices $A(0;3)$, $B(4;3)$, $C(5;-1)$ and $D(-1;-1)$.
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-    \item Show that:
+    \item Show by calculation that:
       \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
       \item $AD = BC$
       \item $AB \parallel DC$
