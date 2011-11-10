@@ -1589,9 +1589,9 @@ The horizontal asymptote is the line $y=7$. The vertical asymptote is the line $
 \begin{pspicture}(-5,-3)(5,6)
 %\psgrid
 \psset{yunit=0.5,xunit=0.5}
-\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-1)(7,15)
+\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
 \psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
-\psplot[plotstyle=curve,arrows=<->]{7}{0.5}{x -1 exp -4 mul 7 add}
+\psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
 \psline[linestyle=dashed](-7,7)(7,7)
 \rput(7.3,0.3){$x$}
 \rput(0.3, 15.3){$y$}
@@ -2127,7 +2127,7 @@ Note that there is no axis of symmetry for exponential functions.
 
 
  
-\begin{wex}{Drawing an exponential graph}
+\begin{wex}{Sketching an exponential graph}
 {Sketch the graph of $y=-2 \times 3^{x}+6$.}
 {
 \westep{Examine the standard form of the equation} 
@@ -2165,8 +2165,8 @@ This gives the point $(1; 0)$.
 \begin{pspicture}(-5,-1)(5,6)
 %\psgrid
 \psset{yunit=0.75,xunit=0.75}
-\psaxes[arrows=<->](0,0)(-5,-1)(5,7)
-\psplot[plotstyle=curve,arrows=<->]{-2.5}{1.2}{3 x exp -2 mul 6 add}
+\psaxes[arrows=<->](0,0)(-5,-3)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp -2 mul 6 add}
 \psdots(0,4)(1,0)
 \psline[linestyle=dashed](-5,6)(5,6)
 \rput(5.6,6.2){$y=6$}
@@ -2199,7 +2199,7 @@ Range: $\{g(x): g(x) <6\}$
 \begin{pspicture}(-3,-1)(4,4)
 %\psgrid
 \psset{yunit=0.75,xunit=0.75}
-\psaxes[arrows=<->](0,0)(-5,-1)(5,10)
+\psaxes[arrows=<->](0,0)(-5,-2)(5,10)
 \psplot[plotstyle=curve,arrows=<->]{-2}{2.1}{3 x exp}
 \psdots(0,1)(2,9)
 \rput(1,1){$A(0;1)$}
@@ -2423,6 +2423,8 @@ Use your results to deduce the effect of $a$.\\
 \rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
 \psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
 \rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
 \end{pspicture}
 }
 
@@ -2466,6 +2468,8 @@ $a<-1$: reflection about $x$-axis of $a>1$&\\
 \rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
 \psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
 \rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
 \end{pspicture}
 }
 \\ 
@@ -2869,6 +2873,8 @@ Use your results to deduce the effect of $a$.
 \rput[l](470,-0.5){\parbox{3cm}{\footnotesize$-1<a<0$}}
 \psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-1)(460,-1)
 \rput[l](490,-1){\parbox{3cm}{\footnotesize$a<-1$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
 \end{pspicture}
 
 }
@@ -2912,6 +2918,8 @@ $a<-1$: reflection about $x$-axis, amplitude increases&
 \rput[l](490,0.5){\parbox{3cm}{\footnotesize$q>0$}}
 \psline[linewidth=1pt,linestyle=dashed, linecolor=gray](420,-0.5)(460,-0.5)
 \rput[l](490,-0.5){\parbox{3cm}{\footnotesize$q<0$}}
+\uput[u](400,0){$\theta$}
+\uput[u](0,2.5){$y$}
 \end{pspicture}
 } \\ 
 & \\ \cline{1-1}
