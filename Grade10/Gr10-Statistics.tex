@@ -37,11 +37,11 @@ which data sets can be represented, to make them easier to interpret.
 \section{Collecting data}
 \Definition{Data}{Data refer to the pieces of information that have
   been observed and recorded, from an experiment or a survey.}
-\Note{The word {\em data} is the plural of the word {\em datum}, and
-  therefore one should say, ``the data are'' and not ``the data is''.}
+% \Note{}
 
 We distinguish between two main types of data: quantitative and
-qualitative.
+qualitative. Note that the word {\em data} is the plural of the word {\em datum}, and
+  therefore one should say, ``the data are'' and not ``the data is''.
 
 \Definition{Quantitative data}{Quantitative data are data that can be
   written as numbers.}
@@ -515,7 +515,7 @@ on grouping data.
 \label{sec:statistics_grouping_data}
 A common way of handling continuous quantitative data is to subdivide
 the full range of values into a few sub-ranges.
-By assigning each continuous value to the sub-range within which it
+By assigning each continuous value to the sub-range or class within which it
 falls, the data set changes from continuous to discrete.\par
 %We will see below that this has some benefits, but we gain the
 %benefits at the cost of losing some information.
@@ -754,7 +754,7 @@ Calculate
 }
 \end{exercises}
 
-\section{Dispersion}
+\section{Measures of dispersion}
 The central tendency is not the only interesting or useful information
 about a data set. The two data sets illustrated below have the same mean ($0$),
 but have different spreads
@@ -837,8 +837,8 @@ data set are. The range is very sensitive to outliers.
 \subsection{Percentiles}
 
 \Definition{Percentile}{The $p^{\mathrm{th}}$ percentile is the value, $v$, that
-  divides a data set into two parts, such that $p$ per cent of the
-  values in the data set are less than $v$ and $100-p$ per cent of the
+  divides a data set into two parts, such that $p$ percent of the
+  values in the data set are less than $v$ and $100-p$ percent of the
   values are greater than $v$. Percentiles can lie in the range $0 \leq
   p \leq 100$.}
 
@@ -900,7 +900,7 @@ rank.
 
 The figure below shows the relationship between rank and percentile
 graphically. We have already encountered three percentiles in this
-chapter: the median, the minimum and the maximum.
+chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th}}$ percentile) and the maximum ($100^{\mathrm{th}}$). The median is defined as the value halfway in a sorted data set.
 
 \begin{center}
   \begin{tikzpicture}[xscale=0.1]
@@ -922,12 +922,7 @@ chapter: the median, the minimum and the maximum.
   \end{tikzpicture}
 \end{center}
 
-The median is defined as the value halfway in a sorted data set. Since
-$50\% = \frac{1}{2}$, the median is exactly the same as the $50^{\mathrm{th}}$
-percentile.  The minimum value is by definition the smallest and
-therefore the leftmost value in a sorted set. This makes the minimum
-equivalent to the $0^{\mathrm{th}}$ percentile. Similarly, the maximum is
-equivalent to the $100^{\mathrm{th}}$ percentile.
+
 
 \begin{wex}{Using the percentile formula}
 {Determine the minimum, maximum and median values of the following
@@ -1208,7 +1203,7 @@ minimum values in the data set).
 }
 \end{exercises}
 
-\section{Combining different measures}
+\section{Five number summary}
 A common way of summarising the overall data set is with the five
 number summary and the box-and-whisker plot. These two represent
 exactly the same information, numerically in the case of the five
@@ -1224,7 +1219,7 @@ $25^{\mathrm{th}}$, $50^{\mathrm{th}}$, $75^{\mathrm{th}}$, $100^{\mathrm{th}}$.
 The box-and-whisker plot shows these five percentiles as in the figure
 below. The box shows the interquartile range (the distance between $Q1$ and $Q3$). A line inside the box shows the
 median. The lines extending outside the box (the whiskers) show where
-the minimum and maximum values lie.
+the minimum and maximum values lie. This graph can also be drawn horizontally.
 \clearpage
 \begin{figure}[t]
   \begin{center}
@@ -1531,7 +1526,7 @@ The general formula for finding the $p^{\mathrm{th}}$ percentile in an ordered d
 \vspace {8pt}\\
      \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Find the approximate mean of the data.
-    \item What percentage of samples had a speed of
+    \item What percentage of samples had a distance of
       \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ]
       \item less than $15$ km?
       \item more than $30$ km?
