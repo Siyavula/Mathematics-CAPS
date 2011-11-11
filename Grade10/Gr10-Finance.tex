@@ -393,11 +393,13 @@ We plot the growth of the two investments on the same set of axes and note the s
       \scalebox{0.8}{
 	\begin{pspicture}(-5,-2)(7,8)
 	    \psset{yunit=0.75,xunit=1}
-	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.5)
+	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12)
 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
 % 	    \psline[linecolor=red](0,5)(10,9.5)
-	    \psplot[linecolor=red]{0}{10}{  x 0.09 mul 1 add 5 mul}
-\psplot[linecolor=red]{0}{10}{1.09 x exp 5 mul}
+	    \psplot{0}{10}{  x 0.09 mul 1 add 5 mul}
+\uput[ur](10.2,0){years}
+\uput [u](0,12.5){Rands}
+\psplot{0}{10}{1.09 x exp 5 mul}
 	\end{pspicture}}\\
 % 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
 	\label{FG:fig:SI10}
@@ -427,8 +429,10 @@ It is easier to see the vast difference in growth if we extend the time period t
 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
 % 	    \psline[linecolor=red](0,0.2)(20,1.1)
-	    \psplot[linecolor=red]{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
-\psplot[linecolor=red]{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
+	    \psplot{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
+\uput[ur](20.2,0){years}
+\uput [u](0,15){Rands}
+\psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
 	\end{pspicture}}\\
 % 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
 	\label{FG:fig:SI10}
@@ -734,10 +738,11 @@ Norway it costs $48$~kr. The meal is the same in all three countries
 but in some places it costs more than in others. If £~$1$ $=$
 R~$12,41$ and $1$~kr $=$ R~$1,37$, this means that a Big Mac in
 England costs R~$49,64$ and a Big Mac in Norway costs R~$65,76$.
-
+\par
 Exchange rates affect a lot more than just the price of a Big Mac. The price of oil increases when the South African Rand weakens. This is because when the Rand is weaker, we can buy less of other currencies with the same amount of money.
-
+\par
 A currency gets stronger when money is invested in the country. When we buy products that are made in South Africa, we are investing in South African business and keeping the money in the country. When we buy products imported from other countries, we are investing money in those countries and as a result, the Rand will weaken. The more South African products we buy, the greater the demand for them will be and more jobs will become available for South Africans. Local is lekker!
+\par
 \mindsetvid{Foreign exchange rates}{VMbcj}
 
 \begin{wex}{Foreign exchange rates}
@@ -880,10 +885,19 @@ Let the equivalent amount in Euros be $x$.
           Australian Dollar and the Japanese Yen.
 
 	\item Bonnie bought a stove for R~$3~750$. After $3$ years she had finished paying for it and the R~$956,25$ interest that was charged for hire purchase. Determine the rate of simple interest that was charged.
+
+	\item According to the latest census, South Africa currently has a population of $57~000~000$.
+	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+	    \item If the annual growth rate is expected to be $0,9\%$, calculate how many South Africans there will be in $10$ years time (correct to the nearest hundred thousand).
+
+	    \item If it is found after 10 years that the population has actually increased by $10$ million to $67$ million, what was the growth rate?
+	\end{enumerate}
+
     \end{enumerate}
 \practiceinfo
 
-    \begin{tabularx}{\textwidth}{ XXXXXXXXX }
-	(1.) AAA& (2.)AAA & (3.)AAA & (4.) AAA& (5.)AAA & (6.)AAA & (7.)AAA & (8.)AAA & (9.)AAA\\
-    \end{tabularx}
+    \begin{tabular}[h]{cccccc}
+	(1.) aaa & (2.) aaa & (3.) aaa & (4.) aaa & (5.) aaa & (6.) aaa \\
+	(7.) aaa & (8.) aaa & (9.) aaa & (10.) aaa\\
+    \end{tabular}
 \end{eocexercises}
