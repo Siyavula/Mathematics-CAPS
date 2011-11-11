@@ -235,7 +235,7 @@ $0,333...=0,\dot{3}$.
       \addtolength{\mymathboxwidth}{-48pt}
     \par\vspace{12pt}\noindent\begin{minipage}{\columnwidth}
     \parbox[t]{\mymathboxwidth}{\large$
-    10,589=10+\frac{5}{10}+\frac{8}{100}+\frac{9}{1000}=10\frac{589}{1000}=\frac{10589}{1000}$}\hfill
+    10,589=10+\frac{5}{10}+\frac{8}{100}+\frac{9}{1000}=10\frac{589}{1000}$}\hfill
     \parbox[t]{48pt}{\raggedleft 
     (4.5)}
     \end{minipage}\vspace{12pt}\par
@@ -289,14 +289,14 @@ as a rational fraction.
     \typeout{Columnwidth = \the\columnwidth}\typeout{math as usual width = \the\mymathboxwidth}
     \ifthenelse{\lengthtest{\mymathboxwidth < \columnwidth}}{% if the math fits, do it again, for real
     \begin{equation}
-    \begin{array}{cccc}\hfill x& =& 5,432432432...\hfill & \\ \hfill 1000x& =& 5432,432432432...\hfill & \text{multiply by\hspace{0.17em}}\phantom{\rule{4.pt}{0ex}}\text{1000}\phantom{\rule{4.pt}{0ex}}\text{on both sides}\\ \hfill \\ \hfill 999x& =& 5427\hfill & \text{(}\text{subtracting the second equation from the first equation}\text{)}\\ \hfill x& =& \frac{5427}{999}=\frac{201}{37}\hfill & \end{array}\tag{4.7}
+    \begin{array}{cccc}\hfill x& =& 5,432432432...\hfill & \\ \hfill 1000x& =& 5432,432432432...\hfill & \text{multiply by\hspace{0.17em}}\phantom{\rule{4.pt}{0ex}}\text{1000}\phantom{\rule{4.pt}{0ex}}\text{on both sides}\\ \hfill \\ \hfill 999x& =& 5427\hfill & \text{(}\text{subtracting the second equation from the first equation}\text{)}\\ \hfill x& =& \frac{5427}{999}=5\frac{16}{37}\hfill & \end{array}\tag{4.7}
       \end{equation}
     }{% else, if it doesn't fit
     \setlength{\mymathboxwidth}{\columnwidth}
       \addtolength{\mymathboxwidth}{-48pt}
     \par\vspace{12pt}\noindent\begin{minipage}{\columnwidth}
     \parbox[t]{\mymathboxwidth}{\large$
-    x=5,432432432...1000x=5432,432432432...\text{multiply by\hspace{0.17em}}\phantom{\rule{4.pt}{0ex}}\text{1000}\phantom{\rule{4.pt}{0ex}}\text{on both sides}999x=5427\text{(}\text{subtracting the second equation from the first equation}\text{)}x=\frac{5427}{999}=\frac{201}{37}$}\hfill
+    x=5,432432432...1000x=5432,432432432...\text{multiply by\hspace{0.17em}}\phantom{\rule{4.pt}{0ex}}\text{1000}\phantom{\rule{4.pt}{0ex}}\text{on both sides}999x=5427\text{(}\text{subtracting the second equation from the first equation}\text{)}x=\frac{5427}{999}=5\frac{16}{37}$}\hfill
     \parbox[t]{48pt}{\raggedleft 
     (4.7)}
     \end{minipage}\vspace{12pt}\par
