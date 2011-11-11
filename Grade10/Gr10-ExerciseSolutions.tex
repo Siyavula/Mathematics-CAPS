@@ -527,20 +527,21 @@
 \item $x=\frac{1}{7}$ and $y=-\frac{1}{4}$%$\frac{1}{x}+\frac{1}{y}=3$ and $\frac{1}{x}-\frac{1}{y}=11$
 \end{enumerate}
 
-\item $x = 9$ and $y = -4$ % $x+2y=1$, $\frac{x}{3} + \frac{y}{2} = 1$ %Solve graphically and check your answer algebraically:
+\item % $x+2y=1$, $\frac{x}{3} + \frac{y}{2} = 1$ %Solve graphically and check your answer algebraically:
 
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
 
 \item % $x+2y=1$, $\frac{x}{3} + \frac{y}{2} = 1$ NEEDS GRAPHIC
+$x=9$ and $y=-4$
 \scalebox{0.5}{
 \begin{pspicture}(-3,-2)(4,2)
 % \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
 \psset{yunit=0.5,xunit=0.5}
-\psaxes[dx=1,Dx=1,arrows=<->, labels=all](0,0)(-3,-5)(6,3)
-\psplot[xunit=0.5,plotstyle=curve,arrows=<->]{-2}{10.5}{x 0.5 neg mul 0.5 add}
+\psaxes[dx=1,Dx=2,arrows=<->, labels=all](0,0)(-3,-5)(6,3)
+\psplot[linecolor=gray,xunit=0.5,plotstyle=curve,arrows=<->]{-2}{10.5}{x 0.5 neg mul 0.5 add}
 \psplot[xunit=0.5,plotstyle=curve,arrows=<->]{-1}{10.5}{x 0.67 neg mul 2 add}
 \uput[l](4.5,1.5){$y=-\frac{2}{3}x+2$}
-\uput[l](-0.8,0.8){$y=-\frac{1}{2}x+\frac{1}{2}$}
+\uput[l](-0.8,0.8){\color{gray}$y=-\frac{1}{2}x+\frac{1}{2}$}
 % \uput[l](0.1,-0.2){$0$}
 \uput[r](6,0.1){$x$}
 \uput[r](0,3){$y$}
@@ -550,17 +551,18 @@
 % \psline[arrows=<->](-4,1)(4,1)
 \end{pspicture}
 }\\
-$9$ and $-4$
+
 
 \item %$5= x+y$, $-x = y-2$
+$x=\frac{7}{2}$ and $y=\frac{3}{2}$
 \scalebox{0.5}{
 \begin{pspicture}(-3,-2)(4,2)
 % \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
 \psset{yunit=0.5,xunit=0.5}
 \psaxes[dx=1,Dx=1,dy=1, Dy=1,arrows=<->](0,0)(-3,-5)(8,6)
-\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{6}{x 1 neg mul 5 add}
+\psplot[linecolor=gray,xunit=1,plotstyle=curve,arrows=<->]{-1}{6}{x 1 neg mul 5 add}
 \psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{6}{x 2 sub}
-\uput[l](4.5,4.4){$y=-x+5$}
+\uput[l](4.5,4.4){\color{gray}$y=-x+5$}
 \uput[l](3.8, -1.5){$y=x-2$}
 \uput[l](0.1,-0.4){$0$}
 \uput[r](8,0.1){$x$}
@@ -570,16 +572,17 @@ $9$ and $-4$
 \psline[linestyle=dotted](0,1.5)(3.5,1.5)
 % \psline[arrows=<->](-4,1)(4,1)
 \end{pspicture}}\\
-$\frac{3}{2}$ and $\frac{7}{2}$
+
 \item
+$x=\frac{1}{5}$ and $y=\frac{3}{10}$
 \scalebox{0.6}{
 \begin{pspicture}(-3,-2)(4,2)
 % \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
 \psset{yunit=0.5,xunit=0.5}
 \psaxes[dx=1,Dx=1,dy=1, Dy=1,arrows=<->](0,0)(-3,-3)(4,5)
-\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1.5}{3}{x 1.5 mul}
+\psplot[linecolor=gray,xunit=1,plotstyle=curve,arrows=<->]{-1.5}{3}{x 1.5 mul}
 \psplot[xunit=1,plotstyle=curve,arrows=<->]{-2}{4}{x 0.25 mul 0.25 add}
-\uput[l](4.5,4.7){$y=\frac{3}{2}x$}
+\uput[l](4.5,4.7){\color{gray}$y=\frac{3}{2}x$}
 \uput[ul](5.4, 1){$y=\frac{1}{4}x+\frac{1}{4}$}
 \uput[l](0.1,-0.4){$0$}
 \uput[r](4,0.1){$x$}
@@ -589,11 +592,50 @@ $\frac{3}{2}$ and $\frac{7}{2}$
 \psline[linestyle=dotted](0,0.3)(0.2,0.3)
 % \psline[arrows=<->](-4,1)(4,1)
 \end{pspicture}}\\
-$\frac{1}{5}$ and $\frac{3}{10}$ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$, $x - 4y + 1 = 0$
-\item %$\frac{x}{4}=\frac{y}{2}-1$  and $\frac{y}{4}+\frac{x}{2}=1$ NEEDS GRAPHIC
-$-\frac{4}{5}$ and $2\frac{2}{5}$
-\item %$2x+y=5$ and $3x-2y=4$ NEEDS GRAPHIC
-$2$ and $1$
+ %$3x - 2y = 0$, $x - 4y + 1 = 0$%$3x - 2y = 0$, $x - 4y + 1 = 0$
+\item 
+$x=\frac{4}{5}$ and $y=2\frac{2}{5}$
+\scalebox{0.5}{
+\begin{pspicture}(-3,-2)(4,2)
+% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[dx=1,Dx=1,arrows=<->, labels=all](0,0)(-5,-5)(5,6)
+\psplot[linecolor=gray,xunit=1,plotstyle=curve,arrows=<->]{-1}{3}{x -2 mul 4 add}
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-5}{4}{x 0.5 mul 2 add}
+\uput[l](6,4.5){$y=\frac{1}{2}x+2$}
+\uput[l](5.4,1.5){\color{gray}$y=-2x+4$}
+% \uput[l](0.1,-0.2){$0$}
+\uput[r](5,0.1){$x$}
+\uput[r](0,6){$y$}
+\psdot(0.8,2.4)
+\psline[linestyle=dotted](0.8,2.4)(0.8,0)
+\psline[linestyle=dotted](0,2.4)(0.8,2.4)
+% \psline[arrows=<->](-4,1)(4,1)
+\end{pspicture}}
+% $\frac{x}{4}=\frac{y}{2}-1$  and $\frac{y}{4}+\frac{x}{2}=1$ 
+
+\item
+$x=2$ and $y=1$
+\scalebox{0.5}{
+\begin{pspicture}(-3,-2)(4,2)
+% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[dx=1,Dx=1,arrows=<->, labels=all](0,0)(-5,-5)(5,7)
+\psplot[linecolor=gray,xunit=1,plotstyle=curve,arrows=<->]{-1}{4}{x -2 mul 5 add}
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{4}{x 1.5 mul 2 sub}
+\uput[l](6,4.5){$y=\frac{3}{2}-2$}
+\uput[l](5,-3.2){\color{gray}$y=-2x-5$}
+% \uput[l](0.1,-0.2){$0$}
+\uput[r](5,0.1){$x$}
+\uput[r](0,6){$y$}
+\psdot(2,1)
+\psline[linestyle=dotted](2,1)(2,0)
+\psline[linestyle=dotted](0,1)(2,1)
+% \psline[arrows=<->](-4,1)(4,1)
+\end{pspicture}
+}
+ %$2x+y=5$ and $3x-2y=4$ NEEDS GRAPHIC
+
 \end{enumerate}
 \end{enumerate}
 
@@ -653,10 +695,10 @@ $2$ and $1$
     \item $x > 2$%$-5<2x-3\leq7$ 
 %$7(3x+2)-5(2x-3)>7$
 \item $x \geq 1$ %$\frac{5x - 1}{-6} \leq \frac{1-2x}{3}$
-\item $x \leq 1$ , $x \geq -12$ %$3 \leq 4 - x \leq 16$
+\item $-12 \leq x \leq 1$ %$3 \leq 4 - x \leq 16$
 \item $y < \frac{6}{7}$ %$\frac{-7y}{3} - 5 > -7$
-\item $y \leq 0$, $y>-4$ %$1 \leq 1 - 2y < 9$
-\item $x<7$, $x>-20$ %$-2 < \frac{x-1}{-3}<7$
+\item $-4 \leq y \leq 0$ %$1 \leq 1 - 2y < 9$
+\item $-20 < x<7$ %$-2 < \frac{x-1}{-3}<7$
     \end{enumerate}
 
 \subsubsection*{End of chapter exercises} %p.78-79
