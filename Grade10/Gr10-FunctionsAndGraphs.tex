@@ -886,10 +886,10 @@ The sign of $a$ determines the shape of the graph.
 \begin{itemize}
  \item For $a>0$, the graph of $f(x)$ is a ``smile'' and has a minimum turning point at $(0;q)$.\\
 The graph of $f(x)$ is stretched vertically upwards; as $a$ gets larger, the graph gets narrower.
-\\For $0<a<1$, $a$ is a fraction, which makes the graph of $f(x)$ get wider.
+\\For $0<a<1$, as $a$ gets closer to $0$, the graph of $f(x)$ get wider.
 \item For $a<0$, the graph of $f(x)$ is a ``frown'' and has a maximum turning point at $(0;q)$. 
 \\The graph of $f(x)$ is stretched vertically downwards; as $a$ gets smaller, the graph gets narrower. \\
-For $-1<a<0$, $a$ is a fraction, which makes the graph of $f(x)$ get wider.
+For $-1<a<0$, as $a$ gets closer to $0$, the graph of $f(x)$ get wider..
 \end{itemize}
 
 \setcounter{subfigure}{0}
@@ -1012,61 +1012,6 @@ In order to sketch graphs of the form $f(x)=ax^{2}+q$, we need to determine four
 
 \end{enumerate}
 
-\begin{wex}
- {Sketching a parabola}
-{Sketch the graph of $g(x)=-\frac{1}{2}x^{2}-3$. Mark the intercepts and the turning point.}
-{
-\westep{Examine the standard form of the equation}
-We notice that $a<0$. Therefore the graph is a ``frown'' and has a maximum turning point.
-\westep{Calculate the intercepts}
-For the $y$-intercept, let $x=0$:
-\begin{equation*}
-\begin{array}{ccl}
-\hfill g(x)& =& -\frac{1}{2}x^{2}-3\hfill \\
- g(0)& =& -\frac{1}{2}(0)^{2}-3\hfill \\
- & =& -3\\
-\end{array}
-\end{equation*}
-This gives the point $(0; -3)$.\\
-\\
-For the $x$-intercept let $y=0$:
-\begin{equation*}
-\begin{array}{ccl}\hfill 0& =& -\frac{1}2x^{2}-3\hfill \\ 
-\hfill 3& =& -\frac{1}2x^{2}\hfill \\
- \hfill -2(3)& =& x^{2}\hfill \\
-\hfill -6& =& x^{2}\hfill \\
-\end{array}
-\end{equation*}
-There is no real solution, therefore there are no $x$-intercepts.
-\westep{Determine the turning point}
-From the standard form of the equation we see that the turning point is $(0;-3)$.
-\westep{Plot the points and sketch the graph}
-% \begin{figure}[!ht]
-% Add g(x) label. Label all origins!!
-\begin{center}
-\begin{pspicture}(-5,-5)(5,1)
-%\psgrid
-\psset{yunit=0.5,xunit=0.5}
-\psaxes[arrows=<->](0,0)(-5,-7)(5,1)
-\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
-\psdots(0,-3)
-\uput[r](0,-2.7){$(0;-3)$}
-\rput(0.3, 0.8){$y$}
-\rput (5.2, 0.2){$x$}
-\rput(-0.3,-0.3){$0$}
-\rput(4.5, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
-\end{pspicture}
-% \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
-% % \label{fig:mf:g:sketchexamplepar10}
-\end{center}
-% \end{figure}
-\\
-Domain: $x \in \mathbb{R}$.\\
-Range: $y \in (- \infty; -3]$. \\
-The axis of symmetry is the line $x=0$.
-}
-\end{wex}
-
 
 \begin{wex}
 {Sketching a parabola}
@@ -1124,6 +1069,63 @@ Range: $\{y: y \geq -4, y \in \mathbb{R}\}$\\
 The axis of symmetry is the line $x=0$.
 }
 \end{wex}
+
+
+\begin{wex}
+ {Sketching a parabola}
+{Sketch the graph of $g(x)=-\frac{1}{2}x^{2}-3$. Mark the intercepts and the turning point.}
+{
+\westep{Examine the standard form of the equation}
+We notice that $a<0$. Therefore the graph is a ``frown'' and has a maximum turning point.
+\westep{Calculate the intercepts}
+For the $y$-intercept, let $x=0$:
+\begin{equation*}
+\begin{array}{ccl}
+\hfill g(x)& =& -\frac{1}{2}x^{2}-3\hfill \\
+ g(0)& =& -\frac{1}{2}(0)^{2}-3\hfill \\
+ & =& -3\\
+\end{array}
+\end{equation*}
+This gives the point $(0; -3)$.\\
+\\
+For the $x$-intercept let $y=0$:
+\begin{equation*}
+\begin{array}{ccl}\hfill 0& =& -\frac{1}2x^{2}-3\hfill \\ 
+\hfill 3& =& -\frac{1}2x^{2}\hfill \\
+ \hfill -2(3)& =& x^{2}\hfill \\
+\hfill -6& =& x^{2}\hfill \\
+\end{array}
+\end{equation*}
+There is no real solution, therefore there are no $x$-intercepts.
+\westep{Determine the turning point}
+From the standard form of the equation we see that the turning point is $(0;-3)$.
+\westep{Plot the points and sketch the graph}
+% \begin{figure}[!ht]
+% Add g(x) label. Label all origins!!
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+\psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
+\psdots(0,-3)
+\uput[r](0,-2.7){$(0;-3)$}
+\rput(0.3, 0.8){$y$}
+\rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(4.5, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
+\end{pspicture}
+% \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+% % \label{fig:mf:g:sketchexamplepar10}
+\end{center}
+% \end{figure}
+\\
+Domain: $x \in \mathbb{R}$.\\
+Range: $y \in (- \infty; -3]$. \\
+The axis of symmetry is the line $x=0$.
+}
+\end{wex}
+
 
 
 \noindent
@@ -1407,10 +1409,10 @@ The sign of $a$ determines the shape of the graph.
 \begin{itemize}
  \item If $a>0$, the graph of $f(x)$ lies in the first and third quadrants. \\
 For $a>1$, the graph of $f(x)$ will be further away from the axes than $y=\frac{1}{x}$.
-\\For $0<a<1$, $a$ is a fraction and the graph will be closer to the axes than $y=\frac{1}{x}$. 
+\\For $0<a<1$, as $a$ tends to $0$, the graph moves closer to the axes than $y=\frac{1}{x}$. 
 \item If $a<0$, the graph of $f(x)$ lies in the second and fourth quadrants.\\
 For $a<-1$, the graph of $f(x)$ will be further away from the axes than $y=-\frac{1}{x}$.
-\\For $-1<a<0$, $a$ is a fraction and the graph will be closer to the axes than $y=-\frac{1}{x}$. 
+\\For $-1<a<0$, as $a$ tends to $0$, the graph moves closer to the axes than $y=-\frac{1}{x}$. 
 \end{itemize}
 
 
