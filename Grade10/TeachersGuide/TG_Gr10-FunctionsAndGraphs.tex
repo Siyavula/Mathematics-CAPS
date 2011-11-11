@@ -309,7 +309,7 @@ From the graph we see that $g$ lies above $h$ when: $x \leq -4$ or $x \geq 4$
 \begin{exercises}{}
 {
    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item Using graph paper, draw the graph of $xy=-6$.
+\item Draw the graph of $xy=-6$.
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item Does the point $(-2; 3)$ lie on the graph ? Give a reason for your answer.
     \item If the $x$-value of a point on the drawn graph is $0,25$ what is the corresponding $y$-value?
@@ -332,7 +332,7 @@ From the graph we see that $g$ lies above $h$ when: $x \leq -4$ or $x \geq 4$
  \begin{solutions}{}{
  \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item %Using graph paper, draw the graph of $xy=-6$.
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
 \psset{yunit=0.4,xunit=0.4}
@@ -370,7 +370,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 
     \end{enumerate}
 \item %Draw the graph of $h(x)=\frac{8}{x}$.
-\scalebox{1}{
+\scalebox{0.8}{
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
 \psset{yunit=0.4,xunit=0.4}
@@ -740,15 +740,16 @@ Therefore the equation is $f(x) = 3^x$.
     \item $y=\dfrac{cos~\theta}{2}$
     \end{enumerate}
 \end{multicols}
-  \item Given the general equations $y=mx+c$; $y=ax^2+q$; $y=\frac{a}{x}+q$; $y=a~sin~x+q$; $y=a^x +q$ and $y=a~tan~x$, determine the
+  \item Given the general equations $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ and $y=a~tan~x$, determine the
     specific equations for each of the following graphs:\vspace{20pt}\\
     \begin{center}
       \begin{table}[H]
-        \begin{tabular}{|m{6cm}|m{6cm}|}
-          \hline
+        \begin{tabular}{m{6cm}m{6cm}}
+%           \hline
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-7)(6,6)
                 \psline[linewidth=0.02, linestyle=dashed](-2,0)(-2,-6)
@@ -767,21 +768,34 @@ Therefore the equation is $f(x) = 3^x$.
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
                 \psplot[plotstyle=curve,arrows=<->]{-1.7}{1.7}{x 2 exp -2 mul 3 add}
                 \rput(-5,5){\textbf{(b)}}
-                \psdots(1,1)
+                \psdots(1,1)(0,3)
                 \rput(0.3, 5.3){$y$}
                 \rput(5.2, 0.2){$x$}
                 \rput(-0.37,-0.3){$0$}
                 \rput(1.5,1.5){$(1;1)$}
+
+\rput(0.8,3.3){$(0;3)$}
             \end{pspicture}}
           \end{center}
-          \\ \hline
+          \\ %\hline
+   
+        \end{tabular}
+      \end{table}
+    \end{center}
+
+   \begin{center}
+      \begin{table}[H]
+        \begin{tabular}{m{6cm}m{6cm}}
+     
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-5)(5,5)
                 \psplot[plotstyle=curve,arrows=<->]{-4.5}{-0.6}{x -1 exp -3 mul}
@@ -798,6 +812,7 @@ Therefore the equation is $f(x) = 3^x$.
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-6,-2)(6,7)
                 \psplot[plotstyle=curve,arrows=<->]{-3.5}{5}{x 2 add}
@@ -810,7 +825,8 @@ Therefore the equation is $f(x) = 3^x$.
                 \rput(5,6){$(4;6)$}
             \end{pspicture}}
           \end{center}
-          \\ \hline
+          \\ %\hline
+          
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-6,-5)(5,6)
@@ -838,6 +854,7 @@ Therefore the equation is $f(x) = 3^x$.
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(-5,-5)(5,1)
+                %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-3)(5,5)
                 \psplot[plotstyle=curve,arrows=<->]{-4}{0.8}{2 x exp 2 mul 1 add}
@@ -851,7 +868,7 @@ Therefore the equation is $f(x) = 3^x$.
                 \rput(0.8,3){$(0;3)$}
             \end{pspicture}}
           \end{center}
-          \\ \hline
+          \\ %\hline
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(0,-2.5)(4,2)
@@ -873,10 +890,13 @@ Therefore the equation is $f(x) = 3^x$.
               \end{pspicture}
             }
           \end{center}
-          \\ \hline
+          
+          \\ %\hline
+          
         \end{tabular}
       \end{table}
     \end{center}
+
   \item $y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:
 \begin{center}
     \scalebox{0.9}{
