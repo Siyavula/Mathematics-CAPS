@@ -4,7 +4,9 @@ This chapter examines the surface areas of two dimensional objects and
 volumes of three dimensional objects, otherwise known as solids. In
 order to work with these objects, you need to know how to calculate
 the surface area and perimeter of the two dimensional shapes below.
+
 \chapterstartvideo{VMcmk}
+
 \section{Area of a polygon }
 
 \Definition{Area}{Area is the two dimensional space inside the
@@ -1799,7 +1801,15 @@ $a$ can be calculated using the Theorem of Pythagoras:
   \end{array}
 \end{equation*}
  \\ \hline
+\end{tabular}
+\end{table}
 
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+\begin{tabular}{|C|D|E|}
+\hline
 \textbf{Right cone} &
 \begin{center}
  \scalebox{0.7} % Change this value to rescale the drawing.
@@ -2370,6 +2380,7 @@ The solid below is made up of a cube and a square pyramid. Find it's volume and 
 \end{tabular}
 }
 \end{exercises}
+\clearpage
 % slight mod to this long heading. Makes it fit in book and TOC.
 \section{The effect of multiplying a dimension by a factor of $k$}
 When one or more of the dimensions of a prism or cylinder is multiplied by a constant, the
@@ -2383,17 +2394,18 @@ scaled up or down.\par
 Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and
 three of its dimensions by a constant factor of $5$ and calculate the new volume and surface area.\par
 
-\hspace*{-50pt}
-\begin{minipage}[h]{1.2\textwidth}
+% \hspace*{-50pt}
+% \begin{minipage}[h]{1.2\textwidth}
 \begin{table}[H]
-\begin{tabular}{|m{5cm}|c|c|}
+\begin{center}
+\begin{tabular}{|m{4cm}|c|c|}
 \hline
-Dimensions & 
-Volume & 
-Surface \\ \hline
+\textbf{Dimensions} & 
+\textbf{Volume} & 
+\textbf{Surface} \\ \hline
 Original dimensions 
 \begin{center}
-\scalebox{0.9} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-0.9664062)(2.8190625,0.94640625)
 \psline[linewidth=0.02cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(0.0,-0.33359376)(0.92,-0.5935938)
@@ -2438,7 +2450,7 @@ Original dimensions
 
 Multiply one dimension by $5$ 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.4867684)(2.0090625,1.4667684)
 \psline[linewidth=0.02cm](0.6727914,-0.97690886)(1.0821153,-0.84186465)
@@ -2492,10 +2504,9 @@ Multiply one dimension by $5$
   \end{array}
 \end{equation*}
 \\ \hline
-
 Multiply two dimensions by $5$ 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.696225)(4.1590624,1.716225)
 \psline[linewidth=0.02cm](2.7097116,-1.1182724)(3.1489298,-0.98734313)
@@ -2558,10 +2569,26 @@ Multiply two dimensions by $5$
   \end{array}
 \end{equation*}
 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+% \end{minipage}
+
+
+% \hspace*{-50pt}
+\begin{minipage}[h]{1\textwidth}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|m{4cm}|c|c|}
+\hline
+\textbf{Dimensions} & 
+\textbf{Volume} & 
+\textbf{Surface} \\ \hline
+
 
 Multiply all three dimensions by $5$ 
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.65} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.8564062)(5.8090625,1.8764062)
 \psline[linewidth=0.02cm](2.690617,-0.9723507)(2.690302,-1.3984536)
@@ -2636,7 +2663,7 @@ Multiply all three dimensions by $5$
 
 Multiply all three dimensions by $k$ 
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.65} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-1.8990625)(6.586406,1.8690625)
 \psline[linewidth=0.02cm,linecolor=gray,linestyle=dashed,dash=0.1cm 0.1cm](1.1835704,1.3987)(3.7597368,0.8092612)
@@ -2719,9 +2746,10 @@ Multiply all three dimensions by $k$
 \end{equation*}
 \\ \hline
 \end{tabular}
+\end{center}
 \end{table}
 \end{minipage}
-\clearpage
+
 \begin{wex}{Calculating the new dimensions of a rectangular prism}
 {Consider a square prism with a height of $4$ cm and base lengths of $3$ cm.
 \begin{center}
@@ -2798,7 +2826,7 @@ Two of the dimensions are multiplied by a factor of $3$.
 \end{align*}
 }
 \end{wex}
-
+\clearpage
 
 \begin{wex}{Multiplying the dimensions of a rectangular prism by $k$}
 {Prove that if the height of a rectangular prism with dimensions $l$,
