@@ -1801,7 +1801,15 @@ $a$ can be calculated using the Theorem of Pythagoras:
   \end{array}
 \end{equation*}
  \\ \hline
+\end{tabular}
+\end{table}
 
+\begin{table}[H]
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+\begin{tabular}{|C|D|E|}
+\hline
 \textbf{Right cone} &
 \begin{center}
  \scalebox{0.7} % Change this value to rescale the drawing.
@@ -2372,6 +2380,7 @@ The solid below is made up of a cube and a square pyramid. Find it's volume and 
 \end{tabular}
 }
 \end{exercises}
+\clearpage
 % slight mod to this long heading. Makes it fit in book and TOC.
 \section{The effect of multiplying a dimension by a factor of $k$}
 When one or more of the dimensions of a prism or cylinder is multiplied by a constant, the
@@ -2385,14 +2394,15 @@ scaled up or down.\par
 Consider a rectangular prism of dimensions $l$, $b$ and $h$. Below we multiply one, two and
 three of its dimensions by a constant factor of $5$ and calculate the new volume and surface area.\par
 
-\hspace*{-50pt}
-\begin{minipage}[h]{1.2\textwidth}
+% \hspace*{-50pt}
+% \begin{minipage}[h]{1.2\textwidth}
 \begin{table}[H]
+\begin{center}
 \begin{tabular}{|m{5cm}|c|c|}
 \hline
-Dimensions & 
-Volume & 
-Surface \\ \hline
+\textbf{Dimensions} & 
+\textbf{Volume} & 
+\textbf{Surface} \\ \hline
 Original dimensions 
 \begin{center}
 \scalebox{0.9} % Change this value to rescale the drawing.
@@ -2494,7 +2504,6 @@ Multiply one dimension by $5$
   \end{array}
 \end{equation*}
 \\ \hline
-
 Multiply two dimensions by $5$ 
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -2560,6 +2569,21 @@ Multiply two dimensions by $5$
   \end{array}
 \end{equation*}
 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+% \end{minipage}
+
+
+\hspace*{-50pt}
+\begin{minipage}[h]{1.2\textwidth}
+\begin{table}[H]
+\begin{tabular}{|m{5cm}|c|c|}
+\hline
+\textbf{Dimensions} & 
+\textbf{Volume} & 
+\textbf{Surface} \\ \hline
+
 
 Multiply all three dimensions by $5$ 
 \begin{center}
@@ -2723,7 +2747,7 @@ Multiply all three dimensions by $k$
 \end{tabular}
 \end{table}
 \end{minipage}
-\clearpage
+
 \begin{wex}{Calculating the new dimensions of a rectangular prism}
 {Consider a square prism with a height of $4$ cm and base lengths of $3$ cm.
 \begin{center}
@@ -2800,7 +2824,7 @@ Two of the dimensions are multiplied by a factor of $3$.
 \end{align*}
 }
 \end{wex}
-
+\clearpage
 
 \begin{wex}{Multiplying the dimensions of a rectangular prism by $k$}
 {Prove that if the height of a rectangular prism with dimensions $l$,
