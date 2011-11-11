@@ -27,7 +27,7 @@
    
 
 \usepackage{extsizes}
-
+\usepackage{fmtcount}
 
 
 
@@ -367,7 +367,7 @@ linecolor=red%
 
 
 \begin{mdframed}[linewidth=1pt,linecolor=black, leftmargin=10pt, innertopmargin=8pt, innerbottommargin=6pt, skipbelow=0pt]
-{\Large\textbf{\textit{Worked Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
+{\Large\textbf{\textit{Example \arabic{workedexamplecounter}:}} } {\Large\textit{#1}}
 \vspace*{0pt}
 \end{mdframed}
 \vspace*{-2pt}
@@ -473,7 +473,6 @@ linecolor=red%
 \newenvironment{eocexercises}[1]
 {
 \eocexercisesheading
-\addcontentsline{toc}{section}{End of chapter exercises}
 %\hrule width \textwidth height 1pt\\
 \begin{quotation}
 \noindent
@@ -742,6 +741,10 @@ linecolor=red%
     \fancyfoot[LE,RO]{\thepage}
 
 
+% same page footer on chapter pages
+    \fancypagestyle{plain}{%
+    \fancyfoot[C]{}
+    \fancyfoot[LE,RO]{\thepage}}
 
 
 
@@ -820,6 +823,7 @@ linecolor=red%
       \end{tikzpicture}
       };
    \end{tikzpicture}
+\setcounter{workedexamplecounter}{1}
   }
 \titlespacing*{\chapter}{1.5cm}{1cm}{1cm}
 
@@ -840,11 +844,11 @@ linecolor=red%
               {
               \begin{minipage}{0.85\textwidth}
               \raggedright
-              \color{black} #1
+              \color{black}\sectionlabel~#1
               \end{minipage}
               };
         \node[anchor=east,text centered, yshift=1.0cm, xshift=\hoffset+0.45\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~EMA\ABAlph{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -871,7 +875,7 @@ linecolor=red%
                 \end{minipage}
                 };
         \node[anchor=east,text centered, yshift=0.75cm, xshift=\hoffset+0.05\marginparwidth+1.1\textwidth]
-              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~P\arabic{shortcodecounter}};
+              {\Large\color{black} \raisebox{-0.25em}{\includegraphics[scale=0.3]{../icons/www.pdf}}~EMA\ABAlph{shortcodecounter}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
@@ -898,7 +902,6 @@ linecolor=red%
 }
 \par
 \vspace{\baselineskip}
-\addcontentsline{toc}{section}{Summary}
 
 See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/video.pdf}} Presentation: #1 at www.everythingmaths.co.za)
 
