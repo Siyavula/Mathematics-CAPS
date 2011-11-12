@@ -230,26 +230,23 @@ outcomes in the sample space.
 {What is the theoretical probability of each of the events in the
   first two of our three experiments?}
 {
-  \westep{Write down the size of the sample space}
 
-  \begin{itemize}
-  \item[] Experiment 1 (coin): $n(S) = 2$
-  \item[] Experiment 2 (dice): $n(S) = 36$
-  \end{itemize}
-  
+  Experiment 1 (coin): $n(S) = 2$\\
+  Experiment 2 (dice): $n(S) = 36$\\
+
   \westep{Write down the size of the event set}
 
-  \begin{itemize}
-  \item[] Experiment 1: $n(E) = 1$
-  \item[] Experiment 2: $n(E) = 5$
-  \end{itemize}
+ 
+   Experiment 1: $n(E) = 1$\\
+   Experiment 2: $n(E) = 5$\\
+
 
   \westep{Compute the theoretical probability}
 
-  \begin{itemize}
-  \item[] Experiment 1: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{1}{2} = 0,5$
-  \item[] Experiment 2: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{5}{36} = 0,13\dot{8}$
-  \end{itemize}
+
+Experiment 1: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{1}{2} = 0,5$\\
+ Experiment 2: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{5}{36} = 0,13\dot{8}$\\
+
 }
 \end{wex}
 
@@ -546,11 +543,16 @@ sample space contains all possible outcomes of the experiment.
 \par
 \mindsetvid{{V}enn diagrams and probabilities}{VMcbf}
 \begin{wex}{Venn diagrams}
-{\wexlabel{wex:dice_venn}%
+{
+\begin{minipage}{\textwidth}
+\wexlabel{wex:dice_venn}%
+
 Represent the sample space of two rolled dice and the following two events using a Venn diagram:
   \begin{itemize}
   \item[] Event $A$: the sum of the dice equals $8$
-  \item[] Event $B$: at least one of the dice shows\ \raisebox{-2pt}{
+  \item[] Event $B$: at least one of the dice shows
+
+\ \raisebox{-2pt}{
       \begin{tikzpicture}
         \begin{scope}[scale=0.333]
           \makediegeneral{2}{}{0.175cm*0.333}
@@ -558,6 +560,7 @@ Represent the sample space of two rolled dice and the following two events using
       \end{tikzpicture}
     }
   \end{itemize}
+\end{minipage}
 }{
 \begin{center}
 \begin{tikzpicture}
@@ -594,7 +597,9 @@ Represent the sample space of two rolled dice and the following two events using
 \end{wex}
 
 \begin{wex}{Venn diagrams}
-{Consider the set of diamonds removed from a deck of cards. A random card is selected from the set of diamonds.
+{
+\begin{minipage}{\textwidth}
+Consider the set of diamonds removed from a deck of cards. A random card is selected from the set of diamonds.
 \begin{itemize}
  \item Write down the sample space, $S$, for the experiment.
 \item What is the value of $n(S)$?
@@ -605,6 +610,7 @@ Represent the sample space of two rolled dice and the following two events using
 \end{itemize}
 Represent sample space $S$ and events $P$ and $R$ using a Venn diagram.
 \end{itemize}
+\end{minipage}
 }
 {
 \westep{Write down the sample space $S$}
@@ -861,7 +867,9 @@ This relationship is true for mutually
 exclusive events only.
 
 \begin{wex}{Mutually exclusive events}
-{We roll two dice and are interested in the following two events:
+{
+\begin{minipage}{\textwidth}
+We roll two dice and are interested in the following two events:
   \begin{itemize}
   \item[] $A:$ The sum of the dice equals $8$
   \item[] $B:$ At least one of the dice shows\ \raisebox{-2pt}{
@@ -873,6 +881,7 @@ exclusive events only.
     }
   \end{itemize}
   Show that the events are mutually exclusive.
+\end{minipage}
 }{
   \westep{Draw the sample space and the two events}
 
@@ -948,7 +957,9 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
 
 % %manual clearpage to fix broken mdframed for Definition below
 \begin{wex}{Reasoning with Venn diagrams}
-{In a survey $70$ people were questioned about which product they
+{
+\begin{minipage}{\textwidth}
+In a survey $70$ people were questioned about which product they
   use: A or B or both. The report of the survey shows that $25$
   people use product A, $35$ people use product B and $15$ people use
   neither. Use a Venn diagram to work out how many people
@@ -957,9 +968,12 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
   \item use product B only,
   \item use both product A and product B.
   \end{enumerate}
+\end{minipage}
 }{
   \westep{Summarise the sizes of the sample space, the event sets,
     their union and their intersection}
+% \begin{minipage}{\textwidth}
+
   \begin{itemize}
   \item We are told that $70$ people were questioned, so the size of the
     sample space is $n(S) = 70$.
@@ -979,7 +993,7 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
       &= 5
     \end{align*}
   \end{itemize}
-
+% \end{minipage}
   \westep{Determine whether the events are mutually exclusive}
   Since the intersection of the events, $A \cap B$, is not empty, the
   events are not mutually exclusive. This means that their circles
@@ -1005,11 +1019,13 @@ P(A) + P(A') = P(A \cup A') = P(S) = 1
     \end{center}
 
   \westep{Read off the answers}
+% \begin{minipage}{\textwidth}
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
   \item $20$ people use product A only.
   \item $30$ people use product B only.
   \item $5$ people use both products.
   \end{enumerate}
+% \end{minipage}
 }
 \end{wex}
 
