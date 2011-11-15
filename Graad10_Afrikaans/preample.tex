@@ -645,18 +645,50 @@ linecolor=red%
 
 \newenvironment{Investigation}[1]
 {
-\begin{quotation}
-\noindent
-\vspace{.5cm}
+
+\setlength{\saveparindentlength}{\parindent}
 \setlength{\parindent}{0pt}
-\textbf{\textit{Ondersoeking:}
-#1}\par
+
+\ifdimless{\pagegoal-\pagetotal}{4em}%4em play with this 
+{\clearpage\vspace*{-\topskip}}{} 
+
+\begin{quotation}
+\vspace*{25.6pt}
+{  \fontsize{12}\bfseries\itshape
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=west ,text centered, xshift=-40pt]
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[color=white, draw=black, linewidth=1pt] (0,0) rectangle
+          (0.27\textwidth, 28pt);
+       \node[anchor=west, yshift=14pt, xshift=4pt, text centered]
+              { \bfseries ~ \color{black} Ondersoeking:};
+       \end{tikzpicture}
+    };
+    
+% now the white bar to the end of the paragraph
+    \node[anchor=west, xshift=55pt]{
+      \begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
+          (0.7\textwidth-5pt,28pt);
+         \node[anchor=west, yshift=14pt, xshift=0pt, text centered]
+              { \textit{#1} };
+
+       \end{tikzpicture}
+
+
+      };
+   \end{tikzpicture}
+
+}
+
+\begin{mdframed}[leftline=true, topline=false, bottomline=false, rightline=false, linecolor=siyavula-dark-gray, linewidth=10pt]
 }%
 {%
+\vspace{5pt}
+
+\end{mdframed}
 \end{quotation}
 \setlength{\parindent}{\saveparindentlength}}
-
-
 
 
         \newenvironment{cnxrule}{\begin{example}}
