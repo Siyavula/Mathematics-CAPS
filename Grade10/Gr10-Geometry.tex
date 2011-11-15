@@ -1,7 +1,7 @@
 \chapter{Euclidean geometry}
 \setcounter{figure}{1}
 \setcounter{subfigure}{1}
-\section {Revision}
+% \section {Revision}
 \setcounter{figure}{1}
 \setcounter{subfigure}{1}
 
@@ -1919,7 +1919,9 @@ State whether the following pairs of triangles are congruent or not. Give reason
 
  %EXTRA PAGEBREAK TO FORCE WEX BELOW TO SPLIT OVER TWO PAGES
 \begin{wex}{Properties of a parallelogram}
-{$ABCD$ is a parallelogram with $AB \parallel DC$ and $AD \parallel BC$. Show that:
+{
+\begin{minipage}{\textwidth}
+$ABCD$ is a parallelogram with $AB \parallel DC$ and $AD \parallel BC$. Show that:
   \begin{enumerate}[noitemsep,label=\textbf{\arabic*}.]
   \item $AB = DC$ and $AD = BC$ 
   \item $\hat{A} = \hat{C}$ and $\hat{B} = \hat{D}$ 
@@ -1949,6 +1951,7 @@ State whether the following pairs of triangles are congruent or not. Give reason
 \end{pspicture} 
 }
 \end{center}
+\end{minipage}
 }
 {
 \westep{Connect $AC$ to form $\triangle ABC$ and $\triangle CDA$}
@@ -2315,7 +2318,9 @@ A rhombus has all the properties of a parallelogram:
 It also has two special properties:
 
 \begin{wex}{Special properties of a rhombus}
-{$XYZT$ is a rhombus. Prove that:
+{\begin{minipage}{\textwidth}
+  
+$XYZT$ is a rhombus. Prove that:
 \begin{enumerate}[label=\textbf{\alph*}.]
 \item the diagonals bisect each other perpendicularly;
 \item the diagonals bisect the interior angles.
@@ -2368,6 +2373,8 @@ It also has two special properties:
 \end{pspicture} 
 } 
 \end{center}
+
+\end{minipage}
 }
 {\westep{Use the definition of a rhombus to fill in on the diagram all equal angles and sides}
 \westep{Prove $\triangle XTO \equiv \triangle ZTO$}
@@ -2573,11 +2580,16 @@ To prove a parallelogram is a square, we need to show either one of the followin
 \subsection{Kite}
 \Definition{Kite}{A kite is a quadrilateral with two pairs of adjacent sides equal.}
 \begin{wex}{Properties of a kite}
-{$ABCD$ is a kite with $AD = AB$ and $CD = CB$. Prove that:
+{
+\begin{minipage}{\textwidth}
+ 
+
+$ABCD$ is a kite with $AD = AB$ and $CD = CB$. Prove that:
 \begin{enumerate}[label=\textbf{\arabic*}.]
 \item $A \hat{D}C = A \hat{B}C$
 \item Diagonal $AC$ bisects $\hat{A}$ and $\hat{C}$
 \end{enumerate}
+\end{minipage}
 \begin{center}
 \scalebox{1.2} % Change this value to rescale the drawing.
 {
@@ -3731,6 +3743,7 @@ statement is false, explain why:
 \end{pspicture}
 } 
 \end{tabular}
+\newline
 \begin{tabular}{lm{4.5cm}lm{4.5cm}}
 \textbf{(c)} &  
 \raisebox{-.5\height}{\begin{pspicture}(0,-1.8901563)(3.724375,1.8901563) 
