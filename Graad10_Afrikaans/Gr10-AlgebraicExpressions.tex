@@ -1,20 +1,6 @@
 \chapter{Algebraic expressions}
 \fancyfoot[LO,RE]{Fokus Area: Wiskunde}
-\section{Rasionale en irrasionale getalle}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
 
-
-’n Getal is ’n manier om ’n hoeveelheid voor te stel. Die getalle wat op hoërskool gebruik sal word is almal reëel, maar daar is heelwat verskillende maniere om enige gegewe reële
-getal voor te stel.\par Hierdie hoofstuk beskryf rasionale getalle.\par 
-
-    
-
-\par 
-\subsection*{Die groot prentjie van getalle}
-\addcontentsline{toc}{subsection}{Die oorhoofse beskouing van getalle}
-
-\setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m38348*id62548}
 \begin{center}
 \label{m38348*id62548!!!underscore!!!media}\label{m38348*id62548!!!underscore!!!printimage}
@@ -27,7 +13,7 @@ getal voor te stel.\par Hierdie hoofstuk beskryf rasionale getalle.\par
 \psellipse[linewidth=0.04,dimen=outer](4.34,-1.364375)(3.8,2.5)
 \psellipse[linewidth=0.04,dimen=outer](3.57,-1.854375)(2.57,1.61)
 \usefont{T1}{ppl}{b}{n}
-\rput(6.735781,4.350625){\Huge REELE $\mathbb{R}$}
+\rput(6.735781,4.350625){\Huge Reele $\mathbb{R}$}
 \usefont{T1}{ppl}{b}{n}
 \rput(11.03875,-0.484375){\Large Irrasionaal $\mathbb{Q'}$}
 \usefont{T1}{ppl}{b}{n}
@@ -44,15 +30,31 @@ getal voor te stel.\par Hierdie hoofstuk beskryf rasionale getalle.\par
 \vspace{2pt}
 \vspace{.1in}
 \end{center}
-\end{figure}       
+\end{figure}   
+
+% \setcounter{subfigure}{1}
+
+% ’n Getal is ’n manier om ’n hoeveelheid voor te stel. Die getalle wat op hoërskool gebruik sal word is almal reëel, maar daar is heelwat verskillende maniere om enige gegewe reële
+% getal voor te stel.\par Hierdie hoofstuk beskryf rasionale getalle.\par 
+ 
+% \par 
+% \subsection*{Die groot prentjie van getalle}
+% \addcontentsline{toc}{subsection}{Die oorhoofse beskouing van getalle}
+% \setcounter{subfigure}{0}
+    
 \par 
 Ons gebruik die volgende definisies:\par 
 \begin{itemize}[itemsep=5pt]
-\item natuurlike getalle is $\{1; 2; 3; \ldots\}$
-\item telgetalle is $\{0; 1; 2; 3; \ldots\}$
-\item heelgetalle is $\{\ldots -3; -2; -1; 0; 1; 2; 3; \ldots\}$
+\item $\mathbb{N}$: natuurlike getalle is $\{1; 2; 3; \ldots\}$
+\item $\mathbb{N}_0$: telgetalle is $\{0; 1; 2; 3; \ldots\}$
+\item $\mathbb{Z}$: heelgetalle is $\{\ldots -3; -2; -1; 0; 1; 2; 3; \ldots\}$
 \end{itemize}
 
+\par
+\chapterstartvideo{VMabo}
+
+\section{Rasionale en irrasionale getalle}
+% \setcounter{figure}{1}
 \nopagebreak
 
 \Definition{Rasionale getal}{
@@ -72,51 +74,88 @@ Die volgende getalle is almal rasionaal.\par
 \begin{equation*}
 \frac{10}{1};\frac{21}{7};\frac{-1}{-3};\frac{10}{20};\frac{-3}{6}
 \end{equation*}
-Jy kan sien dat al die tellers en noemers heelgetalle is.\par 
+Jy kan sien dat al die tellers en noemers heelgetalle is. Dit beteken dat alle heelgetalle rasionaal is, aangesien hulle geskryf kan word met ’n noemer van $1$.\par 
+% Dus is
+% 
+% \begin{equation*}
+% \frac{\sqrt{2}}{7} ; \frac{20}{\pi}
+% \end{equation*}
+% nie voorbeelde van rasionale getalle nie, want in elke geval is óf die teller óf die noemer nie ’n heelgetal nie.\par 
+% ’n Getal wat nie geskryf word in die vorm van ’n heelgetal gedeel deur ’n heelgetal nie kan nogtans ’n rasionale
+% getal wees. Dit is omdat die vereenvoudigde resultaat wel as ’n kwosiënt van heelgetalle geskryf kan word. Die
+% reël is dat indien ’n getal geskryf kan word as ’n kwosiënt van heelgetalle, dit rasionaal is, selfs al kan dit op ’n
+% manier geskryf word wat nie so ’n kwosiënt is nie. Hier is twee voorbeelde wat dalk nie na rasionale getalle lyk
+% nie, maar nogtans is, omdat daar ekwivalente vorms gevind kan word wat bestaan uit ’n heelgetal gedeel deur ’n
+% heelgetal:\par 
+% \nopagebreak\noindent{}
+% \begin{equation*}    
+% \frac{-1,33}{-3}=\frac{133}{300}; ~~~~~~\frac{-3}{6,39}=\frac{-300}{639}=\frac{-100}{213}
+% \end{equation*}
+% 
+% 
+% \section{Irrasionale getalle}
+% \setcounter{figure}{1}
+% \setcounter{subfigure}{1}
 
-\par
-Dit beteken dat alle heelgetalle rasionaal is, aangesien hulle geskryf kan word met ’n noemer van $1$.\par 
-Dus is
+% 
+% Jy het reeds gesien dat baie ink en papier nodig sou wees om repeterende desimale getalle neer te skryf. Dis
+% nie net onmoontlik om hierdie getalle neer te skryf nie, maar om énige getal tot baie desimale plekke of met hoë
+% akkuraatheid neer te skryf, is gewoonlik onprakties. Daarom benader ons dikwels ’n getal tot ’n sekere aantal
+% desimale plekke of, selfs beter, tot ’n sekere aantal beduidende syfers.\par 
+
+\Definition{Irrasionale getalle}{Irrasionale getalle ($\mathbb{Q'}$) is getalle wat nie as ’n breuk met ’n heeltallige teller en noemer geskryf kan word nie. Dit
+beteken dat enige getal wat nóg ’n eindige nóg ’n herhalende desimale getal is, irrasionaal is. 
+}
+
+Voorbeelde van irrasionale getalle is:\par 
 
 \begin{equation*}
-\frac{\sqrt{2}}{7} ; \frac{20}{\pi}
-\end{equation*}
-nie voorbeelde van rasionale getalle nie, want in elke geval is óf die teller óf die noemer nie ’n heelgetal nie.\par 
-’n Getal wat nie geskryf word in die vorm van ’n heelgetal gedeel deur ’n heelgetal nie kan nogtans ’n rasionale
-getal wees. Dit is omdat die vereenvoudigde resultaat wel as ’n kwosiënt van heelgetalle geskryf kan word. Die
-reël is dat indien ’n getal geskryf kan word as ’n kwosiënt van heelgetalle, dit rasionaal is, selfs al kan dit op ’n
-manier geskryf word wat nie so ’n kwosiënt is nie. Hier is twee voorbeelde wat dalk nie na rasionale getalle lyk
-nie, maar nogtans is, omdat daar ekwivalente vorms gevind kan word wat bestaan uit ’n heelgetal gedeel deur ’n
-heelgetal:\par 
-\nopagebreak\noindent{}
-\begin{equation*}    
-\frac{-1,33}{-3}=\frac{133}{300}; ~~~~~~\frac{-3}{6,39}=\frac{-300}{639}=\frac{-100}{213}
+\sqrt{2};~\sqrt{3};~\sqrt[3]{4};~\pi ;
+~\frac{1+\sqrt{5}}{2}
 \end{equation*}
 
+These are not rational numbers, because either the numerator or the denominator is not an integer. 
 
-\subsection*{Desimale getalle}
+% Wanneer irrasionale getalle in desimaalnotasie geskryf word, het hulle ’n oneindige aantal desimale syfers wat nooit herhaal nie. \\Die vierkantswortels van non-vierkante en die derde-magswortels van non-derdemagte is almal irrasionaal.
+
+% \begin{activity}{Irrasionale getalle}
+% \nopagebreak
+% Watter van die volgende kan nie as 'n rasionale getalle geskryf word nie?\par \vspace{0.5cm}
+% \textbf{Onthou}: ’n Rasionale getal is ’n breuk met ’n heeltallige teller en noemer. Eindige en herhalende desimale
+% getalle is rasionaal.\par 
+% \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+% \item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
+% \item $1,4$
+% \item $1,618\phantom{\rule{0.166667em}{0ex}}033\phantom{\rule{0.166667em}{0ex}}989\phantom{\rule{0.166667em}{0ex}}\ldots$
+% \item $100$
+% \item $1,7373737373\ldots$
+% \item $0,\overline{02}$
+% \end{enumerate}
+% \end{activity}
+% 
+
+
+ \subsection*{Desimale getalle}
 \addcontentsline{toc}{subsection}{Decimal numbers}
 \nopagebreak
 
 Alle heelgetalle en heeltallige kwosiënte is rasionaal. Daar is twee bykomende vorme van rasionale getalle.\par 
-
-
-
-
-\begin{activity}{Desimale getalle}
-\nopagebreak
-Jy kan die rasionale getal
-$\frac{1}{2}$ skryf as die desimale getal $0,5$. Skryf die volgende getalle as desimale getalle:\par 
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $\dfrac{1}{4}$
-\item $\dfrac{1}{10}$
-\item $\dfrac{2}{5}$
-\item $\dfrac{1}{100}$
-\item $\dfrac{2}{3}$
-\end{enumerate}
-Beskou die getalle na die desimale komma. Kom hulle tot ’n einde of gaan hulle voort? Indien hulle voortgaan, is
-daar ’n herhalende patroon in die getalle? \par 
-\end{activity}
+% 
+% 
+% \begin{activity}{Desimale getalle}
+% \nopagebreak
+% Jy kan die rasionale getal
+% $\frac{1}{2}$ skryf as die desimale getal $0,5$. Skryf die volgende getalle as desimale getalle:\par 
+% \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+% \item $\dfrac{1}{4}$
+% \item $\dfrac{1}{10}$
+% \item $\dfrac{2}{5}$
+% \item $\dfrac{1}{100}$
+% \item $\dfrac{2}{3}$
+% \end{enumerate}
+% Beskou die getalle na die desimale komma. Kom hulle tot ’n einde of gaan hulle voort? Indien hulle voortgaan, is
+% daar ’n herhalende patroon in die getalle? \par 
+% \end{activity}
 
 Jy kan ’n rasionale getal as ’n desimale getal skryf. Twee tipes desimale getalle wat as rasionale getalle geskryf
 kan word:\par 
@@ -126,12 +165,48 @@ kan word:\par
 \item Desimale getalle wat ’n nimmereindigende herhalende patroon van getalle na die komma het, byvoorbeeld die breuk$\dfrac{1}{3}$ kan geskryf word as
 $0,\dot{3}$. 
 Die kolletjie beteken dat die $3$’e repeteer, m.a.w. $0,333\ldots=0,\dot{3}$.
+\item Decimal numbers that have a recurring pattern of multiple digits. For example, the fraction $\dfrac{2}{11}$ can also be written as 
+$0,\overline{18}$. 
+The bar represents a recurring pattern of $1$ and $8$'s i.e.
+$0,\overline{18} = 0,181818\ldots$.
 \end{itemize}
 
-
-\Tip{Jy kan ’n kol oor die herhalende desimale aanbring om aan te dui dat die desimaal repeterend is.}
-
 \par
+\textbf{Notation:} You can use a dot or a bar over the repeated numbers to indicate that the decimal is a recurring decimal. If the bar covers more than one number, then all numbers beneath the bar are recurring.
+\par
+As jy gevra word om uit te werk of ’n getal rasionaal of irrasionaal is, skryf eers die getal in desimaalnotasie. As die desimaal eindig, is die getal rasionaal. As dit vir ewig aanhou, soek vir ’n herhalende syferpatroon. As daar geen patroon is nie, is die getal irrasionaal
+\par 
+As jy ’n irrasionale getal in desimaalnotasie skryf, kan jy aanhou skryf vir baie, baie
+syfers. Dit is egter ongeriefliek en ’n mens rond gewoonlik af.\par
+%english
+\begin{wex}{Rational and irrational numbers}
+{
+\begin{minipage}{\textwidth}
+Which of the following are not rational numbers?\\
+
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
+\item $1,4$
+\item $1,618033989\ldots$
+\item $100$
+\item $1,7373737373\ldots$
+\item $0,\overline{02}$
+\end{enumerate}
+\end{minipage}
+}
+{
+\begin{minipage}{\textwidth}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item Irrational, decimal does not terminate and has no repeated pattern. 
+\item Rational, decimal terminates.
+\item Irrational, decimal does not terminate and has no repeated pattern. 
+\item Rational, all integers are rational.
+\item Rational, decimal has repeated pattern.
+\item Rational, decimal has repeated pattern.
+\end{enumerate}
+\end{minipage}
+}
+\end{wex}
 
 \subsection*{Omskakeling tussen eindigende desimale getalle en rasionale getalle}
 \addcontentsline{toc}{subsection}{Omskakeling tussen terminerende desimale getalle en rasionale getalle}
@@ -147,14 +222,11 @@ Elke syfer na die desimale komma is ’n breuk met ’n noemer wat ’n vermeerd
 \end{itemize}
 
 Dit beteken dat:
-\begin{equation*}
- \begin{array}{lll}10,589& = &10 + \dfrac{5}{10} + \dfrac{8}{100} + \dfrac{9}{1000} &\\ 
-  &=& 10 \dfrac{589}{1000} \\
-\\
-&=& \dfrac{10589}{1000}
- \end{array}
-
-\end{equation*}
+\begin{align*}
+  10,589 &= 10 + \dfrac{5}{10} + \dfrac{8}{100} + \dfrac{9}{1~000} \\
+  &= \dfrac{10~000}{1~000} + \dfrac{500}{1~000} + \dfrac{80}{1~000} + \dfrac{9}{1~000} \\
+  &= \dfrac{10~589}{1~000} \\
+\end{align*}
 
 \subsection*{Omskakeling van repeterende desimale na rasionale getalle}
 
@@ -164,7 +236,7 @@ as ’n breuk te skryf.\par
 
 \begin{wex}
 {%title
-Converting decimal numbers to fractions
+Omskakeling van  desimale getalle na breuke
 }
 {%question
 \\
@@ -220,9 +292,6 @@ $$ x = \dfrac{5427}{999} = \dfrac{201}{37} $$
 }
 \end{wex}
 
-
-
-
 In die eerste voorbeeld is die desimaal vermenigvuldig met $10$  en in die tweede voorbeeld is dit vermenigvuldig met $1000$. Dit is omdat daar in die eerste voorbeeld slegs een repeterende syfer (nl. $3$) was, terwyl die tweede voorbeeld drie repeterende syfers (i.e. $432$) gehad het.\par 
 In die algemeen, as jy een repeterende syfer het, vermenigvuldig jy met $10$.  As jy twee repeterende syfers het,
 vermenigvuldig jy met $100$.  Met drie syfers vermenigvuldig jy met $1000$ en so aan.\par
@@ -236,56 +305,16 @@ kan nie geskryf word met ’n heeltallige teller en noemer nie, omdat daar geen 
 
 
 
-\section{Irrasionale getalle}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
-
-
-Jy het reeds gesien dat baie ink en papier nodig sou wees om repeterende desimale getalle neer te skryf. Dis
-nie net onmoontlik om hierdie getalle neer te skryf nie, maar om énige getal tot baie desimale plekke of met hoë
-akkuraatheid neer te skryf, is gewoonlik onprakties. Daarom benader ons dikwels ’n getal tot ’n sekere aantal
-desimale plekke of, selfs beter, tot ’n sekere aantal beduidende syfers.\par 
-
-\Definition{Irrasionale getalle}{Irrasionale getalle is getalle wat nie as ’n breuk met ’n heeltallige teller en noemer geskryf kan word nie. Dit
-beteken dat enige getal wat nóg ’n eindige nóg ’n herhalende desimale getal is, irrasionaal is. 
-}
-
-Voorbeelde van irrasionale getalle is:\par 
-
-\begin{equation*}
-\sqrt{2};~\sqrt{3};~\sqrt[3]{4};~\pi ;
-~\frac{1+\sqrt{5}}{2}\approx 1,618
-\end{equation*}
-
-
-
-
-\Tip{Wanneer irrasionale getalle in desimaalnotasie geskryf word, het hulle ’n oneindige aantal desimale syfers wat nooit herhaal nie. \\Die vierkantswortels van non-vierkante en die derde-magswortels van non-derdemagte is almal irrasionaal.}
-
-As jy gevra word om uit te werk of ’n getal rasionaal of irrasionaal is, skryf eers die getal in desimaalnotasie. As die desimaal eindig, is die getal rasionaal. As dit vir ewig aanhou, soek vir ’n herhalende syferpatroon. As daar geen patroon is nie, is die getal irrasionaal.\par 
-As jy ’n irrasionale getal in desimaalnotasie skryf, kan jy (as jy baie tyd en papier het!) aanhou skryf vir baie, baie
-syfers. Dit is egter ongeriefliek en ’n mens rond gewoonlik af.\par 
-
-
-
-\begin{activity}{Irrasionale getalle}
-\nopagebreak
-Watter van die volgende kan nie as 'n rasionale getalle geskryf word nie?\par \vspace{0.5cm}
-\textbf{Onthou}: ’n Rasionale getal is ’n breuk met ’n heeltallige teller en noemer. Eindige en herhalende desimale
-getalle is rasionaal.\par 
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $\pi =3,14159265358979323846264338327950288419716939937510\ldots$
-\item $1,4$
-\item $1,618\phantom{\rule{0.166667em}{0ex}}033\phantom{\rule{0.166667em}{0ex}}989\phantom{\rule{0.166667em}{0ex}}\ldots$
-\item $100$
-\item $1,7373737373\ldots$
-\item $0,\overline{02}$
-\end{enumerate}
-\end{activity}
-
 
 \begin{exercises}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item State whether the following numbers are $\mathbb{Q}$ or $\mathbb{Q'}$. If the number is $\mathbb{Q}$, state whether it is $\mathbb{N}_0$, $\mathbb{N}$ or $\mathbb{Z}$:
+\begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ] 
+    \item $-\dfrac{1}{3}$
+    \item $0,651268962154862\ldots$
+    \item $\dfrac{\sqrt{9}}{3}$
+    \item $\pi^2$
+\end{enumerate}
 \item As $a$ 'n heel getal is, $b$ 'n heel getal is en $c$ is irrasionaal, watter van die volgende is rasionale getalle? 
   \begin{enumerate}[itemsep=5pt, label=\textbf{\alph*}. ] 
     \item $\dfrac{5}{6}$
@@ -293,7 +322,7 @@ getalle is rasionaal.\par
     \item $\dfrac{-2}{b}$
     \item $\dfrac{1}{c}$
     \end{enumerate}
-\item As $\dfrac{a}{1}$ 'n rasionale getal is, watter van die volgende is geldige waardes vir $a$?
+\item For which of the following values of $a$ is $\frac{a}{14}$ rational or irrational?
     \begin{enumerate}[itemsep=5pt, label=\textbf{\alph*}. ] 
     \item $1$
     \item $-10$
@@ -349,23 +378,31 @@ getalle is rasionaal.\par
 % \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 %  \par \begin{tabular}[h]{cccccc}
 %  (1.) l3U  &  (2.) l3n  &  (3.) l3Q  & \end{tabular}}
-\insertpracticeinfo{6}
+\insertpracticeinfo{7}
 }
 \end{exercises}
 
 \section{ Afronding}
 \nopagebreak
 
-Afronding van ’n desimale getal tot ’n sekere aantal desimale plekke is ’n eenvoudige manier om die benaderde
-waarde van ’n desimale getal te vind. As jy byvoorbeeld $2,6525272$ wil afrond tot drie desimale plekke, tel jy drie
-plekke na die desimale komma af en plaas ’n $|$ tussen die derde en die vierde syfer na die desimale komma.\par 
+Afronding van ’n desimale getal tot ’n sekere aantal desimale plekke is ’n eenvoudige manier om die benaderde waarde van ’n desimale getal te vind. As jy byvoorbeeld $2,6525272$ wil afrond tot drie desimale plekke:
 
-\begin{equation*}
-2,652|5272
-\end{equation*}
-Nadat jy vasgestel het of die syfer in die derde desimale plek na bo of na onder afgerond moet word, word al
-die syfers aan die regterkant van die $|$ geïgnoreer. Jy rond die finale syfer na bo af as die eerste syfer ná die $|$ groter of gelyk is aan $5$, andersins rond jy na onder af (los die syfer onveranderd). Wanneer die eerste syfer links
-van die $|$ 'n $9$ is en jy moet boontoe afrond, dan word die $9$ 'n $0$ en die tweede syfer links van die  $|$ word boontoe afgerond.\par 
+\begin{itemize}
+\item count three places after the decimal and place a $|$ between the third and fourth numbers
+\item round up the third digit if the fourth digit is greater than or equal to $5$
+\item leave the third digit unchanged if the fourth digit is less than $5$
+\item if the third digit is $9$ and needs to be round up, then the $9$ becomes a $0$ and the second digit rounded up
+\end{itemize}
+\par 
+% 
+% 
+% \begin{equation*}
+% 2,652|5272
+% \end{equation*}
+% Nadat jy vasgestel het of die syfer in die derde desimale plek na bo of na onder afgerond moet word, word al
+% die syfers aan die regterkant van die $|$ geïgnoreer. Jy rond die finale syfer na bo af as die eerste syfer ná die $|$ groter of gelyk is aan $5$, andersins rond jy na onder af (los die syfer onveranderd). Wanneer die eerste syfer links
+% van die $|$ 'n $9$ is en jy moet boontoe afrond, dan word die $9$ 'n $0$ en die tweede syfer links van die  $|$ word boontoe afgerond.
+\par 
 Dus, aangesien die eerste syfer na die $|$ 'n 5 is, moet ons afrond na bo en die derde desimaal na die komma word 3 Die antwoord vir $2,6525272$ afgerond na drie desimale pleke is dus $2,653$.
 \par
 
@@ -417,12 +454,12 @@ rond die tweede laaste syfer boontoe af.
 {
 Gebruik jou sakrekenaar om die volgende irrasionale getalle tot $3$ desimale plekke te skryf:
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
- \item $4\pi$
-\item $\sqrt{11}$
-\item $\dfrac{0,8}{3}$
-\item $\sqrt[3]{7}$
-\item $2\sqrt{10}$
-\item $\dfrac{1}{18}$
+\item $12,56637061\ldots$ %$4\pi$
+\item $3,31662479\ldots$ %$\sqrt{11}$
+\item $0,26666666\ldots$ %$\dfrac{0,8}{3}$
+\item $1,912931183\ldots$ %$\sqrt[3]{7}$
+\item $6,32455532\ldots$ %$2\sqrt{10}$
+\item $0,05555555\ldots$ %$\dfrac{1}{18}$
 \end{enumerate}
 
 \insertpracticeinfo{6}
@@ -431,26 +468,25 @@ Gebruik jou sakrekenaar om die volgende irrasionale getalle tot $3$ desimale ple
 
 
 \section{Benadering van wortelgetalle}
-\setcounter{figure}{1}
-\setcounter{subfigure}{1}
+% \setcounter{figure}{1}
+% \setcounter{subfigure}{1}
 
 Indien die ${n}^{\mathrm{de}}$ magswortel van ’n getal nie as ’n rasionale getal geskryf kan word nie,  noem ons dit ’n wortelgetal . Byvoorbeeld, $\sqrt{2}$ en $\sqrt[3]{6}$ is wortelgetalle, maar $\sqrt{4}$ is nie ’n wortelgetal nie, aangesien ons dit kan vereenvoudig tot die rasionale getal $2$.\par 
 In hierdie hoofstuk gaan ons slegs wortelgetalle van die vorm $\sqrt[n]{a}$, ondersoek, waar  $a$ ’n positiewe heelgetal is, byvoorbeeld $\sqrt{7}$ or $\sqrt[3]{5}$. Dit kom algemeen voor dat $n$ = $2$, daarom skryf ons $\sqrt{a}$. in plaas van $\sqrt[2]{a}$.\par 
 Dit is soms nuttig om ’n wortelgetal te benader sonder om ’n sakrekenaar te gebruik. Ons wil, byvoorbeeld, kan benader waar $\sqrt{3}$ op die getallelyn lê. Met ’n sakrekenaar kan ons bereken $\sqrt{3}$ is gelyk aan $1,73205\ldots$. Dit is maklik on te sien dat $\sqrt{3}$ bo $1$ en onder $2$ lê. Om sonder ’n sakrekenaar te bepaal waar ander wortelgetalle, soos $\sqrt{18}$ op die getallelyn lê, moet jy eers die volgende verstaan:\par 
 
 
-\Identity{}{
+\Identity{
 \begin{center}
 As $a$ en $b$ positiewe getalle is met $a\lessthan{}b$, dan $\sqrt[n]{a}\lessthan{}\sqrt[n]{b}$. 
-\end{center}}
-\par
-       
-\Note{’n Volkome vierkant is die getal wat verkry word wanneer ’n heelgetal met homself vermenigvuldig word. Byvoorbeeld, $9$  is ’n volkome vierkant aangesien ${3}^{2}=9$. \\Soortgelyk is ’n volkome derdemag die getal wat verkry word wanneer ’n heelgetal
-tot die derde mag verhef word. Byvoorbeeld, $27$ is ’n volkome derdemag aangesien ${3}^{3}=27$.}
-
-
-
-Gegee die wortelgetal $\sqrt[3]{52}$, behoort jy te kan sien dat dit iewers tussen $3$ en $4$,lê op die getallelyn, aangesien $\sqrt[3]{27}=3$ en $\sqrt[3]{64}=4$ en $52$ tussen $27$ en $64$.Jou sakrekenaar sal dit bevestig: $\sqrt[3]{52}=3,73\ldots$ which is indeed between $3$ and $4$.\par 
+\end{center}
+}
+      
+’n Volkome vierkant is die getal wat verkry word wanneer ’n heelgetal met homself vermenigvuldig word. Byvoorbeeld, $9$  is ’n volkome vierkant aangesien ${3}^{2}=9$. \\
+Soortgelyk is ’n volkome derdemag die getal wat verkry word wanneer ’n heelgetal
+tot die derde mag verhef word. Byvoorbeeld, $27$ is ’n volkome derdemag aangesien ${3}^{3}=27$.
+\par 
+Gegee die wortelgetal $\sqrt[3]{52}$, behoort jy te kan sien dat dit iewers tussen $3$ en $4$,lê op die getallelyn, aangesien $\sqrt[3]{27}=3$ en $\sqrt[3]{64}=4$ en $52$ tussen $27$ en $64$.
 
 \begin{wex}{Benadering van wortelgetalle}
 {
@@ -512,31 +548,28 @@ Vind twee opeenvolgende heelgetalle wat weerskante van die getalle lê, sonder d
 
 %   
 \nopagebreak
-Wiskundige uitdrukkings is soos sinne en elke deel het ’n spesifieke naam. Jy behoort vertroud te wees met die
-volgende name wat die dele van wiskundige uitdrukkings beskryf.\par 
+Wiskundige uitdrukkings is soos sinne en elke deel het ’n spesifieke naam. Jy behoort vertroud te wees met die volgende name wat die dele van wiskundige uitdrukkings beskryf.\par 
 
 \begin{equation*}
-3x^2 + 7xy -14 = 0
+3x^2 + 7xy -5^3 = 0
 \end{equation*}
 
 
-
+%english
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Naam} & \textbf{Voorbeelde} \\
 \hline
-term & $3x^2;~ 7xy;~ -14$\\ \hline
-uitdrukking & $3x^2 + 7xy -14$\\ \hline
-Ko\"effisi\"ent & $3;~7$\\ \hline
-eksponent & $2;~1$\\ \hline
-basis & $x;~y$\\ \hline
-Konstante & $3;~7;-14$\\ \hline
-veranderlike & $x;~ y$\\ \hline
-vergelyking & $3x^2 + 7xy -14 = 0$\\ \hline
-tweeterm & uitdrukkings met twee terme\\ \hline
-drieterm & uitdrukkings met drie terme \\ \hline
+term & $3x^2;~7xy;~-5^3$\\ \hline
+expression & $3x^2 + 7xy -5^3$\\ \hline
+coefficient & $3;~7$\\ \hline
+exponent & $2;~1;~3$\\ \hline
+base & $x;~y;~5$\\ \hline
+constant & $3;~7$\\ \hline
+variable & $x;~y$\\ \hline
+equation & $3x^2 + 7xy -5^3 = 0$\\ \hline
 
 % \label{m39387*secfhsst!!!underscore!!!id1562}\vspace{.5cm}
 
@@ -547,42 +580,69 @@ drieterm & uitdrukkings met drie terme \\ \hline
 \par
 
 \subsection*{Vermenigvuldig 'n eenterm en 'n tweeterm}
+%english
+A monomial is an expression with one term, for example, $3x$ or $y^2$. ’n Binomiaal is ’n wiskundige uitdrukking met twee terme, soos $ax+b$ and $cx+d$.
 
-\begin{wex}{Pas die distributiewe wet toe}
-{Skryf die volgende sonder hakies en in die eenvoudigste vorm: $2a(a-1) - 3(a^{2}-1)$}
+\begin{wex}{Simplifying brackets}
+{Simplify: $2a(a-1) - 3(a^{2}-1)$}
 {
-\westep{Toepassing van die distributiewe wet}
-\begin{equation*}
-\begin{array}{lll} 2a(a-1) -3(a^{2}-1) &=& 2a(a) + 2a(-1) + (-3)(a^{2})+(-3)(-1) &
-&=& 2a^{2} - 2a - 3a^{2} + 3
-\end{array}
-\end{equation*}
-
-\westep{Vereenvoudig}
-\begin{equation*}
-\begin{array}{lll} &=& -a^{2} -2a + 3 & 
-\end{array}
-\end{equation*}
+\begin{align*}
+  2a(a-1) -3(a^{2}-1) &= 2a(a) + 2a(-1) + (-3)(a^{2})+(-3)(-1) \\
+  &= 2a^{2} - 2a - 3a^{2} + 3 \\
+  &= -a^{2} -2a + 3
+\end{align*}
 }
 \end{wex}
 
-\subsection*{Produk van binomiale(tweeterme)}
+\subsection*{Produk van twee binomiale}
 \addcontentsline{toc}{subsection}{Vermenigvuldig twee binomiale(tweeterme)}
 
-’n Binomiaal is ’n wiskundige uitdrukking met twee terme, soos $ax+b$ and $cx+d$. As hierdie twee binomiale
-vermenigvuldig word, is die volgende die resultaat:
-\begin{equation*}
-\begin{array}{ccc}\hfill (ax+b)(cx+d) & =& (ax)(cx)+(ax)d+b(cx)+bd\hfill  \\
-& =& ac{x}^{2}+adx +bcx+bd\hfill\\
-& =& ac{x}^{2}+x(ad+bc)+bd\hfill \end{array}
-\end{equation*}
+% ’n Binomiaal is ’n wiskundige uitdrukking met twee terme, soos $ax+b$ and $cx+d$. As hierdie twee binomiale
+% vermenigvuldig word, is die volgende die resultaat:
 
-\Note{Jy kan FOIL= F(firsts) O(outers) I(inners) L(lasts) gebruil om te help om hierdie proses te onthou}
+%english
+Here we multiply (or expand) two linear binomials:
+
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.93)(2.8490624,0.93)
+\usefont{T1}{ptm}{m}{n}
+\rput(1.3745313,-0.03){\LARGE$(ax+b)(cx+d)$}
+\psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(1.61,0.16)(1.45,0.66)(0.5260656,0.6082759)(0.47,0.16)
+\psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<-}(2.33,0.2)(2.05,0.92)(0.6014754,0.7481931)(0.51,0.2576)
+\psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.17,-0.26705882)(1.25,-0.7)(1.71,-0.5917647)(1.75,-0.24)
+\psbezier[linewidth=0.02,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(0.51,-0.2)(0.69,-0.8428571)(2.07,-0.92)(2.39,-0.27714285)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(0.94453126,0.33)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.8645313,0.35)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(1.44,-0.37)
+% \usefont{T1}{ptm}{m}{n}
+% \rput(2.0445313,-0.37)
+\end{pspicture}
+}
+\end{center}
+
+
+\begin{align*}
+  (ax+b)(cx+d) &= (ax)(cx)+(ax)d+b(cx)+bd \\
+               &= ac{x}^{2}+adx +bcx+bd \\
+               &= ac{x}^{2}+x(ad+bc)+bd
+\end{align*}
+
+% \begin{equation*}
+% \begin{array}{ccc}\hfill (ax+b)(cx+d) & =& (ax)(cx)+(ax)d+b(cx)+bd\hfill  \\
+% & =& ac{x}^{2}+adx +bcx+bd\hfill\\
+% & =& ac{x}^{2}+x(ad+bc)+bd\hfill \end{array}
+% \end{equation*}
+% 
+% \Note{Jy kan FOIL= F(firsts) O(outers) I(inners) L(lasts) gebruil om te help om hierdie proses te onthou}
 \par
 
 \begin{wex}{Produk van twee binomiale }
-{Vind die produk van $(3x-2)$ en $(5x+8)$ }{
-\westep{Vind die produk}
+{Vind die produk: $(3x-2)(5x+8)$. }{
 \begin{equation*}
 \begin{array}{ccl}\hfill (3x-2)(5x+8)& =& (3x)(5x)+(3x)(8)+(-2)(5x)+(-2)(8)\hfill \\
  & =& 15{x}^{2}+24x-10x-16\hfill \\
@@ -592,42 +652,36 @@ vermenigvuldig word, is die volgende die resultaat:
 } 
 \end{wex}
 
-
-
-
 Die produk van twee identiese binomiale, is bekend as die kwadraat (of vierkant) van binomiale en word geskryf
 as:
 
 \begin{equation*}
 {(ax+b)}^{2}={a}^{2}{x}^{2}+2abx+{b}^{2}
 \end{equation*}
-Gestel die twee terme is $ax+b$ en $ax-b$ dan is hulle produk:\par 
+Gestel die twee terme is $ax+b$ en $ax-b$ dan is hulle produk:
 
 \begin{align*}
-(ax+b)(ax-b) &={a}^{2}{x}^{2}-{b}^{2} \\ &= (ax)^2-b^2
+(ax+b)(ax-b) &={a}^{2}{x}^{2}-{b}^{2}
 \end{align*}
 
-Dit staan bekend as die verskil van twee kwadrate (of vierkante).\par 
+Dit staan bekend as die verskil van twee kwadrate (of vierkante).
 
 
 \subsection*{Vermenigvuldig van 'n tweeterm en 'n drieterm}
 \addcontentsline{toc}{subsection}{Vermenigvuldig van 'n tweeterm en 'n drieterm}
 
-
-
 \addtocounter{footnote}{-0}
 
 n Trinomiaal of drieterm is 'n uitdrukking met drie terme, byvoorbeeld $ax^{2} + bx + c$.
 In hierdie gedeelte, gaan ons leer hoe om ’n binomiaal, of tweeterm, met ’n trinomiaal, of drieterm, te vermenigvuldig.\par 
+%english
+To find the product of a binomial and a trinomial, multiply out the brackets:\\
 
-\Tip{In die vermenigvuldiging van die binomiaal \begin{math}A+B\end{math} met die trinomiaal \begin{math}C+D+E\end{math}, is die heel eerste stap om die distributiewe wet toe te pas:
+\begin{equation*}
+  (A+B)(C+D+E)= A(C+D+E)+B(C+D+E) 
+\end{equation*}
 
-
- $(A+B)(C+D+E)= A(C+D+E)+B(C+D+E) $
-
-}
-
-As jy dit onthou, sal jy nie ’n fout maak nie!
+% As jy dit onthou, sal jy nie ’n fout maak nie!
 
 \mindsetvid{Products of polynomials}{MG10062}
 
@@ -635,27 +689,15 @@ As jy dit onthou, sal jy nie ’n fout maak nie!
 {Vermenigvuldiging van binomiaal met trinomiaal 
 }
 {
-Vermenigvuldig $x-1$ met ${x}^{2}-2x+1$.
+Vind die produk: $(x-1)({x}^{2}-2x+1)$.
 } 
 {
 \westep{Pas die distributiewe wet toe}
-$
-(x-1)(x^2-2x+1) &= x(x^2-2x+1)-1(x^2-2x+1)
-$
-
-\westep{Brei die hakies uit}
-
-$
-\phantom{(x-1)(x^2-2x+1) } = x^3-2x^2+x-x^2+2x-1
-$
+$(x-1)(x^2-2x+1) &= x(x^2-2x+1)-1(x^2-2x+1)\\
+\phantom{(x-1)(x^2-2x+1)} &= x^3-2x^2+x-x^2+2x-1$
 
 \westep{Vereenvoudig}
-
-$
-\phantom{(x-1)(x^2-2x+1) } = x^3-3x^2 + 3x1
-$
-
-
+$\phantom{(x-1)(x^2-2x+1) } = x^3-3x^2 + 3x-1$
 }       
 
 \end{wex}
@@ -690,7 +732,7 @@ Vind die produkte:
 \item$(2{y}^{6}+3{y}^{5})(-5y-12)$% make-rowspan-placeholders
 \item$(-7y+11)(-12y+3)$% make-rowspan-placeholders
 \item$(7y+3)(7{y}^{2}+3y+10)$% make-rowspan-placeholders
-\item$(9)(8{y}^{2}-2y+3)$ 
+\item$9(8{y}^{2}-2y+3)$ 
 \item$(-6{y}^{4}+11{y}^{2}+3y)(10y+4)(4y-4)$ 
 \end{enumerate}
 \end{multicols}
@@ -710,23 +752,45 @@ Vind die produkte:
 Faktorisering is die omgekeerde proses van uitbreiding of die verwydering van hakies. Byvoorbeeld, as hakies uitgebrei word,
 word $2(x+1)$ geskryf as $2x+2$. Faktorisering sal dus begin met $2x+2$ en eindig met $2(x+1)$. 
 
-\Identity{}
-{
 \begin{center}
-\begin{small}\hspace{8pt}uitbreiding\end{small}\\
-\begin{Large}
-$2(x+1)$ \begin{Huge} $\leftrightharpoons$ \end{Huge} $2x+2$
-\end{Large}\\
-\begin{small}\hspace{8pt}faktorisering\end{small}
-\end{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.1042187)(3.6090624,1.1042187)
+% \usefont{T1}{ppl}{m}{n}
+\rput(0.78453124,-0.01921875){$2(x+1)$}
+\psbezier[linewidth=0.02,arrowsize=0.093cm 2.4,arrowlength=1.4,arrowinset=0.4]{->}(2.85,0.23078126)(2.59,0.9507812)(1.0414754,0.73897433)(0.97,0.27078125)
+\psbezier[linewidth=0.02,arrowsize=0.093cm 2.4,arrowlength=1.4,arrowinset=0.4]{->}(0.95,-0.20921876)(1.13,-0.8720759)(2.55,-0.8492187)(2.87,-0.2063616)
+% \usefont{T1}{ppl}{m}{n}
+\rput(2.8645313,-0.03921875){$2x+2$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.9039062,0.9007813){factorising}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.9079688,-1){expanding}
+\end{pspicture} 
 }
+\end{center}
 
-Die uitrukkings $2(x+1)$ en $2x+2$ is ekwivalente; hulle het die $x$
-
-\mindsetvid{Revision of factorisation}{VMabz}
+The two expressions $2(x+1)$ and $2x+2$ are equivalent; they have the same value for all values of $x$.
+\par
+% 
+% \Identity{}
+% {
+% \begin{center}
+% \begin{small}\hspace{8pt}uitbreiding\end{small}\\
+% \begin{Large}
+% $2(x+1)$ \begin{Huge} $\leftrightharpoons$ \end{Huge} $2x+2$
+% \end{Large}\\
+% \begin{small}\hspace{8pt}faktorisering\end{small}
+% \end{center}
+% }
+% 
+% Die uitrukkings $2(x+1)$ en $2x+2$ is ekwivalente; hulle het die $x$
 
 \par
-In vorige grade het ons gefaktoriseer deur die uithaal van gemeenskaplike faktore en die verskil tussen twee vierkante.\par 
+In vorige grade het ons gefaktoriseer deur die uithaal van gemeenskaplike faktore en die verskil tussen twee vierkante.
+
+\par 
+\mindsetvid{Revision of factorisation}{VMabz}
 
 \subsection*{Gemeenskaplike faktore}
 \nopagebreak
@@ -738,24 +802,24 @@ Byvoorbeeld, $2x-6{x}^{2}$ kan as volg gefaktoriseer word:\par
 2x-6{x}^{2}=2x(1-3x)
 \end{equation*}
 
-\Tip{Kontroleer jou antwoord deur die uitbreiding van die hakies en maak seker jy kry die oorspronklike uitdrukking. 
-\begin{equation*}
- 2x(1-3x) = 2x - 6x^{2}
-\end{equation*}
-is korrek.
-}
+% \Tip{Kontroleer jou antwoord deur die uitbreiding van die hakies en maak seker jy kry die oorspronklike uitdrukking. 
+% \begin{equation*}
+%  2x(1-3x) = 2x - 6x^{2}
+% \end{equation*}
+% is korrek.}
+
+% 
+% \begin{wex}{Faktorisering}
+% {Faktoriseer volledig: ${b}^{2}{y}^{5}-3ab{y}^{3}$}
+% {
+% \westep{Haal die grootste gemeenskaplike faktoor, by $by^3$, uit}  
+% \begin{equation*}
+% {b}^{2}{y}^{5}-3ab{y}^{3}& =& b{y}^{3}(b{y}^{2}-3a)
+% \end{equation*}
+% }
+% \end{wex}
 
 
-\begin{wex}{Faktorisering}
-{Faktoriseer volledig: ${b}^{2}{y}^{5}-3ab{y}^{3}$}
-{
-\westep{Haal die grootste gemeenskaplike faktoor, by $by^3$, uit}  
-\begin{equation*}
-{b}^{2}{y}^{5}-3ab{y}^{3}& =& b{y}^{3}(b{y}^{2}-3a)
-\end{equation*}
-}
-\end{wex}
-\mindsetvid{Revision of factorisation}{VMabz}
 \begin{wex}{ Faktorisering wat die omruiling van getalle in hakies benodig: }{Faktoriseer: $5(a-2)-b(2-a)$ }{
 \westep{Gebruik 'n omnuilings tegniek om die gemene faktoor te vind in hierdie geval. let op dat $2-a = -(a-2)$ }
 \begin{equation*}
@@ -768,28 +832,28 @@ is korrek.
 }
 \end{wex}
 
-\begin{exercises}{}
-{
-Vind die grootste gemene faktore van die volgende pare getalle:\par
-\mindsetvid{Revision of factorisation}{VMabz}
-\begin{multicols}{2}
-\begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
-\item $6y;~18x$
-\item $12mn;~8n$
-\item $3st;~4su$ 
-\item $18kl;~9kp$
-\item $abc;~ac$% 
-\item $2xy;~4xyz$
-\item $3uv;~6u$ 
-\item $9xy;~15xz$
-\item $24xyz;~16yz$
-\item $3m;~45n$
-\end{enumerate}
-\end{multicols}
-
-\insertpracticeinfo{10}
-}
-\end{exercises}
+% \begin{exercises}{}
+% {
+% Vind die grootste gemene faktore van die volgende pare getalle:\par
+% \mindsetvid{Revision of factorisation}{VMabz}
+% \begin{multicols}{2}
+% \begin{enumerate}[label=\textbf{\arabic*}., itemsep=5pt]
+% \item $6y;~18x$
+% \item $12mn;~8n$
+% \item $3st;~4su$ 
+% \item $18kl;~9kp$
+% \item $abc;~ac$% 
+% \item $2xy;~4xyz$
+% \item $3uv;~6u$ 
+% \item $9xy;~15xz$
+% \item $24xyz;~16yz$
+% \item $3m;~45n$
+% \end{enumerate}
+% \end{multicols}
+% 
+% \insertpracticeinfo{10}
+% }
+% \end{exercises}
 
 \subsection* {Verskil van twee vierkante}
 Ons het gesien dat: 
@@ -801,41 +865,28 @@ Dus
 \begin{equation*}
 {a}^{2}{x}^{2}-{b}^{2}~\mbox{ kan gefaktoriseer word as: }~(ax+b)(ax-b)
 \end{equation*}
-Byvoorbeeld, ${x}^{2}-16$ kan geskryf word as $({x}^{2}-{4}^{2})$ wat die verskil is tussen twee kwadrate. 
-\\Dus, die faktore van ${x}^{2}-16$ is $(x-4)$ en $(x+4)$.\par 
+Byvoorbeeld, ${x}^{2}-16$ kan geskryf word as $({x}^{2}-{4}^{2})$ wat die verskil is tussen twee kwadrate. Dus, die faktore van ${x}^{2}-16$ is $(x-4)$ en $(x+4)$.\par 
 
-
-\Tip{Om te faktoriseer, kyk vir uitdrukkings
+Om te faktoriseer, kyk vir uitdrukkings:
 \begin{itemize}
-\item wat uit twee terme bestaan 
-\item met terme met verskillende tekens (een positief, een negatief)
-\item met elke term 'n volkome vierkant 
+\item wat uit twee terme bestaan; 
+\item met terme met verskillende tekens (een positief, een negatief);
+\item met elke term 'n volkome vierkant.
 \end{itemize}
-Byvoorbeeld $a^{2}-1;~ 4x^{2}-y^{2};~ -49+p^{4}$
+Byvoorbeeld $a^{2}-1;~ 4x^{2}-y^{2};~ -49+p^{4}$.
 }
-
-
 
 \begin{wex}{}
 {Faktoriseer volledig $3a(a^2-4)-7(a^2-4)$ \par }
-
 {
 \westep{Haal die gemene faktor uit $(a^2-4)$}
-
-
 \begin{equation*}
 \begin{array}{ccc}\hfill 3a(a^2-4)-7(a^2-4)& =& (a^2-4)(3a-7)\hfill \end{array}
 \end{equation*}
-
 \westep{Faktoriseer die verskil is tussen twee kwadrate. $(a^2-4)$ }
-
-$$
-(a^2-4)(3a-7) = (a-2)(a+2)(3a-7)
-$$
-
+$$(a^2-4)(3a-7) = (a-2)(a+2)(3a-7)$$
 }
 \end{wex}
-
 
 \begin{exercises}{}
 {
@@ -872,7 +923,103 @@ Faktoriseer:
 }
 \end{exercises}
 
+\subsection{Faktorisering deur groepering}
+\nopagebreak
 
+’n Verdere metode van faktorisering gebruik gemeenskaplike faktore. Ons weet dat die faktore van $3x+3$ is $3$ en $(x+1)$ is. Soortelyk is die faktore van $2{x}^{2}+2x$ is $2x$ en $(x+1)$. Gevolglik as ons ’n uitdrukking het:
+
+\begin{equation*}
+2{x}^{2}+2x+3x+3
+\end{equation*}
+is daar geen gemene faktor van al vier terme nie, maar ons kan as volg faktoriseer:
+\nopagebreak\noindent{}
+
+\begin{equation*}
+\begin{array}{ccl}
+(2{x}^{2}+2x)+(3x+3) &=& 2x(x+1)+3(x+1) \hfill \hfill
+\end{array}
+\end{equation*}
+
+
+Nou kan ons sien daar is ’n ander gemene faktor $(x+1)$. Gevolglik kan ons nou skryf: 
+\begin{equation*}
+(x+1)(2x+3)
+\end{equation*}
+Ons kry dit deur die $(x+1)$ ’uit te haal’ (uit te deel) en te sien wat oorbly. Ons het $+2x$ uit die eerste term en $+3$ uit die tweede term. Dit word genoem faktorisering deur groepering.\par 
+
+% \Tip{Kyk na die verhoudings van die ko\"effisi\"ente as 'n riglyn vir groepering.}
+
+
+\begin{wex}{Faktorisering deur groepering }{Vind die faktore van $7x+14y+bx+2by$.}
+{
+
+\westep{Daar is geen algemene gemeenskaplike faktore nie.}
+
+\westep{Groepeer terme met gemene faktore saam}
+ $7$ is ’n gemene faktor van die eerste twee terme en $b$ is ’n gemene faktor van die tweede twee terme. Ons sien die verhouding van die ko\"effisi\"ente $7:14$ is dieselfde as $b:2b$.
+\begin{equation*}
+ \begin{array}{ccl}
+
+7x+14y+bx+2by&=& (7x+14y)+(bx+2by)  \hfill\\ 
+&=&7(x+2y)+b(x+2y) \hfill 
+\end{array}
+\end{equation*}
+\westep{Haal uit gemeenskaplike faktor $(x+2y)$}
+
+
+\begin{equation*}
+7(x+2y)+b(x+2y)=(x+2y)(7+b)
+\end{equation*}
+% 
+% \westep{Skryf die finale antwoord}  
+% Die faktore van $7x+14y+bx+2by$ is $(7+b)$ en $(x+2y)$.
+\par 
+\large{OR}
+% 
+% 
+% \begin{wex}{Faktorisering deur groepering  }{Vind die faktore van $7x+14y+bx+2by$}
+% {
+% 
+% \westep{Daar is geen algemene gemeenskaplike faktore nie.}
+\westep{Groepeer termer met gemene faktore saam}$x$ is 'n gemene faktor van die eerste en derde terme en $2y$ is 'n gemene faktor van die tweede en vierde terme $(7:b~=~14:2b)$.\par 
+\westep{Herrangskik die uitdrukking met}
+
+\begin{equation*}
+ \begin{array}{ccl}
+
+7x+14y+bx+2by&=& (7x+bx)+(14y+2by)  \hfill\\ 
+&=&x(7+b)+2y(7+b) \hfill 
+\end{array}
+\end{equation*}
+
+\westep{Haal die gemeenskaplike faktor $(7+b)$ uit}
+
+\begin{equation*}
+x(7+b)+2y(7+b) = (7+b)(x+2y)
+\end{equation*}
+\westep{Skryf die finale antwoord}  
+Die faktore van $7x+14y+bx+2by$ is $(7+b)$ en $(x+2y)$.
+}
+\end{wex}
+
+
+\begin{exercises}{}{
+\nopagebreak
+Faktoriseer die volgende:
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
+\item $6x+a+2ax+3$
+\item ${x}^{2}-6x+5x-30$
+\item $5x+10y-ax-2ay$
+\item ${a}^{2}-2a-ax+2x$
+\item $5xy-3y+10x-6$
+\item $ab - a^{2} - a + b$
+\end{enumerate}
+\end{multicols}
+
+\insertpracticeinfo{6}
+}
+\end{exercises}
 
 \subsection* {Faktorisering van 'n kwadratiese drieterm}
 
@@ -887,10 +1034,8 @@ beide terme. Dus,$a{x}^{2}+bx$  faktoriseer tot $x(ax+b)$. Byvoorbeeld, $8{y}^{2
 \begin{equation*}
 (a+b)(a-b)={a}^{2}-{b}^{2}
 \end{equation*}
-\\ 
-So, $a^2-b^2$ kan in gefaktoriseerde vorm geskryf word as $(a+b)(a-b)$ \par
 
-\mindsetvid{Factorising a quadratic}{MG10064}
+So, $a^2-b^2$ kan in gefaktoriseerde vorm geskryf word as $(a+b)(a-b)$. \par
 
 Dit beteken dat wanneer ons enige kwadratiese uitdrukking wat bestaan uit die verskil tussen twee kwadrate teekom, ons onmiddellik die faktore kan neerskryf.
 
@@ -1025,10 +1170,10 @@ Opsie 4% make-rowspan-placeholders
 %     \begin{caption}{Quadratic factors}\end{caption}
 \end{table}
 \par
-Ons kan sien dat opsie 3, $(x+2)(x+3)$ die korrekte oplossing is. Die proses van faktorisering is hoofsaaklik ’n
-proses van opsies identifiseer en evalueer, maar daar is inligting wat die proses kan vergemaklik.\par 
+Ons kan sien dat opsie 3, $(x+2)(x+3)$ die korrekte oplossing is. \par
+Die proses van faktorisering is hoofsaaklik ’n proses van opsies identifiseer en evalueer, maar daar is inligting wat die proses kan vergemaklik.\par 
 
-
+\mindsetvid{Factorising a quadratic}{MG10064}
 
 \subsection*{Algemene prosedure vir die faktoriseering van 'n dreiterm}
 \addcontentsline{toc}{subsection}{General procedure for factorising a trinomial}
@@ -1040,34 +1185,21 @@ proses van opsies identifiseer en evalueer, maar daar is inligting wat die prose
 \begin{equation*}
 (x\phantom{\rule{2.em}{0ex}})(x\phantom{\rule{2.em}{0ex}})
 \end{equation*}
-\Tip{
- As $c$ positief is, moet albei die faktore van $c$ positief of albei negatief wees. Die faktore is beide negatief indien $b$ negatief is, en beide positief indien $b$ positief is. As $c$ negatief is, beteken dit slegs een van die faktore van $c$ is negatief, en die ander een is positief. Wanneer jy ’n antwoord gekry het, brei weer jou hakies uit om te toets of dit reg uitwerk.
-}
-
 \item Skryf ’n stel faktore neer vir $a$ en $c$.
 \item Skryf ’n stel opsies neer vir die moontlike faktore van die kwadratiese drieterm deur die faktore van $a$ en $c$ te gebruik.
 \item Brei al die opsies uit om te sien watter stel vir jou die korrekte antwoord gee.
 \end{enumerate}
-
-
-
-
-\begin{wex}
-{ 
-Faktorisering van ’n kwadratiese drieterm
-}
-{
-Vind die faktore van $3{x}^{2}+2x-1$ 
-} 
+ \textbf{Let op:} as $c$ positief is, moet albei die faktore van $c$ positief of albei negatief wees. Die faktore is beide negatief indien $b$ negatief is, en beide positief indien $b$ positief is. As $c$ negatief is, beteken dit slegs een van die faktore van $c$ is negatief, en die ander een is positief. Wanneer jy ’n antwoord gekry het, brei weer jou hakies uit om te toets of dit reg uitwerk.
+\begin{wex}{Faktorisering van ’n kwadratiese drieterm}
+{Faktoriseer: $3{x}^{2}+2x-1$.} 
 {
 \westep{Die kwadraat is in die regte vorm. ($ax^2+bx+c$)}
 \westep{Skryf die stel faktore neer van $a$ en $c$.}  
 \begin{equation*}
 (x\phantom{\rule{2.em}{0ex}})(x\phantom{\rule{2.em}{0ex}})
 \end{equation*}
-
-Die moontlike faktore van $a$ is: $(1;~3)$.\par
-Die moontlike faktore van $c$ is: $(-1;~1)$ of $(1;~-1)$.\par 
+Die moontlike faktore van $a$ is: $(1;~3)$.\\
+Die moontlike faktore van $c$ is: $(-1;~1)$ of $(1;~-1)$.\\
 Skryf die groep opsies neer van die moontlike faktore van die kwadratiese uitdrukking deur die faktore van $a$ en $c$ te gebruik.
 Daar is twee moontlike oplossings.\par 
 
@@ -1108,9 +1240,8 @@ $3{x}^{2}+2x-1$
 \begin{array}{ccl}  
 (x+1)(3x-1)& =& 3{x}^{2}-x+3x-1\hfill \\ & =& {x}^{2}+2x-1\end{array}
 \end{equation*}
-\westep{}
+\westep{Skryf die finale antwoord}
 Die faktore van $3{x}^{2}+2x-1$ is $(x+1)$ en $(3x-1)$.
-
 }
 \end{wex}
 
@@ -1156,7 +1287,7 @@ Vind die faktore van die volgende drieterme:
 \end{enumerate}
 \end{multicols}
 
-Faktoriseer die volgende drieterme:
+Faktoriseer:
 \begin{multicols}{2}
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{16}
@@ -1167,189 +1298,168 @@ Faktoriseer die volgende drieterme:
 \end{enumerate}
 \end{multicols}
 
-
-
-\insertpracticeinfo{20}
-
+\insertpracticeinfo{4}
 }
 \end{exercises}
 
-
-\subsection{Faktorisering deur groepering}
-\nopagebreak
-
-’n Verdere metode van faktorisering gebruik gemeenskaplike faktore. Ons weet dat die faktore van $3x+3$ is $3$ en $(x+1)$ is. Soortelyk is die faktore van $2{x}^{2}+2x$ is $2x$ en $(x+1)$. Gevolglik as ons ’n uitdrukking het:\par 
-
-\begin{equation*}
-2{x}^{2}+2x+3x+3
-\end{equation*}
-is daar geen gemene faktor van al vier terme nie, maar ons kan as volg faktoriseer:\par 
-\nopagebreak\noindent{}
-
-\begin{equation*}
-\begin{array}{ccl}
-(2{x}^{2}+2x)+(3x+3) &=& 2x(x+1)+3(x+1) \hfill \hfill
-\end{array}
-\end{equation*}
-
-
-Nou kan ons sien daar is ’n ander gemene faktor $(x+1)$. Gevolglik kan ons nou skryf:\par 
-\begin{equation*}
-(x+1)(2x+3)
-\end{equation*}
-Ons kry dit deur die $(x+1)$ ’uit te haal’ (uit te deel) en te sien wat oorbly. Ons het $+2x$ uit die eerste term en $+3$ uit die tweede term. Dit word genoem faktorisering deur groepering.\par 
-
-\Tip{Kyk na die verhoudings van die ko\"effisi\"ente as 'n riglyn vir groepering.}
-
-
-\begin{wex}{Faktorisering deur groepering }{Vind die faktore van $7x+14y+bx+2by$}
-{
-
-\westep{Daar is geen algemene gemeenskaplike faktore nie.}
-
-\westep{groepeer terme met gemene faktore saam}
- $7$ is ’n gemene faktor van die eerste twee terme en $b$ is ’n gemene faktor van die tweede twee terme. Ons sien die verhouding van die ko\"effisi\"ente $7:14$ is dieselfde as $b:2b$.
-\begin{equation*}
- \begin{array}{ccl}
-
-7x+14y+bx+2by&=& (7x+14y)+(bx+2by)  \hfill\\ 
-&=&7(x+2y)+b(x+2y) \hfill 
-\end{array}
-\end{equation*}
-\westep{Haal uit gemeenskaplike faktor $(x+2y)$}
-
-
-\begin{equation*}
-7(x+2y)+b(x+2y)=(x+2y)(7+b)
-\end{equation*}
-\westep{Skryf die finale antwoord}  
-Die faktore van $7x+14y+bx+2by$ is $(7+b)$ en $(x+2y)$.
-\par 
-
-}
-\end{wex}
-
-Soms is daar meer as een korrekte manier om terme saam te groepeer soos gesien kan word in hierdie voorbeeld.
-
-\begin{wex}{Faktorisering deur groepering  }{Vind die faktore van $7x+14y+bx+2by$}
-{
-
-\westep{Daar is geen algemene gemeenskaplike faktore nie.}
-
-\westep{Groepeer termer met gemene faktore saam}$x$ is 'n gemene faktor van die eerste en derde terme en $2y$ is 'n gemene faktor van die tweede en vierde terme $(7:b~=~14:2b)$.\par 
-\westep{Herrangskik die uitdrukking met}
-
-\begin{equation*}
- \begin{array}{ccl}
-
-7x+14y+bx+2by&=& (7x+bx)+(14y+2by)  \hfill\\ 
-&=&x(7+b)+2y(7+b) \hfill 
-\end{array}
-\end{equation*}
-
-\westep{Haal die gemeenskaplike faktor $(7+b)$ uit}
-
-\begin{equation*}
-x(7+b)+2y(7+b) = (7+b)(x+2y)
-\end{equation*}
-\westep{Skryf die finale antwoord}  
-Die faktore van $7x+14y+bx+2by$ is $(7+b)$ en $(x+2y)$.
-
-}
-\end{wex}
-
-
-
-
-
-\begin{exercises}{}{
-\nopagebreak
-Faktoriseer die volgende:
-\begin{multicols}{2}
-\begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item $6x+a+2ax+3$
-\item ${x}^{2}-6x+5x-30$
-\item $5x+10y-ax-2ay$
-\item ${a}^{2}-2a-ax+2x$
-\item $5xy-3y+10x-6$
-\item $ab - a^{2} - a + b$
-\end{enumerate}
-\end{multicols}
-
-\insertpracticeinfo{6}
-}
-\end{exercises}
 
 
 \subsection*{Som en verskil van twee derdemagte}      
-Ons kyk vervolgens ne twee spesiale resultate wat verkry word as 'n tweeterm en 'n drieterm met mekaar vermenigvuldig word. 
+Ons kyk vervolgens ne twee spesiale resultate wat verkry word as 'n tweeterm en 'n drieterm met mekaar vermenigvuldig word:
 
-\begin{wex}{Som van derdemagte}{Vind die produk van $x+y$ en ${x}^{2}-xy+{y}^{2}$, en let noukeurig op die antwoord.}
+Som van twee derdemagte:
+\begin{align*}
+  (x+y)({x}^{2}-xy+{y}^{2}) &= x({x}^{2}-xy+{y}^{2})+y({x}^{2}- xy+{y}^{2})\\
+  &= \left[x({x}^{2})+x(-xy)+x({y}^{2})\right]+\left[y({x}^{2})+y(-xy)+y({y}^{2})\right]\\
+  &= {x}^{3}-{x}^{2}y+x{y}^{2}+{x}^{2}y-x{y}^{2}+{y}^{3} \\
+  %&= {x}^{3}+(-{x}^{2}y+{x}^{2}y)+(x{y}^{2}-x{y}^{2})+{y}^{3} \\
+  &= {x}^{3}+{y}^{3}\\
+\end{align*}
+
+\par
+Verskil van twee derdemagte:
+\begin{align*}
+(x-y)({x}^{2}+xy+{y}^{2}) &= x({x}^{2}+xy+{y}^{2})-y({x}^{2}+ xy+{y}^{2})\\
+  &= \left[x({x}^{2})+x(xy)+x({y}^{2})\right]-\left[y({x}^{2})+y(xy)+y({y}^{2})\right]\\
+  &= {x}^{3}+{x}^{2}y+x{y}^{2}-{x}^{2}y-x{y}^{2}-{y}^{3} \\
+  %&= {x}^{3}+({x}^{2}y-{x}^{2}y)+(x{y}^{2}-x{y}^{2})-{y}^{3} \\
+  &= {x}^{3}-{y}^{3}\\
+\end{align*}
+
+Ons het gesien dat:
+\begin{center}
+${x}^{3}+{y}^{3}=(x+y)({x}^{2}-xy+{y}^{2})$\\
+${x}^{3}-{y}^{3}=(x-y)({x}^{2}+xy+{y}^{2})$\\
+\end{center}
+%English
+\par
+We use these two basic equations to factorise more complex examples.
+
+\begin{wex}{Faktoriseer 'n verskil van derdemagte}{Factoriseer: $x^{3} - 1$.}
 {
-\westep{Pas die distributiewe wet toe}{ 
-\begin{equation*}
-\begin{array}{ccc}(x+y)({x}^{2}-xy+{y}^{2})\hfill & =& x({x}^{2}-xy+{y}^{2})+y({x}^{2}- xy+{y}^{2})\hfill\end{array}
-\end{equation*}}
-\westep{Brei die hakies uit} { 
-\begin{equation*}
-\begin{array}{ccc}& =& [x({x}^{2})+x(-xy)+x({y}^{2})]+[y({x}^{2})+y(-xy)+y({y}^{2})]\hfill & \\
-\end{array}
-\end{equation*}}
+\westep{Neem die derdemagswortel van die terme wat volkome derdemagte is}
+Let op $\sqrt[3]{x^{3}} = x$ en $\sqrt[3]{1} = 1$. Dit gee die terme in die eerste hakie.
 
-\westep{vereenvoudig die terme}{
+\westep{Gebruik inspeksie om die terme in die tweede hakie te vind}
 \begin{equation*}
-\begin{array}{cll} & =& {x}^{3}-{x}^{2}y+x{y}^{2}+{x}^{2}y-x{y}^{2}+{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+(-{x}^{2}y+{x}^{2}y)+(x{y}^{2}-x{y}^{2})+{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+{y}^{3}\hfill & \hfill & \end{array}
-\end{equation*}}
-\westep{Sktryf die finale antwoord}{
-\label{m39387*id273290}Die produk van $x+y$ en ${x}^{2}-xy+{y}^{2}$ is ${x}^{3}+{y}^{3}$. \\
-Hierdie tipe tweeterm word die som van derdemagte genoem. }
+  (x^{3} - 1) = (x-1)(x^{2}+x+1)
+\end{equation*}
+
+\westep{Brei die hakies uit om te kontroleer dat die uitdrukking reg gefaktoriseer is}
+\begin{align*}
+  (x-1)(x^{2}+x+1) &= x(x^{2}+x+1)-1(x^{2}+x+1)\\
+		   &=x^{3}+x^{2}+x-x^{2}-x-1\\
+		   &=x^{3}-1\\
+\end{align*}
 }
 \end{wex}
 
+% \begin{wex}{Faktoriseer 'n verskil van derdemagte}{Faktoriseer volledig: $16y^{2} - 432$}
+% {
+% \westep{Haal die ’n gemeenskaplike faktor $16$ uit}
+% \begin{equation*}
+% \begin{array}{ccc}16y^{3} - 432\hfill & =& 16(y^{3} - 27)\hfill & \\
+% \end{array}
+% \end{equation*}
+% 
+% \westep{Neem die derdemagswortel van die terme wat volkome derdemagte is}
+% Let op $\sqrt[3]{y^{3}} = y$ en $\sqrt[3]{27} = 3$. Dit gee die terme in die eerste hakie.
+% \newline
+% \westep{Gebruik inspeksie om die terme in die tweede hakie te vind}
+% \begin{equation*}
+% \begin{array}{cll} 16(y^{3} - 27) & =& 16(y-3)(y^{2}+3y+9)\hfill & \\
+% \end{array}
+% \end{equation*}
+% 
+% \westep{Brei die hakies uit om te kontroleer dat die uitdrukking reg gefaktoriseer is}
+% }
+% \end{wex}
 
-\Tip{ons het gesien dat:
-$(x+y)({x}^{2}-xy+{y}^{2})= \\
-{x}^{3}+{y}^{3}$
-Dit staan bekend as die som van derdemagte. 
-So $x^{3}+y^{3}$ het faktore $(x+y)$ en $(x^{2} -xy+y^{2})$.\\
-\\
-Ons het ook gesien dat:
-$(x-y)({x}^{2}+xy+{y}^{2})= \\
-{x}^{3}-{y}^{3}$
+\begin{wex}{Faktoriseer 'n som van twee derdemagte}{Factoriseer: $x^{3}+8$.}
+{
+\westep{Neem die derdemagswortel van die terme wat volkome derdemagte is}
+Let op $\sqrt[3]{x^{3}} = x$ en $\sqrt[3]{8} = 2$. Dit gee die terme in die eerste hakie.
 
-Dit staan bekend as die verskil van derdemagte. So $x^{3}-y^{3}$ word deur die produk van $(x-y)$ en $(x^{2} +xy+y^{2})$ gegee.
-} 
-
-
-\begin{wex}{Verskil van derdemagte }{Vind die produk van $x-y$ en ${x}^{2}+xy+{y}^{2}$, en let op die antwoord.}{
-\westep{Pas die distributiewe wet toe}  {
+\westep{Gebruik inspeksie om die terme in die tweede hakie te vind}
 \begin{equation*}
-\begin{array}{ccc}(x-y)({x}^{2}+xy+{y}^{2})\hfill & =& x({x}^{2}+xy+{y}^{2})-y({x}^{2}+ xy+{y}^{2})\hfill\end{array}
-\end{equation*}}
-\westep{Brei die hakies uit}  {
-\begin{equation*}
-\begin{array}{ccc}& =& [x({x}^{2})+x(xy)+x({y}^{2})]-[y({x}^{2})+y(xy)+y({y}^{2})]\hfill & \\
-\end{array}
-\end{equation*}}
-\westep{Vereenvoudig die terme}{
+  (x^{3} +8) = (x+2)(x^{2}-2x+4)
+\end{equation*}
 
-\begin{equation*}
-\begin{array}{cll} & =& {x}^{3}+{x}^{2}y+x{y}^{2}-{x}^{2}y-x{y}^{2}-{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+({x}^{2}y-{x}^{2}y)+(x{y}^{2}-x{y}^{2})-{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}-{y}^{3}\hfill & \hfill & \end{array}
-\end{equation*}}
-\westep{Skryf die finale produk}{
-\ Die produk van $x-y$ en ${x}^{2}+xy+{y}^{2}$ is ${x}^{3}-{y}^{3}$. \\
-Hierdie tipe tweeterm is die verskil van derdemagte. }
+\westep{Brei die hakies uit om te kontroleer dat die uitdrukking reg gefaktoriseer is}
+\begin{align*}
+  (x+2)(x^{2}-2x+4) &= x(x^{2}-2x+4)+2(x^{2}-2x+4)\\
+		   &=x^{3}-2x^{2}+4x+2x^{2}-4x+8\\
+		   &=x^{3}+8\\
+\end{align*}
 }
 \end{wex}
 
+% \begin{wex}{Som van derdemagte}{Vind die produk van $x+y$ en ${x}^{2}-xy+{y}^{2}$, en let noukeurig op die antwoord.}
+% {
+% \westep{Pas die distributiewe wet toe}{ 
+% \begin{equation*}
+% \begin{array}{ccc}(x+y)({x}^{2}-xy+{y}^{2})\hfill & =& x({x}^{2}-xy+{y}^{2})+y({x}^{2}- xy+{y}^{2})\hfill\end{array}
+% \end{equation*}}
+% \westep{Brei die hakies uit} { 
+% \begin{equation*}
+% \begin{array}{ccc}& =& [x({x}^{2})+x(-xy)+x({y}^{2})]+[y({x}^{2})+y(-xy)+y({y}^{2})]\hfill & \\
+% \end{array}
+% \end{equation*}}
+% 
+% \westep{vereenvoudig die terme}{
+% \begin{equation*}
+% \begin{array}{cll} & =& {x}^{3}-{x}^{2}y+x{y}^{2}+{x}^{2}y-x{y}^{2}+{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+(-{x}^{2}y+{x}^{2}y)+(x{y}^{2}-x{y}^{2})+{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+{y}^{3}\hfill & \hfill & \end{array}
+% \end{equation*}}
+% \westep{Sktryf die finale antwoord}{
+% \label{m39387*id273290}Die produk van $x+y$ en ${x}^{2}-xy+{y}^{2}$ is ${x}^{3}+{y}^{3}$. \\
+% Hierdie tipe tweeterm word die som van derdemagte genoem. }
+% }
+% \end{wex}
+% 
+% 
+% \Tip{ons het gesien dat:
+% $(x+y)({x}^{2}-xy+{y}^{2})= \\
+% {x}^{3}+{y}^{3}$
+% Dit staan bekend as die som van derdemagte. 
+% So $x^{3}+y^{3}$ het faktore $(x+y)$ en $(x^{2} -xy+y^{2})$.\\
+% \\
+% Ons het ook gesien dat:
+% $(x-y)({x}^{2}+xy+{y}^{2})= \\
+% {x}^{3}-{y}^{3}$
+% 
+% Dit staan bekend as die verskil van derdemagte. So $x^{3}-y^{3}$ word deur die produk van $(x-y)$ en $(x^{2} +xy+y^{2})$ gegee.
+% } 
+% 
+% 
+% \begin{wex}{Verskil van derdemagte }{Vind die produk van $x-y$ en ${x}^{2}+xy+{y}^{2}$, en let op die antwoord.}{
+% \westep{Pas die distributiewe wet toe}  {
+% \begin{equation*}
+% \begin{array}{ccc}(x-y)({x}^{2}+xy+{y}^{2})\hfill & =& x({x}^{2}+xy+{y}^{2})-y({x}^{2}+ xy+{y}^{2})\hfill\end{array}
+% \end{equation*}}
+% \westep{Brei die hakies uit}  {
+% \begin{equation*}
+% \begin{array}{ccc}& =& [x({x}^{2})+x(xy)+x({y}^{2})]-[y({x}^{2})+y(xy)+y({y}^{2})]\hfill & \\
+% \end{array}
+% \end{equation*}}
+% \westep{Vereenvoudig die terme}{
+% 
+% \begin{equation*}
+% \begin{array}{cll} & =& {x}^{3}+{x}^{2}y+x{y}^{2}-{x}^{2}y-x{y}^{2}-{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}+({x}^{2}y-{x}^{2}y)+(x{y}^{2}-x{y}^{2})-{y}^{3}\hfill & \hfill & \\ & =& {x}^{3}-{y}^{3}\hfill & \hfill & \end{array}
+% \end{equation*}}
+% \westep{Skryf die finale produk}{
+% \ Die produk van $x-y$ en ${x}^{2}+xy+{y}^{2}$ is ${x}^{3}-{y}^{3}$. \\
+% Hierdie tipe tweeterm is die verskil van derdemagte. }
+% }
+% \end{wex}
+% 
+% 
+% \begin{activity}{Ondersoek die produkte van 'n tweeterme en drieterme}
+%  Ons het gesien dat in spesifieke gevalle gee die produk van 'n tweeterm en 'n drieterm die som of die verskil tussen derdemagte. Bepaal die produk van $x+y$ en ${x}^{2}+xy+{y}^{2}$. Maak 'n gevolgtrekking.
+% \end{activity}
+% 
 
-\begin{activity}{Ondersoek die produkte van 'n tweeterme en drieterme}
- Ons het gesien dat in spesifieke gevalle gee die produk van 'n tweeterm en 'n drieterm die som of die verskil tussen derdemagte. Bepaal die produk van $x+y$ en ${x}^{2}+xy+{y}^{2}$. Maak 'n gevolgtrekking.
-\end{activity}
 
-
-
-\begin{wex}{Faktoriseer 'n verskil van derdemagte}{Faktoriseer volledig: $16y^{2} - 432$}
+\begin{wex}{Faktoriseer 'n verskil van derdemagte}{Faktoriseer: $16y^{2} - 432$.}
 {
 \westep{Haal die ’n gemeenskaplike faktor $16$ uit}
 \begin{equation*}
@@ -1365,13 +1475,17 @@ Let op $\sqrt[3]{y^{3}} = y$ en $\sqrt[3]{27} = 3$. Dit gee die terme in die eer
 \begin{array}{cll} 16(y^{3} - 27) & =& 16(y-3)(y^{2}+3y+9)\hfill & \\
 \end{array}
 \end{equation*}
-
 \westep{Brei die hakies uit om te kontroleer dat die uitdrukking reg gefaktoriseer is}
+\begin{align*}
+  16(y-3)(y^{2}+3y+9) &= 16[(y(y^{2}+3y+9)-3(y^{2}+3y+9)]\\
+		   &= 16[y^{3}+3y^{2}+9y-3y^{2}-9y-27]\\
+		   &= 16y^{3}-432
+\end{align*}
 }
 \end{wex}
 
 
-\begin{wex}{Faktoriseer 'n som van twee derdemagte}{Faktoriseer volkome:  $8t^{3} +125p^{3}$}
+\begin{wex}{Faktoriseer 'n som van twee derdemagte}{Faktoriseer: $8t^{3} +125p^{3}$.}
 {
 \westep{Daar is geen gemeenskaplike faktoor}
 
@@ -1380,27 +1494,32 @@ Let op dat $\sqrt[3]{8t^{3}} = 2t$ en $\sqrt[3]{125p^{3}} = 5p$. Dit gee die ter
 \newline
 
 \westep{Gebruik inspeksie om die drie terme in die tweede hakies te vind}
-\begin{equation*}
-\begin{array}{cll} (8t^{3} +125p^{3}) & =& (2t + 5p)[(2t)^{2} - (2t)(5p)+(5p)^{2}]\hfill & \hfill & \\
-& =& (2t+5p)(4t^{2} - 10tp + 25p^{2}) & \hfill &
- \end{array}
-\end{equation*}
+\begin{align*}
+  (8t^{3} +125p^{3}) &= (2t + 5p)\left[(2t)^{2} - (2t)(5p)+(5p)^{2}\right] \\
+                     &= (2t+5p)(4t^{2} - 10tp + 25p^{2})
+\end{align*}
+
 \westep{Brei die hakies uit om te kontroleer dat die uitdrukking korrek gefaktoriseer is}
+\begin{align*}
+  (2t+5p)(4t^{2} - 10tp + 25p^{2}) &= 2t(4t^{2} - 10tp + 25p^{2})+5p(4t^{2} - 10tp + 25p^{2})\\
+		   &= 8t^{3} - 20pt^{2} + 50p^{2}t+ 20pt^{2} - 50p^{2}t + 125p^{3}\\
+		   &= 8t^{3} +125p^{3}\\
+\end{align*}
 }
 \end{wex}
 
-\Tip{Let op die patroon:
-$
-a^{3} + b^{3} \rightleftharpoons \\ (a+b)(a^{2}-ab+b^{2})\\
-\\
-a^{3} - b^{3} \rightleftharpoons \\ (a-b)(a^{2}+ab+b^{2})\\
-$
-}
+% \Tip{Let op die patroon:
+% $
+% a^{3} + b^{3} \rightleftharpoons \\ (a+b)(a^{2}-ab+b^{2})\\
+% \\
+% a^{3} - b^{3} \rightleftharpoons \\ (a-b)(a^{2}+ab+b^{2})\\
+% $
+% }
 
 \begin{exercises}{}
 {
 
-Faktoriseer volkome:
+Faktoriseer:
 \begin{multicols}{2}
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 \item ${x}^{3}+8$
@@ -1413,10 +1532,12 @@ Faktoriseer volkome:
 \item $25x^{2} +1$
 \item $z-125z^4{}$
 \item $8m^{6} + n^{9}$
+\item $p^{15} - \frac{1}{8}y^{12}$
+\item $1- (x-y)^3$
 \end{enumerate}
 \end{multicols}
 
-\insertpracticeinfo{10}
+\insertpracticeinfo{12}
 }
 \end{exercises}
 
@@ -1424,17 +1545,18 @@ Faktoriseer volkome:
 \nopagebreak
 
 In vorige grade is die prosedures vir bewerkings met breuke bestudeer.
-\Identity{Operations with fractions}{
+\Identity{
 \begin{flushleft}
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 \item $\dfrac{a}{b} \times \dfrac{c}{d} = \dfrac{ac}{bd}  ~~~~~~~~~~ (b \neq 0\mbox{; } d \neq 0)$ 
-\item $\dfrac{a}{b} + \dfrac{c}{b}   = \dfrac{a+c}{b} ~~~~~~~~~~ (b \neq 0) $
+\item $\dfrac{a}{b} + \dfrac{c}{b}   = \dfrac{a+c}{b} ~~~~~~~~~~~(b \neq 0) $
 \item $\dfrac{a}{b} \div \dfrac{c}{d}   = \dfrac{a}{b} \times \dfrac{d}{c}  = \dfrac{ad}{bc} ~~~~~~~~~~ (b \neq 0)$; $(c \neq 0)$; $(d \neq 0)$  
 \end{enumerate}
 \end{flushleft}
 }
-\Note{Om te deel deur 'n breuk is dieselfde as om te vermenigvuldig met die resiprook }
-In sommige gevalle van die vereenvoudiging van ’n algebraïese uitdrukking, sal die uitdrukking ’n breuk wees. Byvoorbeeld,\par 
+\textbf{Let op:} om te deel deur 'n breuk is dieselfde as om te vermenigvuldig met die resiprook.\par
+
+In sommige gevalle van die vereenvoudiging van ’n algebraïese uitdrukking, sal die uitdrukking ’n breuk wees. Byvoorbeeld,
 
 \begin{equation*}
 \dfrac{{x}^{2}+3x}{x+3}
@@ -1446,19 +1568,16 @@ het ’n tweeterm in die noemer en ’n kwadratiese tweeterm in die teller. Jy k
 \end{equation*}
 As $x = 3$ is, sal die noemer, $x-3 = 0$, wees en die breuk ongedefinieer.\par 
 
-\Note{In breuke kan slegs faktore uitdeel, nie terme nie.}
+% \Note{In breuke kan slegs faktore uitdeel, nie terme nie.}
 % \label{m39392*secfhsst!!!underscore!!!id3026}\vspace{.5cm} 
 %       \noindent
 %       \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
 
 \mindsetvid{Simplification of fractions}{VMacc}
 
-\begin{wex}{ Vereenvoudiging van breukuitdrukkings }{vereenvoudig: $\dfrac{ax-b+x-ab}{a{x}^{2}-abx}$ (neem aan al die noemers is non-zero)}{
-
-
+\begin{wex}{ Vereenvoudiging van breukuitdrukkings }{vereenvoudig: $\dfrac{ax-b+x-ab}{a{x}^{2}-abx}, ~~(x \neq 0;x \neq b)$.}
+{
 \westep{Gebruik groepering vir die teller en haal ’n gemene faktor van $ax$ uit in.}\par 
-
-
 \begin{equation*}
 \begin{array}{lll}\dfrac{(ax-ab)+(x-b)}{a{x}^{2}-abx}\hfill & =& \dfrac{a(x-b)+(x-b)}{ax(x-b)}\hfill \\ \end{array}
 \end{equation*}
@@ -1477,7 +1596,8 @@ As $x = 3$ is, sal die noemer, $x-3 = 0$, wees en die breuk ongedefinieer.\par
 
 
 \begin{wex}{Vereenvoudig breukuitdrukkings }
-{Vereenvoudig: $\dfrac{{x}^{2}-x-2}{{x}^{2}-4}÷\dfrac{{x}^{2}+x}{{x}^{2}+2x}$  (aanwaar alle noemers is non-zero)} {
+{Vereenvoudig: $\dfrac{{x}^{2}-x-2}{{x}^{2}-4}÷\dfrac{{x}^{2}+x}{{x}^{2}+2x}, ~~(x \neq 0;x \neq \pm2)$.} 
+{
 \westep{Faktoriseer die noemer en die teller}
 \begin{equation*}
 \begin{array}{ccc}& =& \dfrac{(x+1)(x-2)}{(x+2)(x-2)}÷\dfrac{x(x+1)}{x(x+2)}\hfill \end{array}
@@ -1500,8 +1620,7 @@ As $x = 3$ is, sal die noemer, $x-3 = 0$, wees en die breuk ongedefinieer.\par
 %  \noindent
 %       \hspace*{-30pt}\includegraphics[width=0.5in]{col11306.imgs/pspencil2.png}   \raisebox{25mm}{   
 %      
-\begin{wex}{Vereenvoudiging van breuke}{Vereenvoudig: $\dfrac{x-2}{{x}^{2}-4}+\dfrac{{x}^{2}}{x-2}-\dfrac{{x}^{3}+x-4}{{x}^{2}-4}$ 
-(aanvaar alle noemers is non-zero)}
+\begin{wex}{Vereenvoudiging van breuke}{Vereenvoudig: $\dfrac{x-2}{{x}^{2}-4}+\dfrac{{x}^{2}}{x-2}-\dfrac{{x}^{3}+x-4}{{x}^{2}-4}, ~~(x \neq \pm2)$.}
 {
 \westep{Faktoriseer die noemers}
 \begin{equation*}
@@ -1533,8 +1652,7 @@ As $x = 3$ is, sal die noemer, $x-3 = 0$, wees en die breuk ongedefinieer.\par
 }
 \end{wex}
 
-\begin{wex}{Vereenvoudig breukuitdrukkings}{Vereenvoudig: $\dfrac{2}{{x}^{2}-x}+\dfrac{x^{2}+x+1}{x^{3}-1}-\dfrac{x}{{x}^{2}-1}$ 
-(aanvaar alle noemers is non-zero)}
+\begin{wex}{Vereenvoudig breukuitdrukkings}{Vereenvoudig: $\dfrac{2}{{x}^{2}-x}+\dfrac{x^{2}+x+1}{x^{3}-1}-\dfrac{x}{{x}^{2}-1}, ~~(x \neq 0;x \neq \pm1)$.}
 {
 \westep{Fakotoriseer die noemer en die teller}
 \begin{equation*}
@@ -1582,15 +1700,19 @@ Vereenvoudig (aanvaar alle noemers is non-zero):
 \item $\dfrac{5}{t-2} - \dfrac{1}{t-3}$
 \item $\dfrac{k+2}{k^{2} +2} - \dfrac{1}{k+2}$
 \item $\dfrac{t+2}{3q} + \dfrac{t+1}{2q}$
-\item $\dfrac{3}{p^{2}-4}+\dfrac{2}{(p-2)^{2}$
+\item $\dfrac{3}{p^{2}-4}+\dfrac{2}{(p-2)^{2}}$
 \item $\dfrac{x}{x+y}+\dfrac{x^{2}}{y^{2} - x^{2}}$
 \item $\dfrac{1}{m+n} + \dfrac{3mn}{m^{3} + n^{3}}$
 \item $\dfrac{h}{h^{3}-f^{3}} - \dfrac{1}{h^{2} + hf + f^{2}}$
 \item $\dfrac{{x}^{2}-1}{3}\times\dfrac{1}{x-1}-\dfrac{1}{2}$
+\item $\dfrac{x^2-2x+1}{(x-1)^3} - \dfrac{x^2+x+1}{x^3-1}$
+\item $\dfrac{1}{(x-1)^2} - \dfrac{2x}{x^3-1}$
+\item $\dfrac{p^3 + q^3}{p^2} \times \dfrac{3p-3q}{p^2-q^2}$
+\item $\dfrac{1}{a^2-4ab+4b^2} + \dfrac{a^2+2ab+b^2}{a^3-8b^3} - \dfrac{1}{a^2-4b^2}$
 \end{enumerate}
 \end{multicols}
 
-\insertpracticeinfo{26}
+\insertpracticeinfo{30}
 }
 \end{exercises}
 
@@ -1617,7 +1739,7 @@ waar $a$ en $b$ heelgetalle is en $b\ne 0$\item Die volgende is rasionale getall
 \item Die produk van twee identiese binomiale staan bekend as die vierkant of kwadraat van die binomiaal. 
 \item Die verskil tussen twee kwadrate kry ons wanneer ons $(ax+b)$ met $(ax-b)$ vermenigvuldig.
 \item Faktorisering is die omgekeerde van die uitbreiding van hakies.
-\item Die distributiewe wet $(A+B)(C+D+E)=A(C+D+E)+B(C+D+E)$ help ons om ’n binomiaal en ’n trinomiaal te vermenigvuldig.
+\item $(A+B)(C+D+E)=A(C+D+E)+B(C+D+E)$ help ons om ’n binomiaal en ’n trinomiaal te vermenigvuldig.
 \item Uithaal van 'n gemeenskaplike faktor is die basiese metode van faktorisering
 \item Ons gebruik dikwels groepering om polinome te faktoriseer.
 \item Om ’n kwadratiese drieterm te faktoriseer, moet ons die twee tweeterme vind wat met mekaar vermenigvuldig is om die kwadratiese drieterm te gee.
@@ -1775,7 +1897,9 @@ noemers hê.
 \item $x-x^{3} + y - y^{3}$
 \item $x^{2} - 2x + 1 - y^{4}$
 \item $4b(x^{3} - 1) + x(1-x^{3})$
-\item $3p^{3} - \frac{1}{3}$
+\item $3p^{3} - \frac{1}{9}$
+\item $8x^6-125y^9$
+\item $(2+p)^3- 8(p+1)^3$
 \end{enumerate}
 \end{multicols}
 
@@ -1792,8 +1916,8 @@ noemers hê.
 \item $\dfrac{2}{x}+\dfrac{x}{2}-\dfrac{2x}{3}$
 \item $\dfrac{1}{a+7}-\dfrac{a+7}{a^{2}-49}$
 \item $\dfrac{x+2}{2x^{3}} + 16$
-\item $\dfrac{1-2a}{4a^{2} -1} - \dfrac{a+4}{2a^{2}-3a+1} - \dfrac{1}{1-a}$
-\item $\dfrac{x^{2} + 2x}{x^{2}+ x + 6} \times \dfrac{x^{2} + 2x - 1}{x^{2} + 3x +2}$
+\item $\dfrac{1-2a}{4a^{2} -1} - \dfrac{a-1}{2a^{2}-3a+1} - \dfrac{1}{1-a}$
+\item $\dfrac{x^{2} + 2x}{x^{2}+ x + 6} \times \dfrac{x^{2} + 2x + 1}{x^{2} + 3x +2}$
 \end{enumerate}
 \end{multicols}
 
@@ -1802,12 +1926,15 @@ noemers hê.
 
 \item Bepaal wat moet by ${x}^{2}-x+4$ getel word sodat dit gelyk is aan ${(x+2)}^{2}$ ?
 \item Evalueer $\dfrac{x^{3}+1}{x^{2}-x+1}$ as $x=7,85$ sonder om 'n sakrekenaar te gebruik. Toon jou bewerkings.
+%English
+\item With what expression must $(a-2b)$ be multiplied to get a product of $a^3-8b^3$?
+\item With what expression must $27x^3+1$ be divided to get a quotient of $3x+1$?
 \end{enumerate}
 
 % \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Find the answers with the shortcodes:
 % \par \begin{tabular}[h]{cccccc}
 % (1.) liM  &  (2.) lTY  &  (3.) lTg  &  (4.) lT4  &  (5.) lib  &  (6.) liT  & \end{tabular}
 
-\insertpracticeinfo{10}
+\insertpracticeinfo{19}
 
 \end{eocexercises}
