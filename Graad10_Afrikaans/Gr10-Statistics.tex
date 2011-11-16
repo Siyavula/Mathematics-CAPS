@@ -2,7 +2,13 @@
 
 % \section{Introduction}
 
-Wanneer ons 'n eksperiment uitvoer of 'n opname maak, kan on potensieel met duisende of selfs miljoene waardes in die resulterende datastel sit. Te veel data kan oorweldigend wees en ons moet verminder of voorstel op 'n manier wat makliker is om te verstaan en te kommunikeer. Statistiek gaan oor die opsom van data. Statistiese metodes stel ons in staat om die noodsaaklike inligting in 'n datastel voor te stel en die onbelangrike inligting ter syde te stel. Ons moet versigtig wees om seker te maak dat ons nie per ongelik sekere belangrike aspekte van die datastel uitlig en die data dus makliker maak om te interpreteer, deur statistiese metodes korrek toe te pas. Deur statistiek oneerlik of swak toe te pas kan ons belangrike inligting buite rekening laat en toe te laat dat mense foutiewe gevolgtrekkings maak. In hierdie hoofstuk gaan na 'n paar numeriese en grafiese metodes kyk waardeur data voorgestel kan word om die makliker te maak om te interpreteer.\par
+Wanneer ons 'n eksperiment uitvoer of 'n opname maak, kan on potensieel met duisende of selfs miljoene waardes in die resulterende datastel sit. Te veel data kan oorweldigend wees en ons moet verminder of voorstel op 'n manier wat makliker is om te verstaan en te kommunikeer.\par 
+
+Statistiek gaan oor die opsom van data. Statistiese metodes stel ons in staat om die noodsaaklike inligting in 'n datastel voor te stel en die onbelangrike inligting ter syde te stel. Ons moet versigtig wees om seker te maak dat ons nie per ongelik sekere belangrike aspekte van die datastel uitlig en die data dus makliker maak om te interpreteer, deur statistiese metodes korrek toe te pas. \par
+
+Deur statistiek oneerlik of swak toe te pas kan ons belangrike inligting buite rekening laat en toe te laat dat mense foutiewe gevolgtrekkings maak. \par
+
+In hierdie hoofstuk gaan na 'n paar numeriese en grafiese metodes kyk waardeur data voorgestel kan word om die makliker te maak om te interpreteer.\par
 
 
 %The figure below shows one example of how we can reduce the complexity
@@ -18,20 +24,25 @@ Wanneer ons 'n eksperiment uitvoer of 'n opname maak, kan on potensieel met duis
 %\end{center}
 \par
 \chapterstartvideo{VMbqd}
-\section{Versamelling van data}
-\Definition{Data}{Data verwys na stukke inligting wat waargeneem en opgeteken in 'n eksperiment of opname. Data is die meervoud van die meervoud 'datum' en dus is dit 'n meervoudsvorm: in Engels s\^e ons 'the data are' en nie 'the data is' nie.}
 
-Ons onderskei tussen twee soorte data: kwantitatiewe en kwalititiewe data.
+\section{Versamelling van data}
+\Definition{Data}{Data verwys na stukke inligting wat waargeneem en opgeteken in 'n eksperiment of opname.}
+
+Ons onderskei tussen twee soorte data: kwantitatiewe en kwalititiewe data. Data is die meervoud van die meervoud 'datum' en dus is dit 'n meervoudsvorm: in Engels s\^e ons 'the data are' en nie 'the data is' nie.
 
 \Definition{Kwantitatiewe data}{Kwantitatiewe data kan as getalle geskryf word.}
 
-Kwantitatiewe data kan diskreet of kontinu wees. Diskreet kwantitatiewe data kaan voorgestel word deur heelgetalle en kan gewoonlik voor wanneer ons duige tel, byvoorbeeld die aantal sms-boodskappe gestuur op een dag.\par
+Kwantitatiewe data kan diskreet of kontinu wees. Diskreet kwantitatiewe data kaan voorgestel word deur heelgetalle en kan gewoonlik voor wanneer ons duige tel, byvoorbeeld die aantal SMS-boodskappe gestuur op een dag.\par
 
 Kontinue kwantitatiewe data kan voorgestel word deur re\"le getalle. byvoorbeeld die hoogte massa van 'n persoon, die afstand afgel\^e deur 'n motor of di tydsduur van 'n telfoonoproep.
 
 \Definition{Kwalitatiewe data}{Kwalitatiewe data is data wat nie as getalle geskryf kan word nie, byvoorbeeld die insameling van die antwoorde van mense oor hoe hulle voel wat hulle geliefkoosde kleur is.}
 
-Kategoriale data en anekdotiese data is twee algemene tipes kwalitatiewe data. Kategoriale data kan kom van ’n beperkte aantal moontlikhede, byvoorbeeld jou geliefkoosde koeldrank, die kleur van jou selfoon of jou moedertaal. Anekdotiese data neem die vorm aan van ’n onderhoud of ’n storie, byvoorbeeld wanneer jy iemand vra wat hulle persoonlike ondervinding was toe hulle ’n sekere produk gebruik het, of wat hulle dink van iemand anders se optrede. Kategoriale data kan soms omgeskakel word na kwantitatiewe data deur die aantal kere te tel wat elke kategorie voorkom. In ’n klas met $30$ leerders, vra ons elkeen wat die kleur is van sy of haar selfoon en ons kry die volgende antwoorde:
+Kategoriale data en anekdotiese data is twee algemene tipes kwalitatiewe data. Kategoriale data kan kom van ’n beperkte aantal moontlikhede, byvoorbeeld jou geliefkoosde koeldrank, die kleur van jou selfoon of jou moedertaal. \par
+
+Anekdotiese data neem die vorm aan van ’n onderhoud of ’n storie, byvoorbeeld wanneer jy iemand vra wat hulle persoonlike ondervinding was toe hulle ’n sekere produk gebruik het, of wat hulle dink van iemand anders se optrede. \par
+
+Kategoriale data kan soms omgeskakel word na kwantitatiewe data deur die aantal kere te tel wat elke kategorie voorkom. In ’n klas met $30$ leerders, vra ons elkeen wat die kleur is van sy of haar selfoon en ons kry die volgende antwoorde:
 
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
@@ -62,7 +73,7 @@ Hierdie is ‘n kategoriale kwantitatiewe datastel aangesien elkeen van die antw
   Dit is diskrete kwantitatiewe data angesien elke telling 'n heelgetal is.
 
 \begin{wex}{Kwantitatiewe data}
-{Thembisile stel belang daarin om lugtyd te ver-verkoop aan haar klasmaats. Hy wil graag weet hoeveel besigheid sy van hulle kan verwag. Daarom vra sy elk van sy $20$ klasmaats hoeveel sms-boodskappe hulle gestuur het gedurende die vorige dag. Die resultate was:
+{Thembisile stel belang daarin om lugtyd te ver-verkoop aan haar klasmaats. Hy wil graag weet hoeveel besigheid sy van hulle kan verwag. Daarom vra sy elk van sy $20$ klasmaats hoeveel SMS-boodskappe hulle gestuur het gedurende die vorige dag. Die resultate was:
 \\
 
     \begin{center}
@@ -77,7 +88,7 @@ Hierdie is ‘n kategoriale kwantitatiewe datastel aangesien elkeen van die antw
     Is hierdie datastel kwalitatief of kwantitatief? Verduidelik jou antwoord.
 }{
 \westep{Ondersoek die data en beantwoord die vraag}
-  Die aantal sms-boodskappe is 'n getal, wat beteken die data is kwantitatief en diskreet.
+  Die aantal SMS-boodskappe is 'n getal, wat beteken die data is kwantitatief en diskreet.
 }
 \end{wex}
 
@@ -112,8 +123,10 @@ Hierdie is ‘n kategoriale kwantitatiewe datastel aangesien elkeen van die antw
                  &= \frac{x_1 + x_2 + \cdots + x_n}{n}
   \end{align*}
 }
-\mindsetvid{Mean, median and mode}{VMbqd}
+
 Die gemiddelde word soms die rekenkundige gemiddelde.
+\par
+\mindsetvid{Mean, median and mode}{VMbqd}
 
 \begin{wex}{Berekening van die gemiddelde}
 {Wat is die gemiddelde van die datastel $\{10;\ 20;\ 30;\ 40;\ 50\}$?}
@@ -134,10 +147,9 @@ Die gemiddelde word soms die rekenkundige gemiddelde.
 
 \subsection{Mediaan}
 \Definition{Mediaan}
-{Die mediaan van 'n datastel is die waarde van die sentrale of middelste datapunt wanneer die datastel georden word van die kleinste tot die grootste waarde. Presies die helfte van die datawaardes is kleiner as die mediaan en die ander helfte is groter as die mediaan.}
+{Die mediaan van 'n datastel is die waarde van die sentrale of middelste datapunt wanneer die datastel georden word van die kleinste tot die grootste waarde.}
 
-Note that exactly half of the values from the data set are less than
-  the median and the other half are greater than the median.\par
+Presies die helfte van die datawaardes is kleiner as die mediaan en die ander helfte is groter as die mediaan.\par
 
 Om die mediaan van 'n kwantitatiewe datastel te bereken sorteer die data van die kleinste tot die grootste waardeen vind dan die waarde in die middel (middelwaarde). As daar 'n ewe aantal datapunte is sal di mediaan halfpad tussen twee waardes in die datastel wees.
 
@@ -153,7 +165,7 @@ Om die mediaan van 'n kwantitatiewe datastel te bereken sorteer die data van die
 
   \westep{Vind die middelwaarde(getal in die middel)}
 
-  Daar is $7$ waardes in die datastel. Aangesien daar 'n onewe aantal datawaardes is, sal die mediaan gelyk wees aan die waarde in die middelste, dus $4^{\mathrm{de}}$ posisie. Die waarde in die $4^{\mathrm{th}}$ posisie is $14$ en dus is $14$ die mediaan van die datastel.
+  Daar is $7$ waardes in die datastel. Aangesien daar 'n onewe aantal datawaardes is, sal die mediaan gelyk wees aan die waarde in die middelste, dus $4^{\mathrm{de}}$ posisie. Die waarde in die $4^{\mathrm{ste}}$ posisie is $14$ en dus is $14$ die mediaan van die datastel.
 }
 \end{wex}
 
@@ -169,8 +181,8 @@ Om die mediaan van 'n kwantitatiewe datastel te bereken sorteer die data van die
 
   \westep{Vind die middelwaarde}
 
-  Daar is $8$ waardes in die datastel. Omdat daar 'n ewe aantal datawaardes is, sal die mediaan halfpad tussen die twee waardes in die middel wees. Dit is naamlik die $4^{\mathrm{th}}$ en $5^{\mathrm{th}}$ posisies. Die waarde in die 
-  $4^{\mathrm{th}}$ posisie is $11$ en die waarde in die $5^{\mathrm{th}}$ posisie is
+  Daar is $8$ waardes in die datastel. Omdat daar 'n ewe aantal datawaardes is, sal die mediaan halfpad tussen die twee waardes in die middel wees. Dit is naamlik die $4^{\mathrm{ste}}$ en $5^{\mathrm{ste}}$ posisies. Die waarde in die 
+  $4^{\mathrm{ste}}$ posisie is $11$ en die waarde in die $5^{\mathrm{ste}}$ posisie is
   $14$. Die mediaan l\^e halfpad tussen die twee en is dus
   \begin{equation*}
     \mbox{Median} = \frac{11+14}{2} = 12,5
@@ -182,7 +194,7 @@ Om die mediaan van 'n kwantitatiewe datastel te bereken sorteer die data van die
 \Definition{Modus}
 {Die modus van 'n datastel is die waarde wat die meeste voorkom in die stel. Die modus kan ook beskryf word as die mees algemene waarde met die hoogste voorkomsfrekwenie in die datastel.}
 
-Om die modus te bereken, tel ons doodeenvoudig die aantal kere wat elke datawaarde in die datastel voorkom en vind so die waarde wat die meeste kere voorkom.
+Om die modus te bereken, tel ons doodeenvoudig die aantal kere wat elke datawaarde in die datastel voorkom en vind so die waarde wat die meeste kere voorkom.\par
 
 ‘n Datastel kan meer as een modus hê as daar meer as een waarde is wat die hoogste telling het. Byvoorbeeld, beide $2$ en $3$ is modi (modusse) in die dataste $\{1;\ 2;\ 2;\ 3;\ 3\}$. As alle punte in die datastel met dieselfde frekwensie voorkom, kan ons die datastel beskryf as een met baie modusse of een met geen modus. 
 
@@ -217,7 +229,7 @@ Een probleem met die gebruik van die modus as ’n maatstaf van sentrale neiging
 on grouping data.
 
 \begin{wex}{Comparison of measures of central tendency}
-{Om verbruikers te beskerm is daar in Suid-Afrika regulasies ten opsigte van die vervaardiging van brood. Volgens wet moet ’n brood, waarop die massa nie spesifiek aangedui is nie, $800$ g weeg met ’n speling van $5$ persent onder en $10$ persent bokant hierdie massa. Vishnu is geïnteresseerd daarin om uit te vind hoe ’n nasionale verskaffer voldoen aan die standaarde. Hy het die plaaslike tak van die verskaffer besoek en die massas van $10$ verskillende brode vir ’n week lank aangeteken. Hier is die resultate::\\
+{Om verbruikers te beskerm is daar in Suid-Afrika regulasies ten opsigte van die vervaardiging van brood. Volgens wet moet ’n brood, waarop die massa nie spesifiek aangedui is nie, $800$ g weeg met ’n speling van $5$ persent onder en $10$ persent bokant hierdie massa. Vishnu is geïnteresseerd daarin om uit te vind hoe ’n nasionale verskaffer voldoen aan die standaarde. Hy het die plaaslike tak van die verskaffer besoek en die massas van $10$ verskillende brode vir ’n week lank aangeteken. Hier is die resultate, in gram:\\
 
     \begin{center}
       \begin{tabular}{|c|c|c|c|c|c|c|} \hline
@@ -296,7 +308,7 @@ on grouping data.
   \westep{Gevolgtrekking: Is die vervaardiger betroubaar?}
 
   In hierdie geval is die vereiste dat die massa van ’n brood tussen $800$ g minus $5$\%, dus $760$ g, en $800$ g plus 
-  $10$\%, dus $880$ g. sal wees. Aangesien al Vishnu se metings binne hierdie grense val en aangesien die gemiddeldes en die mediane almal naby aan $800$ g is, kan ons tot die gevolgtrekking kom dat die verskaffer betroubaar is..
+  $10$\%, dus $880$ g. sal wees. Aangesien al Vishnu se metings binne hierdie grense val en aangesien die gemiddeldes en die mediane almal naby aan $800$ g is, kan ons tot die gevolgtrekking kom dat die verskaffer betroubaar is.
 }
 \end{wex}
 
@@ -314,16 +326,16 @@ on grouping data.
   \westep{Bereken die gemiddelde van die eerste $10$ leerders}
 
   \begin{align*}
-    \mbox{Mean } &=\frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}\\
+    \mbox{Gemiddelde } &=\frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157}{10}\\
     &= 155,9\mbox{ cm}
   \end{align*}
 
   \westep{Bereken die gemiddelde van al $11$ leerders}
 
-  \begin{equation*}
+  \begin{align*}
     \mbox{Gemiddelde } &= \frac{150 + 172 + 153 + 156 + 146 + 157 + 157 + 143 + 168 + 157 + 181}{11}\\
     &= 158,2\mbox{ cm}
-  \end{equation*}
+  \end{align*}
 
   Hieruit sien ons die gemiddelde lengte verander met 
   $158,2 - 155,9 = 2,3\mbox{ cm}$ wanneer ons die uitskieter (die lang leerder) byvoeg by die datastel.
@@ -374,10 +386,11 @@ on grouping data.
     \item Vind ’n stel van 5 ouderdomme waarvoor die gemiddelde ouderdom $5$,is, die modale ouderdom (dus die modus) $2$ s en die mediaan ouderdom $3$ jaar is.
     \item Vier vriende het elkeen ’n aantal albasters. Hulle bereken dat die gemiddelde aantal albasters wat hulle het $10$is. Een van hulle vertrek. Sy het $4$ albasters. Hoeveel albasters het die oorblywende vriende altesaam. 
     \end{enumerate}
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00jr&  (2.) 00js&  (3.) 00jt&  (4.) 00ju&  (5.) 00jv\end{tabular}
+\insertpracticeinfo{5}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00jr&  (2.) 00js&  (3.) 00jt&  (4.) 00ju&  (5.) 00jv\end{tabular}
 }
 \end{exercises}
 
@@ -386,10 +399,12 @@ on grouping data.
 'n Algemene manier om kwantitatiewe data te hanteer is om die volle stel waardes te onderverdeel in ’n aantal sub-groepe of klasse. Deur elke kontinue datawaarde in te deel in die klas waarin dit val, verander die data in die stel van kontinu na diskreet.\par
 %We will see below that this has some benefits, but we gain the
 %benefits at the cost of losing some information.
-\mindsetvid{Grouping data}{VMbue}
+
 Groepering word gedoen deur ’n stel klasse te definieer en dan te tel hoeveel data in elke klas val. Die klasse moet so gekies word dat hulle nie oorvleuel nie en sodat hulle die volle wydte van die datastel dek.\par
 
 Een manier om gegroepeerde data voor stel is met ’n histogram. ’n Histogram is ’n versameling van reghoeke, waar die basis van elke reghoek (op die $x$-as) die waardes dek in die klas wat daaraan gekoppel is en die hoogte van die reghoek ooreenstem met die aantal waardes in die klas. 
+\par
+\mindsetvid{Grouping data}{VMbue}
 
 \begin{wex}{Groepe en histogramme}
 {Die hoogtes van $30$ leerders word gegee in sentimeters, in die tabel hieronder.
@@ -464,7 +479,7 @@ Een manier om gegroepeerde data voor stel is met ’n histogram. ’n Histogram 
 
 \begin{exercises}{}{
     \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
-    \item  1. ’n Eksperiment is onderneem in die skool en $50$ leerders is gevra om te raai hoeveel lekkers daar in ’n bottel is. Die volgende raaiskote word aangeteken:
+    \item ’n Eksperiment is onderneem in die skool en $50$ leerders is gevra om te raai hoeveel lekkers daar in ’n bottel is. Die volgende raaiskote word aangeteken:
       \\
       \begin{center}
         \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|} \hline
@@ -478,35 +493,41 @@ Een manier om gegroepeerde data voor stel is met ’n histogram. ’n Histogram 
       \vspace{8pt}\\
 
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-      \item
-        Trek ’n gegroepeerde frekwensietabel op en gebruik die volgende intervalle
+      \item Trek ’n gegroepeerde frekwensietabel op en gebruik die volgende intervalle
         $10 < x \leq 20$;\ $20 < x \leq 30$;\ $30 < x \leq 40$;\ 
-        $40 < x \leq 50$;and \ $50 < x \leq 60$.
-      \item (b) Trek ’n histogram om die frekwensietabel van die gegroepeerde data voor te stel.
+        $40 < x \leq 50$; and \ $50 < x \leq 60$.
+      \item Trek ’n histogram om die frekwensietabel van die gegroepeerde data voor te stel.
       \end{enumerate}
     \end{enumerate}
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00jw& \end{tabular}
+\insertpracticeinfo{1}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00jw& \end{tabular}
 }
 \end{exercises}
 % 
  %Put this in other text flows straight out of previous exercises?!?!
 \subsection*{Measures of sentrale neiging}
-Ons beramings van maatstawe van sentrale neiging sal verander as ons data groepeer omdat ons sekere inligting verloor wanneer ons data in klasse indeel. As ons slegs die gegroepeerde data het om mee te werk, het ons nie meer die gemete waardes van die data tot dieselfde vlak van akkuraatheid as vantevore nie. Die beste wat ons kan doen is om te aanvaar dat die waardes gegroepeer is in die middel van elke klas. As ons terugkyk na die vorige voorbeeld , sien ons ons het begin met ’n datastel van leerders se hoogtes
+Ons beramings van maatstawe van sentrale neiging sal verander as ons data groepeer omdat ons sekere inligting verloor wanneer ons data in klasse indeel. As ons slegs die gegroepeerde data het om mee te werk, het ons nie meer die gemete waardes van die data tot dieselfde vlak van akkuraatheid as vantevore nie. Die beste wat ons kan doen is om te aanvaar dat die waardes gegroepeer is in die middel van elke klas.\par
+
+As ons terugkyk na die vorige voorbeeld , sien ons ons het begin met ’n datastel van leerders se hoogtes
 \begin{align*}
   \{&132;\ 132;\ 132;\ 133;\ 138;\ 139;\ 139;\ 140;\ 141;\ 142;\ 142;\ 146;\ 150;\ 150;\ 152;\\
     &152;\ 155;\ 156;\ 157;\ 160;\ 161;\ 162;\ 163;\ 164;\ 168;\ 168;\ 169;\ 169;\ 170;\ 172\}
 \end{align*}
 Let daarop dat die data hier gesorteer is.
 
-Die gemiddelde van hierdie data is $151,8$ en die mediaan is $152$. Die modus is $132$, maar onthou dat daar probleme is met die berekening van die modus van kontinue kwantitatiewe data. Na groepering van die data, het ons nou die datastel hieronder aangetoon. Let daarop dat elke datawaarde geplaas word in die middel van die klas en dat die aantal kere wat elke datawaarde herhaal word presies ooreenstem met die telling in elke klas. 
+Die gemiddelde van hierdie data is $151,8$ en die mediaan is $152$. Die modus is $132$, maar onthou dat daar probleme is met die berekening van die modus van kontinue kwantitatiewe data. \par
+
+Na groepering van die data, het ons nou die datastel hieronder aangetoon. Let daarop dat elke datawaarde geplaas word in die middel van die klas en dat die aantal kere wat elke datawaarde herhaal word presies ooreenstem met die telling in elke klas. 
 \begin{align*}
   \{&135;\ 135;\ 135;\ 135;\ 135;\ 135;\ 135;\ 145;\ 145;\ 145;\ 145;\ 145;\ 155;\ 155;\ 155;\\
     &155;\ 155;\ 155;\ 155;\ 165;\ 165;\ 165;\ 165;\ 165;\ 165;\ 165;\ 165;\ 165;\ 175;\ 175\}
 \end{align*}
-Die groepering verander die maatstawe van sentrale neiging aangesien elke datawaarde nou hanteer word asof dit geleë is in die middel van die klas waarin dit geplaas is. Die gemiddelde is nou $153$, die mediaan is $155$ en die modus is $165$. Dit is eintlik ’n beter benadering van die modus aangesien die groepering getoon het in watter klas die meeste leerderlengtes val. 
+Die groepering verander die maatstawe van sentrale neiging aangesien elke datawaarde nou hanteer word asof dit geleë is in die middel van die klas waarin dit geplaas is. \par
+
+Die gemiddelde is nou $153$, die mediaan is $155$ en die modus is $165$. Dit is eintlik ’n beter benadering van die modus aangesien die groepering getoon het in watter klas die meeste leerderlengtes val. 
 
 
 \begin{exercises}{}{
@@ -574,18 +595,18 @@ Calculate
 }
 \end{center}
   \end{enumerate}
-
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00jx&  (2.) 00jy&  (3.) 00jz\end{tabular}
+\insertpracticeinfo{3}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00jx&  (2.) 00jy&  (3.) 00jz\end{tabular}
 
 }
 \end{exercises}
 
 \section{Spreiding}
-Die sentrale neiging is nie die enigste interessante of nutting inligting van ’n datastel nie. Die twee datastelle hieronder het dieselfde gemiddelde, maar is duidelik baie verskillend. Hulle het dieselfde gemiddelde $0$, maar is op verskillende maniere versprei rondom daardie gemiddelde. Elke kolletjie verteenwoordig een datapunt
-\mindsetvid{Range and other measures of dispersion}{VMbsf}
+Die sentrale neiging is nie die enigste interessante of nutting inligting van ’n datastel nie. Die twee datastelle hieronder het dieselfde gemiddelde, maar is duidelik baie verskillend. Hulle het dieselfde gemiddelde $0$, maar is op verskillende maniere versprei rondom daardie gemiddelde. Elke kolletjie verteenwoordig een datapunt.
+
 \begin{figure}[H]
   \begin{center}
     \begin{tabular}{cc}
@@ -621,7 +642,9 @@ Die sentrale neiging is nie die enigste interessante of nutting inligting van �
 %   \begin{caption*}\end{caption*}
 \end{figure}
 
- In hierdie afdeling sal ons kyk na die spreiding (dispersie) van ‘n datastel. Spreiding is ’n algemene term wat beskryf hoe die datawaardes uitgesprei is rondom die middel.
+In hierdie afdeling sal ons kyk na die spreiding (dispersie) van ‘n datastel. Spreiding is ’n algemene term wat beskryf hoe die datawaardes uitgesprei is rondom die middel.
+\par
+\mindsetvid{Range and other measures of dispersion}{VMbsf}
 
 \subsection{Variasiewydte}
 \Definition{Variasiewydte}{Die variasiewydte van ’n datastel in die verskil tussen die maksiumum en die minimumwaardes in die stel.}
@@ -645,17 +668,16 @@ Die mees voor die handliggende  maatstaf van dispersie is die variasiewydte. Die
   Die variasiewydte is $10-1=9$.
 
   \westep{Verwyder die eerste datapunt}
-  Ons doen dit nie gewoonlik nie, maar indien die eerste datapunt, 1, verwyder sou word uit die stel, sou die minimumwaarde verander van $1$ na $4$. Dit beteken dat die variasiewydte sou verander na $10 – 4 = 6$. Dit verskil heelwat van die vorige variasiewyde; daarom sê ons dat die variasiewydte baie sensitief is vir uitskieters. In die datastel hierbo, was $1$ nie tipies van die hele stel datawaardes nie. Dit is ’n uitskieter en het ’n groot invloed op die variasiewydte. .
+  Ons doen dit nie gewoonlik nie, maar indien die eerste datapunt, 1, verwyder sou word uit die stel, sou die minimumwaarde verander van $1$ na $4$. Dit beteken dat die variasiewydte sou verander na $10 – 4 = 6$. Dit verskil heelwat van die vorige variasiewyde; daarom sê ons dat die variasiewydte baie sensitief is vir uitskieters. In die datastel hierbo, was $1$ nie tipies van die hele stel datawaardes nie. Dit is ’n uitskieter en het ’n groot invloed op die variasiewydte. 
 }
 \end{wex}
 
 
 \subsection{Persentiele}
 
-\Definition{Persentiele}{The $p^{\mathrm{th}}$ persentiel is die waarde, v , wat die datastel in twee verdeel op so ’n manier dat p persent van die waardes in die datastel minder is as v en $100-p$ persent groter is as v. Persentiele kan lê in die variasiewydte $0 \leq
-  p \leq 100$.}
+\Definition{Persentiele}{Die $p^{\mathrm{de}}$ persentiel is die waarde, $v$ , wat die datastel in twee verdeel op so ’n manier dat $p$ persent van die waardes in die datastel minder is as $v$ en $100-p$ persent groter is as v. Persentiele kan lê in die variasiewydte $0 \leq  p \leq 100$.}
 
-Om persentiele behoorlik te verstaan, moet ons onderskei tussen drie verskillende aspekte van ’n datapunt: sy waarde, sy rangorde (plek in die stel) en sy persentiel.
+Om persentiele behoorlik te verstaan, moet ons onderskei tussen drie verskillende aspekte van ’n datapunt: sy waarde, sy rangorde en sy persentiel:
 \begin{itemize}
  \item Die waarde van ’n datapunt is dit wat ons meet of bepaal en aanteken gedurende ’n eksperiment of ondersoek.
 \item Die rangorde van ’n datapunt is sy posisie in die gesorteerde datastel (dit wil sê eerste, tweede, derde ens.).  
@@ -682,7 +704,7 @@ Om persentiele behoorlik te verstaan, moet ons onderskei tussen drie verskillend
     \end{tabular}
   \end{center}
 
- Let daarop dat die rangorde die volgorde van die datapunte beskryf, van die kleinste tot die grootste. Byvoorbeeld, $13,0$ is by die $40^{\mathrm{th}}$ persentiel aangesien daar $2$ waardes is wat minder is as $13,0$ en $3$ waardes wat groter is as $13,0$. 
+ Let daarop dat die rangorde die volgorde van die datapunte beskryf, van die kleinste tot die grootste. Byvoorbeeld, $13,0$ is by die $40^{\mathrm{ste}}$ persentiel aangesien daar $2$ waardes is wat minder is as $13,0$ en $3$ waardes wat groter is as $13,0$. 
   \begin{equation*}
     \frac{2}{2+3} = 0,4 = 40\%
   \end{equation*}
@@ -696,8 +718,7 @@ Dit gee vir ons die rangorde, $r$, van die, of the $p^{\mathrm{de}}$ persentiel.
 
 Soms is die rangorde nie ’n heelgetal nie wat beteken die persentiel lê tussen twee waardes in die datastel. Die konvensie is om die waarde te neem halfpad tussen die twee waardes aangedui deur die rangorde.
 
- Die figuur hieronder toon die verwantskap tussen die rangorde en die persentiel grafies. Ons het reeds met drie persentiele te doen gekry: die mediaan ($50$ ste persentiel), die minimum ($0^{\mathrm{de}}$ persentiel) en die maksimum
-
+ Die figuur hieronder toon die verwantskap tussen die rangorde en die persentiel grafies. Ons het reeds met drie persentiele te doen gekry: die mediaan ($50^{\mathrm{ste}}$ persentiel), die minimum ($0^{\mathrm{de}}$ persentiel) en die maksimum ($100^{\mathrm{ste}}$).
 \begin{center}
   \begin{tikzpicture}[xscale=0.1]
     \draw (0,0) -- (100,0);
@@ -709,8 +730,8 @@ Soms is die rangorde nie ’n heelgetal nie wat beteken die persentiel lê tusse
     \draw (50, -0.1) node[anchor=north] {$50$};
     \draw (100, -0.1) node[anchor=north] {$100$};
     \draw (0, -0.75) node[anchor=north] {minimum};
-    \draw (50, -0.75) node[anchor=north] {median};
-    \draw (100, -0.75) node[anchor=north] {maximum};
+    \draw (50, -0.75) node[anchor=north] {mediaan};
+    \draw (100, -0.75) node[anchor=north] {maksimum};
     \draw (0, +0.1) node[anchor=south east,xshift=-0.35cm,yshift=+0.05cm] {$r$};
     \draw (0, +0.1) node[anchor=south] {$1$};
     \draw (50, +0.1) node[anchor=south] {$\dfrac{n+1}{2}$};
@@ -718,12 +739,11 @@ Soms is die rangorde nie ’n heelgetal nie wat beteken die persentiel lê tusse
   \end{tikzpicture}
 \end{center}
 
-The median is defined as the value halfway in a sorted data set. Since
-$50\% = \frac{1}{2}$, the median is exactly the same as the $50^{\mathrm{th}}$
-percentile.  The minimum value is by definition the smallest and
-therefore the leftmost value in a sorted set. This makes the minimum
-equivalent to the $0^{\mathrm{th}}$ percentile. Similarly, the maximum is
-equivalent to the $100^{\mathrm{th}}$ percentile.
+%  Since $50\% = \frac{1}{2}$, the median is exactly the same as the $50^{\mathrm{th}}$
+% percentile.  The minimum value is by definition the smallest and
+% therefore the leftmost value in a sorted set. This makes the minimum
+% equivalent to the $0^{\mathrm{th}}$ percentile. Similarly, the maximum is
+% equivalent to the $100^{\mathrm{th}}$ percentile.
 
 \begin{wex}{Gebruik die persentielformule}
 {Pas die persentielformule toe en bepaal die minimum, maksimum en mediaanwaardes van die volgende datastel. 
@@ -746,11 +766,11 @@ equivalent to the $100^{\mathrm{th}}$ percentile.
         &= \frac{0}{100}\left(9-1\right)+1 \\
         &= 1
     \end{align*}
-    Dit bevestig die minimumwaarde is die eerste waarde in die datastel, naamlik $7$
+    Dit bevestig die minimumwaarde is die eerste waarde in die datastel, naamlik $7$.
 
     \westep{Vind die maksimum}
 
-    Die maksimumwaarde is die laaste waarde in die geordende datastel en dit is ekwivalent aan die $100^{\mathrm{th}}$
+    Die maksimumwaarde is die laaste waarde in die geordende datastel en dit is ekwivalent aan die $100^{\mathrm{ste}}$
     persentiel. Met gebruik van die formule met $p=100$ en $n=9$,
      vind ons die rangorde van die maksimumwaarde as
     \begin{align*}
@@ -758,24 +778,23 @@ equivalent to the $100^{\mathrm{th}}$ percentile.
         &= \frac{100}{100}\left(9-1\right)+1 \\
         &= 9
     \end{align*}
-    Dit bevestig die maksimumwaarde is die laaste $9^{\mathrm{th}}$) waarde in die lys, naamlik $45$.
+    Dit bevestig die maksimumwaarde is die laaste ($9^{\mathrm{ste}}$) waarde in die lys, naamlik $45$.
 
     \westep{Vind die mediaan}
 
-    Die mediaan is ekwivalent aan die $50^{\mathrm{th}}$ persentiel. Met gebruik van die formule met $p=50$ en $n=9$, vind ons die rangorde van die mediaanwaarde as
+    Die mediaan is ekwivalent aan die $50^{\mathrm{ste}}$ persentiel. Met gebruik van die formule met $p=50$ en $n=9$, vind ons die rangorde van die mediaanwaarde as
     \begin{align*}
       r &= \frac{50}{100}\left(n-1\right)+1 \\
         &= \frac{50}{100}\left(9-1\right)+1 \\
         &= \frac{1}{2}(8)+1 \\
         &= 5
     \end{align*}
-    Dit bevestig die mediaanwaarde is die middelste $5^{\mathrm{th}}$ waarde in die gesorteerde datastel, naamlik  $19$. 
+    Dit bevestig die mediaanwaarde is die middelste $5^{\mathrm{ste}}$ waarde in die gesorteerde datastel, naamlik  $19$. 
 }
 \end{wex}
 
-\Definition{Kwartiele}{Die kwartiele is die drie datawaardes wat die gesorteerde datastel in vier groepe verdeel, waar elk van die groepe ’n gelyke aantal datawaardes bevat. Die mediaan  ($50^{\mathrm{th}}$
-  persentiel) is die tweede kwartiel. Die $25^{\mathrm{th}}$ persentiel word ook die onderste (laer) kwartiel genoem ($Q1$), en die $75^{\mathrm{th}}$ ersentiel, die boonste (ho\"er) kwartiel.
-  quartile ($Q3$).}
+\Definition{Kwartiele}{Die kwartiele is die drie datawaardes wat die gesorteerde datastel in vier groepe verdeel, waar elk van die groepe ’n gelyke aantal datawaardes bevat. Die mediaan  ($50^{\mathrm{ste}}$
+  persentiel) is die tweede kwartiel. Die $25^{\mathrm{ste}}$ persentiel word ook die onderste (laer) kwartiel genoem ($Q1$), en die $75^{\mathrm{ste}}$ persentiel, die boonste (ho\"er) kwartiel ($Q3$).}
 
 \begin{wex}{Kwartiele}
 {Bepaal die kwartiele van die volgende datastel:
@@ -790,8 +809,8 @@ equivalent to the $100^{\mathrm{th}}$ percentile.
 
     \westep{Vind die rangordes van die kwartiele}
 
-    Met gebruik van die persentielformule, vind ons die rangordes van die $25^{\mathrm{th}}$,
-    $50^{\mathrm{th}}$ en $75^{\mathrm{th}}$ persentiele as:
+    Met gebruik van die persentielformule, vind ons die rangordes van die $25^{\mathrm{ste}}$,
+    $50^{\mathrm{ste}}$ en $75^{\mathrm{ste}}$ persentiele as:
     \begin{align*}
       r_{25} &= \frac{25}{100}\left(12-1\right)+1 \\
             &= 3,75 \\
@@ -805,25 +824,36 @@ equivalent to the $100^{\mathrm{th}}$ percentile.
 
     Let daarop dat elk van van hierdie rangordes ’n breuk is, wat beteken dat die waarde vir elke persentiel iewers tussen twee waardes op die datastel lê. 
 
-    Vir die $25^{\mathrm{th}}$ persentiel is die rangorde $3,75$, tussen die $3^{\mathrm{rd}}$ en $4^{\mathrm{th}}$ waardes. Aangesien beide van hierdie waardes gelyk is aan 
-    $7$, is die $25^{\mathrm{th}}$ persentiel $7$.
+    Vir die $25^{\mathrm{ste}}$ persentiel is die rangorde $3,75$, tussen die $3^{\mathrm{de}}$ en $4^{\mathrm{ste}}$ waardes. Aangesien beide van hierdie waardes gelyk is aan 
+    $7$, is die $25^{\mathrm{ste}}$ persentiel $7$.
 
-    Die rangorde vir die $50^{\mathrm{th}}$ persentiel (die mediaan) is $6,5$, halfpad tussen die  $6^{\mathrm{th}}$ en $7^{\mathrm{th}}$ waardes. Die $6^{\mathrm{th}}$ waarde is
-    $11$ en die $7^{\mathrm{th}}$ waarde is $12$, wat beteken die mediaan is
+    Die rangorde vir die $50^{\mathrm{ste}}$ persentiel (die mediaan) is $6,5$, halfpad tussen die  $6^{\mathrm{ste}}$ en $7^{\mathrm{ste}}$ waardes. Die $6^{\mathrm{ste}}$ waarde is
+    $11$ en die $7^{\mathrm{ste}}$ waarde is $12$, wat beteken die mediaan is
     \(\frac{11+12}{2} = 11,5\).
 
-    Die rangrode vir die $75^{\mathrm{th}}$ persentiel is die rangorde $9,25$, halfpad tussen die
-    $9^{\mathrm{th}}$ en $10^{\mathrm{th}}$ waardes. Dus die $75^{\mathrm{th}}$ persentiel is
+    Die rangrode vir die $75^{\mathrm{ste}}$ persentiel is die rangorde $9,25$, halfpad tussen die
+    $9^{\mathrm{ste}}$ en $10^{\mathrm{ste}}$ waardes. Dus die $75^{\mathrm{ste}}$ persentiel is
     \(\frac{31+35}{2} = 33\).
   }
 \end{wex}
+%english
+\subsubsection*{Deciles}
+The deciles are the nine data values that divide an ordered data set into ten groups, where each group contains an equal number of data values.
+\par
+For example, consider the ordered data set:
+\begin{center}
+$28; 33; 35; 45; 57; 59; 61; 68; 69; 72; 75; 78; 80; 83; 86; 91; 92; \\
+95; 101; 105; 111; 117; 118; 125; 127; 131; 137; 139; 141$\\
+\end{center}
+The nine deciles are: $35; 59; 69; 78; 86; 95; 111; 125; 137$
+
 
 \subsection{Persentiele vir gegroepeerde data}
 
 In gegroepeerde data sal die persentiele iewers in ‘n interval lê, eerder as by ’n spesifieke waarde. Om die interval te vind waarbinne die persentiel lê, gebruik ons weereens die persentielformule om die rangorde van die persentiel te vind en dan kry ons die interval waarbinne die rangorde l\^e.
 
 \begin{wex}{Persentiele in gegroepeerde data}
-{Die Wiskundepunte van $100$ graad $10$ leerders by ’n skool is ingesamel en die data voorgestel in die volgende tabel:\\
+{Die wiskundepunte van $100$ graad $10$ leerders by ’n skool is ingesamel en die data voorgestel in die volgende tabel:\\
     \begin{center}
       \begin{tabular}{|c|c|}  \hline
        
@@ -844,7 +874,7 @@ In gegroepeerde data sal die persentiele iewers in ‘n interval lê, eerder as 
     \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
     \item Bereken die gemiddelde van hierdie gegroepeerde datastel.
     \item In watter intervalle is die kwartiele van hierdie datastel?
-    \item In watter interval is die $30^{\mathrm{th}}$ persentiel van die datastel?
+    \item In watter interval is die $30^{\mathrm{ste}}$ persentiel van die datastel?
     \end{enumerate}
 }{
   \westep{Bereken die gemiddelde}
@@ -868,8 +898,8 @@ In gegroepeerde data sal die persentiele iewers in ‘n interval lê, eerder as 
   \westep{ Vind die kwartiele}
 
   Die data is reeds gegroepeer, dus dit is ook gesorteer. Gebruik die persentielformule en die feit dat daar
-  $100$ leerders is om die rangorde van die $25^{\mathrm{th}}$, $50^{\mathrm{th}}$ en
-  $75^{\mathrm{th}}$ persentiele te vind:
+  $100$ leerders is om die rangorde van die $25^{\mathrm{ste}}$, $50^{\mathrm{ste}}$ en
+  $75^{\mathrm{ste}}$ persentiele te vind:
   \begin{align*}
     r_{25} &= \frac{25}{100}\left(100-1\right)+1 \\
           &= 24,75 \\
@@ -895,23 +925,23 @@ In gegroepeerde data sal die persentiele iewers in ‘n interval lê, eerder as 
     l\^e iewers in die sesde interval: $60 \leq x < 70$.
   \end{itemize}
 
-  \westep{ Vind die $30^{\mathrm{th}}$ persentiel}
+  \westep{ Vind die $30^{\mathrm{ste}}$ persentiel}
 
-  Gebruik dieselfde metode as vir die kwartiele om die rangorde van die $30^{\mathrm{th}}$ persentiel te vind.
+  Gebruik dieselfde metode as vir die kwartiele om die rangorde van die $30^{\mathrm{ste}}$ persentiel te vind.
   \begin{align*}
     r &= \frac{30}{100}\left(100-1\right)+1 \\
       &= 30,7
   \end{align*}
   Nou vind ons die interval waarbinne die rangorde l\^e. Aangesien daar $25$ leerders is in die eerste $3$ intervalle altesaam en $47$
-  in die eerste vier intervalle , l\^e die $30^{\mathrm{th}}$ persentiel in die vierde interval $40 \leq x < 50$.
+  in die eerste vier intervalle , l\^e die $30^{\mathrm{ste}}$ persentiel in die vierde interval $40 \leq x < 50$.
 }
 \end{wex}
 
 \subsection{Variasiewydtes}
 Ons definieer die variasiewydtes in terme van die persentiele. Ons het reeds die variasiewydte van die hele datastel gedefineer as die verskil tussen die 
-$100^{\mathrm{th}}$ persentiel en die $0^{\mathrm{th}}$ persentiel (dit wil sê tussen die maksimum en die minimum waardes in die datastel).
+$100^{\mathrm{ste}}$ persentiel en die $0^{\mathrm{de}}$ persentiel (dit wil sê tussen die maksimum en die minimum waardes in die datastel).
 
-\Definition{nterkwartielwydte}{Die interkwartielwydte is ’n maatstaf van spreiding wat bereken word deur die onderste (eerste) kwartiel ($Q1$) van die boonste (hoër) kwartiel ($Q3$). af te trek. Dit gee die wydte van die middelste helfte van die datastel.
+\Definition{Interkwartielwydte}{Die interkwartielwydte is ’n maatstaf van spreiding wat bereken word deur die onderste (eerste) kwartiel ($Q1$) van die boonste (hoër) kwartiel ($Q3$) af te trek. Dit gee die wydte van die middelste helfte van die datastel.
 }
 
 \Definition{Semi-interkwartielwydte}{Die semi-interkwartielwydte is die helfte van die interkwartielwydte.}
@@ -951,23 +981,24 @@ $100^{\mathrm{th}}$ persentiel en die $0^{\mathrm{th}}$ persentiel (dit wil sê 
     \item die boonste kwartiel
     \end{enumerate}
   \end{enumerate}
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00k0&  (2.) 00k1&  (3.) 00k2&  (4.) 00k3& \end{tabular}
+\insertpracticeinfo{4}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00k0&  (2.) 00k1&  (3.) 00k2&  (4.) 00k3& \end{tabular}
 }
 \end{exercises}
 
-\section{Kombinasie van verskillende maatstawe}
+\section{Vyf-getal opsomming}
 ’n Algemene manier om ’n totale datastel op te som is met die vyf-getal opsomming en die ‘mond-en-snor’ grafiek (‘box-and-whisker plot’). Hierdie twee voorstellings verteenwoordig presies dieselfde inligting, numeries in die geval van die vyf-getal opsomming en grafies in die geval van die mond-en-snor grafiek.
-\mindsetvid{Box and whisker plot}{VMbur}
+
 \par
-Die vyf-getal opsomming bestaan uit die minimumwaarde, die maksimumwaarde en die drie kwartiele. Ons kan ook sê dit bestaan uit die $0^{\mathrm{th}}$,
-$25^{\mathrm{th}}$, $50^{\mathrm{th}}$, $75^{\mathrm{th}}$, $100^{\mathrm{th}}$ persentiele.
+Die vyf-getal opsomming bestaan uit die minimumwaarde, die maksimumwaarde en die drie kwartiele. Ons kan ook sê dit bestaan uit die $0^{\mathrm{de}}$,
+$25^{\mathrm{ste}}$, $50^{\mathrm{ste}}$, $75^{\mathrm{ste}}$, $100^{\mathrm{ste}}$ persentiele.
 
 Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. Die mond-reghoek wys die interkwartiel wydte (die afstand tussen die  $Q1$ en $Q3$). ’n Lyn binne-in hierdie reghoek toon die mediaan (die tweede kwartiel). Die lyne wat uitsteek aan die kante van die mond-reghoek (dit is die snor-gedeeltes) wys waar die maksimum- en minimumwaardes lê. 
-
-
+\par
+\mindsetvid{Box and whisker plot}{VMbur}
 \clearpage
 \begin{figure}[t]
   \begin{center}
@@ -983,11 +1014,11 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
       \draw (0.6, 0) node[anchor=west] {mediaan};
       \draw (0.6, -1) node[anchor=west] {laer kwartiel};
       \draw (0.6, -2.5) node[anchor=west] {minimum};
-      \draw (3.5, 2.5) node[anchor=west] {($100^{\mathrm{th}}$ persentiel)};
-      \draw (3.5, 1) node[anchor=west] {($75^{\mathrm{th}}$ persentiel)};
-      \draw (3.5, 0) node[anchor=west] {($50^{\mathrm{th}}$ persentiel)};
-      \draw (3.5, -1) node[anchor=west] {($25^{\mathrm{th}}$ persentiel)};
-      \draw (3.5, -2.5) node[anchor=west] {($0^{\mathrm{th}}$ persentiel)};
+      \draw (3.5, 2.5) node[anchor=west] {($100^{\mathrm{ste}}$ persentiel)};
+      \draw (3.5, 1) node[anchor=west] {($75^{\mathrm{ste}}$ persentiel)};
+      \draw (3.5, 0) node[anchor=west] {($50^{\mathrm{ste}}$ persentiel)};
+      \draw (3.5, -1) node[anchor=west] {($25^{\mathrm{ste}}$ persentiel)};
+      \draw (3.5, -2.5) node[anchor=west] {($0^{\mathrm{de}}$ persentiel)};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-0.7,-1) -- (-0.7,1);
       \draw (-0.7,0) node[anchor=east,xshift=-0.2cm] {interkwartiel wydte};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-4.5,-2.5) -- (-4.5,2.5);
@@ -1023,7 +1054,7 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
     \frac{2,5 + 2,5}{2} = 2,5
   \end{equation*}
 
-  Die derde kwartiel lê tussen die $9^{\mathrm{th}}$ and $10^{\mathrm{th}}$ waardes en dit gee
+  Die derde kwartiel lê tussen die $9^{\mathrm{ste}}$ and $10^{\mathrm{ste}}$ waardes en dit gee
   
   \begin{equation*}
     \frac{4,75 + 4,8}{2} = 4,775
@@ -1033,11 +1064,11 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
 
   \begin{center}
     \begin{tikzpicture}[yscale=1.25]
-      \def\mediaan{3.65}
-      \def\eerste kwartiel{2.5}
-      \def\derde kwartie{4.775}
-      \def\ minimum{1.25}
-      \def\maksimum{5.1}
+      \def\median{3.65}
+      \def\firstquartile{2.5}
+      \def\thirdquartile{4.775}
+      \def\minimum{1.25}
+      \def\maximum{5.1}
 
       \draw (-0.5, \firstquartile) rectangle (0.5, \thirdquartile);
       \draw[thick] (-0.5, \median) -- (0.5, \median);
@@ -1088,11 +1119,11 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
       \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
       \item \raisebox{-2cm}{
           \begin{tikzpicture}[xscale=0.4]
-            \def\mediaan{25}
-            \def\eerste kwartiel{22}
-            \def\derde kwartiel{28}
+            \def\median{25}
+            \def\firstquartile{22}
+            \def\thirdquartile{28}
             \def\minimum{15}
-            \def\maksimum{35}
+            \def\maximum{35}
 
             \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
             \draw[thick] ( \median,-0.5) -- ( \median,0.5);
@@ -1119,11 +1150,11 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
         }
       \item \raisebox{-2cm}{
           \begin{tikzpicture}[xscale=0.667]
-            \def\mediaan{98}
-            \def\eerste kwartiel{92}
-            \def\derde kwartiel{100}
+            \def\median{98}
+            \def\firstquartile{92}
+            \def\thirdquartile{100}
             \def\minimum{88}
-            \def\maksimum{101}
+            \def\maximum{101}
 
             \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
             \draw[thick] ( \median,-0.5) -- ( \median,0.5);
@@ -1150,10 +1181,11 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
         }
       \end{enumerate}
     \end{enumerate}
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00k4&  (2.) 00k5&  (3.) 00k6&  (4.) 00k7\end{tabular}
+\insertpracticeinfo{4}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00k4&  (2.) 00k5&  (3.) 00k6&  (4.) 00k7\end{tabular}
 }
 \end{exercises}
 
@@ -1161,49 +1193,52 @@ Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder. 
 \summary{VMdvy}
 
 \begin{itemize}[itemsep=6pt]
-\item Data refer to the pieces of information that have been observed and recorded, from an experiment or a survey. 
+\item Data verwys na stukke inligting wat waargeneem en opgeteken in ’n eksperiment of
+opname. 
 
-\item Quantitative data are data that can be written as numbers.  Quantitative data can be discrete or continuous.
+\item Kwantitatiewe data kan as getalle geskryf word. Kwantitatiewe data kan diskreet of kontinu wees.
 
-\item Qualitative data are data that cannot be written as numbers.  There are two common types of qualitative data: categorical and anecdotal data. 
+\item Kwalitatiewe data is data wat nie as getalle geskryf kan word nie. Kategoriale data en anekdotiese data is twee algemene tipes kwalitatiewe data.
 
-\item The mean is the sum of a set of values divided by the number of values in the set. 
+\item Die gemiddelde word gedefinieer as die some van ’n stel data waardes, gedeel deur
+die aantal waardes in die som. 
   \begin{align*}
     \overline{x} &= \frac{1}{n}\sum_{i=1}^n x_i \\
                  &= \frac{x_1 + x_2 + \cdots + x_n}{n}
   \end{align*}
 
-\item The median of a data set is the value in the central position, when the data set has 
-been arranged from the lowest to the highest value.  If there are an odd number of data, the median will be equal to one of the values in the data set. If there are an even number of data, the median will lie half way between two values in the data set. 
+\item Die mediaan van ’n datastel is die waarde van die sentrale of middelste datapunt
+wanneer die datastel georden word van die kleinste tot die grootste waarde. As daar ’n ewe aantal data-punte is sal di mediaan halfpad tussen twee waardes in die datastel wees.
+ 
 
-\item The mode of a data set is the value that occurs most often in the set. 
+\item Die modus van ’n datastel is die waarde wat die meeste voorkom in die stel. 
 
-\item An outlier is a value in the data set that is not typical of the rest of the set. It is 
-usually a value that is much greater or much less than all the other values in the data set.
+\item ’n Uitskieter is ’n waarde in die datastel wat nie tipies is van die res van die stel
+nie. Dit is gewoonlik ’n waarde wat baie groter is of baie kleiner is as al die ander
+waardes in die stel.
 
-\item Dispersion is a general term for different statistics that describe how values are distributed around the centre. 
+\item Spreiding is ’n algemene term wat beskryf hoe die datawaardes uitgesprei is rondom die middel.
 
-\item The range of a data set is the difference between the maximum and minimum values 
-in the set. 
+\item Die variasiewydte van ’n datastel in die verskil tussen die maksiumum en die mini-
+mumwaardes in die stel. 
 
-\item The $p^{\mathrm{th}}$ percentile is the value, $v$, that divides a data set into two parts, such that 
-$p\%$ of the values in the data set are less than $v$ and $100 − p\%$ of the 
-values are greater than $v$. 
+\item Die $p^{\mathrm{de}}$ persentiel is die waarde, $v$ , wat die datastel in twee verdeel op so ’n manier dat $p$ persent van die waardes in die datastel minder is as $v$ en $100 − p$ persent groter is as $v$.
 
-The general formula for finding the $p^{\mathrm{th}}$ percentile in an ordered data set with $n$ values is 
+
+Die formule vir die vind van die $p^{\mathrm{de}}$ persentiel in ’n geordende datastel met $n$ waardes is:
 \begin{equation*}
   r = \frac{p}{100}\left(n-1\right)+1
 \end{equation*}
 
-\item The quartiles are the three data values that divide an ordered data set into four groups, where each group contains an equal number of data values. The lower quartile is denoted $Q1$, the median is $Q2$ and the upper quartile is $Q3$.
+\item Die kwartiele is die drie datawaardes wat die gesorteerde datastel in vier groepe verdeel, waar elk van die groepe ’n gelyke aantal datawaardes bevat. Die onderste kwartiel ($Q1$), die mediaan ($Q2$) en die boonste kwartiel ($Q3$).
 
-\item The interquartile range is a measure of dispersion, which is calculated by subtracting the lower (first) quartile from the upper (third) quartile. This gives the range of the middle half of the data set.
+\item Die interkwartielwydte is ’n maatstaf van spreiding wat bereken word deur die onderste kwartiel ($Q1$) van die boonste kwartiel ($Q3$) af te trek. Dit gee die wydte van die middelste helfte van die datastel.
 
-\item The semi interquartile range is half of the interquartile range. 
+\item Die semi-interkwartielwydte is die helfte van die interkwartielwydte. 
 
-\item The five number summary consists of the minimum value, the maximum value and the three quartiles ($Q1$, $Q2$ and $Q3$). 
+\item Die vyf-getal opsomming bestaan uit die minimumwaarde, die maksimumwaarde en die drie kwartiele ($Q1$, $Q2$ en $Q3$). 
 
-\item The box-and-whisker plot is a graphical representation of the five number summary.
+\item Die mond-en-snor grafiek toon die vyf persentiele soos in die figuur hieronder.
 \end{itemize}
 
 \begin{eocexercises}{}
@@ -1271,11 +1306,11 @@ The general formula for finding the $p^{\mathrm{th}}$ percentile in an ordered d
     \begin{center}
       \begin{tabular}{|l|c|c|c|c|c|} \hline
 
-        \textbf{opgeleide} & 121 & 137 & 131 & 135 & 130 \\ \hline
+        \textbf{Opgeleide} & 121 & 137 & 131 & 135 & 130 \\ \hline
                          & 128 & 130 & 126 & 132 & 127 \\\hline
                          & 129 & 120 & 118 & 125 & 134 \\\hline
 
-        \textbf{onopgeleide} & 135 & 142 & 126 & 148 & 145 \\\hline
+        \textbf{Onopgeleide} & 135 & 142 & 126 & 148 & 145 \\\hline
                            & 156 & 152 & 153 & 149 & 145 \\\hline
                            & 144 & 134 & 139 & 140 & 142 \\\hline
 
@@ -1307,8 +1342,9 @@ The general formula for finding the $p^{\mathrm{th}}$ percentile in an ordered d
     \end{enumerate}
 
   \end{enumerate}
-\practiceinfo
-\par 
-\par \begin{tabular}[h]{cccccc}
-(1.) 00k8&  (2.) 00k9&  (3.) 00ka&  (4.) 00kb&  (5.) 00kc&  (6.) 00kd\end{tabular}
+\insertpracticeinfo{6}
+% \practiceinfo
+% \par 
+% \par \begin{tabular}[h]{cccccc}
+% (1.) 00k8&  (2.) 00k9&  (3.) 00ka&  (4.) 00kb&  (5.) 00kc&  (6.) 00kd\end{tabular}
 \end{eocexercises}
