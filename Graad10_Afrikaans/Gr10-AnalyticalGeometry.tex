@@ -1,10 +1,14 @@
 \chapter{Analitiese Meetkunde}
-Analitiese meetkunde, ook bekend as koördinaatmeetkunde en vroëer bekend as Cartesiese meetkunde, is die studie van meetkunde op grond van die beginsels van algebra en die Cartesiese koördinaatstelsel. Dit is gemoeid met die definisie van meetkundige figure op ’n numeriese wyse en onttrek numeriese inlligting uit die voorstelling. Sommige beskou die ontwikkeling van analitiese meetkunde as die begin van moderne wiskunde.\par 
+Analitiese meetkunde, ook bekend as koördinaatmeetkunde en vroëer bekend as Cartesiese meetkunde, is die studie van meetkunde op grond van die beginsels van algebra en die Cartesiese koördinaatstelsel. Dit is gemoeid met die definisie van meetkundige figure op ’n numeriese wyse en onttrek numeriese inlligting uit die voorstelling. Sommige beskou die ontwikkeling van analitiese meetkunde as die begin van moderne wiskunde.
+
+\par 
+\chapterstartvideo{VMbkm}
 
 \section{Drawing figures on the Cartesian plane}
 As ons die koördinate van die hoekpunte van ’n figuur het, dan kan ons die figuur op die Cartesiese vlak teken.
-Byvoorbeeld, neem die vierhoek $ABCD$ met koördinate $A(1;1)$, $B(3;1)$, $C(3;3)$ en $D(1;3)$ en stel dit voor op die
-Cartesiese vlak. Dit word getoon in Figuur 15.1.\par 
+Byvoorbeeld, neem die vierhoek $ABCD$ met koördinate $A(1;1)$, $B(3;1)$, $C(3;3)$ en $D(1;3)$ en stel dit voor op die Cartesiese vlak. 
+
+\par 
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -13,14 +17,15 @@ Cartesiese vlak. Dit word getoon in Figuur 15.1.\par
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(0,0)(4,4)
-\psaxes[linewidth=2pt,labels=none,ticks=none]{->}(0,0)(0,0)(5,5)
-\pspolygon[linewidth=.1cm](1,1)(1,3)(3,3)(3,1)(1,1)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-1,-1)(5,5)
+\pspolygon[linewidth=1pt](1,1)(1,3)(3,3)(3,1)(1,1)
 \uput[dl](1,1){\Large{$A$}}
 \uput[dr](3,1){\Large{$B$}}
 \uput[ur](3,3){\Large{$C$}}
 \uput[ul](1,3){\Large{$D$}}
 \uput[l](5.7,0){\Large{$x$}}
 \uput[d](0,5.7){\Large{$y$}}
+\uput[d](-0.2,0){\Large{$0$}}
 \end{pspicture}
 }
 % \caption{Drawing a figure on the Cartesian plane}
@@ -30,14 +35,17 @@ Cartesiese vlak. Dit word getoon in Figuur 15.1.\par
 
 The order of the letters for naming a figure is important. Dit dui vir ons aan dat ons beweeg van punt: $A$ na punt $B$, $B$ na punt $C$, $C$ na punt $D$ na punt $D$  en dan weer terug na punt  $A$. It would also be correct to write quadrilateral $CBAD$ or $BADC$ but it is better to follow the convention of writing letters in alphabetical order.     
 
-\section{Afstand tussen Twee Punte}
-\Definition{Point}{A point is an ordered pair of numbers written as $(x;y)$.}
+\section{Afstand tussen twee punte}
+
 A point is a simple geometric object having location as its only property. 
+
+\Definition{Point}{A point is an ordered pair of numbers written as $(x;y)$.}
+
 \Definition{Distance}{Afstand is a getal wat beskryf hoe ver twee punte van mekaar is.}
 
 \mindsetvid{the distance formula}{VMbls}
 
-\begin{activity}{Afstand tussen twee punte}
+\begin{Investigation}{Afstand tussen twee punte}
 Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee. 
 \begin{itemize}
  \item Can we assume that $\hat{R}=90^{\circ}$? If so, why?
@@ -52,24 +60,26 @@ Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee.
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
-\uput[l](-2,-1.8){\Large{$Q$}}
-\uput[dl](-1.5,-2){\Large{$(-2;-2)$}}
-\uput[dr](2,-2){\Large{$R$}}
-\uput[u](2.3,0.5){\Large{$P$}}
-\uput[ur](2,1){\Large{$(2;1)$}}
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=1pt](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,1)
+\psdots(-2,-2)(2,1)
+% \uput[l](-2,-1.8){\Large{$Q$}}
+\uput[dl](-1.5,-2){\Large{$Q(-2;-2)$}}
+\uput[dr](2,-2){\Large{$R(2;-2)$}}
+% \uput[u](2.3,0.5){\Large{$P$}}
+\uput[ur](2,1){\Large{$P(2;1)$}}
 \uput[l](3.5,0){\Large{$x$}}
 \uput[d](0,3.5){\Large{$y$}}
-\uput[dr](2.5,-2){\Large{$(2;-2)$}}
+% \uput[dr](2.5,-2){\Large{$(2;-2)$}}
+\uput[d](-0.2,0){\Large{$0$}}
 \end{pspicture}
 }
 % \caption{Triangle $PQR$}
 \end{center}
 \label{fig:trianglePQR}
 \end{figure} 
-\end{activity}       
+\end{Investigation}       
 % SOLUTION FOR TEACHERS' GUIDE BELOW:
 % In figure~\ref{fig:trianglePQR}, it can be seen that the length of the line $PR$ is 3 units and the length of the line $QR$ is four units. However, $\Delta PQR$, has a right angle at $R$. Therefore, the length of the side $PQ$ can be obtained by using the Theorem of Pythagoras:\par 
 %       
@@ -89,24 +99,24 @@ punte $A~({x}_{1};{y}_{1})$ en $B~({x}_{2};{y}_{2})$, gebruik ons die Stelling v
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
-\uput[l](-2,-1.8){\Large{$A$}}
-\uput[dl](-1,-2){\Large{$(x_{1};y_{1})$}}
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=1pt](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,1)
+\psdots(-2,-2)(2,1)
+% \uput[l](-2,-1.8){\Large{$A$}}
+\uput[dl](-1,-2){\Large{$A(x_{1};y_{1})$}}
 \uput[dr](2,-1.8){\Large{$C$}}
 \uput[ur](2.5,-2.5){\Large{$(x_{2};y_{1})$}}
-\uput[u](2.3,0.5){\Large{$B$}}
-\uput[ur](1.8,1){\Large{$(x_{2};y_{2})$}}
-\uput[l](4,0){\Large{$x$}}
-\uput[d](0,4){\Large{$y$}}
+% \uput[u](2.3,0.5){\Large{$B$}}
+\uput[ur](1.8,1){\Large{$B(x_{2};y_{2})$}}
+\uput[l](3.5,0){\Large{$x$}}
+\uput[d](0,3.5){\Large{$y$}}
 \uput[d](-0.2,-0.05){\Large{$0$}}
 \end{pspicture}
 }
 \end{center}
-\end{figure}       
-}
-\Tip{Always draw a sketch - it helps with your calculation and makes it easier to check if your answer is correct.}
+\end{figure}   
+% \Tip{Always draw a sketch - it helps with your calculation and makes it easier to check if your answer is correct.}
 \begin{align*}
 AB^2&=AC^{2}+BC^{2}\\
 \therefore AB&=\sqrt{AC^{2}+BC^{2}}
@@ -124,11 +134,13 @@ AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\
 & =& \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}} 
 \end{eqnarray*}
 Gevolglik, vir enige twee punte, $({x}_{1};{y}_{1})$ en $({x}_{2};{y}_{2})$, is die formule:\par 
-\Identity{Afstand}{$\mbox{Afstand } d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$}
-\Note{Note that $(x_1 - x_2)^2 = (x_2 - x_1)^2$, but remember to be consistent or you will get the wrong answer.\\
-$AB \neq \\ \sqrt{(x_1 - x_2)^2 + (y_2 - 2_1)^2}$.}
+\Identity{\begin{center}{$\mbox{Afstand } d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$}\end{center}}
+\par
+Note that $(x_1 - x_2)^2 = (x_2 - x_1)^2$, but remember to be consistent or you will get the wrong answer. \\
+$AB \neq \sqrt{(x_1 - x_2)^2 + (y_2 - 2_1)^2}$.
 
- 
+\par
+\mindsetvid{the distance formula}{VMbls}
 
 % Die volgende video oor die afstandformule.
 
@@ -140,26 +152,25 @@ $AB \neq \\ \sqrt{(x_1 - x_2)^2 + (y_2 - 2_1)^2}$.}
 \westep{Draw a sketch}
 % \begin{figure}
  \begin{center}
-
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-4.096719)(8.579062,4.1367188)
-\rput(3.0,1.9032812){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-6)(5,2)}
-\psline[linewidth=0.028222222cm](1.8,-2.0367188)(6.3,0.9632813)
-\psline[linewidth=0.028222222,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.8,-2.0367188)(6.3,-2.0367188)(6.3,0.9632813)
-\psline[linewidth=0.028222222](6.06,-2.0367188)(6.06,-1.7832812)(6.3,-1.7832812)
-\usefont{T1}{ptm}{m}{n}
-\rput(2.7045312,1.6632812){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.3545313,3.9332812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(8.204532,2.1432812){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.744531,1.1932813){$T(7,-2)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2,-2.3367188){$S(-2,-5)$}
-\psdots[dotsize=0.127](6.3,0.9632813)
-\psdots[dotsize=0.127](1.8,-2.0367188)
+\begin{pspicture}(0,-2.5467188)(6.5735936,2.5867188)
+\rput(2.26,0.45328125){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.75cm,dy=0.75cm,Dx=2,Dy=2]{<->}(0,0)(-2,-3)(3,2)}
+\psline[linewidth=0.028222222cm](1.52,-1.3932812)(4.9,-0.26671866)
+\psline[linewidth=0.028222222,linestyle=dashed,dash=0.16cm 0.16cm](1.54,-1.4332813)(4.92,-1.4142337)(4.92,-0.23328125)
+\psline[linewidth=0.028222222](4.68,-1.3867188)(4.68,-1.1332811)(4.92,-1.1332811)
+\usefont{T1}{ppl}{m}{n}
+\rput(5.6990623,-0.33671865){$T(7,-2)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.6,-1.4267187){$S(-2,-5)$}
+\psdots[dotsize=0.127](4.92,-0.26671866)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.0790625,0.25328124){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.5290625,2.45){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.4,0.5){$x$}
+\psdots[dotsize=0.127](1.48,-1.4267187)
 \end{pspicture} 
 }
  \end{center}
