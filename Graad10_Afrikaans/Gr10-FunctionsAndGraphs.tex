@@ -208,7 +208,7 @@ Uitvoer ($y$) &$-8$&$-5$&$0$
 \section{Reguitlynfunksies in die vorm $y=mx+c$}
 
 
-\subsection*{Teken die grafiek}       
+\subsection*{Trek die grafiek}       
 Funksies met die algemene vorm $y=mx+c$ word reguitlynfunksies genoem. In die vergelyking, $y=mx+c$, is $m$ en $c$ konstantes en het verskillende invloede op die grafiek van die funksie. 
 \par
 \mindsetvid{Straight line graph}{VMjlm}
@@ -588,7 +588,7 @@ Skryf altyd die funksie vorskrif in die vorm $y=mx+c$ en let op die waarde van $
       \item $h(x)=2x-1$
       \item $y+3x=1$
       \item $3y-2x=6$
-      \item$k(x)=-3$
+      \item $k(x)=-3$
       \item $x=3y$
       \item $\frac{x}{2} - \frac{y}{3} = 1$
       \end{enumerate}
@@ -649,7 +649,7 @@ Skryf altyd die funksie vorskrif in die vorm $y=mx+c$ en let op die waarde van $
    
 
 \section{Paraboliese funksies in die vorm $y=a{x}^{2}+q$}
-\subsection*{Skets die grafiek}         
+\subsection*{Trek die grafiek}         
 Funksies van die algemene vorm  $y=a{x}^{2}+q$  word paraboliese funksies genoem. In die vergelyking $y=a{x}^{2}+q$, is $a$ en $q$ konstantes wat die parabool op bepaalde maniere be\"invloed. 
 \par
 \mindsetvid{The quadratic function}{VMaxl}
@@ -1274,23 +1274,23 @@ Voltoi die volgende tabel vir $h(x) = \frac{1}{x}$ en stip die punte op 'n asses
 \westep{Stip die punte en verbind hulle apart met gladde krommes}
 Vanaf die tabel kry ons die volgende punte: $(-3; -\frac{1}{3})$, $(-2; -\frac{1}{2})$, $(-1;-1)$, $(-\frac{1}{2}; -2)$, $(-\frac{1}{4}; -4)$, $(\frac{1}{4}; -4)$, $(\frac{1}{2}; 2)$, $(1; 1)$, $(2; \frac{1}{2})$ en $(3; \frac{1}{3})$. \vspace{8pt} \\
 
+\setcounter{subfigure}{0}
+% \begin{figure}[tbp]
+\begin{center}
+\begin{pspicture}(-5,-2)(5,5)
+%\psgrid
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-5)(5,5)
+\psplot[plotstyle=curve,arrows=<->]{-5}{-0.2}{x -1 exp}
+\psplot[plotstyle=curve,arrows=<->]{0.2}{5}{x -1 exp}
+\psdots(-3,-0.33)(-2,-0.5)(-1,-1)(-0.5,-2)(-0.25, -4)(0.25, 4)(0.5, 2)(1, 1)(2,0.5)(3,0.33) 
+\rput(5.5,0.3){$x$}
+\rput(0.3,5.5){$y$}
+\rput(2,1.5) {$h(x) = \frac{1}{x}$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
 
-% \setcounter{subfigure}{0}
-% % \begin{figure}[tbp]
-% \begin{center}
-% \begin{pspicture}(-5,-2)(5,5)
-% %\psgrid
-% \psset{yunit=0.75,xunit=0.75}
-% \psaxes[arrows=<->](0,0)(-5,-2.667)(5,6)
-% \psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp }
-% \psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp }
-% % \psplot[linestyle=dotted,plotstyle=curve]{-5}{2}{x 2 add}
-% \end{pspicture}
-% % \caption{General shape and position of the graph of a function of the form $f(x)=\frac{a}{x} + q$.}
-% \label{fig:mf:g:hyperbola10}
-% \end{center}
-% % \end{figure}      
-
+\end{center}
 
 Funksie $h$ is ongedefineered vir $x=0$. Daar is dus 'n breuk(diskontinuiteit) by $x=0$. \vspace{8pt} \\
 $y=h(x) = \frac{1}{x}$ dus kan ons skryf $x \times y = 1$. Aangesien die produk van twee positiewe getalle \textbf{asook} die produk van twee negatiewe getalle gelyk aan $1$ kan wees, l\^e die grafiek in die eerste en derde kwadrante.
@@ -1312,25 +1312,25 @@ Die grafiek van $h(x)$ het twee asse van simmertrie die lyne $y=x$ en $y=-x$. Di
 
 
 \subsection*{Ondersoek die invloed van $a$ en $q$ }
-\begin{Ondersoek}{Ondersoek die invloed van $a$ en $q$ op 'n hiperbool}
+\begin{Investigation}{Ondersoek die invloed van $a$ en $q$ op 'n hiperbool}
  Op dieselfde assestelsel, trek die volgende grafieke:
-    \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
-    \item $a(x)=\dfrac{1}{x}-2$
-    \item $b(x)=\dfrac{1}{x}-1$
-    \item $c(x)=\dfrac{1}{x}$
-    \item $d(x)=\dfrac{1}{x}+1$
-    \item $e(x)=\dfrac{1}{x}+2$
-\end{enumerate}
+  \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+  \item $y_1=\dfrac{1}{x}-2$
+  \item $y_2=\dfrac{1}{x}-1$
+  \item $y_3=\dfrac{1}{x}$
+  \item $y_4=\dfrac{1}{x}+1$
+  \item $y_5=\dfrac{1}{x}+2$
+  \end{enumerate}
 Gebruik jou resultate om die invloed van  $q$ af te lei.\par
 
 Op dieselfde assestelsel, trek die volgende grafieke::
-    \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{5}
-    \item $f(x)=\dfrac{-2}{x}$
-    \item $g(x)=\dfrac{-1}{x}$
-    \item $h(x)=\dfrac{1}{x}$
-    \item $i(x)=\dfrac{2}{x}$
-    \end{enumerate}
+\item $y_6=\dfrac{-2}{x}$
+\item $y_7=\dfrac{-1}{x}$
+\item $y_8=\dfrac{1}{x}$
+\item $y_9=\dfrac{2}{x}$
+\end{enumerate}
 Gebruik jou resultate om die invloed van $a$ af te lei.
 \end{Investigation}
 
@@ -1338,48 +1338,66 @@ Gebruik jou resultate om die invloed van $a$ af te lei.
 \begin{center}
 % \caption{Table summarising general shapes and positions of functions of the form $y=\frac{a}{x} + q$. The axes of symmetry are shown as dashed lines.}
 \label{tab:mf:graphs:summaryhyp10}
-\begin{tabular}{|c|c|c|}\hline
-& $a<0$&$a>0$\\\hline
+\begin{tabular}{|m{0.9cm}|m{2cm}|m{2cm}|}\hline
+&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
 $q>0$&
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
-\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg 2 add}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm, arrows=<->]{0.25}{5}{x -1 exp neg 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
 \end{pspicture}
 &
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
-\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 add}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 add}
+\psaxes[linewidth=0.02,arrows=<->,arrowsize=0.07cm,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-5}{-0.25}{x -1 exp 2 add}
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{5}{x -1 exp 2 add}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2}
 \end{pspicture}
 \\\hline
-$q=0$ & &
-\\ \hline
-$q<0$&
+$q=0$ & 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
-\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
-\psplot[linestyle=dotted,plotstyle=curve]{-2}{4}{x neg 2 sub}
+\psaxes[linewidth=0.02,arrowsize=0.07cm,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.3}{-0.25}{x -1 exp neg }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.3}{x -1 exp neg }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x neg}
 \end{pspicture}
 &
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10, labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{-4.4}{-0.25}{x -1 exp }
+\psplot[linewidth=0.02,plotstyle=curve,arrowsize=0.07cm,arrows=<->]{0.25}{4.4}{x -1 exp }
+% \psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x }
+\end{pspicture}
+\\ \hline
+$q<0$&
+
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
-\psplot[plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
-\psplot[linestyle=dotted,plotstyle=curve]{-4}{4}{x 2 sub}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp neg 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-2}{4}{2 neg}
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10,labels=none,ticks=none](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-5}{-0.25}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{0.25}{5}{x -1 exp 2 sub}
+\psplot[linewidth=0.02,linestyle=dotted,plotstyle=curve]{-4}{4}{2 neg}
 \end{pspicture}
 \\\hline
 \end{tabular}
@@ -1401,19 +1419,21 @@ en vierde kwadrante van die Cartesiese vlak lê.
 \begin{itemize}
  \item Indien $a>0$, sal die grafiek $h(x)$ in die eeste en derde kwardrante lê. \\
 Vir $a>1$, sal die grafiek $h(x)$ verder weg l\^e van die asse as $y=\frac{1}{x}$.
-\\Vir $0<a<1$, is $a$ 'n breuk en die grafiek sal nader aan die asse l\^e as $y=\frac{1}{x}$. 
+%english
+\\For $0<a<1$, as $a$ tends to $0$, the graph moves closer to the axes than $y=\frac{1}{x}$. 
 \item Indien $a<0$, sal die grafiek $h(x)$ in die tweede
 en vierde kwadrante van die Cartesiese vlak lê.\\
 Vir $a<-1$, sal die grafiek $h(x)$ verder weg l\^e van die asse as $y=-\frac{1}{x}$.
-\\Vir $-1<a<1$, $a$ 'n breuk en die grafiek sal nader aan die asse l\^e as $y=-\frac{1}{x}$. 
+%english
+\\For $-1<a<0$, as $a$ tends to $0$, the graph moves closer to the axes than $y=-\frac{1}{x}$. 
 \end{itemize}
 
 
 
-\subsection*{Ondek die kenmerke van $y=\frac{a}{x}+q$}  
+\subsection*{Ondek die kenmerke}  
 Die standaardsvorm van die funksie is $y=\frac{a}{x}+q$.
 
-\subsection*{Definisieversameling en waardeversameling}
+\subsubsection*{Definisieversameling en waardeversameling}
 
 Die funksie $y=\frac{a}{x}+q$, is ongedefinieerd vir $x=0$. \\
 Die definisieversameling is dus $\{x:x\in \mathbb{R},x\ne 0\}$.\par 
@@ -1421,7 +1441,7 @@ Ons kan sien dat $y=\frac{a}{x}+q$ herskryf kan word as:
 \begin{equation*}
 \begin{array}{ccl}\hfill y& =& \dfrac{a}{x}+q\hfill \vspace{4pt} \\
  \hfill y-q& =& \dfrac{a}{x}\hfill \\
- \hfill \mbox{Indien }x \ne  0 \mbox{dan}:(y-q)x& =& a\hfill \\
+ \hfill \mbox{Indien }x \ne  0 ~\mbox{dan}:(y-q)x& =& a\hfill \\
  \hfill x& =& \dfrac{a}{y-q}\hfill 
 \end{array}
 \end{equation*}
@@ -1429,7 +1449,8 @@ Dit wys dat die funksie ongedefinieerd is by $y=q$. \\
 Die waardeversameling van $f(x)=\frac{a}{x}+q$ is $\{f(x):f(x)\in (-\infty ;q)\cup (q;\infty )\}$.\par 
 
 \begin{wex}{Definisieversameling en waardeversameling van 'n hiperbool}
-{If $g(x)=\frac{2}{x}+2$, determine the domain and range of the function.}
+%english
+{As $g(x)=\frac{2}{x}+2$, vind die definisieversameling en waardeversameling vir die funksie.}
 {
 \westep{Bereken die definisieversameling}
 Die definisieversameling is $\{x:x\in \mathbb{R},x\ne 0\}$ omdat $g(x)$ ongedefinieerd is by $x=0$.
@@ -1439,9 +1460,9 @@ Ons sien dat  $g(x)$ ongedefinieerd is by $y=2$.  Die waardeversamling is dus $\
 \end{wex}
 
 
-\subsection*{Afsnitte}
+\subsubsection*{Afsnitte}
 
-\textbf{Die $y$-afsnit} \\
+\textbf{Die $y$-afsnit}: \\
 Elke punt op die $y$-as het $x$-Ko\"ordinaat van $0$, Dus bereken die $y$-afsnit, deur $x=0$ te stel.\\
 As $g(x)=\frac{2}{x}+2$ stel $x=0$:
 \begin{equation*}
@@ -1452,27 +1473,27 @@ As $g(x)=\frac{2}{x}+2$ stel $x=0$:
 Dit is ongedefiniëerd omdat ons deur nul deel. Daar is dus geen $y$-afsnit nie.\\
 \\
 
-\textbf{Die $x$-afsnit} \\
+\textbf{Die $x$-afsnit}: \\
 Elke punt op die $x$-as het $y$-Ko\"ordinaat van $0$, Dus bereken die $x$-afsnit, deur $y=0$ te stel.\\
 As $g(x)=\frac{2}{x}+2$ stel $y=0$:
 \begin{equation*}
 \begin{array}{ccl}
-\hfill y& =& \dfrac{a}{x}+q\hfill \vspace{4pt}\\
- \hfill 0& =& \dfrac{a}{x}+q\hfill \vspace{4pt} \\
- \hfill \dfrac{a}{x}& =& -q\hfill \\
- \hfill a& =& -q(x)\hfill \vspace{4pt}\\
- \hfill x& =& \dfrac{a}{-q}\hfill 
+\hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
+ \hfill 0& =& \dfrac{2}{x}+2\hfill \vspace{4pt} \\
+ \hfill \dfrac{2}{x}& =& -2\hfill \\
+ \hfill 2& =& -2(x)\hfill \vspace{4pt}\\
+ \hfill x& =& -1\hfill 
 \end{array}
 \end{equation*}
-This gives us the point $(-1; 0)$.
+Dit gee die punt  $(-1; 0)$.
 
 
-\subsection*{Asimptote}
+\subsubsection*{Asimptote}
 
 Daar is twee asimptote vir die funksies van die vorm $y=\frac{a}{x}+q$. \par 
 Ons het gesien dat die funksie ongedefenieer was by $x=0$ en $y=q$ Dus is die asimtote $y=q$, en $x=0$ die $y$ -as. 
 
-\subsection*{Asse van simmetrie}
+\subsubsection*{Asse van simmetrie}
 Daar is twee lyne ten opsigte waarvan die hiperbool simmertrie is $y=ax+q$ en $y = -x +q$.As $y = \frac{2}{x} + 2$ is die simmertrie-asse $y = x + 2$ en $y = -x + 2$
 
 
@@ -1490,7 +1511,7 @@ Om grafieke van funksies van die vorm, $f(x)=\frac{a}{x}+q$, te skets, het ons v
 {Skets die grafiek $g(x)=\frac{2}{x}+2$. Merk die afsnitte en asimptote.}
 {
 \westep{Ondersoek die standaardvorm van die hiperbool}
-Ons sien dat $a>0$. Daarom lê die grafiek $g(x)$ in die eeste en derde kwardrante. 
+Ons sien dat $a>0$, dus die grafiek $g(x)$ l\^e in die eeste en derde kwardrante. 
 \westep{Bereken die afsnitte}
 $y$-afsnit, stel $x=0$:
 \begin{equation*}
@@ -1517,9 +1538,9 @@ Dit gee die punt $(-1;0)$
 \westep{Bepaal die asimptote}
 Die horisontale asimptoot is die lyn $y=2$ en die vertikale asimptoot is die lyn $x=0$.
 
-\westep{Skets die Grafieke}
+\westep{Skets die grafieke}
 \setcounter{subfigure}{0}
-\begin{figure}[H]
+% \begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-5,-3)(5,6)
 %\psgrid
@@ -1528,13 +1549,18 @@ Die horisontale asimptoot is die lyn $y=2$ en die vertikale asimptoot is die lyn
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.4}{x -1 exp 2 mul 2 add}
 \psplot[plotstyle=curve,arrows=<->]{0.4}{5}{x -1 exp 2 mul 2 add}
 \psline[linestyle=dashed](-5,2)(5,2)
+\rput(5.2,0.2){$x$}
+\rput(0.2, 7.3){$y$}
+\rput(3.5,3.3){$g(x)=\frac{2}{x}+2$}
+\rput(-0.3,-0.3){$0$}
 \end{pspicture}
 % \caption{Graph of $g(x)=\frac{2}{x} + 2$.}
 % \label{fig:mf:g:hyperbolasketchexample}
 \end{center}
-\end{figure} 
-Gebied: $x \in \mathbb{R} - \{0\}$\\
-Terrein: $y \in \mathbb{R} - \{2\}$
+% \end{figure} 
+\\
+Definisieversameling: $x \in \mathbb{R} - \{0\}$\\
+Waardeversameling: $y \in \mathbb{R} - \{2\}$
 }
 \end{wex}
 
@@ -1580,19 +1606,28 @@ ongedefiniëerd by y = q. Dus die tweede asimptoot is by $y=7$.
 
 \westep{Skets die grafiek}
 \setcounter{subfigure}{0}
-\begin{figure}[H]
-\psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
-\begin{pspicture*}(-10.85,-7.73)(10.36,13.74)
-\psaxes[Axis=true,yAxis=true,Dx=2,Dy=2,ticksize=-2pt 0,subticks=2]{->}(0,0)(-10.85,-7.73)(10.36,13.74)[x,140] [y,-40]
-\psplot[plotpoints=200]{-10.849663672784777}{10.361464563594}{-4/x+7}
-\psplot[linestyle=dashed,dash=5pt 5pt]{-10.85}{10.36}{(--7-0*x)/1}
-\rput[bl](-8.13,7.85){$y=-\frac{4}{x} + 7$}
-\end{pspicture*}   
-\end{figure}
+% \begin{figure}[]
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-3)(5,6)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
+\psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+\psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
+\psline[linestyle=dashed](-7,7)(7,7)
+\rput(7.3,0.3){$x$}
+\rput(0.3, 15.3){$y$}
+\rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+\rput(8.2,7){$y=7$}
+\rput(-0.3,-0.3){$0$}
+\end{pspicture}
+}
+\end{center}
 
-Gebied: $x \in \mathbb{R} - \{0\}$\\
-Terrein: $y \in \mathbb{R} - \{7\}$\\
-Asse van simmetrie: $y=x+7$ and $y=-x+7$
+Definisieversameling: $x \in \mathbb{R} - \{0\}$\\
+Waardeversameling: $y \in \mathbb{R} - \{7\}$\\
+Asse van simmetrie: $y=x+7$ en $y=-x+7$
 
 
 }
@@ -1600,25 +1635,25 @@ Asse van simmetrie: $y=x+7$ and $y=-x+7$
 
 \begin{exercises}{}
 {
-Gebruik grafiekpapier en teken die grafiek van  $xy=-6$.
-    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item Gebruik grafiekpapier en teken die grafiek van  $xy=-6$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item Lê die punt $(-2; 3)$  op die grafiek? Gee ’n rede vir jou antwoord.
 
     \item As die $x$-waarde van ‘n punt op die grafiek $0,25$ wat is die ooreenstemmende $y$-waarde?
     \item Wat gebeur met die $y$-waardes as die $x$-waardes baie groot word?
-\item Bereken die kortste afstand van die oorsprong na die grafiek $P$.
-\item Gee die vergelykings van die asimptote.
+   % \item Bereken die kortste afstand van die oorsprong na die grafiek $P$.
+    \item Gee die vergelykings van die asimptote.
     \item Met die lyn $y=-x$ as ’n lyn van simmetrie, watter punt is simmetries ten opsigte van $(-2; 3)$ ?
     \end{enumerate}
-Skets die grafiek van  $h(x)=\frac{8}{x}$.
-    \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\setcounter{enumi}{7}
+\item Skets die grafiek van  $h(x)=\frac{8}{x}$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item Hoe sal die grafiek $g(x)=\frac{8}{x}+3$ vergelyk met die grafiek van $h(x)=\frac{8}{x}$? Verduidelik jou antwoord.
     \item Skets die grafiek van $y=\frac{8}{x}+3$ op dieselfde assestelsel. Toon die asimptote asse van simmetrie en die ko\"ordinate van eenpunt op die grafiek.
     \end{enumerate}
 
-
-\insertpracticeinfo{9}
+ \end{enumerate}
+\insertpracticeinfo{2}
 }
 \end{exercises}
 
@@ -1626,7 +1661,7 @@ Skets die grafiek van  $h(x)=\frac{8}{x}$.
 
 \subsection*{Trek die grafiek}         
 Funksies van die vorm $y=ab^{x}+q$ staan bekend as eksponensiële funksies. Konstantes $a$ en $q$ be\"invloed die vergelyking op verskillende maniere.
-
+\par
 \mindsetvid{The exponential function}{VMaxx}
 
 \begin{wex}{Trek die grafiek van 'n eksponensiële funksies}
@@ -1636,18 +1671,17 @@ Funksies van die vorm $y=ab^{x}+q$ staan bekend as eksponensiële funksies. Kons
 Voltooi die tabel vir elk van die funksies en trek die grafieke op dieselfde assessisteem:
 $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
 
-
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
    &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
 \\ \hline
- $y=2^{x}$&  &&&&
+ $f(x)=2^{x}$& \hspace{1cm}   & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
 \\ \hline
- $y=3^{x}$&  &&&&
+ $g(x)=3^{x}$&  &&&&
 \\ \hline
- $y=5^{x}$&  &&&&
+ $h(x)=5^{x}$&  &&&&
 \\ \hline
 
 \end{tabular}
@@ -1655,10 +1689,10 @@ $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
 \end{table}
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item By watter punt sny al die grafieke?
+\item By watter punt sny al die grafieke?
 \item Verduidelik waarom hulle nie die $x$-as sny nie.
 \item Gee die gebied en terrein van $h(x)$.
- \item Neem die waarde van $x$ af of toe soos $h(x)$ toeneem?
+\item Neem die waarde van $x$ af of toe soos $h(x)$ toeneem?
 \item Watter een van hierdie grafieke neem toe teen die stadigste tempo?
 \item Is die vlgende bewering ten opsigte van $y=k^{x}$ ; $k>1$, waar of vals: Hoe groter $k$ hoe steiler die grafiek van $y=k^{x}$?
 \end{enumerate}
@@ -1671,11 +1705,11 @@ $F(x) =(\frac{1}{2})^{x}$, $G(x) =(3)^{-x}$, $H(x) =(\frac{1}{5})^{x}$,
 \hline
    &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
 \\ \hline
- $y=(\frac{1}{2})^{x}$&  &&&&
+$F(x)=(\frac{1}{2})^{x}$&  \hspace{1cm}  & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} 
 \\ \hline
-$y=(\frac{1}{3})^{x}$&  &&&&
+$G(x)=(\frac{1}{3})^{x}$&  &&&&
 \\ \hline
-$y=(\frac{1}{5})^{x}$&  &&&&
+$H(x)=(\frac{1}{5})^{x}$&  &&&&
 \\ \hline
 
 \end{tabular}
@@ -1683,7 +1717,7 @@ $y=(\frac{1}{5})^{x}$&  &&&&
 \end{table}
 
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
- \item Give the $y$-intercepts for each function.
+\item Gee die $y$-afsnit vir elke funksie.
 \item Bespreek die verband tussen die grafieke van $f(x)$ en $F(x)$.
 \item Bespreek die verband tussen die grafieke $g(x)$ en $G(x)$.
 \item Gee die gebied en terrein van $H(x)$.
@@ -1728,23 +1762,62 @@ $H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
 \end{center}
 \end{table}
 \westep{Stip die punte en verbind hulle met 'n gladdekromme}
-% Diagram needed here
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-3}{2}{2 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2.5}{1.3}{3 x exp}
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{0.9}{5 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(2.2,4.2){$f(x)$}
+\rput(1.4,4.4){$g(x)$}
+\rput(0.6,4.4){$h(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+
+\end{center}
+\end{figure}  
+
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Ons sien al die grafieke gaan deur die punt $(0;1)$. Enige getal tot die mag $0$ is gelyk aan $1$.
 \item Die grafieke sny nie die $x$-as nit omdat $0^{0}$ ongedefenieerd is.
-\item Gebeid: $x \in \mathbb{R}$\\
-Terrein: $(0; \infty)$
+\item Definisieversameling: $x \in \mathbb{R}$\\
+Waardeversameling: $(0; \infty)$
 \item As $x$ toeneem, neem $h(x)$ toe.
 \item $f(x)=2^{x}$ neem teen die stadigste tempo toe omdat dit die kleinste grondtal het.
 \item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek $y=k^{x}$.
 \end{enumerate}
-% Another diagram needed here
+
+\setcounter{subfigure}{0}
+\begin{figure}[H]
+\begin{center}
+\begin{pspicture}(-5,-1)(5,4)
+\psset{yunit=1,xunit=1}
+\psaxes[arrows=<->](0,0)(-5,-1)(5,5)
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-2}{3}{0.5 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-1.3}{2}{0.33 x exp}
+\psplot[linewidth=0.02, plotstyle=curve,arrows=<->]{-0.9}{1}{0.2 x exp}
+\rput(5.2,0.2){$x$}
+\rput(0.2,5.2){$y$}
+\rput(-2.2,4.2){$F(x)$}
+\rput(-1.4,4.4){$G(x)$}
+\rput(-0.6,4.4){$H(x)$}
+\rput(-0.15,-0.2){$0$}
+\end{pspicture}
+\end{center}
+\end{figure}  
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Die $y$-afsnit is die punt $(0; 1)$ vir al grafieke. Vir enige re\"ele getal $z$, $z^{0}=1$.
 \item $F(x)$ is die spie\"elbeeld(refleksie) van $f(x)$ in die $y$-as. 
 \item $G(x)$ is die spie\"elbeeld(refleksie) van $g(x)$ in die $y$-as. 
-\item  Gebied: $x \in \mathbb{R}$\\
-Terrein: $(0; \infty)$
+\item  Definisieversameling: $x \in \mathbb{R}$\\
+Waardeversameling: $(0; \infty)$
 \item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek van $y=(\frac{1}{k})^{x}$.
 \item Die vergelyking van die horisontale asimptoot is $y=0$, die $x$-as.
 \end{enumerate}
@@ -1768,14 +1841,14 @@ Terrein: $(0; \infty)$
 % \end{figure}     
 
 \subsection*{Ondersoek die invloed van $a$ en $q$}
-\begin{Ondersoek}{Ondersoek die invloed van $a$ en $q$ op die exponent grafiek}
+\begin{Investigation}{Ondersoek die invloed van $a$ en $q$ op die exponent grafiek}
 Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $a=1$ en $q$ verander):
-\begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-\item $a(x)=2^{x}-2$
-\item $b(x)=2^{x}-1$
-\item $c(x)=2^{x}$
-\item $d(x)=2^{x}+1$
-\item $e(x)=2^{x}+2$
+\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
+\item $y_1=2^{x}-2$
+\item $y_2=2^{x}-1$
+\item $y_3=2^{x}$
+\item $y_4=2^{x}+1$
+\item $y_5=2^{x}+2$
 \end{enumerate}
 
 \begin{table}[H]
@@ -1784,28 +1857,29 @@ Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $a=1$ en $q$ veran
 \hline
    &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
 \\ \hline
-$a(x)=2^{x}-2$&  &&&&
+$y_1=2^{x}-2$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
 \\ \hline
- $b(x)=2^{x}-1$&  &&&&
+ $y_2=2^{x}-1$&  &&&&
 \\ \hline
-$c(x)=2^{x}$&  &&&&
+$y_3=2^{x}$&  &&&&
 \\ \hline
-$d(x)=2^{x}+1$&  &&&&
+$y_4=2^{x}+1$&  &&&&
 \\ \hline
-$e(x)=2^{x}+2$&  &&&&
+$y_5=2^{x}+2$&  &&&&
 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 Gebruik jou antwoorde om ’n gevolgtrekking te maak ten opsigte van die invloed van $q$.
 \\
-
+\par
 Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $q=0$ en $a$ verander):
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item $f(x)=2^{x}$
-\item $g(x)=2.2^{x}$
-\item $h(x)=-2^{x}$
-\item $i(x)=-2.2^{x}$
+\setcounter{enumi}{5}
+\item $y_6=2^{x}$
+\item $y_7=2 \times 2^{x}$
+\item $y_8=-2^{x}$
+\item $y_9=-2 \times 2^{x}$
 \end{enumerate}
 
 \begin{table}[H]
@@ -1814,13 +1888,13 @@ Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $q=0$ en $a$ veran
 \hline
    &  $-2$ & $-1$ & $0$ & $1$ & $2$ 
 \\ \hline
-$f(x)=2^{x}$&  &&&&
+$y_6=2^{x}$& \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm} & \hspace{1cm}
 \\ \hline
-$g(x)=2.2^{x}$&  &&&&
+$y_7=2 \times 2^{x}$&  &&&&
 \\ \hline
- $h(x)=-2^{x}$&  &&&&
+$y_8=-2^{x}$&  &&&&
 \\ \hline
-$i(x)=-2.2^{x}$&  &&&&
+$y_9=-2 \times 2^{x}$&  &&&&
 \\ \hline
 
 \end{tabular}
@@ -1834,42 +1908,93 @@ Gebruik jou antwoorde om ’n gevolgtrekking te maak ten opsigte van die invloed
 \begin{center}
 % \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
 % \label{tab:mf:graphs:summaryexp10}
-\begin{tabular}{|c|c|c|}\hline
-& $a<0$&$a>0$\\\hline
-$q>0$&
+\begin{tabular}{|m{1.5cm}|m{2cm}|m{2cm}|}\hline
+\hspace{0.25cm}\fbox{$b>1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
 
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 add}
+\psaxes[linewidth=0.02, arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 add}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
 \end{pspicture}
 \\\hline
-$q<0$&
+\hspace{0.25cm}$q<0$&
 
 
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp -1 mul 2 sub}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
 \end{pspicture}
 &
 \begin{pspicture}(-1.2,-1.2)(1.2,1.2)
 %\psgrid
 \psset{xunit=0.2,yunit=0.2}
-\psaxes[arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
-\psplot[plotstyle=curve,arrows=<->]{-5}{2}{2 x exp 2 sub}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-4}{2}{2 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
 \end{pspicture}
 \\\hline
-\end{tabular}cos
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\begin{center}
+% \caption{Table summarising general shapes and positions of functions of the form $y=ab^{x} + q$.}
+% \label{tab:mf:graphs:summaryexp10}
+\begin{tabular}{|m{1.5cm}|m{2cm}|m{2cm}|}\hline
+\fbox{$0<b<1$}&\hspace{0.5cm}$a<0$&\hspace{0.5cm}$a>0$\\\hline
+\hspace{0.25cm}$q>0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,2.2)(4,2.2)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 add}
+\psline[linewidth=0.02,linestyle=dotted](-4,1.8)(4,1.8)
+\end{pspicture}
+\\\hline
+\hspace{0.25cm}$q<0$&
+
+
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp -1 mul 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-1.8)(4,-1.8)
+\end{pspicture}
+&
+\begin{pspicture}(-1.2,-1.2)(1.2,1.2)
+%\psgrid
+\psset{xunit=0.2,yunit=0.2}
+\psaxes[linewidth=0.02,arrows=<->,dx=0,Dx=10,dy=0,Dy=10](0,0)(-5,-5)(5,5)
+\psplot[linewidth=0.02,plotstyle=curve,arrows=<->]{-2}{4}{0.5 x exp 2 sub}
+\psline[linewidth=0.02,linestyle=dotted](-4,-2.2)(4,-2.2)
+\end{pspicture}
+\\\hline
+\end{tabular}
 \end{center}
 \end{table}
 
@@ -1890,7 +2015,7 @@ Jy sou gevind het dat die waarde van $a$ bepaal die vorm van die grafiek. c
 \item If $a<0$, dan sal die grafiek afwaarts buig . Die twee grafieke is spie\"elbeelde van mekaar in die horisontale asimptoot
 \end{itemize}
 
-\subsection*{ondek die kenmerke van $y=ab^{x} + q$}
+\subsection*{Ondek die kenmerke}
 Die standaardvorm van die eksponentgrafiek is $y=ab^{x} + q$.
 \subsection*{Definisieversameling en waardeversameling}
 
@@ -2133,7 +2258,7 @@ Hierdie afdeling beskryf die grafieke van trigonometriese funksies.\par
 \mindsetvid{Sine and cosine graphs}{VMazc}
 
 \subsection{Grafiek van $y=sin~\theta $}
-\subsection*{Teken die grafiek}
+\subsection*{Trek die grafiek}
 \nopagebreak
 Volgooi die volgende tabel en gebruik jou sakrekenaar om die waardes te bereken. Stip dan die waardes met $sin~\theta $ op die $y$-as en $\theta $op die $x$-as.Rond die antwoorde af tot $1$ desimale plek.\par 
 
@@ -2388,7 +2513,7 @@ Die $y$-afsnit, ${y}_{int}$, van $f(\theta )=a~sin~x+q$ is eenvoudig die waarde 
 
 
 \subsection{Grafiek van $y=cos~\theta $}
-\subsection*{Teken die grafiek}
+\subsection*{Trek die grafiek}
 \nopagebreak
  Voltooi die volgende tabel, gebruik jou sakrekenaar om die waardes korrek tot $1$ desimale plek te bereken. Stip
 dan die waardes met $cos~\theta $ op die $y$-as en $\theta $ op die $x$-as.\par 
