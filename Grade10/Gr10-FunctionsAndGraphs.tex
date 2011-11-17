@@ -2247,7 +2247,7 @@ This section describes the graphs of trigonometric functions.\par
 {Plotting a sine graph}
 {
 \begin{equation*}
-  y = f(\theta) = \sin\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+  y = f(\theta) = sin~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
 \end{equation*}
 
 
@@ -2277,7 +2277,7 @@ Choose an appropriate scale and plot the values of $\theta $ on the $x$-axis and
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\sin\theta$&
+\footnotesize$sin~\theta$&
 &
 &
 &
@@ -2323,7 +2323,7 @@ Choose an appropriate scale and plot the values of $\theta $ on the $x$-axis and
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\sin\theta$&
+\footnotesize$sin~\theta$&
 \footnotesize$0$&
 \footnotesize$0,5$&
 
@@ -2352,18 +2352,19 @@ Choose an appropriate scale and plot the values of $\theta $ on the $x$-axis and
 
 \begin{center}
 \begin{pspicture}(0,-1)(5,1)
-\psset{xunit=2}
+\psset{xunit=2.1}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.2)
+\psaxes[dx=30,Dx=30,  xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.2)(370,1.2)
 \psplot[plotpoints=300, linewidth=1pt]{0}{360}{x sin}  
 \psdots(30,0.5)(60,0.87)(90,1)(120,0.87)(150,0.5)(180,0)(210,-0.5)(240,-0.87)(270,-1)(300,-0.87)(330,-0.5)(360,0)
-\rput(410, 0.2){$\theta$ (in degrees)}
+\rput(370, 0.2){$\theta$}
 \rput(10, 1.2){$y$}
+
 \end{pspicture}
 \end{center}    
 \\
-Notice the wave shape of the graph. Each complete wave takes $360^{\circ}$ to complete. This is called the period. The height of the wave above and below the $x$-axis is called the graph's amplitude. The maximum value of $y=\sin\theta$ is $1$ and the minimum value is $-1$.\\
+Notice the wave shape of the graph. Each complete wave takes $360^{\circ}$ to complete. This is called the period. The height of the wave above and below the $x$-axis is called the graph's amplitude. The maximum value of $y=sin~\theta$ is $1$ and the minimum value is $-1$.\\
 \\
 Domain: $[~0^{\circ}; 360^{\circ}]$\\
 Range: $[-1; 1]$\\
@@ -2378,25 +2379,25 @@ Minimum turning point: $(270^{\circ};-1)$
 
 \subsection*{Investigating the effects of $a$ and $q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a sine graph}
-{In the equation, $y=a\sin\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+{In the equation, $y=a~sin~\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
 
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item $y_1=\sin\theta -2$
-\item $y_2=\sin\theta -1$
-\item $y_3=\sin\theta $
-\item $y_4=\sin\theta +1$
-\item $y_5=\sin\theta +2$
+\item $y_1=sin~\theta -2$
+\item $y_2=sin~\theta -1$
+\item $y_3=sin~\theta $
+\item $y_4=sin~\theta +1$
+\item $y_5=sin~\theta +2$
 \end{enumerate}
 Use your results to deduce the effect of $q$.\\
 \\
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{5}
-\item $y_6=-2\sin\theta $
-\item $y_7=-\sin\theta $
-\item $y_8=\sin\theta $
-\item $y_9=2\sin\theta $\end{enumerate}
+\item $y_6=-2~sin~\theta $
+\item $y_7=-sin~\theta $
+\item $y_8=sin~\theta $
+\item $y_9=2~sin~\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.\\
 }
 \end{Investigation}
@@ -2525,7 +2526,7 @@ Note that amplitude is always positive.\\
 
 % \begin{table}[htb]
 % \begin{center}
-% % \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a \sin(x) + q$.}
+% % \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a sin~(x) + q$.}
 % \label{tab:mt:g:summarysin10}
 % \begin{tabular}{|c|c|c|}\hline\begin{table}[H]
 
@@ -2575,15 +2576,15 @@ Note that amplitude is always positive.\\
 \subsection*{Discovering the characteristics}
 \subsubsection*{Domain and range}
 \nopagebreak
-For $f(\theta) = a\sin\theta + q$, the domain is $[~0^{\circ}; 360^{\circ}]$. \par
-The range of $f(\theta )=a\sin\theta +q$ depends on the values for $a$ and $q$:\par 
+For $f(\theta) = a~sin~\theta + q$, the domain is $[~0^{\circ}; 360^{\circ}]$. \par
+The range of $f(\theta )=asin~\theta +q$ depends on the values for $a$ and $q$:\par 
 For $a>0$:\par 
 \nopagebreak\noindent{}
 \begin{equation*}
   \begin{array}{rcccl}
-    \hfill   -1 & \leq &  \sin\theta     & \leq & 1   \hfill \\
-    \hfill   -a & \leq & a\sin\theta     & \leq & a   \hfill \\
-    \hfill -a+q & \leq & a\sin\theta + q & \leq & a+q \hfill \\
+    \hfill   -1 & \leq &  sin~\theta     & \leq & 1   \hfill \\
+    \hfill   -a & \leq & a~sin~\theta     & \leq & a   \hfill \\
+    \hfill -a+q & \leq & a~sin~\theta + q & \leq & a+q \hfill \\
     \hfill -a+q & \leq &  f(\theta)      & \leq & a+q \hfill 
   \end{array}
 \end{equation*}
@@ -2591,24 +2592,24 @@ For $a>0$:\par
 For all values of $\theta$, $f(\theta)$ is always between $-a+q$ and
 $a+q$.\\
 
-Therefore for $a>0$, the range of $f(\theta )=a\sin\theta +q$ is
+Therefore for $a>0$, the range of $f(\theta )=a~sin~\theta +q$ is
 $\{f(\theta ):f(\theta )\in [-a+q,~a+q]\}$.\\
 
-Similarly, for $a<0$, the range of $f(\theta )=a\sin\theta +q$ is
+Similarly, for $a<0$, the range of $f(\theta )=a~sin~\theta +q$ is
 $\{f(\theta ):f(\theta )\in [a+q,~{-a}+q]\}$.
 
 
 % \Tip{The easiest way to find the range is simply to look for the peak and the trough of the graph.}
 
 \subsubsection*{Period}
-The period of $y=a\sin\theta+q$ is $360^{\circ}$. This means that one sine wave is completed in $360^{\circ}$. 
+The period of $y=a~sin~\theta+q$ is $360^{\circ}$. This means that one sine wave is completed in $360^{\circ}$. 
 
 \subsubsection*{Intercepts}
 \nopagebreak
-The $y$-intercept of $f(\theta )=a\sin\theta+q$ is simply the value of $f(\theta )$ at $\theta =0^{\circ }$.
+The $y$-intercept of $f(\theta )=asin~\theta+q$ is simply the value of $f(\theta )$ at $\theta =0^{\circ }$.
 \begin{eqnarray*}
   y & = & f(0^{\circ }) \\
-    & = & a\sin 0^{\circ } + q \\
+    & = & a~sin~ 0^{\circ } + q \\
     & = & a(0) + q \\
     & = & q
 \end{eqnarray*}
@@ -2617,7 +2618,7 @@ This gives the point $(0;q)$.
 \textbf{Important:} when sketching trigonometric graphs, always start with the basic graph and then consider the effects of $a$ and $q$.
 
 \begin{wex}{Sketching a sine graph}
-{Sketch the graph of $f(\theta)=2\sin\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{Sketch the graph of $f(\theta)=2~sin~\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
 {
 \westep{Examine the standard form of the equation}
 From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
@@ -2669,17 +2670,17 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 \westep{Plot the points and join with a smooth curve}
 \begin{center}
 \begin{pspicture}(-4,-2)(4,6)
-\psset{yunit=1, xunit=2}
+\psset{yunit=1, xunit=2.2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{->}(0,0)(0,0)(370,6)
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
 \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
      {0}{360}{x sin 2 mul 3 add}  
 \psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
      {0}{360}{3}  
-\rput(410, 0.2){$\theta$ (in degrees)}
+\rput(370, 0.2){$\theta$}
 \rput(0.4, 6.2){$f(\theta)$}
-\rput(380,3.4){$f(\theta)=2\sin\theta+3$}
+\rput(380,3.4){$f(\theta)=2~sin~\theta+3$}
 \psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
 
 \end{pspicture}
@@ -2694,17 +2695,17 @@ Minimum turning point: $(270^{\circ};1)$
 }
 \end{wex}
 
-\subsection{Cosine functions of the form $y=a\cos\theta +q$}
+\subsection{Cosine functions of the form $y=acos ~\theta +q$}
 \subsection*{Plotting the graph}
 \begin{wex}
 {Plotting a cosine graph}
 {
 \begin{equation*}
-  y=f(\theta)=\cos  \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+  y=f(\theta)=cos ~  \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
 \end{equation*}
 Use your calculator to complete the following table. \\
 Choose an appropriate scale and plot the values of
-$\theta$ on the $x$-axis and $\cos\theta$ on the $y$-axis. (Round
+$\theta$ on the $x$-axis and $cos ~\theta$ on the $y$-axis. (Round
 answers to $2$ decimal places.)
 
 \begin{table}[H]
@@ -2727,7 +2728,7 @@ answers to $2$ decimal places.)
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\cos\theta $&
+\footnotesize$cos ~\theta $&
 &
 &
 &
@@ -2772,7 +2773,7 @@ answers to $2$ decimal places.)
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\cos\theta $&
+\footnotesize$cos ~\theta $&
 \footnotesize$1$&
 \footnotesize$0.87$&
 \footnotesize$0,5$&
@@ -2800,21 +2801,21 @@ answers to $2$ decimal places.)
 
 \begin{center}
 \begin{pspicture}(0,-1)(4,1)
-\psset{xunit=2}
+\psset{xunit=2.2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.8)
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.2)(370,1.8)
 \psplot[plotpoints=300, linewidth=1pt]
      {0}{360}{x cos}  
 \psdots(0,1)(30,0.87)(60,0.5)(90,0)(120,-0.5)(150,-0.87)(180,-1)(210,-0.87)(240,-0.5)(270,0)(300,0.5)(330,0.87)(360,1)
-\rput(410, 0.2){$\theta$ (in degrees)}
+\rput(370, 0.2){$\theta$}
 \rput(10, 1.8){$y$}
 \end{pspicture}
 \end{center}    
 
 Notice the similar wave shape of the graph. The period is also
 $360^{\circ}$ and the amplitude is $1$. The maximum value of
-$y=\cos\theta$ is $1$ and the minimum value is $-1$.
+$y=cos ~\theta$ is $1$ and the minimum value is $-1$.
 
 Domain: $[~0^{\circ}; 360^{\circ}]$\\
 Range: $[-1;1]$\\
@@ -2827,25 +2828,25 @@ Minimum turning point: $(180^{\circ};-1)$
 
 \subsection*{The effects of $a$ and $q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a cosine graph}
-{In the equation, $y=a\cos\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
+{In the equation, $y=acos ~\theta+q$, $a$ and $q$ are constants and have different effects on the graph.
 
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item $y_1=\cos\theta -2$
-\item $y_2=\cos\theta -1$
-\item $y_3=\cos\theta $
-\item $y_4=\cos\theta +1$
-\item $y_5=\cos\theta +2$
+\item $y_1=cos ~\theta -2$
+\item $y_2=cos ~\theta -1$
+\item $y_3=cos ~\theta $
+\item $y_4=cos ~\theta +1$
+\item $y_5=cos ~\theta +2$
 \end{enumerate}
 Use your results to deduce the effect of $q$.
 \par
 On the same set of axes, plot the following graphs for $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{5}
-\item $y_6=-2\cos\theta $
-\item $y_7=-\cos\theta $
-\item $y_8=\cos\theta $
-\item $y_9=2\cos\theta $\end{enumerate}
+\item $y_6=-2cos ~\theta $
+\item $y_7=-cos ~\theta $
+\item $y_8=cos ~\theta $
+\item $y_9=2cos ~\theta $\end{enumerate}
 Use your results to deduce the effect of $a$.
 }
 \end{Investigation}
@@ -2964,7 +2965,7 @@ Note that amplitude is always positive.
 
 % \begin{table}[htb]
 % \begin{center}
-% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ \cos x + q$.}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ cos ~ x + q$.}
 % \label{tab:mt:g:summarycos10}
 % \begin{tabular}{|c||c|c|}\hline
 % & $a>0$&$a<0$\\\hline\hline
@@ -3002,28 +3003,28 @@ Note that amplitude is always positive.
 \subsection*{Discovering the characteristics}
 \subsubsection*{Domain and range}
 
-For $f(\theta )=a\cos(\theta )+q$, the domain is $[~0^{\circ}; 360^{\circ}]$.\par 
-It is easy to see that the range of $f(\theta )$ will be the same as the range of $a\sin\theta+q$. This is because the maximum and minimum values of $a\cos(\theta )+q$ will be the same as the maximum and minimum values of $a\sin\theta+q$.\\
+For $f(\theta )=a~cos ~(\theta )+q$, the domain is $[~0^{\circ}; 360^{\circ}]$.\par 
+It is easy to see that the range of $f(\theta )$ will be the same as the range of $a~sin~\theta+q$. This is because the maximum and minimum values of $a~cos ~(\theta )+q$ will be the same as the maximum and minimum values of $a~sin~\theta+q$.\\
 \par
-For $a>0$ the range of $f(\theta)=a\cos\theta+q$ is $\{f(\theta): f(\theta) \in [-a+q; a+q]\}$. \\
-For $a<0$ the range of $f(\theta)=a\cos\theta+q$ is $\{f(\theta): f(\theta) \in [a+q; -a+q]\}$.
+For $a>0$ the range of $f(\theta)=acos ~\theta+q$ is $\{f(\theta): f(\theta) \in [-a+q; a+q]\}$. \\
+For $a<0$ the range of $f(\theta)=acos ~\theta+q$ is $\{f(\theta): f(\theta) \in [a+q; -a+q]\}$.
 \subsubsection*{Period}
-The period of $y=a\cos\theta+q$ is $360^{\circ}$. This means that one cosine wave is completed in $360^{\circ}$. 
+The period of $y=a~cos ~\theta+q$ is $360^{\circ}$. This means that one cosine wave is completed in $360^{\circ}$. 
 
 \subsubsection*{Intercepts}
 \nopagebreak
-The $y$-intercept of $f(\theta )=a\cos\theta+q$ is calculated in the same way as for sine.\par 
+The $y$-intercept of $f(\theta )=a~cos ~\theta+q$ is calculated in the same way as for sine.\par 
 \nopagebreak\noindent{}
 \begin{eqnarray*}
   y &=& f({0}^{\circ}) \\
-    &=& a\cos 0^{\circ } + q \\
+    &=& a~cos ~ 0^{\circ } + q \\
     &=& a(1) + q \\
     &=& a + q
 \end{eqnarray*}
 This gives the point $(0^{\circ};a+q)$.
 
 \begin{wex}{Sketching a cosine graph}
-{Sketch the graph of $f(\theta)=2\cos\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{Sketch the graph of $f(\theta)=2~cos ~\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
 {
 \westep{Examine the standard form of the equation}
 From the equation we see that $a>1$ so the graph is stretched vertically. We also see that $q>0$ so the graph is shifted vertically upwards by $3$ units.
@@ -3076,17 +3077,17 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 \westep{Plot the points and join with a smooth curve}
 \begin{center}
 \begin{pspicture}(-4,-2)(4,6)
-\psset{yunit=1, xunit=2}
+\psset{yunit=1, xunit=2.2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{->}(0,0)(0,0)(370,6)
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{->}(0,0)(0,0)(370,6)
 \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt]
      {0}{360}{x cos 2 mul 3 add}  
 \psplot[plotstyle=curve,linestyle=dashed,dash=0.16cm, plotpoints=300, linewidth=1pt]
      {0}{360}{3}  
-\rput(410, 0.2){$\theta$ (in degrees)}
+\rput(370, 0.2){$\theta$}
 \rput(0.4, 6.2){$f(\theta)$}
-\rput(380,5.4){$f(\theta)=2\cos\theta+3$}
+\rput(380,5.4){$f(\theta)=2~cos ~\theta+3$}
 \psdots(0,5)(30,4.73)(60,4)(90,3)(120,2)(150,1.27)(180,1)(210,1.27)(240,2)(270,3)(300,4)(330,4.73)(360,5)
 
 \end{pspicture}
@@ -3101,22 +3102,22 @@ Minimum turning point: $(180^{\circ};1)$
 }
 \end{wex}
 
-\subsection*{Comparison of graphs of $y=\sin\theta $ and $y=\cos\theta $}
+\subsection*{Comparison of graphs of $y=sin~\theta $ and $y=cos ~\theta $}
 \nopagebreak
 \begin{center}
 \begin{pspicture}(0,-1)(4,1)
-\psset{xunit=2}
+\psset{xunit=2.2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30]{<->}(0,0)(0,-1.2)(370,1.8)
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.2)(370,1.8)
 \psplot[plotpoints=300, linewidth=1pt]
      {0}{360}{x cos}  
 \psplot[plotpoints=300, linestyle=dashed, linewidth=1pt]
      {0}{360}{x sin}  
 
-\rput(400, 1.2){$y=\cos\theta$}
-\rput(405, 0.2){$y=\sin\theta$}
-\rput(410, -0.2){$\theta$ (in degrees)}
+\rput(385, 1.2){$y=cos ~\theta$}
+\rput(395, 0.2){$y=sin~\theta$}
+\rput(385, -0.2){$\theta$}
 \rput(10, 1.8){$y$}
 \end{pspicture}
 \end{center}    
@@ -3127,23 +3128,23 @@ graph by $90 ^{\circ }$ to the left and it would overlap perfectly with the cosi
 \nopagebreak\noindent{}
 \begin{equation*}
   \begin{array}{rcll}
-    \sin\theta & = & \cos (\theta - 90^{\circ}) & (\mbox{shift the cosine graph to the right}) \\
-    \cos\theta & = & \sin (\theta + 90^{\circ}) & (\mbox{shift the sine graph to the left})
+    sin~\theta & = & cos ~ (\theta - 90^{\circ}) & (\mbox{shift the cosine graph to the right}) \\
+    cos ~\theta & = & sin~ (\theta + 90^{\circ}) & (\mbox{shift the sine graph to the left})
   \end{array}
 \end{equation*}
 
-\subsection{Tangent functions of the form $y=a\tan\theta+q$}
+\subsection{Tangent functions of the form $y=a~tan ~\theta+q$}
 \subsection*{Plotting the graph}
 %  %MANUAL PAGE BREAK TO FORCE WEX TO SPLIT OVER TWO PAGES
 \begin{wex}
 {Plotting a tangent graph}
 {
 \begin{equation*}
- y=f(\theta)=\tan  \theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
+ y=f(\theta)=tan ~\theta~~~~~~[~0^{\circ} \leq \theta \leq 360^{\circ}]
 \end{equation*}
 
 Use your calculator to complete the following table. \\
-Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis and $\tan\theta$ on the $y$-axis. (Round answers to $2$ decimal places). 
+Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis and $tan ~\theta$ on the $y$-axis. (Round answers to $2$ decimal places). 
 
 \begin{table}[H]
 \begin{tabular}{|c|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.4cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|m{0.5cm}|} \hline
@@ -3164,7 +3165,7 @@ Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis a
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\tan\theta $&
+\footnotesize$tan ~\theta $&
 &
 &
 &
@@ -3208,7 +3209,7 @@ Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis a
 \footnotesize$360^{\circ }$
 \\ \hline
 
-\footnotesize$\tan\theta $&
+\footnotesize$tan ~\theta $&
 \footnotesize$0$&
 \footnotesize$0,58$&
 
@@ -3236,7 +3237,7 @@ Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis a
 \begin{center}
 \begin{pspicture}(-6,-3)(6,3)
 \psset{xunit=1}
-\psaxes[Dx=90, dx=1, Dy=1, dy=1]{<->}(0,0)(0,-3)(4.5,3)
+\psaxes[Dx=90, dx=1, Dy=1, dy=1, xlabelFactor=^{\circ}]{<->}(0,0)(0,-3)(4.5,3)
 \psline[linestyle=dashed](1,-2.5)(1,2.5)
 \psline[linestyle=dashed](3,-2.5)(3,2.5)
 \psplot[xunit=0.0111,yunit=1, plotpoints=300, arrows=->]{0}{70}{x sin x cos div}
@@ -3245,22 +3246,22 @@ Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis a
  \psdots(0,0)(0.33,0.58)(0.66,1.73)(1.33,-1.73)(1.66,-0.58)(2,0)(2.33,0.58)(2.66,1.73)(3.33,-1.73)(3.66,-0.58)(4,0)
 
 \rput(.2,3.3){$f(\theta)$}
-\rput(5.3,0.3){$\theta$ (in degrees)}
+\rput(4.7,0.3){$\theta$}
 \end{pspicture}
 \end{center}
 
-There is an easy way to visualise the tangent graph. Consider our definitions of $\sin\theta $ and $\cos\theta $ for right-angled triangles.\par 
+There is an easy way to visualise the tangent graph. Consider our definitions of $sin~\theta $ and $cos ~\theta $ for right-angled triangles.\par 
 \nopagebreak\noindent{}
 \begin{equation*}
-\frac{\sin\theta }{\cos\theta }=\frac{\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}}{\frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}}}=\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}=\tan\theta 
+\frac{sin~\theta }{cos ~\theta }=\frac{\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}}}{\frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}}}=\frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize adjacent}}=tan ~\theta 
 \end{equation*}
 So for any value of $\theta$:
 \nopagebreak\noindent{}
 \begin{equation*}
-\tan\theta =\frac{\sin\theta }{\cos\theta }
+tan ~\theta =\frac{sin~\theta }{cos ~\theta }
 \end{equation*}
 
-So we know that for values of $\theta $ for which $\sin\theta =0$, we must also have $\tan\theta =0$. Also, if $\cos\theta =0$ the value of $\tan\theta $ is undefined as we cannot divide by $0$. The dashed vertical lines are at the values of $\theta $ where $\tan\theta $ is not defined and are called the asymptotes.
+So we know that for values of $\theta $ for which $sin~\theta =0$, we must also have $tan ~\theta =0$. Also, if $cos ~\theta =0$ the value of $tan ~\theta $ is undefined as we cannot divide by $0$. The dashed vertical lines are at the values of $\theta $ where $tan ~\theta $ is not defined and are called the asymptotes.
 \vspace{8pt}\\
 
 Asymptotes: the lines $\theta = 90^{\circ}$ and $\theta = 270^{\circ}$ \\
@@ -3294,14 +3295,14 @@ $y$-intercept: $(0^{\circ};0)$
 % % \rput(5.1,-.3){$\theta$\ Degrees}
 % \rput(.4,3.3){$f(\theta$)}
 % \end{pspicture}
-% % \caption{The graph of $\tan \theta$.}
+% % \caption{The graph of $tan ~ \theta$.}
 % \label{trig:tan}
 % \end{center}
 % \end{figure}       
 % 
-% \subsection*{Graphs of the form $y=a \tan x+q$}
+% \subsection*{Graphs of the form $y=a tan ~ x+q$}
 % \nopagebreak
-% In the figure below is an example of a function of the form $y=a \tan(x)+q$.\par 
+% In the figure below is an example of a function of the form $y=a tan ~(x)+q$.\par 
 
        
 
@@ -3309,11 +3310,11 @@ $y$-intercept: $(0^{\circ};0)$
 \begin{Investigation}{The effects of $a$ and $q$ on a tangent graph}
 {On the same set of axes, plot the following graphs for $0^{\circ}\leq\theta\leq360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item $y_1=\tan\theta -2$
-\item $y_2=\tan\theta -1$
-\item $y_3=\tan\theta $
-\item $y_4=\tan\theta +1$
-\item $y_5=\tan\theta +2$
+\item $y_1=tan ~\theta -2$
+\item $y_2=tan ~\theta -1$
+\item $y_3=tan ~\theta $
+\item $y_4=tan ~\theta +1$
+\item $y_5=tan ~\theta +2$
 \end{enumerate}
 
 Use your results to deduce the effect of $q$.\\
@@ -3321,10 +3322,10 @@ Use your results to deduce the effect of $q$.\\
 On the same set of axes, plot the following graphs for
 $0^{\circ} \leq \theta \leq 360^{\circ}$:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
-\item $y_6=-2\tan\theta $
-\item $y_7=-\tan\theta $
-\item $y_8=\tan\theta $
-\item $y_9=2\tan\theta $
+\item $y_6=-2~tan ~\theta $
+\item $y_7=-tan ~\theta $
+\item $y_8=tan ~\theta $
+\item $y_9=2~tan ~\theta $
 \end{enumerate}
 Use your results to deduce the effect of $a$.
 }
@@ -3450,7 +3451,7 @@ The value of $a$ affects the steepness of each of the branches of the graph. The
 
 % \begin{table}[htb]
 % \begin{center}
-% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ \tan x + q$.}
+% \caption{Table summarising general shapes and positions of graphs of functions of the form $y=a~ tan ~ x + q$.}
 % \label{tab:mt:g:summarytan10}
 % \begin{tabular}{|c||c|c|}\hline
 % & $a>0$&$a<0$\\\hline\hline
@@ -3490,24 +3491,24 @@ The value of $a$ affects the steepness of each of the branches of the graph. The
 \subsection*{Discovering the characteristics}
 \subsubsection*{Domain and range}
 
-From the graph we see that $\tan\theta$ is undefined at
+From the graph we see that $tan ~\theta$ is undefined at
 $\theta = 90^{\circ}$ and $\theta = 270^{\circ}$ therefore the domain is
 $\left\{ \theta: \theta \in [~0^{\circ}; 360^{\circ}] - \{90^{\circ}; 270^{\circ}\} \right\}$.
 
 The range of $f(\theta)$ is $\{f(\theta): f(\theta) \in \mathbb{R}\}$.
 
 \subsubsection*{Period}
-The period of $y=a\tan\theta+q$ is $180^{\circ}$. This means that one tangent cycle is completed in $180^{\circ}$. 
+The period of $y=a~tan ~\theta+q$ is $180^{\circ}$. This means that one tangent cycle is completed in $180^{\circ}$. 
 
 
 \subsubsection*{Intercepts}
 \nopagebreak
-The $y$-intercept of $f(\theta)=a\tan\theta+q$ is simply the value of
+The $y$-intercept of $f(\theta)=a~tan ~\theta+q$ is simply the value of
 $f(\theta)$ at $\theta = {0}^{\circ}$.
 
 \begin{equation*}
 \begin{array}{ccl}\hfill y& =& f({0}^{\circ })\hfill \\
- & =& a\tan {0}^{\circ } + q \hfill \\
+ & =& a~tan ~ {0}^{\circ } + q \hfill \\
  & =& a(0)+q\hfill \\
  & =& q\hfill 
 \end{array}
@@ -3518,7 +3519,7 @@ This gives the point $(0^{\circ}; q)$.
 The graph has asymptotes at $\theta ={90}^{\circ }$ and $\theta={270}^{\circ }$.
 
 \begin{wex}{Sketching a tangent graph}
-{Sketch the graph of $y=2\tan\theta+1$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
+{Sketch the graph of $y=2~tan ~\theta+1$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
 {
 \westep{Examine the standard form of the equation}
 We see that $a>1$ so the branches of the curve will be steeper. We also see that $q>0$ so the graph is shifted vertically upwards by $1$ unit.
@@ -3590,7 +3591,7 @@ We see that $a>1$ so the branches of the curve will be steeper. We also see that
 \begin{center}
 \begin{pspicture}(0,-3)(6,3)
 
-\psaxes[Dx=180, dx=2, Dy=1, dy=0.5]{<->}(0,0)(0,-3)(4.5,3)
+\psaxes[Dx=180, dx=2, Dy=1, dy=0.5,xlabelFactor=^{\circ} ]{<->}(0,0)(0,-3)(4.5,3)
 % \psline[linestyle=dashed](-1,-2.5)(-1,2.5)
 \psline[linestyle=dashed](1,-3)(1,3)
 % \psline[linestyle=dashed](-3,-2.5)(-3,2.5)
@@ -3605,7 +3606,7 @@ We see that $a>1$ so the branches of the curve will be steeper. We also see that
 % \rput(5.1,-.3){$\theta$\ Degrees}
  \psdots(0,0.5)(0.33,1.08)(0.66,2.23)(1.33,-1.23)(1.66,-0.08)(2,0.5)(2.33,1.08)(2.66,2.23)(3.33,-1.23)(3.66,-0.08)(4,0.5)
 \rput(.2,3.3){$y$}
-\rput(5.5,0.2){$\theta$ (in degrees)}
+\rput(4.7,0.2){$\theta$}
 \end{pspicture}
 \end{center}\\
 Domain: $[~0^{\circ}; 360^{\circ}] - \{90^{\circ};270^{\circ}\}$ \\
@@ -3618,11 +3619,12 @@ Range: $\mathbb{R}$
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Using your knowledge of the effects of $a$ and $q$, sketch each of the following graphs, without using a table of values, for $\theta \in [~{0}^{\circ };{360}^{\circ }]$.
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item $y=2\sin\theta $
-\item $y=-4\cos\theta $
-\item $y=-2\cos\theta +1$
-\item $y=\sin\theta -3$
-\item $y=\tan\theta -2$\item $y=2\cos\theta -1$
+\item $y=2~sin~\theta $
+\item $y=-4~cos ~\theta $
+\item $y=-2~cos ~\theta +1$
+\item $y=sin~\theta -3$
+\item $y=tan ~\theta -2$
+\item $y=2~cos ~\theta -1$
 \end{enumerate}
 \item Give the equations of each of the following graphs:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
@@ -3631,9 +3633,9 @@ Range: $\mathbb{R}$
 \item
 \begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
-\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
 \psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
-\uput[d](5.4,0.1){$x$ (in degrees)}
+\uput[d](4.7,0.1){$x$}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
 \end{pspicture}
@@ -3642,9 +3644,9 @@ Range: $\mathbb{R}$
 \item
 \begin{pspicture}(-0.3,-2)(5,2)
 \psset{yunit=0.25}
-\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
 \psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
-\uput[d](5.4,0.1){$x$ (in degrees)}
+\uput[d](4.7,0.1){$x$}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
 \end{pspicture}
@@ -3865,9 +3867,9 @@ Distance $CD$ is $6$ units.
 \psset{yunit=1, xunit=2}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-30,-1)(370,2)
+\psaxes[dx=30,Dx=30, labels=none, ticks=none]{<->}(0,0)(-30,-1)(370,2)
 \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 0.5 add}  
-\rput(410, 0.2){$\theta$ (in degrees)}
+\rput(375, 0.2){$\theta$}
 \rput(0.4, 2.2){$y$}
 \psdots(210,0)(90,1.5)(0,0.5)
 \rput(120,1.8){$M(90^{\circ}; \frac{3}{2})$}
@@ -3878,20 +3880,20 @@ Distance $CD$ is $6$ units.
 }
 {
 \westep{Examine the sketch}
-From the sketch we see that the graph is a sine graph that has been shifted vertically upwards. The general form of the equation is $y=a\sin\theta +q$.
+From the sketch we see that the graph is a sine graph that has been shifted vertically upwards. The general form of the equation is $y=asin~\theta +q$.
 
 \westep{Substitute the given points into equation and solve}
 At $N$, $\theta = 210^{\circ}$ and $y=0$:
 \begin{eqnarray*}
-  y&=&a\sin\theta +q\\
-  0&=& a\sin 210^{\circ}+q \\
+  y&=&asin~\theta +q\\
+  0&=& asin~ 210^{\circ}+q \\
   &=&a\left(-\frac{1}{2}\right)+q\\
   \therefore q&=&\dfrac{a}{2}
 \end{eqnarray*}
 
 At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
 \begin{eqnarray*}
-  \dfrac{3}{2}&=&a\sin 90^{\circ} +q\\
+  \dfrac{3}{2}&=&a~sin~ 90^{\circ} +q\\
   &=& a+q \\
 \end{eqnarray*}
 
@@ -3908,7 +3910,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
 
 \westep{Write the final answer}
 \begin{equation*}
-  y = \sin\theta + \frac{1}{2}
+  y = sin~\theta + \frac{1}{2}
 \end{equation*}
 }
 \end{wex}
@@ -3930,7 +3932,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
   \item Parabolic functions of the form $y=a{x}^{2}+q$. 
   \item Hyperbolic functions of the form $y=\frac{a}{x}+q$. 
   \item Exponential functions of the form $y=a{b}^{x}+q$. 
-  \item Trigonometric functions of the form \\$y=a\sin\theta+q$ \\$y=a\cos\theta+q$\\ $y=a\tan\theta+q$ 
+  \item Trigonometric functions of the form \\$y=a~sin~\theta+q$ \\$y=a~cos ~\theta+q$\\ $y=a~tan ~\theta+q$ 
   \end{itemize}
 \end{itemize}
 
@@ -4102,13 +4104,13 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
                 \rput(415, 0.2){$x$}
                 \rput(15, 6.5){$y$}
                 \rput(-90,5){\textbf{(e)}}
-                \psline[linewidth=0.02, linestyle=dashed](0,6)(360,6)
+%                 \psline[linewidth=0.02, linestyle=dashed](0,6)(360,6)
                 \psline[linewidth=0.02, linestyle=dashed](0,1)(360,1)
-                \psline[linewidth=0.02, linestyle=dashed](0,-4)(360,-4)
+%                 \psline[linewidth=0.02, linestyle=dashed](0,-4)(360,-4)
                 \rput(-30,6){$6$}
                 \rput(-30,1){$1$}
                 \rput(-30,-4){$-4$}
-                \psdots(195,0)(350,0)
+                \psdots(195,0)(350,0)(90,6)(270,-4)
                 \rput(160,-0.8){$180^{\circ}$}
                 \rput(340,-0.8){$360^{\circ}$}
                 \rput(-20,-0.4){$0$}
@@ -4122,7 +4124,7 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
                 \psaxes[arrows=<->, labels=none, ticks=none](0,0)(-5,-3)(5,5)
-                \psplot[plotstyle=curve,arrows=<->]{-4}{0.8}{2 x exp 2 mul 1 add}
+                \psplot[plotstyle=curve,arrows=<->]{-4}{1}{2 x exp 2 mul 1 add}
                 \psdots(0,3)
                 \psline[linewidth=0.02,linestyle=dashed](-5,1)(5,1)
                 \rput(-5,5){\textbf{(f)}}
@@ -4137,20 +4139,20 @@ At $M$, $\theta = 90^{\circ}$ and $y=\dfrac{3}{2}$:
           \begin{center}
             \scalebox{0.8}{
               \begin{pspicture}(0,-2.5)(4,2)
-                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-2)(4.5,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-4)(4.5,2)
                 \rput(-1,3){\textbf{(g)}}
-                \psline[linewidth=0.02,linestyle=dashed](1,-2.5)(1,2)
-                \psline[linewidth=0.02,linestyle=dashed](3,-2.5)(3,2)
+                \psline[linewidth=0.02,linestyle=dashed](1,-4)(1,2)
+                \psline[linewidth=0.02,linestyle=dashed](3,-4)(3,2)
                 \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
-                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{70}{x sin x cos div -1 mul 2 sub}
-                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{250}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul 2 sub}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul 2 sub}
                 \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul 2 sub}
                 \rput(0.2,2.3){$y$}
                 \rput(4.5,0.2){$x$}
                 \rput(-0.5,-1){$-2$}
   \rput(2,-0.4){$180^{\circ}$}
                 \rput(4,-0.4){$360^{\circ}$}
-                \psdots(1.5,-0.5)
+                \psdots(1.5,-0.5)(2,-1)
                 \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
               \end{pspicture}
             }
