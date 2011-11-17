@@ -13,9 +13,10 @@ the surface area and perimeter of the two dimensional shapes below.\par
   boundary of a flat object. It is measured in square units.}
 
 \begin{table}[H]
-  \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
-  \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-  \begin{tabular}{|C|D|C|}
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.2in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{1.5in} }
+\begin{tabular}{|C|D|E|}
     \hline
     \textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
     Square &
@@ -59,9 +60,10 @@ the surface area and perimeter of the two dimensional shapes below.\par
 \end{table}
 
 \begin{table}[H]
-  \newcolumntype{C}{>{\centering\arraybackslash} m{1.5in} }
-  \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-  \begin{tabular}{|C|D|C|}
+\newcolumntype{C}{>{\centering\arraybackslash} m{1.2in} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{1.5in} }
+\begin{tabular}{|C|D|E|}
     \hline
     \textbf{Name} & \textbf{Shape} & \textbf{Formula} \\ \hline
     % \caption{Remember that surface area is measured in square units, for example, $cm^2$, $m^2$ or $mm^2$.}
@@ -642,7 +644,7 @@ The surface area of the rectangular prism is 160~cm$^2$.
 {Finding the surface area of a triangular prism}
 {Find the surface area of the following triangular prism:\\
 \begin{center}
-\scalebox{1}{
+
 	%% Triangular Prism
 \scalebox{1} % Change this value to rescale the drawing.
 {
@@ -667,7 +669,7 @@ The surface area of the rectangular prism is 160~cm$^2$.
 \psline[linewidth=0.04cm](0.68771124,-0.61157984)(0.44771126,-0.47157985)
 \end{pspicture} 
 }
-}
+
 \end{center}
 
 
@@ -1171,8 +1173,7 @@ The volume of the cylinder is $754,0\mbox{ cm}^{3}$.
 \begin{exercises}{}
 {Calculate the volumes of the following prisms (correct to $1$ decimal place):
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
-{
+
 \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-4.0576563)(12.394375,4.0376563)
@@ -1228,7 +1229,7 @@ The volume of the cylinder is $754,0\mbox{ cm}^{3}$.
 \psline[linewidth=0.04cm](2.2203126,3.6015627)(3.8779688,3.6000001)
 \end{pspicture} 
 }
-}
+
 \end{center}
 \practiceinfo
 \begin{tabular}{cccccc}
@@ -2164,7 +2165,7 @@ The volume of the sphere is $268,1\mbox{ cm}^3$
   &= 4~200\,\sqrt{3}\mbox{ cm}^3
 \end{align*}
 
-\westep{Find the volume of the pyramid}
+\westep{Calculate the volume of the pyramid}
 The area of the base triangle is equal to the area of the base of the pyramid.
 \begin{align*}
   \therefore \mbox{volume of pyramid}
@@ -2185,7 +2186,7 @@ Therefore the total volume of the object is $7~967,4\mbox{ cm}^3$.
 \end{wex}
 
 \begin{wex}{Finding the surface area of a complex object}
-{With the same complex object as in the previous Worked Example, you are given
+{With the same complex object as in the previous Example, you are given
   the additional information that the slant height $h_s$ of the
   triangular pyramid is $13,3$ cm. Now calculate the total surface area
   of the object.}
@@ -2760,11 +2761,11 @@ Multiply all three dimensions by $k$
 \psdiamond[linewidth=0.04,dimen=outer,gangle=50.0](3.2356775,0.009498077)(1.27,1.0687643)
 \psline[linewidth=0.027999999](0.8591421,0.9536167)(2.5,1.1876167)(4.019142,0.9808309)
 \psline[linewidth=0.027999999,linestyle=dashed,dash=0.16cm 0.16cm](0.8815408,-0.6263833)(2.56,-0.31238326)(4.019142,-0.65638334)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(4.799142,0.21361668){$4$ cm}
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(1.399142,-1.0863833){$3$ cm}
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(3.599142,-1.0263833){$3$ cm}
 \psline[linewidth=0.027999999cm,linestyle=dashed,dash=0.16cm 0.16cm](2.52,1.1676167)(2.54,-0.33238328)
 \end{pspicture} 
@@ -2927,10 +2928,10 @@ The new dimensions are $kr$ and $h$.
  \item If the height of a prism is doubled, how much will its volume increase?
 \item Describe the change in the volume of a rectangular prism if:
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-\item length and breadth increase by a constant factor of $3$;
+\item length and breadth increase by a constant factor of $3$.
 \item length, breadth and height are multiplied by a constant factor of $2$.
 \end{enumerate}
-\item Given a prism with a volume of $493$ cm$^{3}$ and a surface area of $6007$ cm$^{2}$, 
+\item Given a prism with a volume of $493$ cm$^{3}$ and a surface area of $6~007$ cm$^{2}$, 
 find the new surface area and volume for a prism if all dimensions are increased by a constant factor of $4$. 
 \end{enumerate}
 \practiceinfo
