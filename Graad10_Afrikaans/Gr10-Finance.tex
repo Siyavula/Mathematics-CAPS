@@ -1,4 +1,4 @@
-\chapter{Finansies en Groei}
+\chapter{Finansies en groei}
 
 \section{Geld stories}
 
@@ -25,7 +25,7 @@ maar nie rente op rente nie.}
 As ’n maklike voorbeeld van enkelvoudige rente, dink hoeveel jy sal kry deur R~$1~000$ te belê vir 1 jaar by ’n bank
 wat vir jou enkelvoudige rente teen $5\%$ per jaar gee. Aan die einde van die jaar sal jy rente ontvang van:\par
 \begin{align*}
-    \mathrm{Interest} &= \mbox{R}~1~000 \times 5\%\\
+    \mbox{Rente} &= \mbox{R}~1~000 \times 5\%\\
     &= \mbox{R}~1~000 \times \frac{5}{100}\\
     &= \mbox{R}~1~000 \times 0,05\\
     &= \mbox{R}~50
@@ -34,7 +34,7 @@ wat vir jou enkelvoudige rente teen $5\%$ per jaar gee. Aan die einde van die ja
 Dus, met ’n aanvangsbedrag van R~$1~000$ aan die begin van die jaar, sal jou eindbedrag aan die einde van die jaar dan wees:\par 
 %english
 \begin{align*}
-    \mathrm{Closing~Balance} &= \mathrm{Opening~Balance + Interest}\\
+    \mbox{Eindbedrag} &= \mbox{Aanvangsbedrag + Rente}\\
     &= \mbox{R}~1~000 + \mbox{R}~50\\
     &= \mbox{R}~1~050
 \end{align*}
@@ -50,7 +50,7 @@ So, ons sien dat:
 en
 
 \begin{align*}
-    \mathrm{Eindbedrag} &= \mathrm{Aanvangsbedrag + Rente} \nonumber\\
+    \mbox{Eindbedrag} &= \mbox{Aanvangsbedrag + Rente} \nonumber\\
     &= P + I \nonumber\\
     &= P + P \times i\nonumber\\
     &= P(1 + i)
@@ -393,14 +393,14 @@ Die eindbedrag indien die geld enkelvoudige rente verdien, is:
 \begin{align*}
     A &= P(1 + in)\\
       &= 10~000(1 + 0,09 \times 10)\\
-      &= R~19~000\\
+      &= \mbox{R}~19~000\\
 \end{align*}
 
 Die eindbedrag indien die geld saamgestelde rente verdien, is:
 \begin{align*}
     A &= P(1 + i)^n\\
       &= 10~000(1 + 0,09)^10\\
-      &= R~23~673,64
+      &= \mbox{R}~23~673,64
 \end{align*}
 
 As ons grafieke trek van die groei van die bedrag is dit makliker om te sien hoe die geld wat enkelvoudig bel\^e is reglynig groei maar eksponensie\"el groei as dir saamgestelde rente verien:
@@ -414,8 +414,8 @@ As ons grafieke trek van die groei van die bedrag is dit makliker om te sien hoe
 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
 % 	    \psline[linecolor=red](0,5)(10,9.5)
 	    \psplot{0}{10}{  x 0.09 mul 1 add 5 mul}
-\uput[ur](10.2,0){years}
-\uput [u](0,12.5){Rands}
+\uput[ur](10.2,0){Jare}
+\uput [u](0,12.5){Rand}
 \psplot{0}{10}{1.09 x exp 5 mul}
 	\end{pspicture}}
 % 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
@@ -448,8 +448,8 @@ Dit is nog duideliker om die enorme verskil te sien indien die rentekoers $9\%$ 
 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
 % 	    \psline[linecolor=red](0,0.2)(20,1.1)
 	    \psplot{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
-\uput[ur](20.2,0){years}
-\uput [u](0,15){Rands}
+\uput[ur](20.2,0){Jare}
+\uput [u](0,15){Rand}
 \psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
 	\end{pspicture}}
 % 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
@@ -671,7 +671,7 @@ compound interest formula.
     \end{align*}
 
     \westep{Verduidelike jou antwoord}
-    Three years ago, a box of chocolates would have cost R~$40,22$.
+    Drie jaar terug, 'n boks sjokolades sou R~$40,22$ gekos het.
     }
 \end{wex}
 
