@@ -218,7 +218,7 @@ sy hierdie bedrag belê om 'n eindbedgrag van R~$45~000$ laat realiseer?}
 % Onthou in elke jaar is daar $12$ maande. As ek geld vir slegs $3$ maande wil bel\^e sal $n$ gelyk wees aan $\frac{3}{12}$. As ek 'n lening wil uitneem vir $7$ maande is, $n = \frac{7}{12}$.\\
 
 
-\begin{exercises}{Simple Interest Exercises}
+\begin{exercises}{}
 {
     \begin{enumerate}[label=\textbf{\arabic*}.]
 	\item ’n Bedrag van R~$3~500$ word belê in ’n spaarrekening wat enkelvoudige rente betaal teen ’n koers van $7,5\%$ p.a. Bereken die eindbedrag na 2 jaar.
@@ -232,7 +232,7 @@ sy hierdie bedrag belê om 'n eindbedgrag van R~$45~000$ laat realiseer?}
 
 	\item Sally wil die aantal jare bereken wat sy R~$1~000$ moet bel\^e om te groei tot R~$2~500$. Sy word 'n enkelvoudige rentekoers van $8,2\%$ p.a aangebied. Hoe lank sal dit neem vir die geld om te groei tot R~$2~500$?
 %english
-	\item Joseph made a deposit of R~$5~000$ in the bank for his $5$ year old son's $21^{\mathrm{st}}$ birthday. He has given his son the amount of R~$18~000$ on his birthday. At what rate was the money invested, if simple interest was calculated?
+	\item Joseph het R~$5~000$ by die bank gedeponeer vir sy $5$ jaar oud seun se $21^{\mathrm{ste}}$ verjaarsdag. Hy het sy seun R~$18~000$ op sy verjaarsday gegee. Teen watter koers was die geld belê, indien enkelvoudige rente bereken was?
     \end{enumerate}
 
 \insertpracticeinfo{4}
@@ -254,15 +254,16 @@ Saamgestelde rente is 'n wonderlike konsep as jy geld bel\^e, maar, as jy geld l
 \Definition{Saamgestelde Rente}{Saamgestelde rente is die rente wat bereken word op die aanvangsbedrag en op die
 opgeloopte rente}
 
-Consider the example of R $1~000$ invested for $3$ years with a bank that pays $5\%$ compound interest.
+Beskou die voorbeeld van R $1~000$ wat vir $3$ jare by 'n bank wat $5\%$ saamgestelde rente betaal, belê is.
 %english
-At the end of the first year, the accumulated amount is 
+
+Aan die einde van die eerste jaar, word die opgeloopte bedrag
 \begin{align*}
   A_1 &= P(1 + i)\\
   &= 1~000(1+0,05)\\
   &=1~050
 \end{align*}
-The amount $A_1$ becomes the new principal amount for calculating the accumulated amount at the end of the second year.
+Die bedrag $A_1$ word die nuwe aanvangsbedrag waarmee die opgeloopte bedrag aan die einde van die tweede jaar bereken is. 
 
 \begin{align*}
     A_2 &= P(1 + i)\\
@@ -271,13 +272,13 @@ The amount $A_1$ becomes the new principal amount for calculating the accumulate
 &= 1~000(1+0,05)^2
 \end{align*}
 
-Similarly, we use the amount $A_2$ as the new principal amount for calculating the accumulated amount at the end of the third year.
+Soortgelyk, gebruik ons die bedrag $A_2$ as die nuwe aanvangsbedrag om te opgeloopte bedrag aan die einde van die derde jaar te bereken.
 \begin{align*}
     A_3 &= P(1 + i)\\
 &=1~000(1+0,05)^2(1+0,05)\\
 &= 1~000(1+0,05)^3
 \end{align*}
-Do you see a pattern? Laat ons ’n formule ontwikkel vir saamgestelde rente op dieselfde manier as wat ons ’n formule ontwikkel het vir
+Sien jy 'n patroon? Laat ons ’n formule ontwikkel vir saamgestelde rente op dieselfde manier as wat ons ’n formule ontwikkel het vir
 enkelvoudige rente.\par
 
 Indien ons aanvangsbedrag $P$ is en ons het ’n rentekoers van $i$ per jaar, dan sal die eindbedrag aan die einde
@@ -372,12 +373,15 @@ beeld.) Dus:
     \end{align*}
 %english
     \westep{Skryf die finale antwoord}
-    Charlie needs to find an account that offers a compound interest
-    rate of $41,42\%$ to achieve the desired growth.  A typical
-    savings account gives a return of approximately $2\%$ and an
-    aggressive investment portfolio gives a return of approximately
-    $13\%$. It therefore seems unlikely that Charlie will be able to
-    invest his money at an interest rate of $41,42\%$.
+Charlie moet 'n rekening wat 'n saamgestede rente van $41,42\%$ betaal om die  verwagte groei te bereik. 'n Tipiese spaarrekening gee 'n koers van ongeveer $2\%$ en 'n aggressiewe beleggingsportefeulje gee 'n koers van ongeveer $13\%$. Dus lyk dit onwaarskynlik dat Charlie sy geld by 'n koers van $41,42\%$ kan bedrag.
+%     Charlie needs to find an account that offers a compound interest
+%     rate of $41,42\%$ to achieve the desired growth. 
+% 
+%  A typical
+%     savings account gives a return of approximately $2\%$ and an
+%     aggressive investment portfolio gives a return of approximately
+%     $13\%$. It therefore seems unlikely that Charlie will be able to
+%     invest his money at an interest rate of $41,42\%$.
 } 
 \end{wex}
 
@@ -509,14 +513,11 @@ rente. Bereken wat Troy se maandelikse paaiement sal wees.}
     Ons moet die eindbedrag ($A$) bepaal en dan die maandelikse
 paaiemente bereken.
 
-    \westep{Van \ref{FG:SI} ons weet dat:}
-    \begin{align*}
-	    A &= P(1 + in)
-    \end{align*}
-
     \westep{Vervang die waardes en bereken die onbekende veranderlike}
+Van die gegewe formule weet ons dat:
     \begin{align*}
-	A &= 2~250(1 + 0,075 \times 2)\\
+A &= P(1 + in)\\
+	 &= 2~250(1 + 0,075 \times 2)\\
 	  &= 2~587,50\\
     \end{align*}
 
@@ -574,7 +575,7 @@ Some voeg die winkel 'n maandelikse versekeringspremie by die maandelikse paaiem
 \end{wex}
 
 
-\begin{exercises}{Hire Purchase}
+\begin{exercises}{}
 {
     \begin{enumerate}[label=\textbf{\arabic*}.]
 	\item Vanessa wil 'n yskas op huurkoop koop. Die kontantprys is R~$4~500$. Sy moet 'n deposito van $15\%$ betaal en die oorblywende bedrag oor $24$ maande teen 'n rentekoers van $12\%$ p.a.
@@ -612,12 +613,7 @@ Some voeg die winkel 'n maandelikse versekeringspremie by die maandelikse paaiem
 Dikwels hoor mens ouer mense praat oor vervlo\"e tye toe alles goedkoper was. Jy kan dalk onthou toe jy as 'n kind dinge gekoop het en is nou geskok oor die verhogings in pryse. Daar is baie faktore wat die prysveranderings op 'n item be\"invloed en een daarvan is inflasie.\par
 
 Inflasie is die gimiddelde persentasie waarteen pryse per jaar toeneem. Aangesien die pryse jaarlikes toeneem word dit bereken met die saamgestelde groei formule.\par
-%english
-There are many factors that influence the change in price of an item,
-one of them is inflation. Inflation is the average increase in the
-price of goods each year and is given as a percentage. Since the rate
-of inflation increases from year to year, it is calculated using the
-compound interest formula.
+
 
 
 
@@ -849,11 +845,11 @@ tussen die Australiese dollar en die Japanese jen.
 	\item Bonnie het ’n stoof gekoop vir R~$3~750$. Na 3 jaar het sy dit klaar betaal, asook die R~$956,25$ huurkoopkoste.
 Bereken die koers waarteen enkelvoudige rente bereken is.
 %english
-	\item According to the latest census, South Africa currently has a population of $57~000~000$.
+	\item Volgens die nuutste sensus, het Suid-Afrika 'n bevolking van $57~000~000$.
 	\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-	    \item If the annual growth rate is expected to be $0,9\%$, calculate how many South Africans there will be in $10$ years time (correct to the nearest hundred thousand).
+	    \item Indien die jaarlikse groeikoers $0,9\%$ verwag word, bereken hoeveel Suid-Afrikaners daar in $10$ jaar sal wees (korrek tot die naaste honderd duisend).
 
-	    \item If it is found after 10 years that the population has actually increased by $10$ million to $67$ million, what was the growth rate?
+	    \item As na 10 jaar word dit gevind dat die bevolking eintlik by $10$ miljoen tot by $67$ miljoen gegroei het, wat was die groeikoers?
 	\end{enumerate}
 
     \end{enumerate}
