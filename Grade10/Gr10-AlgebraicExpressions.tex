@@ -1,6 +1,6 @@
 \chapter{Algebraic expressions}
 \fancyfoot[LO,RE]{Focus Area: Mathematics}
-
+\section{The real number system}
 % \setcounter{figure}{1}
 % \setcounter{subfigure}{1}
 % 
@@ -313,7 +313,7 @@ cannot be written with an integer numerator and denominator, because they do not
 
 \begin{exercises}{}{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item State whether the following numbers are $\mathbb{Q}$ or $\mathbb{Q'}$. If the number is $\mathbb{Q}$, state whether it is $\mathbb{N}_0$, $\mathbb{N}$ or $\mathbb{Z}$:
+\item State whether the following numbers are rational or irrational. If the number is rational, state whether it is a whole number, natural number or an integer:
 \begin{enumerate}[itemsep=5pt, label=\textbf{(\alph*)} ] 
     \item $-\dfrac{1}{3}$
     \item $0,651268962154862\ldots$
@@ -484,6 +484,7 @@ It is sometimes useful to know the approximate value of a surd without having to
 
 
 \Identity{
+\vspace*{-3em}
 \begin{center}
 If $a$ and $b$ are positive whole numbers, and $a\lessthan{}b$, then $\sqrt[n]{a}\lessthan{}\sqrt[n]{b}$. 
 \end{center}}
@@ -575,7 +576,7 @@ expression & $3x^2 + 7xy -5^3$\\ \hline
 coefficient & $3;~7$\\ \hline
 exponent & $2;~1;~3$\\ \hline
 base & $x;~y;~5$\\ \hline
-constant & $3;~7$\\ \hline
+constant & $3;~7;~5$\\ \hline
 variable & $x;~y$\\ \hline
 equation & $3x^2 + 7xy -5^3 = 0$\\ \hline
 
@@ -861,7 +862,7 @@ To spot a difference of two squares, look for expressions:
 \item with terms that have different signs (one positive, one negative);
 \item with each term a perfect square.
 \end{itemize}
-For example, $a^{2}-1$; $4x^{2}-y^{2}$; $-49+p^{4}$.
+For example: $a^{2}-1$; $4x^{2}-y^{2}$; $-49+p^{4}$.
 
 
 
@@ -969,7 +970,7 @@ coefficients $7:14$ is the same as $b:2b$.
 % The factors of $7x+14y+bx+2by$ are $(7+b)$ and $(x+2y)$.\\
 \par
 \large{OR}
-
+\setcounter{stepcounter}{1}
 \westep{Group terms with common factors together}$x$ is a common factor of the first and third terms and $2y$ is a common factor of the second and fourth terms $(7:b~=~14:2b)$.\par 
 \westep{Rearrange the equation with grouped terms together}
 
@@ -1197,7 +1198,7 @@ Next, we expand each set of brackets to see which option gives us the correct mi
 %     \begin{caption}{Quadratic factors}\end{caption}
 \end{table}
 \par
-We see that Option 3 $(x+2)(x+3)$ is the correct solution. 
+We see that Option 3, $(x+2)(x+3)$, is the correct solution. 
 \par
 The process of factorising a quadratic is mostly trial and error but there are some strategies that can be used to ease the process.\par 
 \par
@@ -1208,8 +1209,8 @@ The process of factorising a quadratic is mostly trial and error but there are s
 \addcontentsline{toc}{subsection}{General procedure for factorising a trinomial}
 
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
-\item Divide the entire equation by any common factor of the coefficients so as to obtain an equation of the form $a{x}^{2}+bx+c=0$ where $a$, $b$ and $c$ have no common factors and $a$ is positive.
-\item Write down two brackets with an $x$ in each bracket and space for the remaining terms.
+\item Divide the entire equation by any common factor of the coefficients so as to obtain an equation of the form $a{x}^{2}+bx+c$ where $a$, $b$ and $c$ have no common factors and $a$ is positive.
+\item Write down two brackets with an $x$ in each bracket and space for the remaining terms:
 \begin{equation*}
 (\ x\phantom{\rule{2.em}{0ex}})(\ x\phantom{\rule{2.em}{0ex}})
 \end{equation*}
@@ -1225,9 +1226,9 @@ Once you get an answer, always multiply out your brackets again just to make sur
 
 \begin{wex}
 {Factorising a quadratic trinomial}
-{Factorise $3{x}^{2}+2x-1$.} 
+{Factorise: $3{x}^{2}+2x-1$.} 
 {
-\westep{Check that the quadratic is in required form, $ax^2+bx+c$}
+\westep{Check that the quadratic is in required form $ax^2+bx+c$}
 \westep{Write down a set of factors for $a$ and $c$.}  
 \begin{equation*}
 (\ x\phantom{\rule{2.em}{0ex}})(\ x\phantom{\rule{2.em}{0ex}})
@@ -1571,6 +1572,7 @@ Notice that $\sqrt[3]{8t^{3}} = 2t$ and $\sqrt[3]{125p^{3}} = 5p$. These give th
 \section{Simplification of fractions}
 We have studied procedures for working with fractions in earlier grades.
 \Identity{
+\vspace*{-3em}
 \begin{flushleft}
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
 \item $\dfrac{a}{b} \times \dfrac{c}{d} = \dfrac{ac}{bd}  ~~~~~~~~~~ (b \neq 0\mbox{; } d \neq 0)$ 
@@ -1725,7 +1727,7 @@ If $x = -3$ then the denominator, $x+3 = 0$, and the fraction is undefined.
 \item $\dfrac{x^2-2x+1}{(x-1)^3} - \dfrac{x^2+x+1}{x^3-1}$
 \item $\dfrac{1}{(x-1)^2} - \dfrac{2x}{x^3-1}$
 \item $\dfrac{p^3 + q^3}{p^2} \times \dfrac{3p-3q}{p^2-q^2}$
-\item $\dfrac{1}{a^2-4ab+4b^2} + \dfrac{a^2+2ab+b^2}{a^3-8b^3} - \dfrac{1}{a^2-4b^2}$
+\item $\frac{1}{a^2-4ab+4b^2} + \frac{a^2+2ab+b^2}{a^3-8b^3} - \frac{1}{a^2-4b^2}$
 \end{enumerate}
 \end{multicols}
 \practiceinfo 
