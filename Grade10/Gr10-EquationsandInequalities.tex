@@ -638,29 +638,42 @@ For example:
 
 The graphs of the two equations are shown below.\\
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39257*uid96}
-\begin{center}
-% \rule[.1in]{\figurerulewidth}{.005in} \\
-%\label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}
-%\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
-\begin{pspicture}(-3,-2)(4,2)
-% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
-\psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
-\pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
-\pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
-\uput[l](2,1.1){$(2;1)$}
-\uput[l](0.1,-0.2){$0$}
-\uput[r](4,0.1){$x$}
-\uput[r](0,2){$y$}
-\psdot(2,1)
-\end{pspicture}
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39257*uid96}
+% \begin{center}
+% % \rule[.1in]{\figurerulewidth}{.005in} \\
+% %\label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}
+% %\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
+% \begin{pspicture}(-3,-2)(4,2)
+% % \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+% \psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
+% \pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
+% \pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
+% \uput[l](2,1.1){$(2;1)$}
+% \uput[l](0.1,-0.2){$0$}
+% \uput[r](4,0.1){$x$}
+% \uput[r](0,2){$y$}
+% \psdot(2,1)
+% \end{pspicture}
+% 
+% % \vspace{2pt}
+% % \vspace{.1in}
+% % \rule[.1in]{\figurerulewidth}{.005in} \\
+% \end{center}
+% \end{figure}    
 
-% \vspace{2pt}
-% \vspace{.1in}
-% \rule[.1in]{\figurerulewidth}{.005in} \\
-\end{center}
-\end{figure}       
+\begin{center}
+ \begin{pspicture}(-3,-2)(4,2)
+  \psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1.5}{3.5}{x 0.5 mul}
+\uput[l](2,1.1){$(2;1)$}
+\psdot(2,1)
+\uput[r](3,1.3){\small{$y=\frac{1}{2}x$}}
+\uput[u](2.2, 1.8){\small{$y=2x-3$}}
+ \end{pspicture}
+
+\end{center}   
 The intersection of the two graphs is $(2;1)$. So the solution to the
 system of simultaneous equations is $x=2$ and $y=1$.
 
@@ -716,7 +729,7 @@ Notice that both methods give the same solution.
 %  \psgrid[subgriddiv=10,gridcolor=lightgray,gridlabels=0,gridwidth=0.1pt]
 \psaxes[dx=1,dy=1,Dy=10,Dx=2,arrows=<->](0,0)(-5,-1)(5,5)
 \pstextpath[c](-2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-10}{10}{0.75 x mul neg 25 add}}{\small{$4y+3x=100$}}
-\pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
+\pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1.5}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
 \rput(-0.2,-0.2){$0$}
 \rput(5.2,0.1){$x$}
 \rput(0.1,5.2){$y$}
@@ -742,7 +755,7 @@ The two graphs intersect at $(4;22)$.
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Solve for $x$ and $y$: 
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-\item $3x-14y=0$ and $x-4y+1=0$
+\item $3x-14y=0$ \\ $x-4y+1=0$
 \item $x+y=8$ and $3x + 2y = 21$
 \item $y=2x+1$ and $x + 2y + 3 = 0$
 \item $\frac{a}{2}+b=4$ and $\frac{a}{4} -\frac{b}{4}=1$
