@@ -37,7 +37,7 @@ A point is a simple geometric object having location as its only property.
 \Definition{Distance}{Distance is a measure of the length between two points.}
 
 \begin{Investigation}{Distance between two points}
-Points $P(2;1)$, $Q(-2;2)$ and $R(2,-2)$ are given. 
+Points $P(2;1)$, $Q(-2;-2)$ and $R(2,-2)$ are given. 
 \begin{itemize}
  \item Can we assume that $\hat{R}=90^{\circ}$? If so, why?
 \item Apply the Theorem of Pythagoras in $\triangle PQR$ to find the length of $PQ$.
@@ -51,10 +51,10 @@ Points $P(2;1)$, $Q(-2;2)$ and $R(2,-2)$ are given.
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=1pt](-2,-2)(2,-2)(2,1)
+\psaxes[inewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,-2)(2,1)
 \psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,1)
-\psdots(-2,-2)(2,1)
+\psdots(-2,-2)(2,1)(2,-2)
 % \uput[l](-2,-1.8){\Large{$Q$}}
 \uput[dl](-1.5,-2){\Large{$Q(-2;-2)$}}
 \uput[dr](2,-2){\Large{$R(2;-2)$}}
@@ -125,8 +125,7 @@ AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\
 Therefore to calculate the distance between any two points, $({x}_{1};{y}_{1})$ and $({x}_{2};{y}_{2})$, we use:\par 
 \Identity{\begin{center}$\mbox{Distance  } (d)=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$\end{center}}
 
-Notice that $(x_1 - x_2)^2 = (x_2 - x_1)^2$, but remember to be consistent or you will get the wrong answer.\\
-$AB \neq \sqrt{(x_1 - x_2)^2 + (y_2 - y_1)^2}$.
+Notice that $(x_1 - x_2)^2 = (x_2 - x_1)^2$.
  
 
 % The following video provides a summary of the distance formula.
@@ -504,28 +503,28 @@ The standard form of the straight line equation is $y=mx+c$ where $m$ is the gra
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0667188)(6.5335937,3.1067188)
-\rput(3.0,-0.06671873){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.9890275,2.466018)
-\psline[linewidth=0.04cm](2.5,-2.5332813)(4.98,2.4267187)
+\begin{pspicture}(0,-3.0667188)(6.508125,3.1067188)
+\rput(3.0,-0.06671871){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](5.4890275,1.926018)
+\psline[linewidth=0.04cm](2.5,-2.5332813)(5.48,1.9467187)
 \usefont{T1}{ptm}{m}{n}
-\rput(6.1590624,0.14328128){$x$}
+\rput(6.1335936,0.1432813){$x$}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.2590628,2.9032812){$y$}
+\rput(3.233594,2.9032812){$y$}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.3090625,2.763281){$Q(5;4)$}
+\rput(5.563594,2.203281){$Q(5;4)$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.85,-0.265){$0$}
+\rput(2.8245313,-0.265){$0$}
 \psdots[dotsize=0.12,dotangle=-5.9493704](2.4808824,-2.5638745)
 \usefont{T1}{ptm}{m}{n}
-\rput(1.4990624,-2.5167186){$P(-1;-5)$}
+\rput(1.4735936,-2.5167186){$P(-1;-5)$}
 \end{pspicture} 
 }
 \end{center}
 \westep{Assign values}
 Let the coordinates of $P$ be $(x_1;y_1)$ and $Q(x_2;y_2)$ \\
 \begin{equation*}
-x_1 = -1 \hskip2em y_1 = -5 \hskip2em x_2 = 5 \hskip2em y_2 = -4
+x_1 = -1 \hskip2em y_1 = -5 \hskip2em x_2 = 5 \hskip2em y_2 = 4
 \end{equation*}
 
 
@@ -588,7 +587,7 @@ If two lines intersect perpendicularly, then the product of their gradients is e
 If line $WX \perp $ line $YZ$, then $m_{WX} \times m_{YZ} = -1$. Perpendicular lines have gradients that are the negative inverse of each other.
 \par
 \mindsetvid{Parallel and perpendicular lines}{VMbon}
-\begin{wex}{Parallel lines}{Prove that  line $AB$ with $A(0;2)$ and $B(2,6)$ is parallel to  line $y = 2x-2$.}{
+\begin{wex}{Parallel lines}{Prove that  line $AB$ with $A(0;2)$ and $B(2,6)$ is parallel to  line $2x-y = 2$.}{
 \westep{Draw a sketch}
 
 \begin{center}
@@ -667,7 +666,7 @@ therefore line $AB$ is parallel to $cd$, $y=2x-2$.
 \usefont{T1}{ppl}{m}{n}
 \rput(1.5790626,2.6032813){$B(-2;6)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.6590624,-0.81671876){$0$}
+% \rput(2.8,-0.81671876){$0$}
 \usefont{T1}{ppl}{m}{n}
 \rput(4.6745315,-2.0967188){$A(2;-3)$}
 \psline[linewidth=0.04cm](2.0,2.3132813)(4.02,-2.1067188)
@@ -954,15 +953,15 @@ From this we obtain the mid-point of a line:
 % \psline[linewidth=.05cm](0,0)(3,2)
 % \psline[linewidth=.05cm](0,0)(3,0.5)
 % \uput[ur](.9,3.5){\Large{$T$}}
-\uput[dl](-1,-2){\Large{$G(-2,-2)$}}
+\uput[dl](-1,-2){$G(-2,-2)$}
 \uput[u](-2,-2.2){\qdisk(0,0){2pt}}
-\uput[r](0,-.7){\Large{$F(x;y)$}}
-\uput[r](0,3.2){\Large{$y$}}
-\uput[r](3,0){\Large{$x$}}
-\uput[r](-0.4,-0.2){\Large{$0$}}
+\uput[r](0,-.7){$F(x;y)$}
+\uput[r](0,3.2){$y$}
+\uput[r](3,0){$x$}
+\uput[r](-0.4,-0.2){$0$}
 % \uput[r](0,-1.2){\Large{mid-point}}
 \uput[u](0,-.7){\qdisk(0,0){2pt}}
-\uput[ur](2,1){\Large{$E (2;1)$}}
+\uput[ur](2,1){$E (2;1)$}
 \uput[u](2,.8){\qdisk(0,0){2pt}}
 % \uput[l](4.8,0){\Large{$x$}}
 % \uput[d](0,4.8){\Large{$y$}}
@@ -1378,8 +1377,10 @@ M(x;y) = \left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
       % \item Calculate the length of $A'B'$
       % \item Can you state with certainty that $AA'B'B$ is a parallelogram? Justify your answer.
     \end{enumerate}
+
 \item $\triangle PQR$ has vertices $P(1;8)$, $Q(8;7)$ and $R(7;0)$. Show through calculation that $\triangle PQR$ is a right angled isosceles triangle.
 \item $\triangle ABC$ has vertices $A(-3;4)$, $B(3;-2)$ and $R(-5;-2)$. $M$ is the midpoint of $AC$  and $N$ the midpoint of $BC$. Use $\triangle ABC$ to prove the midpoint theorem using analytical geometrical methods. 
+
   \end{enumerate}
 \practiceinfo
 \par 

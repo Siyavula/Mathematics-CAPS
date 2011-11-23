@@ -4,12 +4,27 @@
 Exponential notation is a short way of writing the same number multiplied by
 itself many times.  We will now have a closer look at writing numbers using exponential notation. Exponents can also be called indices.
 
- \begin{Large}
-\begin{center}
-$ _{\mbox{base}~\leftarrow} $\begin{Large} $ ~a^{n~\rightarrow~}$ \end{Large}$\mbox{exponent / index} $
-\end{center}
- \end{Large}
+%  \begin{Large}
+% \begin{center}
+% $ _{\mbox{base}~\leftarrow} $\begin{Large} $ ~a^{n~\rightarrow~}$ \end{Large}$\mbox{exponent / index} $
+% \end{center}
+%  \end{Large}
 
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-0.27015626)(5.1884375,0.27015626)
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.4,-0.11328125){base}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.5,-0.07828125){\Large $a^n$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.5,0.06671875){exponent/index}
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.2871875,-0.15)(0.7871875,-0.15)
+\psline[linewidth=0.01cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{->}(1.8071876,0.03671875)(2.3471875,0.03671875)
+\end{pspicture} 
+}
+\end{center}
 For any real number $a$ and natural number $n$, we can write $a$ multiplied by itself $n$ times as $a^n$.
 
  
@@ -65,13 +80,20 @@ There are several laws we can use to make working with exponential numbers easie
 Some of these laws might have been done in earlier grades, but we list all the laws here for easy reference: 
 
 \Identity{
-\begin{align*}
-  a^{m} \times a^{n} &= a^{m+n} \\
-  \frac{a^{m}}{a^{n}} &= a^{m-n} \\
-  {(ab)}^{n} &= a^{n}b^{n} \\
-  \left(\frac{a}{b}\right)^n &= \frac{a^n}{b^n} \\
-  {({a}^{m})}^{n} &= a^{mn}
-\end{align*}
+\vspace*{-3em}
+\begin{center}
+\begin{itemize}
+
+% \begin{align*}
+  \item $a^{m} \times a^{n} = a^{m+n}$ 
+  \item $\frac{a^{m}}{a^{n}} = a^{m-n}$ 
+  \item ${(ab)}^{n} = a^{n}b^{n}$ 
+  \item $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ 
+  \item ${({a}^{m})}^{n} = a^{mn}$
+% \end{align*}
+
+\end{itemize}
+\end{center}
 where $a > 0$, $b > 0$ and $m, n \in \mathbb{Z}$.
 }
 % OUT FOR DBE!
@@ -258,7 +280,7 @@ Simplify:
      
 \begin{wex}
 {Exponential expressions}
-{Simplify: $\dfrac{{5}^{2x-1}  {9}^{x-2}}{{15}^{2x-3}}$}
+{Simplify: $\dfrac{{5}^{2x-1}{9}^{x-2}}{{15}^{2x-3}}$}
 {
 \westep{Change the bases to prime numbers}
 \begin{equation*}
@@ -385,13 +407,11 @@ We can also apply the exponential laws to expressions with rational exponents.
 {Simplify: $(0,008)^{\frac{1}{3}}$}
 {
 \westep{Write as a fraction and change the bases to prime numbers}
-
 \begin{eqnarray*}
  0,008 & = & \frac{8}{1~000} \\
        & = & \frac{2^3}{10^3} \\
        & = & \left(\frac{2}{10}\right)^3\\
 \end{eqnarray*}
-
 \westep{Therefore}
 \begin{eqnarray*}
  (0,008)^{\frac{1}{3}} & = & \left[\left(\frac{2}{10}\right)^3\right]^{\frac{1}{3}} \\
@@ -469,8 +489,7 @@ Also notice that if $a=1$, then $x$ and $y$ can be different.
 
 \textbf{Note:} to solve exponential equations, we use all the strategies for solving linear and quadratic equations.
 
-\begin{wex}
-{Solving equations by taking out a common factor}
+\begin{wex}{Solving equations by taking out a common factor}
 {Solve for $t$: $5^t + 3 \times 5^{t+1} = 400$.}
 {
 \westep{Rewrite the expression}

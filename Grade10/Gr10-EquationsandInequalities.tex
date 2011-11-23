@@ -20,11 +20,11 @@ following are examples of linear equations:\par
 Solving an equation means finding the value of the variable that makes
 the equation true. For example, to solve the simple equation $x+1=1$,
 we need to determine the value of $x$ that will make the left hand
-side equal to the right hand side. The solution is $x=0$.
+side equal to the right hand side. The solution is $x=0$.\par
 
 The solution, also called the root of an equation, is the value of the
 variable that satisfies the equation. For linear equations, there is
-at most one solution for the equation.
+at most one solution for the equation.\par
 
 To solve equations we use algebraic methods that include expanding
 expressions, grouping terms, and factorising. \\
@@ -124,7 +124,6 @@ The general steps for solving linear equations are:
   8x-4x+6x &= 4+36 \\
   10x &= 40
 \end{align*}
-
 \westep{Divide both sides by $10$}
 \begin{equation*}
   x = 4
@@ -132,11 +131,16 @@ The general steps for solving linear equations are:
 
 \westep{Check the answer by substituting the solution back into the original equation}  
 \begin{align*}
-  4\left[2(4)-9\right]-4(4) &= 4-6(4) \\
-  4(8-9)-16 &= 4-24 \\
-  4(-1)-16 &= -20 \\
-  -4-16 &= -20 \\
-  -20 &= -20
+  \mbox{LHS} &= 4\left[2(4)-9\right]-4(4)\\
+  &=4(8-9)-16\\
+  &=4(-1)-16\\
+  &=-4-16\\
+  &=-20\\
+
+\mbox{RHS} &= 4-6(4) \\
+  &= 4-24 \\
+  &= -20 \\
+\therefore \mbox{LHS} = \mbox{RHS}
 \end{align*}
 Since both sides are equal, the answer is correct. 
 }
@@ -168,8 +172,9 @@ Division by $0$ is not permitted so there must be a restriction ($x\neq -\frac{1
 
 \westep{Check the answer by substituting the solution back into the original equation}
 \begin{align*}
-  \dfrac{2-(0)}{3(0)+1} &= 2 \\
-  2 &= 2
+  \mbox{LHS} &=\dfrac{2-(0)}{3(0)+1} \\
+	    &= 2 \\
+	    &= \mbox{RHS}
 \end{align*}
 Since both sides are equal, the answer is correct.
 }
@@ -199,12 +204,20 @@ Since both sides are equal, the answer is correct.
 
 \westep{Check the answer by substituting the solution back into the original equation}
 \begin{align*}
-  \dfrac{2(-\frac{3}{8}) - 3}{3} - 3(-\frac{3}{8}) &= \dfrac{-\frac{3}{8}}{3} \\
-  \dfrac{(-\frac{3}{4}) - \frac{12}{4}}{3} + \frac{9}{8} &= \dfrac{-\frac{3}{8}}{3} \\ 
-  \left[-\frac{15}{4} \times \frac{1}{3}\right] + \frac{9}{8} &= -\frac{3}{8} \times \frac{1}{3} \\ 
-  -\frac{5}{4} + \frac{9}{8} &= -\frac{1}{8} \\ 
-  -\frac{10}{8} + \frac{9}{8} &= -\frac{1}{8} \\ 
-  -\frac{1}{8} &= -\frac{1}{8}
+ \mbox{LHS} &= \dfrac{2(-\frac{3}{8}) - 3}{3} - 3(-\frac{3}{8})\\
+  &=\dfrac{(-\frac{3}{4}) - \frac{12}{4}}{3} + \frac{9}{8}\\ 
+  &=\left[-\frac{15}{4} \times \frac{1}{3}\right] + \frac{9}{8}\\ 
+  &=-\frac{5}{4} + \frac{9}{8}\\ 
+  &=-\frac{10}{8} + \frac{9}{8}\\ 
+  &=-\frac{1}{8} \\
+
+ \mbox{RHS} &= \dfrac{-\frac{3}{8}}{3} \\
+  &= \dfrac{-\frac{3}{8}}{3} \\ 
+  &= -\frac{3}{8} \times \frac{1}{3} \\ 
+  &= -\frac{1}{8} \\ 
+
+\therefore \mbox{LHS} = \mbox{RHS}
+
 \end{align*}
 Since both sides are equal, the answer is correct. 
 }
@@ -220,9 +233,9 @@ Since both sides are equal, the answer is correct.
 \item   $16y+4=-10$        
 \item   $12y+0=144$
 \item   $7+5y=62$       
-\item  $55=5x+\dfrac{3}{4}$ 
+\item   $55=5x+\dfrac{3}{4}$ 
 \item   $5x=2x+45$        
-\item  $23x-12=6+3x$
+\item   $23x-12=6+3x$
 \item   $12-6x+34x=2x-24-64$
 \item   $6x+3x=4-5(2x-3)$
 \item   $18-2p=p+9$   
@@ -624,29 +637,42 @@ For example:
 
 The graphs of the two equations are shown below.\\
 
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39257*uid96}
-\begin{center}
-% \rule[.1in]{\figurerulewidth}{.005in} \\
-%\label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}
-%\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
-\begin{pspicture}(-3,-2)(4,2)
-% \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
-\psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
-\pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
-\pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
-\uput[l](2,1.1){$(2;1)$}
-\uput[l](0.1,-0.2){$0$}
-\uput[r](4,0.1){$x$}
-\uput[r](0,2){$y$}
-\psdot(2,1)
-\end{pspicture}
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39257*uid96}
+% \begin{center}
+% % \rule[.1in]{\figurerulewidth}{.005in} \\
+% %\label{m39257*uid96!!!underscore!!!media}\label{m39257*uid96!!!underscore!!!printimage}
+% %\includegraphics[width=.8\columnwidth]{col11306.imgs/m39257_MG10C10_006.png} % m39257;MG10C10\_006.png;;;6.0;8.5;
+% \begin{pspicture}(-3,-2)(4,2)
+% % \psgrid[gridcolor=lightgray,gridlabels=0,gridwidth=0.5pt]
+% \psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
+% \pstextpath[c](-1.1,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}}{\small{$y=2x-3$}}
+% \pstextpath[c](1.5,-0.3){\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1}{3.5}{0.5 x mul}}{\small{$y=\frac{1}{2}x$}}
+% \uput[l](2,1.1){$(2;1)$}
+% \uput[l](0.1,-0.2){$0$}
+% \uput[r](4,0.1){$x$}
+% \uput[r](0,2){$y$}
+% \psdot(2,1)
+% \end{pspicture}
+% 
+% % \vspace{2pt}
+% % \vspace{.1in}
+% % \rule[.1in]{\figurerulewidth}{.005in} \\
+% \end{center}
+% \end{figure}    
 
-% \vspace{2pt}
-% \vspace{.1in}
-% \rule[.1in]{\figurerulewidth}{.005in} \\
-\end{center}
-\end{figure}       
+\begin{center}
+ \begin{pspicture}(-3,-2)(4,2)
+  \psaxes[dx=1,Dx=1,arrows=<->](0,0)(-3,-2)(4,2)
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{0.5}{2.5}{x 2 mul 3 sub}
+\psplot[xunit=1,plotstyle=curve,arrows=<->]{-1.5}{3.5}{x 0.5 mul}
+\uput[l](2,1.1){$(2;1)$}
+\psdot(2,1)
+\uput[r](3,1.3){\small{$y=\frac{1}{2}x$}}
+\uput[u](2.2, 1.8){\small{$y=2x-3$}}
+ \end{pspicture}
+
+\end{center}   
 The intersection of the two graphs is $(2;1)$. So the solution to the
 system of simultaneous equations is $x=2$ and $y=1$.
 
@@ -702,7 +728,7 @@ Notice that both methods give the same solution.
 %  \psgrid[subgriddiv=10,gridcolor=lightgray,gridlabels=0,gridwidth=0.1pt]
 \psaxes[dx=1,dy=1,Dy=10,Dx=2,arrows=<->](0,0)(-5,-1)(5,5)
 \pstextpath[c](-2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-10}{10}{0.75 x mul neg 25 add}}{\small{$4y+3x=100$}}
-\pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
+\pstextpath[c](2.2,0.1){\psplot[xunit=0.5,yunit=0.1,plotstyle=curve,arrows=<->]{-1.5}{10}{4.75 x mul 3 add}}{\small{$4y-19x=12$}}
 \rput(-0.2,-0.2){$0$}
 \rput(5.2,0.1){$x$}
 \rput(0.1,5.2){$y$}
@@ -728,7 +754,7 @@ The two graphs intersect at $(4;22)$.
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Solve for $x$ and $y$: 
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-\item $3x-14y=0$ and $x-4y+1=0$
+\item $3x-14y=0$ \\ $x-4y+1=0$
 \item $x+y=8$ and $3x + 2y = 21$
 \item $y=2x+1$ and $x + 2y + 3 = 0$
 \item $\frac{a}{2}+b=4$ and $\frac{a}{4} -\frac{b}{4}=1$
@@ -927,7 +953,7 @@ It is given that both integers must be negative.
 \end{align*}
 
 \westep{Write the final answer} 
-The two consecutive negative numbers are $-34$ and $-33$.
+The two consecutive negative integers are $-34$ and $-33$.
 }
 \end{wex}
 
@@ -947,8 +973,9 @@ The two consecutive negative numbers are $-34$ and $-33$.
 \item Stephen has $1~\ell{}$ of a mixture containing $69\%$ salt. How much water must Stephen add to make the mixture $50\%$ salt? Write your answer as a fraction of a litre.
 \item The sum of two consecutive odd numbers is $20$ and their difference is $2$. Find the two numbers. 
 \item The denominator of a fraction is 1 more than the numerator. The sum of the fraction and its reciprocal is $\frac{5}{2}$. Find the fraction.
-\item Thembi is 21 years older than her daughter, Phumzi. The sum of their ages is 37. How old is Phumzi? 
-\item Mark is now five times as old as his son Sam. In seven years from now, Mark will be three times as old as his son. Find their ages now.    
+%name changes
+\item Masinbi is 21 years older than her daughter, Mulivhu. The sum of their ages is 37. How old is Mulivhu? 
+\item Tshamano is now five times as old as his son Murunwa. Seven years from now, Tshamano will be three times as old as his son. Find their ages now.    
 \end{enumerate}
 \practiceinfo
 \par 
@@ -1002,7 +1029,6 @@ The height of a triangle is given by: $h=\dfrac{2A}{b}$
 } 
 \end{wex}
 
-
 \begin{exercises}{}
 {
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ] 
@@ -1019,7 +1045,7 @@ The height of a triangle is given by: $h=\dfrac{2A}{b}$
 \item Solve for $b$: $c=\sqrt{a^2+b^2}$
 \item Make $u$ the subject of the formula: $\frac{1}{v}=\frac{1}{u}+\frac{1}{w}$
 \item Solve for $r$: $A=\pi R^2 -\pi r^2$
-\item $F=\frac{9}{5}C + 32^\circ$ is the formula for converting temperature in degrees Celcius to degrees Fahrenheit. Derive a formula for converting degrees Fahrenheit to degrees Celcius.
+\item $F=\frac{9}{5}C + 32^\circ$ is the formula for converting temperature in degrees Celsius to degrees Fahrenheit. Derive a formula for converting degrees Fahrenheit to degrees Celsius.
 \item $V=\frac{4}{3}\pi r^3$ is the formula for determining the volume of a soccer ball. Express the radius in terms of the volume.
 \end{enumerate}
 \practiceinfo
@@ -1052,7 +1078,7 @@ A linear inequality is similar to a linear equation in that the largest exponent
 The methods used to solve linear inequalities are similar to those used to
 solve linear equations. The only difference occurs when there is a
 multiplication or a division that involves a minus sign. For example, we know
-that $8>6$. If both sides of the inequality are divided by $-2$ the we get $-4 > -3$, which is not true. Therefore, the inequality sign must be switched around, giving
+that $8>6$. If both sides of the inequality are divided by $-2$, then we get $-4 > -3$, which is not true. Therefore, the inequality sign must be switched around, giving
 $-4<-3$.
 
 \par
@@ -1183,7 +1209,7 @@ We represent the above answer in interval notation as $(-\infty;~-\frac{1}{2}]$.
 \begin{equation*}
   r<4
 \end{equation*}
-Remember: when we multiply by a negative number, the direction of the inequality changes.
+
 
 \westep{Represent the answer on a number line}
 

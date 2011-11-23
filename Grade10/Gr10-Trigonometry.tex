@@ -246,19 +246,19 @@ technique for remembering the trigonometric ratios:
 
 \begin{tabular}{|l|}\hline
 
-$\mbox{\textbf{s}in}=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{h}ypotenuse}} $
+$\mbox{\textbf{s}in}~\theta=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{h}ypotenuse}} $
 % make-rowspan-placeholders
 
 \\  \hline
 %--------------------------------------------------------------------
 
-$\mbox{\textbf{c}os}=\frac{\mbox{\textbf{a}djacent}}{\mbox{\textbf{h}ypotenuse}} $
+$\mbox{\textbf{c}os}~\theta=\frac{\mbox{\textbf{a}djacent}}{\mbox{\textbf{h}ypotenuse}} $
 % make-rowspan-placeholders
 
 \\ \hline
 %--------------------------------------------------------------------
 
-$\mbox{\textbf{t}an}=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{a}djacent}} $
+$\mbox{\textbf{t}an}~\theta=\frac{\mbox{\textbf{o}pposite}}{\mbox{\textbf{a}djacent}} $
 % make-rowspan-placeholders
 
 \\   \hline
@@ -1266,7 +1266,7 @@ Note that the third side of the triangle can also be calculated using the Theore
 \westep{Use $\triangle ABE$ and $\triangle CBE$ to determine the two angles at $\hat{B}$} 
 
 \westep{Find the first angle, $A\hat{B}E$}
-The Hypotenuse and opposite side are given for both triangles,
+The hypotenuse and opposite side are given for both triangles,
 therefore use the $sin~$ function: In $\triangle ABE$,
 
 \begin{eqnarray*}
@@ -1362,7 +1362,7 @@ In $\triangle QTB$,
 \end{equation*}
 
 \westep{Write final answer}
-The height of the building is $80,1$ m.
+The height of the building is $80$ m.
 }
 \end{wex}
 
@@ -1433,7 +1433,7 @@ Note: diagram not drawn to scale
 $\triangle BDE$ and $\triangle BDC$ are both right-angled triangles. In each of the triangles, the length $BD$ is known. Therefore we can calculate the sides of the triangles.
 
 \westep{Calculate $CD$}
-The length $AC$ is given. $CABD$ is a rectangle so $BD = AC = 200$ m.
+The length $AC$ is given. $CABD$ is a rectangle so $BD = AC = 200$ m.\\
 In $\triangle CBD$, 
 \begin{eqnarray*}
 tan~ C\hat{B}D &=& \frac{CD}{BD}\\
@@ -1630,11 +1630,11 @@ The general definitions for the trigonometric functions are:
 The Cartesian plane is divided into $4$ quadrants in an anti-clockwise direction as shown in the diagram below. Notice that $r$ is always positive but the values of $x$ and $y$ change depending on the position of the point in the Cartesian plane. As a result, the trigonometric ratios can be positive or negative. The letters $C$, $A$, $S$ and $T$ indicate which of the functions are positive in each quadrant: \\
 \\
 Quadrant I: All ratios are positive.\\
-Quadrant II: $y$ values are positive therefore $sin~$ and $cosec~$ are positive.\\
-Quadrant III: Both $x$ and $y$ values are negative therefore $tan~$ and $cot~$ are positive. \\
-Quadrant IV: $x$ values are positive therefore $cos~$ and $sec~$ are positive.\par
+Quadrant II: $y$ values are positive therefore sine and cosine are positive.\\
+Quadrant III: Both $x$ and $y$ values are negative therefore tangent and cotangent are positive. \\
+Quadrant IV: $x$ values are positive therefore cosecant and secant are positive.\par
 
-
+\textbf{Note:} the hypotenuse  $r$ is a length, and is therefore always positive. 
 % \Note{$r$ is a length and therefore is always positive.}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
@@ -1688,7 +1688,7 @@ Quadrant IV: $x$ values are positive therefore $cos~$ and $sec~$ are positive.\p
 
 This diagram is known as the CAST diagram.
 \par
-\mindsetvid{Trig on the Cartesian plane}{VMbhy}
+\mindsetvid{Trigonometry on the Cartesian plane}{VMbhy}
 
 \subsubsection{Special angles in the Cartesian plane}
 When working in the Cartesian plane we include two other special
@@ -1820,7 +1820,7 @@ $P(-3;4)$ is a point in the Cartesian plane. $X\hat{O}P=\theta$,
 {
 \westep{Sketch point $P$ in the Cartesian plane and label $\theta$} 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale die drawing.
 {
 \begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
 \rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
@@ -1831,9 +1831,9 @@ $P(-3;4)$ is a point in the Cartesian plane. $X\hat{O}P=\theta$,
 \psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(3.02,-0.1784375)(1.6,1.8615625)
 \usefont{T1}{ptm}{m}{n}
 \rput(1.3670312,2.2715626){$P(-3;4)$}
-\rput{-45.048485}(0.95434314,2.1533978){\psarc[linewidth=0.04](3.073445,-0.073917985){0.6961048}{36.728504}{180.0}}
+\rput{-45.048485}(0.95434314,2.1533978){\psarc[linewidth=0.04]{->}(3.073445,-0.073917985){0.6961048}{36.728504}{180.0}}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.8,-0.4){$0$}
+\rput(3.150625,-0.4484375){$0$}
 \usefont{T1}{ptm}{m}{n}
 \rput(3.2709374,0.1915625){$\theta$}
 \end{pspicture} 
@@ -1874,7 +1874,7 @@ $X\hat{O}K = \theta$ is an angle in the third quadrant and $K$ is the point $(-5
 {
 \westep{Sketch point $K$ in the Cartesian plane and label $\theta$} 
 \begin{center}
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale die drawing.
 {
 \begin{pspicture}(0,-3.1584375)(6.44125,3.1984375)
 \rput(3.0,-0.1584375){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
@@ -1885,9 +1885,9 @@ $X\hat{O}K = \theta$ is an angle in the third quadrant and $K$ is the point $(-5
 \psline[linewidth=0.04cm,dotsize=0.07055555cm 2.0]{-*}(2.963227,-0.18549357)(1.6,-2.1384375)
 \usefont{T1}{ptm}{m}{n}
 \rput(1.2170312,-2.5084374){$K(-5;y)$}
-\rput{-45.048485}(1.0897402,2.0403726){\psarc[linewidth=0.04](3.0048735,-0.2936738){0.7345531}{56.389397}{272.69913}}
+\rput{-45.048485}(1.0897402,2.0403726){\psarc[linewidth=0.04]{->}(3.0048735,-0.2936738){0.7345531}{56.389397}{272.69913}}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.150625,-0.35){$0$}
+\rput(3.150625,-0.4484375){$0$}
 \usefont{T1}{ptm}{m}{n}
 \rput(2.4109375,0.5115625){$\theta$}
 \usefont{T1}{ptm}{m}{n}
@@ -2039,11 +2039,11 @@ Determine the following in terms of $t$:
 
 \summary{VMdwh}
 \begin{itemize}[noitemsep]
-\item We can define three trigonometric ratios for right-angled triangles: sine ($sin~$), cosine ($cos~$) and tangent ($tan~$).
-\item Each of these ratios have a reciprocal: cosecant ($cosec~$), secant ($sec~$) and cotangent ($cot~$).
+\item We can define three trigonometric ratios for right-angled triangles: sine ($sin$), cosine ($cos$) and tangent ($tan$).
+\item Each of these ratios have a reciprocal: cosecant ($cosec$), secant ($sec$) and cotangent ($cot$).
 \item We can use the principles of solving equations and the trigonometric ratios to help us solve simple trigonometric equations.
 \item We can solve problems in two dimensions that involve right-angled triangles.
-\item For some special angles, we can easily find the values of $sin~$, $cos~$ and $tan~$ without using a calculator.
+\item For some special angles, we can easily find the values of $sin$, $cos$ and $tan$ without using a calculator.
 \item We can extend the definitions of the trigonometric functions to any angle.
 \item Trigonometry is used to help us solve problems in two dimensions, such as finding the height of a building.
 \end{itemize}
@@ -2169,8 +2169,8 @@ sin~ 60^{\circ} cos~ 30^{\circ}-cos~ 60^{\circ}sin~ 30^{\circ} + tan~ 45^{\circ}
 \psline[linewidth=0.04cm](4.9665626,-1.576875)(4.9665626,-1.776875) 
 \end{pspicture}
 \end{center} 
-\item $A(5;0)$ and $B(11;4)$. Find the angle between the line through $A$ and $B$ and the $x$-axis. 
-\item $C(0;-13)$ and $D(-12;14)$. Find the angle between the line through $C$ and $D$ and the $y$-axis. 
+\item Given $A(5;0)$ and $B(11;4)$, find the angle between the line through $A$ and $B$ and the $x$-axis. 
+\item Given $C(0;-13)$ and $D(-12;14)$, find the angle between the line through $C$ and $D$ and the $y$-axis. 
 
 
 \item A right-angled triangle has hypotenuse $13$ mm. Find the length of the other two sides if one of the angles of the triangle is $50^{\circ}$.
@@ -2184,7 +2184,7 @@ sin~ 60^{\circ} cos~ 30^{\circ}-cos~ 60^{\circ}sin~ 30^{\circ} + tan~ 45^{\circ}
 \item The distance from the boat to the top of the cliff is $30$ m. Calculate the angle of elevation from the boat to the top of the cliff (correct to the nearest integer).
 \item If the boat sails $7$ m closer to the cliff, what is the new angle of elevation from the boat to the top of the cliff? 
 \end{enumerate} 
-\item Given the points: $E(5;0)$, $F(6;2)$ and $G(8;-2)$. Find the angle $F\hat{E}G$. 
+\item Given the points, $E(5;0)$, $F(6;2)$ and $G(8;-2)$, find the angle $F\hat{E}G$. 
 \item  A triangle with angles $40^{\circ}$, $40^{\circ}$ and $100^{\circ}$ has a perimeter of $20$ cm. Find the length of each side of the triangle. 
 
 \end{enumerate}

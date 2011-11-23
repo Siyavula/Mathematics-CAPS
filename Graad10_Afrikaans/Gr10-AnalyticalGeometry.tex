@@ -1,10 +1,12 @@
-\chapter{Analitiese Meetkunde}
-Analitiese meetkunde, ook bekend as koördinaatmeetkunde en vroëer bekend as Cartesiese meetkunde, is die studie van meetkunde op grond van die beginsels van algebra en die Cartesiese koördinaatstelsel. Dit is gemoeid met die definisie van meetkundige figure op ’n numeriese wyse en onttrek numeriese inlligting uit die voorstelling. Sommige beskou die ontwikkeling van analitiese meetkunde as die begin van moderne wiskunde.\par 
+\chapter{Analitiese meetkunde}
+Analitiese meetkunde, ook bekend as koördinaatmeetkunde en vroëer bekend as Cartesiese meetkunde, is die studie van meetkunde op grond van die beginsels van algebra en die Cartesiese koördinaatstelsel. Dit is gebaseer op die definisie van meetkundige figure op ’n numeriese wyse en onttrek numeriese inlligting uit die voorstelling. Sommige beskou die ontwikkeling van analitiese meetkunde as die begin van moderne wiskunde.
 
-\section{Drawing figures on the Cartesian plane}
+\par 
+\chapterstartvideo{VMbkm}
+%english section heading below
+\section{Figures op die Cartesiese vlak}
 As ons die koördinate van die hoekpunte van ’n figuur het, dan kan ons die figuur op die Cartesiese vlak teken.
-Byvoorbeeld, neem die vierhoek $ABCD$ met koördinate $A(1;1)$, $B(3;1)$, $C(3;3)$ en $D(1;3)$ en stel dit voor op die
-Cartesiese vlak. Dit word getoon in Figuur 15.1.\par 
+Byvoorbeeld, neem die vierhoek $ABCD$ met koördinate $A(1;1)$, $B(3;1)$, $C(3;3)$ en $D(1;3)$ en stel dit voor op die Cartesiese vlak. \par 
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -13,14 +15,15 @@ Cartesiese vlak. Dit word getoon in Figuur 15.1.\par
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(0,0)(4,4)
-\psaxes[linewidth=2pt,labels=none,ticks=none]{->}(0,0)(0,0)(5,5)
-\pspolygon[linewidth=.1cm](1,1)(1,3)(3,3)(3,1)(1,1)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-1,-1)(5,5)
+\pspolygon[linewidth=1pt](1,1)(1,3)(3,3)(3,1)(1,1)
 \uput[dl](1,1){\Large{$A$}}
 \uput[dr](3,1){\Large{$B$}}
 \uput[ur](3,3){\Large{$C$}}
 \uput[ul](1,3){\Large{$D$}}
 \uput[l](5.7,0){\Large{$x$}}
 \uput[d](0,5.7){\Large{$y$}}
+\uput[d](-0.2,0){\Large{$0$}}
 \end{pspicture}
 }
 % \caption{Drawing a figure on the Cartesian plane}
@@ -28,22 +31,20 @@ Cartesiese vlak. Dit word getoon in Figuur 15.1.\par
 \label{fig:cartesianplane}
 \end{figure} 
 
-The order of the letters for naming a figure is important. Dit dui vir ons aan dat ons beweeg van punt: $A$ na punt $B$, $B$ na punt $C$, $C$ na punt $D$ na punt $D$  en dan weer terug na punt  $A$. It would also be correct to write quadrilateral $CBAD$ or $BADC$ but it is better to follow the convention of writing letters in alphabetical order.     
+Die volgorde van die letters waarmee ons die figuur benoem, is belangrik. Dit dui vir ons aan dat ons beweeg van punt $A$ na punt $B$, $B$ na punt $C$, $C$ na punt $D$ en dan weer terug na punt  $A$. Dit sou ook reg wees om te skryf vierkant $CBAD$ of $BADC$ maar dit is beter om die konvensie te volg om die letters in alfabetiese volgorde te skryf.     
 
-\section{Afstand tussen Twee Punte}
-\Definition{Point}{A point is an ordered pair of numbers written as $(x;y)$.}
-A point is a simple geometric object having location as its only property. 
-\Definition{Distance}{Afstand is a getal wat beskryf hoe ver twee punte van mekaar is.}
+\section{Afstand tussen twee punte}
+'n Punt is 'n eenvoudige meetkundige voorwerp met ligging (posisie) as enigste eienskap. 
+\Definition{Punt}{'n Punt is 'n geordende getallepaar wat geskryf word as $(x;y)$.}
 
-\mindsetvid{the distance formula}{VMbls}
+\Definition{Afstand}{Afstand is 'n getal wat beskryf hoe ver twee punte van mekaar is.}
 
-\begin{activity}{Afstand tussen twee punte}
-Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee. 
+\begin{Investigation}{Afstand tussen twee punte}
+Punte $P~(2;1)$, $Q~(-2;-2)$ en $R~(2,-2)$ word gegee. 
 \begin{itemize}
- \item Can we assume that $\hat{R}=90^{\circ}$? If so, why?
-\item Gebruik die Stelling van Pythagoras $\triangle PQR$ om die lente van $PQ$ te vind.
+ \item Kan ons aanvaar dat $\hat{R}=90^{\circ}$? Indien wel, hoekom?
+\item Gebruik die Stelling van Pythagoras in $\triangle PQR$ om die lengte van $PQ$ te vind.
 \end{itemize}
-
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -52,24 +53,26 @@ Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee.
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
-\uput[l](-2,-1.8){\Large{$Q$}}
-\uput[dl](-1.5,-2){\Large{$(-2;-2)$}}
-\uput[dr](2,-2){\Large{$R$}}
-\uput[u](2.3,0.5){\Large{$P$}}
-\uput[ur](2,1){\Large{$(2;1)$}}
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,1)
+\psdots(-2,-2)(2,1)
+% \uput[l](-2,-1.8){\Large{$Q$}}
+\uput[dl](-1.5,-2){\Large{$Q(-2;-2)$}}
+\uput[dr](2,-2){\Large{$R(2;-2)$}}
+% \uput[u](2.3,0.5){\Large{$P$}}
+\uput[ur](2,1){\Large{$P(2;1)$}}
 \uput[l](3.5,0){\Large{$x$}}
 \uput[d](0,3.5){\Large{$y$}}
-\uput[dr](2.5,-2){\Large{$(2;-2)$}}
+% \uput[dr](2.5,-2){\Large{$(2;-2)$}}
+\uput[d](-0.2,0){\Large{$0$}}
 \end{pspicture}
 }
 % \caption{Triangle $PQR$}
 \end{center}
 \label{fig:trianglePQR}
 \end{figure} 
-\end{activity}       
+\end{Investigation}       
 % SOLUTION FOR TEACHERS' GUIDE BELOW:
 % In figure~\ref{fig:trianglePQR}, it can be seen that the length of the line $PR$ is 3 units and the length of the line $QR$ is four units. However, $\Delta PQR$, has a right angle at $R$. Therefore, the length of the side $PQ$ can be obtained by using the Theorem of Pythagoras:\par 
 %       
@@ -80,7 +83,7 @@ Punte $P~(2;1)$, $Q~(-2;2)$ en $R~(2,-2)$ word gegee.
 % \end{eqnarray*}
 % The length of $PQ$ is the distance between the points $P$ and $Q$.\par 
 Die formule vir die berekening van die afstand tussen twee punte word as volg afgelei. Die afstand tussen twee
-punte $A~({x}_{1};{y}_{1})$ en $B~({x}_{2};{y}_{2})$, gebruik ons die Stelling van Pythagoras:\par 
+punte $A~({x}_{1};{y}_{1})$ en $B~({x}_{2};{y}_{2})$, word afgelei deur gebruik te maak van die Stelling van Pythagoras:\par 
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -89,24 +92,24 @@ punte $A~({x}_{1};{y}_{1})$ en $B~({x}_{2};{y}_{2})$, gebruik ons die Stelling v
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=0.04cm](-2,-2)(2,-2)(2,1)
-\psline[linestyle=dashed,linewidth=0.04cm](-2,-2)(2,1)
-\uput[l](-2,-1.8){\Large{$A$}}
-\uput[dl](-1,-2){\Large{$(x_{1};y_{1})$}}
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=1pt](-2,-2)(2,-2)(2,1)
+\psline[linestyle=dashed,linewidth=1pt](-2,-2)(2,1)
+\psdots(-2,-2)(2,1)
+% \uput[l](-2,-1.8){\Large{$A$}}
+\uput[dl](-1,-2){\Large{$A(x_{1};y_{1})$}}
 \uput[dr](2,-1.8){\Large{$C$}}
 \uput[ur](2.5,-2.5){\Large{$(x_{2};y_{1})$}}
-\uput[u](2.3,0.5){\Large{$B$}}
-\uput[ur](1.8,1){\Large{$(x_{2};y_{2})$}}
-\uput[l](4,0){\Large{$x$}}
-\uput[d](0,4){\Large{$y$}}
+% \uput[u](2.3,0.5){\Large{$B$}}
+\uput[ur](1.8,1){\Large{$B(x_{2};y_{2})$}}
+\uput[l](3.5,0){\Large{$x$}}
+\uput[d](0,3.5){\Large{$y$}}
 \uput[d](-0.2,-0.05){\Large{$0$}}
 \end{pspicture}
 }
 \end{center}
-\end{figure}       
-}
-\Tip{Always draw a sketch - it helps with your calculation and makes it easier to check if your answer is correct.}
+\end{figure}   
+
 \begin{align*}
 AB^2&=AC^{2}+BC^{2}\\
 \therefore AB&=\sqrt{AC^{2}+BC^{2}}
@@ -124,147 +127,150 @@ AB & = & \sqrt{A{C}^{2}+B{C}^{2}} \\
 & =& \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}} 
 \end{eqnarray*}
 Gevolglik, vir enige twee punte, $({x}_{1};{y}_{1})$ en $({x}_{2};{y}_{2})$, is die formule:\par 
-\Identity{Afstand}{$\mbox{Afstand } d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$}
-\Note{Note that $(x_1 - x_2)^2 = (x_2 - x_1)^2$, but remember to be consistent or you will get the wrong answer.\\
-$AB \neq \\ \sqrt{(x_1 - x_2)^2 + (y_2 - 2_1)^2}$.}
+\Identity{\begin{center}{$\mbox{Afstand tussen twee punte } d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}$}\end{center}}
+Let daarop dat $(x_1 - x_2)^2 = (x_2 - x_1)^2$.
 
- 
+\par
+\mindsetvid{the distance formula}{VMbls}
 
-% Die volgende video oor die afstandformule.
-
+\setcounter{subfigure}{0}
+\begin{figure}[H] % horizontal\label{m39107*uid99}
+% \textnormal{Khan academy video on distance formula}\vspace{.1in} \nopagebreak
+% \label{m39107*yt-media}\label{m39107*yt-video}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10108 )}
 \vspace{2pt}
 \vspace{.1in}
 \end{figure}       
 
-\begin{wex}{Deur die gebruik van die afstand formule}{Vind die afstand tussen $S(-2;-5)$ en $Q(7;-2)$.}{
-\westep{Draw a sketch}
+\begin{wex}{Gebruik van afstandformule}{Vind die afstand tussen $S(-2;-5)$ en $Q(7;-2)$.}{
+\westep{Teken 'n skets}
 % \begin{figure}
  \begin{center}
-
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-4.096719)(8.579062,4.1367188)
-\rput(3.0,1.9032812){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-6)(5,2)}
-\psline[linewidth=0.028222222cm](1.8,-2.0367188)(6.3,0.9632813)
-\psline[linewidth=0.028222222,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.8,-2.0367188)(6.3,-2.0367188)(6.3,0.9632813)
-\psline[linewidth=0.028222222](6.06,-2.0367188)(6.06,-1.7832812)(6.3,-1.7832812)
-\usefont{T1}{ptm}{m}{n}
-\rput(2.7045312,1.6632812){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.3545313,3.9332812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(8.204532,2.1432812){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.744531,1.1932813){$T(7,-2)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2,-2.3367188){$S(-2,-5)$}
-\psdots[dotsize=0.127](6.3,0.9632813)
-\psdots[dotsize=0.127](1.8,-2.0367188)
+\begin{pspicture}(0,-2.5467188)(6.5735936,2.5867188)
+\rput(2.26,0.45328125){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.75cm,dy=0.75cm,Dx=2,Dy=2]{<->}(0,0)(-2,-3)(3,2)}
+\psline[linewidth=0.028222222cm](1.52,-1.3932812)(4.9,-0.26671866)
+\psline[linewidth=0.028222222,linestyle=dashed,dash=0.16cm 0.16cm](1.54,-1.4332813)(4.92,-1.4142337)(4.92,-0.23328125)
+\psline[linewidth=0.028222222](4.68,-1.3867188)(4.68,-1.1332811)(4.92,-1.1332811)
+\usefont{T1}{ppl}{m}{n}
+\rput(5.6990623,-0.33671865){$T(7,-2)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(0.6,-1.4267187){$S(-2,-5)$}
+\psdots[dotsize=0.127](4.92,-0.26671866)
+\usefont{T1}{ppl}{m}{n}
+\rput(2.0790625,0.25328124){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.5290625,2.45){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.4,0.5){$x$}
+\psdots[dotsize=0.127](1.48,-1.4267187)
 \end{pspicture} 
 }
  \end{center}
 % \end{figure}
 
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
 Gestel die koördinate van punt $S$ is $(x_1;y_1)$ en die koördinate van punt $T$ is $(x_2;y_2)$.
 \begin{equation*}
-x_1 = -2 \hskip2em y_1 = -5 \hskip2em x_2 = -7 \hskip2em y_2 = -2
+x_1 = -2 \hskip2em y_1 = -5 \hskip2em x_2 = 7 \hskip2em y_2 = -2
 \end{equation*}
-\westep{Write down the distance formula}
+\westep{Skryf die afstandformule neer}
 \begin{equation*}
 d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
 \end{equation*}
-\westep{Substitute values}
+\westep{Vervang waardes}
 \begin{equation*}
 \begin{array}{cl}
-d_{\mbox{ST}} &= \sqrt{(2 - (-7))^2 + (-5- (-2))^2}\\
+d_{ST} &= \sqrt{(-2 -7)^2 + (-5- (-2))^2}\\
 & = \sqrt{(-9)^2 + (-3)^2}\\
 &= \sqrt{81 + 9}\\
 &= \sqrt{90}\\
 &= 9,5
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
-Die afstand tussen $S$ en $T$ is $9,5$ units.
+\westep{Skryf die finale antwoord neer}
+Die afstand tussen $S$ en $T$ is $9,5$ eenhede.
 \vspace{2pt}
 \vspace{.1in}
 }
 \end{wex}
 
-\begin{wex}{Using the distance formula}{Gegee $RS = 13$, $R(3;9)$ $S(8;y)$, Vind $y$.}{
-\westep{Draw a sketch}
+\begin{wex}{Gebruik die afstandformule}{Gegee $RS = 13$, $R(3;9)$ en $S(8;y)$, Vind $y$.}{
+\westep{Teken 'n skets}
 % \usepackage{pst-plot} % For axes
  \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.6167188)(7.8990626,3.6567187)
-\rput(2.0,-1.6167188){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-2,-2)(5,5)}
-\psline[linewidth=0.028222222,linestyle=dashed,dash=0.17638889cm 0.10583334cm](4.68,2.4567187)(3.1393335,-0.2630555)(4.64,-2.5032814)
-\usefont{T1}{ptm}{m}{n}
-\rput(1.7445313,-1.8767188){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.3545313,3.4532812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(7.3,-1.4567188){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.264531,2.7132812){$S_2(8;y_2)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.0845313,-2.7567186){$S_1(8;y_1)$}
-\psdots[dotsize=0.12](3.14,-0.22328125)
-\psdots[dotsize=0.12](4.68,2.4367187)
-\psdots[dotsize=0.12](4.66,-2.4632812)
-\usefont{T1}{ptm}{m}{n}
-\rput(2.6245313,-0.20671874){$R(3;9)$}
-\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](4.68,3.4967186)(4.66,-3.5032814)
+\begin{pspicture}(0,-4.146719)(7.8990626,4.186719)
+\rput(2.0,-2.1467187){\psaxes[linewidth=0.028222222,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm,Dx=2,Dy=2]{<->}(0,0)(-2,-2)(5,6)}
+\psline[linewidth=0.028222222,linestyle=dashed,dash=0.16cm 0.16cm](3.96,3.2067187)(2.64,0.12671874)(4.0,-2.8932812)
+\usefont{T1}{ppl}{m}{n}
+\rput(1.86,-2.33){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.3,3.9832811){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(7.2,-1.9867188){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.9,3.1832812){$S_2(8;y_2)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.9,-3.0067186){$S_1(8;y_1)$}
+\psdots[dotsize=0.12](2.66,0.08671875)
+\psdots[dotsize=0.12](3.96,3.1667187)
+\psdots[dotsize=0.12](4.0,-2.8932812)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2,0.10328125){$R(3;9)$}
+\psline[linewidth=0.04cm,linestyle=dotted,dotsep=0.16cm](3.96,4.0067186)(3.96,-3.7532814)
 \end{pspicture} 
 }
+
 \end{center}
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$:}
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
 Gestel die koördinate van $R$ is $(x_1;y_1)$ en die koördinate van punt $S$ is $(x_2;y_2)$.
 \begin{equation*}
 x_1 = 3 \hskip2em y_1 = 9 \hskip2em x_2 = 8 \hskip2em y_2 = y
 \end{equation*}
-\westep{Write down the distance formula}
+\westep{Skryf die afstandformule neer}
 \begin{equation*}
 d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}
 \end{equation*}
-\westep{Substitute values and solve for $y$}
+\westep{Vervang waardes en los op vir $y$}
 \begin{equation*}
 \begin{array}{cl}
 13 &= \sqrt{(3 - 8)^2 + (9 - y)^2}\\
 13^2 & = (-5)^2 + (81 - 18y + y^2)\\
 0 &= y^2 - 18y - 63\\
 &= (y+3) (y-21)\\
-\therefore y &= -3 \mbox{ or } y = 21
+\therefore y &= -3 \mbox{ of } y = 21
 \end{array}
 
 \end{equation*}
-\westep{Write the final answer}
-$S$ is $(8;-3)$ or $(8;21)$
+\westep{Skryf die finale antwoord neer}
+$S$ is $(8;-3)$ of $(8;21)$
 \vspace{2pt}
 \vspace{.1in}
 }
 \end{wex}
 
-\begin{exercises}{}
-{
-\begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ]
-\item Vind die lente $AB$ as:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $A(2;7)$ en $B(-3;5)$.
-    \item $A(-3;5)$ en $B(-9;1)$.
-    \item $A(x;y)$ en $B(x+4;y-1)$.
-    \end{enumerate}
+ \textbf{Belangrik:} teken altyd 'n skets - dit help met jou berekening en ook om te kontroleer of jou antwoord reg kan wees.
 
-\item Die lengte van $CD=5$. Find the missing coordinate if:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $C(6;-2)$ en $D(x;2)$.
-    \item $C(4;y)$ en $D(1;-1)$.
-    \end{enumerate}
+\begin{exercises}{}{
+\begin{enumerate}[label=\textbf{\arabic*}.]
+\item Vind die lengte van $AB$ as:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $A(2;7)$ en $B(-3;5)$
+\item $A(-3;5)$ en $B(-9;1)$
+\item $A(x;y)$ en $B(x+4;y-1)$
+\end{enumerate}
+
+\item Die lengte van $CD=5$. Vind die ontbekende ko\"ordinaat as:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $C(6;-2)$ en $D(x;2)$
+\item $C(4;y)$ en $D(1;-1)$
+\end{enumerate}
 \end{enumerate}
 
 \insertpracticeinfo{2}
-}
 \end{exercises}
 
 %          \section{ Calculation of the gradient line}
@@ -274,12 +280,10 @@ $S$ is $(8;-3)$ or $(8;21)$
 %     
 %     
 
-\section{Berekening van die Gradiënt van ’n Lyn}
-\Definition{Die gradiënt van die lyn }{ die verhouding tussen die vertikale verandering in posisie en die
+\section{Berekening van gradi\"ent}
+\Definition{Die gradi\"ent van die lyn }{Gradi\"ent is die verhouding tussen die vertikale verandering in posisie en die
 horisontale verandering in posisie.}
-Die gradiënt $m$  van ’n lyn beskryf hoe steil die lyn is, hoe groot die helling van die lyn is.In die figuur hieronder is lyn $OQ$ se helling die grootste, en die lyn $OT$ is die steilste.
-
-\mindsetvid{The gradient line}{VMbmr}
+Die gradi\"ent $m$  van ’n reguitlyn beskryf hoe steil die lyn is, hoe groot die helling van die lyn is. In die figuur hieronder is lyn $OQ$ se helling die kleinste en die gradi\"ent van lyn $OT$ is die grootste want die lyn is die steilste.
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -288,11 +292,11 @@ Die gradiënt $m$  van ’n lyn beskryf hoe steil die lyn is, hoe groot die hell
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-1,-1)(4,4)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-1,-1)(4,4)
-\psline[linewidth=.05cm](0,0)(1,3.5)
-\psline[linewidth=.05cm](0,0)(3,3.5)
-\psline[linewidth=.05cm](0,0)(3,2)
-\psline[linewidth=.05cm](0,0)(3,0.5)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-1,-1)(4,4)
+\psline[linewidth=1pt](0,0)(1,3.5)
+\psline[linewidth=1pt](0,0)(3,3.5)
+\psline[linewidth=1pt](0,0)(3,2)
+\psline[linewidth=1pt](0,0)(3,0.5)
 \uput[ur](.9,3.5){\Large{$T$}}
 % \uput[dl](-1,-2){\Large{$(x_{2},y_{2})$}}
 \uput[ur](3,3.5){\Large{$S$}}
@@ -300,14 +304,14 @@ Die gradiënt $m$  van ’n lyn beskryf hoe steil die lyn is, hoe groot die hell
 \uput[ur](3,0.4){\Large{$Q$}}
 \uput[dl](0,0){\Large{$O$}}
 % \uput[ur](1.8,1){\Large{$(x_{1},y_{1})$}}
-\uput[l](4.8,0){\Large{$x$}}
-\uput[d](0,4.8){\Large{$y$}}
+\uput[l](4.5,0){\Large{$x$}}
+\uput[d](0,4.5){\Large{$y$}}
 \end{pspicture}
 }
 \end{center}
-\end{figure}        
-To derive the formula for gradient,Dink aan ’n lyn met koördinate $A~(x_1;y_1)$ en $B~(x_2;y_2)$ met skuinssy $AB$, as shown in the diagram below.  
-Die gradiënt is die verhouding van die lengte van die vertikale sy van die driehoek $y$-values of points $A$ and $B$. The length of the horizontal side of the triangle is the difference in $x$-values of points $A$ and $B$. 
+\end{figure}       
+Om die formule vir gradi\"ent af te lei, dink ons aan ’n lyn met koördinate $A~(x_1;y_1)$ en $B~(x_2;y_2)$ met skuinssy $AB$, soos getoon die diagram hieronder.  
+Die gradiënt is die verhouding van die lengte van die vertikale sy van die driehoek tot die horisontale sy. Die vertikale sylengte is die verskil tussen die $y$ -waardes van punt $A$ en punt $B$. Die lengte van die horisontale sy van die driehoek is die verskil tussen die $x$ -waardes van $A$ en $B$. 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
 \begin{center}
@@ -315,107 +319,112 @@ Die gradiënt is die verhouding van die lengte van die vertikale sy van die drie
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{<->}(0,0)(-3,-3)(3,3)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
 \psline(-2,-2)(2,-2)(2,1)
-\psline[linestyle=solid,linewidth=0.04cm](-2,-2)(2,1)
-\uput[l](-2,-1.8){\Large{$A$}}
-\uput[dl](-1,-2){\Large{$(x_{1},y_{1})$}}
+\psline[linestyle=solid,linewidth=1pt](-2,-2)(2,1)
+% \uput[l](-2,-1.8){\Large{$A$}}
+\psdots(-2,-2)(2,1)
+\uput[dl](-1,-2){\Large{$A(x_{1},y_{1})$}}
 \uput[dr](2,-2){\Large{$C$}}
-\uput[u](2.3,0.5){\Large{$B$}}
-\uput[ur](1.8,1){\Large{$(x_{2},y_{2})$}}
-\uput[l](4,0){\Large{$x$}}
-\uput[d](0,4){\Large{$y$}}
+% \uput[u](2.3,0.5){\Large{$B$}}
+\uput[ur](1.8,1){\Large{$B(x_{2},y_{2})$}}
+\uput[l](3.5,0){\Large{$x$}}
+\uput[d](0,3.5){\Large{$y$}}
 \uput[dl](0,0){\Large{$0$}}
 \end{pspicture}
 }
 \end{center}
 \end{figure}  
-Therefore, gradient is determined using the following equation:
+Dus, gradi\"ent word bereken met die volgende formule:
 
-\Identity{Gradiënt}{Gradiënt $m= \dfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$ or $= \dfrac{y_{1} - y_{2}}{x_{1} - x_{2}}$
- \\ [5pt] Remember to be consistent: $m \neq \dfrac{y_{1} - y_{2}}{x_{2} - x_{1}}$}
-\Tip{Remember: we can also use $m$ for the gradient of a line}
-\begin{wex}{Gradient between two points}{Find the gradient of the line between points E$(2;5)$ and F$(-3;9)$.}{
-\westep{Draw a sketch}
+\Identity{\begin{center}{Gradiënt $(m) = \dfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$ of $= \dfrac{y_{1} - y_{2}}{x_{1} - x_{2}}$}\end{center}}
+\textbf{Belangrik:} onthou om konsekwent te wees: $m \neq \dfrac{y_{1} - y_{2}}{x_{2} - x_{1}}$}
+% \Tip{Volgens konvensie gebruik ons $m$ vir die gradi\"ent van 'n reguitlyn}
+
+\par
+\mindsetvid{The gradient line}{VMbmr}
+
+\begin{wex}{Gradi\"ent tussen twee punte}{Vind die gradi\"ent van die lyn tussen twee punte E$(2;5)$ en F$(-3;9)$.}{
+\westep{Teken 'n skets}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.6267188)(6.6990623,3.6667187)
-\rput(3.0,-1.6267188){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-2)(3,5)}
-\psdots[dotsize=0.12](4.82,0.69328123)
-\psdots[dotsize=0.12](1.06,2.8732812)
-\psline[linewidth=0.04cm](4.84,0.67328125)(1.08,2.8532813)
-\usefont{T1}{ptm}{m}{n}
-\rput(6.324531,-1.3767188){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.3045313,3.4632812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.094531,0.5232813){$E~(2;5)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(1.2945312,3.0832813){$F~(-3;9)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.7445312,-1.8367188){$0$}
+\begin{pspicture}(0,-3.1267188)(6.6735935,3.1667187)
+\rput(3.0,-2.1267188){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-1)(3,5)}
+\psdots[dotsize=0.12](3.96,0.3532813)
+\psdots[dotsize=0.12](1.48,2.3732812)
+\psline[linewidth=1pt](4.0,0.30671874)(1.48,2.3867188)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.1,-1.8767188){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.2790625,2.9632812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.0590625,0.06328135){$E(2;5)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.2390624,2.6032813){$F(-3;9)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.85,-2.3){$0$}
 \end{pspicture} 
 }
 \end{center}
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
-Let the coordinates of $E$ be $(x_1;y_1)$ and the coordinates of $F$ be $(x_2;y_2)$.
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+Laat die ko\"ordinate van $E$ $(x_1;y_1)$ wees en die ko\"ordinate van $F$ $(x_2;y_2)$.
 \begin{equation*}
 x_1 = 2 \hskip2em y_1 = 5 \hskip2em x_2 = -3 \hskip2em y_2 = 9
 \end{equation*}
-\westep{Write down the formula for gradient}
+\westep{Skryf die formule neer vir gradi\"ent}
 \begin{equation*}
 m = \dfrac{y_2 - y_1}{x_2 - x_1}
 \end{equation*}
-\westep{Substitute known values}
+\westep{Vervang bekende waardes}
 \begin{equation*}
 \begin{array}{cl}
 m_{EF} &= \dfrac{9 - 5}{-3 - 2}\\[5pt]
 &= \dfrac{4}{-5}
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
-The gradient of $EF = \dfrac{4}{-5}$
+\westep{Skryf die finale antwoord}
+Die gradi\"ent van $EF = -\dfrac{4}{5}$
 
 }
 \end{wex}
 
 
-\begin{wex}{Gradient between two points}{Given $G(7;-9)$ and $H(x;0)$, with $m_{GH}= 3$, Find $x$.}{
-\westep{Draw a sketch}
+\begin{wex}{Gradi\"ent tussen twee punte}{Gegee $G(7;-9)$ en $H(x;0)$, met $m_{GH}= 3$. Vind $x$.}{
+\westep{Teken 'n skets}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.6867187)(7.1790624,3.7267187)
-\rput(3.0,1.3132813){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,2)}
-\psdots[dotsize=0.12](4.9,1.2932812)
-\psdots[dotsize=0.12](3.9,-0.74671876)
-\psline[linewidth=0.04cm](3.88,-0.76671875)(4.9,1.2732812)
-\usefont{T1}{ptm}{m}{n}
-\rput(6.324531,1.5632813){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.1445312,3.5232813){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.324531,1.6032813){$H~(x;0)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(4.134531,-0.99671876){$G~(7;-9)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.7445312,1.0432812){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(5.7745314,0.28984374){$m_{GH} = 3$}
+\begin{pspicture}(0,-2.6867187)(7.1790624,2.7267187)
+\rput(3.0,0.31328124){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm,Dx=2,Dy=2]{<->}(0,0)(-3,-3)(3,2)}
+\psdots[dotsize=0.12](5.48,0.35328126)
+\psdots[dotsize=0.12](4.62,-1.8467188)
+\psline[linewidth=1pt](4.64,-1.8267188)(5.46,0.35328126)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.2,0.4){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.1445312,2.5232813){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.5245314,0.6432812){$H~(x;0)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.574531,-2.0767188){$G~(7;-9)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.85,0.12328125){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(5.85,-0.71015626){$m_{GH} = 3$}
 \end{pspicture} 
 }
 \end{center}
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
-Laat die koördinate of $G$ wees $(x_1;y_1)$ en die koördinate van $H$ wees $(x_2;y_2)$.
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+Laat die koördinate van $G$ $(x_1;y_1)$ wees en die koördinate van $H$ $(x_2;y_2)$.
 \begin{equation*}
 x_1 = 7 \hskip2em y_1 = -9 \hskip2em x_2 = x \hskip2em y_2 = 0
 \end{equation*}
-\westep{Write down the formula for gradient}
+\westep{Skryf die formule vir gradi\"ent neer}
 \begin{equation*}
 m = \dfrac{y_2 - y_1}{x_2 - x_1}
 \end{equation*}
-\westep{Substitute values and solve for $x$}
+\westep{Vervang waardes en los op vir $x$}
 \begin{equation*}
 \begin{array}{cl}
 3 &= \dfrac{0 - (-9)}{x - 7}\\[5pt]
@@ -426,8 +435,8 @@ x &= 3 + 7\\
 &= 10 \\
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
-laat die koördinate van $H$ wees $(10;0)$.
+\westep{Skryf die finale antwoord neer}
+Die koördinate van $H$ is $(10;0)$.
 \vspace{2pt}
 \vspace{.1in}
 }
@@ -435,44 +444,40 @@ laat die koördinate van $H$ wees $(10;0)$.
 
 
 \begin{exercises}{}
-{
-\begin{enumerate}[noitemsep, label=\textbf{(\arabic*)} ]
-\item Find the gradient of $AB$ if
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $A(7;10)$ and $B(-4;1)$
-    \item $A(-5;-9)$ and $B(3;2)$
-    \item $A(x-3;y)$ and $B(x;y+4)$
-    \end{enumerate}
-
-\item If the gradient of $CD=\frac{2}{3}$, vind $P$ gegee
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
-    \item $C(16;2)$ en $D(8;P)$
-    \item $C(3;2P)$ en $D(9;14)$
-    \end{enumerate}
+\begin{enumerate}[label=\textbf{\arabic*}.]
+\item Vind die gradi\"ent van $AB$ as:
+ \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $A(7;10)$ en $B(-4;1)$
+\item $A(-5;-9)$ en $B(3;2)$
+\item $A(x-3;y)$ en $B(x;y+4)$
+\end{enumerate}
+\item Die gradi\"ent van  $CD=\frac{2}{3}$, vind $p$ as:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
+\item $C(16;2)$ en $D(8;p)$
+\item $C(3;2p)$ en $D(9;14)$
+\end{enumerate}
 \end{enumerate}
 
 \insertpracticeinfo{2}
 }
 \end{exercises}
-
-
 \subsection*{Reguitlyn}
-\Definition{Reguitlyn}{A straight line is a set of points with a constant gradient between any two of the points.}
-Consider the diagram below with points $A(x;y)$, $B(x_2;y_2)$ and $C(x_1;y_1)$. 
+\Definition{Reguitlyn}{'n Reguitlyn is 'n versameling punte met 'n konstante gradi\"ent tussen enige twee van die punte.}
+Beskou die diagram hieronder met punte $A(x;y)$, $B(x_2;y_2)$ en $C(x_1;y_1)$ wat op 'n reguitlyn l\^e. 
 \begin{center}
  \scalebox{1} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-3.0667188)(7.5290623,3.1067188)
-\rput(3.97,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
+\rput(3.97,-0.06671875){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=all,ticks=all,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
 \psdots[dotsize=0.12](3.39,0.47328126)
 \psdots[dotsize=0.12](4.57,2.2132812)
-\psline[linewidth=0.04cm](2.17,-1.3467188)(4.69,2.3932812)
+\psline[linewidth=1pt](2.17,-1.3467188)(4.69,2.3932812)
 \usefont{T1}{ptm}{m}{n}
 \rput(7.1545315,0.14328125){$x$}
 \usefont{T1}{ptm}{m}{n}
 \rput(4.2545314,2.9032812){$y$}
 \usefont{T1}{ptm}{m}{n}
-\rput(5.514531,2.1832812){$A(x;y)$}
+\rput(5.3,2.1832812){$A(x;y)$}
 \usefont{T1}{ptm}{m}{n}
 \rput(3.6745312,-0.33671874){$0$}
 \psdots[dotsize=0.12](2.51,-0.86671877)
@@ -483,65 +488,67 @@ Consider the diagram below with points $A(x;y)$, $B(x_2;y_2)$ and $C(x_1;y_1)$.
 \end{pspicture} 
 }
 \end{center}
-We have $m_{AB} = m_{BC}=m_{AC}$ \par
-and $m = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{y_1-y_2}{x_1-x_2}$\par
+Ons het $m_{AB} = m_{BC}=m_{AC}$ en $m = \dfrac{y_2-y_1}{x_2-x_1} = \dfrac{y_1-y_2}{x_1-x_2}$\par
 
-The general formula for a straight line is $\dfrac{y-y_1}{x-x_1} = \dfrac{y_2-y_1}{x_2-x_1}$ \\(where $(x;y)$ is any point on the line)\par
+Die algemene formule vir 'n reguitlyn is $\dfrac{y-y_1}{x-x_1} = \dfrac{y_2-y_1}{x_2-x_1}$ waar $(x;y)$ enige punt op die reguitlyn is.\par
 
-The standard form of the straight line equation is $y=mx+c$ where $m$ is the gradient and $c$ is the $y$-intercept.
+Hierdie formule kan ook as $y-y_1 = m(x-x_1)$ beskryf word.\par
+% This formula can also be written as 
 
-\begin{wex}{Finding the equation of a straight line}
- {Find the equation of the straight line through $P(-1;-5)$ and $Q(5;4)$.}
+Die standaardvorm van die reguitlynvergelyking is $y=mx+c$ waar $m$ die gradi\"ent is en $c$ die $y$-afsnit.
+
+\begin{wex}{Vind die vergelyking van 'n reguitlyn}
+ {Vind die vergelyking van 'n reguitlyn deur $P(-1;-5)$ en $Q(5;4)$.}
 {
-\westep{Draw a sketch}
+\westep{Teken 'n skets}
 \begin{center}
 \scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0667188)(6.5590625,3.1067188)
-\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.5090275,2.306018)
-\psline[linewidth=0.04cm](2.14,-0.52671874)(4.48,2.3132813)
+\begin{pspicture}(0,-3.0667188)(6.508125,3.1067188)
+\rput(3.0,-0.06671871){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(3,3)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](5.4890275,1.926018)
+\psline[linewidth=0.04cm](2.5,-2.5332813)(5.48,1.9467187)
 \usefont{T1}{ptm}{m}{n}
-\rput(6.184531,0.14328125){$x$}
+\rput(6.1335936,0.1432813){$x$}
 \usefont{T1}{ptm}{m}{n}
-\rput(3.2845314,2.9032812){$y$}
+\rput(3.233594,2.9032812){$y$}
 \usefont{T1}{ptm}{m}{n}
-\rput(4.8545313,2.6232812){$Q(5;4)$}
+\rput(5.563594,2.203281){$Q(5;4)$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.7045312,-0.33671874){$0$}
-\psdots[dotsize=0.12,dotangle=-5.9493704](2.1408823,-0.5438744)
+\rput(2.8245313,-0.265){$0$}
+\psdots[dotsize=0.12,dotangle=-5.9493704](2.4808824,-2.5638745)
 \usefont{T1}{ptm}{m}{n}
-\rput(1.7045312,-0.81671876){$P(-1;-5)$}
+\rput(1.4735936,-2.5167186){$P(-1;-5)$}
 \end{pspicture} 
 }
 \end{center}
-\westep{Assign values}
-Let $(x;y)$ be any point on the line. \\
-$x_1 = 5 \hskip2em y_1 = 4 \hskip2em x_1 = x \hskip2em y_2 = -5$
+\westep{Ken waardes toe}
+Laat $(x;y)$ enige punt op die lyn wees. \\
+$x_1 = -1 \hskip2em y_1 = -5 \hskip2em x_1 = 5 \hskip2em y_2 = 4$
 
 
-\westep{Write down the general formula}
+\westep{Skryf die algemene formule neer}
 \begin{align*}
 \dfrac{y-y_1}{x-x_1} &= \dfrac{y_2-y_1}{x_2-x_1}
 \end{align*}
-\westep{Substitute values and make $y$ the subject of the equation}
+\westep{Vervang waardes en maak $y$ die onderwerp van die vergelyking}
 \begin{align*}
  \dfrac{y-(-5)}{x-(-1)} &= \dfrac{4-(-5)}{5-(-1)} \\
 
- \dfrac{y+5}{x+1)} &= \dfrac{9}{6} = \dfrac{3}{2}\\
+ \dfrac{y+5}{x+1)} &= \dfrac{3}{2}\\
 2(y+5) &=3(x+1)\\
 2y +10&=3x+3\\
 2y&=3x-7\\
 y&=\frac{3}{2}x - \frac{7}{2}
 \end{align*}
-\westep{Write the final answer}
-The equation of the straight line is $y&=\frac{3}{2}x - \frac{7}{2}$.
+\westep{Skryf die finale antwoord neer}
+Die vergelyking van die reguitlyn is $y&=\frac{3}{2}x - \frac{7}{2}$.
 }
 
 
 \end{wex}
 
-\subsection*{Parallel and perpendicular lines}    
+\subsection*{Ewewydige en loodregte lyne}    
 %         \label{m39108*eip-332}We can use the gradient of a line to determine if two lines are parallel or perpendicular. If the lines are parallel (Figure~\ref{fig:parallelperpendicular}a) then they will have the same gradient, i.e. ${m}_{\mbox{AB}}={m}_{\mbox{CD}}$. If the lines are perpendicular (Figure~\ref{fig:parallelperpendicular}b) than we have: 
 %     \setcounter{subfigure}{0}
 %  	\begin{figure}[H] % horizontal\label{m39107*id63458}
@@ -572,115 +579,117 @@ The equation of the straight line is $y&=\frac{3}{2}x - \frac{7}{2}$.
 % \caption{a) Parallel and b) perpendicular lines}
 % \label{fig:parallelperpendicular}
 %  \end{figure}       
-Two lines have that run parallel to each other have equal gradients. \\
-In other words: $\mbox{gradient}_{AB}=\mbox{gradient}_{CD}$. \par
-If two lines intersect perpendicularly then the product of their gradients is equal to $-1$. \\
+Twee lyne wat ewewydig is aan mekaar het gelyke gradi\"ente. As twee lyne mekaar loodreg sny, dan is die produk van hulle gradi\"ente $-1$. \\
+% Met ander woorde: $\mbox{gradi\"ent}_{AB}=\mbox{gradi\"ent}_{CD}$. \par
 
-If line $WX \perp $ line $ YZ$ then $m_{WX} \times m_{YZ} = -1$.
+As $WX \perp $ lyn $ YZ$ sal $m_{WX} \times m_{YZ} = -1$. Loodregte lyne se gradi\"ente is die negatiewe inverses van mekaar.
 
+\par
 \mindsetvid{Parallel and perpendicular lines}{VMbon}
 
-\begin{wex}{Parallel lines}{Prove that the line $AB$ with points $A(2;4)$ and $B(8,16)$ is parallel to the line $y = 2x-2$.}{
-\westep{Draw a sketch}
+\begin{wex}{Ewewydige lyne}{Bewys lyn $AB$ met $A(0;2)$ en $B(2;6)$ is ewewydig aan die lyn $2x-y = 2$.}{
+\westep{Teken 'n skets}
 
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0667188)(6.5590625,3.1067188)
-\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.5090275,2.306018)
-\psline[linewidth=0.04cm](1.56,-1.7267188)(4.52,2.3132813)
-\usefont{T1}{ptm}{m}{n}
-\rput(6.184531,0.14328125){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.2845314,2.9032812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(4.9445314,2.6232812){$B(8;16)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.7845314,-0.31671876){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.8345313,0.94328123){$A(2;4)$}
-\psline[linewidth=0.04cm](1.9,-2.0667188)(4.86,1.9732813)
-\psdots[dotsize=0.12](3.4,0.79328126)
-\usefont{T1}{ptm}{m}{n}
-\rput(3.1945312,-0.69671875){$-2$}
-\rput(5.2145314,1.2232813){$y=2x-2$}
+\begin{pspicture}(0,-3.6067188)(6.5590625,3.6467187)
+\rput(3.0,-0.6067188){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(3,4)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.0290275,2.4060183)
+\psline[linewidth=1pt](1.9,-1.7867187)(4.52,3.3332813)
+\usefont{T1}{ppl}{m}{n}
+\rput(6.184531,-0.39671874){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.4045312,3.4432812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.6745315,2.3832812){$B(2;6)$}
+\usefont{T1}{ppl}{m}{n}
+\rput(2.8245313,-0.7967188){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.52,0.32328126){$A(0;2)$}
+\psline[linewidth=1pt](2.34,-2.8067188)(5.04,2.2532814)
+\psdots[dotsize=0.12](3.0,0.39328125)
+\usefont{T1}{ppl}{m}{n}
+\rput(5.55,1.6432812){$y=2x-2$}
 \end{pspicture} 
 }
 
 \end{center}
-Be careful - some lines may look parallel but are not!
+(Wees versigtig - soms, mag lyne ewewydig lyk terwyl hulle nie is nie!)
 
-\westep{Write down the formula for gradient}
+\westep{Skryf die formule vir gradi\"ent neer}
 \begin{equation*}
 m = \dfrac{y_2-y_1}{x_2-x_1}
 \end{equation*}
-\westep{Substitute values to find the gradient for line $AB$}
+\westep{Vervang waardes om die gradi\"ent van $AB$ te vind}
 \begin{equation*}
 \begin{array}{cl}
-m_{AB} &= \dfrac{16 - 4}{8 - 2}\\[5pt]
-&= \dfrac{12}{6}\\
+m_{AB} &= \dfrac{6-2}{2-0}\\[5pt]
+&= \dfrac{4}{2}\\
 &= 2
 \end{array}
 \end{equation*}
-\westep{Check that $y$ is in the standard form $y=mx+c$}
+\westep{Maak seker die vergelyking is in standaardvorm $y=mx+c$}
 \begin{equation*}
 \begin{array}{cl}
-y&=2x-2\\
-\therefore m_{y}&= 2
+2x-y& = 2\\
+y& = 2x-2\\
+\therefore m_{CD}&= 2
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 \begin{equation*}
 \begin{array}{cl}
-m_{AB} &= m_{y}\\
+m_{AB} &= m_{CD}\\
 
 \end{array}
 \end{equation*}
-therefore line $AB$ is parallel to $y=2x-2$.
+dus, lyn $AB$ is ewewydig aan $y=2x-2$.
 }
 \end{wex}
 
-Perpendicular lines have gradients that are the negative inverse of each other. This means that when you multiply the gradients together, the answer will be -1.: $-\frac{1}{m_{AB}}=m_{CD}$
 
-\begin{wex}{Perpendicular lines}{Line $AB$ is perpendicular to line $CD$. Find $y$ given $A(2;-3)$, $B(-2;6)$, $C(4;3)$ and $D(7;y)$.}{
-\westep{Draw a sketch}
+
+\begin{wex}{Loodregte lyne}{Lyn $AB$ is loodreg op lyn $CD$. Vind $y$ as gegee word $A(2;-3)$, $B(-2;6)$, $C(4;3)$ en $D(7;y)$.}{
+\westep{Teken 'n skets}
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0667188)(6.7390623,3.1067188)
-\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.089028,0.96601814)
-\psline[linewidth=0.04cm](1.62,-1.5267187)(5.68,2.5732813)
-\usefont{T1}{ptm}{m}{n}
-\rput(6.184531,0.14328125){$x$}
-\usefont{T1}{ptm}{m}{n}
-\rput(3.2845314,2.9032812){$y$}
-\usefont{T1}{ptm}{m}{n}
-\rput(1.3445313,2.4432812){$B(8;16)$}
-\usefont{T1}{ptm}{m}{n}
-\rput(2.6845312,-0.25671875){$0$}
-\usefont{T1}{ptm}{m}{n}
-\rput(4.264531,-0.7967188){$A(2;-3)$}
-\psline[linewidth=0.04cm](1.52,2.1732812)(4.2,-0.56671876)
-\psdots[dotsize=0.12](1.56,2.1732812)
-\psdots[dotsize=0.12](4.18,-0.52671874)
-\usefont{T1}{ptm}{m}{n}
-\rput(3.9845312,1.2232813){$C(4;3)$}
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.1,2.8132813)(5.12,-0.44671875)
-\usefont{T1}{ptm}{m}{n}
-\rput(5.914531,1.9032812){$D(7;y)$}
-\psdots[dotsize=0.12](5.12,2.0332813)
+\begin{pspicture}(0,-3.6267188)(7.9990625,3.6667187)
+\rput(3.0,-0.62671876){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(4,4)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.9890275,0.8660181)
+\psline[linewidth=0.04cm](0.98,-0.9267188)(6.58,1.5932814)
+\usefont{T1}{ppl}{m}{n}
+\rput(7.2745314,-0.53671867){$x$}
+\usefont{T1}{ppl}{m}{n}
+\rput(3.1745312,3.4632812){$y$}
+\usefont{T1}{ppl}{m}{n}
+\rput(1.5790626,2.6032813){$B(-2;6)$}
+\usefont{T1}{ppl}{m}{n}
+% \rput(2.6590624,-0.81671876){$0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.6745315,-2.0967188){$A(2;-3)$}
+\psline[linewidth=0.04cm](2.0,2.3132813)(4.02,-2.1067188)
+\psdots[dotsize=0.12](2.0,2.3532813)
+\psdots[dotsize=0.12](4.02,-2.1067188)
+\usefont{T1}{ppl}{m}{n}
+\rput(4.3745313,1.0){$C(4;3)$}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](6.52,3.3932812)(6.52,-3.4867187)
+\usefont{T1}{ppl}{m}{n}
+\rput(7.1745315,1.5){$D(7;y)$}
+\psdots[dotsize=0.12](6.52,1.5732813)
+\rput{23.284023}(0.24130535,-1.2977501){\psframe[linewidth=0.04,dimen=outer](3.44,0.10671873)(3.1,-0.23328127)}
 \end{pspicture} 
 }
 \end{center}
 
 
-\westep{Write the formula for the product of perpendicular gradients}
-\begin{equation*}
-m_{AB} \times m_{CD} = -1
-\end{equation*}
-\westep{Substitute values and solve for $y$}
+\westep{Skryf die verband neer tussen die gradi\"ente van loodregte lyne $AB en CD $}
+\begin{align*}
+m_{AB} \times m_{CD} &= -1\\
+\dfrac{y_B-y_A}{x_B-x_A} \times \dfrac{y_D-y_C}{x_D-x_C} &=-1
+\end{align*}
+\westep{Vervang waardes en los op vir $y$}
 \begin{equation*}
 \begin{array}{rl}
 \dfrac{6 - (-3)}{-2 -2} \times \dfrac{y - 3}{7 - 4} &= -1\\[5pt]
@@ -695,115 +704,117 @@ y &= \dfrac{4}{3} + 3\\[5pt]
 &= 4 \dfrac{1}{3}
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
-Therefore the coordinates of $D$ are $(7; 4\frac{1}{3})$.
+\westep{Skryf die finale antwoord}
+Dus, die ko\"ordinate van $D$ is $(7; 4\frac{1}{3})$.
 }
 \end{wex}
 
-\subsection*{Horizontal and vertical lines}
+\subsection*{Horisontale en vertikale lyne}
 
-A line that runs parallel to the $x$-axis is called a horizontal line and has a gradient of zero. This is
-because there is no vertical change in the gradient of the line:\par
-$m = \dfrac{\mbox{change in }y}{\mbox{change in }x} = \dfrac{0}{\mbox{change in }x} =0$\par
+'n Lyn wat ewewydig aan die $x$-as is, word 'n horisontale lyn genoem en het 'n gradi\"ent van zero, want daar is geen vertikale verandering in die helling van die lyn nie:\par
+\begin{equation*}
+m = \dfrac{\mbox{verandering in }y}{\mbox{verandering in }x} = \dfrac{0}{\mbox{verandering in }x} =0
+\end{equation*}
 
-A line runs parallel to the $y$-axis,is called a vertical line and its gradient is undefined. This is because there is no horizontal change in the gradient of the line:\par
-$m = \dfrac{\mbox{change in }y}{\mbox{change in }x} = \dfrac{\mbox{change in }y}{0}=$ undefined\par
 
-\subsection*{Collinear points}
+'n Lyn wat ewewydig loop aan die $y$-as, word 'n vertikale lyn genoem en sy gradi\"ent is ongedefinieerd, want daar is geen horisontale verandering in die helling van die lyn nie:\par
+\begin{equation*}
+ m = \dfrac{\mbox{verandering in }y}{\mbox{verandering in }x} = \dfrac{\mbox{verandering in }y}{0}= \mbox{ongedefinieerd}
+\end{equation*}
 
-Points are collinear if they lie on the same line. There are two methods to prove that points are collinear; the gradient method, and a
-longer method using the distance formula.
 
-If three points are collinear then the line joining them will have the same gradient at any point along the line.
-Therefore to prove collinearity, we must prove that two of the gradients between any of the three points are
-equal.
+\subsection*{Punte op 'n lyn}
 
-\begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Draw a sketch}
+'n Reguitlyn is 'n versameling punte met 'n konstante gradi\"ent tussen enige twee punte. Daar is verskeie metodes om te bewys dat punte op dieselfde reguitlyn l\^e, bv. die gradi\"ent metode en 'n langer metode wat die afstandsformule gebruik. 
+
+\begin{wex}{Punte op 'n lyn}{Bewys dat $A(-3;3)$, $B(0;5)$ en $C(3;7)$ op dieselfde reguitlyn l\^e.}{
+\westep{Stip die punte}
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
-\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
+\begin{pspicture}(0,-2.6667187)(6.4090624,2.7067187)
+\rput(3.01,-1.6667187){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-1)(3,4)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4790277,1.8660182)
 \usefont{T1}{ppl}{m}{n}
-\rput(6.0245314,-0.81671876){$x$}
+\rput(6.034531,-1.4167187){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(3.2845314,1.9032812){$y$}
+\rput(3.2945313,2.5032814){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.8945312,0.94328123){$B(0;5)$}
+\rput(3.8445313,0.8232812){$B(0;5)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.7845314,-1.3167187){$0$}
+\rput(2.8545313,-1.8767188){$0$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.2845312,0.16328125){$A(-3;3)$}
-\psdots[dotsize=0.12](1.22,-0.16671875)
-\psdots[dotsize=0.12](3.0,0.6532813)
+\rput(0.77453125,-0.13671875){$A(-3;3)$}
+\psdots[dotsize=0.12](1.53,-0.16671875)
+\psdots[dotsize=0.12](3.01,0.8332813)
 \usefont{T1}{ppl}{m}{n}
-\rput(4.684531,1.5432812){$C(3;7)$}
+\rput(5.3745313,1.8832812){$C(3;7)$}
 \end{pspicture} 
 }
 
 \end{center}
 
-\westep{Calculate two gradients between any of the three points}
+\westep{Bereken twee gradi\"ente tussen enige twee van die drie punte}
 \begin{equation*}
-m_{AB} = \frac{5-3}{0-(-3)} = \frac{2}{3}
+ \begin{array}{rll}
+m&=\dfrac{y_2-y_1}{x_2-x_1}&\\[6pt]
+m_{AB} &= \dfrac{5-3}{0-(-3)} &= \dfrac{2}{3}
+\end{array}
 \end{equation*}
-and
+en
 \begin{equation*}
 m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
 \end{equation*}
-\fbox{OR:}
+OF
 \begin{equation*}
 m_{AC} = \frac{3-7}{3-3} = \frac{-4}{-6}=\frac{2}{3}
 \end{equation*}
-and
+en
 \begin{equation*}
 m_{BC} = \frac{7-5}{3-0} = \frac{2}{3}
 \end{equation*}
-\westep{Explain your answer}
+\westep{Verduidelik jou antwoord}
 \begin{equation*}
-m_{AB} = m_{BC}(= m_{AC})
+m_{AB} = m_{BC}= m_{AC}
 \end{equation*}
-Therefore the points $A$, $B$ and $C$ are collinear.
+Dus, die punte $A$, $B$ en $C$ l\^e op dieselfde reguitlyn.
 }
 \end{wex}
 
-To prove that three points are collinear using the distance formula, we must calculate the
-distances between each pair of points and then provethat the sum of the two smaller distances
-equals the longest distance.
+Om te bewys die punte is reglynig met behulp van die afstandsformule, moet ons die afstande tussen elke paar punte bereken en dan bewys dat die som van die twee korter afstande gelyk is aan die langste afstand.
 
 
-\begin{wex}{Collinear points}{Prove that $A(-3;3)$, $B(0;5)$ and $C(3;7)$ are collinear.}{
-\westep{Draw a sketch}
+\begin{wex}{Punte op 'n reguitlyn}{Bewys dat $A(-3;3)$, $B(0;5)$ en $C(3;7)$ op dieselfde reguitlyn l\^e.}{
+\westep{Stip die punte}
 
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-2.0667188)(6.3990626,2.1067188)
-\rput(3.0,-1.0667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-1)(3,3)}
-\psdots[dotsize=0.12,dotangle=-5.9493704](4.4890275,1.3460182)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.32,-0.14671876)(2.98,0.63328123)
+\begin{pspicture}(0,-2.6667187)(6.4090624,2.7067187)
+\rput(3.01,-1.6667187){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-1)(3,4)}
+\psdots[dotsize=0.12,dotangle=-5.9493704](4.4790277,1.8660182)
 \usefont{T1}{ppl}{m}{n}
-\rput(6.0245314,-0.81671876){$x$}
+\rput(6.034531,-1.4167187){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(3.2845314,1.9032812){$y$}
+\rput(3.2945313,2.5032814){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.4,0.8){$B(0;5)$}
+\rput(3.8445313,0.6){$B(0;5)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.7845314,-1.3167187){$0$}
+\rput(2.8545313,-1.8767188){$0$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.0,0.16328125){$A(-3;3)$}
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.28,-0.48671874)(4.58,1.0332812)
-\psdots[dotsize=0.12](1.22,-0.16671875)
-\psdots[dotsize=0.15](3.0,0.6532813)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.14,0.7132813)(4.44,1.3332813)
+\rput(0.77453125,-0.13671875){$A(-3;3)$}
+\psdots[dotsize=0.12](1.53,-0.16671875)
+\psdots[dotsize=0.12](3.01,0.8332813)
 \usefont{T1}{ppl}{m}{n}
-\rput(4.684531,1.5432812){$C(3;7)$}
+\rput(5.1,1.8832812){$C(3;7)$}
+\psline[linewidth=1pt,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.65,-0.12671874)(2.93,0.7732813)
+\psline[linewidth=1pt,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(3.09,0.91328126)(4.39,1.8132813)
+\psline[linewidth=1pt,linestyle=dashed,dash=0.16cm 0.16cm,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4]{<->}(1.79,-0.42671874)(4.49,1.5332812)
 \end{pspicture} 
 }
+
 \end{center}
-\westep{Calculate the three distances $AB$, $BC$ and $AC$}
+\westep{Bereken die drie afstande $AB$, $BC$ en $AC$}
 \begin{equation*}
 d_{AB} = \sqrt{(-3 - 0)^2 + (3 - 5)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}
 \end{equation*}
@@ -813,50 +824,51 @@ d_{BC} = \sqrt{(0 - 3)^2 + (5 - 7)^2} = \sqrt{(-3)^2 + (-2)^2} = \sqrt{9 + 4} = 
 \begin{equation*}
 d_{AC} = \sqrt{((-3) - 3)^2 + (3 - 7)^2} = \sqrt{(-6)^2 + (-4)^2} = \sqrt{36 + 16} = \sqrt{52}
 \end{equation*}
-\westep{Find the sum of the two shorter distances}
+\westep{Vind die som van die twee korter afstande}
 \begin{equation*}
 d_{AB} + d_{BC} = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = \sqrt{4 \times 13} = \sqrt{52}
 \end{equation*}
-\westep{Explain your answer}
+\westep{Verduidelik jou antwoord}
 \begin{equation*}
 d_{AB} + d_{BC} = d_{AC}
 \end{equation*}
-therefore points $A$, $B$ and $C$ are collinear.
+dus, punte $A$, $B$ en $C$ l\^e op dieselfde reguitlyn.
 }
 \end{wex}
 
 \begin{exercises}{}
-{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
 
-\item Determine whether $AB$ is parallel, perpendicular or neither to $CD$ if:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-    \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(7;23)$.
-    \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$.
-    \item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$.
-    \end{enumerate}
-
-\item Determine whether the following points are collinear:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-    \item $E(0;3)$, $F(-2;5)$, $G(2;1)$.
-    \item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$.
-    \item $K(-6;2)$, $L(-3;1)$, $M(1;-1)$.
-    \end{enumerate}
-
-\item Points $P(-6;2)$, $Q(2;-2)$ and $R(-3;r)$ lie on a straight line. Find the value of $r$.
-
-\item Line $PQ$ with $P(-1;-7)$ and $Q(q;0)$ has a gradient of $1$. Find $q$.
+\item Bepaal of $AB$ ewewydig aan of loodreg op $CD$ is, of nie een van die twee nie:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(7;23)$
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(0;-4)$
+\item $A(3;-4)$, $B(5;2)$, $C(-1;-1)$, $D(1;2)$
 \end{enumerate}
+
+\item Bepaal of die volgende punte op dieselfde reguitlyne l\^e:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $E(0;3)$, $F(-2;5)$, $G(2;1)$
+\item $H(-3;-5)$, $I(-0;0)$, $J(6;10)$
+\item $K(-6;2)$, $L(-3;1)$, $M(1;-1)$
+\end{enumerate}
+\item Punte $P(-6;2)$, $Q(2;-2)$ en $R(-3;r)$ l\^e op 'n reguitlyn. Vind die waarde van $r$.
+\item Lyn $PQ$ met $P(-1;-7)$ en $Q(q;0)$ het 'n gradi\"ent van $1$. Vind $q$.
+\end{enumerate}
+\end{enumerate}
+
 \insertpracticeinfo{4}
-}
 \end{exercises}
 
 % Die volgende video bied ’n opsomming van die gradiënt van ’n lyn.
-
-
-\vspace{2pt}
-\vspace{.1in}
-\end{figure}      
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39108*uid993}
+% \textnormal{Gradient of a line}\vspace{.1in} \nopagebreak
+% \label{m39108*yt-media1}\label{m39108*yt-video1}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10110 )}
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{figure}      
 %          \section{ Midpoint of a line}
 %     \nopagebreak
 %%%             \label{m39119} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \includegraphics[width=0.75cm]{col11306.imgs/summary_video.png} &   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{} {(section shortcode: MG10111 )} \par 
@@ -864,95 +876,102 @@ therefore points $A$, $B$ and $C$ are collinear.
 %     
 %     
 
-\section{Middelpunt van ’n Lynstuk}
-\begin{activity}{Finding the mid-point of a line}
-On graph paper, accurately plot the points $P(2;1)$ and $Q(-2;2)$ and draw the line $PQ$.
+\section{Middelpunt van ’n lynstuk}
+\begin{Investigation}{Vind die middelpunt van 'n lynstuk}
+\item Stip punte $P(2;1)$ en $Q(-2;2)$ akkuraat op grafiekpapier en trek lyn $PQ$.
 \begin{itemize}
- \item Fold the piece of paper so that point $P$ is exactly on top of point $Q$
-\item Where the folded line intersects with line $PQ$, label point $S$
-\item Count the blocks and find the exact location of $S$
-\item Write down the coordinates of $S$
+ \item Vou die papier so dat punt $P$ presies op punt $Q$ val.
+\item Merk die punt waar die voulyn die lyn $PQ$ kruis as $S$.
+\item Tel die blokkies en vind presiese posisie van $S$.
+\item Skryf die ko\"ordinate van $S$ neer.
 \end{itemize}
 
-\end{activity}
-
-\mindsetvid{the midpoint of a line segment}{VMbpr}
-
+\end{Investigation}
 Die koördinate van die middelpunt $M(x;y)$ van ’n lyn tussen enige twee punte A en B met koördinate $A(x_1;y_1)$ en $B(x_2;y_2)$ word as volg bereken:
 
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
 \begin{center}
-\scalebox{.8}{
+\scalebox{0.9}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(0,0)(5,5)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(0,0)(5.5,5.5)
-\psline[linewidth=.05cm](0,0)(5,5)
-\uput[dl](0,0){\Large{$A (x_{1};y_{1})$}}
-\uput[u](0,-.2){\qdisk(0,0){3pt}}
-\uput[r](2.6,2.4){\Large{$M (X;Y)$}}
-\uput[u](2.5,2.3){\qdisk(0,0){3pt}}
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-2,-2)(5.5,5.5)
+\psline[linewidth=1pt](-2,-1)(5,5)
+\uput[l](-0.5,0.45){\Large{$A (x_{1};y_{1})$}}
+\uput[r](-0.5,0.45){\qdisk(0,0){2pt}}
+\uput[r](2.5,2.6){\Large{$M (x;y)$}}
+\uput[u](2.5,2.7){\qdisk(0,0){2pt}}
 \uput[ur](5,5){\Large{$B (x_{2};y_{2})$}}
-\uput[u](5,4.8){\qdisk(0,0){3pt}}
-\uput[l](6.3,0){\Large{$x$}}
-\uput[d](0,6.3){\Large{$y$}}
+\uput[u](5,4.8){\qdisk(0,0){2pt}}
+\uput[l](6.1,0){\Large{$x$}}
+\uput[d](0,6.2){\Large{$y$}}
+\uput[d](-0.2,0.1){\Large{$0$}}
 \end{pspicture}
 }
 \end{center}
 \end{figure}      
 
 \begin{eqnarray*}
-X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
-Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\  
+x & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+y & = & \frac{{y}_{1} + {y}_{2}}{2} \\  
 \end{eqnarray*}
-From this we obtain the mid-point of a line:
-\Identity{Midpoint}{Mid-point $M=(\dfrac{{x}_{1} + {x}_{2}}{2};\dfrac{{y}_{1}+{y}_{2}}{2}) $}
-
-\begin{wex}{Calculating the mid-point}
- {Calculate the coordinates of the mid-point $F(x;y)$ of the line between point $E(2;1)$ and point $G(-2;-2)$.}
+Hieruit kry ons die middelpunt van 'n lynstuk::
+% From this we obtain the mid-point of a line:
+\Identity{\begin{center}{Middelpunt $M(x;y)=(\dfrac{{x}_{1} + {x}_{2}}{2};\dfrac{{y}_{1}+{y}_{2}}{2}) $}\end{center}}
+\mindsetvid{the midpoint of a line segment}{VMbpr}
+\begin{wex}{Berekening van middelpunt}
+ {Bereken die ko\"ordinate van die middelpunt $F(x;y)$ van die lyn tussen punt $E(2;1)$ en punt $G(-2;-2)$.}
 {
-\westep{Draw a sketch}
+\westep{Teken 'n skets}
 \setcounter{subfigure}{0}
 \begin{figure}[H] % horizontal\label{m39107*id63458}
 \begin{center}
-\scalebox{.8}{
+\scalebox{1}{
 \begin{pspicture}(-5,-5)(5.5,5.5)
 % \psaxes{<->}(0,0)(5,5)
 % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1,gridlabels=0.0cm](0,0)(-3,-3)(3,3)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-3,-3)(3,3)
-\psline[linewidth=.05cm](-2,-2)(2,1)
+\psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-3,-3)(3,3)
+\psline[linewidth=1pt](-2,-2)(2,1)
 % \psline[linewidth=.05cm](0,0)(3,3.5)
 % \psline[linewidth=.05cm](0,0)(3,2)
 % \psline[linewidth=.05cm](0,0)(3,0.5)
 % \uput[ur](.9,3.5){\Large{$T$}}
-\uput[dl](-1,-2){\Large{$Q (-2,-2)$}}
-\uput[u](-2,-2.2){\qdisk(0,0){3pt}}
-\uput[r](0,-.7){\Large{$S$}}
-\uput[r](0,3.2){\Large{$y$}}
-\uput[r](3.2,0){\Large{$x$}}
-\uput[r](-0.4,-0.2){\Large{$0$}}
-\uput[r](0,-1.2){\Large{mid-point}}
-\uput[u](0,-.7){\qdisk(0,0){3pt}}
-\uput[ur](2,1){\Large{$P (2,1)$}}
-\uput[u](2,.8){\qdisk(0,0){3pt}}
+\uput[dl](-1,-2){$G(-2,-2)$}
+\uput[u](-2,-2.2){\qdisk(0,0){2pt}}
+\uput[r](0,-.7){$F(x;y)$}
+\uput[r](0,3.2){$y$}
+\uput[r](3,0){$x$}
+\uput[r](-0.4,-0.2){$0$}
+% \uput[r](0,-1.2){\Large{mid-point}}
+\uput[u](0,-.7){\qdisk(0,0){2pt}}
+\uput[ur](2,1){$E (2;1)$}
+\uput[u](2,.8){\qdisk(0,0){2pt}}
 % \uput[l](4.8,0){\Large{$x$}}
 % \uput[d](0,4.8){\Large{$y$}}
 \end{pspicture}
 }
 \end{center}
 \end{figure} 
-\westep{Substitute values into the mid-point formula}
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+\begin{equation*}
+x_1 = -2 \hskip2em y_1 = -2 \hskip2em x_1 = 2 \hskip2em y_2 = 1
+\end{equation*}
+\westep{Skryf die formule vir middelpunt neer}
+\begin{equation*}
+F(x;y)=(\dfrac{{x}_{1} + {x}_{2}}{2};\dfrac{{y}_{1}+{y}_{2}}{2})
+\end{equation*}
+\westep{Vervang waardes in die middelpunt formule}
 \begin{eqnarray*}
-X & = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
+x& = & \frac{{x}_{1} + {x}_{2}}{2} \\ 
 & = & \frac{-2 + 2}{2} \\ 
 & = & 0 \\ 
-Y & = & \frac{{y}_{1} + {y}_{2}}{2} \\ 
+y & = & \frac{{y}_{1} + {y}_{2}}{2} \\ 
 & = & \frac{-2 + 1}{2} \\ 
 & = & -\frac{1}{2} 
 \end{eqnarray*}
-\westep{Write the answer}
-The mid-point is at $F(0;-\frac{1}{2})$
-\westep{Confirm answer using distance formula}
+\westep{Skryf die antwoord}
+Die middelpunt is $F(0;-\frac{1}{2})$
+\westep{Bevestig die antwoord met die afstandformule}
 Dit kan bewys word dat die afstande vanaf die eindpunte na die middelpunt gelyk is: 
 \begin{eqnarray*}
 PS & = & \sqrt{{({x}_{1} - {x}_{2})}^{2} + {({y}_{1} - {y}_{2})}^{2}} \\ 
@@ -974,245 +993,240 @@ Daar kan gesien word dat, $PS=QS$ soos verwag is, dus is $F$ die middelpunt.
 }
 \end{wex}
 
-
-
-
+% 
 % Die volgende video verskaf ’n opsomming oor die berekening van die middelpunt van ’n lyn.
-
-
-\vspace{2pt}
-\vspace{.1in}
-\end{figure}      
+% \setcounter{subfigure}{0}
+% \begin{figure}[H] % horizontal\label{m39119*uid666}
+% \textnormal{Khan academy video on mid-point of a line}\vspace{.1in} \nopagebreak
+% \label{m39119*yt-media2}\label{m39119*yt-video2}
+% \raisebox{-5 pt}{ \includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} { (Video:  MG10112 )}
+% \vspace{2pt}
+% \vspace{.1in}
+% \end{figure}      
 %          \section{ Summary \& Exercises}
 %     \nopagebreak
 %%%             \label{m39167} $ \hspace{-5pt}\begin{array}{cccccccccccc}   \end{array} $ \hspace{2 pt}\raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} {(section shortcode: MG10113 )} \par 
 %     
 %     
 % 
-\begin{wex}{Calculating the mid-point}{Find the mid-point of line $AB$, given $A(6;2)$ and $B(-5;-1)$.}{
-\westep{Draw a sketch}
+\begin{wex}{Berekening van die middelpunt}{Vind die middelpunt van lynstuk $AB$, as $A(6;2)$ en $B(-5;-1)$ is.}{
+\westep{Maak 'n skets}
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0667188)(6.7990627,3.1067188)
-\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12](3.6,0.25328124)
-\psdots[dotsize=0.12](5.62,1.2532812)
-\psline[linewidth=0.04cm](1.6,-0.74671876)(5.6,1.2532812)
+\begin{pspicture}(0,-3.0667188)(7.8490624,3.1067188)
+\rput(3.23,-0.06671875){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-3)(4,3)}
+\psdots[dotsize=0.12](3.47,0.17328125)
+\psdots[dotsize=0.12](6.23,0.91328126)
+\psline[linewidth=1pt](0.79,-0.5467188)(6.25,0.91328126)
 \usefont{T1}{ppl}{m}{n}
-\rput(6.184531,0.14328125){$x$}
+\rput(7.2,0.14328125){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(3.2845314,2.9032812){$y$}
+\rput(3.5145311,2.9032812){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(5.844531,1.5032812){$A~(6;2)$}
+\rput(6.3745313,1.1232812){$A~(6;2)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.7045312,-0.33671874){$0$}
-\psdots[dotsize=0.12](1.62,-0.74671876)
+\rput(3.1,-0.25){$0$}
+\psdots[dotsize=0.12](0.75,-0.5467188)
 \usefont{T1}{ppl}{m}{n}
-\rput(3.7945313,0.66328126){$M(x;y)$}
+\rput(4.0445313,0.65){$M(x;y)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.3945312,-0.99671876){$B(-5;-1)$}
+\rput(0.84453124,-0.83671874){$B(-5;-1)$}
 \end{pspicture} 
 }
 
+
 \end{center}
 
-From the sketch we estimate that $M$ will lie in Quadrant I, with positive $x$- and $y$-coordinates.
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
-Let the mid-point be $M(x;y)$
+Vanaf die skets skat ons  $M$ sal in kwadrant I l\^e, met positiewe $x$- en $y$-ko\"ordinate.
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+Laat $M$ die punt $(x;y)$  wees
 \begin{equation*}
 x_1= 6 \hskip2em y_1=2 \hskip2em x_2=-5 \hskip2em y_2=-1
 \end{equation*}
-\westep{Write down the mid-point formula}
+\westep{Skryf die middelpunt formule neer}
 \begin{equation*}
-M(x;y) = \left(\frac{x_1+x_2}{2};\frac{y_1+y_2}{2}\right)
+M(x;y) = \Big(\frac{x_1+x_2}{2};\frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitute values and simplify}
+\westep{Vervang waardes en vereenvoudig}
 \begin{equation*}
-\left(\frac{6-5}{2};\frac{2-1}{2}\right) = \left(\frac{1}{2};\frac{1}{2}\right)
+\Big(\frac{6-5}{2};\frac{2-1}{2}\Big) = \Big(\frac{1}{2};\frac{1}{2}\Big)
 \end{equation*}
-\westep{Write the final answer}
-$M(\frac{1}{2};\frac{1}{2})$ is the mid-point of line $AB$.
+\westep{Skryf die finale antwoord}
+$M(\frac{1}{2};\frac{1}{2})$ is die middelpunt van lynstuk $AB$.
 }
 \end{wex}
 
-\begin{wex}{Using the mid-point formula}{The line joining $C(-2;4)$ and $D(x;y)$ has the mid-point $M(1;-3)$. Find point $D$.}{
-\westep{Draw a sketch}
+\begin{wex}{Gebruik die middelpuntformule}{ Die lynstuk wat $C(-2;4)$ en $D(x;y)$ verbind, het middelpunt $M(1;-3)$. Vind punt $D$.}{
+\westep{Maak 'n skets}
 \begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\scalebox{1} % Change this value to rescale the drawing.
 {
-\begin{pspicture}(0,-3.0795312)(6.5590625,3.1067188)
-\rput(3.0,-0.06671875){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-3,-3)(3,3)}
-\psdots[dotsize=0.12](3.56,-0.70671874)
-\psdots[dotsize=0.12](5.2,-2.7067187)
-\psline[linewidth=0.04cm](1.84,1.3532813)(5.2,-2.7067187)
+\begin{pspicture}(0,-4.224219)(7.5390625,4.224219)
+\rput(3.0,0.93078125){\psaxes[linewidth=1pt,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-3,-5.5)(4,3)}
+\psdots[dotsize=0.12](3.5,-0.58921874)
+\psdots[dotsize=0.12](5.0,-4.0492187)
+\psline[linewidth=1pt](1.96,2.9107811)(5.0,-4.0292187)
 \usefont{T1}{ppl}{m}{n}
-\rput(6.184531,0.14328125){$x$}
+\rput(7,1.2207812){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(3.2845314,2.9032812){$y$}
+\rput(3.2,4.020781){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(5.5245314,-2.95){$A~(6;2)$}
+\rput(5.65,-3.9992187){$D(x;y)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(2.7045312,-0.33671874){$0$}
-\psdots[dotsize=0.12](1.86,1.3332813)
+\rput(3.1245313,0.72078127){$0$}
+\psdots[dotsize=0.12](1.96,2.9107811)
 \usefont{T1}{ppl}{m}{n}
-\rput(4.3,-0.69671875){$M(x;y)$}
+\rput(4.25,-0.5992187){$M(1;-3)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.6945312,1.5){$B(-5;-1)$}
-\psline[linewidth=0.04cm](2.683925,0.52424794)(2.5044158,0.37533036)
-\psline[linewidth=0.04cm](2.7355843,0.45123214)(2.556075,0.30231455)
-\psline[linewidth=0.04cm](4.483925,-1.6357521)(4.3044157,-1.7846696)
-\psline[linewidth=0.04cm](4.5355844,-1.7087679)(4.3560753,-1.8576854)
+\rput(1.7145313,3.1207812){$C(-2;4)$}
+\psline[linewidth=1pt](2.638401,1.7359167)(2.3761587,1.5784051)
+\psline[linewidth=1pt](2.687574,1.6269872)(2.4253316,1.4694756)
+\psline[linewidth=1pt](4.478401,-2.4440832)(4.216159,-2.601595)
+\psline[linewidth=1pt](4.547574,-2.5530128)(4.2853317,-2.7105243)
 \end{pspicture} 
 }
 \end{center}
-From the sketch we estimate that $D$ will lie in Quadrant IV, with a positive $x$- and negative $y$-coordinate.
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
-Let the coordinates of $C$ be $(x_1;y_1)$ and the coordinates of $D$ be $(x_2;y_2)$.
+Vanaf die skets skat ons dat $D$ in kwadrant IV sal l\^e, dus met 'n positiewe $x$- en 'n negatiewe $y$-ko\"ordinaat.
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+Laat die ko\"ordinate van $C(x_1;y_1)$ en die ko\"ordinate van $D(x_2;y_2)$ wees.
 \begin{equation*}
 x_1=-2 \hskip2em y_1=4 \hskip2em x_2=x \hskip2em y_2=y
 \end{equation*}
-\westep{Write down the mid-point formula}
+\westep{Skryf die middelpuntformule neer}
 \begin{equation*}
-M(x;y) = \left(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\right)
+M(x;y) = \Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitue values and solve for $x$ and $y$}
+\westep{Vervang waardes en los op vir $x$ en $y$}
 \begin{equation*}
 \begin{array}{rllrl}
-1&=\frac{-2+x}{2}&\hskip10em&-3&=\frac{4+y}{2}\\
-1\times 2&=-2+x&&-3\times 2&=4+y\\
-2&=-2+x&&-6&=4+y\\
-x&=2+2&&y&=-6-4\\
-x&=4&&y&=-10\\
+1&=\dfrac{-2+x_2}{2}&\hskip10em&-3&=\dfrac{4+y_2}{2}\\[5pt]
+1\times 2&=-2+x_2&&-3\times 2&=4+y_2\\
+2&=-2+x_2&&-6&=4+y_2\\
+x_2&=2+2&&y_2&=-6-4\\
+x_2&=4&&y_2&=-10\\
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
-The coordinates of point $D$ are $(4;-10)$.
+\westep{Skryf die finale antwoord neer}
+Die ko\"ordinate van punt $D$ is $(4;-10)$.
 }
 \end{wex}
 
-\begin{wex}{Using the mid-point formula}{Points $E(-1;0)$ , $F(0;3)$ , $G(8;11)$ and $H(x;y)$ are points on the Cartesian plane. Find $H(x;y)$ if $EFGH$ is a parallelogram.}{
-\westep{Draw a sketch}
-\begin{center}
- \scalebox{1} % Change this value to rescale the drawing.
+\begin{wex}{Gebruik middelpuntformule}{Punte $E(-1;0)$ , $F(0;3)$ , $G(8;11)$ en $H(x;y)$ is op die Cartesiese vlak. Vind $H(x;y)$ as $EFGH$ 'n parallelogram is.}
 {
-\begin{pspicture}(0,-3.1267188)(7.2090626,3.1667187)
-\rput(1.69,-2.1267188){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,labels=none,ticks=none,ticksize=0.10583333cm]{<->}(0,0)(-1,-1)(5,5)}
-\psdots[dotsize=0.12](5.33,1.8132813)
-\psline[linewidth=0.04cm](1.71,-0.86671877)(5.35,1.8332813)
-\psdots[dotsize=0.12](1.69,-0.86671877)
+\westep{Maak 'n skets}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-3.6667187)(8.549063,3.7067187)
+\rput(1.87,-2.6667187){\psaxes[linewidth=0.04,arrowsize=0.05291667cm 2.0,arrowlength=1.4,arrowinset=0.4,ticksize=0.10583333cm,dx=0.5cm,dy=0.5cm]{<->}(0,0)(-1,-1)(5,6)}
+\psdots[dotsize=0.12](5.87,2.8332813)
+\psline[linewidth=0.04cm](1.89,-1.1667187)(5.85,2.8132813)
+\psdots[dotsize=0.12](1.87,-1.1667187)
 \usefont{T1}{ppl}{m}{n}
-\rput(6.8345313,-1.8767188){$x$}
+\rput(7,-2.4567187){$x$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.9145312,2.9632812){$y$}
+\rput(2.1545312,3.5032814){$y$}
 \usefont{T1}{ppl}{m}{n}
-\rput(5.974531,2.0632813){$G(8;11)$}
+\rput(6.534531,2.9832811){$G(8;11)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(1.9345312,-2.3967187){$0$}
+\rput(2,-2.8567188){$0$}
 \usefont{T1}{ppl}{m}{n}
-\rput(5.764531,0.38328126){$H(x;y)$}
+\rput(6.304531,1.4032812){$H(x;y)$}
 \usefont{T1}{ppl}{m}{n}
-\rput(0.76453125,-2.4367187){$E(-1;0)$}
-\psline[linewidth=0.04cm](1.65,-0.88671875)(1.25,-2.1067188)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.27,-2.1067188)(4.97,0.5732812)
-\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.33,1.7932812)(4.93,0.53328127)
-\psdots[dotsize=0.12](1.25,-2.1067188)
+\rput(0.76453125,-2.3967187){$E(-1;0)$}
+\psline[linewidth=0.04cm](1.87,-1.1467187)(1.35,-2.7267187)
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](1.43,-2.6267188)(5.55,1.3932812)
+\psdots[dotsize=0.12](1.37,-2.6667187)
 \usefont{T1}{ppl}{m}{n}
-\rput(0.96453124,-0.6767188){$F(0;3)$}
-\psline[linewidth=0.02cm](1.25,-2.0867188)(5.33,1.8132813)
-\psline[linewidth=0.02cm](1.71,-0.8467187)(4.97,0.59328127)
-\usefont{T1}{ptm}{m}{n}
-\rput(3.1045313,-0.07671875){$M$}
+\rput(0.9,-1.1567187){$F(0;3)$}
+\psline[linewidth=0.02cm](1.51,-2.4067187)(5.87,2.7932813)
+\psline[linewidth=0.02cm](1.89,-1.1867187)(5.55,1.4532813)
+\usefont{T1}{ppl}{m}{n}
+\rput(3.5445313,-0.27671874){$M$}
+\psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](5.87,2.7732813)(5.57,1.4932812)
 \end{pspicture} 
 }
 \end{center}
 
-Method: the diagonals of a parallelogram bisect each other, therefore the mid-point of $EG$
-will be the same as the mid-point of $FH$. We must first find the mid-point of $EG$. We can then use it to determine to coordinates of point $H$.
-\westep{Assign values to $(x_1;y_1)$ and $(x_2;y_2)$}
-Let the mid-point of $EG$ be $M(x;y)$
+Metode: die diagonale van 'n parallelogram halveer mekaar, daarom sal die middelpunt van $EG$ ook die middelpunt van
+$FH$ wees. Ons moet eerste die middelpunt van $EG$ kry en dit dan gebruik om die ko\"ordinate van $H$ te kry.
+\westep{Ken waardes toe aan $(x_1;y_1)$ en $(x_2;y_2)$}
+Laat $M(x;y)$ die middelpunt van $EG$ wees.
 \begin{equation*}
 x_1=-1 \hskip2em y_1=0 \hskip2em x_2=8 \hskip2em y_2=11
 \end{equation*}
-\westep{Write down the mid-point formula}
+\westep{Skryf die middelpuntformule neer}
 \begin{equation*}
- M(x;y) =\left(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\right)
+ M(x;y) =\Big(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\Big)
 \end{equation*}
-\westep{Substitue values calculate the coordinates of $M$}
+\westep{Vervang waardes en bereken die ko\"ordinate van  $M$}
 \begin{equation*}
-M(x;y) =\left(\frac{-1+8}{2}; \frac{0+11}{2}\right) = \left(\frac{7}{2};\frac{11}{2}\right)
+M(x;y) =\Big(\frac{-1+8}{2}; \frac{0+11}{2}\Big) = \Big(\frac{7}{2};\frac{11}{2}\Big)
 \end{equation*}
 
-\westep{Use the coordinates of $M$ to determine $H$}
-$M$ is also the mid-point of $FH$ so we use the mid-point formula
-$M(\frac{7}{2};\frac{11}{2}) = \left(\frac{x_1+x_2}{2}; \frac{y_1+y_2}{2}\right)$ and $F(0;3)$ to solve for $H(x;y)$
-\westep{Substitute values and solve for $x$ and $y$}
-
+\westep{Gebruik die ko\"odinate van $M$ om $H$ te vind}
+$M$ is ook 'n middelpunt van $FH$, so ons gebruik $M(\frac{7}{2};\frac{11}{2})$ en $F(0;3)$ om $H(x;y)$ te vind.
+\westep{Vervang waardes en los op vir $x$ en $y$}
 \begin{equation*}
 \begin{array}{rllrl}
-\frac{7}{2}&=\frac{0+x}{2}&\hskip10em&\frac{11}{2}&=\frac{3+y}{2}\\
-7&=x+0&&11&=3+y\\
-x&=7&&y&=8\\
+ M\left(\dfrac{7}{2};\dfrac{11}{2}\right) &=~\left(\dfrac{x_1+x_2}{2}; \dfrac{y_1+y_2}{2}\right)\\[8pt]
+\dfrac{7}{2}&=~\dfrac{0+x}{2}&\hskip10em&\dfrac{11}{2}&=~\dfrac{3+y}{2}\\
+7&=~x+0&&11&=~3+y\\
+x&=~7&&y&=~8\\
 \end{array}
 \end{equation*}
-\westep{Write the final answer}
+\westep{Skryf die finale antwoord}
 
-The coordinates of $H$ are $(7;8)$.
+Die ko\"ordinate van $H$ is $(7;8)$.
 }
 \end{wex}
-
-\Tip{Remember to draw sketches!}
-
+% \Tip{Remember to draw sketches!}
 \begin{exercises}{}
-{
 \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}. ]
-\item Find the mid-points of the following lines:
-    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-    \item $A(2;5)$, $B(-4;7)$
-    \item $C(5;9)$, $D(23;55)$
-    \item $E(x+2;y-1)$, $F(x-5;y-4)$
-    \end{enumerate}
-
-\item The mid-point $M$ of $PQ$ is $(3;9)$. Find $P$ if $Q$ is $(-2;5)$
-
-\item $PQRS$ is a parallelogram with the points $P(5;3)$, $Q(2;1)$ and $R(7;-3)$. Find point $S$.
-
-\item $MPNO$ is a parallelogram with the points $M(5;3)$, $N(2;1)$ and $O(7;-3)$. Find point $P$.
+\item Vind die middelpunt van die volgende lynstukke:
+  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item $A(2;5)$, $B(-4;7)$
+\item $C(5;9)$, $D(23;55)$
+\item $E(x+2;y-1)$, $F(x-5;y-4)$
 \end{enumerate}
 
-\insertpracticeinfo{4}
-}
+\item $M$, die middelpunt van $PQ$ is $(3;9)$. Vind $P$ as $Q$  $(-2;5)$ is.
+\item $PQRS$ is 'n parallelogram met punte $P(5;3)$, $Q(2;1)$ en $R(7;-3)$. Vind punt $S$.
+
+%\item $MPNO$ is 'n parallelogram met punte $M(5;3)$, $N(2;1)$ en $O(7;-3)$. Vind punt $P$.
+\end{enumerate}
+\insertpracticeinfo{3}
 \end{exercises}    
 
 \summary{}
 \begin{itemize}[noitemsep]
-\item A point is an ordered pair of numbers written as $(x;y)$.
-\item Distance is a measure of the length between two points.
-\item The formula for finding the distance between  any two points is: 
+\item 'n Punt is 'n geordende getallepaar geskryf as $(x;y)$.
+\item Afstand is 'n maatstaf van die lengte van die lyn tussen twee punte.
+\item Die formule van die afstand tussen twee punte is: 
 \begin{equation*}
 d=\sqrt{{({x}_{1}-{x}_{2})}^{2}+{({y}_{1}-{y}_{2})}^{2}}
 \end{equation*}
-\item The gradient between two points is determined by the ratio vertical change to horizontal change.
+\item Die gradi\"ent tussen twee punte is die verhouding tussen die vertikale verandering en die horisontale verandering.
 
 \item Die formule om die gradiënt van ’n lyn te vind: 
 \begin{equation*}
 m=\frac{{y}_{2}-{y}_{1}}{{x}_{2}-{x}_{1}}
 \end{equation*}
-\item A straight line is a set of points with a constant gradient between any two of the
-points.
-\item The standard form of the straight line equation is $y=mx+c$.
-\item The equation of a straight line can also be written as $y-y_1=mx+c$  or 
+\item 'n Reguitlyn is 'n versameling punte met 'n konstante gradi\"ent tussen enige twee van die punte.
+\item Die standaardvorm van 'n reguitlynvergelyking is $y=mx+c$.
+\item Die vergelyking van 'n reguitlyn kan ook geskryf word as
 \begin{equation*}
 \dfrac{y-y_1}{x-x_1}=\dfrac{y_2-y_1}{x_2-x_1}\end{equation*}
 \item As twee lyne parallel is, sal hulle dieselfde gradiënt hê.
 \item As twee lyne loodreg is op mekaar,
-dan het ons $-1$.
-\item For horizontal lines the gradient is equal to $0$.
-\item For vertical lines the gradient is undefined.
-\item Collinear points all lie on the same line.
+dan het ons die produk van die gradi\"ente gelyk aan $-1$.
+\item Die gradi\"ent van 'n horisontale lyn is $0$.
+\item Die gradi\"ent van 'n vertikale lyn is ongedefinieerd.
 \item Die formule om die middelpunt van die lyn tussen twee punte te vind: 
 \begin{equation*}
-M(x;y) = \left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
+M(x;y) = \Big(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\Big)
 \end{equation*}
 \end{itemize}
 
@@ -1221,128 +1235,131 @@ M(x;y) = \left(\frac{{x}_{1}+{x}_{2}}{2};\frac{{y}_{1}+{y}_{2}}{2}\right)
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item 
 Stel die volgende vorms op die Cartesiese vlak voor: 
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Driehoek $DEF$ met $D(1;2)$, $E(3;2)$ en $F(2;4)$ 
-    \item Vierhoek $GHIJ$ met $G(2;-1)$, $H(0;2)$, $I(-2;-2)$ en $J(1;-3)$
-    \item Vierhoek $MNOP$ met $M(1;1)$, $N(-1;3)$, $O(-2;3)$ en $P(-4;1)$ 
-    \item Vierhoek $WXYZ$ met $W(1;-2)$, $X(-1;-3)$, $Y(2;-4)$ en $Z(3;-2)$
-    \end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Driehoek $DEF$ met $D(1;2)$, $E(3;2)$ en $F(2;4)$ 
+\item Vierhoek $GHIJ$ met $G(2;-1)$, $H(0;2)$, $I(-2;-2)$ en $J(1;-3)$
+\item Vierhoek $MNOP$ met $M(1;1)$, $N(-1;3)$, $O(-2;3)$ en $P(-4;1)$ 
+\item Vierhoek $WXYZ$ met $W(1;-2)$, $X(-1;-3)$, $Y(2;-4)$ en $Z(3;-2)$
+\end{enumerate}
 \item 
 In die gegewe diagram is die hoekpunte van ’n veelhoek $F(2;0)$, $G(1;5)$, $H(3;7)$ en $I(7;2)$.
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39107*id63458}
-\begin{center}
-\scalebox{.8}{
-\begin{pspicture}(-5,-5)(5.5,5.5)
-% \psaxes{<->}(0,0)(5,5)
-% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-1,-1)(7,7)
-\pspolygon[linewidth=.05cm,fillstyle=solid,fillcolor=lightgray](2,0)(1,5)(3,7)(7,2)(2,0)
-% \psline[linewidth=.05cm](0,0)(3,3.5)
-% \psline[linewidth=.05cm](0,0)(3,2)
-% \psline[linewidth=.05cm](0,0)(3,0.5)
-% \uput[ur](.9,3.5){\Large{$T$}}
-\uput[d](2,-.2){\normalsize{$F (2;0)$}}
-\uput[ul](1.2,5){\normalsize{$G (1;5)$}}
-\uput[u](3,7){\normalsize{$H (3;7)$}}
-\uput[r](7,2){\normalsize{$I (7;2)$}}
-\uput[l](8,0){\Large{$x$}}
-\uput[d](0,8){\Large{$y$}}
-\end{pspicture}
-}
-\end{center}
-\end{figure}  
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item 
-    Wat is die lengtes van die sye van $FGHI$?
-    \item Is die teenoorstaande sye van $FGHI$ parallel?
-    \item Halveer die hoeklyne van $FGHI$ mekaar?
-    \item Watter tipe veelhoek is  $FGHI$ Gee redes vir jou antwoord.
-    \end{enumerate}
-\item 
- ’n Veelhoek
-$ABCD$ met hoekpunte $A(3;2)$, $B(1;7)$, $C(4;5)$ en $D(1;3)$ word gegee.
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item  Teken die veelhoek.
-    \item  Bepaal die sylengtes van die veelhoek.
-    \end{enumerate}
+    \setcounter{subfigure}{0}
+    \begin{figure}[H] % horizontal\label{m39107*id63458}
+      \begin{center}
+        \scalebox{.8}{
+          \begin{pspicture}(-5,-5)(5.5,5.5)
+            % \psaxes{<->}(0,0)(5,5)
+            % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-1,-1)(7,7)
+            \psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-1,-1)(7.5,7.5)
+            \pspolygon[linewidth=1pt](2,0)(1,5)(3,7)(7,2)(2,0)
+            \psdots(2,0)(1,5)(3,7)(7,2)
+            % \psline[linewidth=.05cm](0,0)(3,3.5)
+            % \psline[linewidth=.05cm](0,0)(3,2)
+            % \psline[linewidth=.05cm](0,0)(3,0.5)
+            % \uput[ur](.9,3.5){\Large{$T$}}
+            \uput[d](1.3,.6){\normalsize{$F (2;0)$}}
+            \uput[ul](1.2,5){\normalsize{$G (1;5)$}}
+            \uput[u](3,7){\normalsize{$H (3;7)$}}
+            \uput[r](7,2){\normalsize{$I (7;2)$}}
+            \uput[l](8,0){\Large{$x$}}
+            \uput[d](0,8){\Large{$y$}}
+            \uput[d](-0.2,0){\Large{$0$}}
+          \end{pspicture}
+        }
+      \end{center}
+    \end{figure}  
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Vind die lengtes van die sye van $FGHI$.
+\item Is die teenoorstaande sye van $FGHI$ parallel?
+\item Toon deur berekening of die hoeklyne van $FGHI$ mekaar halveer.
+\item Watter tipe veelhoek is  $FGHI$? Gee redes vir jou antwoord.
+\end{enumerate}
+\item  ’n Veelhoek $ABCD$ met hoekpunte $A(3;2)$, $B(1;7)$, $C(4;5)$ en $D(1;3)$ word gegee.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item  Teken die veelhoek.
+\item  Bepaal die sylengtes van die veelhoek.
+\end{enumerate}
 \item $ABCD$ is ’n veelhoek met hoekpunte $A(0;3)$, $B(4;3)$, $C(5;-1)$ en $D(-1;-1)$.
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Wys dat:
-	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-	\item $AD = BC$
-	\item $AB \parallel DC$
-	\end{enumerate}
-    \item Benoem $ABCD$?
-    \item Wys dat die hoeklyne $AC$ en $BD$ mekaar nie halveer nie.
-    \end{enumerate}
-\item $P$, $Q$, $R$ en $S$ is die punte $(-2;0)$, $(2;3)$, $(5;3)$, $(-3;-3)$ onderskeidelik.
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Wys dat:
-	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-	\item $SR = 2PQ$
-	\item $SR \parallel PQ$
-	\end{enumerate}
-    \item Bereken:
-	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-	\item $PS$
-	\item $QR$
-	\end{enumerate}
-    \item Watter tipe veelhoek is $PQRS$? Gee redes vir jou antwoord.
-    \end{enumerate}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Wys dat:
+\begin{enumerate}[noitemsep, label=\textbf{(\roman*)} ]
+\item $AD = BC$
+\item $AB \parallel DC$
+\end{enumerate}
+\item Benoem $ABCD$.
+\item Wys dat die hoeklyne $AC$ en $BD$ mekaar nie halveer nie.
+\end{enumerate}
+\item $P$, $Q$, $R$ en $S$ is die punte $(-2;0)$, $(2;3)$, $(5;3)$ en $(-3;-3)$ onderskeidelik.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Wys dat:
+\begin{enumerate}[noitemsep, label=\textbf{(\roman*)} ]
+\item $SR = 2PQ$
+\item $SR \parallel PQ$
+\end{enumerate}
+\item Bereken die lengte van:
+\begin{enumerate}[noitemsep, label=\textbf{(\roman*)} ]
+\item $PS$
+\item $QR$
+\end{enumerate}
+\item Watter tipe veelhoek is $PQRS$? Gee redes vir jou antwoord.
+\end{enumerate}
 \item $EFGH$ is ’n parallelogram met hoekpunte $E(-1;2)$, $F(-2;-1)$ en $G(2;0)$. Vind die koördinate van H deur gebruik te maak van die feit dat die hoeklyne van ’n parallelogram mekaar halveer.\newline
-\item  
-$PQRS$ is ’n vierhoek met punte $P(0;-3)$ ; $Q(-2;5)$ ; $R(3;2)$ en $S(3;-2)$  in die Cartesiese vlak.
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Vind die lengte van $QR$.
-    \item Bepaal die gradiënt van $PS$.
-    \item Vind die middelpunt van $PR$.
-    \item Is $PQRS$  ’n parallelogram? Verskaf redes vir jou antwoord.
-    \end{enumerate}
-\item $A(-2;3)$ en $B(2;6)$ is punte op die Cartesiese vlak. $C(a;b)$ is die middelpunt van $AB$.Vind die waardes
+\item $PQRS$ is ’n vierhoek met punte $P(0;-3)$ ; $Q(-2;5)$ ; $R(3;2)$ en $S(3;-2)$  in die Cartesiese vlak.
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Vind die lengte van $QR$.
+\item Bepaal die gradiënt van $PS$.
+\item Vind die middelpunt van $PR$.
+\item Is $PQRS$  ’n parallelogram? Verskaf redes vir jou antwoord.
+ \end{enumerate}
+\item $A(-2;3)$ en $B(2;6)$ is punte op die Cartesiese vlak. $C(a;b)$ is die middelpunt van $AB$. Vind die waardes
 van $a$ en $b$.
-\item 
-Beskou: Driehoek $ABC$ met hoekpunte $A(1; 3)$ , $B(4;1)$ en $C (6; 4)$:
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Skets die driehoek $ABC$ op die Cartesiese vlak. 
-    \item Wys dat $ABC$ is ’n gelykbenige driehoek is.
-    \item Bepaal die koördinate van $M$, die middelpunt van $AC$.
-    \item Bepaal die gradiënt van $AB$.
-    \item Toon aan dat die volgende punte saamlynig is: $A$, $B$ en $D(7;-1)$
-    \end{enumerate}
-\item In die diagram, $A$ is die punt $(-6;1)$ en $B$ is die punt $(0;3)$
-\setcounter{subfigure}{0}
-\begin{figure}[H] % horizontal\label{m39107*id63458}
-\begin{center}
-\scalebox{.8}{
-\begin{pspicture}(-5,-5)(5.5,5.5)
-% \psaxes{<->}(0,0)(5,5)
-% \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
-\psaxes[linewidth=1pt,labels=none,ticks=none]{->}(0,0)(-10,-1)(1,7)
-\psline[linewidth=.05cm](-6,1)(0,3)
-% \psline[linewidth=.05cm](0,0)(3,3.5)
-% \psline[linewidth=.05cm](0,0)(3,2)
-% \psline[linewidth=.05cm](0,0)(3,0.5)
-% \uput[ur](.9,3.5){\Large{$T$}}
-\uput[d](-6,1){\Large{$A (-6;1)$}}
-\uput[d](-5.9,1.2){\qdisk(0,0){3pt}}
-\uput[ul](-.2,3){\Large{$B (0;3)$}}
-\uput[d](0,3.2){\qdisk(0,0){3pt}}
-\uput[l](1.8,0){\Large{$x$}}
-\uput[d](0,8){\Large{$y$}}
-\end{pspicture}
-}
-\end{center}
-\end{figure} 
-    \begin{enumerate}[noitemsep, label=\textbf{\alph*}. ] 
-    \item Vind die vergelyking van die lyn $AB$ 
-    \item Bereken die lengte van $AB$
+\item Beskou: $\triangle ABC$ met hoekpunte $A(1; 3)$ , $B(4;1)$ en $C (6; 4)$:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Skets die driehoek $ABC$ op die Cartesiese vlak. 
+\item Wys dat $ABC$ is ’n gelykbenige driehoek is.
+\item Bepaal die koördinate van $M$, die middelpunt van $AC$.
+\item Bepaal die gradiënt van $AB$.
+\item Toon aan dat die volgende punte op dieselfde reguitlyn l\^e: $A$, $B$ en $D(7;-1)$
+\end{enumerate}
+\item In die diagram, is $A$ die punt $(-6;1)$ en $B$ is die punt $(0;3)$:
+    \setcounter{subfigure}{0}
+    \begin{figure}[H] % horizontal\label{m39107*id63458}
+      \begin{center}
+        \scalebox{.8}{
+          \begin{pspicture}(-5,-5)(5.5,5.5)
+            % \psaxes{<->}(0,0)(5,5)
+            % \psgrid[gridcolor=lightgray,linecolor=lightgray,subgriddiv=1](0,0)(-10,-1)(1,7)
+            \psaxes[linewidth=1pt,labels=all,ticks=all]{<->}(0,0)(-10,-1)(1,7)
+            \psline[linewidth=.05cm](-6,1)(0,3)
+            % \psline[linewidth=.05cm](0,0)(3,3.5)
+            % \psline[linewidth=.05cm](0,0)(3,2)
+            % \psline[linewidth=.05cm](0,0)(3,0.5)
+            % \uput[ur](.9,3.5){\Large{$T$}}
+            \uput[d](-6,1){\Large{$A (-6;1)$}}
+            \uput[d](-5.9,1.2){\qdisk(0,0){3pt}}
+            \uput[ul](-.2,3){\Large{$B (0;3)$}}
+            \uput[d](0,3.2){\qdisk(0,0){3pt}}
+            \uput[l](1.5,0){\Large{$x$}}
+            \uput[d](0,7.5){\Large{$y$}}
+            \uput[d](-0.2,0.1){\Large{$0$}}
+          \end{pspicture}
+        }
+      \end{center}
+    \end{figure} 
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+\item Vind die vergelyking van die lyn $AB$. 
+\item Bereken die lengte van $AB$.
 % \item  $A'$ is the image of $A$ and $B'$ is the image of $B$. Both these images are obtain by applying the transformation: $(x;y)\to(x - 4;y - 1)$. Give the coordinates of both $A'$ and $B'$
 % \item Find the equation of $A'B'$
 % \item Calculate the length of $A'B'$
 % \item Can you state with certainty that $AA'B'B$ is a parallelogram? Justify your answer.
-    \end{enumerate}
 \end{enumerate}
-
-\insertpracticeinfo{14}
+\item $\triangle PQR$ het hoekpunte $P(1;8)$, $Q(8;7)$ en $R(7;0)$.  Wys deur berekening dat $\triangle PQR$ 'n reghoekige gelykbenige driehoek is.
+\item $\triangle ABC$ het hoekpunte $A(-3;4)$, $B(3;-2)$ en $R(-5;-2)$. $M$ is die middelpunt van $AC$ en $N$ die middelpunt van $BC$. Gebruik $\triangle ABC$ om die middelpuntstelling deur analitiese meetkundige metodes te bewys. 
+\end{enumerate}
+\insertpracticeinfo{12}
+% \
+% \par \raisebox{-5 pt}{\includegraphics[width=0.5cm]{col11306.imgs/summary_www.png}} Kry die oplossing met die kortkodes:
+% \par \begin{tabular}[h]{cccccc}
+% (1.) lgv  &  (2.) liZ  &  (3.) liB  &  (4.) lac  &  (5.) lax  &  (6.) laa  &  (7.) laY  &  (8.) lag  &  (9.) la4  &  (10.) l4o  & \end{tabular}
 \end{eocexercises}

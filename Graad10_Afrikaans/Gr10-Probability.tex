@@ -1,19 +1,20 @@
 \chapter{Waarskynlikheid}\fancyfoot[LO,RE]{Fokus Area: Wiskunde}
-
-\section{Inleiding}
-Ons gebruik waarskynlikheid om gebeuertenisse met onsekerheid te beskrywe. Wanner mens 'n sny brood laat val, dan weet jy nie of dit met die botterkant bo of onder gaan land nie. Wanneer jou voorkeur-sportspan speel weet jy nie of hulle gaan wen of verloor nie. Wanneer die weerman aandui dat daar 'n $40\%$ kans is vir re\"en more is, dan mag jy nat word of nie.  Onsekerheid kom tot 'n mate voor in byna elke gebeurtenis om ons en in elke besluit wat ons maak.
+% 
+% \section{Inleiding}
+Ons gebruik waarskynlikheid om gebeuertenisse met onsekerheid te beskrywe. Wanner mens 'n sny brood laat val, dan weet jy nie of dit met die botterkant bo of onder gaan land nie. Wanneer jou voorkeur-sportspan speel weet jy nie of hulle gaan wen of verloor nie. Wanneer die weerman aandui dat daar 'n $40\%$ kans is vir re\"en more is, dan mag jy nat word of nie.  Onsekerheid kom tot 'n mate voor in byna elke gebeurtenis om ons en in elke besluit wat ons maak.\par
 
 Ons sal in hierdie hoofstuk sien dat al hierdie onsekerhede beskryf kan word deur gebruik van die reels van waarskynlikheid en dat ons definitiewe besluite kan neem oor onsekere prosesse.
+\par
 
 
-\section{Definisies}
-Ons gaan drie voorbeelde gebruik om jou te help om die verskillende terme in waarskynlikheidsteorie te verstaan: 'n muntstuk opskiet, dobbelstene rol en 'n sokkerwedstryd.
+Ons gaan drie voorbeelde gebruik om jou te help om die verskillende terme in waarskynlikheidsteorie te verstaan: 'n muntstuk opskiet, dobbelstene rol en 'n sokkerwedstryd.\par
+\chapterstartvideo{VMbxk}
 
 \Definition{Eksperiment}{'n Eksperiment verwys na 'n proses met onsekerheid}
 
 \Definition{Uitslag}{Die uitslag van 'n eksperiment is 'n enkele resultaat van daardie eksperiment.}
 
-\paragraph{Eksperiment 1} 'n Muntstuk word opgeskiet en dit land met of kruis (K) of munt (M) bo.
+\paragraph{Eksperiment 1} 'n Muntstuk word opgeskiet en dit land met of kruis (K) of munt (M) bo. 'n Voorbeeld van die uitslag van 'n muntstuk opskiet: dit land met munt bo:
 
 \def\coinheads{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{H}};}
 \def\cointails{\draw (0,0) circle (1cm); \draw (0,0) circle (0.8cm); \draw (0,0) node {\Huge\textbf{T}};}
@@ -24,10 +25,10 @@ Ons gaan drie voorbeelde gebruik om jou te help om die verskillende terme in waa
       \coinheads
     \end{tikzpicture}
   \end{center}
-  \caption{'n Voorbeeld van die uitslag van 'n muntstuk opskiet: dit land met munt bo.}
+%   \caption{}
 \end{figure}
 
-\paragraph{Eksperiment 2} Twee dobbelstene word gerol en die aantal kolletjies bymekaar getel. 
+\paragraph{Eksperiment 2} Twee dobbelstene word gerol en die aantal kolletjies bymekaar getel. 'n Voorbeeld van die uitslag van twee dobbelstene wat gerol word:
 
 \begin{figure}[h]
   \begin{center}
@@ -36,16 +37,17 @@ Ons gaan drie voorbeelde gebruik om jou te help om die verskillende terme in waa
       \makedie{5}{shift={(1,0)},rotate=-20}
     \end{tikzpicture}
   \end{center}
-  \caption{'n Voorbeeld van die uitslag van twee dobbelstene wat gerol word.}
+%   \caption{}
 \end{figure}
 
-\paragraph{Eksperiment 3} Twee sokkerspanne speel 'n wedstryd en ons stel belang in die eindtelling.
+\paragraph{Eksperiment 3} Twee sokkerspanne speel 'n wedstryd en ons stel belang in die eindtelling.'n Voorbeeld van die uitslag van 'n sokkerwedstryd:
 
 \begin{figure}[h]
   \begin{center}
-    \textbf{FIGURE: Sokkertelbord}
-  \end{center}
-  \caption{'n Voorbeeld van die uitslag van 'n sokkerwedstryd.}
+    \includegraphics[width=3in]{Gr10-Probability-images/5996076302_412ec8d8d0_o.jpg}
+ \\
+  \begin{caption*}{(prentjie deur apasciuto on Flickr.com)}\end{caption*}
+ \end{center}
 \end{figure}
 
 \Definition{Monsterrruimte}{Die monsterruimte van 'n versameling is die versameling van al die moontlike uitslae van daardie eksperiment. Die monsterruimte word aangedui deur die simbool \(S\) en die grootte van die monsterruimte (die som van al die moontlike uitkomste) word aangedui deur \(n(S)\).}
@@ -54,7 +56,7 @@ Selfs al stel ons gewoonlik net belang in die enkele uitkoms van 'n eksperiment,
 
 \paragraph{Eksperiment 1} Aangesien 'n muntstuk net op twee maniere kan land (ons ignoreer die waarskynlikheid dat die munstuk op sy kant kan land),  is die monsterruimte die versameling \(S=\{\mbox{H}; \mbox{T}\}\). Die grootte van die monsterruimte is \(n(S)=2\).
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
   \begin{tikzpicture}
     \begin{scope}[xshift=-1.5cm]
@@ -66,11 +68,11 @@ Selfs al stel ons gewoonlik net belang in die enkele uitkoms van 'n eksperiment,
     \draw (-3, -1.5) rectangle (3, 1.5) node[anchor=south east] {$S$};
   \end{tikzpicture}
   \end{center}
-  \caption{Monsterruimte van 'n munstuk opskiet}
+%   \caption{Sample space of a coin toss.}
 \end{figure}
 
 \paragraph{Eksperiment 2} Elkeen van die dobbelstene kan land op 'n nommer van $1$ tot $6$. In hierdie eksperiment is die monsterruimte van al die moontlike uitkomste elke moontlike kombinasie van die $6$ nommers op die eerste dobbelsteen met die $6$ nommers op die tweede dobbelsteen. Dit gee 'n totaal van \(n(S) = 6 \times 6
-= 36\) uitkomste. Die figuur hieronder wys al die uitkomste in die monsterruimte.
+= 36\) uitkomste. Die figuur hieronder wys al die uitkomste in die monsterruimte:
 
 \begin{figure}[h]
 \begin{center}
@@ -89,10 +91,10 @@ Selfs al stel ons gewoonlik net belang in die enkele uitkoms van 'n eksperiment,
   \end{scope}
 \end{tikzpicture}
 \end{center}
-  \caption{Monsterruimte van die rol van twee dobbelstene}
+%   \caption{Monsterruimte van die rol van twee dobbelstene}
 \end{figure}
 
-\paragraph{Eksperiment 3} Elke sokkerspan kan 'n heelgetal telling kry vanaf $0$ opwaarts. Ons verwag gewoonlik nie 'n ho\"er telling as $5$ doele nie, maar daar is geen rede hoekom dit nie kan gebeur nie. Die monsterruimte van hierdie eksperiment bestaan dus uit al die moontlike kombinasies van twee nie-negatiewe heelgetalle. Die figuur hieronder wys al die moontlikhede. Ons begrens nie die tellings van enige span nie, dus is hierdie monsterrumte oneindig groot.
+\paragraph{Eksperiment 3} Elke sokkerspan kan 'n heelgetal telling kry vanaf $0$ opwaarts. Ons verwag gewoonlik nie 'n ho\"er telling as $5$ doele nie, maar daar is geen rede hoekom dit nie kan gebeur nie. Die monsterruimte van hierdie eksperiment bestaan dus uit al die moontlike kombinasies van twee nie-negatiewe heelgetalle. Die figuur hieronder wys al die moontlikhede. Ons begrens nie die tellings van enige span nie, dus is hierdie monsterrumte oneindig groot:
 
 \begin{figure}[h]
 \begin{center}
@@ -114,7 +116,7 @@ Selfs al stel ons gewoonlik net belang in die enkele uitkoms van 'n eksperiment,
     \draw (6cm, 0.5cm) node[anchor=south east] {$S$};
   \end{tikzpicture}
 \end{center}
-  \caption{Monsterruimte van die eindtelling van 'n sokkerwedstryd.}
+%   \caption{Monsterruimte van die eindtelling van 'n sokkerwedstryd.}
 \end{figure}
 
 \Definition{Gebeurtenis}{'n Gebeurtenis is 'n spesifieke versameling van uitkomste van 'n eksperiment waarin jy belangstel. 'n Gebeurtenis word aangedui deur die letter \(E\) en die aantal uitkomste van die gebeurtenis met \(n(E)\).}
@@ -169,41 +171,41 @@ Hierdie gebeurtenis-versameling is oneindg groot.
 \item 'n Waarskynlikheid van $0,5$ beteken dat die gebeurtenis die helfte van die tyd sal plaasvind, of $1$ keer uit elke $2$.
 \end{itemize}
 
-\mindsetvid{Calculating probabilities}{VMbzp}
+
 
 Wanneer al die moontlike uitkomste van 'n eksperiment ewekansig is kan ons die pesiese teoretiese waarskynlikheid van die gebeurtenis bereken. Die waarskynlikheid van 'n gebeurtenis is die verhouding tussen die aantal uitkomste van die eksperiment en die grootte van die monsterruimte.
-\[P(E) = \frac{n(E)}{n(S)}\]
+\[P(E) = \frac{n(E)}{n(S)}\] \par
 
+\mindsetvid{Calculating probabilities}{VMbzp}
 \begin{wex}{Teoretiese waarskynlikhede}{
 Wat is die teoretiese waarskynlikheid van elk van die gebeurtenisse in die eerste twee van ons drie eksperimente?
 }{
   \westep{Skryf die grootte van die monsterruimte neer}
 
-  \begin{itemize}
-  \item[] eksperiment 1: $n(S) = 2$
-  \item[] eksperiment 2: $n(S) = 36$
-  \end{itemize}
+  
+  Eksperiment 1: $n(S) = 2$\\
+ Eksperiment 2: $n(S) = 36$\\
+  
   
   \westep{Skryf die grootte van die gebeurtenis-versameling neer}
 
-  \begin{itemize}
-  \item[] eksperiment 1: $n(E) = 1$
-  \item[] eksperiment 2: $n(E) = 5$
-  \end{itemize}
+
+  Eksperiment 1: $n(E) = 1$\\
+ Eksperiment 2: $n(E) = 5$\\
+
 
   \westep{Bereken die teoretiese waarskynlikheid}
 
-  \begin{itemize}
-  \item[] eksperiment 1: $P(E) = \frac{n(E)}{n(S)} = \frac{1}{2} = 0,5$
-  \item[] eksperiment 2: $P(E) = \frac{n(E)}{n(S)} = \frac{5}{36} = 0,13\dot{8}$
-  \end{itemize}
+
+  Eksperiment 1: $P(E) = \frac{n(E)}{n(S)} = \frac{1}{2} = 0,5$\\
+  Eksperiment 2: $P(E) = \frac{n(E)}{n(S)} = \frac{5}{36} = 0,13\dot{8}$\\
 }
 \end{wex}
 
 Let daarop dat ons nie die teoretiese waarskynlikheid van die derde eksperiment in ag neem nie. Die derde eksperiment verskil van die eerste twee op 'n belangrike wyse, naamlik dat al die moontlike uitkomste (eindtellings) nie ewekansig is nie. Ons weet, byvoorbeeld, dat 'n sokkertelling van $1$--$1$ vry algemeen voorkom, terwyl 'n telling van $11$--$15$ uiters selde voorkom. Omdat al die uitkomste nie ewekansig is nie, kan ons nie die verhouding tussen \(n(E)\) en \(n(S)\) gebruik om die teoretiese waarskynlikheid van 'n span om te wen te bereken nie.
- (\textbf{Interessante feit:} Die rekord vir die meeste doele aangeteken deur beide spanne in die FIFA wereldbeker is $12$. Hierdie het gebeur in $1954$ in die wedstryd tussen Oostenryk en Switserland, waar die eindtelling $7$--$5$ was.)
+%  (\textbf{Interessante feit:} Die rekord vir die meeste doele aangeteken deur beide spanne in die FIFA wereldbeker is $12$. Hierdie het gebeur in $1954$ in die wedstryd tussen Oostenryk en Switserland, waar die eindtelling $7$--$5$ was.)
 
-\begin{exercises}{Teoretiese Waarskynlikheid}
+\begin{exercises}{}
 {
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
   \item 'n Sak bevat $6$ rooi, $3$ blou, $2$ groen en $1$ wit
@@ -224,7 +226,7 @@ Let daarop dat ons nie die teoretiese waarskynlikheid van die derde eksperiment 
     \item 'n nommer kleiner as $4$
     \end{enumerate}
 
-  \item Ewe getalle in die interval $2$--$100$ word op kaarte geskryf. Wat is
+  \item Ewe getalle in die interval $2$ tot $100$ word op kaarte geskryf. Wat is
     die waarskynlikheid om 'n veelvoud van $5$ op 'n lukraak wyse te kies?
   \end{enumerate}
 
@@ -236,38 +238,35 @@ Let daarop dat ons nie die teoretiese waarskynlikheid van die derde eksperiment 
 
 \Definition{Relatiewe frekwensie}{Die relatiewe frekwensie van 'n gebeurtenis word gedefinieer as die aantal kere wat die gebeurtenis voorkom in 'n aantal eksperimente, gedeel deur die aantal eksperimente.}
 
-Die relatiewe frekwensie is 'n eksperimentele syfer, nie 'n teoretiese syfer nie. 'n Eksperiment moet 'n aantal kere herhaal word en die voorkoms van die gebeurtenis in die gebeurtenis-veresameling getel word. Omdat dit eksperimenteel is, is dit moontlik om telkens verskillende relatiewe frekwensies te kry met herhaling van die eksperiment.
+Die relatiewe frekwensie is 'n eksperimentele syfer, nie 'n teoretiese syfer nie. 'n Eksperiment moet 'n aantal kere herhaal word en die voorkoms van die gebeurtenis in die gebeurtenis-veresameling getel word. Omdat dit eksperimenteel is, is dit moontlik om telkens verskillende relatiewe frekwensies te kry met herhaling van die eksperiment.\par
 
 \mindsetvid{Relative frequency}{VMbzy}
 
-\begin{wex}{Relatiewe frekwensie en teoretiese waarskynlikheid.}{
-  Ons skiet 'n munstuk $30$ keer op en beskou die uitkomste. Die resultate is in die tabelle hieronder.
-
-\begin{table}[h]
+\begin{wex}{Relatiewe frekwensie en teoretiese waarskynlikheid}{
+  Ons skiet 'n muntstuk $30$ keer op en beskou die uitkomste. Die resultate is in die tabelle hieronder.
+%english in table below
   \begin{center}
     \begin{tabular}{lc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
       toets   &  $1$ &  $2$ &  $3$ &  $4$ &  $5$ &  $6$ &  $7$ &  $8$ &  $9$ & $10$ \\
-      uitkoms &  H &  T &  T &  T &  H &  T &  H &  H &  H &  T \\
+      uitkoms &  M &  K &  K &  K &  M &  K &  M &  M &  M &  K \\
       \midrule
-      toets   & $11$ & $12$ & $13$ & $14$ & $15$ & $16$ & $17$ & $18$ & $19$ & $20$ \\
-      uitkoms &  H &  T &  T &  H &  T &  T &  T &  H &  T &  T \\
+      toets    & $11$ & $12$ & $13$ & $14$ & $15$ & $16$ & $17$ & $18$ & $19$ & $20$ \\
+      uitkoms &  M &  K &  K &  M &  K &  K &  K &  M &  K &  K \\
       \midrule
-      toets   & $21$ & $22$ & $23$ & $24$ & $25$ & $26$ & $27$ & $28$ & $29$ & $30$ \\
-      uitkoms &  H &  H &  H &  T &  H &  T &  H &  T &  T &  T \\
+      toets    & $21$ & $22$ & $23$ & $24$ & $25$ & $26$ & $27$ & $28$ & $29$ & $30$ \\
+      uitkoms &  M &  M &  M &  K &  M &  K &  M &  K &  K &  K \\
       \bottomrule
     \end{tabular}
-  \end{center}n 
-  \caption{Uitkomste van 'n munstuk $30$ keer opskiet.}
-\end{table}
+  \end{center}
+  \vspace{8pt}\\
 
   Wat is die relatiewe frekwensie om munt te kry na elke toets en hoe vergelyk dit met die teoretiese waarskynlikheid om munt te kry?
 }{
   \westep{Tel die aantal moontlike uitkomste}
 
-  'n Positiewe uikoms is wanneer die uitkoms in ons versameling van gebeurtenisse is. Die tabel hieronder toon 'n lopende telling (na elke opskiet $t$) van die aantal positiewe uitkomste $p$ wat ons verkry het. Byvoorbeeld, na $t=20$ kere het ons 8 keer munt en 12 keer kruis, dus is die positiewe uikoms-telling $p=8$.
+  'n Positiewe uikoms is wanneer die uitkoms in ons versameling van gebeurtenisse is. Die tabel hieronder toon 'n lopende telling (na elke opskiet $t$) van die aantal positiewe uitkomste $p$ wat ons verkry het. Byvoorbeeld, na $t=20$ kere het ons $8$ keer munt en $12$ keer kruis, dus is die positiewe uitkoms-telling $p=8$.
 
-\begin{table}[h]
   \begin{center}
     \begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
@@ -282,15 +281,16 @@ Die relatiewe frekwensie is 'n eksperimentele syfer, nie 'n teoretiese syfer nie
       \bottomrule
     \end{tabular}
   \end{center}
-  \caption{Aantal positiewe uitkomste (munt), $p$, na $t$ toetse.}
-\end{table}
+  \vspace{8pt}\\
 
   \westep{Bereken die relatiewe frekwensie}
 
-  Die relatiewe frekwensie is gedefinieer as die verhouding tussen die aantal positiewe uitkomste en die totale aantal uitkomste
-  \[f=\frac{p}{t}\], dan
+  Die relatiewe frekwensie is gedefinieer as die verhouding tussen die aantal positiewe uitkomste en die totale aantal uitkomste,
+  \[f=\frac{p}{t}\] 
+%english
+Die relatiewe frekwensie van om munt te kry, $f$, na $t$ muntstuk skiete is:
 
-\begin{table}[h]
+
   \begin{center}
     \begin{tabular}{cc@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c@{\hspace{0.25cm}}c}
       \toprule
@@ -305,19 +305,33 @@ Die relatiewe frekwensie is 'n eksperimentele syfer, nie 'n teoretiese syfer nie
       \bottomrule
     \end{tabular}
   \end{center}
-  \caption{Relatiewe frekwensie van munt, $f$, na die munstuk $t$ keer opgeskiet is.}
-\end{table}
+  \vspace{8pt}\\
 
-Uit die laaste inskrywing in die tabel kan ons nou maklik die relatiewe frekwensie na 30 toetse aflees, naamlik $13/30 = 0,4\dot{3}$. Die relatiewe frekwensie is naby aan die waarskynlikheid van $0,5$. Oor die algemeen kom die relatiewe frekwensie nader aan die teoretiese frekwensie hoe meer toetse ons doen.
+Uit die laaste inskrywing in die tabel kan ons nou maklik die relatiewe frekwensie na 30 toetse aflees, naamlik $13/30 = 0,4\dot{3}$. Die relatiewe frekwensie is naby aan die waarskynlikheid van $0,5$. Oor die algemeen kom die relatiewe frekwensie nader aan die teoretiese frekwensie hoe meer toetse ons doen.\\
+\\
+'n Beter manier om die tabel van relatiewe frekwensie op te som is deur middel van 'n grafiek:
 
-'n Beter manier om die tabel van relatiewe frekwensie op te som is deur middel van 'n grafiek. Die grafiek hieronder is opgestel uit die tabel getalle hierbo, deur dat die aantal toetse voltooi, $t$, gestip is op die x-as en die relatiewe frekwensie, $f$, op die y-as. Aan die begin (na 'n klein aantal toetse) fluktueer die relatiewe frekwensie baie rondom die teoretiese waarskynlikheid van $0,5$, aangetoon deur die gebroke lyn. Soos die aantal toetse toeneem fluktueer die relatiewe frekwensie al hoe minder en komal nader aan die teoretiese frekwensie.
-
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=0.75\textwidth]{coin_toss_trials.pdf}
+    \includegraphics[width=0.75\textwidth]{Gr10-Probability-images/coin_toss_trials.pdf}
   \end{center}
-  \caption{Plot van die relatiewe frekwensie van munt, $f$, na $t$ toetse.}
+%   \caption{Plot of the relative frequency of observing heads, $f$,
+%     after having completed $t$ coin tosses.}
 \end{figure}
+\noindent
+%english
+% The graph above is the plot of the relative frequency of observing heads, $f$,
+% after having completed $t$ coin tosses. It was generated from the table of numbers above
+% by plotting the number of trials that have been completed, $t$, on the
+% $x$-axis and the relative frequency, $f$, on the $y$-axis.
+
+Die grafiek hierbo is die plot van die relatiewe frekwensie van die waarneming van om munte, $ f $ onder te hou,
+na $ M $ muntstuk skiete. Dit was van die tafel hierbo gegenereer, deur die antaal toetse wat reeds voltooi is, $ T $, op die
+$ x $-as te stip en die relatiewe frekwensie, $ f $, op die $ y $-as te stip.
+
+Aan die begin (na 'n klein aantal toetse) fluktueer die relatiewe frekwensie baie rondom die teoretiese waarskynlikheid van $0,5$, aangetoon deur die gebroke lyn. Soos die aantal toetse toeneem fluktueer die relatiewe frekwensie al hoe minder en komal nader aan die teoretiese frekwensie.
+
+
 }
 \end{wex}
 
@@ -328,7 +342,6 @@ Uit die laaste inskrywing in die tabel kan ons nou maklik die relatiewe frekwens
 
 \begin{wex}{Relatiewe frekwensie en teoretiese waarskynlikheid}{
   Terwyl ons na $10$ sokker wedstryde kyk waar Span 1 teen Span 2 speel, teken ons die eindtellings aan:
-  \begin{table}[h]
     \begin{center}
       \begin{tabular}{lcccccccccc}
         \toprule
@@ -339,8 +352,6 @@ Uit die laaste inskrywing in die tabel kan ons nou maklik die relatiewe frekwens
         \bottomrule
       \end{tabular}
     \end{center}
-    \caption{Eindtellings van $10$ sokkerwedstryde.}
-  \end{table}
   Wat is die relatiewe frekwensie van Span 1 se wenne?
 }{
   In hierdie eksperiment is elke toets in die vorm van 'n wedstryd tussen Span 1 en Span 2.
@@ -355,41 +366,75 @@ Uit die laaste inskrywing in die tabel kan ons nou maklik die relatiewe frekwens
 }
 \end{wex}
 
-Dit is belangrik om die verskil te verstaan tussen die teoretiese waarskynlikheid van 'n gebeurtenis en die gemete relatiewe frekwensie van die gebeurtenis in eksperimentele toetse. Die teoretiese waarskynlikheid is 'n getal wat ons kan bereken indien genoeg inligting oor die eksperiment beskikbaar is. Indien elke moontlike uitkoms in die monsterruimte ewekansig is, kan ons die aantal uitkomste in die gebeurtenis-versameling en die aantal uitkomste in die monsterruimte tel en daaruit die teoretiese waarskynlikheid bereken.
+Dit is belangrik om die verskil te verstaan tussen die teoretiese waarskynlikheid van 'n gebeurtenis en die gemete relatiewe frekwensie van die gebeurtenis in eksperimentele toetse. Die teoretiese waarskynlikheid is 'n getal wat ons kan bereken indien genoeg inligting oor die eksperiment beskikbaar is. Indien elke moontlike uitkoms in die monsterruimte ewekansig is, kan ons die aantal uitkomste in die gebeurtenis-versameling en die aantal uitkomste in die monsterruimte tel en daaruit die teoretiese waarskynlikheid bereken.\par
 
-Die relatiewe frekwensie hang af van die volgorde van observasies gedurende 'n statistiese eksperiment. Die relatiewe frekwensie kan verskil telkens as die eksperiment herhaal word. Hoe meer toetse gedoen word gedurende 'n eksperiment, hoe nader kom die gemete relatiewe frekwensie aan die teoretiese frekwensie van die gebeurtenis.
+Die relatiewe frekwensie hang af van die volgorde van observasies gedurende 'n statistiese eksperiment. Die relatiewe frekwensie kan verskil telkens as die eksperiment herhaal word. Hoe meer toetse gedoen word gedurende 'n eksperiment, hoe nader kom die gemete relatiewe frekwensie aan die teoretiese frekwensie van die gebeurtenis.\par
 
 So, waarom het ons statistiese ekpreimente nodig as daar reeds teoretiese waarskynlikhede bestaan? In sekere gevalle, soos ons sokker-eksperiment, is dit moeilik of onmoontlik om die teoretiese waarskynlikheid van 'n gebeurtenis te bereken. Aangesien ons nie met sekerheid weet of een span teen 'n ander gaan punte aanteken nie, is dit nie moontlik om die teoretiese waarskynlikheid van gebeurtenisse in sokker te bereken nie. In hierdie gevalle kan ons steeds die relatiewe frekwensie gebruik om die teoretiese waarskynlikheid te skat deur eksperimente te doen en die positiewe uitkomste te tel.
 
 \section{Venn-diagramme}
 'n Venn-diagram is a grafiese manier om verwantskappe tussen versamelings aan te dui. In elke Venn-diagram word 'n versameling aangedui deur 'n geslote kromme. Die area binne die kromme verteenwoordig die elemente van daardie versameling, terwyl die area buite die kromme die elemente bevat wat buite die versameling is.
+\par
 
+
+Venn-diagramme is handig om na te dink oor waarskynlikheid, aangesien ons met verskillende versamelings te doen het. Beskou twee gebeuretenisse, $A$ and $B$, in 'n monsterruimte $S$. Die figuur hieronder toon met behulp van Venn-diagramme die moontlike maniere waarop die gebeurtenis-versamelings kan oorvleuel:
+
+
+\begin{figure}[H]
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-1.701875)(10.96,1.721875)
+\psframe[linewidth=0.04,dimen=outer](3.0,1.298125)(0.0,-1.701875)
+\pscircle[linewidth=0.04,dimen=outer](0.78,-0.061875){0.56}
+\pscircle[linewidth=0.04,dimen=outer](1.83,-0.371875){0.91}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.7265625,0.728125){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(1.8471875,0.768125){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(2.8192186,1.528125){$S$}
+\psframe[linewidth=0.04,dimen=outer](6.98,1.318125)(3.98,-1.681875)
+\pscircle[linewidth=0.04,dimen=outer](4.7,-0.961875){0.56}
+\pscircle[linewidth=0.04,dimen=outer](6.02,-0.001875){0.8}
+\usefont{T1}{ptm}{m}{n}
+\rput(4.7065625,-0.191875){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.0071874,1.008125){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(6.7992187,1.548125){$S$}
+\psframe[linewidth=0.04,dimen=outer](10.96,1.318125)(7.96,-1.681875)
+\pscircle[linewidth=0.04,dimen=outer](9.38,0.078125){0.56}
+\pscircle[linewidth=0.04,dimen=outer](9.47,-0.271875){1.13}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.266562,0.828125){$A$}
+\usefont{T1}{ptm}{m}{n}
+\rput(9.447187,-0.811875){$B$}
+\usefont{T1}{ptm}{m}{n}
+\rput(10.779219,1.548125){$S$}
+\end{pspicture} 
+}
+%   \caption{Venn diagrams with different configurations of two events,
+%     $A$ and $B$, in a sample space, $S$.}
+\end{center}
+\label{fig:venndiagrams}
+\end{figure}\\
+
+Die versamelings word aangedui deur 'n reghoek vir die monsterruimte $S$ en sirkels vir $A$ en $B$. In die eerste diagram oorvleuel die gebeurtenisse gedeeltelik. In die tweede diagram is daar geen oorvleueling nie. In die derde diagram bevat die een gebeurtenis die ander ten volle. Let op dat al die gebeurtenisse altyd binne die monsterruimte val, omdat die monsterruimte altyd al die moontlike uitkomste van die eksperiment bevat.\par
 \mindsetvid{{V}enn diagrams and probabilities}{VMcbf}
-
-Venn-diagramme is handig om na te dink oor waarskynlikheid, aangesien ons met verskillende versamelings te doen het. Beskou twee gebeuretenisse, $A$ and $B$, in 'n monsterruimte $S$. Die figuur hieronder toon met behulp van Venn-diagramme die moontlike maniere waarop die gebeurtenis-versamelings kan oorvleuel.
-
-\input{Gr10-Probability-images/venn_union_intersection} % Definisies
-
-\begin{figure}[h]
-  \input{Gr10-Probability-images/venn_union_intersection1}
-  \caption{Venn-diagramme met verskillende konfigurasies van twee gebeuretenisse, $A$ and $B$, in 'n monsterruimte, $S$.}
-\end{figure}
-
-Die versamelings word aangedui deur 'n reghoek vir die monsterruimte $S$ en sirkels vir $A$ en $B$. In die eerste diagram oorvleuel die gebeurtenisse gedeeltelik. In die tweede diagram is daar geen oorvleueling nie. In die derde diagram bevat die een gebeurtenis die ander ten volle. Let op dat al die gebeurtenisse altyd binne die monsterruimte val, omdat die monsterruimte altyd al die moontlike uitkomste van die eksperiment bevat.
-
-\begin{wex}{Venn diagrams}{
-  Dui met behulp van 'n Venn-diagram die monsterruimte aan en die twee gebeurtenisse, $A$ en $B$, as twee dobbelstene gerol word:
-  \begin{itemize}
-  \item[] $A:$ die som van die dobbelstene is gelyk aan $8$
-  \item[] $B:$ ten minste een van die dobbelstene wys
+\begin{wex}{Venn-diagramme}{
+\wexlabel{wex:dice_venn}%
+  Dui met behulp van 'n Venn-diagram die monsterruimte aan en die twee gebeurtenisse, $A$ en $B$, as twee dobbelstene gerol word:\\
+\\
+  Gebeurtenis $A:$ die som van die dobbelstene is gelyk aan $8$\\
+ Gebeurtenis $B:$ ten minste een van die dobbelstene wys
     \raisebox{-2pt}{\begin{tikzpicture}
         \begin{scope}[scale=0.333]
           \makediegeneral{2}{}{0.175cm*0.333}
         \end{scope}
       \end{tikzpicture}}
-  \end{itemize}
+
 }{
-\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -421,81 +466,151 @@ Die versamelings word aangedui deur 'n reghoek vir die monsterruimte $S$ en sirk
   \end{scope}
 \end{tikzpicture}
 \end{center}
-\caption{Venn-diagram van twee gebeuertenisse, $A$ and $B$, en die monsterruimte $S$, van twee dobbelstene.}
-\label{fig:dice_venn}
-\end{figure}
 }
 \end{wex}
 
-\begin{exercises}{Venn diagramme}
+%english wex below
+\begin{wex}{Venn-diagramme}
+{
+\begin{minipage}{\textwidth}
+Bepaal die stel van diamantkaarte wat uit 'n pak kaarte gehaal is. 'n Willekeurige kaart is uit die stel van diamante gekies.
+\begin{itemize}
+ \item Skyrf neer die monsterruimte, $S$, vir die eksperiment.
+\item Wat is die waarde van $n(S)$?
+\item Bepaal die volgende twee gebeurtenisse:
+\begin{itemize}
+\item $P$: 'n Ewige diamant is gekies
+\item $R$: A prentkaart diamant is gekies
+\end{itemize}
+Stel monsterruimte $S$ en gebeurtenisse $P$ en $R$ met 'n Venn-diagram.
+\end{itemize}
+\end{minipage}
+}
+{
+\westep{Skyrf neer die monsterruimte $S$}
+\begin{align*}
+S=\{A;~2;~3;~4;~5;~6;~7;~8;~9;~10;~J;~Q;~K\}
+\end{align*}
+\westep{Skryf neer die waarde van $n(S)$}
+\begin{align*}
+ n(S) = 13
+\end{align*}
+\westep{Teken die Venn-diagram}
+\begin{center}
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-2.2)(4.5590625,2.2)
+\pscircle[linewidth=0.04,dimen=outer](2.2,0.0){2.2}
+\pscircle[linewidth=0.04,dimen=outer](1.45,-0.03){1.29}
+\pscircle[linewidth=0.04,dimen=outer](2.54,0.76){0.9}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7,1.9){$S$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.9945312,0.83){$J$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.4745312,1.29){$K$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.1745312,0.53){$Q$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.1445312,0.71){$2$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(0.70453125,0.05){$4$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.5645312,0.07){$6$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.1245313,-0.55){$8$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.0945313,-0.51){$10$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.0845313,-0.77){$3$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.8845313,-0.49){$5$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5445313,-1.45){$7$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.4245312,-1.25){$9$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(3.7745314,0.23){$A$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(1.0145313,1.37){$P$}
+% \usefont{T1}{ptm}{m}{n}
+\rput(2.5045311,1.83){$R$}
+\end{pspicture} 
+}
+\end{center}
+}
+\end{wex}
+\begin{exercises}{}
 {
   \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
   \item  Laat $S$ die versameling heelgetalle van $1$ tot $16$ aandui, $X$
     die versameling ewe getalle van $1$ tot $16$ en $Y$ die versameling priemgetalle van $1$ tot $16$
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Teken 'n Venn-diagram wat $S$, $X$ and $Y$ akkuraat aandui.
     \item Vind $n\left(S\right)$, $n\left(X\right)$, $n\left(Y\right)$,
       $n\left(X\cup Y\right)$, $n\left(X\cap Y\right)$.
     \end{enumerate}
   \item Daar is $79$ Graad $10$ leerders in die skool. Almal neem Wiskunde, Aardrykskunde of Geskiedenis. $41$ neem Aardrykskunde, $36$ neem Geskiedenis en $30$ neem Wiskunde. $16$ neem Wiskunde en Geskiedenis, $6$ neem Aardrykskunde en Geskiedenis, $8$ neem net Wiskunde en daar is $16$ wat slegs Geskiedenis neem.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Teken 'n Venn-dagram om hierdie inligting te illustreer.
     \item Hoeveel leerders neem Wiskunde en Aardrykskunde, maar nie Geskiedenis nie?
     \item Hoeveel leerders neem net Aardrykskunde?
     \item Hoeveel leerders neem al drie vakke?
     \end{enumerate}
   \item Papiere word genommer van $1$ tot $12$ en in 'n houer geplaas en die houer geskud. Een papier op 'n slag word getrek en weer teruggeplaas.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Wat is die monsterruimte, $S$?
     \item Skryf die versameling $A$ neer, wat die gebeurtenis voorstel van dietrek van 'n papier met 'n faktor van $12$.
     \item Skryf die versameling $B$ neer, wat die gebeuertenis voorstel van dietrek 'n papier, gemerk met 'n priemgetal.
     \item Gebruik 'n Venn-diagram om $A$, $B$ and $S$ voor te stel.
     \item Vind
-      \begin{enumerate}
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*.} ]
       \item $n\left(S\right)$
       \item $n\left(A\right)$
       \item $n\left(B\right)$
-      \item $n\left(A\cap B\right)$
-      \item $n\left(A\cup B\right)$
+
       \end{enumerate}
-    \item Is $n\left(A\cup B\right)=n\left(A\right)+n\left(B\right)-n\left(A\cap B\right)$?
+
     \end{enumerate}
-  \end{enumerate}
+ \end{enumerate}
 
 \insertpracticeinfo{3}
 }
 \end{exercises}
 
 \section{Vereniging en interseksie}
-\Definition{Vereniging}{Die verreniging van twee versamelings is 'n nuwe versameling wat al die elemente bevat wat minstens in een van die versamelings voorkom. Die vereniging word geskryf as $A \cup B$.}
+\Definition{Vereniging}{Die vereniging van twee versamelings is 'n nuwe versameling wat al die elemente bevat wat minstens in een van die versamelings voorkom. Die vereniging word geskryf as $A \cup B$.}
 
 \Definition{Deursit}{Die deursnit (of snyding of interseksie) van twee versamelings is 'n nuwe versameling wat al die elemente bevat wat in beide versamelings voorkom. Die interseksie word geskryf as $A \cap B$.}
 
-\mindsetvid{Inclusive and exclusive events}{VMcci}
 
-Die figuur heironder toon die vereniging en deursnit vir verskillende konfigurasies van twee gebeurtenisse in 'n monsterruimte met behulp van 'n Venn-diagram.
 
-\begin{figure}[h]
+Die figuur hieronder toon die vereniging en deursnit vir verskillende konfigurasies van twee gebeurtenisse in 'n monsterruimte met behulp van 'n Venn-diagram.
+
+\begin{figure}[H]
   \input{Gr10-Probability-images/venn_union_intersection2}
-  \caption{Die interseksie van die verenigings en interseksies van verskillende gebeurtenisse. Let op dat die middelste kolom, die interseksie van $A \cap B$, leeg is aangesien die twee versamelings nie oorvleuel nie. Verder, in die laaste kolom is die vereniging, $A \cup B$, gelyk aan $A$ en die interseksie, $A \cap B$, gelyk aan $B$ aangesien $B$ ten volle bevat word deur $A$.}
+  \begin{caption*}{Die verenigings en interseksies van verskillende gebeurtenisse. Let op dat die middelste kolom, die interseksie van $A \cap B$, leeg is aangesien die twee versamelings nie oorvleuel nie. Verder, in die laaste kolom is die vereniging, $A \cup B$, gelyk aan $A$ en die interseksie, $A \cap B$, gelyk aan $B$ aangesien $B$ ten volle bevat word deur $A$.}\end{caption*}
   \label{fig:venn_union_intersection}
 \end{figure}
+\par
+
+\mindsetvid{Inclusive and exclusive events}{VMcci}
 
 
 \section{Waarskynlikheids-identiteite}
-\Identity{Waarskynlikheid van 'n monsterruimte}{
+
   \[P(S)=1\]
-}
+
 
 Die monsterruimte bevat per definisie alle moontlike uitkomste van 'n eksperiment. Ons weet dus dat die waarskynlikheid van 'n resultaat uit 'n monsterruimte $1$ is.
 
-\Identity{Vereniging en interseksie}{
+
   \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
-}
 
-Ons sal hierdie identiteit bewys deur die Venn-diagramme uit Figuur \ref{fig:venn_union_intersection} te gebruik. Vir elk van die $4$ terme in die verenigings-identiteit kan ons 'n Venn-diagram teken en telkens die verskillende diagramme bytel of aftrek. Die area van 'n gebied verteenwoordig sy waarskynlikheid.
 
-Ons doen hierdie vir die eerste diagram van Figuur \ref{fig:venn_union_intersection}. Jy kan dit self probeer vir die ander kolomme.
+Ons sal hierdie identiteit bewys deur die Venn-diagramme hierbo te gebruik. Vir elk van die $4$ terme in die verenigings-identiteit kan ons 'n Venn-diagram teken en telkens die verskillende diagramme bytel of aftrek. Die area van 'n gebied verteenwoordig sy waarskynlikheid.\par
+
+Ons doen hierdie vir die eerste diagram van die Venn-diagram hierbo. Jy kan dit self probeer vir die ander kolomme.
 
 \begin{center}
 \begin{tabular}{m{0.5cm}m{1.5cm}m{0.5cm}m{0.3cm}@{\hspace{0.1cm}}m{1.5cm}m{0.5cm}m{1.5cm}@{\hspace{0.1cm}}m{0.3cm}}
@@ -538,19 +653,19 @@ Ons doen hierdie vir die eerste diagram van Figuur \ref{fig:venn_union_intersect
 \end{center}
 
 \begin{wex}{Vereniging en deursnit van gebeurtenisse}{
-  Vergelyk die waarskynlikhede van gebeurtenisse $A$ and $B$ in die Voorbeeld \textbf{NNN} en toon aan dat die identiteit 
+  Vergelyk die waarskynlikhede van gebeurtenisse $A$ and $B$ in die Voorbeeld \wexref{wex:dice_venn} en toon aan dat die identiteit 
 \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
 bevredig word.
 
 }{
   \westep{Skryf die waarskynlikhede van die twee gebeurtenisse, hulle vereniging en hulle deursnit.}
   
-Uit Figuur \ref{fig:dice_venn} kan ons die aantal uitkomste in elke gebeurtenis tel. Om die waarskynlikheid van 'n gebeurtenis te verkry deel ons die grootte van die gebeurtenis deur die grootte van sy monsterruimte wat $n(S)=36$ is.
+Uit die figuur in Voorbeeld \wexref{wex:dice_venn} kan ons die aantal uitkomste in elke gebeurtenis tel. Om die waarskynlikheid van 'n gebeurtenis te verkry deel ons die grootte van die gebeurtenis deur die grootte van sy monsterruimte wat $n(S)=36$ is.
   \[\begin{array}{r@{$\ =\ $}c@{$\ =\ $}l}
-    P(A)        & \frac{n(A)}{n(S)}        & \frac{5}{36}  \\[8pt]
-    P(B)        & \frac{n(A)}{n(S)}        & \frac{11}{36} \\[8pt]
-    P(A \cap B) & \frac{n(A \cap B)}{n(S)} & \frac{2}{36}  \\[8pt]
-    P(A \cup B) & \frac{n(A \cup B)}{n(S)} & \frac{14}{36}
+    P(A)        & \dfrac{n(A)}{n(S)}        & \dfrac{5}{36}  \\[8pt]
+    P(B)        & \dfrac{n(B)}{n(S)}        & \dfrac{11}{36} \\[8pt]
+    P(A \cap B) & \dfrac{n(A \cap B)}{n(S)} & \dfrac{2}{36}  \\[8pt]
+    P(A \cup B) & \dfrac{n(A \cup B)}{n(S)} & \dfrac{14}{36}
   \end{array}\]
   % Sorry for the ugly equation: didn't know how to make the alignment
   % work otherwise
@@ -562,29 +677,30 @@ Uit Figuur \ref{fig:dice_venn} kan ons die aantal uitkomste in elke gebeurtenis 
     P(A \cup B) &=& P(A) + P(B) - P(A \cap B) \\
     \frac{14}{36} &=& \frac{5}{36} + \frac{11}{36} - \frac{2}{36} \\
     &=& \frac{5}{36} + \frac{9}{36} \\
-    &=& \frac{14}{36} \qquad\qquad\checkmark
+    &=& \frac{14}{36} \qquad\qquad
   \end{eqnarray*}
 }
 \end{wex}
 
-\section{Onderlinge uitsluitende gebeurtenisse.}
+\section{Onderlinge uitsluitende gebeurtenisse}
 \Definition{Onderlinge uitsluitende gebeurtenisse}{Twee gebeurtenisse is onderling uitlsluitende indien hulle nie saam kan voorkom nie. Wanneer die uitkoms van 'n eksperiment in eerste gebeurtenis val, kan dit nie ook in die tweede gebeurtenis wees nie.}
 
 'n Ander manier om dit te beskrywe is om te s\^e dat die twee gebeurtenis-versamelings, $A$ en $B$, nie elemente in gemeen kan h\^e nie, of $P(A \cap B) = \emptyset$
 (waar $\emptyset$ die lee versameling aandui).
 
-Ons het alreeds die Venn-diagramme van onderlinge uitsluitende gebeurtenisse gesien in die middelkolom van Figuur \ref{fig:venn_union_intersection}.
+Ons het alreeds die Venn-diagramme van onderlinge uitsluitende gebeurtenisse gesien in die middelkolom van die Venn diagramme op bladsy \pageref{fig:venn_union_intersection}.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \input{Gr10-Probability-images/venn_union_intersection3}
-  \caption{Onderlinge uitsluitlike gebeurtenisse.}
+%   \caption{Onderlinge uitsluitlike gebeurtenisse.}
 \end{figure}
 
 Uit hierdie figuur kan mens sien dat die interseksie geen elemente het nie. Mens kan ook sien dat die waarskynlikheid van die vereniging die som is van van die waarskynlikhede van die gebeurtenisse.
 \[P(A \cup B) = P(A) + P(B)\]
 Hierdie verwantskap geld slegs vir onderlinge uitsluitende gebeurtenisse.
 
-\begin{wex}{Onderling uitsluitende gebeurtenisse.}{
+\begin{wex}{Onderling uitsluitende gebeurtenisse}{
+\begin{minipage}{\textwidth}
   Ons rol twee dobbelstene en stel belang in die volgende twee gebeurtenisse:
   \begin{itemize}
   \item[] $A:$ Die getalle op die twee dobbelstene se som is $8$
@@ -596,10 +712,10 @@ Hierdie verwantskap geld slegs vir onderlinge uitsluitende gebeurtenisse.
       \end{tikzpicture}}
   \end{itemize}
   Toon aan dat die gebeurtenisse onderling uitsluitend is.
+\end{minipage}
 }{
-  \westep{Teken die monsterruimte en die twee gebeurtenisse.}
+  \westep{Teken die monsterruimte en die twee gebeurtenisse}
 
-\begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
   \begin{scope}[scale=0.5]
@@ -630,7 +746,6 @@ Hierdie verwantskap geld slegs vir onderlinge uitsluitende gebeurtenisse.
   \end{scope}
 \end{tikzpicture}
 \end{center}
-\end{figure}
 
   \westep{Bepaal die interseksie}
 
@@ -641,43 +756,46 @@ Uit die figuur sien ons dat daar geen elemente in gemeen in $A$ and $B$ is nie. 
 \section{Komplement\^ere gebeurtenisse}
 
 \Definition{Komplement\^ere versameling}{Die komplement van 'n versameling, $A$, is 'n ander versameling wat al die elemente bevat wat nie in 
-  $A$ is nie. Ons skryf die komplement van $A$ as $\complement{A}$, of soms ``$\mbox{not}(A)$''.}
+  $A$ is nie. Ons skryf die komplement van $A$ as $A'$, of soms ``$\mbox{nie}(A)$''.}
 
-Vir 'n eksperiment met 'n monsterruimte $S$ en 'n gebeurtenis $A$, kan ons sekere identiteite aflei vir komplement\^ere gebeurtenisse. Aangesien elke element van $A$ nie in $\complement{A}$ voorkom nie, weet ons dat komplementere gebeurtenisse onderling uitsluitende is.
+Vir 'n eksperiment met 'n monsterruimte $S$ en 'n gebeurtenis $A$, kan ons sekere identiteite aflei vir komplement\^ere gebeurtenisse. Aangesien elke element van $A$ nie in $A'$ voorkom nie, weet ons dat komplementere gebeurtenisse onderling uitsluitende is.
 
-\Identity{Komplementere gebeurtenisse is onderling uitsluitend}{
-  \[A \cap \complement{A} = \emptyset\]
-}
 
-Aangesien elke element van die monsterruimte of in $A$ of in $\complement{A}$ voorkom, omvat die vereniging van komplementere gebeurtenisse die monsterruimte.
-\Identity{Komplement\^ere gebeurtenisse omvat die monsterruimte.}{
-  \[A \cup \complement{A} = S\]
-}
+  \[A \cap A' = \emptyset\]
+
+
+Aangesien elke element van die monsterruimte of in $A$ of in $A'$ voorkom, omvat die vereniging van komplementere gebeurtenisse die monsterruimte.
+
+  \[A \cup A' = S\]
+
 
 Uit die vorige twee identiteite weet ons dat die waarskynlikhede van komplement\^ere gebeurtenisse saam gelyk is aan $1$.
 
-\Identity{Waarskynlikhede van komplementere gebeurtenisse}{
-  \[P(A) + P(\complement{A}) = P(A \cup \complement{A}) = P(S) = 1\]
-}
+
+  \[P(A) + P(A') = P(A \cup A') = P(S) = 1\]
+
 
 \mindsetvid{Complementary events}{VMcdl}
 
 \begin{wex}{Beredenering met belhulp van Venn-diagramme}{
+\begin{minipage}{\textwidth}
   In 'n opname is $70$ mense gevra watter produk hulle gebruik: A of B of beide. Die verslag toon dat $25$ mense produk A gebruik, $35$ mense produk B gebruik en $15$ mense gebruik nie een nie. Gebruik 'n Venn-diagram om te bereken hoeveel mense:
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}]
+  \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}.]
 \item gebruik slegs produk $A$
   \item gebruik slegs produk B
   \item gebruik beide produk A en produk B
   \end{enumerate}
+\end{minipage}
 }{
-  \westep{Bepaal die groottes van die monsterruimte, die gebeurtenis-versamelings, hule vereniging en hulle deursnit.}
+\begin{minipage}{\textwidth}
+  \westep{Bepaal die groottes van die monsterruimte, die gebeurtenis-versamelings, hule vereniging en hulle deursnit}
   \begin{itemize}
   \item Ons weet $70$ mense het deelgeneem, dus is die grootte van die monsterruimte $n(S) = 70$.
   \item Ons weet $25$ mense gebruik produk A, dus is $n(A) = 25$.
   \item Ons weet $35$ mense gebruik produk B, dus is $n(B) = 35$.
   \item Ons weet $15$ mense gebruik nie een van die produkte nie. Dit beteken dat minstens $70-15=55$ mense ten minste een van die produkte gebruik, dus is 
     $n(A \cup B) = 55$.
-  \item Ons weet nie hoeveel mense beide produkte gebruik nie, dus moet ons die grootte van die deursnit $A \cap B$ bereken, deur die identiteit
+  \item Ons weet nie hoeveel mense beide produkte gebruik nie, dus moet ons die grootte van die deursnit $A \cap B$ bereken, deur die volgende identiteit te gebruik
     \begin{eqnarray*}
       P(A \cup B) & = & P(A) + P(B) - P(A \cap B) \\
       \frac{n(A \cup B)}{n(S)} & = & \frac{n(A)}{n(S)} + \frac{n(B)}{n(S)} - \frac{n(A \cap B)}{n(S)} \\
@@ -686,12 +804,12 @@ Uit die vorige twee identiteite weet ons dat die waarskynlikhede van komplement\
       & = & 5
     \end{eqnarray*}
   \end{itemize}
-te gebruik.
 
-  \westep{Bepaal of die gebeurtenisse onderling uitsluitend is.}
+
+  \westep{Bepaal of die gebeurtenisse onderling uitsluitend is}
 Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie onderling uisluitend nie. Dit beteken dat hulle sirkels behoort te oorvleuel in die Venn-diagram.
 
-  \westep{Teken die Venn-Draw the Venn diagram diagram en vul die getalle in}
+  \westep{Teken die Venn-diagram en vul die getalle in}
     \begin{center}
       \begin{tikzpicture}
         \begin{scope}[scale=5]
@@ -711,31 +829,31 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
     \end{center}
 
   \westep{Lees die antwoorde}
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}]
-  \item $20$ mense gebruik slegs produk A
-  \item $30$ mense gebruik slegs produk B
-  \item $5$ mense gebruik beide produkte
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
+  \item $20$ mense gebruik slegs produk A.
+  \item $30$ mense gebruik slegs produk B.
+  \item $5$ mense gebruik beide produkte.
   \end{enumerate}
+\end{minipage}
 }
 \end{wex}
 
-\begin{exercises}{Teoretiese waarskynlikheid}
+\begin{exercises}{}
 {
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}]
+  \begin{enumerate}[itemsep=3pt, label=\textbf{\arabic*}.]
   \item  'n Kas bevat gekleurde blokkies. Die aantal van elke kleur word in die onderstaande tabel aangedui.
 
-    \begin{center}
-      \begin{tabular}{lcccc}
-        \toprule
-        Kleur & Pers & Oranje & Wit & Pink \\
-        \midrule
-        Aantal blokkies & $24$ & $32$ & $41$ & $19$ \\
-        \bottomrule
+  \begin{center}
+      \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Kleur} & Pers & Oranje & Wit & Pink \\ \hline
+       
+        \textbf{Aantal blokkies} & $24$ & $32$ & $41$ & $19$ \\ \hline
+   
       \end{tabular}
     \end{center}
-
     'n Blokkie word willekeurig gekies. Wat is die waarskynlikheid dat die blokkie die volgende kleur sal wees:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item pers
     \item pers of wit
     \item pienk en oranje
@@ -745,18 +863,18 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
   \item 'n Klein skooltjie het 'n klas met kinders van verskillende ouderdomme. Die tabel gee die aantal kinders van elke ouderdom in die klas.
 
     \begin{center}
-      \begin{tabular}{lccc}
-        \toprule
-               & $3$ jaar oud & $4$ jaar oud& $5$ jaar oud \\
-       \midrule
-        Manlik   & $2$ & $7$ & $6$ \\
-        Vroulik & $6$ & $5$ & $4$ \\
-        \bottomrule
+      \begin{tabular}{|l|c|c|c|}
+        \hline
+               & $3$ jaar oud & $4$ jaar oud & $5$ jaar oud \\\hline
+   
+        \textbf{manlik}   & $2$ & $7$ & $6$ \\\hline
+        \textbf{vroulik} & $6$ & $5$ & $4$ \\\hline
+       
       \end{tabular}
     \end{center}
 
     As 'n leerder lukraak gekies word, wat is die waarskynlikheid dat die leerder die volgende sal wees:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item vroulik
     \item 'n $4$ jaar oud en manlik 
     \item $3$ of $4$ jaar oud
@@ -765,9 +883,9 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
     \item $3$ of vroulik?
     \end{enumerate}
 
-  \item Fiona het $85$ skyfies,genommer van $1$ to
+  \item Fiona het $85$ skyfies, genommer van $1$ to
     $85$. Indien 'n skyfie willekeurig gekies word, wat is die waarskynlikheid dat die nommer: 
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item eindig met $5$
     \item vermenigvuldig kan word met $3$
     \item vermenigvuldig kan word met  $6$
@@ -783,34 +901,107 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
 }
 \end{exercises}
 
+%summary all in english!
+\summary{VMdve}
+\begin{itemize}
+\item ’n Eksperiment verwys na ’n proses met onsekerheid.
+
+\item Die uitslag van ’n eksperiment is ’n enkele resultaat van daardie eksperiment.
+
+
+\item Die monsterruimte van ’n versameling is die versameling van al die moontlike uitslae
+van daardie eksperiment. Die monsterruimte word aangedui deur die simbool $S$ en
+die grootte van die monsterruimte (die som van al die moontlike uitkomste) word
+aangedui deur
+
+  $n(S)$.
+
+\item ’n Gebeurtenis is ’n spesifieke versameling van uitkomste van ’n eksperiment waarin
+jy belangstel. ’n Gebeurtenis word aangedui deur die letter $E$ en die aantal uitkomste
+van die gebeurtenis met
+ $n(E)$.
+
+\item ’n Waarskynlikheid is ’n reële getal tussen $0$ en $1$ wat beskryf hoe waarskynlik dit is
+dat die gebeurtenis sal plaasvind.
+
+\begin{itemize}
+\item ’n Waarskynlikheid van $0$ beteken dat die gebeurtenis nooit sal plaasvind nie.
+
+\item ’n Waarskynlikheid van $1$ beteken dat die gebeurtenis altyd sal plaasvind.
+
+\item ’n Waarskynlikheid van $0,5$ beteken dat die gebeurtenis die helfte van die tyd sal plaasvind, of
+$1$ keer uit elke $2$.
+
+\end{itemize}
+
+\item Die relatiewe frekwensie van ’n gebeurtenis word gedefinieer as die aantal kere wat
+die gebeurtenis voorkom in ’n aantal eksperimente, gedeel deur die aantal eksperi-
+mente.
+
+
+\item Die vereniging van twee versamelings is ’n nuwe versameling wat al die elemente
+bevat wat minstens in een van die versamelings voorkom. Die vereniging word
+geskryf as
+ $A \cup B$.
+
+\item Die deursnit (of snyding of interseksie) van twee versamelings is ’n nuwe versameling
+wat al die elemente bevat wat in beide versamelings voorkom. Die interseksie word
+geskryf as
+ $A \cap B$.
+
+\item Die waarskynlikheid van monsterruimte:  $P(S)=1$.
+
+\item Vereniging en deursnit: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+
+
+\item Twee gebeurtenisse is onderling uitlsluitende indien hulle nie saam kan voorkom
+nie. Wanneer die uitkoms van ’n eksperiment in eerste gebeurtenis val, kan dit nie
+ook in die tweede gebeurtenis wees nie.
+
+
+
+\item Die komplement van ’n versameling, $A$, is ’n ander versameling wat al die elemente
+bevat wat nie in $A$ is nie. Ons skryf die komplement van $A$ as $A'$ , of soms “nie($A$)”.
+
+
+\item Komplementêre gebeurtenisse is onderling uitsluitende: $A \cap A' = \emptyset$.
+
+
+\item Komplementêre gebeurtenisse bedek dieselfde monsterruimte:
+$A \cup A' = S$.
+
+
+\item Die waarskynlikhede van komplementêre gebeurtenisse
+saam gelyk is
+ $1$: $P(A) + P(A') = P(A \cup A') = P(S) = 1$.
+
+\end{itemize}
 \begin{eocexercises}{Waarskynlikheid}
-  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}]
-  \item 'n Greop van $45$ kinders is gevra of hulle  Frosties en/of
+  \begin{enumerate}[itemsep=5pt, label=\textbf{\arabic*}.]
+  \item 'n Groep van $45$ kinders is gevra of hulle  Frosties en/of
     Strawberry Pops eet. $31$ eet beide en $6$ eet net Frosties.  Wat is die waarskynlikheid dat 'n kind wat lukraak gekies word net Strawberry
     Pops eet?
   \item In 'n groep van $42$ leerders het almal behalwe $3$ 'n pakkie skyfies of 'n Fanta of beide gehad. As $23$ 'n pakkie skyfies gehad het, en $7$ hiervan het ook 'n Fanta gehad, wat is die waarskynlikheid dat 'n leerder wat willekeurig gekies word die volgende het:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item beide skyfies en Fanta
-    \item net Fanta?
+    \item net Fanta
     \end{enumerate}
   \item Gebruik 'n Venn-diagram om die volgende waarskynlikhede van 'n dobbelsteen wat gerol word te bereken:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item 'n veelvoud van $5$ en 'n onewe getal
     \item 'n getal wat nie 'n veelvoud van $5$ is nie en ook nie 'n onewe getal nie
     \item 'n getal wat nie 'n veelvoud van $5$ is nie, maar onewe.
     \end{enumerate}
   \item 'n Pakkie het geel en pienk lekkers. Die waarskynlikheid om 'n pienk lekker te kies is $\frac{7}{12}$.
-    \begin{enumerate}
-    \item Wat is die waarskynlikheid om 'n geel lekker uit te haal?
-    \item As $44$ lekkers geel is, hoeveel pienkes is daar?
-    \end{enumerate}
+Wat is die waarskynlikheid om 'n geel lekker uit te haal?
+
   \item In 'n parkeerterrein met $300$ motors is daar $190$ Opels. Wat is die waarskynlikheid dat die eerste motor wat uitry die volgende is:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item 'n Opel
     \item nie 'n Opel
     \end{enumerate}
   \item Tamara het $18$ los sokkies in 'n laai. Agt van hierdie is oranje en twee pienk. Bereken die waarskynlikheid dat die eerste sokkie wat willekeurig gekies word die volgende is:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Oranje
     \item nie oranje
     \item pienk
@@ -818,47 +1009,47 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
     \item oranje of pienk
     \item nie oranje of pienk
     \end{enumerate}
-  \item Daar is $9$ brosbrood koekies, $4$ gemmerkoekies ,
+  \item Daar is $9$ brosbrood koekies, $4$ gemmerkoekies,
     $11$ sjokoladekoekies en $18$ Jambos op 'n bord. As 'n koekie willekeurig gekies word, wat is die waaarskynlikheid dat:
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item dit 'n gemmerkoekie of 'n Jambo is?
     \item dit nie 'n brosbroodkoekie is nie?
     \end{enumerate}
   \item $280$ kaartjies is verkoop in 'n lotery. Ingrid het $15$ gekoop. Wat is die waarskynlikheid dat Ingrid:
-    \begin{enumerate}
-    \item die prys wen?
-    \item nie die prys wen nie?
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item die prys wen
+    \item nie die prys wen nie
     \end{enumerate}
   \item Die kinders in 'n kleuterskool is geklassifiseer per haarkleur en oogkleur. $44$ het rooi hare en nie bruin oe nie, $14$ het bruin oe maar nie rooi hare nie en $40$ het nie bruin oe of rooi hare nie.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Hoeveel kinders is in die skool?
     \item Wat is die waarskynlikheid dat 'n kind wat willekeurig gekies word die volgende het:
-      \begin{enumerate}
+      \begin{enumerate}[noitemsep, label=\roman*. ]
       \item bruin o\"e
       \item rooi hare
       \end{enumerate} 
     \item 'n Kind met bruin\"e word willekeurig gekies. Wat is die waarskynlikheid dat hierdie kind rooi hare het?
     \end{enumerate}
   \item 'n Houer bevat pers, blou en swart lekkers. Die waarskynlikheid dat 'n lekker wat willekeurig gekies word pers is, is $\frac{1}{7}$, en die waarskynlikheid dat dit swart sal wees is $\frac{3}{5}$.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item As ek 'n lekker willekeurig kies, wat is die waarskynlikheid dit die volgende sal wees:
-      \begin{enumerate}
-      \item Pers of blou
-      \item Swart
-      \item Pers
+      \begin{enumerate}[noitemsep, label=\roman*. ]
+      \item pers of blou
+      \item swart
+      \item pers
       \end{enumerate}
     \item As daar $70$ lekkers in die houer is, hoeveel perses is daar?
-    \item $\frac{1}{4}$ van die pers lekkers in b) het strepe en die res nie, hoeveel pers lekkers het strepe?
+    \item $\frac{2}{5}$ van die pers lekkers in (b) het strepe en die res nie, hoeveel pers lekkers het strepe?
     \end{enumerate}
   \item Vir elk van die volgende, teken 'n Venn-diagram om die situasie voor te stel en vind 'n voorbeeld ter illustrasie.
-    \begin{enumerate}
-    \item 'n Monsterruimte waarin daar twee gebeurtenisse is wat nie ondeling uitsluitend is nie.
-    \item 'n Monsterruimte waarin daar twee komplementere gebeurtenisse is.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item 'n monsterruimte waarin daar twee gebeurtenisse is wat nie ondeling uitsluitend is nie.
+    \item 'n monsterruimte waarin daar twee komplementere gebeurtenisse is.
     \end{enumerate}
-  \item Gebruik 'n Venn-diagram om te bewys dat die waarskynlikheid van voorkoms van gebeurtenis  $A$ of $B$ ($A$ en $B$ is nie onderling uitsluitend nie)gegee word deur:
+  \item Gebruik 'n Venn-diagram om te bewys dat die waarskynlikheid van voorkoms van gebeurtenis  $A$ of $B$ ($A$ en $B$ is nie onderling uitsluitend nie) gegee word deur:
     \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
   \item Al die klawerkaarte word uit 'n pak kaarte gehaal. Die res word dan geskommel en een kaart gekies. Die kaart word dan teruggeplaas voor die volgende een gekies word.
-    \begin{enumerate}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Wat is die monsterruimte?
     \item Vind 'n versameling om gebeurtenis $P$, die trek van 'n prentkaart, voor te stel.
     \item Vind 'n versameling om gebeurtenis $N$, die trek van 'n nommerkaart, voor te stel.
@@ -866,14 +1057,35 @@ Aangesien die interseksie, $A \cap B$, nie leeg is nie, is die gebeurtenisse nie
     \item Wat is 'n goeie beskrywing van die versamelings $P$ en $N$?
       (Wenk: Vind enige elemente van $P$ in $N$ en van $N$ in $P$.)
     \end{enumerate}
-  \item Thuli het 'n sak met vyf oranje, drie pers en sewe pienk blokkies. Die sak word geskud en 'n blokkie getrek. Die kleur word aangestip en die blokkie teruggeplaas.
-    \begin{enumerate}
-    \item Wat is die monsterruimte van die eksperiment?
-    \item Wat is die versameling wat die gebeurtenis van die trek van 'n pienk blokkie, $P$, voorstel?
-    \item Skryf 'n versameling neer, $O$ or $B$, wat die gebeuretnis voorstel van die trek van 'n oranje of 'n pers blokkie.
-    \item Teken 'n Venn-diagram om bostaande inligting te wys.
-    \end{enumerate}
+
+%english questions below
+  \item 'n Opname was by Mutende Primêre Skool uitgevoer om vas te stel hoeveel van die $ 650 $ leerders vetkoek, en hoeveel lekkers tydens pouse koop. Die volgende was bevind:
+% A survey was conducted at Mutende Secondary school to establish how many of the $650$ learners buy vetkoek and how many buy sweets during break. The following was found:
+\begin{itemize}
+ \item $50$ leerders het niks gekoop nie
+\item $400$ leerders het vetkoek gekoop
+\item $300$ leerders het lekkers gekoop
+\end{itemize}
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item Vertoon hierdie inligting met 'n Venn-diagram
+\item Indien 'n leerder willekeurig gekies is, bereken die waarskynlikheid dat die leerder koop:
+% If a learner is chose randomly, calculate the probability that this learner buys:
+\begin{enumerate}[noitemsep, label=\roman*. ]
+ \item net lekkers
+\item net vetkoek
+\item nie vetkoek en nie lekkers nie
+\item vetkoek en lekkers
+\item vetkoek of lekkers
+\end{enumerate}
+\end{enumerate}
+\item In 'n opname by Lwandani se Sekondêre Skool is $80$ mense gevra of hulle die Sowetan of die Daily Sun of albei koerante lees. Die verslag toondat $45$ mense die Daily Sun lees, $30$ die Sowetan lees en $10$ lees nie een van hulle nie. Gebruik 'n Venn-diagram om die persentasie van mense te vind wat:
+\begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+ \item net die Daily Sun lees
+\item net die Sowetan lees
+\item die Daily Sun en die Sowetan lees
+\end{enumerate}
+
   \end{enumerate}
 
-\insertpracticeinfo{14}
+\insertpracticeinfo{15}
 \end{eocexercises}
