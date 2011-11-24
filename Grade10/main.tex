@@ -1,8 +1,8 @@
-\documentclass[9pt, openany]{extbook}
+\documentclass[11pt, openany]{extbook}
     
 \usepackage{pdfpages}
 \include{preample}
-     
+\usepackage{tocloft}     
 \begin{document}
 \raggedbottom
 \bibliographystyle{plain} 
@@ -12,7 +12,7 @@
 \frontmatter
 
 % front cover
-\includepdf[pages=1]{../covers/MathsGr10.pdf}
+\includepdf[pages=1]{../covers/maths-gr10-front.pdf}
 \include{EverythingMathsTitlePages} 
 
 \tableofcontents
@@ -27,23 +27,24 @@
 % chapter includes
 
 
- \include{Gr10-AlgebraicExpressions}
- \include{Gr10-EquationsandInequalities}
- \include{Gr10-Exponentials}
- \include{Gr10-NumberPatterns}
- \include{Gr10-FunctionsAndGraphs}
- \include{Gr10-Finance}
- \include{Gr10-Trigonometry}
- \include{Gr10-AnalyticalGeometry}
- \include{Gr10-Statistics}
- \include{Gr10-Probability}
- \include{Gr10-Geometry}
+%\include{Gr10-AlgebraicExpressions}
+%\include{Gr10-EquationsandInequalities}
+%\include{Gr10-Exponentials}
+%\include{Gr10-NumberPatterns}
+%\include{Gr10-FunctionsAndGraphs}
+%\include{Gr10-Finance}
+%\include{Gr10-Trigonometry}
+%\include{Gr10-AnalyticalGeometry}
+%\include{Gr10-Statistics}
+%\include{Gr10-Probability}
+%\include{Gr10-Geometry}
  \include{Gr10-Measurement}
- \include{Gr10-ExerciseSolutions}
+%\include{Gr10-ExerciseSolutions}
 
 
 % Back Cover
-\includepdf[pages=2]{../covers/MathsGr10.pdf}
+\cleardoublepage \mbox{}
+\includepdf[pages=1]{../covers/maths-gr10-back.pdf}
 
 
 

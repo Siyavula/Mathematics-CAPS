@@ -395,7 +395,7 @@ We plot the growth of the two investments on the same set of axes and note the s
 \begin{figure}[H]
     \begin{center}
       \scalebox{0.8}{
-	\begin{pspicture}(-5,-2)(7,8)
+	\footnotesize\begin{pspicture}(-5,-2)(7,8)
 	    \psset{yunit=0.75,xunit=1}
 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12)
 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
@@ -404,7 +404,7 @@ We plot the growth of the two investments on the same set of axes and note the s
 \uput[ur](10.2,0){years}
 \uput [u](0,12.5){Rands}
 \psplot{0}{10}{1.09 x exp 5 mul}
-	\end{pspicture}}\\
+	\end{pspicture}\normalsize}\\
 % 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
 	\label{FG:fig:SI10}
     \end{center}
@@ -413,12 +413,12 @@ We plot the growth of the two investments on the same set of axes and note the s
 % \begin{figure}[H]
 %     \begin{center}
 % \scalebox{0.8}
-% 	\begin{pspicture}(-5,-2)(7,8)
+% 	\footnotesize\begin{pspicture}(-5,-2)(7,8)
 % 	    \psset{yunit=0.75,xunit=1}
 % 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12.3)
 % 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000](0,0)(0,0)(10.4,12.3)
 % 	    \psplot[linecolor=red]{0}{10}{1.09 x exp 5 mul}
-% 	\end{pspicture}}\\
+% 	\end{pspicture}\normalsize}\\
 % 	\begin{caption*}The growth of money in a compound interest account over 10 years.\end{caption*}
 % 	\label{FG:fig:CI10}
 %     \end{center}
@@ -428,7 +428,7 @@ It is easier to see the vast difference in growth if we extend the time period t
 \begin{figure}[H]
     \begin{center}
 \scalebox{0.8}{
-	\begin{pspicture}(-2,-2)(7,8)
+	\footnotesize\begin{pspicture}(-2,-2)(7,8)
 	    \psset{yunit=0.75,xunit=0.65}
 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
@@ -437,7 +437,7 @@ It is easier to see the vast difference in growth if we extend the time period t
 \uput[ur](20.2,0){years}
 \uput [u](0,15){Rands}
 \psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
-	\end{pspicture}}\\
+	\end{pspicture}\normalsize}\\
 % 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
 	\label{FG:fig:SI10}
     \end{center}
@@ -446,12 +446,12 @@ It is easier to see the vast difference in growth if we extend the time period t
 % \begin{figure}[H]
 %     \begin{center}
 % \scalebox{0.8}{
-% 	\begin{pspicture}(-2,-2)(7,8)
+% 	\footnotesize\begin{pspicture}(-2,-2)(7,8)
 % 	    \psset{yunit=0.75,xunit=0.65}
 % 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
 % 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000](0,0)(0,0)(20,15)
 % 	    \psplot[linecolor=red]{0}{20}{1.09 x 2.5 mul exp 0.2 mul}
-% 	\end{pspicture}}\\
+% 	\end{pspicture}\normalsize}\\
 % 	\begin{caption*}The growth of money in a compound interest account over 50 years.\end{caption*}
 % 	\label{FG:fig:CI10}
 %     \end{center}
