@@ -625,9 +625,9 @@ Mode $=6$
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Mean and Mode. The mean will give us the average acceleration time, while the mode will give us the time that is most often obtained.%What measure of central tendency should be used for this
 %       information?
-    \item For bike $1$ the mean is$1,02$ s and no mode, since there is no value that occurs more than once.\\
-	  For bike $2$ the mean is$1,0$ s and there are two modes, $1,0$ and $0,9$.
-    \item It would be difficult to choose. Although bike 1 appears to do better than bike $2$ from the mean, the data for bike $2$ is less accurate than that for bike $1$ (it only has $1$ decimal place.) If we were to calculate the mean for bike $1$ using only $1$ decimal place we would get $0,9$ s. This would make bike $2$ better. Also bike $2$ produces more consistent numbers. So bike $2$ would likely be a good choice, but more information or more accurate information should be obtained.
+    \item For bike $1$ the mean is $1,02$ s and no mode, since there is no value that occurs more than once.\\
+	  For bike $2$ the mean is $1,0$ s and there are two modes, $1,0$ and $0,9$.
+    \item It would be difficult to choose. Although bike $1$ appears to do better than bike $2$ from the mean, the data for bike $2$ is less accurate than that for bike $1$ (it only has $1$ decimal place.) If we were to calculate the mean for bike $1$ using only $1$ decimal place we would get $0,9$ s. This would make bike $2$ better. Also bike $2$ produces more consistent numbers. So bike $2$ would likely be a good choice, but more information or more accurate information should be obtained.
 
     \end{enumerate}
 
@@ -682,6 +682,71 @@ Interquartile range for the trained employees: $Q_3-Q_1=7$.\\
 Interquartile range for the untrained employees: $Q_3-Q_1=10$.\\
 \item
 The median of the untrained employees is higher than that of the trained employees. Also the untrained employees have a larger interquartile range than the trained employees. There is some evidence to suggest that the training programme may be working.
+\item %Draw two box-and-whisker diagrams to illustrate the five number summary
+Trained employees:\\
+\scalebox{0.5}{
+    \begin{tikzpicture}[xscale=0.3]
+      \def\median{129}
+      \def\firstquartile{125}
+      \def\thirdquartile{132}
+      \def\minimum{118}
+      \def\maximum{137}
+
+      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+      \draw (    \firstquartile, 0) -- (\minimum,0   );
+      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+
+      \draw[thick,<->] (115,-1) -- (140,-1);
+
+      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {\LARGE$\x$};
+      }
+
+      \foreach \x in {117,118,...,138} {
+        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+      }
+      \draw[dotted] ( \maximum, 0.09) -- ( \maximum, -1);
+      \draw[dotted] ( \thirdquartile, 0.49) -- ( \thirdquartile, -1);
+      \draw[dotted] (\median, 0.49)  -- ( \median, -1);
+      \draw[dotted] (\firstquartile, 0.49) -- ( \firstquartile, -1);
+      \draw[dotted] ( \minimum, 0.09) -- ( \minimum, -1);
+    \end{tikzpicture}}
+  
+\\
+Untrained employees:\\
+\scalebox{0.5}{
+    \begin{tikzpicture}[xscale=0.2]
+      \def\median{144}
+      \def\firstquartile{139}
+      \def\thirdquartile{149}
+      \def\minimum{126}
+      \def\maximum{157}
+
+      \draw (\firstquartile, -0.5 ) rectangle ( \thirdquartile,0.5);
+      \draw[thick] ( \median,-0.5) -- ( \median,0.5);
+      \draw (    \firstquartile, 0) -- (\minimum,0   );
+      \draw ( \minimum, -0.1) -- (       \minimum, 0.1);
+      \draw (  \thirdquartile, 0) -- (   \maximum, 0);
+      \draw ( \maximum, -0.1) -- (      \maximum, 0.1 );
+
+      \draw[thick,<->] (123,-1) -- (160,-1);
+
+      \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {\LARGE$\x$};
+      }
+
+      \foreach \x in {125,126,...,158} {
+        \draw (\x,-1.3) -- (\x, -1.3) node[anchor=south] {$|$};
+      }
+      \draw[dotted] ( \maximum, 0.09) -- ( \maximum, -1);
+      \draw[dotted] ( \thirdquartile, 0.49) -- ( \thirdquartile, -1);
+      \draw[dotted] (\median, 0.49)  -- ( \median, -1);
+      \draw[dotted] (\firstquartile, 0.49) -- ( \firstquartile, -1);
+      \draw[dotted] ( \minimum, 0.09) -- ( \minimum, -1);
+    \end{tikzpicture}}
 \end{enumerate}
 \item %solution 6
 \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]

@@ -958,13 +958,13 @@ Therefore the equation is $f(x) = 3^x$.
     \item Give the equation of the asymptote of $f(x)$.
 \item Give the ranges of $f(x)$ and $g(x)$.
     \end{enumerate}
-  \item Sketch the graphs $h(x)=x^2-4$ and $k(x)=-x^2+4$ on the same set of axes and answer the questions that follow: 
+ \item Sketch the graphs $h(x)=x^2-4$ and $k(x)=-x^2+4$ on the same set of axes and answer the questions that follow: 
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Describe the relationship between $h$ and $k$.
     \item Give the equation of $k(x)$ reflected about the line $y=4$.
     \item Give the domain and range of $h$.
     \end{enumerate}
-  \item Sketch the graphs $f(\theta)=2 sin~\theta$ and $g(\theta)= cos~\theta-1$ on the same set of axes. Use your sketch to determine:
+ \item Sketch the graphs $f(\theta)=2 sin~\theta$ and $g(\theta)= cos~\theta-1$ on the same set of axes. Use your sketch to determine:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item $f(180^{\circ})$
     \item $g(180^{\circ})$
@@ -972,6 +972,128 @@ Therefore the equation is $f(x) = 3^x$.
     \item The domain and range of $g$.
     \item The amplitude and period of $f$.
     \end{enumerate}
+%additional interpretation of graph exercises
+\item The graphs of $y=x$ and $y=\frac{8}{x}$ are shown in the following diagram.\\
+\begin{center}
+\scalebox{1}{
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.5,xunit=0.5}
+\psaxes[labels=none, ticks=none]{<->}(0,0)(-5,-8)(5,8)
+
+\psplot[plotstyle=curve,arrows=<->]{1}{5}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{-1}{x -1 exp 8 mul}
+\psplot[plotstyle=curve,arrows=<->]{-5}{5}{x}
+\psdots(2.83,2.83)(-2.83,-2.83)
+% \psline[linestyle=dashed](-2.5,1)(2.5,1)
+\rput(0.3, 8.3){$y$}
+\rput(5.4, 0.2){$x$}
+\psline(-2,0)(-2,-4)
+\psline[linestyle=dashed](-2.83,0)(-2.83,-2.83)
+\psline[linestyle=dashed](2.83,0)(2.83,2.83)
+\psline(2.83, 0.5)(3.3,0.5)
+\psline(3.3,0.5)(3.3,0)
+\psline(-2.83, -0.5)(-3.3,-0.5)
+\psline(-3.3,-0.5)(-3.3,0)
+
+\uput[u](-2.83,0){$C$}
+\uput[d](2.83,0){$D$}
+\uput[u](-2,0) {$G$}
+\uput[u](2.83,2.85){$A$}
+\uput[ur] (5,5) {$y=x$}
+\uput[d](-2.83,-2.85){$B$}
+\uput[r](-2,-4){$E$}
+\uput[dr](-2,-2){$F$}
+\uput[dr](0,0) {$0$}
+% \rput(-0.37,-0.3){$0$}
+% \rput(1.4,-0.4){$(1;0)$}
+% \rput(-1.9,2.3){$(-1;2)$}
+\end{pspicture}
+}
+\end{center}\\
+    Calculate:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item the coordinates of points $A$ and $B$.
+    \item the length of $CD$.
+    \item the length of $AB$.
+    \item the length of $EF$, given $G(-2;0)$.
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\item Given the diagram with $y=-3x^2+3$ and $y=-\frac{18}{x}$.\\
+\begin{center}
+\begin{pspicture}(-5,-5)(5,1)
+%\psgrid
+\psset{yunit=0.2,xunit=0.5}
+\psaxes[dx=1, dy=1, Dy=1,Dx=1, arrows=<->, labels=none, ticks=none](0,0)(-5,-14)(5,7)
+\psplot[plotstyle=curve,arrows=<->]{-2.3}{2.3}{x 2 exp -3 mul 3 add}
+\psplot[plotstyle=curve,arrows=<->]{1.3}{5}{x -1 exp -18 mul}
+
+ \psdots(2,-9)(-1,0)(1,0)(0,3)
+
+\rput(0.3, 7.3){$y$}
+\rput(5.2, 0.4){$x$}
+\uput[dl](0,0){$0$}
+% \rput(0.3,4.3){$C$}
+% \rput(2.4,-0.3){$B$}
+% \rput(-2.4,-0.3){$A$}
+% \rput(0.3,-2.3){$D$}
+% \rput(-2.6,-5){$E$}
+\rput(4.8,-3){$y=-\frac{18}{x}$}
+\rput(-4,-5){$y=-3x^2+3$}
+\uput[ul](-1,0){$A$}
+\uput[ur](1,0){$B$}
+\uput[ur](0,3){$C$}
+\uput[l](2,-9){$D$}
+\end{pspicture}
+\end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Calculate the coordinates of $A$, $B$ and $C$.
+    \item Describe in words what happens at point $D$.
+    \item Calculate the coordinates of $D$.
+    \item Determine the equation of the straight line that would pass through points $C$ and $D$ .
+  \end{enumerate}
+%NEED DIAGRAM HERE
+\item The diagram shows the graphs of $f(\theta)=3~sin~\theta$ and $g(\theta)=-tan~\theta$.
+          \begin{center}
+            \scalebox{0.8}{
+              \begin{pspicture}(0,-2.5)(4,2)
+                \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-3)(4.5,3)
+             
+                \psline[linewidth=0.01,linestyle=dashed](1,-3)(1,3)
+                \psline[linewidth=0.01,linestyle=dashed](3,-3)(3,3)
+%                 \psline[linewidth=0.02,linestyle=dashed](0,-1)(4.5,-1)
+                \psplot[xunit=0.0111,yunit=0.5, plotpoints=500, arrows=->]{0}{80}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{100}{260}{x sin x cos div -1 mul}
+                \psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<-]{280}{360}{x sin x cos div -1 mul}
+\psplot[xunit=0.0111,yunit=0.5,plotpoints=500, arrows=<->]{0}{360}{x sin 3 mul}
+                \rput(0.2,3.3){$y$}
+                \rput(4.5,0.2){$x$}
+%                 \rput(-0.5,-1){$-2$}
+  \rput(2,-0.3){$180^{\circ}$}
+                \rput(4,-0.3){$360^{\circ}$}
+\rput(1,-0.3){$90^{\circ}$}
+\rput(3,-0.3){$270^{\circ}$}
+                \psdots(2,0)(1,1.5)(3,-1.5)
+\rput(3.7,-1){$f$}
+\rput(3.5,2){$g$}
+\uput[l](0,1.5){$3$}
+\uput[l](0,-1.5){$-3$}
+%                 \rput(1.65,-0.8){\footnotesize$(135^{\circ};-1)$}
+              \end{pspicture}
+            }
+          \end{center}
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Give the domain of $g$.
+    \item What is the amplitude of $f$?
+    \item Determine for which values of $\theta$:
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ]
+	    \item $f(\theta)=0=g(\theta)$
+	    \item $f(\theta)\times g(\theta)<0$
+	    \item $\dfrac{g(\theta)}{f(\theta)}>0$
+	    \item $f(\theta)$ is increasing?
+  \end{enumerate}
+%NEED DIAGRAM HERE
+  \end{enumerate}
   \end{enumerate}
 
 \end{eocexercises}
@@ -1388,7 +1510,65 @@ $k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the r
 \item Amplitude $=2$;\\
       Period $=360^{\circ}$%The amplitude and period of $f$.
 \end{enumerate}
+%additional interpretation of graph exercises
+\item %The graphs of $y=x$ and $y=\frac{8}{x}$ are shown in the following diagram.\\
+    %Calculate:
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $x=\frac{8}{x}\\
+	    x^2=8\\
+	    \therefore x=\pm\sqrt{8}$\\
+	 Therefore  $A(\sqrt{8};\sqrt{8})$ and $B(-\sqrt{8};-\sqrt{8})$ %the coordinates of points $A$ and $B$.
+    \item $C(-\sqrt{8};0)$ and $D(\sqrt{8};0)\\
+	   \therefore CD =  \sqrt{8} +\sqrt{8} =2\sqrt{8}$ units%the length of $CD$.
+    \item Using Pythagoras: $OD=\sqrt{8}$ units and $AD=\sqrt{8}$ units\\
+	  $AO^2=OD^2+AD^2\\
+	  =(\sqrt{8})^2+(\sqrt{8})^2\\
+	  =8+8\\
+	  =16\\
+	\therefore AO=4$ units\\
+	Similarly, $OB=4$ units\\
+	$\therefore AB=8$ units\\%the length of $AB$.
+    \item Given that $G(-2;0)$, then $F(-2;-2)$ on the line $y=x$\\
+	  Therefore length $EF = -2-(-4)=2$ units%the length of $EF$, given $G(-2;0)$.
+  \end{enumerate}
 
+\item %Given the diagram with $y=-3x^2+3$ and $y=-\frac{18}{x}$.\\
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item $y=-3x^2+3$\\
+    Let $y=0$, \\
+    $0=-3x^2+3\\
+      =x^2-1\\
+      =(x-1)(x+1)\\
+    \therefore x=-1$ and $x=1$\\
+    Therefore $A(-1;0)$ and $B(1;0)$\\
+    When $x=0, y=-3(0)^2+3$\\
+    Therefore $C(0;3)$.\\
+    \item The parabola and the hyperbola intersect at point $D$ which lies in the IV quadrant.%Descibe in words what happens at point $D$.
+    \item $-\frac{18}{x}=-3x^2+3\\
+	  -18=-3x^3+3x\\
+	  0=-3x^3+3x+18\\
+	  0=x^3-x-6\\
+	  f(2)=(2)^3-2-6=0$\\
+	  when $x=2$, $y=-3(2)^2+3=-9$\\
+	  Therefore $D(2;-9)$.%Calculate the coordinates of $D$.
+    \item Determine gradient $D(2;-9)$ and $C(0;3)$\\
+	  $m=\frac{-9-3}{2-0}=-6$\\
+	  Therefore $y=-6x+3$%Determine the equation of the straight line that would pass through points $C$ and $D$ .
+  \end{enumerate}
+
+\item %The diagram shows the graphs of $f(\theta)=3~sin~\theta$ and $g(\theta)=-tan~\theta$.
+    \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
+    \item Domain: $\{\theta: 0^{\circ}\leq\theta\leq 360^{\circ}, \theta \ne 90^{\circ}; 270^{\circ}\}$%Give the domain of $g$.
+    \item Amplitude $=3$%What is the amplitude of $f$?
+    \item %Determine for which values of $\theta$:
+      \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ]
+	    \item $\{0^{\circ};~180^{\circ};~360^{\circ}\}$%$f(\theta)=0=g(\theta)$
+	    \item $(0^{\circ};~90^{\circ}) \cup (270^{\circ};~360^{\circ})$%$f(\theta)\times g(\theta)<0$
+	    \item $\{\theta: 90^{\circ}<\theta<270^{\circ}, \theta \ne 180^{\circ}\}$%$\dfrac{g(\theta)}{f(\theta)}>0$
+	    \item $(0^{\circ};~90^{\circ}) \cup (270^{\circ};~360^{\circ})$%$f(\theta)$ is increasing?
+  \end{enumerate}
+
+  \end{enumerate}
 
 \end{enumerate}}
 \end{eocsolutions}
