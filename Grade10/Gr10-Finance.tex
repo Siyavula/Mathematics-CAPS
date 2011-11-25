@@ -394,17 +394,17 @@ We plot the growth of the two investments on the same set of axes and note the s
 
 \begin{figure}[H]
     \begin{center}
-      \scalebox{0.8}{
-	\footnotesize\begin{pspicture}(-5,-2)(7,8)
+      \scalebox{.9}{
+	\begin{pspicture}(-5,-2)(7,8)
 	    \psset{yunit=0.75,xunit=1}
 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(10.4,12)
 	    \psaxes[arrows=-, dx=1, Dx=1, dy=1, Dy=2000]{<->}(0,0)(-1,-1)(10.4,12.5)
 % 	    \psline[linecolor=red](0,5)(10,9.5)
 	    \psplot{0}{10}{  x 0.09 mul 1 add 5 mul}
-\uput[ur](10.2,0){years}
+\uput[ur](10.2,0){Years}
 \uput [u](0,12.5){Rands}
 \psplot{0}{10}{1.09 x exp 5 mul}
-	\end{pspicture}\normalsize}\\
+	\end{pspicture}}\\
 % 	\begin{caption*}The growth of an investement over 10 years.\end{caption*}
 	\label{FG:fig:SI10}
     \end{center}
@@ -427,17 +427,17 @@ We plot the growth of the two investments on the same set of axes and note the s
 It is easier to see the vast difference in growth if we extend the time period to 50 years:
 \begin{figure}[H]
     \begin{center}
-\scalebox{0.8}{
-	\footnotesize\begin{pspicture}(-2,-2)(7,8)
+\scalebox{.9}{
+	\begin{pspicture}(-2,-2)(7,8)
 	    \psset{yunit=0.75,xunit=0.65}
 	    \psgrid[subgriddiv=1,griddots=10,gridlabels=0](0,0)(20,15)
 	    \psaxes[arrows=-, dx=2, Dx=5, dy=1, Dy=50000]{<->}(0,0)(-1,-1)(20,15)
 % 	    \psline[linecolor=red](0,0.2)(20,1.1)
 	    \psplot{0}{20}{x 0.09 mul 2.5 mul 1 add 0.2 mul}
-\uput[ur](20.2,0){years}
+\uput[ur](20.2,0){Years}
 \uput [u](0,15){Rands}
 \psplot{0}{20}{1.09 x 2.5 mul exp 0.2 mul} 
-	\end{pspicture}\normalsize}\\
+	\end{pspicture}}\\
 % 	\begin{caption*}The growth of an investment over 50 years.\end{caption*}
 	\label{FG:fig:SI10}
     \end{center}
