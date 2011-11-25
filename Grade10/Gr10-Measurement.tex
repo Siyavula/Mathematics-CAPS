@@ -193,15 +193,15 @@ the surface area and perimeter of the two dimensional shapes below.\par
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.9792187,0.9917188)(2.9792187,0.07)
 \psline[linewidth=0.04cm](0.99921876,-0.97)(2.9592187,1.03)
 \psline[linewidth=0.04cm](2.9792187,1.03)(4.959219,-0.9299999)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(3.0587502,-0.18){$5$ cm}
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](2.9792187,-0.4100001)(2.9792187,-0.9582812)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(3.0435936,-1.34){$10$ cm}
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(0.75359374,0.8600002){\textbf{1.}}
 \psframe[linewidth=0.04,dimen=outer](9.759219,1.02)(5.7592187,-0.98)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(5.3153124,0.8399999){\textbf{2.}}
 \psframe[linewidth=0.04,dimen=outer](6.0892186,1.02)(5.769219,0.7000001)
 \psline[linewidth=0.04cm](7.7392187,1.1700001)(7.9392185,1.01)
@@ -216,16 +216,16 @@ the surface area and perimeter of the two dimensional shapes below.\par
 \psline[linewidth=0.04cm](9.899218,0.0070184)(9.732885,0.2017842)
 \psline[linewidth=0.04cm](9.572961,-0.1678302)(9.739307,0.0269218)
 \psline[linewidth=0.04cm](9.899218,-0.1729815)(9.732885,0.0217841)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(10.31875,-0.0399999){$5$ cm}
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(7.8035936,-1.34){$10$ cm}
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](11.519218,-0.01)(15.519218,-0.01)
 \pscircle[linewidth=0.04,dimen=outer](13.529219,0.0){2.0}
 \psdots[dotsize=0.16](13.519218,-0.01)
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(13.483593,-0.3399999){$10$ cm}
-\usefont{T1}{ptm}{m}{n}
+% \usefont{T1}{ptm}{m}{n}
 \rput(11.222968,0.8399999){\textbf{3.}}
 \end{pspicture} 
 }
@@ -849,7 +849,7 @@ The surface area of the cylinder is $2~513,28\mbox{ cm}^2$.
   \setcounter{subfigure}{0}
   \begin{figure}[H]
     \begin{center}
-      \scalebox{1}{% Change this value to rescale the drawing.
+      \scalebox{0.9}{% Change this value to rescale the drawing.
         \begin{pspicture}(0,-4.3556247)(11.315155,4.3556247)
           \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](0.90234375,0.8371875)(1.9023438,1.8171875)
           \psline[linewidth=0.04cm](2.6423438,0.8571875)(3.58,1.8756249)
@@ -942,7 +942,7 @@ The volume of a right prism is simply calculated by multiplying the area of the
 base of a solid by the height of the solid.\par 
 \mindsetvid{Calculating volume}{VMcth}
 
-
+\clearpage
 
 \begin{table*}[h]
 \newcolumntype{C}{>{\centering\arraybackslash} m{0.75in} }
@@ -1192,7 +1192,7 @@ The volume of the cylinder is $754,0\mbox{ cm}^{3}$.
 {Calculate the volumes of the following prisms (correct to $1$ decimal place):
 \begin{center}
 
-\scalebox{1} % Change this value to rescale the drawing.
+\scalebox{0.8} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-4.0576563)(12.394375,4.0376563)
 \psline[linewidth=0.04cm,linestyle=dashed,dash=0.17638889cm 0.10583334cm](1.2203125,0.64156264)(2.2203126,1.6215626)
@@ -1309,11 +1309,11 @@ Examples of a square pyramid, a triangular pyramid, a cone and a sphere:
 \end{figure}
 
 \subsection{Surface area of pyramids, cones and spheres}
-
+\vspace*{-10pt}
 \begin{table}[H]
-\newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
+\newcolumntype{C}{>{\centering\arraybackslash} m{0.7in} }
 \newcolumntype{D}{>{\centering\arraybackslash} m{1.5in} }
-\newcolumntype{E}{>{\centering\arraybackslash} m{6.7cm} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{7.3cm} }
 \begin{tabular}{|C|D|E|}
 \hline
 \textbf{Square pyramid}
@@ -1353,7 +1353,7 @@ $\begin{aligned}
 &=b(b+2h_s)
  \end{aligned}$
 \\ \hline
-
+\vspace*{-10pt}
 \textbf{Triangular pyramid} &
 \begin{center}
 \scalebox{0.7} % Change this value to rescale the drawing.
@@ -1391,9 +1391,11 @@ $\begin{aligned}
     &=&\frac{1}{2}b(h_b + 3h_s)
   \end{array}
 \end{equation*}
+\vspace*{-10pt}
 \\ \hline
 
 \textbf{Right cone} &
+\vspace*{-10pt}
 \begin{center}
  \scalebox{0.5} % Change this value to rescale the drawing.
 {
@@ -1421,6 +1423,7 @@ $\begin{aligned}
     &=& \pi r(r+h)\\
   \end{array}
 \end{equation*}
+\vspace*{-10pt}
 \\ \hline
 
 \textbf{Sphere} &
@@ -1439,6 +1442,7 @@ $\begin{aligned}
 \end{center}
 &
 $\mbox{Surface area} =  4\pi r^{2}$
+\vspace*{-10pt}
 \\ \hline
 \end{tabular}
 \end{table}
@@ -1820,15 +1824,15 @@ $a$ can be calculated using the Theorem of Pythagoras:
   \end{array}
 \end{equation*}
  \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
-\newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
-\newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
-\begin{tabular}{|C|D|E|}
-\hline
+% \end{tabular}
+% \end{table}
+% 
+% \begin{table}[H]
+% \newcolumntype{C}{>{\centering\arraybackslash} m{0.6in} }
+% \newcolumntype{D}{>{\centering\arraybackslash} m{2in} }
+% \newcolumntype{E}{>{\centering\arraybackslash} m{6cm} }
+% \begin{tabular}{|C|D|E|}
+% \hline
 \textbf{Right cone} &
 \begin{center}
  \scalebox{0.7} % Change this value to rescale the drawing.
@@ -2250,7 +2254,7 @@ Therefore the total surface area (of the exposed faces) of the object is $3~092,
 \begin{enumerate}[itemsep=6pt, label=\textbf{\arabic*}. ] 
 \item Find the total surface area of the following objects (correct to $1$ decimal place if necessary):
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.9} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-6.555141)(11.58,6.555141)
 \psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
@@ -2311,7 +2315,7 @@ Therefore the total surface area (of the exposed faces) of the object is $3~092,
 \item 
 Find the volume of the following objects (round off to $1$ decimal place if needed):
 \begin{center}
-\scalebox{0.8} % Change this value to rescale the drawing.
+\scalebox{0.9} % Change this value to rescale the drawing.
 {
 \begin{pspicture}(0,-6.555141)(11.58,6.555141)
 \psline[linewidth=0.028222222](0.7205463,1.9239725)(2.8089423,6.5410295)(5.026165,1.816534)
@@ -2465,7 +2469,7 @@ Original dimensions
   &= 2(lh + lb + bh)
   \end{array}
 \end{equation*}
-\\ \hline
+\\ \hline 
 
 Multiply one dimension by $5$ 
 \begin{center}
@@ -2523,6 +2527,22 @@ Multiply one dimension by $5$
   \end{array}
 \end{equation*}
 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+% \end{minipage}
+
+
+\hspace*{-50pt}
+\begin{minipage}[h]{1\textwidth}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|m{4cm}|c|c|}
+\hline
+\textbf{Dimensions} & 
+\textbf{Volume} & 
+\textbf{Surface} \\ \hline
+
 Multiply two dimensions by $5$ 
 \begin{center}
 \scalebox{.8} % Change this value to rescale the drawing.
@@ -2588,21 +2608,21 @@ Multiply two dimensions by $5$
   \end{array}
 \end{equation*}
 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-% \end{minipage}
-
-
-% \hspace*{-50pt}
-\begin{minipage}[h]{1\textwidth}
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{|m{4cm}|c|c|}
-\hline
-\textbf{Dimensions} & 
-\textbf{Volume} & 
-\textbf{Surface} \\ \hline
+% \end{tabular}
+% \end{center}
+% \end{table}
+% % \end{minipage}
+% 
+% 
+% % \hspace*{-50pt}
+% % \begin{minipage}[h]{1\textwidth}
+% \begin{table}[H]
+% \begin{center}
+% \begin{tabular}{|m{4cm}|c|c|}
+% \hline
+% \textbf{Dimensions} & 
+% \textbf{Volume} & 
+% \textbf{Surface} \\ \hline
 
 
 Multiply all three dimensions by $5$ 
@@ -2678,7 +2698,7 @@ Multiply all three dimensions by $5$
     &= 5^2 A
   \end{array}
 \end{equation*}
-\\ \hline
+\vspace*{-10pt} \\ \hline
 
 Multiply all three dimensions by $k$ 
 \begin{center}
@@ -3076,12 +3096,12 @@ find the new surface area and volume for a prism if all dimensions are increased
         \psline[linewidth=0.028222222](1.5205463,1.1100069)(3.6089423,5.727064)(5.826165,1.0025685)
         \psline[linewidth=0.04,linestyle=dotted,dotsep=0.16cm](3.6189375,5.6354227)(3.536479,0.9065488)(5.762867,0.8787319)(5.762867,1.0178165)(5.735381,1.0178165)
         % \usefont{T1}{ppl}{m}{n}
-        \rput(4.409931,3.5911753){\LARGE $10$ cm}
+        \rput(4.409931,3.5911753){ $10$ cm}
         \psbezier[linewidth=0.027999999](1.5803465,1.2359936)(1.274511,0.5430677)(2.1971436,-0.3388383)(3.3043027,-0.40183172)(4.4114614,-0.46482512)(5.826165,0.039121386)(5.826165,1.0470136)
         \psbezier[linewidth=0.022,linestyle=dashed,dash=0.16cm 0.16cm](5.826165,0.9840206)(5.457112,1.55096)(4.7805147,1.9310416)(3.888852,1.9614773)(2.9971886,1.991913)(2.2586524,1.9289197)(1.5205463,1.0470136)
         \psframe[linewidth=0.04,dimen=outer](3.9003997,1.3011752)(3.5004,0.9011754)
         % \usefont{T1}{ppl}{m}{n}
-        \rput(4.809931,1.1911753){\LARGE $3$ cm}
+        \rput(4.809931,1.1911753){ $3$ cm}
         % \usefont{T1}{ppl}{m}{n}
         % \rput(1.5420313,5.5008936){\textbf{1.}}
         % \usefont{T1}{ppl}{m}{n}
@@ -3089,11 +3109,11 @@ find the new surface area and volume for a prism if all dimensions are increased
         % \usefont{T1}{ppl}{m}{n}
         % \rput(0.96203125,-2.3191063){\textbf{3.}}
         % \usefont{T1}{ptm}{m}{n}
-        \rput{0.6029805}(0.004622919,-0.1373882){\rput(13.026947,0.3702635){\LARGE $15$ cm}}
+        \rput{0.6029805}(0.004622919,-0.1373882){\rput(13.026947,0.3702635){$15$ cm}}
         % \usefont{T1}{ptm}{m}{n}
-        \rput{-1.0300905}(-0.006498412,0.16914946){\rput(9.374943,0.4457077){\LARGE $15$ cm}}
+        \rput{-1.0300905}(-0.006498412,0.16914946){\rput(9.374943,0.4457077){$15$ cm}}
         % \usefont{T1}{ptm}{m}{n}
-        \rput{90.771416}(14.303988,-7.492464){\rput(10.82,3.3058937){\LARGE  $12$ cm}}
+        \rput{90.771416}(14.303988,-7.492464){\rput(10.82,3.3058937){ $12$ cm}}
         \psline[linewidth=0.04cm](13.92,1.7008936)(11.12,5.5208936)
         \psline[linewidth=0.04cm](11.28,-0.1791063)(11.12,5.5408936)
         \psline[linewidth=0.04cm](11.12,5.5408936)(8.4,1.8008937)
@@ -3111,7 +3131,7 @@ find the new surface area and volume for a prism if all dimensions are increased
         \psdots[dotsize=0.12](3.1473527,-3.2047362)
         \psline[linewidth=0.04cm,linestyle=dashed,dash=0.16cm 0.16cm](3.1332812,-3.2387989)(5.147353,-2.7047362)
         % \usefont{T1}{ptm}{m}{n}
-        \rput{14.285164}(-0.57707244,-1.0637248){\rput(3.9257896,-2.8347287){\LARGE $4$ cm}}
+        \rput{14.285164}(-0.57707244,-1.0637248){\rput(3.9257896,-2.8347287){$4$ cm}}
       \end{pspicture} 
     }
   \end{center}
