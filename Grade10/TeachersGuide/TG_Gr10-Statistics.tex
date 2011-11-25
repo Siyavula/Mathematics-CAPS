@@ -683,7 +683,7 @@ Interquartile range for the untrained employees: $Q_3-Q_1=10$.\\
 The median of the untrained employees is higher than that of the trained employees. Also the untrained employees have a larger interquartile range than the trained employees. There is some evidence to suggest that the training programme may be working.
 \item %Draw two box-and-whisker diagrams to illustrate the five number summary
 Trained employees:\\
-\scalebox{0.5}{
+\scalebox{1}{
     \begin{tikzpicture}[xscale=0.3]
       \def\median{129}
       \def\firstquartile{125}
@@ -701,7 +701,7 @@ Trained employees:\\
       \draw[thick,<->] (115,-1) -- (140,-1);
 
       \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
-        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {\LARGE$\x$};
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
       }
 
       \foreach \x in {117,118,...,138} {
@@ -716,7 +716,7 @@ Trained employees:\\
   
 \\
 Untrained employees:\\
-\scalebox{0.5}{
+\scalebox{1}{
     \begin{tikzpicture}[xscale=0.2]
       \def\median{144}
       \def\firstquartile{139}
@@ -734,7 +734,7 @@ Untrained employees:\\
       \draw[thick,<->] (123,-1) -- (160,-1);
 
       \foreach \x in {\minimum, \firstquartile, \median, \thirdquartile, \maximum} {
-        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {\LARGE$\x$};
+        \draw (\x,-1.6) -- (\x, -1.6) node[anchor=south] {$\x$};
       }
 
       \foreach \x in {125,126,...,158} {
