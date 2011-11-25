@@ -210,16 +210,17 @@ See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/vide
 }
 
 \newcommand{\practiceinfo}[0]{
+{\small
 \par\vspace*{2em}
-\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} More practice 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video solutions 
-\phantom{xx}\raisebox{-0.7em}{\includegraphics[scale=0.5]{../icons/help.pdf}} or help at www.everythingmaths.co.za
-\vspace*{2em}
+\raisebox{-0.6em}{\includegraphics[scale=0.5]{../icons/aplus.pdf}} More practice 
+\phantom{xx}\raisebox{-0.6em}{\includegraphics[scale=0.5]{../icons/video.pdf}} video solutions 
+\phantom{xx}\raisebox{-0.6em}{\includegraphics[scale=0.5]{../icons/help.pdf}} or help at www.everythingmaths.co.za
+\vspace*{2em}}
 }
 
 \newcommand{\Definition}[2]{
 \begin{mdframed}[nobreak=true, linewidth=1,linecolor=black, skipabove=36pt]%
-\vspace*{10pt}
+\vspace*{1em}
 \leftskip20pt
 \rightskip20pt
 {\Large\textsl{DEFINITION: } \textit{#1}}
@@ -227,7 +228,7 @@ See simulation: #1 (\raisebox{-0.2em}{\includegraphics[height=1em]{../icons/vide
 \par
 #2
 
-\vspace*{28pt}
+\vspace*{1em}
 \end{mdframed}
 }
 
@@ -343,7 +344,7 @@ linecolor=red%
 \noindent
 \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
 \par\noindent
-\leftskip50pt
+\leftskip40pt
 \addtocounter{stepcounter}{1}}
 
 \definecolor{siyavula-gray}{RGB}{242,242,242}
@@ -463,7 +464,6 @@ linecolor=red%
 %\vspace{\baselineskip}
 %\textbf{\textit{Exercises:}
 %#1}
-\par
 }%
 {%
 \end{quotation}
@@ -910,10 +910,10 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
 
 \newcommand{\exercisesheading}{
 \addtocounter{exercisecounter}{1}
- \par  \vspace*{2\baselineskip}
+\par % \vspace*{2\baselineskip}
 {  \fontsize{12}\bfseries\itshape
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west ,text centered]
+    \node[anchor=west ,text centered, yshift=-2em]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black, line width=1pt] (0,0) rectangle
           (0.3\textwidth, 28pt);
@@ -928,23 +928,18 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
         \draw[fill=white, color=white] (0,0) rectangle
           (0.655\textwidth,28pt);
        \end{tikzpicture}
-
-
       };
    \end{tikzpicture}
-
 }
-\par
-%\vspace{\baselineskip}
 }
 
 
 
 \newcommand{\eocexercisesheading}{
-\par \vspace*{3\baselineskip} 
+\par %\vspace*{3\baselineskip} 
 {\normalfont \sffamily\fontsize{16}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
-    \node[anchor=west, yshift=6\baselineskip, xshift=0., text centered]
+    \node[anchor=west, yshift=-2em, xshift=0., text centered]
       {\begin{tikzpicture}[remember picture, overlay]
         \draw[color=white, draw=black, very thick] (0,0) rectangle
           (0.3\textwidth,1.5cm);
@@ -954,7 +949,7 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
     };
     
 % now the gray bar to the end of the paragraph
-    \node[anchor=west, xshift=0.31\textwidth]{
+    \node[anchor=west, xshift=0.31\textwidth, yshift=-2em]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=siyavula-gray, color=siyavula-gray] (0,0) rectangle
           (0.69\textwidth,1.5cm);
@@ -968,8 +963,6 @@ See the summary presentation (\raisebox{-0.2em}{\includegraphics[height=1em]{../
    \end{tikzpicture}
 
 }
-\par
-\vspace{\baselineskip}
 }
 
 
