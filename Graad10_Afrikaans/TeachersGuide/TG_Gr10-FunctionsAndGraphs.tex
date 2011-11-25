@@ -394,7 +394,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \end{pspicture}}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item Di grafiek $g(x)=\frac{8}{x}+3$  is die grafiek van $h(x)=\frac{8}{x}$, vertikale by $3$ eenhede op geskuif. Hulle sou dieselfde vorm gehad het maar die asimptoot van $g(x)$ sou $y=3$ gewees, in plaas van $y=0$ (vir $h(x)$) en die simmetrie-as sou $y=-x+3$ gewees in plaas van $y=-x$ (vir $h(x)$).%How would the graph compare with that of ? Explain your answer fully.
-    \item (Grafiek van $y=\frac{8}{x}+3$ is op dieselfde assestelsel hierbo)%GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry en the coordinates of one point on the graph.
+    \item Grafiek van $y=\frac{8}{x}+3$ is op dieselfde assestelsel hierbo.%GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry en the coordinates of one point on the graph.
     \end{enumerate}
  \end{enumerate}
 
@@ -466,7 +466,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item Die $x$-as is 'n asimptoot vir beide grafieke omdat beide na die $x$-as kom sonder om dit aan te raak.%Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
 
-\item $y= \frac{1}{2}^{x}$ word verteenwoordig deur die vergelyking $y=2^{-x}$ omdat $\frac{1}{2}^{-1} = 2^{-1}$, wat gee $y = 2^{-x}$. %Which graph is represented by the equation  ? Explain your answer.
+\item $y= \frac{1}{2}^{x}$ word verteenwoordig deur die vergelyking $y=2^{-x}$ omdat $\frac{1}{2} = 2^{-1}$, wat gee $y = 2^{-x}$. %Which graph is represented by the equation  ? Explain your answer.
 \item Die grafieke sny mekaar by die punt $(0;1)$. As ond hierdie waardes in beide kante van die vergelyking vervang, kry ons:\\
 LK: $ 2^{x}=2^0 = 1$ en\\
 RK: $\left(\frac{1}{2}\right)^x =\left(\frac{1}{2}\right)^0 = 1$\\
@@ -514,29 +514,33 @@ tabel van waardes te gebruik, vir $\theta \in [{0}^{\circ };{360}^{\circ }]$.
 \item $y=-4\cos\theta $
 \item $y=-2\cos\theta +1$
 \item $y=\sin\theta -3$
-\item $y=\tan\theta -2$\item $y=2\cos\theta -1$
+\item $y=\tan\theta -2$
+\item $y=2\cos\theta -1$
 \end{enumerate}
 \end{multicols}
  \item Gee die vergelykings van elk van die volgende grafieke:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item
-\begin{pspicture}(-2.5,-2)(5,2)
-\psset{yunit=0.25}
-\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
-\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
-\uput[d](5.4,0.1){$x$ (in degrees)}
-\uput[r](0,5.1){$y$}
-\rput(-0.2,-0.7){$0$}
-\end{pspicture}
 \item
-\begin{pspicture}(-0.3,-2)(5,2)
+\footnotesize\begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
-\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
-\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
-\uput[d](5.4,0.1){$x$ (in degrees)}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
+\uput[d](4.7,0.1){$x$}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
-\end{pspicture}
+\end{pspicture}\normalsize
+
+
+\item
+\footnotesize\begin{pspicture}(-0.3,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}\normalsize
 \end{enumerate}
 \end{enumerate}
 
@@ -703,14 +707,15 @@ tabel van waardes te gebruik, vir $\theta \in [{0}^{\circ };{360}^{\circ }]$.
     \item 'n Asimptoot is 'n reguit of gekromde lyn wat 'n grafiek ten minste een keer sny. 
     \item Gegee die funksie in die vorm $y=ax+q$ ,word die $y$-afsnit gevind deur $x=0$ te stel en op te los vir $y$.
     \end{enumerate}
-\item Gegee die funksies $f(x)=-2{x}^{2}-18$ en $g(x)=-2x+6$:
+\item Gegee die funksies $f(x)=2{x}^{2}-6$ en $g(x)=-2x+6$:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
     \item Skets $f$ en $g$ op dieselfde assestelsel.
     \item Bereken die snypunte van $f$ en $g$.
     \item Gebruik nou die grafieke en hulle snypunte om vir $x$ op te los wanneer:
 	\begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-	\item $f(x)>0$
-	\item $\frac{f(x)}{g(x)}\leq 0$
+      \item $f(x)>0$
+      \item $g(x)<0$
+      \item $f(x)\leq g(x)$
 	\end{enumerate}
     \item Gee die vergelyking van die refleksie van $f$ in die $x$-as.
     \end{enumerate}
@@ -1241,46 +1246,47 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
 \end{pspicture}
 }
 \item Die $x$-waardes van die kruispunte kan gevind word om deur $f(x)=g(x)$ te sit:\\
-$-2x^2 + 18 = -2x +6\\
-x^2-9 =x-3\\
-x^2 -x - 6=0\\
-(x+2)(x-3) = 0\\ 
-\therefore x=-2 $ en $x=3$.\\
-Die $y$-waardes word gevind  om deur die $x$-waardes in enige van die twee vergelykings te vervang:\\
-$g(x) = -2(3)+6 = 0\\
-g(x) = -2(-2)+6=10\\$
-Dus is die kruispunte $(3;0)$ en $(-2;10)$%Calculate the points of intersection of $f$ en $g$.
+$2x^2 - 6 = -2x +6\\
+2x^2+2x-12=0\\
+x^2 +x - 6=0\\
+(x-2)(x+3) = 0\\ 
+\therefore x=2 $ and $x=-3$.\\
+Bereken die $y$-waardes:\\
+$g(x) = -2(-3)+6 = 12\\
+g(x) = -2(2)+6=2\\$
+Dus die twee kruispunte is $(-3;12)$ en $(2;2)$.%Calculate the points of intersection of $f$ and $g$.
 
-\item %Hence use your graphs en the points of intersection to solve for $x$ when:
+\item %Hence use your graphs and the points of intersection to solve for $x$ when:
 % \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-\item $
-f(x)>0\\
-−2x^2+18>0\\
-2x^2<18\\
-x2<9\\
-−3<x<3\\$
-%$f(x)>0$
-
-\item $
-
-\frac{−2x^2+18}{−2x+6}\leq0\\
-\frac{x^2−9}{x−3} \leq 0\\
-\frac{(x−3)(x+3)}{x−3} \leq0 \\
-x+3\leq0\\
-x\leq−3$
+\item 
+Laat $f(x)=0\\
+2x^2-6=0\\
+2x^2=6\\
+x^2=3\\
+x=\pm \sqrt{3}\\$
+Dus,  $f(x)>0, ~x \in (-\infty; \sqrt{3})\cup(\sqrt{3}; \infty)$.
+%$g(x)<0$
+\item 
+Laat $g(x)=0\\
+-2x+6=0\\
+-2x=-6\\
+x=3\\$
+Dus, $g(x) <0, ~x \in (3;\infty)$.
+\item 
+As $f(x)\leq g(x), ~x \in [-3;2]$.
 
 \end{enumerate}
-	\item $y=2x^2-18$%Give the equation of the reflection of $f$ in the $x$-axis.
+\item $y=-2x^2+6$%Give the equation of the reflection of $f$ in the $x$-axis.
 \end{enumerate}
-	 \item 
-
+	 
+\item 
 $y=5(0,8)^x\\
 = 5(\frac{4}{5})^x\\
-$ if $x = 5$ then $y = 5(\frac{4}{5})^5\\
+$ as $x = 5$, $y = 5(\frac{4}{5})^5\\
 = 5(\frac{1024}{3125})\\
 =5(0,38)\\
-=1,6$ units%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) en the height of the bounce ($y$) for a certain ball. 
+=1,6$ eenhede%After a ball is dropped, the rebound height of each bounce decreases. The equation $y=5{(0,8)}^{x}$ shows the relationship between the number of bounces ($x$) en the height of the bounce ($y$) for a certain ball. 
 
 % What is the approximate height of the fifth bounce of this ball to the nearest tenth of a unit ?
 
@@ -1424,15 +1430,15 @@ Mark het $6$ R $5$ muntstukke en $9$ R~$2$ muntstukke.
 \item %$y=2^x$ en $y=-2^x$ are sketched below. Answer the questions that follow:\\
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item As $M$, $y=2^0\\=1\\$ dus die ko\"ordinate van $M$ is $(0;1)$\\
-As $N$, $y= -(2^0)\\ = -1\\$ dus die ko\"ordinate van $N$ is $(0;-1)$%Calculate the coordinates of $M$ en $N$.
+\item As $M$, $y=2^0=1\\$ dus die ko\"ordinate van $M$ is $(0;1)$.\\
+As $N$, $y= -(2^0)= -1\\$ dus die ko\"ordinate van $N$ is $(0;-1)$.%Calculate the coordinates of $M$ en $N$.
 \item $MN=1+1=2$ eenhede%Calculate the length of $MN$.
 \item By $P$, $x=-1$\\
 $\therefore y = 2^{-1} = \frac{1}{2}.\\
 $ By $Q$, $y=-(2^{-1}) = -\frac{1}{2}$.\\
 Dus lengte $PQ = \frac{1}{2} + \frac{1}{2} =1$ eenheid.%Calculate length $PQ$ if $OR=1$ unit.
 \item $y=2^{-x}$%Give the equation of $y=2^x$ reflected about the $y$-axis.
-\item Waardeversameling $y=2^x$: $(0;\infty)$;\\
+\item Waardeversameling $y=2^x$: $(0;\infty)$\\
       Waardeversameling $y=-2^x$: $(-\infty;0)$%Give the range of both graphs.
 \end{enumerate}
 
@@ -1470,7 +1476,7 @@ Dus lengte $PQ = \frac{1}{2} + \frac{1}{2} =1$ eenheid.%Calculate length $PQ$ if
 %       \setcounter{enumii_saved}{\value{enumii}}
 % \setcounter{enumii}{1}
  \item $h(x) = x^2 - 4$\\
-$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$.\\
+$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$\\
 $k(x)$ is dus die spieëlbeeld $h(x)$ rondom die $x$-as. %Describe the relationship between $h$ en $k$.%Describe the relationship between $h$ en $k$.
 \item $y=x^2+4$%Give the equation of $k(x)$ reflected about the line $y=4$.
 \item Definisieversameling $h$: $(-\infty;\infty)$\\
@@ -1496,11 +1502,11 @@ $k(x)$ is dus die spieëlbeeld $h(x)$ rondom die $x$-as. %Describe the relations
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $f(180^{\circ})=0$%$f(180^{\circ})$
 \item $g(180^{\circ})=-2$%$g(180^{\circ})$
-\item $g(270^{\circ}) -f(270^{\circ})=-1-(02)\\
+\item $g(270^{\circ}) -f(270^{\circ})=-1-(-2)\\
 =-1+2\\=1$%$g(270^{\circ}) -f(270^{\circ})$
 \item Definisieversameling: $[0^{\circ}$; $360^{\circ}]$\\
       Waardeversameling: $[-2;0]$%The domain en range of $g$.
-\item Amplitude $=2$;\\
+\item Amplitude $=2$\\
       Periode $=360^{\circ}$%The amplitude en period of $f$.
 \end{enumerate}
 %additional interpretation of graph exercises
@@ -1544,7 +1550,7 @@ $k(x)$ is dus die spieëlbeeld $h(x)$ rondom die $x$-as. %Describe the relations
 	  f(2)=(2)^3-2-6=0$\\
 	  as $x=2$, $y=-3(2)^2+3=-9$\\
 	  Dus $D(2;-9)$.%Calculate the coordinates of $D$.
-    \item Bepaal die gradi\"ent $D(2;-9)$ en $C(0;3)$\\
+    \item Bepaal die gradi\"ent $D(2;-9)$ en $C(0;3)$:\\
 	  $m=\frac{-9-3}{2-0}=-6$\\
 	  Dus $y=-6x+3$%Determine the equation of the straight line that would pass through points $C$ and $D$ .
   \end{enumerate}

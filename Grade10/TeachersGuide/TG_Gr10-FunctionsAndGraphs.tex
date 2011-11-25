@@ -71,7 +71,7 @@
       \item $\frac{x}{2} - \frac{y}{3} = 1$
       \end{enumerate}
 \end{multicols}
-\item For the functions in the diagram below, give the equation and the domain and range:
+\item For the functions in the diagram below, give the equation of the line:
   \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
   \item $a(x)$
   \item $b(x)$
@@ -140,7 +140,7 @@
       \end{enumerate}
 \end{multicols}
 
-\item %For the functions in the diagram below, give the equation and domain and range:
+\item %For the functions in the diagram below, give the equation of the line:
 \begin{multicols}{2}   
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]  
 
@@ -290,7 +290,7 @@ $y=ax^2-9\\
 \therefore a=1$
     \item 
 $q$ is the $y$-intercept, therefore  $q = 23$\\ 
-To find $b$, we use one of the points on the graph (e.g. $(4;7)$): 
+To find $b$, we use one of the points on the graph (e.g. $(4;7)$): \\
 $y=bx^2 =23\\
 7= b(4^2) +23\\
 16b=-16\\
@@ -394,7 +394,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
 \end{pspicture}}
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] 
     \item The graph $g(x)=\frac{8}{x}+3$  is the graph of $h(x)=\frac{8}{x}$, vertically shifted upwards by $3$ units. They would be the same shape but the asymptote of $g(x)$ would be $y=3$, instead of $y=0$ (for $h(x)$) and the axis of symmetry would be $y=-x+3$ instead of $y=-x$ (for $h(x)$).%How would the graph compare with that of ? Explain your answer fully.
-    \item (Graph of $y=\frac{8}{x}+3$ is on the set of axes above)%GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
+    \item Graph of $y=\frac{8}{x}+3$ is on the set of axes above.%GRAPH ON SAME SET OF AXES ABOVE %Draw the graph of $y=\frac{8}{x}+3$ on the same set of axes, showing asymptotes, axes of symmetry and the coordinates of one point on the graph.
     \end{enumerate}
  \end{enumerate}
 
@@ -466,7 +466,7 @@ $y=\frac{-6}{0,25} \\= -6 \times 4 \\
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item The $x$-axis is an asymptote to both graphs because both approach the $x$-axis but never touch it.%Is the $x$-axis an asymptote or an axis of symmetry to both graphs? Explain your answer.
 
-\item $y= \frac{1}{2}^{x}$ is represented by the equation $y=2^{-x}$ because $\frac{1}{2}^{-1} = 2^{-1}$, which gives $y = 2^{-x}$. %Which graph is represented by the equation  ? Explain your answer.
+\item $y= \frac{1}{2}^{x}$ is represented by the equation $y=2^{-x}$ because $\frac{1}{2} = 2^{-1}$, which gives $y = 2^{-x}$. %Which graph is represented by the equation  ? Explain your answer.
 \item The graphs intersect at the point $(0;1)$. If we substitute these values into each side of the equation we get:\\
 LHS: $ 2^{x}=2^0 = 1$ and\\
 RHS: $\left(\frac{1}{2}\right)^x =\left(\frac{1}{2}\right)^0 = 1$\\
@@ -519,23 +519,26 @@ Therefore the equation is $f(x) = 3^x$.
 \item Give the equations of each of the following graphs:
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item
-\begin{pspicture}(-2.5,-2)(5,2)
-\psset{yunit=0.25}
-\psaxes[Dx=180, dx=2, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
-\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
-\uput[d](5.4,0.1){$x$ (in degrees)}
-\uput[r](0,5.1){$y$}
-\rput(-0.2,-0.7){$0$}
-\end{pspicture}
 \item
-\begin{pspicture}(-0.3,-2)(5,2)
+\footnotesize\begin{pspicture}(-2.5,-2)(5,2)
 \psset{yunit=0.25}
-\psaxes[Dx=90, dx=1, Dy=2, dy=4]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
-\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
-\uput[d](5.4,0.1){$x$ (in degrees)}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x cos -4 mul }
+\uput[d](4.7,0.1){$x$}
 \uput[r](0,5.1){$y$}
 \rput(-0.2,-0.7){$0$}
-\end{pspicture}
+\end{pspicture}\normalsize
+
+
+\item
+\footnotesize\begin{pspicture}(-0.3,-2)(5,2)
+\psset{yunit=0.25}
+\psaxes[Dx=90, dx=1, Dy=2, dy=4, xlabelFactor=^{\circ}]{<->}(0,0)(-0.5,-5.1)(4.5,5.1)
+\psplot[xunit=0.0111, plotpoints=500, arrows=->]{0}{360}{x sin 1 add 2 mul}
+\uput[d](4.7,0.1){$x$}
+\uput[r](0,5.1){$y$}
+\rput(-0.2,-0.7){$0$}
+\end{pspicture}\normalsize
 \end{enumerate}
 \end{enumerate}
 
@@ -702,14 +705,15 @@ Therefore the equation is $f(x) = 3^x$.
     \item  An asymptote is a straight line which a graph will intersect at least once.
     \item Given a function of the form $y=ax+q$, to find the $y$-intercept let $x=0$ and solve for $y$.
     \end{enumerate}
-  \item Given the functions $f(x)=2{x}^{2}-5$ and $g(x)=-2x+6$
+  \item Given the functions $f(x)=2{x}^{2}-6$ and $g(x)=-2x+6$:
     \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ] % \setcounter{enumi}{18} 
     \item Draw $f$ and $g$ on the same set of axes.
     \item Calculate the points of intersection of $f$ and $g$.
     \item Use your graphs and the points of intersection to solve for $x$ when:
       \begin{enumerate}[itemsep=3pt, label=\textbf{\roman*}. ] % \setcounter{enumi}{20} 
       \item $f(x)>0$
-      \item $\dfrac{f(x)}{g(x)}\leq 0$
+      \item $g(x)<0$
+      \item $f(x)\leq g(x)$
       \end{enumerate}
     \item Give the equation of the reflection of $f$ in the $x$-axis.
     \end{enumerate}
@@ -927,7 +931,7 @@ Therefore the equation is $f(x) = 3^x$.
     \item Give the equation of $y=2^x$ reflected about the $y$-axis.
     \item Give the range of both graphs.
     \end{enumerate}
-  \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and$C$ are given. Answer the questions that follow:
+  \item$f(x)=4^x$ and $g(x)=4x^2+q$ are sketched below. The points $A(0;1)$, $B(1;4)$ and $C$ are given. Answer the questions that follow:
   \begin{center}  
     \scalebox{1}{
       \begin{pspicture}(-5,-5)(5,1)
@@ -1248,39 +1252,40 @@ Therefore the equation is $f(x) = 3^x$.
 \end{pspicture}
 }
 \item The $x$-values of the points of intersection can be found by setting $f(x)=g(x)$:\\
-$-2x^2 + 18 = -2x +6\\
-x^2-9 =x-3\\
-x^2 -x - 6=0\\
-(x+2)(x-3) = 0\\ 
-\therefore x=-2 $ and $x=3$.\\
+$2x^2 - 6 = -2x +6\\
+2x^2+2x-12=0\\
+x^2 +x - 6=0\\
+(x-2)(x+3) = 0\\ 
+\therefore x=2 $ and $x=-3$.\\
 The $y$-values can be obtained by substituting the $x$-values into either equation:\\
-$g(x) = -2(3)+6 = 0\\
-g(x) = -2(-2)+6=10\\$
-Therefore the points of intersection are $(3;0)$ and $(-2;10)$%Calculate the points of intersection of $f$ and $g$.
+$g(x) = -2(-3)+6 = 12\\
+g(x) = -2(2)+6=2\\$
+Therefore the points of intersection are $(-3;12)$ and $(2;2)$.%Calculate the points of intersection of $f$ and $g$.
 
 \item %Hence use your graphs and the points of intersection to solve for $x$ when:
 % \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \begin{enumerate}[noitemsep, label=\textbf{\roman*}. ] 
-\item $
-f(x)>0\\
-−2x^2+18>0\\
-2x^2<18\\
-x2<9\\
-−3<x<3\\$
-%$f(x)>0$
-
-\item $
-
-\frac{−2x^2+18}{−2x+6}\leq0\\
-\frac{x^2−9}{x−3} \leq 0\\
-\frac{(x−3)(x+3)}{x−3} \leq0 \\
-x+3\leq0\\
-x\leq−3$
+\item 
+Let $f(x)=0\\
+2x^2-6=0\\
+2x^2=6\\
+x^2=3\\
+x=\pm \sqrt{3}\\$
+Theferfore, for $f(x)>0, ~x \in (-\infty; \sqrt{3})\cup(\sqrt{3}; \infty)$.
+%$g(x)<0$
+\item 
+Let $g(x)=0\\
+-2x+6=0\\
+-2x=-6\\
+x=3\\$
+Therefore, for $g(x) <0, ~x \in (3;\infty)$.
+\item 
+For $f(x)\leq g(x), ~x \in [-3;2]$.
 
 \end{enumerate}
-	\item $y=2x^2-18$%Give the equation of the reflection of $f$ in the $x$-axis.
+\item $y=-2x^2+6$%Give the equation of the reflection of $f$ in the $x$-axis.
 \end{enumerate}
-	 \item 
+\item 
 
 $y=5(0,8)^x\\
 = 5(\frac{4}{5})^x\\
@@ -1431,15 +1436,15 @@ Mark has $6$ R $5$ coins and $9$ R~$2$ coins.
 \item %$y=2^x$ and $y=-2^x$ are sketched below. Answer the questions that follow:\\
 
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
-\item At $M$, $y=2^0\\=1\\$therefore the coordinates of $M$ are $(0;1)$\\
-At $N$, $y= -(2^0)\\ = -1\\$therefore the coordinates of $N$ are$(0;-1)$%Calculate the coordinates of $M$ and $N$.
+\item At $M$, $y=2^0=1\\$therefore the coordinates of $M$ are $(0;1)$\\
+At $N$, $y= -(2^0)= -1\\$therefore the coordinates of $N$ are$(0;-1)$%Calculate the coordinates of $M$ and $N$.
 \item $MN=1+1=2$ units%Calculate the length of $MN$.
 \item At $P$, $x=-1$\\
 $\therefore y = 2^{-1} = \frac{1}{2}.\\
 $ At $Q$, $y=-(2^{-1}) = -\frac{1}{2}$.\\
 Therefore length $PQ = \frac{1}{2} + \frac{1}{2} =1$ unit.%Calculate length $PQ$ if $OR=1$ unit.
 \item $y=2^{-x}$%Give the equation of $y=2^x$ reflected about the $y$-axis.
-\item Range $y=2^x$: $(0;\infty)$;\\
+\item Range $y=2^x$: $(0;\infty)$\\
       Range $y=-2^x$: $(-\infty;0)$%Give the range of both graphs.
 \end{enumerate}
 
@@ -1477,7 +1482,7 @@ Therefore length $PQ = \frac{1}{2} + \frac{1}{2} =1$ unit.%Calculate length $PQ$
 %       \setcounter{enumii_saved}{\value{enumii}}
 % \setcounter{enumii}{1}
  \item $h(x) = x^2 - 4$\\
-$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$.\\
+$k(x) = -x^2+4\\=-(x^2-4)\\ = -h(x)$\\
 $k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the relationship between $h$ and $k$.%Describe the relationship between $h$ and $k$.
 \item $y=x^2+4$%Give the equation of $k(x)$ reflected about the line $y=4$.
 \item Domain $h$: $(-\infty;\infty)$\\
@@ -1503,11 +1508,11 @@ $k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the r
  \begin{enumerate}[noitemsep, label=\textbf{(\alph*)} ]
 \item $f(180^{\circ})=0$%$f(180^{\circ})$
 \item $g(180^{\circ})=-2$%$g(180^{\circ})$
-\item $g(270^{\circ}) -f(270^{\circ})=-1-(02)\\
+\item $g(270^{\circ}) -f(270^{\circ})=-1-(-2)\\
 =-1+2\\=1$%$g(270^{\circ}) -f(270^{\circ})$
 \item Domain: $[0^{\circ}$; $360^{\circ}]$\\
       Range: $[-2;0]$%The domain and range of $g$.
-\item Amplitude $=2$;\\
+\item Amplitude $=2$\\
       Period $=360^{\circ}$%The amplitude and period of $f$.
 \end{enumerate}
 %additional interpretation of graph exercises
@@ -1551,7 +1556,7 @@ $k(x)$ is therefore the reflection of $h(x)$ about the $x$-axis. %Describe the r
 	  f(2)=(2)^3-2-6=0$\\
 	  when $x=2$, $y=-3(2)^2+3=-9$\\
 	  Therefore $D(2;-9)$.%Calculate the coordinates of $D$.
-    \item Determine gradient $D(2;-9)$ and $C(0;3)$\\
+    \item Determine gradient $D(2;-9)$ and $C(0;3)$:\\
 	  $m=\frac{-9-3}{2-0}=-6$\\
 	  Therefore $y=-6x+3$%Determine the equation of the straight line that would pass through points $C$ and $D$ .
   \end{enumerate}
