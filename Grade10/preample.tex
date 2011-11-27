@@ -343,8 +343,11 @@ linecolor=red%
 \leftskip20pt
 \noindent
 \textit{Step \arabic{stepcounter}} : \textit{\textbf{#1}}
-\par\noindent
+\noindent
+\par
+\noindent
 \leftskip60pt
+\noindent
 \addtocounter{stepcounter}{1}
 }
 
@@ -380,7 +383,8 @@ linecolor=red%
 \noindent
 \textit{\noindent #2}
 \vspace*{28pt}
-\par\noindent
+\par
+\noindent
 \textbf{\textit{SOLUTION}}\vspace*{4pt}
 \hrule
 \vspace*{18pt}
@@ -560,7 +564,7 @@ linecolor=red%
     \node[anchor=west, xshift=55pt]{
       \begin{tikzpicture}[remember picture, overlay]
         \draw[fill=white, draw=black, linewidth=1pt] (0,0) rectangle
-          (0.7\textwidth-5pt,28pt);
+          (0.755\textwidth-5pt,28pt);
          \node[anchor=west, yshift=14pt, xshift=0pt, text centered]
               { \textit{#1} };
 
@@ -887,7 +891,7 @@ linecolor=red%
 
 
 \newcommand{\summary}[1]{
-\vspace{6\baselineskip} \par
+\vspace{3\baselineskip} \par
 {\normalfont \sffamily\fontsize{22}\bfseries
 \begin{tikzpicture}[remember picture,overlay]
     \node[anchor=west, xshift=-0.4\paperwidth]

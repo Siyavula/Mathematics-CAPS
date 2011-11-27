@@ -236,13 +236,16 @@ Complete the following table for $f(x)=x$ and plot the points on a set of axes.
 \end{tabular}
 \end{center}
 \vspace{10pt}
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Join the points with a straight line.
 \item Determine the domain and range.
 \item About which line is $f$ symmetrical?
 \item Using the graph, determine the value of $x$ for which $f(x) = 4$. Confirm your answer graphically.
 \item Where does the graph cut the axes?
+
 \end{enumerate}
+\end{minipage}
 }
 {
 \westep{Substitute values into the equation}
@@ -263,7 +266,7 @@ From the table, we get the following points and the graph:
   (-2;-2),~(-1;-1),~(0;0),~(1;1),~(2;2)
 \end{equation*}
  \\
-\begin{figure}[H]
+% \begin{figure}[H]
 \begin{center}
 \begin{pspicture}(-5,-1)(5,5)
 % label the axes
@@ -282,7 +285,7 @@ From the table, we get the following points and the graph:
 % \caption{Graph of $f(x)=x^2-1$.}
 % \label{fig:mf:g:parabola10}
 \end{center}
-\end{figure}    
+% \end{figure}    
 
 \westep{Determine the domain and range}
 Domain: $x \in \mathbb{R}$\\
@@ -296,7 +299,7 @@ This gives the point $(4; 4)$.
 The function $f$ intercepts the axes at the origin $(0;0)$.
 }
 \end{wex}
-
+\vspace*{-40pt}
 
 \subsection*{Functions of the form $y=mx+c$}   
 
@@ -459,7 +462,7 @@ In order to sketch graphs of the form, $f(x)=mx+c$, we need to determine three c
 
 \subsection*{Dual intercept method}
 Only two points are needed to plot a straight line graph. The easiest points to use are the $x$-intercept and the $y$-intercept.\par 
-
+\pagebreak
 \begin{wex}{Sketching a straight line graph using the dual intercept method}
 {Sketch the graph of $g(x)=x-1$ using the dual intercept method.}
 {
@@ -562,7 +565,7 @@ Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives t
 \psset{yunit=0.75,xunit=0.75}
 \psaxes[arrows=<->](0,0)(-6,-6)(7,4)
 \psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
-\psline[linewidth=.7pt](0,-2)(2,-2)
+\psline[linestyle=dashed,linewidth=.7pt](0,-2)(2,-2)
 \psline[linewidth=.7pt](0,-3)(0,-2)
 \psdots(0,-3)(2,-2)(-2,-4)
 \uput[r](0,-3.3){$(0;-3)$}
@@ -576,9 +579,10 @@ Or start at $(0;-3)$, move $1$ unit down and $2$ units to the left. This gives t
 \rput(1, -1.7){\footnotesize$2\rightarrow$}
 \end{pspicture}
 \end{center}
+\vspace*{-20pt}
 }
 \end{wex}
-
+\clearpage
 Always write the function in the form $y=mx+c$ and take note of $m$. After plotting the graph, make sure that the graph increases if $m>0$ and that the graph decreases if $m<0$.\\
 
 \begin{exercises}{}
@@ -1016,8 +1020,8 @@ In order to sketch graphs of the form $f(x)=ax^{2}+q$, we need to determine the 
 \item $x$-intercept
 \item turning point
 \end{enumerate}
-\clearpage
-
+% \clearpage
+\vspace*{-30pt}
 \begin{wex}
 {Sketching a parabola}
 {Sketch the graph of $y={2x}^{2}-4$. Mark the intercepts and the turning point.}
@@ -1047,6 +1051,7 @@ This gives the points $(-\sqrt{2};0)$ and $(\sqrt{2};0)$
 From the standard form of the equation we see that the turning point is $(0;-4)$.
 
 \westep{Plot the points and sketch the graph}
+\vspace*{-20pt}
 \begin{center}
 \scalebox{1}
 {
@@ -1191,7 +1196,7 @@ The axis of symmetry is the line $x=0$.
 
 \subsection*{Functions of the form $y=\frac{1}{x}$}  
 Functions of the general form $y=\frac{a}{x}+q$ are called hyperbolic functions. 
-
+\clearpage
 \begin{wex}
 {Plotting a hyperbolic function}
 {
@@ -1235,7 +1240,11 @@ Complete the following table for $h(x) = \frac{1}{x}$ and plot the points on a s
     h(-1) &=& \frac{1}{-1} &=& -1 \vspace{5pt}\\ 
     h(-\frac{1}{2}) &=& \dfrac{1}{-\frac{1}{2}} &=& -2 \vspace{5pt}\\ 
     h(-\frac{1}{4}) &=& \dfrac{1}{-\frac{1}{4}} &=& -4 \vspace{5pt}\\ 
-    h(0) &=& \frac{1}{0} &=& \mbox{undefined}\vspace{5pt} \\ 
+    h(0) &=& \frac{1}{0} &=& \mbox{undefined}\vspace{5pt} 
+  \end{array}
+\end{equation*}
+\begin{equation*}
+  \begin{array}{cllll}
     h(\frac{1}{4}) &=& \dfrac{1}{\frac{1}{4}} &=& 4 \vspace{5pt}\\ 
     h(\frac{1}{2}) &=& \dfrac{1}{\frac{1}{2}} &=& 2 \vspace{5pt}\\ 
     h(1) &=& \frac{1}{1} &=& 1\\ 
@@ -1640,7 +1649,7 @@ Axis of symmetry: $y=x+7$ and $y=-x+7$
 Functions of the general form $y=ab^{x}+q$ are called exponential functions. In the equation $a$ and $q$ are constants and have different effects on the function.
 \par
 \mindsetvid{The exponential function}{VMaxx}
-\pagebreak
+% \pagebreak
 \begin{wex}{Plotting an exponential function}
 {
 \begin{equation*}
@@ -2070,7 +2079,7 @@ In order to sketch graphs of functions of the form, $y=ab^{x}+q$, we need to det
 \item $x$-intercept
 \item asymptote
 \end{enumerate}
-
+\clearpage
 \begin{wex}{Sketching an exponential function}
 {Sketch the graph of $g(x)=3 \times 2^{x}+2$. Mark the intercept and the asymptote.}
 {
@@ -2126,8 +2135,7 @@ Note that there is no axis of symmetry for exponential functions.
 } 
 \end{wex}
 
-
-\pagebreak 
+\vspace*{-30pt}
 \begin{wex}{Sketching an exponential graph}
 {Sketch the graph of $y=-2 \times 3^{x}+6$.}
 {
@@ -2229,7 +2237,7 @@ Range: $\{g(x): g(x) <6\}$
 \section{Trigonometric functions}
 This section describes the graphs of trigonometric functions.\par 
 \mindsetvid{Sine and cosine graphs}{VMazc}
-\pagebreak
+% \pagebreak
  % fixes the open page before this next wex
 \subsection{Sine function}
 \subsection*{Functions of the form $y=sin~\theta$}
@@ -2364,7 +2372,7 @@ Maximum turning point: $(90^{\circ};1)$\\
 Minimum turning point: $(270^{\circ};-1)$
 }
 \end{wex}
-
+\clearpage
 \subsection*{Functions of the form $y=a~sin~\theta+q$}
 \begin{Investigation}{The effects of $a$ and $q$ on a sine graph}
 
@@ -2602,7 +2610,7 @@ The $y$-intercept of $f(\theta )=a~sin~\theta+q$ is simply the value of $f(\thet
 This gives the point $(0;q)$.
 \par
 \textbf{Important:} when sketching trigonometric graphs, always start with the basic graph and then consider the effects of $a$ and $q$.
-
+\vspace*{-20pt}
 \begin{wex}{Sketching a sine graph}
 {Sketch the graph of $f(\theta)=2~sin~\theta+3$ for $\theta \in [~0^{\circ}; 360^{\circ}]$.}
 {
@@ -2654,7 +2662,9 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 \end{table}
 
 \westep{Plot the points and join with a smooth curve}
+
 \begin{center}
+\scalebox{0.95}{
 \begin{pspicture}(-4,-2)(4,6)
 \psset{yunit=1, xunit=2.4}
 %\psgrid[gridcolor=gray]
@@ -2669,7 +2679,7 @@ From the equation we see that $a>1$ so the graph is stretched vertically. We als
 \rput(380,3.4){$f(\theta)=2~sin~\theta+3$}
 \psdots(0,3)(30,4)(60,4.73)(90,5)(120,4.73)(150,4)(180,3)(210,2)(240,1.27)(270,1)(300,1.27)(330,2)(360,3)
 
-\end{pspicture}
+\end{pspicture}}
 \end{center} 
 \\
 Domain: $[~0^{\circ}; 360^{\circ}]$\\
@@ -2680,7 +2690,7 @@ Maximum turning point: $(90^{\circ};5)$\\
 Minimum turning point: $(270^{\circ};1)$
 }
 \end{wex}
-\pagebreak
+% \pagebreak
 \subsection{Cosine function}
 \subsection*{Functions of the form $y=cos ~\theta$}
 \begin{wex}
@@ -3118,7 +3128,7 @@ graph by $90 ^{\circ }$ to the left and it would overlap perfectly with the cosi
     cos ~\theta & = & sin~ (\theta + 90^{\circ}) & (\mbox{shift the sine graph to the left})
   \end{array}
 \end{equation*}
-
+\clearpage
 \subsection{Tangent function}
 \subsection*{Functions of the form $y=tan ~\theta$}
 %  %MANUAL PAGE BREAK TO FORCE WEX TO SPLIT OVER TWO PAGES
@@ -3177,7 +3187,7 @@ Choose an appropriate scale and plot the values with $\theta $ on the $x$-axis a
 \westep{Substitute values for $\theta$}
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+\begin{tabular}{|c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c|} \hline
 
 \footnotesize$\theta $&
 \footnotesize$0^{\circ }$&
@@ -3260,7 +3270,7 @@ $y$-intercept: $(0^{\circ};0)$
 }
 \end{wex}
 
-
+\clearpage
 
 
 % \setcounter{subfigure}{0}
@@ -3760,12 +3770,15 @@ $a=-1$ and $q=1$, the equation of the hyperbola is $y=\dfrac{-1}{x}+1$.
 
 \begin{wex}{Interpreting graphs}
 {The graphs of $y=-x^{2}+4$ and $y=x-2$ are given. Calculate the following:\\
+% \vspace*{20pt}
+\begin{minipage}{\textwidth}
+\vspace*{15pt}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item coordinates of $A$, $B$, $C$, $D$
 \item coordinates of $E$
 \item distance $CD$ 
 \end{enumerate}
-
+\end{minipage}
 
 \begin{center}
 \begin{pspicture}(-5,-5)(5,1)

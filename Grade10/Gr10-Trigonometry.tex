@@ -567,9 +567,9 @@ LHS = RHS therefore the statement is true.
 \usefont{T1}{ptm}{m}{n}
 \rput(2.0890625,-1.7835938){$1$}
 \usefont{T1}{ptm}{m}{n}
-\rput(1.3,-1.2){$60^{\circ}$}
+\rput(1.3,-1.2){\small $60^{\circ}$}
 \usefont{T1}{ptm}{m}{n}
-\rput(2.85,1.1){$30^{\circ}$}
+\rput(2.85,1.1){\small $30^{\circ}$}
 \usefont{T1}{ptm}{m}{n}
 \rput(3.4545314,0.01640625){$\sqrt{3}$}
 \end{pspicture}
@@ -1002,7 +1002,9 @@ x = 76,6
 \end{exercises}
 \pagebreak
 \section{Finding an angle}
+% \vspace*{-20pt}
  \mindsetvid{What about the angle}{VMbfq}
+\vspace*{-20pt}
 \begin{wex}{Finding angles}
 {Find the value of $\theta$ in the following right-angled triangle: \\
 \begin{center}
@@ -1021,7 +1023,7 @@ x = 76,6
 \end{pspicture} 
 }
 \end{center}
-}
+\vspace*{-20pt}}
 {
 
 \westep{Identify the opposite and adjacent sides and the hypotenuse}
@@ -1043,6 +1045,7 @@ Press \fbox{2ndF} \fbox{tan} \fbox{(} \fbox{50} \fbox{\div} \fbox{100} \fbox{)} 
 \begin{equation*}
 \theta = 26,6^{\circ}
 \end{equation*}
+\vspace*{-20pt}
 }
 \end{wex}
 
@@ -1190,9 +1193,11 @@ Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
 \end{center}
 
 \westep{Use given information and appropriate ratio to solve for $h$ and $d$}
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item
 \begin{equation*}
+\hspace*{-100pt}
  \begin{array}{ccl}
 \hfill sin~ 63^{\circ} &= & \frac{\mbox{\footnotesize opposite}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
 \hfill sin~ 63^{\circ} &=& \dfrac{h}{17} \hfill \\
@@ -1202,7 +1207,9 @@ Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
 \end{equation*}
 
 \item
+
 \begin{equation*}
+\hspace*{-100pt}
  \begin{array}{ccl}
 \hfill cos~ 63^{\circ} &= & \frac{\mbox{\footnotesize adjacent}}{\mbox{\footnotesize hypotenuse}} \hfill \vspace{5pt}\\
 \hfill cos~ 63^{\circ} &=& \dfrac{d}{17} \hfill \\
@@ -1211,13 +1218,16 @@ Mandla flies a kite on a $17~$m string at an inclination of $63^{\circ}$.
 \end{array}
 \end{equation*}
 \end{enumerate}
+\end{minipage}
 Note that the third side of the triangle can also be calculated using the Theorem of Pythagoras: $d^{2} = 17^{2} - h^{2}$.
 
 \westep{Write final answers}
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item The kite is $15,15$ m above the ground.
 \item Mandla and Sipho are $7,72$ m apart.
 \end{enumerate}
+\end{minipage}
 }
 \end{wex}
 
@@ -1919,11 +1929,16 @@ Given that $\theta$ lies in the third quadrant, $y$ must be negative.\\
 \hfill &=& \left(\dfrac{y}{x}\right)^{2} + 1  	&	&=& \left(\dfrac{r}{x}\right)^{2} \hfill \vspace{5pt} \\
 \hfill&=&  \left(\dfrac{-12}{-5}\right)^{2} + 1 	&	&=& \left(\dfrac{13}{-5}\right)^{2} \hfill \vspace{5pt}\\
 \hfill&=&  \left (\dfrac{144}{25}\right) + 1  	&	&=& \dfrac{169}{25} \hfill \vspace{5pt}\\
+\end{array}
+\end{equation*}
+\begin{equation*}
+\begin{array}{rclrcl}
 \hfill &=& \dfrac{144 + 25}{25} 		&	& & \hfill \vspace{5pt}\\
 \hfill &=& \dfrac{169}{25}  			&	& & \hfill \vspace{5pt}\\
 \hfill \therefore \mbox{LHS} &=& \mbox{RHS}&& \hfill
 \end{array}
 \end{equation*}
+
 }
 \end{wex}
 
@@ -2047,7 +2062,7 @@ Determine the following in terms of $t$:
 \item We can extend the definitions of the trigonometric functions to any angle.
 \item Trigonometry is used to help us solve problems in two dimensions, such as finding the height of a building.
 \end{itemize}
-\pagebreak
+% \pagebreak
 
 \begin{eocexercises}{}
 
@@ -2200,9 +2215,9 @@ sin~ 60^{\circ} cos~ 30^{\circ}-cos~ 60^{\circ}sin~ 30^{\circ} + tan~ 45^{\circ}
 % Question 4
 (4.)	00m1	&
 % Question 5
-(5.)	00m2	&
+(5.)	00m2	\\ % End row of shortcodes
 % Question 6
-(6.)	00m3	\\ % End row of shortcodes
+(6.)	00m3	&
 % Question 7
 (7.)	00m4	&
 % Question 8
@@ -2210,17 +2225,17 @@ sin~ 60^{\circ} cos~ 30^{\circ}-cos~ 60^{\circ}sin~ 30^{\circ} + tan~ 45^{\circ}
 % Question 9
 (9.)	00m6	&
 % Question 10
-(10.)	00m7	&
+(10.)	00m7	\\ % End row of shortcodes
 % Question 11
 (11.)	00m8	&
 % Question 12
-(12.)	00m9	\\ % End row of shortcodes
+(12.)	00m9	&
 % Question 13
 (13.)	00ma	&
 % Question 14
 (14.)	00mb	&
 % Question 15
-(15.)	00mc	&
+(15.)	00mc	\\ % End row of shortcodes
 \end{tabular}
 % Automatically inserted shortcodes - number inserted 15
 \end{eocexercises}
