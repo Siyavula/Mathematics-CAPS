@@ -139,7 +139,7 @@ colours of their cell phones are and get the following responses:
   which cellular provider they currently use. The results were:
 
     \begin{center}
-      \begin{tabular}{|p{0.13\textwidth}|p{0.13\textwidth}|p{0.13\textwidth}|p{0.13\textwidth}|p{0.13\textwidth}|}\hline
+      \begin{tabular}{|p{0.13\textwidth}|p{0.13\textwidth}|p{0.19\textwidth}|p{0.19\textwidth}|p{0.13\textwidth}|}\hline
         
         Cell C & Vodacom & Vodacom & MTN & Vodacom \\\hline
         MTN & MTN & Virgin Mobile & Cell C & 8-ta \\\hline
@@ -220,7 +220,7 @@ the data set.
 
   There are $7$ values in the data set. Since there are an odd number
   of values, the median will be equal to the value in the middle,
-  namely, in the $4^{\mathrm{th}}$ position. Therefore the median of the data set is $14$.
+  namely, in the $4^{th}$ position. Therefore the median of the data set is $14$.
 }
 \end{wex}
 
@@ -238,8 +238,8 @@ the data set.
 
   There are $8$ values in the data set. Since there are an even number
   of values, the median will be halfway between the two values in the
-  middle, namely, between the $4^{\mathrm{th}}$ and $5^{\mathrm{th}}$ positions. The value in the
-  $4^{\mathrm{th}}$ position is $11$ and the value in the $5^{\mathrm{th}}$ position is
+  middle, namely, between the $4^{th}$ and $5^{th}$ positions. The value in the
+  $4^{th}$ position is $11$ and the value in the $5^{th}$ position is
   $14$. The median lies halfway between these two values and is
   therefore
   \begin{equation*}
@@ -370,9 +370,10 @@ on grouping data.
   the middle.
 
   For Monday, the sorted list of numbers is
-  \begin{equation*}
-    789,0;\ 789,0;\ 796,2;\ 796,7;\ 801,2;\ 802,3;\ 802,3;\ 802,5;\ 808,7;\ 819,6
-  \end{equation*}
+  \begin{eqnarray*}
+    &789,0;~ 789,0;~ 796,2;~ 796,7;~ 
+801,2;~ \\&802,3;~ 802,3;~ 802,5;~ 808,7;~ 819,6
+  \end{eqnarray*}
   The two numbers in the middle are $801,2$ and $802,3$ and so the
   median is
   \begin{equation*}
@@ -430,7 +431,7 @@ on grouping data.
     exceptionally tall at $181$ cm.
 
     Compare the mean and median of the heights of the learners before
-    and after the $11^{\mathrm{th}}$ learner was included.
+    and after the $11^{th}$ learner was included.
 }{
   \westep{Calculate the mean of the first $10$ learners}
 
@@ -457,7 +458,7 @@ on grouping data.
     \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172\}
   \end{equation*}
   Since there are an even number of values, $10$, the median
-  lies halfway between the $5^{\mathrm{th}}$ and $6^{\mathrm{th}}$ values:
+  lies halfway between the $5^{th}$ and $6^{th}$ values:
   \begin{equation*}
     \mbox{Median} =\frac{156+157}{2} = 156,5\mbox{ cm}
   \end{equation*}
@@ -468,7 +469,7 @@ on grouping data.
   \begin{equation*}
     \{143;\ 146;\ 150;\ 153;\ 156;\ 157;\ 157;\ 157;\ 168;\ 172;\ 181\}
   \end{equation*}
-  Now, with $11$ values, the median is the $6^{\mathrm{th}}$ value: $157$ cm.
+  Now, with $11$ values, the median is the $6^{th}$ value: $157$ cm.
   So, the median changes by only $0,5$ cm when we add the outlier
   value to the data set.
 
@@ -835,7 +836,7 @@ data set are. The range is very sensitive to outliers.
 
 \subsection{Percentiles}
 
-\Definition{Percentile}{The $p^{\mathrm{th}}$ percentile is the value, $v$, that
+\Definition{Percentile}{The $p^{th}$ percentile is the value, $v$, that
   divides a data set into two parts, such that $p$ percent of the
   values in the data set are less than $v$ and $100-p$ percent of the
   values are greater than $v$. Percentiles can lie in the range $0 \leq
@@ -876,21 +877,21 @@ datum.
     \end{tabular}
   \end{center}
 
- As an example, $13,0$ is at the $40^{\mathrm{th}}$ percentile since there are
+ As an example, $13,0$ is at the $40^{th}$ percentile since there are
   $2$ values less than $13,0$ and $3$ values greater than $13,0$.
   \begin{equation*}
     \frac{2}{2+3} = 0,4 = 40\%
   \end{equation*}
 % \end{example}
 
-In general, the formula for finding the $p^{\mathrm{th}}$ percentile in an ordered
+In general, the formula for finding the $p^{th}$ percentile in an ordered
 data set with $n$ values is
 \begin{equation*}
   r = \frac{p}{100}\left(n-1\right)+1
 \end{equation*}
-This gives us the rank, $r$, of the $p^{\mathrm{th}}$ percentile. To find the
-value of the $p^{\mathrm{th}}$ percentile, we have to count from the first value in
-the ordered data set up to the $r^{\mathrm{th}}$ value.
+This gives us the rank, $r$, of the $p^{th}$ percentile. To find the
+value of the $p^{th}$ percentile, we have to count from the first value in
+the ordered data set up to the $r^{th}$ value.
 
 Sometimes the rank will not be an integer. This means that the
 percentile lies between two values in the data set. The convention is
@@ -899,7 +900,7 @@ rank.
 
 The figure below shows the relationship between rank and percentile
 graphically. We have already encountered three percentiles in this
-chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th}}$ percentile) and the maximum ($100^{\mathrm{th}}$). The median is defined as the value halfway in a sorted data set.
+chapter: the median ($50^{th}$ percentile), the minimum ($0^{th}$ percentile) and the maximum ($100^{th}$). The median is defined as the value halfway in a sorted data set.
 
 \begin{center}
   \begin{tikzpicture}[xscale=0.1]
@@ -943,9 +944,9 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
 
     We already know that the minimum value is the first value in the
     ordered data set. We will now confirm that the percentile formula
-    gives the same answer. The minimum is equivalent to the $0^{\mathrm{th}}$
+    gives the same answer. The minimum is equivalent to the $0^{th}$
     percentile. According to the percentile formula the rank, $r$, of the
-    $p = 0^{\mathrm{th}}$ percentile in a data set with $n=9$ values is
+    $p = 0^{th}$ percentile in a data set with $n=9$ values is
     \begin{align*}
       r &= \frac{p}{100}\left(n-1\right)+1 \\
         &= \frac{0}{100}\left(9-1\right)+1 \\
@@ -957,7 +958,7 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
     \westep{Find the maximum}
 
     We already know that the maximum value is the last value in the
-    ordered data set. The maximum is also equivalent to the $100^{\mathrm{th}}$
+    ordered data set. The maximum is also equivalent to the $100^{th}$
     percentile. Using the percentile formula with $p=100$ and $n=9$,
     we find the rank of the maximum value as
     \begin{align*}
@@ -965,12 +966,12 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
         &= \frac{100}{100}\left(9-1\right)+1 \\
         &= 9
     \end{align*}
-    This confirms that the maximum value is the last (the $9^{\mathrm{th}}$) value
+    This confirms that the maximum value is the last (the $9^{th}$) value
     in the list, namely $45$.
 
     \westep{Find the median}
 
-    The median is equivalent to the $50^{\mathrm{th}}$ percentile. Using the
+    The median is equivalent to the $50^{th}$ percentile. Using the
     percentile formula with $p=50$ and $n=9$, we find the rank of the
     median value as
     \begin{align*}
@@ -979,16 +980,16 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
         &= \frac{1}{2}(8)+1 \\
         &= 5
     \end{align*}
-    This shows that the median is in the middle (at the $5^{\mathrm{th}}$ position)
+    This shows that the median is in the middle (at the $5^{th}$ position)
     of the ordered data set. Therefore the median value is $19$. 
 }
 \end{wex}
 
 \Definition{Quartiles}{The quartiles are the three data values that
   divide an ordered data set into four groups, where each group
-  contains an equal number of data values. The median ($50^{\mathrm{th}}$
-  percentile) is the second quartile ($Q2$). The $25^{\mathrm{th}}$ percentile is also
-  be called the first or lower quartile ($Q1$), and the $75^{\mathrm{th}}$ percentile the third or upper
+  contains an equal number of data values. The median ($50^{th}$
+  percentile) is the second quartile ($Q2$). The $25^{th}$ percentile is also
+  be called the first or lower quartile ($Q1$), and the $75^{th}$ percentile the third or upper
   quartile ($Q3$).}
 
 \begin{wex}{Quartiles}
@@ -1004,8 +1005,8 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
 
     \westep{Find the ranks of the quartiles}
 
-    Using the percentile formula, $n=12$, we can find the rank of the $25^{\mathrm{th}}$,
-    $50^{\mathrm{th}}$ and $75^{\mathrm{th}}$ percentiles as
+    Using the percentile formula, $n=12$, we can find the rank of the $25^{th}$,
+    $50^{th}$ and $75^{th}$ percentiles as
     \begin{align*}
       r_{25} &= \frac{25}{100}\left(12-1\right)+1 \\
             &= 3,75 \\
@@ -1021,17 +1022,17 @@ chapter: the median ($50^{\mathrm{th}}$ percentile), the minimum ($0^{\mathrm{th
     value for each percentile is somewhere in between two values from
     the data set.
 
-    For the $25^{\mathrm{th}}$ percentile the rank is $3,75$, which is between
-    the $3^{\mathrm{rd}}$ and $4^{\mathrm{th}}$ values. Since both these values are equal to
-    $7$, the $25^{\mathrm{th}}$ percentile is $7$.
+    For the $25^{th}$ percentile the rank is $3,75$, which is between
+    the $3^{\mathrm{rd}}$ and $4^{th}$ values. Since both these values are equal to
+    $7$, the $25^{th}$ percentile is $7$.
 
-    For the $50^{\mathrm{th}}$ percentile (the median) the rank is $6,5$, meaning
-    halfway between the $6^{\mathrm{th}}$ and $7^{\mathrm{th}}$ values. The $6^{\mathrm{th}}$ value is
-    $11$ and the $7^{\mathrm{th}}$ value is $12$, which means that the median is
+    For the $50^{th}$ percentile (the median) the rank is $6,5$, meaning
+    halfway between the $6^{th}$ and $7^{th}$ values. The $6^{th}$ value is
+    $11$ and the $7^{th}$ value is $12$, which means that the median is
     \(\frac{11+12}{2} = 11,5\).
 
-    For the $75^{\mathrm{th}}$ percentile the rank is $9,25$, meaning between the
-    $9^{\mathrm{th}}$ and $10^{\mathrm{th}}$ values. Therefore the $75^{\mathrm{th}}$ percentile is
+    For the $75^{th}$ percentile the rank is $9,25$, meaning between the
+    $9^{th}$ and $10^{th}$ values. Therefore the $75^{th}$ percentile is
     \(\frac{31+35}{2} = 33\).
   }
 \end{wex}
@@ -1080,7 +1081,7 @@ is.
     \begin{enumerate}[noitemsep, label=\textbf{\arabic*}.]
     \item Calculate the mean of this grouped data set.
     \item In which intervals are the quartiles of the data set?
-    \item In which interval is the $30^{\mathrm{th}}$ percentile of the data set?
+    \item In which interval is the $30^{th}$ percentile of the data set?
     \end{enumerate}
 \end{minipage}
 }{
@@ -1109,8 +1110,8 @@ is.
 
   Since the data have been grouped, they have also already been
   sorted. Using the percentile formula and the fact that there are
-  $100$ learners, we can find the rank of the $25^{\mathrm{th}}$, $50^{\mathrm{th}}$ and
-  $75^{\mathrm{th}}$ percentiles as
+  $100$ learners, we can find the rank of the $25^{th}$, $50^{th}$ and
+  $75^{th}$ percentiles as
   \begin{align*}
     r_{25} &= \frac{25}{100}\left(100-1\right)+1 \\
           &= 24,75 \\
@@ -1144,17 +1145,17 @@ is.
     lies somewhere in the sixth range: $60 \leq x < 70$.
   \end{itemize}
 
-  \westep{Find the $30^{\mathrm{th}}$ percentile}
+  \westep{Find the $30^{th}$ percentile}
 
   Using the same method as for the quartiles, we first find the rank
-  of the $30^{\mathrm{th}}$ percentile.
+  of the $30^{th}$ percentile.
   \begin{align*}
     r &= \frac{30}{100}\left(100-1\right)+1 \\
       &= 30,7
   \end{align*}
   Now we have to find the range in which this rank lies. Since there
   are $25$ learners in the first $3$ ranges combined and $47$ learners
-  in the first $4$ ranges combined, the $30^{\mathrm{th}}$ percentile lies in the
+  in the first $4$ ranges combined, the $30^{th}$ percentile lies in the
   fourth range: $40 \leq x < 50$.
 }
 \end{wex}
@@ -1162,8 +1163,8 @@ is.
 \subsection{Ranges}
 We define data ranges in terms of percentiles. We have already
 encountered the full data range, which is simply the difference between the
-$100^{\mathrm{th}}$ and the $0^{\mathrm{th}}$ percentile (that is, between the maximum and
-minimum values in the data set.
+$100^{th}$ and the $0^{th}$ percentile (that is, between the maximum and
+minimum values in the data set).
 
 \Definition{Interquartile range}{The interquartile range is a measure
   of dispersion, which is calculated by subtracting the first
@@ -1226,8 +1227,8 @@ plot.
 \par
 The five number summary consists of the minimum value, the maximum
 value and the three quartiles. Another way of saying this is that the
-five number summary consists of the following percentiles: $0^{\mathrm{th}}$,
-$25^{\mathrm{th}}$, $50^{\mathrm{th}}$, $75^{\mathrm{th}}$, $100^{\mathrm{th}}$.
+five number summary consists of the following percentiles: $0^{th}$,
+$25^{th}$, $50^{th}$, $75^{th}$, $100^{th}$.
 
 The box-and-whisker plot shows these five percentiles as in the figure
 below. The box shows the interquartile range (the distance between $Q1$ and $Q3$). A line inside the box shows the
@@ -1250,11 +1251,11 @@ the minimum and maximum values lie. This graph can also be drawn horizontally.
       \draw (0.6, 0) node[anchor=west] {median};
       \draw (0.6, -1) node[anchor=west] {lower quartile};
       \draw (0.6, -2.5) node[anchor=west] {minimum};
-      \draw (3.5, 2.5) node[anchor=west] {($100^{\mathrm{th}}$ percentile)};
-      \draw (3.5, 1) node[anchor=west] {($75^{\mathrm{th}}$ percentile)};
-      \draw (3.5, 0) node[anchor=west] {($50^{\mathrm{th}}$ percentile)};
-      \draw (3.5, -1) node[anchor=west] {($25^{\mathrm{th}}$ percentile)};
-      \draw (3.5, -2.5) node[anchor=west] {($0^{\mathrm{th}}$ percentile)};
+      \draw (3.5, 2.5) node[anchor=west] {($100^{th}$ percentile)};
+      \draw (3.5, 1) node[anchor=west] {($75^{th}$ percentile)};
+      \draw (3.5, 0) node[anchor=west] {($50^{th}$ percentile)};
+      \draw (3.5, -1) node[anchor=west] {($25^{th}$ percentile)};
+      \draw (3.5, -2.5) node[anchor=west] {($0^{th}$ percentile)};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-0.7,-1) -- (-0.7,1);
       \draw (-0.7,0) node[anchor=east,xshift=-0.2cm] {interquartile range};
       \draw[decoration={brace,amplitude=0.5em},decorate] (-4.5,-2.5) -- (-4.5,2.5);
@@ -1280,19 +1281,19 @@ the minimum and maximum values lie. This graph can also be drawn horizontally.
   \westep{Determine the quartiles}
 
   There are $12$ values in the data set. Using the percentile formula,
-  we can determine that the median lies between the $6^{\mathrm{th}}$ and $7^{\mathrm{th}}$
+  we can determine that the median lies between the $6^{th}$ and $7^{th}$
   values, making it
   \begin{equation*}
     \frac{3,2 + 4,1}{2} = 3,65
   \end{equation*}
 
-  The first quartile lies between the $3^{\mathrm{rd}}$ and $4^{\mathrm{th}}$ values, making
+  The first quartile lies between the $3^{\mathrm{rd}}$ and $4^{th}$ values, making
   it
   \begin{equation*}
     \frac{2,5 + 2,5}{2} = 2,5
   \end{equation*}
 
-  The third quartile lies between the $9^{\mathrm{th}}$ and $10^{\mathrm{th}}$ values, making
+  The third quartile lies between the $9^{th}$ and $10^{th}$ values, making
   it
   \begin{equation*}
     \frac{4,75 + 4,8}{2} = 4,775
@@ -1462,11 +1463,11 @@ usually a value that is much greater or much less than all the other values in t
 \item The range of a data set is the difference between the maximum and minimum values 
 in the set. 
 
-\item The $p^{\mathrm{th}}$ percentile is the value, $v$, that divides a data set into two parts, such that 
+\item The $p^{th}$ percentile is the value, $v$, that divides a data set into two parts, such that 
 $p\%$ of the values in the data set are less than $v$ and $100 − p\%$ of the 
 values are greater than $v$. 
 
-The general formula for finding the $p^{\mathrm{th}}$ percentile in an ordered data set with $n$ values is 
+The general formula for finding the $p^{th}$ percentile in an ordered data set with $n$ values is 
 \begin{equation*}
   r = \frac{p}{100}\left(n-1\right)+1
 \end{equation*}
@@ -1503,6 +1504,7 @@ $5$; $6$; $7$; $5$; $4$; $6$; $6$; $6$; $7$; $4$
     km/h to $60$ km/h.
 
     \begin{center}
+\hspace*{-20pt}
       \begin{tabular}{|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|} \hline
      
         & \textbf{Test 1} & \textbf{Test 2} & \textbf{Test 3} & \textbf{Test 4} & \textbf{Test 5} & \textbf{Test 6} & \textbf{Test 7} &\textbf{Test 8} & \textbf{Test 9} & \textbf{Test 10} \\\hline
