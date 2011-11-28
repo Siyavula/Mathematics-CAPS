@@ -147,6 +147,7 @@ Uitvoer ($y$) &$-8$&$-5$&$0$
 
 \item Versameling geordende getallepare: $(-3; -8)$, $(0; -5)$, $(5; 0)$
 \item Algebrai\"ese formule: $f(x) = x-5$
+\pagebreak
 \item Grafiek:
 \begin{figure}[H]
 \begin{center}
@@ -239,6 +240,7 @@ Voltooi die volgende tabel van funksiewaardes vir $f(x)=x$ en stel die waardes o
 \end{tabular}
 \end{center}
 \vspace{10pt}
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Verbind die punte met 'n reguitlyn.
 \item Bepaal die definisieversameling en waardeversameling.
@@ -252,6 +254,7 @@ Voltooi die volgende tabel van funksiewaardes vir $f(x)=x$ en stel die waardes o
 % \item Using the graph, determine the value of $x$ for which $f(x) = 4$. Confirm your answer graphically.
 % \item Where does the graph cut the axes?
 \end{enumerate}
+\end{minipage}
 }
 {
 \westep{Vervang die waardes in die vergelyking}
@@ -418,7 +421,7 @@ As $c$ afneem, skuif die grafiek vertikaal afwaarts.\par
 
 % These different properties are summarised in Table 1.7.\par 
 \mindsetvid{Analysing the gradient}{VMaxf}
-
+\clearpage
 \subsection*{Ontdek die kenmerke} 
 Die standaardvorm van 'n reguitlynfunksie is:  $y=mx + c$. 
 \subsubsection*{Definisieversameling en waardeversameling}
@@ -572,7 +575,7 @@ Of begin by $(0;-3)$, beweeg $1$ eenheid af en $2$ eenhede links. Dit gee die tw
 \psset{yunit=0.75,xunit=0.75}
 \psaxes[arrows=<->](0,0)(-6,-6)(7,4)
 \psplot[plotstyle=curve,arrows=<->]{-4}{7}{x .5 mul 3 sub}
-\psline[linestlye=dashed,linewidth=.7pt](0,-2)(2,-2)
+\psline[linecolor=gray,linestyle=dashed,linewidth=.7pt](0,-2)(2,-2)
 \psline[linewidth=.7pt](0,-3)(0,-2)
 \psdots(0,-3)(2,-2)(-2,-4)
 \uput[r](0,-3.3){$(0;-3)$}
@@ -699,6 +702,7 @@ Voltooi die volgende tabel van funksiewaardes vir $f(x)=x^{2}$ en stel die waard
 \end{tabular}
 \end{center}
 \vspace{10pt}
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Verbind die punte met 'n gladde kurwe.
 \item Die definisieversameling van $f$ is $x \in \mathbb{R}$. Bepaal die waardeversameling.
@@ -706,6 +710,7 @@ Voltooi die volgende tabel van funksiewaardes vir $f(x)=x^{2}$ en stel die waard
 \item Bepaal die waarde van $x$ as $f(x) = \frac{25}{4}$. \\Bevestig jou antwoord grafies.
 \item Skryf neer waar die grafiek die asse sny.
 \end{enumerate}
+\end{minipage}
 }
 {
 \westep{Vervang die waardes in die vergelyking}
@@ -721,8 +726,6 @@ f(2) &=& (2)^{2} &= &4 \\
 f(3) &=& (3)^{2} &= &9
  \end{array}
 \end{equation*}
-\\
-\\
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
@@ -948,7 +951,7 @@ Indien $a>0$ dan het ons:
 \end{array}
 \end{equation*}
 Dus, indien $a>0$, is die waardeversameling gelyk aan $[q,\infty )$. Soortgelyk, kan ons aantoon dat indien  $a<0$, is die waardeversameling van $ (-\infty ,q]$. 
-
+\vspace*{-20pt}
 \begin{wex}{Definisie- en waardeversameling van 'n parabool}
 {As $g(x)={x}^{2}+2$, bepaal die definisieversameling en waardeversameling van die funksie.}
 {
@@ -1117,11 +1120,11 @@ Die draaipunt is gelyk aan die y-afsnit wat ons bereken het as $(0;-3)$.
 \psaxes[arrows=<->](0,0)(-5,-7)(5,1)
 \psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
 \psdots(0,-3)
-\uput[r](0,-2.7){$(0;-3)$}
-\rput(0.3, 0.8){$y$}
-\rput (5.2, 0.2){$x$}
-\rput(-0.3,-0.3){$0$}
-\rput(4.5, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
+\uput[r](0,-2.7){\small$(0;-3)$}
+\rput(0.4, 0.9){\small $y$}
+\rput (5.3, 0.2){\small$x$}
+% \rput(-0.3,-0.3){$0$}
+\rput(4.7, -4.5){\small$g(x)=-\frac{1}{2}x^{2}-3$}
 \end{pspicture}
 % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
 % % \label{fig:mf:g:sketchexamplepar10}
@@ -1209,13 +1212,13 @@ As van simmetrie: $x=0$ ($y$-as).
 \rput(0.6,-10){$-9$}
 \rput(-5.5,7.5){$(-4;7)$} 
 \rput(5.1,7.5){$(4;7)$}
-\rput(5.3,-0.85){$3$}
+\rput(5.3,-0.95){$3$}
 \rput(5.6,17){$g$}
 \rput(5.6,-4){$h$}
 
 \rput(0.5, 24){$23$}
 \rput (10.4, 0.2){$x$}
-\rput(-0.5,-0.85){$0$}
+\rput(-0.5,-0.95){$0$}
 
 \end{pspicture}
 \end{center}
@@ -1240,7 +1243,7 @@ As van simmetrie: $x=0$ ($y$-as).
 % Automatically inserted shortcodes - number inserted 3
 }
 \end{exercises}   
-
+\clearpage
 \section{Hiperboliese funksies}
 
 \mindsetvid{The hyperbolic function}{VMaxw}
@@ -1269,7 +1272,7 @@ Voltoi die volgende tabel vir $h(x) = \frac{1}{x}$ en stip die punte op 'n asses
 \end{center}
 \end{table}
 
-
+\begin{minipage}{0.9\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item Verbind die punte met 'n gladde kromme.
 \item Wat gebeur as $x=0$?
@@ -1278,6 +1281,7 @@ Voltoi die volgende tabel vir $h(x) = \frac{1}{x}$ en stip die punte op 'n asses
 \item Die definisieversameling van $h(x)$ is $\{x : x \in \mathbb{R}, ~x \ne 0\}$. Bepaal die waardeversameling.
 \item Rondom watter twee lyne is die grafiek simmetries?
 \end{enumerate}
+\end{minipage}
 }
 {
 \westep{Stel waardes in die vergelyking in}{
@@ -1323,8 +1327,8 @@ Vanaf die tabel kry ons die volgende punte: $(-3; -\frac{1}{3})$, $(-2; -\frac{1
 \psplot[plotstyle=curve,arrows=<->]{-5}{-0.2}{x -1 exp}
 \psplot[plotstyle=curve,arrows=<->]{0.2}{5}{x -1 exp}
 \psdots(-3,-0.33)(-2,-0.5)(-1,-1)(-0.5,-2)(-0.25, -4)(0.25, 4)(0.5, 2)(1, 1)(2,0.5)(3,0.33) 
-\rput(5.5,0.3){$x$}
-\rput(0.3,5.5){$y$}
+\rput(5.3,0.3){$x$}
+\rput(0.3,5.3){$y$}
 \rput(2,1.5) {$h(x) = \frac{1}{x}$}
 \rput(-0.3,-0.3){$0$}
 \end{pspicture}
@@ -1491,7 +1495,7 @@ Die waardeversameling van $f(x)=\frac{a}{x}+q$ is $\{f(x):f(x) \in \mathbb{R},~f
 {As $g(x)=\frac{2}{x}+2$, vind die definisieversameling en waardeversameling van die funksie.}
 {
 \westep{Bereken die definisieversameling}
-Die definisieversameling is $\{x:x\in \mathbb{R},~x\ne 0\}$ omdat $g(x)$ ongedefinieerd is by $x=0$.
+Die definisieversameling is $\{x:x\in \mathbb{R},~x\ne 0\}$ omdat $g(x)$ \\ongedefinieerd is by $x=0$.
 \westep{Bereken die waardeversameling}
 Ons sien dat  $g(x)$ ongedefinieerd is by $y=2$.  Die waardeversamling is dus $\{g(x):g(x) \in \mathbb{R},~g(x)\ne 2\}$.
 }
@@ -1657,7 +1661,7 @@ ongedefinieerd by $ y = q$. Dus die tweede asimptoot is by $y=7$.
 \rput(0.3, 15.3){$y$}
 \rput(4.1,4.8){$y=\frac{-4}{x}+7$}
 \rput(8.2,7){$y=7$}
-\rput(-0.3,-0.3){$0$}
+% \rput(-0.3,-0.5){$0$}
 \end{pspicture}
 }
 \end{center}
@@ -1731,7 +1735,8 @@ $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
 \end{tabular}
 \end{center}
 \end{table}
-
+\begin{minipage}{0.9
+\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item By watter punt sny al die grafieke?
 \item Verduidelik waarom hulle nie die $x$-as sny nie.
@@ -1742,8 +1747,9 @@ $f(x)=2^{x}$, $g(x)=3^{x}$, $h(x)=5^{x}$.
       ``Hoe groter $k$, hoe steiler die grafiek van $y=k^{x}$``?
 \end{enumerate}
 
+% \vspace*{20pt}
 Voltooi die volgende tabel vir elk van die funksies en trek die grafieke op dieselfde asse stelsel:
-$F(x) =(\frac{1}{2})^{x}$, $G(x) =(3)^{-x}$, $H(x) =(\frac{1}{5})^{x}$, 
+$F(x) =(\frac{1}{2})^{x}$, $G(x) =(3)^{-x}$, $H(x) =(\frac{1}{5})^{x}$\end{minipage}\\ 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -1760,7 +1766,7 @@ $H(x)=(\frac{1}{5})^{x}$&  &&&&
 \end{tabular}
 \end{center}
 \end{table}
-
+\begin{minipage}{\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{6}
 \item Gee die $y$-afsnit vir elke funksie.
@@ -1771,7 +1777,7 @@ $H(x)=(\frac{1}{5})^{x}$&  &&&&
       ``Hoe groter die waarde van $k$, hoe steiler is die grafiek''?
 \item Gee die vergelykings van die asimptote van elke funksie.
 \end{enumerate}
-
+\end{minipage}
 }
 {
 \westep{Vervang waardes in die vergelykings}
@@ -1828,8 +1834,8 @@ $H(x)=(\frac{1}{5})^{x}$& $25$& $5$&$1$&$\frac{1}{5}$&$\frac{1}{25}$
 
 \end{center}
 \end{figure}  
-
-
+\hspace*{-60pt}
+\begin{minipage}{0.9\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item Ons sien al die grafieke gaan deur die punt $(0;1)$. Enige getal tot die mag $0$ is gelyk aan $1$.
 \item Die grafieke sny nie die $x$-as nie omdat $0^{0}$ ongedefenieerd is.
@@ -1839,7 +1845,7 @@ Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 \item $f(x)=2^{x}$ neem teen die stadigste tempo toe omdat dit die kleinste grondtal het.
 \item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek $y=k^{x}$.
 \end{enumerate}
-
+\end{minipage}
 \setcounter{subfigure}{0}
 \begin{figure}[H]
 \begin{center}
@@ -1858,7 +1864,8 @@ Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 \end{pspicture}
 \end{center}
 \end{figure}  
-
+\hspace*{-60pt}
+\begin{minipage}{0.9\textwidth}
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{6}
 \item Die $y$-afsnitte is die punt $(0; 1)$ vir al die grafieke. Vir enige re\"ele getal $z$, $z^{0}=1$.
@@ -1869,7 +1876,7 @@ Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 \item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek van $y=(\frac{1}{k})^{x}$.
 \item Die vergelyking van die horisontale asimptoot is $y=0$, die $x$-as.
 \end{enumerate}
-
+\end{minipage}
 }
 \end{wex}
 
@@ -2159,7 +2166,7 @@ Om grafieke te skets van funksies van die vorm $f(x)=ab^{x}+q$, moet ons die vol
 \item $x$-afsnit
 \item asimptote
 \end{enumerate}
-
+\clearpage
 \begin{wex}{Skets die grafiek van 'n eksponentfunksie}
 { Skets die grafiek van $g(x)=3(2^{x})+2$. Merk die afsnitte en asimptote.}
 {
@@ -2475,10 +2482,10 @@ Minimum draaipunt: $(270^{\circ};-1)$
 }
 \end{wex}
 
-
+\clearpage
 
 \subsection*{Funksies van die vorm $y=a~sin~\theta+q$}
-\nopagebreak
+
 \begin{Investigation}{Die invloed van $a$ en $q$ op die sinusgrafiek}
 %english
 In die vergelyking $y=a~sin~\theta+q$, is $a$ en $q$ konstantes wat verskillende invloede op die grafiek het.\\
@@ -2745,10 +2752,11 @@ Maksimum draaipunt: $(90^{\circ};5)$\\
 Minimum draaipunt: $(270^{\circ};1)$
 }
 \end{wex}
-
+\clearpage
 \subsection{Cosinusfunksie}
 \subsection*{Funksies van die vorm  $y=cos~\theta$}
 %english
+\vspace*{-30pt}
 \begin{wex}
 {Trek die grafiek van ’n cosinusfunksie
 }
@@ -2882,7 +2890,7 @@ Minimum draaipunt: $(180^{\circ};-1)$
 }
 \end{wex}
     
-
+\vspace*{-30pt}
 \subsection*{Funksies van die vorm  $y=a~cos~\theta+q$}
 \nopagebreak
 \begin{Investigation}{Die invloed van $a$ en $q$ op die cosinusgrafiek}
@@ -2967,7 +2975,7 @@ $a<-1$: refleksie in die $x$-as, amplitude word groter&
  \end{tabular}
 \end{center}
 \end{table}
-
+\vspace*{-30pt}
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{|p{6.5cm}|m{7cm}|}
@@ -3148,17 +3156,17 @@ Minimum draaipunt: $(180^{\circ};1)$
 \nopagebreak
 \begin{center}
 \begin{pspicture}(0,-1)(4,1)
-\psset{xunit=2.2}
+\psset{xunit=2.3}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
-\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.8)
+\psaxes[dx=30,Dx=30, xlabelFactor=^{\circ}]{<->}(0,0)(-30,-1.5)(370,1.8)
 \psplot[plotpoints=300, linewidth=1pt]
      {0}{360}{x cos}  
 \psplot[plotpoints=300, linestyle=dashed, linewidth=1pt]
      {0}{360}{x sin}  
 
-\rput(385, 1.2){$y=cos ~\theta$}
-\rput(395, 0.2){$y=sin~\theta$}
+\rput(395, 1.2){$y=cos ~\theta$}
+\rput(405, 0.2){$y=sin~\theta$}
 \rput(385, -0.2){$\theta$}
 \rput(10, 1.8){$y$}
 \end{pspicture}
@@ -3237,39 +3245,39 @@ Kies ’n geskikte skaal en stip die waarde van $\theta $ op die $x$-as en $tan 
  $\theta$ in}
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{|c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c|} \hline
+\begin{tabular}{|c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.15cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.15cm}}|@{\hspace{0.15cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c@{\hspace{0.1cm}}|@{\hspace{0.1cm}}c|} \hline
 
-\footnotesize$\theta $&
-\footnotesize$0^{\circ }$&
-\footnotesize$30^{\circ }$&
-\footnotesize$60^{\circ }$&
-\footnotesize$90^{\circ }$&
-\footnotesize$120^{\circ }$&
-\footnotesize$150^{\circ }$&
-\footnotesize$180^{\circ }$&
-\footnotesize$210^{\circ }$&
-\footnotesize$240^{\circ }$&
-\footnotesize$270^{\circ }$&
-\footnotesize$300^{\circ }$&
-\footnotesize$330^{\circ }$&
-\footnotesize$360^{\circ }$
+\scriptsize$\theta $&
+\scriptsize$0^{\circ }$&
+\scriptsize$30^{\circ }$&
+\scriptsize$60^{\circ }$&
+\scriptsize$90^{\circ }$&
+\scriptsize$120^{\circ }$&
+\scriptsize$150^{\circ }$&
+\scriptsize$180^{\circ }$&
+\scriptsize$210^{\circ }$&
+\scriptsize$240^{\circ }$&
+\scriptsize$270^{\circ }$&
+\scriptsize$300^{\circ }$&
+\scriptsize$330^{\circ }$&
+\scriptsize$360^{\circ }$
 \\ \hline
 
-\footnotesize$tan ~\theta $&
-\footnotesize$0$&
-\footnotesize$0,58$&
+\scriptsize$tan ~\theta $&
+\scriptsize$0$&
+\scriptsize$0,58$&
 
-\footnotesize$1.73$&
-\footnotesize ongedf&
-\footnotesize$-1,73$&
-\footnotesize$-0,58$&
-\footnotesize$0$&
-\footnotesize$0,58$&
-\footnotesize$1,73$&
-\footnotesize ongedf&
-\footnotesize$-1,73$&
-\footnotesize$-0,58$&
-\footnotesize$0$&
+\scriptsize$1.73$&
+\scriptsize ongedf&
+\scriptsize$-1,73$&
+\scriptsize$-0,58$&
+\scriptsize$0$&
+\scriptsize$0,58$&
+\scriptsize$1,73$&
+\scriptsize ongedf&
+\scriptsize$-1,73$&
+\scriptsize$-0,58$&
+\scriptsize$0$&
 % \hline
 
  \hline
@@ -3552,6 +3560,7 @@ Ons sien dat $a>1$, dus die segmente van die kromme sal 'n groter helling h\^e. 
 \end{center}
 
 \end{table}
+\vspace*{-20pt}
 \westep{Stip die punte en verbind met ’n gladde kromme
 }
 
@@ -3732,10 +3741,10 @@ Vervang die punt $(-1;2)$ in:
   2&=& \dfrac{a}{-1}+q \\
   \therefore 2&=&-a+q
 \end{eqnarray*}
-
+\\
 Vervang die punt $(1;0)$ in:
 \begin{eqnarray*}
-  y&=& \dfrac{a}{x}+q \vspace{7pt}\\
+ y&=& \dfrac{a}{x}+q \vspace{7pt}\\
   0&=& \dfrac{a}{1}+q\\
   \therefore a&=&-q
 \end{eqnarray*}
@@ -3751,18 +3760,21 @@ Vervang die punt $(1;0)$ in:
 \end{eqnarray*}
 
 \westep{Skryf die finale antwoord}
-$a=-1$ en $q=1$, dus die vergelyking van die hiperbool is $y=\dfrac{-1}{x}+1$.
+$a=-1$ en $q=1$, dus is die vergelyking van die hiperbool\\$y=\frac{-1}{x}+1$.
 }
 \end{wex}
-
+\vspace*{-30pt}
 \begin{wex}{Interpretasie van grafieke}
-{Die grafieke $y=-x^{2}+4$ en $y=x-2$ is gegee. Bereken die volgende:\\
+{
+\begin{minipage}{\textwidth}
+Die grafieke $y=-x^{2}+4$ en $y=x-2$ is gegee. Bereken die volgende:\\
+
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
  \item ko\"ordinate van $A$, $B$, $C$, $D$
 \item ko\"ordinate van $E$
 \item lengte van $CD$ 
 \end{enumerate}
-
+\end{minipage}
 
 \begin{center}
 \begin{pspicture}(-5,-5)(5,1)
@@ -4009,13 +4021,13 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
     \item $y=tan~\theta+2$
     \item $y=\dfrac{cos~\theta}{2}$
     \end{enumerate}
-  \item As die algemene vergelykings $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ en $y=a~tan~x$ gegee is, bereken die spesifieke vergelykings vir elkeen van die volgende grafieke:\vspace{20pt}\\
+  \item As die algemene vergelykings $y=mx+c$, $y=ax^2+q$, $y=\frac{a}{x}+q$, $y=a~sin~x+q$, $y=a^x +q$ en $y=a~tan~x$ gegee is, bereken die spesifieke vergelykings vir elkeen van die volgende grafieke:\vspace{-25pt}\\
     \begin{center}
       \begin{table}[H]
         \begin{tabular}{m{6cm}m{6cm}}
 %           \hline
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-5,-5)(5,1)
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
@@ -4027,14 +4039,14 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \psdots(-2,-6)
                 \rput(0.3, 6.3){$y$}
                 \rput(6.2, 0.2){$x$}
-                \rput(-0.37,-0.3){$0$}
-                \rput(-3.5,-6){$(-2;-6)$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(-3.7,-6){$(-2;-6)$}
               \end{pspicture}
             }
           \end{center}
           &
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-5,-5)(5,1)
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
@@ -4044,24 +4056,17 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \psdots(1,1)(0,3)
                 \rput(0.3, 5.3){$y$}
                 \rput(5.2, 0.2){$x$}
-                \rput(-0.37,-0.3){$0$}
-                \rput(1.5,1.5){$(1;1)$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(1.8,1.5){$(1;1)$}
 
-\rput(0.8,3.3){$(0;3)$}
+\rput(1,3.3){$(0;3)$}
             \end{pspicture}}
           \end{center}
           \\ %\hline
    
-        \end{tabular}
-      \end{table}
-    \end{center}
-
-   \begin{center}
-      \begin{table}[H]
-        \begin{tabular}{m{6cm}m{6cm}}
-     
+   
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-5,-5)(5,1)
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
@@ -4072,13 +4077,13 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \rput(-5,5){\textbf{(c)}}
                 \rput(0.3, 5.3){$y$}
                 \rput(5.2, 0.2){$x$}
-                \rput(-0.37,-0.3){$0$}
-                \rput(3.6,-1.5){$(3;-1)$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(3.8,-1.7){$(3;-1)$}
             \end{pspicture}}
           \end{center}
           &
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-5,-5)(5,1)
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
@@ -4088,22 +4093,22 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \psdots(0,2)(4,6)
                 \rput(0.3, 7.3){$y$}
                 \rput(6.2, 0.2){$x$}
-                \rput(-0.37,-0.3){$0$}
-                \rput(1,2){$(0;2)$}
-                \rput(5,6){$(4;6)$}
+                \rput(-0.37,-0.5){$0$}
+                \rput(1.2,2){$(0;2)$}
+                \rput(5.2,6){$(4;6)$}
             \end{pspicture}}
           \end{center}
           \\ %\hline
           
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-6,-5)(5,6)
                 \psset{yunit=0.4, xunit=1}
                 \psset{xunit=0.01111}
                 \psaxes[dx=30,Dx=30, labels=none, ticks=none]{->}(0,0)(-45,-4.5)(400,6.5)
                 \psplot[plotstyle=curve, plotpoints=300, linewidth=1pt, arrows=->]{0}{360}{x sin 5 mul 1 add}  
                 \rput(415, 0.2){$x$}
-                \rput(15, 6.5){$y$}
+                \rput(15, 6.7){$y$}
                 \rput(-90,5){\textbf{(e)}}
 %                 \psline[linewidth=0.02, linestyle=dashed](0,6)(360,6)
                 \psline[linewidth=0.02, linestyle=dashed](0,1)(360,1)
@@ -4114,13 +4119,13 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \psdots(195,0)(350,0)(90,6)(270,-4)
                 \rput(160,-0.8){$180^{\circ}$}
                 \rput(340,-0.8){$360^{\circ}$}
-                \rput(-20,-0.4){$0$}
+                \rput(-20,-0.5){$0$}
               \end{pspicture}
             }
           \end{center}
           &
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(-5,-5)(5,1)
                 %\psgrid
                 \psset{yunit=0.5,xunit=0.5}
@@ -4130,15 +4135,23 @@ spesifieke bal. Wat is die benaderde hoogte van die vyfde bons tot die naaste ti
                 \psline[linewidth=0.02,linestyle=dashed](-5,1)(5,1)
                 \rput(-5,5){\textbf{(f)}}
                 \rput(0.3, 5.3){$y$}
-                \rput(5.2, 0.2){$x$}
+                \rput(5.3, 0.2){$x$}
                 \rput(-0.37,-0.3){$0$}
                 \rput(6,1){$y=1$}
-                \rput(0.8,3){$(0;3)$}
+                \rput(1,3){$(0;3)$}
             \end{pspicture}}
           \end{center}
           \\ %\hline
+%         \end{tabular}
+%       \end{table}
+%     \end{center}
+% 
+%    \begin{center}
+%       \begin{table}[H]
+%         \begin{tabular}{m{6cm}m{6cm}}
+%   
           \begin{center}
-            \scalebox{0.8}{
+            \scalebox{0.7}{
               \begin{pspicture}(0,-2.5)(4,2)
                 \psaxes[Dx=180, dx=2, Dy=1, dy=0.5, labels=none, ticks=x]{<->}(0,0)(-1,-4)(4.5,2)
                 \rput(-1,3){\textbf{(g)}}
