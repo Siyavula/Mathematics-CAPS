@@ -58,9 +58,9 @@ Voorbeelde:
 \hline
   $(3;11)$ &  ’n Ronde hakie beteken die getal word uitgesluit uit die interval. Hierdie interval dui al die re\"ele getalle groter as $3$ (maar $3$ uitgesluit) en kleiner as $11$ (maar $11$ uitgesluit).
 \\ \hline %english
- $(- \infty; -2)$ & Ronde hakies word altyd gebruik vir positief en negatief oneindig. Hierdie interval sluit alle re\"ele getalle in kleiner as $-2$, maar nie gelyk aan $-2$ nie.
+ $(- \infty; -2)$ & Ronde hakies word altyd gebruik vir positiewe en negatiewe oneindigheid. Hierdie interval sluit alle re\"ele getalle in kleiner as $-2$, maar nie gelyk aan $-2$ nie.
 \\ \hline
- $[1; 9)$ & ’n Reghoekige hakie beteken die getal word ingesluit by die interval. Hierdie interval dui al die re\"ele getalle aan groter of gelyk aan $1$ en kleiner as $9$ maar nie gelyk aan $9$ nie.
+ $[1; 9)$ & ’n Reghoekige hakie beteken die getal word ingesluit by die interval. Hierdie interval dui al die re\"ele getalle aan groter of gelyk aan $1$ en kleiner as $9$, maar nie gelyk aan $9$ nie.
 \\ \hline
 \end{tabular}
 \end{table}
@@ -318,21 +318,21 @@ Die funksie $f$ sny die asse by die oorspring $(0;0)$.
 
 Op dieselfde assestelsel, trek die volgende grafieke:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
-\item $y=x-2$
-\item $y=x-1$
-\item $y=x$
-\item $y=x+1$
-\item $y=x+2$
+\item $y_1=x-2$
+\item $y_2=x-1$
+\item $y_3=x$
+\item $y_4=x+1$
+\item $y_5=x+2$
 \end{enumerate}
 Gebruik jou resultate om die invloed van verskillende waardes van $c$ op die resulterende grafieke af te lei.\\
 \par
 
 Op dieselfde assestelsel, trek die volgende grafieke:
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] \setcounter{enumi}{5}
-\item $y=-2x$
-\item $y=-x$
-\item $y=x$
-\item $y=2x$
+\item $y_6=-2x$
+\item $y_7=-x$
+\item $y_8=x$
+\item $y_9=2x$
 \end{enumerate}
 Gebruik jou resultate om die invloed van verskillende waardes van $m$ op die resulterende grafieke af te lei.
 \end{Investigation}
@@ -503,7 +503,7 @@ $\therefore$ $x$-afsnit is $(1;0)$.
 % \label{fig:mf:g:sketchexamplestr}
 \end{center}
 
-Let op: hierdie grafiek is kontinu en gaan voort in beide rigtings.       
+% Let op: hierdie grafiek is kontinu en gaan voort in beide rigtings.       
 }
 \end{wex}
 
@@ -707,7 +707,7 @@ Voltooi die volgende tabel van funksiewaardes vir $f(x)=x^{2}$ en stel die waard
  \item Verbind die punte met 'n gladde kurwe.
 \item Die definisieversameling van $f$ is $x \in \mathbb{R}$. Bepaal die waardeversameling.
 \item Bepaal die as van simmetrie van $f$
-\item Bepaal die waarde van $x$ as $f(x) = \frac{25}{4}$. \\Bevestig jou antwoord grafies.
+\item Bepaal die waarde van $x$ as $f(x) = 6\frac{1}{4}$. \\Bevestig jou antwoord grafies.
 \item Skryf neer waar die grafiek die asse sny.
 \end{enumerate}
 \end{minipage}
@@ -1113,22 +1113,41 @@ Die draaipunt is gelyk aan die y-afsnit wat ons bereken het as $(0;-3)$.
 \westep{Stip die punte en skets die grafiek}
 % \begin{figure}[!ht]
 % Add g(x) label. Label all origins!!
+%TOOK THIS DIAGRAM FROM THE ENGLISH VERSION
 \begin{center}
 \begin{pspicture}(-5,-5)(5,1)
 %\psgrid
-\psset{yunit=0.5,xunit=0.5}
+\psset{yunit=0.75,xunit=0.75}
 \psaxes[arrows=<->](0,0)(-5,-7)(5,1)
 \psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
 \psdots(0,-3)
-\uput[r](0,-2.7){\small$(0;-3)$}
-\rput(0.4, 0.9){\small $y$}
-\rput (5.3, 0.2){\small$x$}
-% \rput(-0.3,-0.3){$0$}
-\rput(4.7, -4.5){\small$g(x)=-\frac{1}{2}x^{2}-3$}
+\uput[r](0,-2.7){$(0;-3)$}
+\rput(0.4, 1){$y$}
+\rput (5.2, 0.2){$x$}
+\rput(-0.3,-0.3){$0$}
+\rput(4, -4.5){$g(x)=-\frac{1}{2}x^{2}-3$}
 \end{pspicture}
 % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
 % % \label{fig:mf:g:sketchexamplepar10}
 \end{center}
+
+
+% \begin{center}
+% \begin{pspicture}(-5,-5)(5,1)
+% %\psgrid
+% \psset{yunit=0.5,xunit=0.5}
+% \psaxes[arrows=<->](0,0)(-5,-7)(5,1)
+% \psplot[plotstyle=curve,arrows=<->]{-2.5}{2.5}{x 2 exp -0.5 mul 3 sub}
+% \psdots(0,-3)
+% \uput[r](0,-2.7){\small$(0;-3)$}
+% \rput(0.4, 0.9){\small $y$}
+% \rput (5.3, 0.2){\small$x$}
+% % \rput(-0.3,-0.3){$0$}
+% \rput(4.7, -4.5){\small$g(x)=-\frac{1}{2}x^{2}-3$}
+% \end{pspicture}
+% % \caption{Graph of the function $f(x)=-\frac{1}{2}x^2-3$}
+% % % \label{fig:mf:g:sketchexamplepar10}
+% \end{center}
 % \end{figure}
 \\
 Definisieversameling: $\{x:x \in \mathbb{R}\}$.\\
@@ -1522,8 +1541,8 @@ As $g(x)=\frac{2}{x}+2$ stel $y=0$:
 \begin{array}{ccl}
 \hfill y& =& \dfrac{2}{x}+2\hfill \vspace{4pt}\\
  \hfill 0& =& \dfrac{2}{x}+2\hfill \vspace{4pt} \\
- \hfill \dfrac{2}{x}& =& -2\hfill \\
- \hfill 2& =& -2(x)\hfill \vspace{4pt}\\
+ \hfill \dfrac{2}{x}& =& -2\hfill \vspace{4pt}\\
+ \hfill x& =& \dfrac{2}{-2}\hfill \\
  \hfill x& =& -1\hfill 
 \end{array}
 \end{equation*}
@@ -1646,6 +1665,28 @@ is wanneer $x=0$, dus daar is een asimptoot by $x=0$. Die funksie is
 ongedefinieerd by $ y = q$. Dus die tweede asimptoot is by $y=7$. 
 
 \westep{Skets die grafiek}
+% %TOOK DIAGRAM FROM ENGLISH
+% \par
+% \setcounter{subfigure}{0}
+% % \begin{figure}[]
+% \begin{center}
+% \scalebox{1}{
+% \begin{pspicture}(-5,-3)(5,6)
+% %\psgrid
+% \psset{yunit=0.65,xunit=0.65}
+% \psaxes[arrows=<->, ,dx=1,Dx=1,dy=1,Dy=1](0,0)(-7,-3)(7,15)
+% \psplot[plotstyle=curve,arrows=<->]{-7}{-0.5}{x -1 exp -4 mul 7 add}
+% \psplot[plotstyle=curve,arrows=<->]{7}{0.4}{x -1 exp -4 mul 7 add}
+% \psline[linestyle=dashed](-7,7)(7,7)
+% \rput(7.3,0.3){$x$}
+% \rput(0.3, 15.3){$y$}
+% \rput(4.1,4.8){$y=\frac{-4}{x}+7$}
+% \rput(8.2,7){$y=7$}
+% \rput(-0.3,-0.3){$0$}
+% \end{pspicture}
+% }
+% \end{center}
+
 \setcounter{subfigure}{0}
 % \begin{figure}[]
 \begin{center}
@@ -1871,7 +1912,7 @@ Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 \item Die $y$-afsnitte is die punt $(0; 1)$ vir al die grafieke. Vir enige re\"ele getal $z$, $z^{0}=1$.
 \item $F(x)$ is die spie\"elbeeld (refleksie) van $f(x)$ in die $y$-as. 
 \item $G(x)$ is die spie\"elbeeld (refleksie) van $g(x)$ in die $y$-as. 
-\item  Definisieversameling: $x \in \mathbb{R}$\\
+\item  Definisieversameling: $\{x: x \in \mathbb{R}\}$\\
 Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 \item Waar: hoe groter $k ~(k>1)$, hoe steiler die grafiek van $y=(\frac{1}{k})^{x}$.
 \item Die vergelyking van die horisontale asimptoot is $y=0$, die $x$-as.
@@ -1897,7 +1938,7 @@ Waardeversameling: $\{y: y \in \mathbb{R}, ~y>0\}$.
 
 \subsection*{Funksies van die vorm $y=ab^{x}+q$}
 \begin{Investigation}{Die invloed van $a$ en $q$ op die eksponentgrafiek}
-Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $a=1$ en $q$ verander):
+Op dieselfde assestelsel, skets die volgende grafieke ($b=2$, $a=1$ en $q$ verander):
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \item $y_1=2^{x}-2$
 \item $y_2=2^{x}-1$
@@ -1928,7 +1969,7 @@ $y_5=2^{x}+2$&  &&&&
 Gebruik jou antwoorde om ’n gevolgtrekking te maak ten opsigte van die invloed van $q$.
 \\
 \par
-Op dieselfde assestelsel, skets die volgende grafieke ($k=2$, $q=0$ en $a$ verander):
+Op dieselfde assestelsel, skets die volgende grafieke ($b=2$, $q=0$ en $a$ verander):
 \begin{enumerate}[noitemsep, label=\textbf{\arabic*}. ] 
 \setcounter{enumi}{5}
 \item $y_6=2^{x}$
@@ -2097,10 +2138,10 @@ Indien $a<0$ dan:\par
 Dus, as $a<0$, dan is die waardeversameling  $\{f(x):f(x) < q\}$.\par 
 
 \begin{wex}{Definisie- en waardeversameling van 'n eksponentfunksie}
-{Vind die definisieversameling en waardeversameling van $g(x)=5.2^{x}+1$}
+{Vind die definisieversameling en waardeversameling van $g(x)=5 \times 2^{x}+1$}
 {
 \westep{Vind die definisieversameling}
-Die definisieversameling van  $g(x)=5.2^{x}+1$ is $\{x:x\in \mathbb{R}\}$.
+Die definisieversameling van  $g(x)=5 \times 2^{x}+1$ is $\{x:x\in \mathbb{R}\}$.
 \westep{Vind die waardeversameling}
 \begin{equation*}
 \begin{array}{ccc}\hfill 2^{x}& > & 0\hfill \\
@@ -2127,7 +2168,7 @@ Die $y$-afsnit word gegee deur $x=0$:
 \end{array}
 \end{equation*}
 
-Byvoorbeeld, die $y$-afsnit van $g(x)=5.2^{x}+1$  word gegee deur 
+Byvoorbeeld, die $y$-afsnit van $g(x)=5 \times 2^{x}+1$  word gegee deur 
  $x=0$ te stel, om dan te kry:\par 
 
 \begin{equation*}
@@ -2140,7 +2181,7 @@ Dit gee die punt $(0;6)$.\vspace{10pt}
 \\
 \textbf{Die $x$-afsnit}:\\
 Die $x$-afsnitte word bereken deur $y=0$ te stel. \\
-Byvoorbeeld, die $x$-afsnit van $g(x)=5.2^{x}+1$ word gegee deur $y=0$ te stel:\par 
+Byvoorbeeld, die $x$-afsnit van $g(x)=5 \times 2^{x}+1$ word gegee deur $y=0$ te stel:\par 
 \begin{equation*}
 \begin{array}{ccl}\hfill y& =& 5 \times 2^{x}+1\hfill \\
  \hfill 0& =& 5 \times 2^{x}+1\hfill \\
@@ -2168,7 +2209,7 @@ Om grafieke te skets van funksies van die vorm $f(x)=ab^{x}+q$, moet ons die vol
 \end{enumerate}
 \clearpage
 \begin{wex}{Skets die grafiek van 'n eksponentfunksie}
-{ Skets die grafiek van $g(x)=3(2^{x})+2$. Merk die afsnitte en asimptote.}
+{ Skets die grafiek van $g(x)=3 \times 2^{x}+2$. Merk die afsnitte en asimptote.}
 {
 \westep{Ondersoek die standaardvorm van die vergelyking}
 Ons sien $a>1$, dus die kromme buig opwaarts. $q>0$ dus die grafiek word $2$ eenhede vertikale opgeskuif.
@@ -2176,8 +2217,8 @@ Ons sien $a>1$, dus die kromme buig opwaarts. $q>0$ dus die grafiek word $2$ een
 \westep{Bereken die afsnitte}
 Ons kry die $y$-afsnit waar $x=0$:
 \begin{equation*}
-\begin{array}{ccl}\hfill y& =& 3.2^{x}+2\hfill \\
- \hfill & =& 3.2^{0}+2\hfill \\
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill & =& 3 \times 2^{0}+2\hfill \\
  & =& 3+2\hfill \\ & =& 5\hfill 
 \end{array}
 \end{equation*}
@@ -2185,9 +2226,9 @@ Dit gee die punt $(0;5)$.\\
 
 Ons kry die $x$-afsnit waar $y=0$:
 \begin{equation*}
-\begin{array}{ccl}\hfill y& =& 3.2^{x}+2\hfill \\
- \hfill 0& =& 3.2^{x}+2\hfill \\
- \hfill -2& =& 3.2^{x}\hfill \\
+\begin{array}{ccl}\hfill y& =& 3 \times 2^{x}+2\hfill \\
+ \hfill 0& =& 3 \times 2^{x}+2\hfill \\
+ \hfill -2& =& 3 \times 2^{x}\hfill \\
  \hfill {2}^{x}& =& \dfrac{-2}{3}\hfill 
 \end{array}
 \end{equation*}
@@ -2226,7 +2267,7 @@ Eksponentgrafieke het geen simmetrie asse nie.
  
 \begin{wex}{Skets ’n eksponsiële grafiek}
 {
-Skets die grafiek van $y=-2.3^{x}+6$.}
+Skets die grafiek van $y=-2 \times 3^{x}+6$.}
 {
 \westep{Ondersoek die standaardvorm van die vergelyking} 
  $a<0$ dus die grafiek buig af. $q>0$ dus skuif die grafiek $6$ eenhede vertikaal opwaarts.
@@ -2234,8 +2275,8 @@ Skets die grafiek van $y=-2.3^{x}+6$.}
 
 Ons kry die $y$-afsnit waar $x=0$:
 \begin{equation*}
-\begin{array}{ccl}\hfill y& =& -2.3^{x}+6\hfill \\
- \hfill & =& -2.3^{0}+6\hfill \\
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill & =& -2 \times 3^{0}+6\hfill \\
  & =& 4\hfill \\
 
 \end{array}
@@ -2244,9 +2285,9 @@ Dit gee die punt $(0;4)$.\\
 
 Ons kry die $x$-afsnit waar $y=0$:
 \begin{equation*}
-\begin{array}{ccl}\hfill y& =& -2.3^{x}+6\hfill \\
- \hfill 0& =& -2.3^{x}+6\hfill \\
- \hfill -6& =& -2.3^{x}\hfill \\
+\begin{array}{ccl}\hfill y& =& -2 \times 3^{x}+6\hfill \\
+ \hfill 0& =& -2 \times 3^{x}+6\hfill \\
+ \hfill -6& =& -2 \times 3^{x}\hfill \\
  \hfill {3}^{1}& =& {3}^{x}\hfill \\
 \hfill \therefore x & =& 1 
 \end{array}
@@ -2271,7 +2312,7 @@ Funksies van hierdie vorm het een asimptoot. Dit lê by $y=q$, dus by $y=5$.
 \rput(5.6,6.2){$y=6$}
 \rput(5.2,0.2){$x$}
 \rput(0.2,7.2){$y$}
-\rput(-3.5,5.3){$y= -2.3^{x}+6$}
+\rput(-3.5,5.3){$y= -2 \times 3^{x}+6$}
 \rput(-0.3,-0.3){$0$}
 \rput(0.8,4){$(0;4)$}
 \rput(1.5,0.5){$(1;0)$}
@@ -2458,7 +2499,7 @@ Kies 'n geskikte skaal en stip die waardes van $\theta $ op die $x$-as en van $s
 
 \begin{center}
 \begin{pspicture}(0,-1)(5,1)
-\psset{xunit=2.1}
+\psset{xunit=2.4}
 %\psgrid[gridcolor=gray]
 \psset{xunit=0.01111}
 \psaxes[dx=30,Dx=30,  xlabelFactor=^{\circ}]{<->}(0,0)(0,-1.5)(370,1.5)
@@ -2468,7 +2509,7 @@ Kies 'n geskikte skaal en stip die waardes van $\theta $ op die $x$-as en van $s
 \rput(10, 1.5){$y$}
 
 \end{pspicture}
-\end{center}    
+\end{center}     
 \\
 Let op die golf vorm van die grafiek. Elke golf neem $360^{\circ}$ om te voltooi. Dit staan bekend as die periode. Die hoogte van die golf bo en onder die $x$-as staan bekend as die amplitude van die grafiek. Die maksimumwaarde van  $y=~sin~\theta$ is $1$ en die minimumwaarde is $-1$.\\
 % Notice the wave shape of the graph. Each complete wave takes $360^{\circ}$ to complete. This is called the period. The height of the wave above and below the $x$-axis is called the graph's amplitude. The maximum value of $y=~sin~\theta$ is $1$ and the minimum value is $-1$.\\
@@ -2651,7 +2692,7 @@ As $a>0$:\par
 \end{equation*}
 Dit vertel ons dat vir alle waardes van $\theta $, $f(\theta )$ altyd tussen $-a+q$ en $a+q$ is.\par
 Daarom, as $a>0$, sal die waardeversameling $\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$ wees.\\
-Insgelyks kan daar getoon word dat as $a<0$, sal die waardeversameling $\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$.\par 
+Insgelyks kan daar getoon word dat as $a<0$, sal die waardeversameling \\$\{f(\theta ):f(\theta )\in [a+q,-a+q]\}$.\par 
 
 %\Tip{Die maklikste manier om die waardeversameling te bepaal is om bloot vir die "bokant" en die "onderkant" van die grafiek te soek.}
 
@@ -3703,7 +3744,7 @@ Vervang die waarde van die punt $(-1;0)$ in die vergelyking in:
 \end{eqnarray*}
 
 \westep{Skryf die finale antwoord}
-$a=-1$ en $q=1$, dus die vergelyking van die parabool is $y=-x^{2} +1$.
+$a=-1$ en $q=1$, dus die vergelyking van die parabool is \\$y=-x^{2} +1$.
 }
 \end{wex}
 
